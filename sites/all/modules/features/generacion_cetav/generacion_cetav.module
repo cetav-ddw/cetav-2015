@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Generación feature.
+ */
+
+include_once 'generacion_cetav.features.inc';
