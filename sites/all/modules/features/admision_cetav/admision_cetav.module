@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Admisión feature.
+ */
+
+include_once 'admision_cetav.features.inc';
