@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Perfil Egresado feature.
+ */
+
+include_once 'perfil_egresado_cetav.features.inc';

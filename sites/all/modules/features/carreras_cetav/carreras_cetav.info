@@ -1,6 +1,6 @@
 name = Carreras
 core = 7.x
-package = Features
+package = CETAV
 dependencies[] = features
 dependencies[] = image
 dependencies[] = node
