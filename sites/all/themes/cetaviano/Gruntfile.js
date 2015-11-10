@@ -41,7 +41,7 @@ module.exports = function (grunt) {
               outputStyle: 'nested',
             },
             files: {
-              'css/style.css': 'sass/style.scss',
+              'css/main.css': 'sass/main.scss',
             }
           },
           prod: {
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
               outputStyle: 'compressed',
             },
             files: {
-              'css/style.css': 'sass/style.scss',
+              'css/main.css': 'sass/main.scss',
             },
           },
         },
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
             ]
           },
           dist: {
-            src: 'css/style.css'
+            src: 'css/main.css'
           }
         },
 

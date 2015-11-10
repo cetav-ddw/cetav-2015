@@ -48,7 +48,7 @@ stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
 
 ;-------------- C S S -------------
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/main.css
 
 ;-------------- J S -------------
 scripts[] = js/script.min.js
