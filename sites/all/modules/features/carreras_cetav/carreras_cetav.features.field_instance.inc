@@ -145,8 +145,8 @@ function carreras_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-carreras-field_skills_carrera'.
-  $field_instances['node-carreras-field_skills_carrera'] = array(
+  // Exported field_instance: 'node-carreras-field_programa_carreras'.
+  $field_instances['node-carreras-field_programa_carreras'] = array(
     'bundle' => 'carreras',
     'default_value' => NULL,
     'deleted' => 0,
@@ -159,7 +159,64 @@ function carreras_cetav_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 6,
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_programa_carreras',
+    'label' => 'Programa-Carreras',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'colaboradores_institucion' => -1,
+        'consejo_asesor' => -1,
+        'detalles_cursolibre' => -1,
+        'programas_carreras' => 'programas_carreras',
+        'skills' => -1,
+        'testimonios' => -1,
+      ),
+      'bundle_weights' => array(
+        'colaboradores_institucion' => 2,
+        'consejo_asesor' => 3,
+        'detalles_cursolibre' => 4,
+        'programas_carreras' => 5,
+        'skills' => 6,
+        'testimonios' => 7,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-carreras-field_skills_carrera'.
+  $field_instances['node-carreras-field_skills_carrera'] = array(
+    'bundle' => 'carreras',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -173,25 +230,16 @@ function carreras_cetav_field_default_field_instances() {
     'label' => 'Skills-carrera',
     'required' => 1,
     'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'skills' => 'skills',
-        'testimonios' => -1,
-      ),
-      'bundle_weights' => array(
-        'skills' => 2,
-        'testimonios' => 3,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+      ),
+      'type' => 'text_textarea',
       'weight' => 8,
     ),
   );
@@ -323,20 +371,19 @@ function carreras_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-skills-field_skills_icono'.
-  $field_instances['paragraphs_item-skills-field_skills_icono'] = array(
-    'bundle' => 'skills',
+  // Exported field_instance:
+  // 'paragraphs_item-programas_carreras-field_cuatrimestre'.
+  $field_instances['paragraphs_item-programas_carreras-field_cuatrimestre'] = array(
+    'bundle' => 'programas_carreras',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
@@ -347,35 +394,28 @@ function carreras_cetav_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_skills_icono',
-    'label' => 'Skills-icono',
-    'required' => 0,
+    'field_name' => 'field_cuatrimestre',
+    'label' => 'cuatrimestre',
+    'required' => 1,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'text',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'size' => 60,
       ),
-      'type' => 'image_image',
+      'type' => 'text_textfield',
       'weight' => 1,
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-skills-field_skills_nombre'.
-  $field_instances['paragraphs_item-skills-field_skills_nombre'] = array(
-    'bundle' => 'skills',
+  // Exported field_instance:
+  // 'paragraphs_item-programas_carreras-field_cursos_cuatrimestre'.
+  $field_instances['paragraphs_item-programas_carreras-field_cursos_cuatrimestre'] = array(
+    'bundle' => 'programas_carreras',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -395,8 +435,8 @@ function carreras_cetav_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_skills_nombre',
-    'label' => 'Skills-nombre',
+    'field_name' => 'field_cursos_cuatrimestre',
+    'label' => 'cursos-cuatrimestre',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -406,9 +446,9 @@ function carreras_cetav_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 7,
       ),
-      'type' => 'text_textfield',
+      'type' => 'text_textarea',
       'weight' => 2,
     ),
   );
@@ -418,12 +458,13 @@ function carreras_cetav_field_default_field_instances() {
   t('Cuerpo-carrera');
   t('Cuerpo-skills-carreras');
   t('Imagen-header-carrera');
+  t('Programa-Carreras');
   t('Skills-carrera');
-  t('Skills-icono');
-  t('Skills-nombre');
   t('Subtitulo-carrera');
   t('Subtitulo-skills-carreras');
   t('Video-carrera');
+  t('cuatrimestre');
+  t('cursos-cuatrimestre');
 
   return $field_instances;
 }

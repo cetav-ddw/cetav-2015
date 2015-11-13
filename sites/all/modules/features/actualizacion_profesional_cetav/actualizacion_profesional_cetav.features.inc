@@ -30,3 +30,17 @@ function actualizacion_profesional_cetav_node_info() {
   drupal_alter('node_info', $items);
   return $items;
 }
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function actualizacion_profesional_cetav_paragraphs_info() {
+  $items = array(
+    'detalles_cursolibre' => array(
+      'name' => 'detalles-cursolibre',
+      'bundle' => 'detalles_cursolibre',
+      'locked' => '1',
+    ),
+  );
+  return $items;
+}

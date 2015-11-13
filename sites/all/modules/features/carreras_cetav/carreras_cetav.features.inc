@@ -36,9 +36,9 @@ function carreras_cetav_node_info() {
  */
 function carreras_cetav_paragraphs_info() {
   $items = array(
-    'skills' => array(
-      'name' => 'icono-texto',
-      'bundle' => 'skills',
+    'programas_carreras' => array(
+      'name' => 'programas-carreras',
+      'bundle' => 'programas_carreras',
       'locked' => '1',
     ),
   );

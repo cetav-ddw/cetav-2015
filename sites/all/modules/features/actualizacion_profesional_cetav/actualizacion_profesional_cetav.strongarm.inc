@@ -22,7 +22,7 @@ function actualizacion_profesional_cetav_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '7',
         ),
       ),
       'display' => array(),

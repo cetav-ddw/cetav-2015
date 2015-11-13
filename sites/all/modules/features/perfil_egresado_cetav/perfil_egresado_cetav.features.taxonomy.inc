@@ -9,6 +9,29 @@
  */
 function perfil_egresado_cetav_taxonomy_default_vocabularies() {
   return array(
+    'carrera_tecnica' => array(
+      'name' => 'Carrera Técnica',
+      'machine_name' => 'carrera_tecnica',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'disponibilidad' => array(
       'name' => 'Disponibilidad',
       'machine_name' => 'disponibilidad',
@@ -33,7 +56,7 @@ function perfil_egresado_cetav_taxonomy_default_vocabularies() {
       ),
     ),
     'generacion' => array(
-      'name' => 'generación',
+      'name' => 'Generación',
       'machine_name' => 'generacion',
       'description' => '',
       'hierarchy' => 0,
@@ -55,9 +78,9 @@ function perfil_egresado_cetav_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'skills_web' => array(
-      'name' => 'skills_web',
-      'machine_name' => 'skills_web',
+    'habilidades' => array(
+      'name' => 'Habilidades',
+      'machine_name' => 'habilidades',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

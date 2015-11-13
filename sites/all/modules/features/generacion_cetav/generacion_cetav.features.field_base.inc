@@ -52,6 +52,21 @@ function generacion_cetav_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_reel_generacion'.
+  $field_bases['field_reel_generacion'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_reel_generacion',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'video_embed_field',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'video_embed_field',
+  );
+
   // Exported field_base: 'field_testimonio'.
   $field_bases['field_testimonio'] = array(
     'active' => 1,
