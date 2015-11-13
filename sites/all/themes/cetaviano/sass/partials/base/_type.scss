@@ -1,0 +1,22 @@
+li,
+p {
+    @include font-size(14);
+    color: #555;
+    line-height: 1.5;
+}
+
+dl,
+ol,
+p, 
+ul {
+    margin: 0 0 .5em;
+}
+
+ol, 
+ul {
+    padding-left: 2em;
+}
+
+p {
+    overflow: hidden;
+}

@@ -1,0 +1,55 @@
+//
+// Mixins
+//
+
+// font-size mixin
+@mixin font-size($size) {
+    font-size: $size + px;
+    font-size: ($size / 10) + rem;
+}
+
+// sprite mixin
+// usage example:
+// @include sprite(red, $x: center, $y: -589px);
+@mixin sprite($color, $x, $y, $image: "$sprite-image") {
+    background: $color url($image + ".png");
+    background-image: url($image + ".svg"), none;
+    background-position: $x $y;
+    background-repeat: no-repeat;
+}
+
+// 
+// Media Queries mixin. Suppor min-width, you can pass it a varible 
+// or specific values
+// 
+// usage example:
+//
+// @include mquery($medium) {
+//    content
+// }
+//
+// or
+//
+// @include mquery(690px) {
+//    content
+// }
+//
+@mixin mquery($breakpoint) {
+    $val: map-getter($site-breakpoints, $breakpoint);
+
+    @if $val == false {
+        @if type-of($breakpoint) == number {
+            @media only screen and ("min-width": $breakpoint) {
+                @content;
+            }
+        }
+        @else {
+            @error "QUERY MIXINS ERROR - INVALID ARGUMENT";
+        }
+    }
+    @else {
+        @media only screen and ("min-width": $val) {
+            @content;
+        }
+    }
+}

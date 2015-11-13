@@ -43,3 +43,8 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+*.css.map
+
+# Grunt #
+##########
+node_modules

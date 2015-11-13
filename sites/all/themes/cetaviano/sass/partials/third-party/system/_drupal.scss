@@ -1,0 +1,6 @@
+@import "tabs";
+@import "system";
+
+.element-invisible {
+    @extend %hidden;
+}

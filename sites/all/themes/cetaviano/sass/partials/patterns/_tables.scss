@@ -1,0 +1,10 @@
+table {
+    @include font-size(14);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, 
+td {
+    padding: .5em;
+}
