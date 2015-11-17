@@ -2,11 +2,12 @@
 
 // Plugin definition
 $plugin = array(
-  'title' => t('CETAV frontpage'),
+  'title' => t('CETAV  frontpage'),
   'category' => t('CETAV'),
   'icon' => 'cetav_frontpage.png',
   'theme' => 'cetav_frontpage',
   'css' => 'cetav_frontpage.css',
+
   'regions' => array(
     'wide' => t('Wide'),
     'left' => t('Left side'),
