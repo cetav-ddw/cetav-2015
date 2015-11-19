@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the panels-cetav-carreras feature.
+ */
+
+include_once 'panels_cetav_carreras.features.inc';
