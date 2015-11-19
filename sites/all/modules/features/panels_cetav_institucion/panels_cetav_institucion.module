@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the panels-cetav-institucion feature.
+ */
+
+include_once 'panels_cetav_institucion.features.inc';

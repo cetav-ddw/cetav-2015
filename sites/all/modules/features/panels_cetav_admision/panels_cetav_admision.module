@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the panels-cetav-admision feature.
+ */
+
+include_once 'panels_cetav_admision.features.inc';

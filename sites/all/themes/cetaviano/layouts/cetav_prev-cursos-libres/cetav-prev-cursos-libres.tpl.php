@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Template for a custom panel layout.
+ *
+ * This template provides a prev-cursos-libres for CETAV panel display layout.
+ */
+?>
+
+<div class="panel-display panel-cetav-prev-cursos-libres">
+  <div class="center-wrapper">
+  <?php if ($content['wide']): ?>
+    <div class="panel-container panel-wide">
+      <?php print $content['wide']; ?>
+    </div>
+  <?php endif ?>
+    <div class="panel-container panel-left-column">
+      <?php print $content['left']; ?>
+    </div>
+    <div class="panel-container panel-right-column">
+      <?php print $content['right']; ?>
+    </div>
+  </div>
+    <?php if ($content['wide_second']): ?>
+    <div class="panel-container panel-wide">
+      <?php print $content['wide_second']; ?>
+    </div>
+  <?php endif ?>
+</div>
