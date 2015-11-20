@@ -1,22 +1,65 @@
-li,
-p {
-    @include font-size(14);
-    color: #555;
-    line-height: 1.5;
-}
-
 dl,
 ol,
-p, 
+p,
 ul {
     margin: 0 0 .5em;
 }
 
-ol, 
+ol,
 ul {
-    padding-left: 2em;
+    margin: 0;
+    padding: 0;
 }
 
 p {
+    line-height: 22px;
+    margin: 0;
     overflow: hidden;
+}
+
+em {
+    color: $gray;
+}
+
+cite {
+    color: $gray;
+    &:before {
+        content: "\2014 \2009";
+    }
+}
+
+li {
+    @include font-size(15);
+    line-height: 27px;
+    vertical-align: top;
+}
+
+strong {
+    color: $main-color;
+}
+
+blockquote {
+  border-left: 5px solid $main-color;
+  margin: 10px;
+  padding: 10px;
+  quotes: "“" "”" "‘" "’";
+
+  p {
+    display: inline-block;
+    &:before {
+        @include font-size(35);
+        color: #ccc;
+        content: open-quote;
+        line-height: 0;
+        margin-right: 5px;
+        vertical-align: -15px;
+    }
+    &:after {
+        @include font-size(35);
+        color: #ccc;
+        content: close-quote;
+        margin-left: 5px;
+        vertical-align: -15px;
+    }
+  }
 }

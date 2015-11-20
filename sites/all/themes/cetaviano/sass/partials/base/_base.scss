@@ -1,14 +1,18 @@
 // Rules for base elements
 body {
+    @include font-size(14);
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: $default-font;
     margin: 0;
 }
 
 html {
+    box-sizing: border-box;
     font-size: 62.5%;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-    width: inherit;
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
 }
