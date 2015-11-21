@@ -26,7 +26,7 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text_with_summary',
   );
 
   // Exported field_base: 'field_contenido'.
@@ -45,16 +45,16 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_descripcion_curso'.
-  $field_bases['field_descripcion_curso'] = array(
+  // Exported field_base: 'field_descripci_n_curso'.
+  $field_bases['field_descripci_n_curso'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_descripcion_curso',
+    'field_name' => 'field_descripci_n_curso',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -64,7 +64,7 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text_with_summary',
   );
 
   // Exported field_base: 'field_detalles_curso'.
@@ -146,13 +146,13 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_info_pago_curso'.
-  $field_bases['field_info_pago_curso'] = array(
+  // Exported field_base: 'field_info_pago_curso_'.
+  $field_bases['field_info_pago_curso_'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_info_pago_curso',
+    'field_name' => 'field_info_pago_curso_',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -162,7 +162,28 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text_with_summary',
+  );
+
+  // Exported field_base: 'field_inicio'.
+  $field_bases['field_inicio'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_inicio',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_profesor'.

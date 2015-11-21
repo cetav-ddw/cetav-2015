@@ -67,7 +67,7 @@ function carreras_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -81,16 +81,18 @@ function carreras_cetav_field_default_field_instances() {
     'label' => 'Cuerpo-skills-carreras',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'display_summary' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 20,
+        'summary_rows' => 5,
       ),
-      'type' => 'text_textfield',
+      'type' => 'text_textarea_with_summary',
       'weight' => 7,
     ),
   );
@@ -216,7 +218,7 @@ function carreras_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -230,7 +232,8 @@ function carreras_cetav_field_default_field_instances() {
     'label' => 'Skills-carrera',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'display_summary' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -238,9 +241,10 @@ function carreras_cetav_field_default_field_instances() {
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
+        'summary_rows' => 5,
       ),
-      'type' => 'text_textarea',
-      'weight' => 8,
+      'type' => 'text_textarea_with_summary',
+      'weight' => 9,
     ),
   );
 

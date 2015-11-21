@@ -11,62 +11,6 @@ function institucion_cetav_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'node-institucion-field_colaboradores_institucion'.
-  $field_instances['node-institucion-field_colaboradores_institucion'] = array(
-    'bundle' => 'institucion',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_colaboradores_institucion',
-    'label' => 'colaboradores-institucion',
-    'required' => 1,
-    'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'colaboradores_institucion' => 'colaboradores_institucion',
-        'detalles_cursolibre' => -1,
-        'skills' => -1,
-        'testimonios' => -1,
-      ),
-      'bundle_weights' => array(
-        'colaboradores_institucion' => 2,
-        'detalles_cursolibre' => 3,
-        'skills' => 4,
-        'testimonios' => 5,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-institucion-field_consejo_asesor_institucion'.
   $field_instances['node-institucion-field_consejo_asesor_institucion'] = array(
     'bundle' => 'institucion',
@@ -120,7 +64,7 @@ function institucion_cetav_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -161,7 +105,7 @@ function institucion_cetav_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -178,7 +122,7 @@ function institucion_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -190,19 +134,21 @@ function institucion_cetav_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_cuerpo_descripcion_institu',
     'label' => 'cuerpo-descripcion-institucion',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'display_summary' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'rows' => 40,
+        'summary_rows' => 5,
       ),
-      'type' => 'text_textarea',
-      'weight' => 4,
+      'type' => 'text_textarea_with_summary',
+      'weight' => 3,
     ),
   );
 
@@ -257,6 +203,69 @@ function institucion_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-institucion-field_nuestro_equipo_'.
+  $field_instances['node-institucion-field_nuestro_equipo_'] = array(
+    'bundle' => 'institucion',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nuestro_equipo_',
+    'label' => 'Nuestro equipo ',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'actualizaci_n_profesional_home' => -1,
+        'cetav_carreras_home' => -1,
+        'colaboradores_institucion' => 'colaboradores_institucion',
+        'consejo_asesor' => -1,
+        'detalles_cursolibre' => -1,
+        'programas_carreras' => -1,
+        'skills' => -1,
+        'testimonios' => -1,
+      ),
+      'bundle_weights' => array(
+        'actualizaci_n_profesional_home' => 2,
+        'cetav_carreras_home' => 3,
+        'colaboradores_institucion' => 4,
+        'consejo_asesor' => 5,
+        'detalles_cursolibre' => 6,
+        'programas_carreras' => 7,
+        'skills' => 8,
+        'testimonios' => 9,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-institucion-field_subtitulo_consejo_instituc'.
   $field_instances['node-institucion-field_subtitulo_consejo_instituc'] = array(
@@ -294,7 +303,7 @@ function institucion_cetav_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -381,7 +390,7 @@ function institucion_cetav_field_default_field_instances() {
       'module' => 'video_embed_field',
       'settings' => array(),
       'type' => 'video_embed_field_video',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -521,8 +530,8 @@ function institucion_cetav_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Imagen-personal');
+  t('Nuestro equipo ');
   t('Subtitulo-institucion');
-  t('colaboradores-institucion');
   t('consejo-asesor-institucion');
   t('cuerpo-descripcion-consejo-institucion');
   t('cuerpo-descripcion-institucion');

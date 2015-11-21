@@ -10,46 +10,59 @@
 function generacion_cetav_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-generacion-body'.
-  $field_instances['node-generacion-body'] = array(
+  // Exported field_instance: 'node-generacion-field_btn_anuario'.
+  $field_instances['node-generacion-field_btn_anuario'] = array(
     'bundle' => 'generacion',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
+        'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
+        'type' => 'link_default',
+        'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_btn_anuario',
+    'label' => 'btn-anuario',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
-      'text_processing' => 1,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 4,
     ),
   );
@@ -353,9 +366,9 @@ function generacion_cetav_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Image');
   t('Reel Generación');
+  t('btn-anuario');
   t('carrera');
   t('nombre');
   t('testimonio');
