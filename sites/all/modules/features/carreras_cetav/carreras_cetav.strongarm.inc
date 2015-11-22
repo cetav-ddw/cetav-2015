@@ -61,7 +61,7 @@ function carreras_cetav_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '8',
         ),
       ),
       'display' => array(),

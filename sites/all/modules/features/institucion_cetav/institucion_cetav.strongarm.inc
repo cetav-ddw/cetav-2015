@@ -71,7 +71,7 @@ function institucion_cetav_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '9',
         ),
       ),
       'display' => array(),
