@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 html {
   box-sizing: border-box; }
 
@@ -11,22 +14,19 @@ html {
   position: absolute !important; }
 
 body {
-  margin: 0; }
-
-html {
-  font-size: 62.5%; }
-
-img {
-  height: auto;
-  max-width: 100%;
-  width: inherit; }
-
-li,
-p {
   font-size: 14px;
   font-size: 1.4rem;
-  color: #555;
-  line-height: 1.5; }
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Open Sans", Arial, Verdana, sans-serif; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0; }
 
 dl,
 ol,
@@ -36,10 +36,53 @@ ul {
 
 ol,
 ul {
-  padding-left: 2em; }
+  margin: 0;
+  padding: 0; }
 
 p {
+  line-height: 1.2;
+  margin: 0;
   overflow: hidden; }
+
+em {
+  color: #77787b; }
+
+cite {
+  color: #77787b; }
+  cite:before {
+    content: "\2014 \2009"; }
+
+li {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  vertical-align: top; }
+
+strong {
+  color: #f19130; }
+
+blockquote {
+  border-left: 5px solid #f19130;
+  margin: 10px;
+  padding: 10px;
+  quotes: "“" "”" "‘" "’"; }
+  blockquote p {
+    display: inline-block; }
+    blockquote p:before {
+      font-size: 35px;
+      font-size: 3.5rem;
+      color: #ccc;
+      content: open-quote;
+      line-height: 0;
+      margin-right: 5px;
+      vertical-align: -15px; }
+    blockquote p:after {
+      font-size: 35px;
+      font-size: 3.5rem;
+      color: #ccc;
+      content: close-quote;
+      margin-left: 5px;
+      vertical-align: -15px; }
 
 h1,
 h2,
@@ -47,23 +90,66 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0; }
+  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  line-height: 1.2;
+  margin: 0; }
+
+h1 {
+  font-size: 44px;
+  font-size: 4.4rem; }
+
+h2 {
+  font-size: 40px;
+  font-size: 4rem;
+  color: #f19130; }
+
+h3 {
+  font-size: 36px;
+  font-size: 3.6rem; }
+
+h4 {
+  font-size: 22px;
+  font-size: 2.2rem; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #414042; }
+
+h6 {
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 a {
+  color: #f19130;
+  padding-bottom: 1px;
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
-a:hover {
-  text-decoration: underline; }
+button {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background: transparent;
+  border: 2px solid red;
+  color: red;
+  padding: 15px 40px; }
+  button:hover {
+    color: red;
+    background-color: red; }
 
 table {
-  font-size: 14px;
-  font-size: 1.4rem;
-  border-collapse: collapse;
+  font-size: 16px;
+  font-size: 1.6rem;
   width: 100%; }
-
-th,
-td {
-  padding: .5em; }
+  table thead {
+    color: #f19130; }
+  table td {
+    background-color: #9d9fa2;
+    padding: 25px;
+    width: 30%; }
+  table tr {
+    text-align: center; }
 
 label,
 .webform-container-inline label {
@@ -236,6 +322,8 @@ fieldset.collapsible .fieldset-legend {
   display: block;
   margin: 0;
   width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .resizable-textarea .grippie {
@@ -475,6 +563,8 @@ html.js fieldset.collapsed .fieldset-legend {
   background: #ccc;
   border-color: #666;
   margin: 0 0.2em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .progress .filled {
@@ -706,4 +796,5 @@ div.password-suggestions ul {
   /* LTR */
   clear: left;
   /* LTR */ }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+//
+// Multimedia
+//
+
+iframe {
+    margin-top: 9px;
+    vertical-align: top;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    width: inherit; /* IEB */
+}
