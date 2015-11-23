@@ -51,42 +51,34 @@ function admision_cetav_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_pasos_de_admision'.
-  $field_bases['field_pasos_de_admision'] = array(
+  // Exported field_base: 'field_pasos_admision'.
+  $field_bases['field_pasos_admision'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_pasos_de_admision',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'field_name' => 'field_pasos_admision',
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'paragraphs',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'paragraphs',
   );
 
-  // Exported field_base: 'field_requisitos_de_admision'.
-  $field_bases['field_requisitos_de_admision'] = array(
+  // Exported field_base: 'field_requisitos_admision'.
+  $field_bases['field_requisitos_admision'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_requisitos_de_admision',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'field_name' => 'field_requisitos_admision',
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'paragraphs',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'paragraphs',
   );
 
   // Exported field_base: 'field_subtitulo_info_admision'.
