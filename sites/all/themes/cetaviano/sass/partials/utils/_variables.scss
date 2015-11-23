@@ -6,14 +6,37 @@
 $sprite-image: "../images/global-sprite";
 
 // Typography
+@import url(https://fonts.googleapis.com/css?family=Montserrat),
+url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+$contrast-font:"Montserrat", Arial, Verdana, sans-serif; //Typography for titles
+$default-font: "Open Sans", Arial, Verdana, sans-serif; //Typography for body
 
 // Colors
 
+// Main Colors in CETAV's Brand book
+$dark-gray: #414042;
+$dark-green: #5d5e5a;
+$dark-orange: #dc661e;
+$dark-red: #9e280e;
+$gray: #77787b;
+$ligth-gray: #9d9fa2;
+$orange: #f19130;
+
+
+// Colors
+$animation-color: $dark-orange;
+$blue-dark: #243842;
+$ddw-color: $dark-red;
+$light-blue: #00c9ed;
+$main-color: $orange;
+$orange-light: #fab853;
+$post-color: $dark-green;
+$white: #fff;
 
 // Neat variables
-$max-width: 1200px;
 $grid-colums: 12;
+$max-width: 1200px;
 
 // Breakpoints
 // TL;DR, ems don't depend on the physical device size, whereas pixels do.

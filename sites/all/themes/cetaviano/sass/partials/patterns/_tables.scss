@@ -1,10 +1,20 @@
-table {
-    @include font-size(14);
-    border-collapse: collapse;
-    width: 100%;
-}
+//
+// Tables
+//
 
-th, 
-td {
-    padding: .5em;
+table {
+    @include font-size(16);
+    width: 100%;
+
+    thead {
+        color: $main-color;
+    }
+    td {
+        background-color: $ligth-gray;
+        padding: 25px;
+        width: 30%;
+    }
+    tr {
+        text-align: center;
+    }
 }

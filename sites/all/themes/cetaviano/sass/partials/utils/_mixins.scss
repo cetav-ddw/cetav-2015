@@ -18,10 +18,24 @@
     background-repeat: no-repeat;
 }
 
-// 
-// Media Queries mixin. Suppor min-width, you can pass it a varible 
+// button mixin
+@mixin button($color, $hover-color, $hover-font) {
+  @include font-size(18);
+  background: transparent;
+  border: 2px solid $color;
+  color: $color;
+  padding: 15px 40px;
+
+  &:hover {
+    color: $hover-font;
+    background-color: $hover-color;
+  }
+}
+
+//
+// Media Queries mixin. Suppor min-width, you can pass it a varible
 // or specific values
-// 
+//
 // usage example:
 //
 // @include mquery("medium") {
