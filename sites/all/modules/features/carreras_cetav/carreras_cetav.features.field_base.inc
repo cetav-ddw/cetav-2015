@@ -10,6 +10,25 @@
 function carreras_cetav_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_carreras_skills'.
+  $field_bases['field_carreras_skills'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_carreras_skills',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_with_summary',
+  );
+
   // Exported field_base: 'field_cuatrimestre'.
   $field_bases['field_cuatrimestre'] = array(
     'active' => 1,
@@ -104,25 +123,6 @@ function carreras_cetav_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'paragraphs',
-  );
-
-  // Exported field_base: 'field_skills_carrera'.
-  $field_bases['field_skills_carrera'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_skills_carrera',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_with_summary',
   );
 
   // Exported field_base: 'field_skills_icono'.
