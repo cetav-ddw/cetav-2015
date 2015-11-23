@@ -12,7 +12,7 @@ ul {
 }
 
 p {
-    line-height: 22px;
+    line-height: 1.2;
     margin: 0;
     overflow: hidden;
 }
@@ -23,6 +23,7 @@ em {
 
 cite {
     color: $gray;
+
     &:before {
         content: "\2014 \2009";
     }
@@ -30,7 +31,7 @@ cite {
 
 li {
     @include font-size(15);
-    line-height: 27px;
+    line-height: 1.2;
     vertical-align: top;
 }
 
@@ -46,6 +47,7 @@ blockquote {
 
   p {
     display: inline-block;
+
     &:before {
         @include font-size(35);
         color: #ccc;

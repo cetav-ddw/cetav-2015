@@ -25,6 +25,7 @@
   border: 2px solid $color;
   color: $color;
   padding: 15px 40px;
+
   &:hover {
     color: $hover-font;
     background-color: $hover-color;
@@ -37,7 +38,7 @@
 //
 // usage example:
 //
-// @include mquery($medium) {
+// @include mquery("medium") {
 //    content
 // }
 //
