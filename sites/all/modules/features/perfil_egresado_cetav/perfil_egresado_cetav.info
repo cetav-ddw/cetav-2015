@@ -80,3 +80,4 @@ features[variable][] = menu_parent_perfil_egresado
 features[variable][] = node_options_perfil_egresado
 features[variable][] = node_preview_perfil_egresado
 features[variable][] = node_submitted_perfil_egresado
+features_exclude[field_base][field_nombre_persona_] = field_nombre_persona_
