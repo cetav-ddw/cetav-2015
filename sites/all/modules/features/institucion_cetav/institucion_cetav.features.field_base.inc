@@ -41,7 +41,7 @@ function institucion_cetav_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_with_summary',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_cuerpo_descripcion_institu'.
@@ -60,7 +60,7 @@ function institucion_cetav_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_with_summary',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_descripcion'.
@@ -82,25 +82,6 @@ function institucion_cetav_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_descripcion_personal'.
-  $field_bases['field_descripcion_personal'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_descripcion_personal',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_with_summary',
   );
 
   // Exported field_base: 'field_imagen_header_institucion'.
