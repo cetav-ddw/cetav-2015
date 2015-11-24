@@ -153,6 +153,46 @@ function admision_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-admision-field_pasos_de_admision'.
+  $field_instances['node-admision-field_pasos_de_admision'] = array(
+    'bundle' => 'admision',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_pasos_de_admision',
+    'label' => 'pasos-de-admisión',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-admision-field_requisitos_admision'.
   $field_instances['node-admision-field_requisitos_admision'] = array(
     'bundle' => 'admision',
@@ -202,6 +242,46 @@ function admision_cetav_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-admision-field_requisitos_de_admision'.
+  $field_instances['node-admision-field_requisitos_de_admision'] = array(
+    'bundle' => 'admision',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_requisitos_de_admision',
+    'label' => 'requisitos-de-admisión',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
       'weight' => 4,
     ),
   );
@@ -292,7 +372,9 @@ function admision_cetav_field_default_field_instances() {
   t('Subtitulo-info-admisión');
   t('cuerpo-introducción-admisión');
   t('imagen-header-admisión');
+  t('pasos-de-admisión');
   t('requisitos-admisión');
+  t('requisitos-de-admisión');
   t('subtitulo-introducción-admisión');
 
   return $field_instances;

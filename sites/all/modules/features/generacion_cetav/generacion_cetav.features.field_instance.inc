@@ -364,6 +364,55 @@ function generacion_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'paragraphs_item-testimonios-field_testimonio_estudiantes'.
+  $field_instances['paragraphs_item-testimonios-field_testimonio_estudiantes'] = array(
+    'bundle' => 'testimonios',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'testimonial' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_testimonio_estudiantes',
+    'label' => 'testimonio-estudiantes',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Image');
@@ -372,6 +421,7 @@ function generacion_cetav_field_default_field_instances() {
   t('carrera');
   t('nombre');
   t('testimonio');
+  t('testimonio-estudiantes');
   t('testimonios');
 
   return $field_instances;

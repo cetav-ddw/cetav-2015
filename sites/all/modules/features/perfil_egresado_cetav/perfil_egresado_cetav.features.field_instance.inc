@@ -581,6 +581,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
     'label' => 'Pasa tiempos',
     'required' => 1,
     'settings' => array(
+      'display_summary' => 0,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -592,6 +593,48 @@ function perfil_egresado_cetav_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-perfil_egresado-field_sobre_mi'.
+  $field_instances['node-perfil_egresado-field_sobre_mi'] = array(
+    'bundle' => 'perfil_egresado',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sobre_mi',
+    'label' => 'sobre mi',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 7,
     ),
   );
 
@@ -726,6 +769,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
   t('Pasa tiempos');
   t('Twitter');
   t('Vimeo');
+  t('sobre mi');
 
   return $field_instances;
 }
