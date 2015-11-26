@@ -20,6 +20,31 @@ function carreras_cetav_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function carreras_cetav_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: intro_carreras.
+  $styles['intro_carreras'] = array(
+    'label' => 'intro carreras',
+    'effects' => array(
+      7 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1500,
+          'height' => 550,
+          'retinafy' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function carreras_cetav_node_info() {
