@@ -115,25 +115,6 @@ function generacion_cetav_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_testimonio_estudiantes'.
-  $field_bases['field_testimonio_estudiantes'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_testimonio_estudiantes',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_with_summary',
-  );
-
   // Exported field_base: 'field_testimonios'.
   $field_bases['field_testimonios'] = array(
     'active' => 1,

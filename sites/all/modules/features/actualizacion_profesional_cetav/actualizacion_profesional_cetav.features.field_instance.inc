@@ -49,7 +49,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -92,90 +92,6 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-actualizacion_profesional-field_curso_descripcion'.
-  $field_instances['node-actualizacion_profesional-field_curso_descripcion'] = array(
-    'bundle' => 'actualizacion_profesional',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 13,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_curso_descripcion',
-    'label' => 'Curso-Descripcion',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-actualizacion_profesional-field_descripci_n_curso'.
-  $field_instances['node-actualizacion_profesional-field_descripci_n_curso'] = array(
-    'bundle' => 'actualizacion_profesional',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_descripci_n_curso',
-    'label' => 'Descripción-curso',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 3,
     ),
   );
 
@@ -311,7 +227,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     'label' => 'Info-Pago-Curso',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -321,49 +237,6 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
         'rows' => 15,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-actualizacion_profesional-field_info_pago_curso_'.
-  $field_instances['node-actualizacion_profesional-field_info_pago_curso_'] = array(
-    'bundle' => 'actualizacion_profesional',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_info_pago_curso_',
-    'label' => 'Info-Pago-Curso	',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
       'weight' => 5,
     ),
   );
@@ -536,14 +409,11 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Contacto-Curso');
   t('Contenido');
-  t('Curso-Descripcion');
-  t('Descripción-curso');
   t('Detalles-curso');
   t('Duración:');
   t('Horario:');
   t('Imagen-curso');
   t('Info-Pago-Curso');
-  t('Info-Pago-Curso	');
   t('Profesor:');
   t('inicio:');
 

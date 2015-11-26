@@ -18,7 +18,7 @@ function admision_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -36,7 +36,7 @@ function admision_cetav_field_default_field_instances() {
     'label' => 'cuerpo-introducción-admisión',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -57,13 +57,13 @@ function admision_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
+        'label' => 'hidden',
+        'module' => 'cs_adaptive_image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'styles' => '',
         ),
-        'type' => 'image',
+        'type' => 'cs_adaptive_image',
         'weight' => 1,
       ),
       'teaser' => array(
@@ -100,59 +100,6 @@ function admision_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-admision-field_pasos_admision'.
-  $field_instances['node-admision-field_pasos_admision'] = array(
-    'bundle' => 'admision',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_pasos_admision',
-    'label' => 'Pasos-admisión',
-    'required' => 1,
-    'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'detalles_cursolibre' => -1,
-        'skills' => 'skills',
-        'testimonios' => -1,
-      ),
-      'bundle_weights' => array(
-        'detalles_cursolibre' => 2,
-        'skills' => 3,
-        'testimonios' => 4,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-admision-field_pasos_de_admision'.
   $field_instances['node-admision-field_pasos_de_admision'] = array(
     'bundle' => 'admision',
@@ -179,7 +126,7 @@ function admision_cetav_field_default_field_instances() {
     'label' => 'pasos-de-admisión',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -201,7 +148,7 @@ function admision_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
@@ -223,12 +170,22 @@ function admision_cetav_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
+        'actualizaci_n_profesional_home' => -1,
+        'cetav_carreras_home' => -1,
+        'colaboradores_institucion' => -1,
+        'consejo_asesor' => -1,
         'detalles_cursolibre' => -1,
+        'programas_carreras' => -1,
         'skills' => 'skills',
         'testimonios' => -1,
       ),
       'bundle_weights' => array(
+        'actualizaci_n_profesional_home' => 6,
+        'cetav_carreras_home' => 7,
+        'colaboradores_institucion' => 8,
+        'consejo_asesor' => 9,
         'detalles_cursolibre' => 2,
+        'programas_carreras' => 11,
         'skills' => 3,
         'testimonios' => 4,
       ),
@@ -272,7 +229,7 @@ function admision_cetav_field_default_field_instances() {
     'label' => 'requisitos-de-admisión',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -294,7 +251,7 @@ function admision_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -334,7 +291,7 @@ function admision_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -368,7 +325,6 @@ function admision_cetav_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Pasos-admisión');
   t('Subtitulo-info-admisión');
   t('cuerpo-introducción-admisión');
   t('imagen-header-admisión');
