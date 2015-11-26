@@ -60,7 +60,23 @@ function actualizacion_profesional_cetav_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_paragraphs_item__actualizaci_n_profesional_home';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'paragraphs_editor_preview' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'testimonial' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(),
       'display' => array(),

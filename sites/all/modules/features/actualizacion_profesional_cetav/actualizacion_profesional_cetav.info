@@ -18,6 +18,7 @@ dependencies[] = text
 features[ctools][] = ds:ds:1
 features[ctools][] = strongarm:strongarm:1
 features[ds_layout_settings][] = node|actualizacion_profesional|default
+features[ds_layout_settings][] = paragraphs_item|actualizaci_n_profesional_home|default
 features[features_api][] = api:2
 features[field_base][] = field_contacto_curso
 features[field_base][] = field_contenido
