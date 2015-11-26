@@ -30,6 +30,46 @@ function carreras_cetav_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|carreras|full';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'carreras';
+  $ds_fieldsetting->view_mode = 'full';
+  $ds_fieldsetting->settings = array(
+    'field_imagen_header_carrera' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_field',
+        ),
+      ),
+    ),
+    'field_subtitulo_carrera' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb-el' => 'h2',
+          'lb-cl' => 'subtitle subtitle-career',
+        ),
+      ),
+    ),
+    'field_titulo_skills_carreras' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb-el' => 'h4',
+          'lb-cl' => 'title-skills',
+        ),
+      ),
+    ),
+    'field_skills_carrera' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb-cl' => 'skills-list',
+        ),
+      ),
+    ),
+  );
+  $export['node|carreras|full'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'paragraphs_item|programas_carreras|full';
   $ds_fieldsetting->entity_type = 'paragraphs_item';
   $ds_fieldsetting->bundle = 'programas_carreras';
@@ -200,6 +240,45 @@ function carreras_cetav_ds_layout_settings_info() {
     'layout_disable_css' => 0,
   );
   $export['node|carreras|full'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'paragraphs_item|programas_carreras|default';
+  $ds_layout->entity_type = 'paragraphs_item';
+  $ds_layout->bundle = 'programas_carreras';
+  $ds_layout->view_mode = 'default';
+  $ds_layout->layout = 'panels-cetav_carreras';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'wide' => array(
+        0 => 'field_cuatrimestre',
+        1 => 'field_cursos_cuatrimestre',
+        2 => 'field_programa_cuatrimestres',
+      ),
+    ),
+    'fields' => array(
+      'field_cuatrimestre' => 'wide',
+      'field_cursos_cuatrimestre' => 'wide',
+      'field_programa_cuatrimestres' => 'wide',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'wide' => 'div',
+      'left' => 'div',
+      'right' => 'div',
+      'wide_second' => 'div',
+      'left_second' => 'div',
+      'right_second' => 'div',
+      'wide_third' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => 0,
+  );
+  $export['paragraphs_item|programas_carreras|default'] = $ds_layout;
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;

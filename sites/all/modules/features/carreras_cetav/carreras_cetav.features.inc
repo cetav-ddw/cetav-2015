@@ -25,6 +25,22 @@ function carreras_cetav_ctools_plugin_api($module = NULL, $api = NULL) {
 function carreras_cetav_image_default_styles() {
   $styles = array();
 
+  // Exported image style: cover_reel_carreras.
+  $styles['cover_reel_carreras'] = array(
+    'label' => 'cover reel carreras',
+    'effects' => array(
+      10 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 570,
+          'height' => 330,
+          'retinafy' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: intro_carreras.
   $styles['intro_carreras'] = array(
     'label' => 'intro carreras',
