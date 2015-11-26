@@ -291,6 +291,107 @@ function panels_cetav_home_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'paragraphs_item-actualizaci_n_profesional_home-field_btn_curso'.
+  $field_instances['paragraphs_item-actualizaci_n_profesional_home-field_btn_curso'] = array(
+    'bundle' => 'actualizaci_n_profesional_home',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_btn_curso',
+    'label' => 'btn-curso',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-actualizaci_n_profesional_home-field_curso_titulo'.
+  $field_instances['paragraphs_item-actualizaci_n_profesional_home-field_curso_titulo'] = array(
+    'bundle' => 'actualizaci_n_profesional_home',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_curso_titulo',
+    'label' => 'curso-titulo',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
   // 'paragraphs_item-actualizaci_n_profesional_home-field_fecha_inscripcion'.
   $field_instances['paragraphs_item-actualizaci_n_profesional_home-field_fecha_inscripcion'] = array(
     'bundle' => 'actualizaci_n_profesional_home',
@@ -388,8 +489,8 @@ function panels_cetav_home_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-cetav_carreras_home-field_boton_carrera'.
-  $field_instances['paragraphs_item-cetav_carreras_home-field_boton_carrera'] = array(
+  // 'paragraphs_item-cetav_carreras_home-field_btn_carrera'.
+  $field_instances['paragraphs_item-cetav_carreras_home-field_btn_carrera'] = array(
     'bundle' => 'cetav_carreras_home',
     'default_value' => NULL,
     'deleted' => 0,
@@ -397,9 +498,9 @@ function panels_cetav_home_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 2,
       ),
       'paragraphs_editor_preview' => array(
@@ -410,20 +511,37 @@ function panels_cetav_home_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_boton_carrera',
-    'label' => 'boton-carrera',
-    'required' => 1,
+    'field_name' => 'field_btn_carrera',
+    'label' => 'btn-carrera',
+    'required' => 0,
     'settings' => array(
-      'text_processing' => 1,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 3,
     ),
   );
@@ -697,10 +815,12 @@ function panels_cetav_home_field_default_field_instances() {
   t('Skills-icono');
   t('Skills-nombre');
   t('aliados-img');
-  t('boton-carrera');
   t('boton-curso');
+  t('btn-carrera');
+  t('btn-curso');
   t('carreras-tecnicas-home');
   t('cetav-logo');
+  t('curso-titulo');
   t('fecha-inscripcion');
   t('icono-carrera');
   t('nombre-consejo-asesor');

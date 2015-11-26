@@ -48,13 +48,13 @@ function institucion_cetav_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_descripcion'.
-  $field_bases['field_descripcion'] = array(
+  // Exported field_base: 'field_cuerpo_skills_carreras'.
+  $field_bases['field_cuerpo_skills_carreras'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_descripcion',
+    'field_name' => 'field_cuerpo_skills_carreras',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -62,11 +62,28 @@ function institucion_cetav_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'text_with_summary',
+  );
+
+  // Exported field_base: 'field_descripcion_personal'.
+  $field_bases['field_descripcion_personal'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_descripcion_personal',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_with_summary',
   );
 
   // Exported field_base: 'field_imagen_header_institucion'.
@@ -132,13 +149,13 @@ function institucion_cetav_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_nombre_personal'.
-  $field_bases['field_nombre_personal'] = array(
+  // Exported field_base: 'field_nombre_persona_'.
+  $field_bases['field_nombre_persona_'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_nombre_personal',
+    'field_name' => 'field_nombre_persona_',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -146,9 +163,11 @@ function institucion_cetav_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(),
+    'settings' => array(
+      'max_length' => 255,
+    ),
     'translatable' => 0,
-    'type' => 'text_with_summary',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_nuestro_equipo_'.
