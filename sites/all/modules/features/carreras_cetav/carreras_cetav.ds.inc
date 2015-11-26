@@ -103,50 +103,6 @@ function carreras_cetav_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|admision|default';
-  $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'admision';
-  $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'panels-cetav_admision';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'left' => array(
-        0 => 'field_imagen_admision',
-        1 => 'field_subtitulo_introduccion_adm',
-        2 => 'field_cuerpo_introduccion_admisi',
-        3 => 'field_requisitos_admision',
-        4 => 'field_subtitulo_info_admision',
-        5 => 'field_pasos_de_admision',
-        6 => 'field_requisitos_de_admision',
-      ),
-    ),
-    'fields' => array(
-      'field_imagen_admision' => 'left',
-      'field_subtitulo_introduccion_adm' => 'left',
-      'field_cuerpo_introduccion_admisi' => 'left',
-      'field_requisitos_admision' => 'left',
-      'field_subtitulo_info_admision' => 'left',
-      'field_pasos_de_admision' => 'left',
-      'field_requisitos_de_admision' => 'left',
-    ),
-    'classes' => array(),
-    'wrappers' => array(
-      'left' => 'div',
-      'right' => 'div',
-      'wide' => 'div',
-      'wide_second' => 'div',
-    ),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => 1,
-    'layout_link_attribute' => '',
-    'layout_link_custom' => '',
-    'layout_disable_css' => 0,
-  );
-  $export['node|admision|default'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|carreras|default';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'carreras';
