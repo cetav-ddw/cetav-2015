@@ -5,7 +5,6 @@ dependencies[] = ctools
 dependencies[] = email
 dependencies[] = features
 dependencies[] = image
-dependencies[] = institucion_cetav
 dependencies[] = link
 dependencies[] = multiple_selects
 dependencies[] = options
