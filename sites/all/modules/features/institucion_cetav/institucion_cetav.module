@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the institución feature.
- */
-
-include_once 'institucion_cetav.features.inc';
