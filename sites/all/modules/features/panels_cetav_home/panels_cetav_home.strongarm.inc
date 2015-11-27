@@ -49,14 +49,32 @@ function panels_cetav_home_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__cetav_carreras_home';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => TRUE,
+      ),
+      'preview' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '-5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'title' => array(
+          'default' => array(
+            'weight' => '-5',
+            'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '-5',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_fieldable_panels_pane__cetav_carreras_home'] = $strongarm;

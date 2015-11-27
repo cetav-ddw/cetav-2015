@@ -29,11 +29,6 @@ function panels_cetav_home_paragraphs_info() {
       'bundle' => 'actualizaci_n_profesional_home',
       'locked' => '1',
     ),
-    'cetav_carreras_home' => array(
-      'name' => 'cetav-carreras-home',
-      'bundle' => 'cetav_carreras_home',
-      'locked' => '1',
-    ),
     'consejo_asesor' => array(
       'name' => 'consejo-asesor',
       'bundle' => 'consejo_asesor',
