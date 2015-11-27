@@ -201,43 +201,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-perfil_egresado-field_disponibilidad'.
-  $field_instances['node-perfil_egresado-field_disponibilidad'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 15,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_disponibilidad',
-    'label' => 'Disponibilidad',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-perfil_egresado-field_disponibilidad_egresado'.
   $field_instances['node-perfil_egresado-field_disponibilidad_egresado'] = array(
@@ -422,43 +385,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-perfil_egresado-field_generacion'.
-  $field_instances['node-perfil_egresado-field_generacion'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_generacion',
-    'label' => 'Generación',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance: 'node-perfil_egresado-field_generacion_egresado'.
   $field_instances['node-perfil_egresado-field_generacion_egresado'] = array(
     'bundle' => 'perfil_egresado',
@@ -553,43 +479,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-perfil_egresado-field_habilidades'.
-  $field_instances['node-perfil_egresado-field_habilidades'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 17,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_habilidades',
-    'label' => 'Habilidades',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-perfil_egresado-field_habilidades_egresado'.
   $field_instances['node-perfil_egresado-field_habilidades_egresado'] = array(
     'bundle' => 'perfil_egresado',
@@ -624,56 +513,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
       'settings' => array(),
       'type' => 'multiple_selects',
       'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'node-perfil_egresado-field_imagen_personal'.
-  $field_instances['node-perfil_egresado-field_imagen_personal'] = array(
-    'bundle' => 'perfil_egresado',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_imagen_personal',
-    'label' => 'Imagen-personal',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 1,
     ),
   );
 
@@ -731,87 +570,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 15,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-perfil_egresado-field_mos_informacion_egresado'.
-  $field_instances['node-perfil_egresado-field_mos_informacion_egresado'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_mos_informacion_egresado',
-    'label' => 'Más_información_egresado',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'node-perfil_egresado-field_nombre_persona_'.
-  $field_instances['node-perfil_egresado-field_nombre_persona_'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nombre_persona_',
-    'label' => 'nombre-persona',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
     ),
   );
 
@@ -936,48 +694,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-perfil_egresado-field_sobre_mi'.
-  $field_instances['node-perfil_egresado-field_sobre_mi'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 25,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sobre_mi',
-    'label' => 'sobre mi',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 7,
-    ),
-  );
-
   // Exported field_instance: 'node-perfil_egresado-field_twitter'.
   $field_instances['node-perfil_egresado-field_twitter'] = array(
     'bundle' => 'perfil_egresado',
@@ -1097,27 +813,20 @@ function perfil_egresado_cetav_field_default_field_instances() {
   t('Acerca de mí');
   t('Behance');
   t('Carrera Técnica');
-  t('Disponibilidad');
   t('Disponibilidad_Egresado');
   t('Email');
   t('Facebook');
   t('Foto Perfil');
-  t('Generación');
   t('Generación Egresado');
   t('GitHub');
-  t('Habilidades');
-  t('Imagen-personal');
   t('Linkedin');
-  t('Más_información_egresado');
   t('Número Teléfono');
   t('Pasa tiempos');
   t('Twitter');
   t('Vimeo');
   t('contacto');
   t('habilidades_egresado');
-  t('nombre-persona');
   t('profesión_egresado');
-  t('sobre mi');
 
   return $field_instances;
 }
