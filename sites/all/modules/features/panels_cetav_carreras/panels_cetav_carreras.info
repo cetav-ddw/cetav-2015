@@ -21,6 +21,5 @@ features[user_permission][] = edit any carreras content
 features[user_permission][] = edit own carreras content
 features[variable][] = additional_settings__active_tab_carreras
 features[variable][] = diff_show_preview_changes_node_carreras
-features[variable][] = field_bundle_settings_paragraphs_item__cetav_carreras_home
 features[variable][] = save_continue_carreras
 features_exclude[field_base][comment_body] = comment_body
