@@ -154,10 +154,41 @@ function panels_cetav_home_default_page_manager_pages() {
     $display->content['new-135e5cb3-ff31-4023-b8b5-7ac33a427352'] = $pane;
     $display->panels['right_second'][0] = 'new-135e5cb3-ff31-4023-b8b5-7ac33a427352';
     $pane = new stdClass();
-    $pane->pid = 'new-d7b5198c-6263-40e2-a656-895f2ec3bfeb';
+    $pane->pid = 'new-52d0d940-7b4e-4e74-8853-bf9d179f8322';
+    $pane->panel = 'wide';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<div class="max-content content-header">
+      <div class="type-wrap">
+            <p>Somos</p>
+            <div id="typed-strings" style="display: none;">
+                <p><strong>Creatividad, Innovación y Tecnología</strong></p>
+            </div>
+            <span id="typed" style="white-space:pre;"><strong>Creatividad, Innovación y Tecnología</strong></span><span class="typed-cursor">|</span>
+        </div>
+    </div>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '52d0d940-7b4e-4e74-8853-bf9d179f8322';
+    $display->content['new-52d0d940-7b4e-4e74-8853-bf9d179f8322'] = $pane;
+    $display->panels['wide'][0] = 'new-52d0d940-7b4e-4e74-8853-bf9d179f8322';
+    $pane = new stdClass();
+    $pane->pid = 'new-10184f3b-815d-43c4-929b-d6d491e97ae9';
     $pane->panel = 'wide_fourth';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:13';
+    $pane->subtype = 'fpid:11';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -169,9 +200,9 @@ function panels_cetav_home_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'd7b5198c-6263-40e2-a656-895f2ec3bfeb';
-    $display->content['new-d7b5198c-6263-40e2-a656-895f2ec3bfeb'] = $pane;
-    $display->panels['wide_fourth'][0] = 'new-d7b5198c-6263-40e2-a656-895f2ec3bfeb';
+    $pane->uuid = '10184f3b-815d-43c4-929b-d6d491e97ae9';
+    $display->content['new-10184f3b-815d-43c4-929b-d6d491e97ae9'] = $pane;
+    $display->panels['wide_fourth'][0] = 'new-10184f3b-815d-43c4-929b-d6d491e97ae9';
     $pane = new stdClass();
     $pane->pid = 'new-ce564dc6-f61f-4145-ad5c-cf6c3966d078';
     $pane->panel = 'wide_fourth';
@@ -192,10 +223,10 @@ function panels_cetav_home_default_page_manager_pages() {
     $display->content['new-ce564dc6-f61f-4145-ad5c-cf6c3966d078'] = $pane;
     $display->panels['wide_fourth'][1] = 'new-ce564dc6-f61f-4145-ad5c-cf6c3966d078';
     $pane = new stdClass();
-    $pane->pid = 'new-10184f3b-815d-43c4-929b-d6d491e97ae9';
+    $pane->pid = 'new-d7b5198c-6263-40e2-a656-895f2ec3bfeb';
     $pane->panel = 'wide_fourth';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:11';
+    $pane->subtype = 'fpid:13';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -207,9 +238,9 @@ function panels_cetav_home_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '10184f3b-815d-43c4-929b-d6d491e97ae9';
-    $display->content['new-10184f3b-815d-43c4-929b-d6d491e97ae9'] = $pane;
-    $display->panels['wide_fourth'][2] = 'new-10184f3b-815d-43c4-929b-d6d491e97ae9';
+    $pane->uuid = 'd7b5198c-6263-40e2-a656-895f2ec3bfeb';
+    $display->content['new-d7b5198c-6263-40e2-a656-895f2ec3bfeb'] = $pane;
+    $display->panels['wide_fourth'][2] = 'new-d7b5198c-6263-40e2-a656-895f2ec3bfeb';
     $pane = new stdClass();
     $pane->pid = 'new-e73bfca0-ab8a-49f1-80bb-25e61216cbcb';
     $pane->panel = 'wide_second';
