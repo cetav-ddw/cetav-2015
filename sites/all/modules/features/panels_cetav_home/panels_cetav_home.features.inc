@@ -34,11 +34,6 @@ function panels_cetav_home_paragraphs_info() {
       'bundle' => 'consejo_asesor',
       'locked' => '1',
     ),
-    'skills' => array(
-      'name' => 'icono-texto',
-      'bundle' => 'skills',
-      'locked' => '1',
-    ),
   );
   return $items;
 }
