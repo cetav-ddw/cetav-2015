@@ -10,25 +10,6 @@
 function actualizacion_profesional_cetav_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_contacto_curso'.
-  $field_bases['field_contacto_curso'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_contacto_curso',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'text_with_summary',
-  );
-
   // Exported field_base: 'field_contenido'.
   $field_bases['field_contenido'] = array(
     'active' => 1,
@@ -48,28 +29,53 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_detalles_curso'.
-  $field_bases['field_detalles_curso'] = array(
+  // Exported field_base: 'field_cupo'.
+  $field_bases['field_cupo'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_detalles_curso',
-    'indexes' => array(),
+    'field_name' => 'field_cupo',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'paragraphs',
-    'settings' => array(),
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
     'translatable' => 0,
-    'type' => 'paragraphs',
+    'type' => 'text',
   );
 
-  // Exported field_base: 'field_duracion_curso'.
-  $field_bases['field_duracion_curso'] = array(
+  // Exported field_base: 'field_descripcion_curso'.
+  $field_bases['field_descripcion_curso'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_duracion_curso',
+    'field_name' => 'field_descripcion_curso',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_duracion'.
+  $field_bases['field_duracion'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_duracion',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -113,13 +119,13 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_horario_curso'.
-  $field_bases['field_horario_curso'] = array(
+  // Exported field_base: 'field_horario'.
+  $field_bases['field_horario'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_horario_curso',
+    'field_name' => 'field_horario',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -156,13 +162,13 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_info_pago_curso'.
-  $field_bases['field_info_pago_curso'] = array(
+  // Exported field_base: 'field_lugar'.
+  $field_bases['field_lugar'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_info_pago_curso',
+    'field_name' => 'field_lugar',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -170,18 +176,20 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(),
+    'settings' => array(
+      'max_length' => 255,
+    ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text',
   );
 
-  // Exported field_base: 'field_inicio'.
-  $field_bases['field_inicio'] = array(
+  // Exported field_base: 'field_precio'.
+  $field_bases['field_precio'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_inicio',
+    'field_name' => 'field_precio',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -203,6 +211,48 @@ function actualizacion_profesional_cetav_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_profesor',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_telefono'.
+  $field_bases['field_telefono'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_telefono',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_title_curso'.
+  $field_bases['field_title_curso'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_title_curso',
     'indexes' => array(
       'format' => array(
         0 => 'format',
