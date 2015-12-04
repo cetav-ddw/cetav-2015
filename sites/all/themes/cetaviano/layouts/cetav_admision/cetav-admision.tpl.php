@@ -28,7 +28,7 @@
 
     <?php if ($content['wide']): ?>
     <div class="panel-container panel-wide">
-      <?php print $content['wide_second']; ?>
+      <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
 </div>
