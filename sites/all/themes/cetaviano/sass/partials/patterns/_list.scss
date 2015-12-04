@@ -1,12 +1,12 @@
 .line-grid {
-	clear: both;
+    clear: both;
     padding-top: 50px;
     
-	li:after {
-		content: "• ";
-	    color: #00c9ed;
-	    font-size: 22px;
-	    float: left;
-	    margin-right: 11px;
-	}
+    li:after {
+        content: "• ";
+        color: #00c9ed;
+        font-size: 22px;
+        float: left;
+        margin-right: 11px;
+    }
 }
