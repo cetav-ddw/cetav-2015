@@ -8,14 +8,40 @@ button {
 
 // Buttons Careers
 .btn-admision a, 
-.btn-download a{
-	@include button($dark-red, $dark-red, $white);
-	display: block;
-	margin: 25px auto;
-	text-align: center;
-	width: 250px;
+.btn-download {
+    @include button($dark-red, $dark-red, $white);
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    width: 250px;
+}
+
+.btn-download {
+    cursor: pointer;
+    position: relative;
+
+    a {
+        display: block;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        text-indent: 100%;
+        top: 0;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .file {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 }
 
 .btn-download img {
-	display: none;
+    display: none;
 }
+
