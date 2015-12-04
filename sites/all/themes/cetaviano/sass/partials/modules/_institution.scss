@@ -1,0 +1,54 @@
+.field-name-field-personal {
+    .field-items {
+        @include outer-container;
+        > .field-item {
+            @include span-columns(3);
+            text-align: center;
+            img {
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .personal-name {
+        color: $gray;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .personal-charge {
+        p {
+            @include font-size(13);
+            background-color: $super-light-gray;
+            border-radius: 5px;
+            color: $gray;
+            display: inline-block;
+            height: 54px;
+            margin: 21px 0;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            width: 100%;
+        }
+    }
+
+    .personal-description {
+        p {
+            @include font-size(12);
+            color: $dark-gray;
+            text-align: left;
+        }
+    }
+}
+
+//PROVISIONAL styles of black ul list
+
+ul {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+li {
+    color: $dark-gray;
+}

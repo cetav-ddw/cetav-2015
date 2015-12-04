@@ -1,3 +1,15 @@
 //
 // General layout rules
 //
+
+.main {
+    margin: 0 auto;
+    max-width: $max-width;
+}
+
+.center-wrapper, .panel-wide {
+    padding: 80px 16px;
+    overflow: hidden;
+}
+
+
