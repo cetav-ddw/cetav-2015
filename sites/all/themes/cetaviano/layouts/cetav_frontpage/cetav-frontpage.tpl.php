@@ -12,7 +12,7 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
+  <div class="center-wrapper call-out call-out-home-intro">
     <div class="panel-container panel-left-column">
       <?php print $content['left']; ?>
     </div>
@@ -21,27 +21,30 @@
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide">
+    <div class="panel-container panel-wide panel-wide-courses">
       <?php print $content['wide_second']; ?>
-    </div>
-  <?php endif ?>
-  <?php if ($content['wide_third']): ?>
-    <div class="panel-container panel-wide">
-      <?php print $content['wide_third']; ?>
     </div>
   <?php endif ?>
   <div class="center-wrapper">
     <div class="panel-container panel-left-column">
       <?php print $content['left_second']; ?>
     </div>
-
     <div class="panel-container panel-right-column">
       <?php print $content['right_second']; ?>
     </div>
   </div>
+  <?php endif ?>
+  <div class="center-wrapper">
+    <div class="panel-container panel-left-column">
+      <?php print $content['left_third']; ?>
+    </div>
+    <div class="panel-container panel-right-column">
+      <?php print $content['right_third']; ?>
+    </div>
+  </div>
   <?php if ($content['wide_fourth']): ?>
     <div class="panel-container panel-wide">
-      <div class="content-width">
+      <div class="content-width center-wrapper">
       <?php print $content['wide_fourth']; ?>
       </div>
     </div>
