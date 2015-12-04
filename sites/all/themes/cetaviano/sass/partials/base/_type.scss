@@ -12,6 +12,7 @@ ul {
 }
 
 p {
+    @include font-size(16);
     line-height: 1.2;
     margin: 0;
     overflow: hidden;
