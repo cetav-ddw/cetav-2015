@@ -33,7 +33,6 @@
       <?php print $content['right_second']; ?>
     </div>
   </div>
-  <?php endif ?>
   <div class="center-wrapper">
     <div class="panel-container panel-left-column">
       <?php print $content['left_third']; ?>
