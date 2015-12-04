@@ -44,7 +44,6 @@ features[field_instance][] = paragraphs_item-detalles_cursolibre-field_profesor
 features[node][] = actualizacion_profesional
 features[paragraphs][] = detalles_cursolibre
 features[variable][] = field_bundle_settings_node__actualizacion_profesional
-features[variable][] = field_bundle_settings_paragraphs_item__actualizaci_n_profesional_home
 features[variable][] = menu_options_actualizacion_profesional
 features[variable][] = menu_parent_actualizacion_profesional
 features[variable][] = node_options_actualizacion_profesional

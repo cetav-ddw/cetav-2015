@@ -24,11 +24,6 @@ function panels_cetav_home_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function panels_cetav_home_paragraphs_info() {
   $items = array(
-    'actualizaci_n_profesional_home' => array(
-      'name' => 'actualización-profesional-home',
-      'bundle' => 'actualizaci_n_profesional_home',
-      'locked' => '1',
-    ),
     'consejo_asesor' => array(
       'name' => 'consejo-asesor',
       'bundle' => 'consejo_asesor',
