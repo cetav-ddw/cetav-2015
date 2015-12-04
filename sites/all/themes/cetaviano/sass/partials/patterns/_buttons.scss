@@ -14,6 +14,10 @@ button {
     margin: 25px auto;
     text-align: center;
     width: 250px;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .btn-download {
