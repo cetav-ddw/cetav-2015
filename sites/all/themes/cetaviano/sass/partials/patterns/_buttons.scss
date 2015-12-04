@@ -5,3 +5,17 @@
 button {
     @include button(red, red, red); //$color-border-type, $color-hover-type, $color-hover-background
 }
+
+// Buttons Careers
+.btn-admision a, 
+.btn-download a{
+	@include button($dark-red, $dark-red, $white);
+	display: block;
+	margin: 25px auto;
+	text-align: center;
+	width: 250px;
+}
+
+.btn-download img {
+	display: none;
+}
