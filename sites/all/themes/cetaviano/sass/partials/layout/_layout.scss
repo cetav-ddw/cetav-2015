@@ -19,10 +19,8 @@
     @include span-columns(12);
     display: block;
     
-
     @include mquery("medium") {
         @include span-columns(5);
         display: inline-block;      
     }
-
 }
