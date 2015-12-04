@@ -10,6 +10,115 @@
 function actualizacion_profesional_cetav_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance:
+  // 'entityform-formulario_envio_de_pago-field_form_email'.
+  $field_instances['entityform-formulario_envio_de_pago-field_form_email'] = array(
+    'bundle' => 'formulario_envio_de_pago',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'entityform',
+    'field_name' => 'field_form_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'entityform-formulario_envio_de_pago-field_form_nombre'.
+  $field_instances['entityform-formulario_envio_de_pago-field_form_nombre'] = array(
+    'bundle' => 'formulario_envio_de_pago',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'entityform',
+    'field_name' => 'field_form_nombre',
+    'label' => 'Nombre',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'entityform-formulario_envio_de_pago-field_subir_comprobante'.
+  $field_instances['entityform-formulario_envio_de_pago-field_subir_comprobante'] = array(
+    'bundle' => 'formulario_envio_de_pago',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 2,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'entityform',
+    'field_name' => 'field_subir_comprobante',
+    'label' => 'Subir comprobante',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'pdf jpg png jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-actualizacion_profesional-field_contenido'.
   $field_instances['node-actualizacion_profesional-field_contenido'] = array(
     'bundle' => 'actualizacion_profesional',
@@ -578,12 +687,15 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
   t('Correo');
   t('Cupo');
   t('Duracion');
+  t('Email');
   t('Fecha del curso');
   t('Horario');
   t('Imagen-curso');
   t('Lugar');
+  t('Nombre');
   t('Precio');
   t('Profesor');
+  t('Subir comprobante');
   t('Telefono');
   t('descripcion-curso');
   t('title-curso');
