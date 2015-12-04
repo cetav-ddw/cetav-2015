@@ -10,7 +10,8 @@ $plugin = array(
   'regions' => array(
     'left' => t('Left side'),
     'right' => t('Right side'),
-    'wide' => t('Wide'),
-    'wide_second' => t('Wide second')
+    'left_second' => t('Left side'),
+    'right_second' => t('Right side'),
+    'wide' => t('Wide')
   ),
 );

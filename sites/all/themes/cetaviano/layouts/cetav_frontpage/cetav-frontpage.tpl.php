@@ -42,7 +42,7 @@
     </div>
   </div>
   <?php if ($content['wide_fourth']): ?>
-    <div class="panel-container panel-wide">
+    <div class="panel-container panel-wide panel-wide-allies">
       <div class="content-width center-wrapper">
       <?php print $content['wide_fourth']; ?>
       </div>
