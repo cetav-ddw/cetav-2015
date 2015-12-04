@@ -52,6 +52,46 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-actualizacion_profesional-field_correo'.
+  $field_instances['node-actualizacion_profesional-field_correo'] = array(
+    'bundle' => 'actualizacion_profesional',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_correo',
+    'label' => 'Correo',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-actualizacion_profesional-field_cupo'.
   $field_instances['node-actualizacion_profesional-field_cupo'] = array(
     'bundle' => 'actualizacion_profesional',
@@ -363,7 +403,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -535,6 +575,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Contenido');
+  t('Correo');
   t('Cupo');
   t('Duracion');
   t('Fecha del curso');

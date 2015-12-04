@@ -518,7 +518,7 @@ function carreras_cetav_field_default_field_instances() {
         'weight' => 2,
       ),
       'full' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
@@ -531,7 +531,7 @@ function carreras_cetav_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
-    'ds_extras_field_template' => 'theme_ds_field_reset',
+    'ds_extras_field_template' => '',
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_modulo_descargar_programa',
     'label' => 'modulo-descargar-programa',

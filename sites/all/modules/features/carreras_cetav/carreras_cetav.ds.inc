@@ -80,6 +80,35 @@ function carreras_cetav_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_modulo_descargar_programa' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'lb' => 'Descargar programa',
+          'lb-el' => 'span',
+          'lb-cl' => 'btn-download-label',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'btn-download',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_proceso_admision' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'btn-admision',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['paragraphs_item|programas_carreras|full'] = $ds_fieldsetting;
 
