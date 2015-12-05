@@ -22,7 +22,7 @@ function generacion_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -31,6 +31,7 @@ function generacion_cetav_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_btn_anuario',
     'label' => 'btn-anuario',
@@ -42,7 +43,7 @@ function generacion_cetav_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => '_blank',
+        'target' => 'default',
         'title' => '',
       ),
       'display' => array(
@@ -63,7 +64,7 @@ function generacion_cetav_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 1,
+      'weight' => 31,
     ),
   );
 
@@ -75,7 +76,7 @@ function generacion_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'video_embed_field',
         'settings' => array(
           'description' => 1,
@@ -83,7 +84,7 @@ function generacion_cetav_field_default_field_instances() {
           'video_style' => 'normal',
         ),
         'type' => 'video_embed_field',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -92,10 +93,11 @@ function generacion_cetav_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_reel_generacion',
     'label' => 'Reel Generación',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'allowed_providers' => array(
         'vimeo' => 'vimeo',
@@ -110,56 +112,7 @@ function generacion_cetav_field_default_field_instances() {
       'module' => 'video_embed_field',
       'settings' => array(),
       'type' => 'video_embed_field_video',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-generacion-field_testimonios'.
-  $field_instances['node-generacion-field_testimonios'] = array(
-    'bundle' => 'generacion',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_testimonios',
-    'label' => 'testimonios',
-    'required' => 1,
-    'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'testimonios' => 'testimonios',
-      ),
-      'bundle_weights' => array(
-        'testimonios' => 2,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Testimonio',
-      'title_multiple' => 'Testimonios',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 3,
+      'weight' => 32,
     ),
   );
 
@@ -270,53 +223,6 @@ function generacion_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'paragraphs_item-testimonios-field_nombre'.
-  $field_instances['paragraphs_item-testimonios-field_nombre'] = array(
-    'bundle' => 'testimonios',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'testimonial' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_nombre',
-    'label' => 'nombre',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance: 'paragraphs_item-testimonios-field_testimonio'.
   $field_instances['paragraphs_item-testimonios-field_testimonio'] = array(
     'bundle' => 'testimonios',
@@ -345,6 +251,7 @@ function generacion_cetav_field_default_field_instances() {
         'weight' => 3,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_testimonio',
     'label' => 'testimonio',
@@ -370,9 +277,7 @@ function generacion_cetav_field_default_field_instances() {
   t('Reel Generación');
   t('btn-anuario');
   t('carrera');
-  t('nombre');
   t('testimonio');
-  t('testimonios');
 
   return $field_instances;
 }
