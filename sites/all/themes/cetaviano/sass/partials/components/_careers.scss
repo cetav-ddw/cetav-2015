@@ -1,0 +1,71 @@
+.career-program {
+
+}
+
+.career-program .paragraphs-item-programas-carreras {
+    background-color: $white;
+    box-shadow: 0 0 13px #c2bebe;
+    height: 300px;
+    margin: 30px 6px;
+
+    h4 {
+        background-color: $dark-red;
+        color: white;
+        margin-top: 0;
+        padding: 15px;
+    }
+    ul {
+        list-style: none;
+        padding: 25px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include mquery("small") {
+        @include span-columns(6);
+        display: inline-block;
+        margin-right: 0 !important;
+        vertical-top: top;
+    }
+
+    @include mquery("medium") {
+        @include span-columns(4);
+        margin: 30px 13px;
+        vertical-top: top;
+    }
+}
+
+.section-skills {
+    background-color: $blue-dark;
+    background-image: url(../images/skills-back.png);
+    margin: 0;
+    width: 100%;
+
+    p {
+        color: $white;
+    }
+}
+
+.pane-node-field-titulo-skills-carreras {
+    @include mquery("medium") {
+        @include span-columns(5);
+    }
+
+    h4 {
+        @include font-size(28);
+        color: $light-blue;
+    }
+}
+    
+.pane-node-field-cuerpo-skills-carreras {
+    @include mquery("medium") {
+        @include span-columns(7);
+        @include omega();
+    }
+}
+
+.pane-node-field-skills-carrera {
+    clear: both;
+}
