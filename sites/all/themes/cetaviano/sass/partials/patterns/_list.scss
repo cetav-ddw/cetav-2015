@@ -3,13 +3,6 @@
     padding-top: 50px;
     
     li {
-        list-style: none;
-    }
-
-    li:before {
-        content: "• ";
         color: #00c9ed;
-        font-size: 22px;
-        margin-right: 11px;
     }
 }

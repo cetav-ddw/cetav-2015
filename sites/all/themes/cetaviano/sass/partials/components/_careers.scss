@@ -1,4 +1,8 @@
-.career-program .paragraphs-item-programas-carreras{
+.career-program {
+
+}
+
+.career-program .paragraphs-item-programas-carreras {
     background-color: $white;
     box-shadow: 0 0 13px #c2bebe;
     height: 300px;
@@ -8,9 +12,8 @@
         background-color: $dark-red;
         color: white;
         margin-top: 0;
-        padding: 15px;      
+        padding: 15px;
     }
-
     ul {
         list-style: none;
         padding: 25px;
@@ -40,33 +43,29 @@
     margin: 0;
     width: 100%;
 
-    li, 
     p {
         color: $white;
     }
 }
 
 .pane-node-field-titulo-skills-carreras {
+    @include mquery("medium") {
+        @include span-columns(5);
+    }
+
     h4 {
         @include font-size(28);
         color: $light-blue;
-    }
-
-    @include mquery("medium") {
-        @include span-columns(5);
-        display: inline-block;
     }
 }
     
 .pane-node-field-cuerpo-skills-carreras {
     @include mquery("medium") {
         @include span-columns(7);
-        float: right;
+        @include omega();
     }
 }
 
 .pane-node-field-skills-carrera {
     clear: both;
 }
-
-
