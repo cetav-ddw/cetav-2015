@@ -26,14 +26,15 @@
     <div class="panel-container panel-wide">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
-      </div>      
+      </div>
     </div>
+       </div>
   <?php endif ?>
  <?php if ($content['wide_third']): ?>
     <div class="panel-container panel-wide section-skills">
-      <div class="grid-width">
-        <?php print $content['wide_third']; ?>
-      </div>      
+    <div class="grid-width">
+      <?php print $content['wide_third']; ?>
+    </div>
     </div>
   <?php endif ?>
 </div>
