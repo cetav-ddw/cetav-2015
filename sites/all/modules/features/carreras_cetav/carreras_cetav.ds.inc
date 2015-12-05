@@ -52,8 +52,13 @@ function carreras_cetav_ds_field_settings_info() {
     'field_titulo_skills_carreras' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'lb-el' => 'h4',
-          'lb-cl' => 'title-skills',
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'title-skills',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -200,8 +205,6 @@ function carreras_cetav_ds_layout_settings_info() {
       'left' => 'div',
       'right' => 'div',
       'wide_second' => 'div',
-      'left_second' => 'div',
-      'right_second' => 'div',
       'wide_third' => 'div',
     ),
     'layout_wrapper' => 'div',
