@@ -1,3 +1,26 @@
 //
 // General layout rules
 //
+
+.grid-width {
+    margin: 0 auto;
+    max-width: $max-width;
+}
+
+.center-wrapper,
+.panel-wide {
+    clear: both;
+    overflow: hidden;
+    padding: 40px 16px;
+}
+
+.panel-left-column,
+.panel-right-column {
+    @include span-columns(12);
+    display: block;
+    
+    @include mquery("medium") {
+        @include span-columns(5);
+        display: inline-block;      
+    }
+}
