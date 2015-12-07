@@ -44,7 +44,7 @@ function noticia_cetav_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '1',
+          'weight' => '3',
         ),
         'path' => array(
           'weight' => '4',

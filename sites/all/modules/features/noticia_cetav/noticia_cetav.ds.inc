@@ -17,15 +17,10 @@ function noticia_cetav_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'noticia';
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '1',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
     'post_date' => array(
-      'weight' => '2',
+      'weight' => '3',
       'label' => 'hidden',
-      'format' => 'ds_post_date_date_global',
+      'format' => 'ds_post_date_long',
     ),
   );
   $export['node|noticia|full'] = $ds_fieldsetting;
@@ -50,14 +45,14 @@ function noticia_cetav_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image',
-        1 => 'title',
+        1 => 'field_title_noticia',
         2 => 'post_date',
         3 => 'body',
       ),
     ),
     'fields' => array(
       'field_image' => 'ds_content',
-      'title' => 'ds_content',
+      'field_title_noticia' => 'ds_content',
       'post_date' => 'ds_content',
       'body' => 'ds_content',
     ),

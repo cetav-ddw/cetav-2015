@@ -231,6 +231,76 @@ function carreras_cetav_default_page_manager_handlers() {
     $display->content['new-69a2b37d-1ee0-4c4f-8835-00918adb36c5'] = $pane;
     $display->panels['wide'][0] = 'new-69a2b37d-1ee0-4c4f-8835-00918adb36c5';
     $pane = new stdClass();
+    $pane->pid = 'new-b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $pane->panel = 'wide';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_titulo_carrera';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h2',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 1,
+          'class' => 'title-career',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $display->content['new-b0ac5ea2-322b-496c-b122-57a153ad579f'] = $pane;
+    $display->panels['wide'][1] = 'new-b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $pane = new stdClass();
     $pane->pid = 'new-2266c091-7d97-4a25-a4d4-26debf6adbb5';
     $pane->panel = 'wide_second';
     $pane->type = 'entity_field';

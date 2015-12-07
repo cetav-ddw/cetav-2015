@@ -42,11 +42,6 @@ function carreras_cetav_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_programa_carreras' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
     'field_skills_carrera' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -184,19 +179,21 @@ function carreras_cetav_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'wide' => array(
-        0 => 'field_sub_title_carreras',
-        1 => 'field_imagen_header_carrera',
-        2 => 'field_intro_carreras',
-        3 => 'field_video_carrera',
-        4 => 'field_programa_carreras',
-        5 => 'field_titulo_skills_carreras',
-        6 => 'field_cuerpo_skills_carreras',
-        7 => 'field_skills_carrera',
+        0 => 'field_imagen_header_carrera',
+        1 => 'field_titulo_carrera',
+        2 => 'field_sub_title_carreras',
+        3 => 'field_intro_carreras',
+        4 => 'field_video_carrera',
+        5 => 'field_programa_carreras',
+        6 => 'field_titulo_skills_carreras',
+        7 => 'field_cuerpo_skills_carreras',
+        8 => 'field_skills_carrera',
       ),
     ),
     'fields' => array(
-      'field_sub_title_carreras' => 'wide',
       'field_imagen_header_carrera' => 'wide',
+      'field_titulo_carrera' => 'wide',
+      'field_sub_title_carreras' => 'wide',
       'field_intro_carreras' => 'wide',
       'field_video_carrera' => 'wide',
       'field_programa_carreras' => 'wide',

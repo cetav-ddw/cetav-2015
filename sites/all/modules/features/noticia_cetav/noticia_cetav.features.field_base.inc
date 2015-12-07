@@ -10,33 +10,54 @@
 function noticia_cetav_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_leer_mas'.
-  $field_bases['field_leer_mas'] = array(
+  // Exported field_base: 'field_noticia_date'.
+  $field_bases['field_noticia_date'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_leer_mas',
+    'field_name' => 'field_noticia_date',
     'indexes' => array(),
     'locked' => 0,
-    'module' => 'link',
+    'module' => 'date',
     'settings' => array(
-      'attributes' => array(
-        'class' => '',
-        'rel' => '',
-        'target' => 'default',
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 'day',
+        'hour' => 0,
+        'minute' => 0,
+        'month' => 'month',
+        'second' => 0,
+        'year' => 'year',
       ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'title' => 'optional',
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
+      'timezone_db' => '',
+      'todate' => '',
+      'tz_handling' => 'none',
     ),
     'translatable' => 0,
-    'type' => 'link_field',
+    'type' => 'datetime',
+  );
+
+  // Exported field_base: 'field_title_noticia'.
+  $field_bases['field_title_noticia'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_title_noticia',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   return $field_bases;
