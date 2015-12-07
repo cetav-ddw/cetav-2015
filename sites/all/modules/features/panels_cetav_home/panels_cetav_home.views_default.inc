@@ -144,8 +144,8 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['fields']['field_imagen_curso']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_imagen_curso']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_imagen_curso']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
+    'image_style' => 'imagen_cursos_perfil_profesional',
+    'image_link' => 'content',
   );
   $export['cursos'] = $view;
 

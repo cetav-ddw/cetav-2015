@@ -17,6 +17,11 @@ function panels_cetav_home_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'call_out_img';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'field_image' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_titulo' => array(
       'formatter_settings' => array(
         'ft' => array(
