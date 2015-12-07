@@ -18,9 +18,22 @@ function noticia_cetav_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
     'post_date' => array(
-      'weight' => '3',
+      'weight' => '1',
       'label' => 'hidden',
-      'format' => 'ds_post_date_long',
+      'format' => 'ds_post_date_fecha_completa',
+    ),
+    'field_title_noticia' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-el' => 'h3',
+          'fi-cl' => 'tiltle-news',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
+      ),
     ),
   );
   $export['node|noticia|full'] = $ds_fieldsetting;
@@ -45,16 +58,16 @@ function noticia_cetav_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image',
-        1 => 'field_title_noticia',
-        2 => 'post_date',
-        3 => 'body',
+        1 => 'post_date',
+        2 => 'body',
+        3 => 'field_title_noticia',
       ),
     ),
     'fields' => array(
       'field_image' => 'ds_content',
-      'field_title_noticia' => 'ds_content',
       'post_date' => 'ds_content',
       'body' => 'ds_content',
+      'field_title_noticia' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
