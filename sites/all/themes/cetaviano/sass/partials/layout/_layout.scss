@@ -17,9 +17,25 @@
 .panel-right-column {
     @include span-columns(12);
     display: block;
-    
-    @include mquery("medium") {
-        @include span-columns(5);
-        display: inline-block;      
+
+    @include mquery("large") {
+        @include span-columns(6);
+        display: inline-block;
     }
 }
+
+.pane-bundle-steps-admision {
+    @include outer-container;
+     .paragraphs-item-steps {
+        @include span-columns(12);
+        @include mquery("small") {
+            @include span-columns(6);
+            @include omega();
+        }
+        @include mquery("medium") {
+            @include span-columns(4);
+            @include omega();
+        }
+    }
+}
+
