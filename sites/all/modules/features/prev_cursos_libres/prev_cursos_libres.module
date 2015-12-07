@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the prev-cursos-libres feature.
+ */
+
+include_once 'prev_cursos_libres.features.inc';
