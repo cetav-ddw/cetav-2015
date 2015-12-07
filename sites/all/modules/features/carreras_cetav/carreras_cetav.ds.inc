@@ -42,6 +42,11 @@ function carreras_cetav_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_programa_carreras' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_skills_carrera' => array(
       'formatter_settings' => array(
         'ft' => array(

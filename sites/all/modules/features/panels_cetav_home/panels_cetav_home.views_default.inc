@@ -119,6 +119,23 @@ function panels_cetav_home_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
+  /* Field: Content: Precio */
+  $handler->display->display_options['fields']['field_precio']['id'] = 'field_precio';
+  $handler->display->display_options['fields']['field_precio']['table'] = 'field_data_field_precio';
+  $handler->display->display_options['fields']['field_precio']['field'] = 'field_precio';
+  $handler->display->display_options['fields']['field_precio']['label'] = '';
+  $handler->display->display_options['fields']['field_precio']['element_label_colon'] = FALSE;
+  /* Field: Content: Imagen-curso */
+  $handler->display->display_options['fields']['field_imagen_curso']['id'] = 'field_imagen_curso';
+  $handler->display->display_options['fields']['field_imagen_curso']['table'] = 'field_data_field_imagen_curso';
+  $handler->display->display_options['fields']['field_imagen_curso']['field'] = 'field_imagen_curso';
+  $handler->display->display_options['fields']['field_imagen_curso']['label'] = '';
+  $handler->display->display_options['fields']['field_imagen_curso']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_imagen_curso']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_imagen_curso']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   $export['cursos'] = $view;
 
   return $export;
