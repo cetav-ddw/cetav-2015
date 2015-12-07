@@ -13,10 +13,7 @@ ul {
 
 p {
     @include font-size(16);
-    // CAMBIOS, REVISAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    //Inicio de los cambios !!!
     color: $gray;
-    // Fin de los cambios!!!!!!!
     line-height: 1.5;
     overflow: hidden;
 }

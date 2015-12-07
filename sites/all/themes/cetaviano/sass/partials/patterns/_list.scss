@@ -10,19 +10,18 @@
 //Cambiar la clase "requirements-admission-wrapper",
 //ponerle una clase general a las listas y reemplazarla aquí.
 .requirements-admission-wrapper {
-  background: $blue-dark;
-  li {
-    color: $white;
-    @include font-size(14);
-    line-height: 20px;
-    list-style: none;
-    margin: 0 10px 10px 20px;
-    &:before {
-      content: "• ";
-      color: $orange;
-      font-size: 22px;
-      float: left;
-      margin-right: 11px;
+    background: $blue-dark;
+    li {
+        @include font-size(14);
+        color: $white;
+        line-height: 20px;
+        list-style: none;
+        margin: 0 10px 10px 20px;
+        &:before {
+            color: $orange;
+            content: "• ";
+            float: left;
+            margin-right: 11px;
+        }
     }
-  }
 }

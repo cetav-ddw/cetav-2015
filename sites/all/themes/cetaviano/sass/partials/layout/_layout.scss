@@ -26,7 +26,8 @@
 
 .pane-bundle-steps-admision {
     @include outer-container;
-     .paragraphs-item-steps {
+
+    .paragraphs-item-steps {
         @include span-columns(12);
         @include mquery("small") {
             @include span-columns(6);

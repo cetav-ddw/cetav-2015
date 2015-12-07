@@ -1,58 +1,52 @@
-// CAMBIOS, REVISAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // Inicio de los cambios !!!
-
 .pane-bundle-steps-admision {
-  h4 {
-    @include font-size(22);
-    color: $gray;
-    padding: 0 0 3% 0;
-  }
-  .paragraphs-item-steps {
-    padding: 10% 2%;
-    @include mquery("base") {
-      border-bottom: 1px solid $ligth-gray;
-      &:nth-child(6) {
-        border-bottom: none;
-      }
-    }
-    @include mquery("small") {
-      &:nth-child(1) {
-        border-right: 1px solid $ligth-gray;
-      }
-      &:nth-child(3) {
-        border-right: 1px solid $ligth-gray;
-      }
-      &:nth-child(5) {
-        border-right: 1px solid $ligth-gray;
-        border-bottom: none;
-      }
-      &:nth-child(6) {
-        border-bottom: none;
-      }
-    }
-    @include mquery("medium") {
-      &:nth-child(2) {
-        border-right: 1px solid $ligth-gray;
-      }
-      &:nth-child(3) {
-        border-right: none;
-      }
-      &:nth-child(4) {
-        border-right: 1px solid $ligth-gray;
-        border-bottom: none;
-      }
+    h4 {
+        @include font-size(22);
+        color: $gray;
+        padding: 0 0 3% 0;
     }
     p {
-      height: 100px;
-      margin: 0;
-      text-align: center;
+        height: 100px;
+        margin: 0;
+        text-align: center;
     }
-  }
+    .paragraphs-item-steps {
+        padding: 10% 2%;
+        @include mquery("base") {
+            border-bottom: 1px solid $ligth-gray;
+            &:nth-child(6) {
+                border-bottom: none;
+            }
+        }
+        @include mquery("small") {
+            &:nth-child(1) {
+                border-right: 1px solid $ligth-gray;
+            }
+
+            &:nth-child(3) {
+                border-right: 1px solid $ligth-gray;
+            }
+            &:nth-child(5) {
+                border-bottom: none;
+                border-right: 1px solid $ligth-gray;
+            }
+            &:nth-child(6) {
+                border-bottom: none;
+            }
+        }
+        @include mquery("medium") {
+            &:nth-child(2) {
+                border-right: 1px solid $ligth-gray;
+            }
+            &:nth-child(3) {
+                border-right: none;
+            }
+            &:nth-child(4) {
+                border-bottom: none;
+                border-right: 1px solid $ligth-gray;
+            }
+        }
+    }
 }
-
-
-
-  // Fin de los cambios!!!!!!!
 
 
 
