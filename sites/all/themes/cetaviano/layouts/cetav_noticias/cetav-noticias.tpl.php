@@ -15,6 +15,6 @@
     <div class="panel-container panel-right-column aside">
       <?php print $content['right']; ?>
     </div>
-  </div>s
+  </div>
   </div>
 </div>
