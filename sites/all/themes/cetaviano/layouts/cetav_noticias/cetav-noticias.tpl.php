@@ -8,10 +8,10 @@
 ?>
 <div class="panel-display panel-cetav-noticias">
   <div class="center-wrapper">
-    <div class="panel-container panel-left-column">
+    <div class="panel-container panel-left-column container-news">
       <?php print $content['left']; ?>
     </div>
-    <div class="panel-container panel-right-column">
+    <div class="panel-container panel-right-column aside">
       <?php print $content['right']; ?>
     </div>
   </div>
