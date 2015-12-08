@@ -1,25 +1,33 @@
 .field-name-field-personal {
+
     .field-items {
         @include outer-container;
+
         >.field-item {
             margin-bottom: 20px;
+            text-align: center;
+
             @include mquery("base") {
                 @include span-columns(12);
             }
+
             @include mquery("small") {
                 @include span-columns(6);
             }
+
             @include mquery("medium") {
                 @include span-columns(3);
             }
-            text-align: center;
+
             img {
                 border-radius: 50%;
                 display: block;
                 margin: 0 auto;
             }
         }
+
         .odd {
+
             @include mquery("small") {
                 margin-right: 0;
             }
@@ -37,6 +45,7 @@
     }
 
     .personal-charge {
+
         p {
             @include font-size(13);
             background-color: $super-light-gray;
@@ -47,9 +56,11 @@
             margin: 21px 0 10px;
             padding: 5px 10px;
             width: 100%;
+
             @include mquery("medium") {
                 height: 67px;
             }
+
             @include mquery("large") {
                 height: 54px;
             }
@@ -57,6 +68,7 @@
     }
 
     .personal-description {
+
         p {
             @include font-size(12);
             color: $dark-gray;
