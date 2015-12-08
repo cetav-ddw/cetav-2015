@@ -2,7 +2,15 @@
     .field-items {
         @include outer-container;
         >.field-item {
-            @include span-columns(3);
+            @include mquery("base") {
+                @include span-columns(12);
+            }
+            @include mquery("small") {
+                @include span-columns(6);
+            }
+            @include mquery("medium") {
+                @include span-columns(3);
+            }
             text-align: center;
             img {
                 border-radius: 50%;
@@ -10,6 +18,16 @@
                 margin: 0 auto;
             }
         }
+        .odd {
+            @include mquery("small") {
+                margin-right: 0;
+            }
+
+            @include mquery("medium") {
+                margin-right: 2.3576515979%;
+            }
+        }
+
     }
 
     .personal-name {
@@ -30,6 +48,13 @@
             margin-bottom: 1rem;
             padding: 0.5rem 1rem;
             width: 100%;
+            vertical-align: middle;
+            @include mquery("medium") {
+                height: 67px;
+            }
+            @include mquery("large") {
+                height: 54px;
+            }
         }
     }
 
@@ -41,15 +66,4 @@
             //width: 100%;
         }
     }
-}
-
-//PROVISIONAL styles of black ul list
-
-ul {
-    margin-top: 10px;
-    padding-left: 30px;
-}
-
-li {
-    color: $dark-gray;
 }
