@@ -11,14 +11,19 @@
 //ponerle una clase general a las listas y reemplazarla aquí.
 .requirements-admission-wrapper {
     background: $blue-dark;
+
     li {
         @include font-size(14);
         color: $white;
         line-height: 20px;
         list-style: none;
         margin: 0 10px 10px 20px;
+
+        a {
+            color: $white;
+        }
         &:before {
-            color: $orange;
+            color: $light-blue;
             content: "• ";
             float: left;
             margin-right: 11px;

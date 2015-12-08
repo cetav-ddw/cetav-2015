@@ -11,8 +11,10 @@
     }
     .paragraphs-item-steps {
         padding: 10% 2%;
+
         @include mquery("base") {
             border-bottom: 1px solid $ligth-gray;
+
             &:nth-child(6) {
                 border-bottom: none;
             }
@@ -21,7 +23,6 @@
             &:nth-child(1) {
                 border-right: 1px solid $ligth-gray;
             }
-
             &:nth-child(3) {
                 border-right: 1px solid $ligth-gray;
             }

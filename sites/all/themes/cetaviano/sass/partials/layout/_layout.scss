@@ -29,6 +29,7 @@
 
     .paragraphs-item-steps {
         @include span-columns(12);
+
         @include mquery("small") {
             @include span-columns(6);
             @include omega();
