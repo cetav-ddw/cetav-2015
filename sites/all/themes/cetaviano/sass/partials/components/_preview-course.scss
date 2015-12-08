@@ -1,0 +1,59 @@
+// .view-content {
+//     @include mquery("x-large") {
+//         margin: 0 auto;
+//         width: 87%;
+//     }
+// }
+
+.views-row {
+    margin: 50px auto;
+    max-width: 490px;
+    position: relative;
+
+    &:hover{
+        .details-preview-course {
+            opacity: 1;
+            transition: 1s;
+        }
+    }
+    // @include mquery("large") {
+    //     display: inline-block;
+    //     margin: 50px 15px;
+    // }
+}
+
+.views-field-field-imagen-curso {
+    overflow: hidden;
+}
+
+.details-preview-course {
+    background-color: $light-blue;
+    height: 247px;
+    opacity: 0.85;
+    padding: 30px 20px;
+    position: absolute;
+    right: 0;
+    transition: 1s;
+    width: 50%;
+}
+
+.prev-title-course {
+    a {
+        color: $white;
+    }
+}
+
+.date-display-range {
+    color: $white;
+    font-size: 13px;
+}
+
+.views-field-field-precio {
+    color: $light-blue;
+    background-color: $white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 190px;
+}
