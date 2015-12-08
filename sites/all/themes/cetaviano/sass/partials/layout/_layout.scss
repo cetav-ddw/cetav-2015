@@ -303,12 +303,7 @@
 
 /* Section titles and text home
    ========================================================================== */
-/*
- * estos estilos son super especificos y esta encontra de las buenas
- * practicas pero es por que no se le puede poner una clase especifica a
- * directa al elemento.
- */
-.center-wrapper .panel-left-column .section-title-free-courses h2 {
+.section-title-free-courses h2 {
     color: $light-blue;
     font-family: $contrast-font;
     width: 100%;
