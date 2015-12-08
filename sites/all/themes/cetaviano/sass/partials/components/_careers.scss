@@ -25,14 +25,15 @@
 
     @include mquery("small") {
         @include span-columns(6);
-        display: inline-block;
-        margin-right: 0 !important;
+        @include omega();
+        display: inline-block;        
         vertical-top: top;
     }
 
     @include mquery("medium") {
         @include span-columns(4);
-        margin: 30px 13px;
+        margin: 30px 13px;        
+        @include omega();
         vertical-top: top;
     }
 }
