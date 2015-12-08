@@ -1,9 +1,9 @@
-// .view-content {
-//     @include mquery("x-large") {
-//         margin: 0 auto;
-//         width: 87%;
-//     }
-// }
+.view-content {
+    @include mquery("x-large") {
+        margin: 0 auto;
+        width: 87%;
+    }
+}
 
 .views-row {
     margin: 50px auto;
@@ -16,10 +16,10 @@
             transition: 1s;
         }
     }
-    // @include mquery("large") {
-    //     display: inline-block;
-    //     margin: 50px 15px;
-    // }
+    @include mquery("large") {
+        display: inline-block;
+        margin: 50px 15px;
+    }
 }
 
 .views-field-field-imagen-curso {

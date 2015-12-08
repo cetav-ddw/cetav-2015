@@ -1147,6 +1147,11 @@ div.password-suggestions ul {
 .views-field-title {
   margin-bottom: 5px; }
 
+@media only screen and (min-width: 87.5em) {
+  .view-content {
+    margin: 0 auto;
+    width: 87%; } }
+
 .views-row {
   margin: 50px auto;
   max-width: 490px;
@@ -1154,6 +1159,10 @@ div.password-suggestions ul {
   .views-row:hover .details-preview-course {
     opacity: 1;
     transition: 1s; }
+  @media only screen and (min-width: 68.75em) {
+    .views-row {
+      display: inline-block;
+      margin: 50px 15px; } }
 
 .views-field-field-imagen-curso {
   overflow: hidden; }
