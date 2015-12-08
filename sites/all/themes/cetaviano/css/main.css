@@ -471,8 +471,6 @@ fieldset.collapsible .fieldset-legend {
   display: block;
   margin: 0;
   width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .resizable-textarea .grippie {
@@ -712,8 +710,6 @@ html.js fieldset.collapsed .fieldset-legend {
   background: #ccc;
   border-color: #666;
   margin: 0 0.2em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .progress .filled {
@@ -1192,5 +1188,4 @@ div.password-suggestions ul {
   padding: 3px 7px;
   position: absolute;
   top: 190px; }
-
 /*# sourceMappingURL=main.css.map */
