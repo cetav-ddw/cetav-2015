@@ -1,7 +1,3 @@
-.career-program {
-
-}
-
 .career-program .paragraphs-item-programas-carreras {
     background-color: $white;
     box-shadow: 0 0 13px #c2bebe;
@@ -25,8 +21,7 @@
 
     @include mquery("small") {
         @include span-columns(6);
-        @include omega();
-        display: inline-block;        
+        @include omega();       
         vertical-top: top;
     }
 
