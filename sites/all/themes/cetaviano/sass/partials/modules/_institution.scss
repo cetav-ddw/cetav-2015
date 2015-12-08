@@ -1,7 +1,7 @@
 .field-name-field-personal {
     .field-items {
         @include outer-container;
-        > .field-item {
+        >.field-item {
             @include span-columns(3);
             text-align: center;
             img {
@@ -38,6 +38,7 @@
             @include font-size(12);
             color: $dark-gray;
             text-align: left;
+            //width: 100%;
         }
     }
 }
