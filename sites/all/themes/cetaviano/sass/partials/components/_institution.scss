@@ -2,6 +2,7 @@
     .field-items {
         @include outer-container;
         >.field-item {
+            margin-bottom: 20px;
             @include mquery("base") {
                 @include span-columns(12);
             }
@@ -27,12 +28,11 @@
                 margin-right: 2.3576515979%;
             }
         }
-
     }
 
     .personal-name {
         color: $gray;
-        margin-top: 2rem;
+        margin-top: 20px;
         text-align: center;
     }
 
@@ -44,11 +44,9 @@
             color: $gray;
             display: inline-block;
             height: 54px;
-            margin: 21px 0;
-            margin-bottom: 1rem;
-            padding: 0.5rem 1rem;
+            margin: 21px 0 10px;
+            padding: 5px 10px;
             width: 100%;
-            vertical-align: middle;
             @include mquery("medium") {
                 height: 67px;
             }
@@ -63,7 +61,6 @@
             @include font-size(12);
             color: $dark-gray;
             text-align: left;
-            //width: 100%;
         }
     }
 }
