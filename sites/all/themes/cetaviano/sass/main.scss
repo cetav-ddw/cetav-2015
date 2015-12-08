@@ -17,6 +17,7 @@
 @import "partials/modules/header";
 
 @import "partials/patterns/links";
+@import "partials/patterns/list";
 @import "partials/patterns/buttons";
 @import "partials/patterns/tables";
 @import "partials/patterns/forms/forms-drupal";
@@ -25,3 +26,6 @@
 @import "partials/layout/layout";
 
 @import "partials/third-party/system/drupal";
+
+@import "partials/components/careers";
+@import "partials/components/news";

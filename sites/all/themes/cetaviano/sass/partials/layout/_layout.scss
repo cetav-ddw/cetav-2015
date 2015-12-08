@@ -1,73 +1,168 @@
 //
 // General layout rules
 //
-
-.center-wrapper {
-	@include outer-container;
-	height: auto;
-	margin: 0 auto;
-	padding: 70px 0;
+.grid-width {
+    margin: 0 auto;
+    max-width: $max-width;
 }
 
-.panel-left-column {
+.center-wrapper {
+    @include outer-container;
+    height: auto;
+    margin: 0 auto;
+    padding: 70px 16px;
+}
+
+.panel-left-column,
+.panel-right-column {
+    @include span-columns(12);
     display: block;
-    text-align: left;
-    float: left;
-    width: 100%;
-    /* Custom, iPhone Retina */ 
-    @media ( min-width : 320px ) {
-        margin-bottom: 15px;
-    }
-    /* Extra Small Devices, Phones */ 
-    @media ( min-width : 600px ) {
-        margin-bottom: 20px;
-    }
-    /* Small Devices, Tablets */
-    @media ( min-width : 900px ) {
-        margin-bottom: 30px;
-    }
-    /* Medium Devices, Desktops */
-    @media ( min-width : 1100px ) {
-        width: 40%;	
+    
+    @include mquery("medium") {
+        @include span-columns(6);
         display: inline-block;
     }
 }
 
-.panel-right-column {
-    width: 100%; 
+/* layouts left, right
+   ========================================================================== */
+.panel-left-column {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    /* Custom, iPhone Retina */
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    /* Extra Small Devices, Phones */ 
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
     /* Small Devices, Tablets */
-    @media ( min-width : 900px ) {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
+    @include mquery("medium") {
+        margin-bottom: 30px;
     }
     /* Medium Devices, Desktops */
-    @media ( min-width : 1100px ) {
-        width: 50%;
-        float: right;
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 40%; 
     }
 }
 
-.call-out-home-intro .panel-right-column {
-    /* Medium Devices, Desktops */
-    @media ( min-width : 1100px ) {
-        margin-right: 60px;
+.panel-right-column {
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
     }
-    p {
-        @include font-size(18);
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
+}
+
+/* Section background header
+   ========================================================================== */
+.main-content .main .title {
+    display: none;
+}
+
+.panel-cetav-frontpage .panel-wide {
+    //background: url(../img/prueba.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #eee;
+    height: 700px;
+
+    /* Large Devices, Wide Screens */
+    @include mquery("x-large") {
+        background-size: 1200px;
+    }
+}
+
+/* Content Header
+   ========================================================================== */
+.content-header{
+    p:first-child{
+        @include font-size(48);
+        color: $white;
+        margin: 0 0 15px;
+    }
+
+    strong{
+        @include font-size(48);
+        color: $orange;
+    }
+
+    /* Custom, iPhone Retina */ 
+    @include mquery("base") {
+        padding-top: 14.5%;
+    }
+    /* Extra Small Devices, Phones */ 
+    @include mquery("small") {
+        padding-top: 24.5%;
+    }
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        padding-top: 17.5%;
+    }
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        padding-top: 14.5%;
+    }
+    /* Large Devices, Wide Screens */
+    @include mquery("x-large") {
+        padding-top: 9.5%;
+    }
+}
+
+.type-wrap{
+    @include font-size(48);
+    font-family: $contrast-font;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrap{
+    max-width: 600px;
+    margin: 150px auto;
+}
+
+/* layouts section call-out-home-intro
+   ========================================================================== */
+.call-out-home-intro .panel-left-column {
+    //background-image: url();
+
+    /*
+     * aquí va el logo del cetav, estos estilos son provisionales
+     * para dar concepto de layout
+     */
+    background-color: #eee;
+    height: 171px;
+    margin: 0 auto;
+    width: 100%;
+    /* Small Devices, Tablets */
+    @include mquery("large") {
+        width: 46%;
+        margin: 0 auto;
     }
 }
 
 // text intro home
-.panel-right-column p {
-    @include font-size(16);
+.call-out-home-intro .panel-right-column p {
     margin-top: 0;
     /* Medium Devices, Desktops */
-    @media ( min-width : 1100px ) {
+    @include mquery("large") {
         @include font-size(18);
         margin-top: 10px;
     }
 }
+
 
 /* Section courses
    ========================================================================== */
@@ -88,11 +183,182 @@
     width: 100%;
     border: 1px solid #222;
     /* Medium Devices, Desktops */
-    @media ( min-width : 1100px ) {
-        width: calc(100% / 3);
-    }
-    /* Large Devices, Wide Screens */
-     @media (min-width : 1280px) {
+    @include mquery("large") {
         width: calc(100% / 3);
     }
 }
+
+
+/* Section free courses
+   ========================================================================== */
+.panel-right-column .view-cursos {
+    margin: 0;
+}
+
+.panel-right-column .view-cursos .views-row {
+    border-bottom: 1px solid #d6d6d6;
+    list-style: none;
+    padding: 17px 0;
+    position: relative;
+
+    a:first-child {
+        @include font-size(16);
+        color: $gray;
+        display: inline-block;
+        font-family: $contrast-font;
+        margin: 0;
+        width: 100%;
+        /* Medium Devices, Desktops */
+        @include mquery("large") {
+            width: 60%;
+        }
+    }
+}
+
+
+/* Section allies
+   ========================================================================== */
+.section-title-allies {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    /* Custom, iPhone Retina */ 
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    /* Extra Small Devices, Phones */ 
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        margin-bottom: 30px;
+    }
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 40%; 
+    }
+}
+
+.text-course-container {
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
+}
+
+.logo-allies .field-item {
+    display: inline-block;
+    float: left;
+    /* Custom, iPhone Retina */ 
+    @include mquery("base") {
+        height: 60px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    /* Extra Small Devices, Phones */ 
+    @include mquery("small") {
+        height: 70px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        height: 70px;
+        width: 33%;
+    }
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        height: 80px;
+        margin-top: 60px;
+        width: 24.5%;
+    }
+    /* Large Devices, Wide Screens */
+     @include mquery("x-large") {
+        height: 90px;
+        margin-top: 60px;
+        width: 24.5%;
+    }
+    // height provisional, solo para concepto de contenido
+    img {
+        height: 90px;
+        width: 100%;
+    }
+}
+
+.field-name-field-aliados-img {
+    clear: both;
+}
+
+
+/* Section titles and text
+   ========================================================================== */
+/*
+ * estos estilos son super especificos y esta encontra de las buenas
+ * practicas pero es por que no se le puede poner una clase especifica a
+ * directa al elemento.
+ */
+.center-wrapper .panel-left-column .section-title-free-courses h2 {
+    color: $light-blue;
+    font-family: $contrast-font;
+    width: 100%;
+    text-align: center;
+
+    /* Custom, iPhone Retina */ 
+    @include mquery("base") {
+        @include font-size(24);
+    }
+    /* Extra Small Devices, Phones */ 
+    @include mquery("small") {
+        @include font-size(28);
+    }
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        @include font-size(30);
+    }
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        @include font-size(36);
+        text-align: left;
+    }
+}
+
+
+.panel-wide h2 {
+    color: $orange;
+    display: block;
+    font-family: $contrast-font;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    /* Custom, iPhone Retina */ 
+    @include mquery("base") {
+        @include font-size(24);
+    }
+    /* Extra Small Devices, Phones */ 
+    @include mquery("small") {
+        @include font-size(28);
+    }
+    /* Small Devices, Tablets */
+    @include mquery("medium") {
+        @include font-size(30);
+        width: 50%;
+        text-align: left;
+    }
+    /* Medium Devices, Desktops */
+    @include mquery("large") {
+        @include font-size(36);
+    }
+}
+
+

@@ -1,0 +1,9 @@
+name = prev-cursos-libres
+core = 7.x
+package = cetav
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_handlers][] = node_view__panel_context_b8cc5456-1ae8-441d-85c5-7a0391a6ac75
+features[page_manager_pages][] = cetav_prev_cursos_libres

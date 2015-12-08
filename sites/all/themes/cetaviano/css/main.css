@@ -24,9 +24,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin: 0; }
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
 
 dl,
 ol,
@@ -40,8 +41,10 @@ ul {
   padding: 0; }
 
 p {
-  line-height: 1.2;
-  margin: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0 0 20px;
   overflow: hidden; }
 
 em {
@@ -127,16 +130,65 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.line-grid {
+  clear: both;
+  padding-top: 50px; }
+  .line-grid li {
+    color: #00c9ed; }
+
 button {
   font-size: 18px;
   font-size: 1.8rem;
   background: transparent;
   border: 2px solid red;
   color: red;
-  padding: 15px 40px; }
+  padding: 10px 15px; }
   button:hover {
     color: red;
     background-color: red; }
+
+.btn-admision a,
+.btn-download {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background: transparent;
+  border: 2px solid #9e280e;
+  color: #9e280e;
+  padding: 10px 15px;
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+  width: 250px; }
+  .btn-admision a:hover,
+  .btn-download:hover {
+    color: #fff;
+    background-color: #9e280e; }
+  .btn-admision a:hover,
+  .btn-download:hover {
+    text-decoration: none; }
+
+.btn-download {
+  cursor: pointer;
+  position: relative; }
+  .btn-download a {
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 0;
+    width: 100%;
+    white-space: nowrap; }
+  .btn-download .file {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.btn-download img {
+  display: none; }
 
 table {
   font-size: 16px;
@@ -230,6 +282,41 @@ input[type="submit"] {
 
 .webform-component {
   margin-bottom: 15px; }
+
+.grid-width {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.center-wrapper,
+.panel-wide {
+  clear: both;
+  overflow: hidden;
+  padding: 40px 16px; }
+
+.panel-left-column,
+.panel-right-column {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  display: block; }
+  .panel-left-column:last-child,
+  .panel-right-column:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 56.25em) {
+    .panel-left-column,
+    .panel-right-column {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%;
+      display: inline-block; }
+      .panel-left-column:last-child,
+      .panel-right-column:last-child {
+        margin-right: 0; } }
+
+.panel-header {
+  padding: 0; }
 
 .tabs {
   border-bottom: 1px solid #ccc;
@@ -796,5 +883,169 @@ div.password-suggestions ul {
   /* LTR */
   clear: left;
   /* LTR */ }
+
+.career-program .paragraphs-item-programas-carreras {
+  background-color: #fff;
+  box-shadow: 0 0 13px #c2bebe;
+  height: 300px;
+  margin: 30px 6px; }
+  .career-program .paragraphs-item-programas-carreras h4 {
+    background-color: #9e280e;
+    color: white;
+    margin-top: 0;
+    padding: 15px; }
+  .career-program .paragraphs-item-programas-carreras ul {
+    list-style: none;
+    padding: 25px; }
+    .career-program .paragraphs-item-programas-carreras ul li {
+      margin-bottom: 10px; }
+  @media only screen and (min-width: 37.5em) {
+    .career-program .paragraphs-item-programas-carreras {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%;
+      margin-right: 0;
+      vertical-top: top; }
+      .career-program .paragraphs-item-programas-carreras:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 56.25em) {
+    .career-program .paragraphs-item-programas-carreras {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%;
+      margin: 30px 13px;
+      margin-right: 0;
+      vertical-top: top; }
+      .career-program .paragraphs-item-programas-carreras:last-child {
+        margin-right: 0; } }
+
+.section-skills {
+  background-color: #243842;
+  background-image: url(../images/skills-back.png);
+  margin: 0;
+  width: 100%; }
+  .section-skills p {
+    color: #fff; }
+
+@media only screen and (min-width: 56.25em) {
+  .pane-node-field-titulo-skills-carreras {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 40.2913699012%; }
+    .pane-node-field-titulo-skills-carreras:last-child {
+      margin-right: 0; } }
+
+.pane-node-field-titulo-skills-carreras h4 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  color: #00c9ed; }
+
+@media only screen and (min-width: 56.25em) {
+  .pane-node-field-cuerpo-skills-carreras {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 57.3509785009%;
+    margin-right: 0; }
+    .pane-node-field-cuerpo-skills-carreras:last-child {
+      margin-right: 0; } }
+
+.pane-node-field-skills-carrera {
+  clear: both; }
+
+.aside,
+.container-news {
+  background-color: #fff;
+  overflow: hidden; }
+
+.aside {
+  box-shadow: 0 0 13px #c2bebe;
+  padding: 30px 30px; }
+  @media only screen and (min-width: 56.25em) {
+    .aside {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%; }
+      .aside:last-child {
+        margin-right: 0; } }
+
+.container-news {
+  margin-bottom: 30px; }
+  @media only screen and (min-width: 56.25em) {
+    .container-news {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      box-shadow: 0 0 13px #c2bebe; }
+      .container-news:last-child {
+        margin-right: 0; } }
+
+@media only screen and (min-width: 56.25em) {
+  .container-title,
+  .date-news,
+  .info-news {
+    padding: 0 80px; } }
+
+.container-title {
+  padding-top: 50px; }
+  @media only screen and (min-width: 56.25em) {
+    .container-title {
+      padding-top: 80px; } }
+
+.date-news {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding-bottom: 35px; }
+
+.info-news {
+  padding-bottom: 50px; }
+  @media only screen and (min-width: 56.25em) {
+    .info-news {
+      padding-bottom: 80px; } }
+
+.latest-news .views-row {
+  border-bottom: 1px solid #ececec;
+  padding: 20px 0;
+  overflow: hidden; }
+  .latest-news .views-row:last-child {
+    border-bottom: none; }
+
+.latest-news h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #848286;
+  padding-bottom: 25px; }
+
+.latest-news h5 a {
+  color: #414042;
+  margin-bottom: 5px; }
+
+.latest-news .read-more {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.img-news img {
+  height: auto;
+  width: 100%; }
+
+.pane-node-created h2 {
+  display: none; }
+
+.title-news {
+  margin-bottom: 16px;
+  padding-bottom: 5px; }
+
+.views-field-created {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.views-field-created,
+.views-field-title {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */

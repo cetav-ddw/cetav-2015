@@ -14,16 +14,20 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-    <div class="panel-container panel-left-column">
-      <?php print $content['left']; ?>
-    </div>
-    <div class="panel-container panel-right-column">
-      <?php print $content['right']; ?>
-    </div>
+    <div class="grid-width">
+      <div class="panel-container panel-left-column">
+        <?php print $content['left']; ?>
+      </div>
+      <div class="panel-container panel-right-column">
+        <?php print $content['right']; ?>
+      </div>
+    </div>    
   </div>
     <?php if ($content['wide_second']): ?>
     <div class="panel-container panel-wide">
-      <?php print $content['wide_second']; ?>
+      <div class="grid-width">
+        <?php print $content['wide_second']; ?>
+      </div>
     </div>
   <?php endif ?>
 </div>

@@ -55,30 +55,9 @@ function panels_cetav_home_user_default_permissions() {
     'module' => 'panels',
   );
 
-  // Exported permission: 'create fieldable aliados_logo'.
-  $permissions['create fieldable aliados_logo'] = array(
-    'name' => 'create fieldable aliados_logo',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'create fieldable cetav_brand'.
-  $permissions['create fieldable cetav_brand'] = array(
-    'name' => 'create fieldable cetav_brand',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'create fieldable cetav_carreras_home'.
   $permissions['create fieldable cetav_carreras_home'] = array(
     'name' => 'create fieldable cetav_carreras_home',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'create fieldable cursos_actuales'.
-  $permissions['create fieldable cursos_actuales'] = array(
-    'name' => 'create fieldable cursos_actuales',
     'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
@@ -92,30 +71,9 @@ function panels_cetav_home_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
-  // Exported permission: 'delete fieldable aliados_logo'.
-  $permissions['delete fieldable aliados_logo'] = array(
-    'name' => 'delete fieldable aliados_logo',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'delete fieldable cetav_brand'.
-  $permissions['delete fieldable cetav_brand'] = array(
-    'name' => 'delete fieldable cetav_brand',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'delete fieldable cetav_carreras_home'.
   $permissions['delete fieldable cetav_carreras_home'] = array(
     'name' => 'delete fieldable cetav_carreras_home',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'delete fieldable cursos_actuales'.
-  $permissions['delete fieldable cursos_actuales'] = array(
-    'name' => 'delete fieldable cursos_actuales',
     'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );
@@ -129,30 +87,9 @@ function panels_cetav_home_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
-  // Exported permission: 'edit fieldable aliados_logo'.
-  $permissions['edit fieldable aliados_logo'] = array(
-    'name' => 'edit fieldable aliados_logo',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'edit fieldable cetav_brand'.
-  $permissions['edit fieldable cetav_brand'] = array(
-    'name' => 'edit fieldable cetav_brand',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'edit fieldable cetav_carreras_home'.
   $permissions['edit fieldable cetav_carreras_home'] = array(
     'name' => 'edit fieldable cetav_carreras_home',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'edit fieldable cursos_actuales'.
-  $permissions['edit fieldable cursos_actuales'] = array(
-    'name' => 'edit fieldable cursos_actuales',
     'roles' => array(),
     'module' => 'fieldable_panels_panes',
   );

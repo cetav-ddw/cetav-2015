@@ -26,7 +26,7 @@ function noticia_cetav_image_default_styles() {
   $styles['image-new-full'] = array(
     'label' => 'image-new-full',
     'effects' => array(
-      1 => array(
+      19 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 670,

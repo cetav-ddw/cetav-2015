@@ -66,10 +66,10 @@ function carreras_cetav_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-93cd3aee-4f41-4462-8f6d-9f1b64c1c19a';
+    $pane->pid = 'new-cdf1b4d7-20df-4f97-b5e6-c90d7a747b2e';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_subtitulo_carrera';
+    $pane->subtype = 'node:field_sub_title_carreras';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -86,20 +86,60 @@ function carreras_cetav_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h2',
+          'class_enable' => 1,
+          'class' => 'subtitle-career',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '93cd3aee-4f41-4462-8f6d-9f1b64c1c19a';
-    $display->content['new-93cd3aee-4f41-4462-8f6d-9f1b64c1c19a'] = $pane;
-    $display->panels['left'][0] = 'new-93cd3aee-4f41-4462-8f6d-9f1b64c1c19a';
+    $pane->uuid = 'cdf1b4d7-20df-4f97-b5e6-c90d7a747b2e';
+    $display->content['new-cdf1b4d7-20df-4f97-b5e6-c90d7a747b2e'] = $pane;
+    $display->panels['left'][0] = 'new-cdf1b4d7-20df-4f97-b5e6-c90d7a747b2e';
     $pane = new stdClass();
-    $pane->pid = 'new-090d990b-bf64-448f-adc5-82b74d640965';
+    $pane->pid = 'new-ba57a7fd-16c8-47bb-9799-5c8bffd6c574';
     $pane->panel = 'left';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:body';
+    $pane->subtype = 'node:field_intro_carreras';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -122,39 +162,9 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '090d990b-bf64-448f-adc5-82b74d640965';
-    $display->content['new-090d990b-bf64-448f-adc5-82b74d640965'] = $pane;
-    $display->panels['left'][1] = 'new-090d990b-bf64-448f-adc5-82b74d640965';
-    $pane = new stdClass();
-    $pane->pid = 'new-dc5f12c4-0cae-47a9-b03e-adc2e8d5976d';
-    $pane->panel = 'left_second';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_subtitulo_skills_carreras';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'dc5f12c4-0cae-47a9-b03e-adc2e8d5976d';
-    $display->content['new-dc5f12c4-0cae-47a9-b03e-adc2e8d5976d'] = $pane;
-    $display->panels['left_second'][0] = 'new-dc5f12c4-0cae-47a9-b03e-adc2e8d5976d';
+    $pane->uuid = 'ba57a7fd-16c8-47bb-9799-5c8bffd6c574';
+    $display->content['new-ba57a7fd-16c8-47bb-9799-5c8bffd6c574'] = $pane;
+    $display->panels['left'][1] = 'new-ba57a7fd-16c8-47bb-9799-5c8bffd6c574';
     $pane = new stdClass();
     $pane->pid = 'new-00196396-1f00-48ec-ba09-54c9797833fb';
     $pane->panel = 'right';
@@ -163,12 +173,14 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'video_embed_field_url',
+      'label' => 'hidden',
+      'formatter' => 'video_embed_field',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
+      'formatter_settings' => array(
+        'video_style' => 'normal',
+      ),
       'context' => 'argument_entity_id:node_1',
       'override_title' => 0,
       'override_title_text' => '',
@@ -185,36 +197,6 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->uuid = '00196396-1f00-48ec-ba09-54c9797833fb';
     $display->content['new-00196396-1f00-48ec-ba09-54c9797833fb'] = $pane;
     $display->panels['right'][0] = 'new-00196396-1f00-48ec-ba09-54c9797833fb';
-    $pane = new stdClass();
-    $pane->pid = 'new-e573a771-1da2-4e10-a4e4-9b2677ca4347';
-    $pane->panel = 'right_second';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_cuerpo_skills_carreras';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'text_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'e573a771-1da2-4e10-a4e4-9b2677ca4347';
-    $display->content['new-e573a771-1da2-4e10-a4e4-9b2677ca4347'] = $pane;
-    $display->panels['right_second'][0] = 'new-e573a771-1da2-4e10-a4e4-9b2677ca4347';
     $pane = new stdClass();
     $pane->pid = 'new-69a2b37d-1ee0-4c4f-8835-00918adb36c5';
     $pane->panel = 'wide';
@@ -249,7 +231,77 @@ function carreras_cetav_default_page_manager_handlers() {
     $display->content['new-69a2b37d-1ee0-4c4f-8835-00918adb36c5'] = $pane;
     $display->panels['wide'][0] = 'new-69a2b37d-1ee0-4c4f-8835-00918adb36c5';
     $pane = new stdClass();
-    $pane->pid = 'new-73429617-500b-4466-a180-f096011ed564';
+    $pane->pid = 'new-b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $pane->panel = 'wide';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_titulo_carrera';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h2',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 1,
+          'class' => 'title-career',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $display->content['new-b0ac5ea2-322b-496c-b122-57a153ad579f'] = $pane;
+    $display->panels['wide'][1] = 'new-b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $pane = new stdClass();
+    $pane->pid = 'new-2266c091-7d97-4a25-a4d4-26debf6adbb5';
     $pane->panel = 'wide_second';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_programa_carreras';
@@ -271,24 +323,64 @@ function carreras_cetav_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'career-program',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '73429617-500b-4466-a180-f096011ed564';
-    $display->content['new-73429617-500b-4466-a180-f096011ed564'] = $pane;
-    $display->panels['wide_second'][0] = 'new-73429617-500b-4466-a180-f096011ed564';
+    $pane->uuid = '2266c091-7d97-4a25-a4d4-26debf6adbb5';
+    $display->content['new-2266c091-7d97-4a25-a4d4-26debf6adbb5'] = $pane;
+    $display->panels['wide_second'][0] = 'new-2266c091-7d97-4a25-a4d4-26debf6adbb5';
     $pane = new stdClass();
-    $pane->pid = 'new-e9087383-398c-48da-89c1-84965b3f51a1';
+    $pane->pid = 'new-0c6b699e-55bd-420f-a81f-482ef88aaac6';
     $pane->panel = 'wide_third';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_skills_carrera';
+    $pane->subtype = 'node:field_titulo_skills_carreras';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'hidden',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -307,9 +399,109 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
+    $pane->uuid = '0c6b699e-55bd-420f-a81f-482ef88aaac6';
+    $display->content['new-0c6b699e-55bd-420f-a81f-482ef88aaac6'] = $pane;
+    $display->panels['wide_third'][0] = 'new-0c6b699e-55bd-420f-a81f-482ef88aaac6';
+    $pane = new stdClass();
+    $pane->pid = 'new-ac844605-557a-49a7-a751-39078aee1230';
+    $pane->panel = 'wide_third';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_cuerpo_skills_carreras';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'ac844605-557a-49a7-a751-39078aee1230';
+    $display->content['new-ac844605-557a-49a7-a751-39078aee1230'] = $pane;
+    $display->panels['wide_third'][1] = 'new-ac844605-557a-49a7-a751-39078aee1230';
+    $pane = new stdClass();
+    $pane->pid = 'new-e9087383-398c-48da-89c1-84965b3f51a1';
+    $pane->panel = 'wide_third';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_skills_carrera';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 1,
+          'class' => 'line-grid',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
     $pane->uuid = 'e9087383-398c-48da-89c1-84965b3f51a1';
     $display->content['new-e9087383-398c-48da-89c1-84965b3f51a1'] = $pane;
-    $display->panels['wide_third'][0] = 'new-e9087383-398c-48da-89c1-84965b3f51a1';
+    $display->panels['wide_third'][2] = 'new-e9087383-398c-48da-89c1-84965b3f51a1';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
