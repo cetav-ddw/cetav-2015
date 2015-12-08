@@ -43,8 +43,8 @@ ul {
 p {
   font-size: 16px;
   font-size: 1.6rem;
+  color: #77787b;
   line-height: 1.5;
-  margin: 0 0 20px;
   overflow: hidden; }
 
 em {
@@ -136,6 +136,23 @@ a {
   .line-grid li {
     color: #00c9ed; }
 
+.requirements-admission-wrapper {
+  background: #243842; }
+  .requirements-admission-wrapper li {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 20px;
+    list-style: none;
+    margin: 0 10px 10px 20px; }
+    .requirements-admission-wrapper li a {
+      color: #fff; }
+    .requirements-admission-wrapper li:before {
+      color: #00c9ed;
+      content: "• ";
+      float: left;
+      margin-right: 11px; }
+
 button {
   font-size: 18px;
   font-size: 1.8rem;
@@ -202,6 +219,17 @@ table {
     width: 30%; }
   table tr {
     text-align: center; }
+
+iframe {
+  margin-top: 9px;
+  vertical-align: top;
+  width: 100%; }
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: inherit;
+  /* IEB */ }
 
 label,
 .webform-container-inline label {
@@ -303,17 +331,51 @@ input[type="submit"] {
   .panel-left-column:last-child,
   .panel-right-column:last-child {
     margin-right: 0; }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 68.75em) {
     .panel-left-column,
     .panel-right-column {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
-      width: 40.2913699012%;
+      width: 48.821174201%;
       display: inline-block; }
       .panel-left-column:last-child,
       .panel-right-column:last-child {
         margin-right: 0; } }
+
+.pane-bundle-steps-admision {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .pane-bundle-steps-admision::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .pane-bundle-steps-admision .paragraphs-item-steps {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%; }
+    .pane-bundle-steps-admision .paragraphs-item-steps:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 37.5em) {
+      .pane-bundle-steps-admision .paragraphs-item-steps {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 48.821174201%;
+        margin-right: 0; }
+        .pane-bundle-steps-admision .paragraphs-item-steps:last-child {
+          margin-right: 0; } }
+    @media only screen and (min-width: 56.25em) {
+      .pane-bundle-steps-admision .paragraphs-item-steps {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 31.7615656014%;
+        margin-right: 0; }
+        .pane-bundle-steps-admision .paragraphs-item-steps:last-child {
+          margin-right: 0; } }
 
 .panel-header {
   padding: 0; }
@@ -956,6 +1018,43 @@ div.password-suggestions ul {
 .pane-node-field-skills-carrera {
   clear: both; }
 
+.pane-bundle-steps-admision h4 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #77787b;
+  padding: 0 0 3% 0; }
+
+.pane-bundle-steps-admision p {
+  height: 100px;
+  margin: 0;
+  text-align: center; }
+
+.pane-bundle-steps-admision .paragraphs-item-steps {
+  padding: 10% 2%; }
+  @media only screen and (min-width: 20em) {
+    .pane-bundle-steps-admision .paragraphs-item-steps {
+      border-bottom: 1px solid #9d9fa2; }
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
+        border-bottom: none; } }
+  @media only screen and (min-width: 37.5em) {
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(1) {
+      border-right: 1px solid #9d9fa2; }
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
+      border-right: 1px solid #9d9fa2; }
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(5) {
+      border-bottom: none;
+      border-right: 1px solid #9d9fa2; }
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
+      border-bottom: none; } }
+  @media only screen and (min-width: 56.25em) {
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(2) {
+      border-right: 1px solid #9d9fa2; }
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
+      border-right: none; }
+    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(4) {
+      border-bottom: none;
+      border-right: 1px solid #9d9fa2; } }
+
 .aside,
 .container-news {
   background-color: #fff;
@@ -1047,5 +1146,42 @@ div.password-suggestions ul {
 .views-field-created,
 .views-field-title {
   margin-bottom: 5px; }
+
+.views-row {
+  margin: 50px auto;
+  max-width: 490px;
+  position: relative; }
+  .views-row:hover .details-preview-course {
+    opacity: 1;
+    transition: 1s; }
+
+.views-field-field-imagen-curso {
+  overflow: hidden; }
+
+.details-preview-course {
+  background-color: #00c9ed;
+  height: 247px;
+  opacity: 0.85;
+  padding: 30px 20px;
+  position: absolute;
+  right: 0;
+  transition: 1s;
+  width: 50%; }
+
+.prev-title-course a {
+  color: #fff; }
+
+.date-display-range {
+  color: #fff;
+  font-size: 13px; }
+
+.views-field-field-precio {
+  color: #00c9ed;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 190px; }
 
 /*# sourceMappingURL=main.css.map */
