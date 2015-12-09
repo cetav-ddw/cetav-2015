@@ -5,7 +5,7 @@ label,
 .webform-container-inline label {
     @include font-size(14);
     color: #333;
-    display: block;
+    display: none;
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -30,7 +30,7 @@ textarea {
     border-radius: 3px;
     border: solid #e1e1e1 1px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 input[type="text"],
@@ -49,20 +49,29 @@ input[type="radio"] {
     vertical-align: baseline;
 }
 
-input[type="submit"] {
+input[type="submit"], 
+input[type="file"]{
     border: 0;
-    margin-bottom: 10px;
+    margin-top: 20px;
     outline: 0;
     padding: 8px 25px;
     transition: all 0.2s ease-in-out;
     width: 100%;
 
     @include media(min-width 767px) {
+        @include button($light-blue, $light-blue, $white)
         display: inline-block;
-        margin-right: 10px;
-        margin-bottom: 0;
         width: auto;
     }
+}
+
+input[type="file"]{
+    text-indent: 100%;
+}
+
+input[name="field_subir_comprobante_und_0_upload_button"],
+form .description {
+    display: none;
 }
 
 .form-type-radio {
@@ -70,9 +79,18 @@ input[type="submit"] {
 }
 
 // Formatting options
+input[type="text"].form-text {
+    background-color: $forms-back-colors;
+    border: none;
+    margin: 1rem 0;
+    max-width: 100%;
+    padding: 20px 20px;
+}
+
 .field-widget-text-textarea .form-type-textarea {
     margin-bottom: 10px;
 }
+
 .filter-wrapper {
     background: #fff;
     border: 0;

@@ -6,8 +6,8 @@
     max-width: $max-width;
 }
 
-.center-wrapper,
-.panel-wide {
+.center-wrapper {
+    @include outer-container;
     clear: both;
     overflow: hidden;
     padding: 40px 16px;

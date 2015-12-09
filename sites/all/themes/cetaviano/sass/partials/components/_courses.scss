@@ -1,0 +1,142 @@
+.course-content {
+    @include span-columns(12);
+    background-color: $blue-dark;
+    padding: 50px;
+
+    ul {
+        @include span-columns(4);
+        color: $white;
+        list-style: none;
+        
+        li {
+            margin-bottom: 10px;
+        }
+
+        li:before {
+            color: $light-blue;
+            content: "• ";
+        }
+    }
+}
+
+.course-details {
+    p {
+        @include font-size(14);
+        margin: 20px 0px 10px 0px;
+
+        &:first-of-type {
+            @include font-size(16);
+        }
+    }
+
+    strong {
+        color: $dark-gray;
+        font-weight: bold;
+    }
+}
+
+.course-info {
+    @include font-size(16);
+    color: $gray;
+    margin-top: 10px;
+
+    .date-display-range span {
+        color: $gray;
+        font-weight: normal;
+    }
+    
+    .date-display-range,
+    .label-inline {
+        display: inline;
+        font-weight: bold;
+    }
+
+    .label-inline {
+        color: $dark-gray;
+    }
+}
+
+.course-form {
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: 1s;
+}
+
+.flip-wrap {
+    perspective: 800px;
+}
+
+.hide-button {
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateX(93deg);
+    transition: 1s;
+}
+
+.hide-flip-wrap {
+    height: 0;
+    transition: 2s;
+}
+
+.panel-cetav-cursos-libres {
+
+    h3, h4 {
+        color: $light-blue;
+        margin-bottom: 25px
+    }
+
+    img {
+        border: 0;
+        box-shadow: 0 0 8px $gray;
+        height: auto;
+        width: 100%;
+
+    }
+
+    p {
+        color: $gray;
+    }
+    
+    .panel-left-column,
+    .panel-right-column {
+        @include span-columns(12);
+        display: block;
+
+        @include mquery("medium") {
+            @include span-columns(5);
+            @include shift(1);
+            @include omega;
+            text-align: left;
+        }
+    }
+
+    .subtitle {
+        border-bottom: 2px solid;
+        margin-top: 25px;
+        padding-bottom: 10px;
+        text-align: center;
+
+        @include mquery("medium") {
+            text-align: left;
+            width: 370px;
+        }
+    }
+}
+
+.panel-wide-courses {
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+
+    form {
+        text-align: left;
+    }
+
+}
+
+.show-course-form {
+    height: 400px;
+    transition: 1s;
+}

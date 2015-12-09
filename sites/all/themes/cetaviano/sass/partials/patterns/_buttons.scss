@@ -3,15 +3,19 @@
 //
 button {
     @include button(red, red, red); //$color-border-type, $color-hover-type, $color-hover-background
+    transition: all 0.2s ease-in-out;
 }
 
 // Buttons Careers
 .btn-admision a, 
-.btn-download {
-    @include button($dark-red, $dark-red, $white);
+.btn-download,
+.inscription-button {
+    @include button($light-blue, $light-blue, $white);
     display: block;
     margin: 25px auto;
     text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
     width: 250px;
 
     &:hover {
