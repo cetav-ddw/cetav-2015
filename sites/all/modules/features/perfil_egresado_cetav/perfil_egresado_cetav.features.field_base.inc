@@ -234,7 +234,7 @@ function perfil_egresado_cetav_field_default_field_bases() {
   // Exported field_base: 'field_habilidades_egresado'.
   $field_bases['field_habilidades_egresado'] = array(
     'active' => 1,
-    'cardinality' => 3,
+    'cardinality' => 4,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_habilidades_egresado',
@@ -248,7 +248,7 @@ function perfil_egresado_cetav_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'skills_web',
+          'vocabulary' => 'habilidades',
           'parent' => 0,
         ),
       ),
