@@ -565,7 +565,7 @@ function perfil_egresado_cetav_default_page_manager_pages() {
     'name' => 'panel',
   );
   $display = new panels_display();
-  $display->layout = 'ctetav_prev-noticias';
+  $display->layout = 'ctetav_prev-egresados';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
