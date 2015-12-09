@@ -14,7 +14,7 @@
   <?php endif ?>
   <div class="center-wrapper">
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-container panel-left-column container-news">
         <?php print $content['left']; ?>
       </div>
       <div class="panel-container panel-right-column aside">
