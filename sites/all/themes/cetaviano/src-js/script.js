@@ -1,26 +1,19 @@
 // Manatí Base Theme JS functions
 (function($) {
+  /* 
+   * Este js se incorporara en un patron, temporalmente esta asi hasta terminar de incorporar las funciones resantes.
+  */
   $(function() { 
-    function breakList(numOfLists, list){
-      var listLength = list.find("li").length;
-      var numInRow = 11; // Num of desired items on each column.
-      var listItems; // list of the sliced items.
-      var newList; // New lists wrapper.
-      var i = 0;
-      for (i;i<numOfLists;i++){
-        listItems = list.find("li").slice(0, numInRow); // Gest the desired items for each column.
-        newList = $("<ul/>").append(listItems); // Wrap them into another "ul".
-        $(".split-list").append(newList); // Unwrap the items into the desired selector.
-      }
-      $(".split-list > ul:first-child").remove(); // Removes the empty list.
-    }
-    breakList(3, $(".split-list ul"));
-
     $("#show-pay-form").click(function () {
-        $(this).toggleClass("hide-button");
-        $("#course-form").toggleClass("show-course-form");
-        $("#show-course-form").remove();
+      $(this).toggleClass("hide-button");
+      $("#course-form").toggleClass("show-course-form");
+      setTimeout(function(){
+        $("#show-pay-form").remove();
+      }, 1000);
+
     });
-    
+    $("#edit-field-form-nombre-und-0-value").attr("placeholder", "Nombre Completo");
+    $("#edit-field-form-email-und-0-email").attr("placeholder", "Correo Electrónico");
   });
+
 })(jQuery);

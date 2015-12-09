@@ -51,15 +51,16 @@ input[type="radio"] {
 
 input[type="submit"], 
 input[type="file"]{
+    @include button($light-blue, $light-blue, $white);
     border: 0;
+    display: block;
     margin-top: 20px;
     outline: 0;
     padding: 8px 25px;
     transition: all 0.2s ease-in-out;
-    width: 100%;
+    width: auto;
 
     @include media(min-width 767px) {
-        @include button($light-blue, $light-blue, $white)
         display: inline-block;
         width: auto;
     }
@@ -80,6 +81,7 @@ form .description {
 
 // Formatting options
 input[type="text"].form-text {
+    @include font-size(16);
     background-color: $forms-back-colors;
     border: none;
     margin: 1rem 0;

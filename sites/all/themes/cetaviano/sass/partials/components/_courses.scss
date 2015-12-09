@@ -1,13 +1,35 @@
 .course-content {
-    @include span-columns(12);
     background-color: $blue-dark;
-    padding: 50px;
+    padding: 50px 0 50px 6%;
 
+    h4 {
+        margin: 25px auto;
+        max-width: $max-width;
+    }
+    
+    // Esta lista mostrada en columnas debe ser una clase general para las otras listas de este estilo
+    // Temporalmente las reglas las defino por la "ul"
     ul {
-        @include span-columns(4);
+        -moz-column-count: 1; /* Firefox */
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        column-count: 1;
         color: $white;
         list-style: none;
-        
+        margin: 0 auto;
+        max-width: $max-width;
+
+        @include mquery ("small") {
+            -moz-column-count: 2; /* Firefox */
+            -webkit-column-count: 2; /* Chrome, Safari, Opera */
+            column-count: 2;
+        }
+
+        @include mquery("medium") {
+            -moz-column-count: 3; /* Firefox */
+            -webkit-column-count: 3; /* Chrome, Safari, Opera */
+            column-count: 3;
+        }
+
         li {
             margin-bottom: 10px;
         }
@@ -39,6 +61,7 @@
     @include font-size(16);
     color: $gray;
     margin-top: 10px;
+    margin-bottom: 15px;
 
     .date-display-range span {
         color: $gray;
@@ -59,8 +82,30 @@
 .course-form {
     height: 0px;
     overflow: hidden;
+    margin-top: 70px;
     text-align: center;
     transition: 1s;
+}
+
+.center-wrapper:nth-child(3n) .panel-left-column,
+.center-wrapper:nth-child(3n) .panel-right-column {
+    margin-top: 30px;
+}
+
+.center-wrapper:nth-child(3n) .panel-left-column {  
+    @include mquery("medium") {
+        float: left;
+        margin: 25px 3%;
+        width: 40%;
+    }
+}
+
+.center-wrapper:nth-child(3n) .panel-right-column {
+    @include mquery("medium") {
+        float: right;
+        margin: 25px 0;
+        width: 40%;
+    }
 }
 
 .flip-wrap {
@@ -79,8 +124,31 @@
     transition: 2s;
 }
 
-.panel-cetav-cursos-libres {
+.inscription-button {
+    font-weight: bold;
+    left: 15%;
+    outline: none;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    
+    @include mquery("medium") {
+        left: 15%;
+    }
+}
 
+.panel-wide-courses {
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+
+    form {
+        text-align: left;
+    }
+}
+
+.panel-cetav-cursos-libres {
     h3, h4 {
         color: $light-blue;
         margin-bottom: 25px
@@ -97,23 +165,9 @@
     p {
         color: $gray;
     }
-    
-    .panel-left-column,
-    .panel-right-column {
-        @include span-columns(12);
-        display: block;
-
-        @include mquery("medium") {
-            @include span-columns(5);
-            @include shift(1);
-            @include omega;
-            text-align: left;
-        }
-    }
 
     .subtitle {
         border-bottom: 2px solid;
-        margin-top: 25px;
         padding-bottom: 10px;
         text-align: center;
 
@@ -124,19 +178,12 @@
     }
 }
 
-.panel-wide-courses {
-    text-align: center;
+.show-from-btn {
+    width: 80%;
     margin: 0 auto;
-    width: 450px;
-    height: 500px;
-
-    form {
-        text-align: left;
-    }
-
 }
 
 .show-course-form {
     height: 400px;
-    transition: 1s;
+    transition: 2s;
 }
