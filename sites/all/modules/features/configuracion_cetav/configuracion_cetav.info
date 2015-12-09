@@ -8,6 +8,7 @@ dependencies[] = ctools
 dependencies[] = search_api
 dependencies[] = search_api_db
 dependencies[] = search_api_multi
+dependencies[] = search_api_views
 dependencies[] = smtp
 dependencies[] = strongarm
 dependencies[] = views
