@@ -144,63 +144,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-perfil_egresado-field_contacto'.
-  $field_instances['node-perfil_egresado-field_contacto'] = array(
-    'bundle' => 'perfil_egresado',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_contacto',
-    'label' => 'contacto',
-    'required' => 1,
-    'settings' => array(
-      'add_mode' => 'select',
-      'allowed_bundles' => array(
-        'colaboradores_institucion' => -1,
-        'consejo_asesor' => -1,
-        'detalles_cursolibre' => -1,
-        'skills' => 'skills',
-        'testimonios' => -1,
-      ),
-      'bundle_weights' => array(
-        'colaboradores_institucion' => 2,
-        'consejo_asesor' => 3,
-        'detalles_cursolibre' => 4,
-        'skills' => 5,
-        'testimonios' => 6,
-      ),
-      'default_edit_mode' => 'open',
-      'title' => 'Paragraph',
-      'title_multiple' => 'Paragraphs',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'paragraphs',
-      'settings' => array(),
-      'type' => 'paragraphs_embed',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-perfil_egresado-field_disponibilidad_egresado'.
   $field_instances['node-perfil_egresado-field_disponibilidad_egresado'] = array(
@@ -824,7 +767,6 @@ function perfil_egresado_cetav_field_default_field_instances() {
   t('Pasa tiempos');
   t('Twitter');
   t('Vimeo');
-  t('contacto');
   t('habilidades_egresado');
   t('profesión_egresado');
 

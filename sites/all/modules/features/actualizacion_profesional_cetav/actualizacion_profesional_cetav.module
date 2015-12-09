@@ -5,3 +5,20 @@
  */
 
 include_once 'actualizacion_profesional_cetav.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function actualizacion_profesional_cetav_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id === 'formulario_envio_de_pago_entityform_edit_form') {
+    if ($node = menu_get_object()) {
+      $form['field_node'][LANGUAGE_NONE]['#default_value'] = $node->nid;
+      $form['field_node'][LANGUAGE_NONE]['#access'] = FALSE;
+      $form['node_title'] = array(
+        '#markup' => check_plain($node->title),
+        '#weight' => 0,
+      );
+      $form_state['rebuild'] = TRUE;
+    }
+  }
+}

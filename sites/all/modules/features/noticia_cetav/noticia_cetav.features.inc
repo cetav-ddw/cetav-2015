@@ -11,9 +11,19 @@ function noticia_cetav_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
+  if ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function noticia_cetav_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
@@ -26,11 +36,26 @@ function noticia_cetav_image_default_styles() {
   $styles['image-new-full'] = array(
     'label' => 'image-new-full',
     'effects' => array(
-      1 => array(
+      19 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 670,
           'height' => 450,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: imagen_en_la_noticia.
+  $styles['imagen_en_la_noticia'] = array(
+    'label' => 'Imagen en la noticia',
+    'effects' => array(
+      17 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 770,
+          'height' => 510,
         ),
         'weight' => 1,
       ),

@@ -18,6 +18,13 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'confirmation' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'email',
@@ -53,6 +60,13 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'confirmation' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -81,6 +95,53 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'entityform-formulario_envio_de_pago-field_node'.
+  $field_instances['entityform-formulario_envio_de_pago-field_node'] = array(
+    'bundle' => 'formulario_envio_de_pago',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'confirmation' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'entityform',
+    'field_name' => 'field_node',
+    'label' => 'Curso',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance:
   // 'entityform-formulario_envio_de_pago-field_subir_comprobante'.
   $field_instances['entityform-formulario_envio_de_pago-field_subir_comprobante'] = array(
@@ -88,6 +149,13 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'confirmation' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'file',
@@ -773,6 +841,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
   t('Contenido');
   t('Correo');
   t('Cupo');
+  t('Curso');
   t('Duracion');
   t('Email');
   t('Fecha del curso');

@@ -17,10 +17,10 @@
       <div class="panel-container panel-left-column">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-container panel-right-column aside">
         <?php print $content['right']; ?>
       </div>
-    </div>    
+    </div>
   </div>
 </div>
 

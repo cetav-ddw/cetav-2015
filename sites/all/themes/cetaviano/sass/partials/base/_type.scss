@@ -13,8 +13,8 @@ ul {
 
 p {
     @include font-size(16);
+    color: $gray;
     line-height: 1.5;
-    margin: 0 0 20px;
     overflow: hidden;
 }
 

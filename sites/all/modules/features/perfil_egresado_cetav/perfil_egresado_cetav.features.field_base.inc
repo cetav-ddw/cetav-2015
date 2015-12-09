@@ -84,21 +84,6 @@ function perfil_egresado_cetav_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_contacto'.
-  $field_bases['field_contacto'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_contacto',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'paragraphs',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'paragraphs',
-  );
-
   // Exported field_base: 'field_disponibilidad_egresado'.
   $field_bases['field_disponibilidad_egresado'] = array(
     'active' => 1,
