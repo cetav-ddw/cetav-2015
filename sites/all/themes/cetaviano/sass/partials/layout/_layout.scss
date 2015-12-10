@@ -1,10 +1,13 @@
 //
 // General layout rules
 //
-.main,
 .grid-width {
     margin: 0 auto;
     max-width: $max-width;
+}
+
+.center-wrapper {
+    @include outer-container;
 }
 
 .center-wrapper,
