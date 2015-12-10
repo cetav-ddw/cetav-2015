@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="panel-display panel-cetav-basico">
+<div class="panel-display panel-cetav-institucion">
   <div class="center-wrapper">
   <?php if ($content['wide_main']): ?>
     <div class="panel-container panel-wide">
@@ -21,13 +21,13 @@
       <div class="panel-container panel-right-column">
         <?php print $content['right']; ?>
       </div>
-    </div>    
+    </div>
   </div>
     <?php if ($content['wide']): ?>
     <div class="panel-container panel-wide">
       <div class="grid-width">
         <?php print $content['wide']; ?>
-      </div>      
+      </div>
     </div>
   <?php endif ?>
   <div class="center-wrapper">
@@ -38,13 +38,13 @@
       <div class="panel-container panel-right-column">
         <?php print $content['right_second']; ?>
       </div>
-    </div>    
+    </div>
   </div>
     <?php if ($content['wide_second']): ?>
     <div class="panel-container panel-wide">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
-      </div>      
+      </div>
     </div>
   <?php endif ?>
 </div>

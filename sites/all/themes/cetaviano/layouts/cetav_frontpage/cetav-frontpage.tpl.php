@@ -20,14 +20,14 @@
       <div class="panel-container panel-right-column">
         <?php print $content['right']; ?>
       </div>
-    </div>    
+    </div>
   </div>
   <?php if ($content['wide_second']): ?>
     <div class="panel-container panel-wide panel-wide-courses">
       <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
+  <div class="center-wrapper section-free-courses">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_second']; ?>
@@ -35,9 +35,9 @@
       <div class="panel-container panel-right-column">
         <?php print $content['right_second']; ?>
       </div>
-    </div>    
+    </div>
   </div>
-  <div class="center-wrapper">
+  <div class="center-wrapper section-free-courses">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_third']; ?>
@@ -45,7 +45,7 @@
       <div class="panel-container panel-right-column">
         <?php print $content['right_third']; ?>
       </div>
-    </div>    
+    </div>
   </div>
   <?php if ($content['wide_fourth']): ?>
     <div class="panel-container panel-wide panel-wide-allies">
