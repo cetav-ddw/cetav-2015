@@ -1,16 +1,18 @@
 //
 // General layout rules
 //
+.main,
 .grid-width {
     margin: 0 auto;
     max-width: $max-width;
 }
 
-.center-wrapper {
+.center-wrapper,
+.panel-wide {
     @include outer-container;
-    clear: both;
+    padding: 80px 16px;
     overflow: hidden;
-    padding: 40px 16px;
+    clear: both;
 }
 
 .panel-left-column,
