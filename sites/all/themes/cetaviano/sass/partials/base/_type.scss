@@ -12,10 +12,9 @@ ul {
 }
 
 p {
-    @include font-size(16);
+    @include font-size(14);
     color: $gray;
     line-height: 1.5;
-    overflow: hidden;
 }
 
 em {
@@ -31,8 +30,8 @@ cite {
 }
 
 li {
-    @include font-size(15);
-    line-height: 1.2;
+    @include font-size(14);
+    line-height: 1.5;
     vertical-align: top;
 }
 

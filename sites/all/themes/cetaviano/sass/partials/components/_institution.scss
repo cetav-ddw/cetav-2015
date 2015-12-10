@@ -1,0 +1,78 @@
+.personal-institution {
+
+    .field-items {
+        @include outer-container;
+
+        >.field-item {
+            margin-bottom: 20px;
+            text-align: center;
+
+            @include mquery("base") {
+                @include span-columns(12);
+            }
+
+            @include mquery("small") {
+                @include span-columns(6);
+            }
+
+            @include mquery("medium") {
+                @include span-columns(3);
+            }
+
+            img {
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .odd {
+
+            @include mquery("small") {
+                margin-right: 0;
+            }
+
+            @include mquery("medium") {
+                margin-right: 2.3576515979%;
+            }
+        }
+    }
+
+    .personal-name {
+        color: $gray;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .personal-charge {
+
+        p {
+            @include font-size(13);
+            background-color: $super-light-gray;
+            border-radius: 5px;
+            color: $gray;
+            display: inline-block;
+            height: 54px;
+            margin: 21px 0 10px;
+            padding: 5px 10px;
+            width: 100%;
+
+            @include mquery("medium") {
+                height: 67px;
+            }
+
+            @include mquery("large") {
+                height: 54px;
+            }
+        }
+    }
+
+    .personal-description {
+
+        p {
+            @include font-size(12);
+            color: $dark-gray;
+            text-align: left;
+        }
+    }
+}
