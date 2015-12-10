@@ -38,7 +38,7 @@
 .course-details {
     p {
         @include font-size(14);
-        margin: 20px 0 10px;
+        margin: 20px 10px;
 
         &:first-of-type {
             @include font-size(16);
@@ -81,12 +81,12 @@
     transition: 1s;
 }
 
-.center-wrapper:nth-child(3n) .panel-left-column,
-.center-wrapper:nth-child(3n) .panel-right-column {
+.center-wrapper-courses .panel-left-column,
+.center-wrapper-courses .panel-right-column {
     margin-top: 30px;
 }
 
-.center-wrapper:nth-child(3n) .panel-left-column {  
+.center-wrapper-courses .panel-left-column {  
     @include mquery("medium") {
         float: left;
         margin: 25px 3%;
@@ -94,7 +94,7 @@
     }
 }
 
-.center-wrapper:nth-child(3n) .panel-right-column {
+.center-wrapper-courses .panel-right-column {
     @include mquery("medium") {
         float: right;
         margin: 25px 0;
@@ -120,25 +120,14 @@
 
 .inscription-button {
     font-weight: bold;
-    left: 15%;
+    left: 12%;
     outline: none;
     position: absolute;
     margin: 0;
     top: 0;
     
     @include mquery("medium") {
-        left: 15%;
-    }
-}
-
-.panel-wide-courses {
-    text-align: center;
-    margin: 0 auto;
-    width: 450px;
-    height: 500px;
-
-    form {
-        text-align: left;
+        left: 13%;
     }
 }
 
@@ -158,6 +147,21 @@
 
     p {
         color: $gray;
+    }
+
+    .panel-wide {
+        padding: 0;
+    }
+
+    .panel-wide-courses {
+        text-align: center;
+        margin: 0 auto;
+        width: 450px;
+        height: 500px;
+
+        form {
+            text-align: left;
+        }
     }
 
     .subtitle {
