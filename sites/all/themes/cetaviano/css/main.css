@@ -1493,24 +1493,27 @@ div.password-suggestions ul {
   padding-bottom: 17px;
   width: 100%; }
 
-.views-row {
+.view-preview-free-course {
   margin: 50px auto;
   max-width: 490px;
   position: relative; }
-  .views-row:hover .details-preview-course {
+  .view-preview-free-course:hover .details-preview-course {
     opacity: 1;
     transition: 1s; }
   @media only screen and (min-width: 68.75em) {
-    .views-row {
+    .view-preview-free-course {
       display: inline-block;
       margin: 50px 15px; } }
 
 .views-field-field-imagen-curso {
   overflow: hidden; }
+  .views-field-field-imagen-curso img {
+    height: 100%;
+    max-width: none; }
 
 .details-preview-course {
   background-color: #00c9ed;
-  height: 247px;
+  height: 250px;
   opacity: 0.85;
   padding: 30px 20px;
   position: absolute;
