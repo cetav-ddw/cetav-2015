@@ -11,6 +11,5 @@ $plugin = array(
   'regions' => array(
     'left' => t('Left side'),
     'right' => t('Right side'),
-    'wide' => t('Wide'),
   ),
 );
