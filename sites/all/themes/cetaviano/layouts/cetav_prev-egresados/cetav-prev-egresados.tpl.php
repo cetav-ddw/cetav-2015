@@ -6,7 +6,7 @@
  * This template provides a prev-egresados for CETAV panel display layout.
  */
 ?>
-<div class="panel-display panel-cetav-noticias">
+<div class="panel-display panel-cetav-prev-egresados">
   <div class="center-wrapper">
   <div class="grid-width">
     <div class="panel-container panel-left-column">

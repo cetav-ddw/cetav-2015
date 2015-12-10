@@ -3,10 +3,10 @@
  * @file
  * Template for a 3 column panel layout.
  *
- * This template provides a prev-egresados for CETAV panel display layout.
+ * This template provides a prev-noticias for CETAV panel display layout.
  */
 ?>
-<div class="panel-display panel-cetav-noticias">
+<div class="panel-display panel-cetav-prev-noticias">
   <div class="center-wrapper">
   <div class="grid-width">
     <div class="panel-container panel-left-column container-news-prev">
