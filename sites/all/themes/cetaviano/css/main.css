@@ -153,32 +153,50 @@ a {
 button {
   font-size: 18px;
   font-size: 1.8rem;
-  background: transparent;
+  background-color: red;
   border: 2px solid red;
   color: red;
-  padding: 10px 15px; }
-  button:hover {
-    color: red;
-    background-color: red; }
+  padding: 15px 30px;
+  transition: all 0.2s ease-in-out; }
+  @media only screen and (min-width: 68.75em) {
+    button {
+      background-color: transparent;
+      border: 2px solid red;
+      color: red; }
+      button:hover {
+        background-color: red;
+        color: red; } }
 
 .btn-admision a,
-.btn-download {
+.btn-download,
+.inscription-button {
   font-size: 18px;
   font-size: 1.8rem;
-  background: transparent;
-  border: 2px solid #9e280e;
-  color: #9e280e;
-  padding: 10px 15px;
+  background-color: #00c9ed;
+  border: 2px solid #00c9ed;
+  color: #fff;
+  padding: 15px 30px;
   display: block;
   margin: 25px auto;
   text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
   width: 250px; }
+  @media only screen and (min-width: 68.75em) {
+    .btn-admision a,
+    .btn-download,
+    .inscription-button {
+      background-color: transparent;
+      border: 2px solid #00c9ed;
+      color: #00c9ed; }
+      .btn-admision a:hover,
+      .btn-download:hover,
+      .inscription-button:hover {
+        background-color: #00c9ed;
+        color: #fff; } }
   .btn-admision a:hover,
-  .btn-download:hover {
-    color: #fff;
-    background-color: #9e280e; }
-  .btn-admision a:hover,
-  .btn-download:hover {
+  .btn-download:hover,
+  .inscription-button:hover {
     text-decoration: none; }
 
 .btn-download {
@@ -257,13 +275,13 @@ textarea {
   border-radius: 3px;
   border: solid #e1e1e1 1px;
   margin-bottom: 5px;
-  padding: 5px; }
+  padding: 10px; }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%; }
-  @media screen and (min-width: 767px) {
+  @media only screen and (min-width: 56.25em) {
     input[type="text"],
     input[type="email"],
     input[type="password"] {
@@ -275,22 +293,58 @@ input[type="radio"] {
   font-size: 1.6rem;
   vertical-align: baseline; }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="file"] {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #00c9ed;
+  border: 2px solid #00c9ed;
+  color: #fff;
+  padding: 15px 30px;
   border: 0;
-  margin-bottom: 10px;
+  display: block;
+  margin-top: 20px;
   outline: 0;
   padding: 8px 25px;
   transition: all 0.2s ease-in-out;
   width: 100%; }
-  @media screen and (min-width: 767px) {
-    input[type="submit"] {
+  @media only screen and (min-width: 68.75em) {
+    input[type="submit"],
+    input[type="file"] {
+      background-color: transparent;
+      border: 2px solid #00c9ed;
+      color: #00c9ed; }
+      input[type="submit"]:hover,
+      input[type="file"]:hover {
+        background-color: #00c9ed;
+        color: #fff; } }
+  @media only screen and (min-width: 56.25em) {
+    input[type="submit"],
+    input[type="file"] {
       display: inline-block;
-      margin-right: 10px;
-      margin-bottom: 0;
       width: auto; } }
+
+input[type="file"] {
+  text-indent: 100%; }
+
+input[name="field_subir_comprobante_und_0_upload_button"],
+form .description {
+  display: none; }
 
 .form-type-radio {
   margin-bottom: 5px; }
+
+.course-form label {
+  display: none; }
+
+input[type="text"].form-text {
+  font-size: 16px;
+  font-size: 1.6rem;
+  background-color: #ececec;
+  border: 0;
+  margin: 10px 0;
+  max-width: 100%;
+  padding: 20px; }
 
 .field-widget-text-textarea .form-type-textarea {
   margin-bottom: 10px; }
@@ -383,10 +437,18 @@ input[type="submit"] {
   color: #414042;
   text-align: left; }
 
-.main,
 .grid-width {
   margin: 0 auto;
   max-width: 1200px; }
+
+.center-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .center-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .center-wrapper,
 .panel-wide {
@@ -1090,6 +1152,147 @@ div.password-suggestions ul {
 
 .pane-node-field-skills-carrera {
   clear: both; }
+
+.course-content {
+  background-color: #243842;
+  padding: 50px 0 50px 6%; }
+  .course-content h4 {
+    margin: 25px auto;
+    max-width: 1200px; }
+  .course-content ul {
+    column-count: 1;
+    color: #fff;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px; }
+    @media only screen and (min-width: 37.5em) {
+      .course-content ul {
+        column-count: 2; } }
+    @media only screen and (min-width: 56.25em) {
+      .course-content ul {
+        column-count: 3; } }
+    .course-content ul li {
+      margin-bottom: 10px; }
+      .course-content ul li:before {
+        color: #00c9ed;
+        content: "• "; }
+
+.course-details p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 20px 10px; }
+  .course-details p:first-of-type {
+    font-size: 16px;
+    font-size: 1.6rem; }
+
+.course-details strong {
+  color: #414042;
+  font-weight: bold; }
+
+.course-info {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #77787b;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+  .course-info .date-display-range span {
+    color: #77787b;
+    font-weight: normal; }
+  .course-info .date-display-range,
+  .course-info .label-inline {
+    display: inline;
+    font-weight: bold; }
+  .course-info .label-inline {
+    color: #414042; }
+
+.course-form {
+  height: 0;
+  overflow: hidden;
+  margin-top: 70px;
+  text-align: center;
+  transition: 1s; }
+
+.center-wrapper-courses .panel-left-column {
+  margin-top: 30px; }
+  @media only screen and (min-width: 56.25em) {
+    .center-wrapper-courses .panel-left-column {
+      float: left;
+      margin: 25px 3%;
+      width: 40%; } }
+
+.center-wrapper-courses .panel-right-column {
+  margin-top: 30px; }
+  @media only screen and (min-width: 56.25em) {
+    .center-wrapper-courses .panel-right-column {
+      float: right;
+      margin: 25px 0;
+      width: 40%; } }
+
+.flip-wrap {
+  perspective: 800px; }
+
+.hide-button {
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateX(93deg);
+  transition: 1s; }
+
+.hide-flip-wrap {
+  height: 0;
+  transition: 2s; }
+
+.inscription-button {
+  font-weight: bold;
+  left: 12%;
+  outline: none;
+  position: absolute;
+  margin: 0;
+  top: 0; }
+  @media only screen and (min-width: 56.25em) {
+    .inscription-button {
+      left: 13%; } }
+
+.panel-cetav-cursos-libres h3,
+.panel-cetav-cursos-libres h4 {
+  color: #00c9ed;
+  margin-bottom: 25px; }
+
+.panel-cetav-cursos-libres img {
+  border: 0;
+  box-shadow: 0 0 8px #77787b;
+  height: auto;
+  width: 100%; }
+
+.panel-cetav-cursos-libres p {
+  color: #77787b; }
+
+.panel-cetav-cursos-libres .panel-wide {
+  padding: 0; }
+
+.panel-cetav-cursos-libres .panel-wide-courses {
+  text-align: center;
+  margin: 0 auto;
+  width: 450px;
+  height: 500px; }
+  .panel-cetav-cursos-libres .panel-wide-courses form {
+    text-align: left; }
+
+.panel-cetav-cursos-libres .subtitle {
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  text-align: center; }
+  @media only screen and (min-width: 56.25em) {
+    .panel-cetav-cursos-libres .subtitle {
+      text-align: left;
+      width: 370px; } }
+
+.show-from-btn {
+  width: 80%;
+  margin: 0 auto; }
+
+.show-course-form {
+  height: 400px;
+  transition: 2s; }
 
 .pane-bundle-steps-admision h4 {
   font-size: 22px;
