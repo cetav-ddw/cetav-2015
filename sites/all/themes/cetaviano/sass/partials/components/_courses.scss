@@ -10,8 +10,6 @@
     // Esta lista mostrada en columnas debe ser una clase general para las otras listas de este estilo
     // Temporalmente las reglas las defino por la "ul"
     ul {
-        -moz-column-count: 1; /* Firefox */
-        -webkit-column-count: 1; /* Chrome, Safari, Opera */
         column-count: 1;
         color: $white;
         list-style: none;
@@ -19,14 +17,10 @@
         max-width: $max-width;
 
         @include mquery ("small") {
-            -moz-column-count: 2; /* Firefox */
-            -webkit-column-count: 2; /* Chrome, Safari, Opera */
             column-count: 2;
         }
 
         @include mquery("medium") {
-            -moz-column-count: 3; /* Firefox */
-            -webkit-column-count: 3; /* Chrome, Safari, Opera */
             column-count: 3;
         }
 
