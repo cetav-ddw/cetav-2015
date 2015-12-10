@@ -67,11 +67,16 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h4';
+  $handler->display->display_options['fields']['title']['element_class'] = 'tiltle-course-item';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Fecha del curso */
   $handler->display->display_options['fields']['field_fecha_curso']['id'] = 'field_fecha_curso';
   $handler->display->display_options['fields']['field_fecha_curso']['table'] = 'field_data_field_fecha_curso';
   $handler->display->display_options['fields']['field_fecha_curso']['field'] = 'field_fecha_curso';
   $handler->display->display_options['fields']['field_fecha_curso']['label'] = '';
+  $handler->display->display_options['fields']['field_fecha_curso']['element_class'] = 'date-course-item';
   $handler->display->display_options['fields']['field_fecha_curso']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_fecha_curso']['settings'] = array(
     'format_type' => 'short',
@@ -86,6 +91,7 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'btn-course';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'ver mas de curso';
 
@@ -144,8 +150,8 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['fields']['field_imagen_curso']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_imagen_curso']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_imagen_curso']['settings'] = array(
-    'image_style' => 'imagen_cursos_perfil_profesional',
-    'image_link' => 'content',
+    'image_style' => '',
+    'image_link' => '',
   );
   $export['cursos'] = $view;
 

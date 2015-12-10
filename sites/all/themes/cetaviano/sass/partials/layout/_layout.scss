@@ -24,46 +24,6 @@
     }
 }
 
-/* layouts left, right
-   ========================================================================== */
-   /*
-    * estos estilos todavía no son específicos, Fabian agregó clases desde php 
-    * nada más espero que esté arriba para hacer pull y ya darle el estilo
-    * específico ya que no tengo una clase de donde agarrarme.
-    */
-.panel-left-column {
-    display: block;
-    float: left;
-    text-align: center;
-    width: 100%;
-
-    @include mquery("base") {
-        margin-bottom: 15px;
-    }
-    @include mquery("small") {
-        margin-bottom: 20px;
-    }
-    @include mquery("medium") {
-        margin-bottom: 30px;
-    }
-    @include mquery("large") {
-        display: inline-block;
-        text-align: left;
-        width: 40%; 
-    }
-}
-
-.panel-right-column {
-    @include mquery("medium") {
-        display: block;
-        width: 100%;
-    }
-    @include mquery("large") {
-        float: right;
-        width: 50%;
-    }
-}
-
 /* Section background header
    ========================================================================== */
 .main-content .main .title {
@@ -129,20 +89,13 @@
 /* layouts section call-out-home-intro
    ========================================================================== */
 .call-out-home-intro .panel-left-column {
-    // aquí va el logo del cetav, estos estilos son provisionales
-    // para dar concepto de layout
-
-    background-color: #eee;
     display: block;
-    float: left;
-    height: 171px;
     text-align: center;
     width: 100%;
 
     @include mquery("large") {
         display: inline-block;
-        margin-right: 0;
-        text-align: left;
+        margin: 0 auto;
         width: 40%; 
     }
 }
@@ -156,6 +109,35 @@
         float: right;
         margin-right: 60px;
         width: 50%;
+    }
+}
+
+.panels-ipe-empty-pane {
+    // background-image logo cetav
+    background-image: url(../images/logo-naranja-cetav.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: transparent;
+    display: block;
+    height: 131px;
+    margin: 0 auto;
+    text-align: center;
+ 
+    @include mquery("base") {
+        width: 200px;
+    }
+    @include mquery("small") {
+        margin-bottom: 10px;
+        width: 240px;
+    }
+    @include mquery("medium") {
+        margin-top: 30px;
+        width: 280px;
+    }
+    @include mquery("x-large") {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        width: 300px;
     }
 }
 
@@ -192,22 +174,73 @@
     }
 }
 
-
 /* Section free courses home
    ========================================================================== */
-.panel-right-column .view-cursos {
-    margin: 0;
+.section-free-courses .panel-left-column {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
+    @include mquery("medium") {
+        margin-bottom: 30px;
+    }
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 45%; 
+    }
 }
 
-.panel-right-column .view-cursos .views-row {
+.section-free-courses .panel-right-column {
+    @include mquery("medium") {
+        display: block;
+        width: 100%;
+    }
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
+}
+
+// solo desde este id me podía agarrar para darle un background-image al
+// contenedor
+#panels-ipe-regionid-left_third {
+    background-image: url(../images/course.png);
+    background-position: right;
+    background-size: 100%;
+    //float: left;
+    height: 315px;
+    width: 100%;
+    display: none; 
+    @include mquery("large") {
+        display: inline-block;
+    }
+}
+
+.section-free-courses .views-row {
     border-bottom: 1px solid #d6d6d6;
     list-style: none;
     padding: 17px 0;
     position: relative;
 }
 
+.text-course-description p {
+    margin-bottom: 10px;
+}
+
 /* Section allies home
    ========================================================================== */
+.panel-cetav-frontpage .panel-wide-allies {
+    height: auto;
+}
+
 .section-title-allies {
     display: block;
     float: left;
@@ -245,6 +278,8 @@
 .logo-allies .field-item {
     display: inline-block;
     float: left;
+    text-align: center;
+    position: relative;
 
     @include mquery("base") {
         height: 60px;
@@ -270,8 +305,14 @@
     }
     // height provisional, solo para concepto de contenido
     img {
-        height: 90px;
-        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        margin: auto;
+        width: 100px;
     }
 }
 
