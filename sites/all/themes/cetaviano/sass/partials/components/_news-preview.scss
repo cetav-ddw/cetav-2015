@@ -1,75 +1,73 @@
 .panel-cetav-preview-noticias {
+    .panel-left-column {
+        @include span-columns(12);
 
-  .panel-left-column {
-    @include span-columns(12);
-
-    @include mquery(medium) {
-      @include span-columns(8);
+        @include mquery(medium) {
+            @include span-columns(8);
+        }
     }
-  }
 
-  .panel-right-column {
-    @include span-columns(12);
+    .panel-right-column {
+        @include span-columns(12);
 
-    @include mquery(medium) {
-      @include span-columns(4);
-      @include omega();
+        @include mquery(medium) {
+            @include span-columns(4);
+            @include omega();
+        }
     }
-  }
 }
 
 .news-prev {
-  float: left;
+    float: left;
 
-  img {
-    width: 100%;
-  }
-
-  .views-row {
-    @include span-columns(8 of 8);
-    box-shadow: 0px 0px 13px $dark-gray;
-    display: inline-block;
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    vertical-align: top;
-
-    @include mquery(small) {
-      @include span-columns(4 of 8);
+    img {
+        width: 100%;
     }
-  }
+    .views-row {
+        @include span-columns(8 of 8);
+        box-shadow: 0px 0px 13px $dark-gray;
+        display: inline-block;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
 
-  .views-row-even {
-    @include omega();
-  }
+        @include mquery(small) {
+            @include span-columns(4 of 8);
+        }
+    }
+
+    .views-row-even {
+        @include omega();
+    }
 }
 
 .title-new-preview {
-  margin-bottom:5px;
+    margin-bottom:5px;
 }
 
 .details-preview-news {
-  padding: 20px;
-  position: relative;
+    padding: 20px;
+    position: relative;
 
-  &:before{
-    border-color: transparent transparent white transparent;
-    border-style: solid;
-    border-width: 0 15px 15px 15px;
-    content: "";
-    height: 0;
-    left: 22px;
-    position: absolute;
-    top: -15px;
-    width: 0;
-  }
+    &:before{
+        border-color: transparent transparent white transparent;
+        border-style: solid;
+        border-width: 0 15px 15px 15px;
+        content: "";
+        height: 0;
+        left: 22px;
+        position: absolute;
+        top: -15px;
+        width: 0;
+    }
 }
 
 .date-new-preview {
-  @include font-size(12);
-  border-bottom: 1px solid #cecece;
-  display: block;
-  margin-bottom: 17px;
-  padding-bottom: 17px;
-  width: 100%;
+    @include font-size(12);
+    border-bottom: 1px solid #cecece;
+    display: block;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    width: 100%;
 }
