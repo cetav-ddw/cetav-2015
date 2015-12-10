@@ -5,6 +5,7 @@ label,
 .webform-container-inline label {
     @include font-size(14);
     color: #333;
+    display: block;
     font-weight: bold;
     margin-bottom: 8px;
 }
