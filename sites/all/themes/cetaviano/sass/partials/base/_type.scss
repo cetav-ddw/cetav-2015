@@ -7,15 +7,13 @@ ul {
 
 ol,
 ul {
-    margin: 0;
     padding: 0;
 }
 
 p {
-    @include font-size(16);
+    @include font-size(14);
     color: $gray;
     line-height: 1.5;
-    overflow: hidden;
 }
 
 em {
@@ -31,9 +29,8 @@ cite {
 }
 
 li {
-    @include font-size(15);
-    line-height: 1.2;
-    vertical-align: top;
+    @include font-size(14);
+    line-height: 1.5;
 }
 
 strong {
