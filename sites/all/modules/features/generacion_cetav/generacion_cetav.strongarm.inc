@@ -83,9 +83,6 @@ function generacion_cetav_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
       'revision' => array(
         'custom_settings' => FALSE,
       ),
@@ -93,10 +90,10 @@ function generacion_cetav_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '30',
         ),
       ),
       'display' => array(),

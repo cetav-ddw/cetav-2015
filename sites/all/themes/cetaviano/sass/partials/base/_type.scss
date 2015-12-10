@@ -15,8 +15,6 @@ p {
     @include font-size(14);
     color: $gray;
     line-height: 1.5;
-    margin: 0;
-    overflow: hidden;
 }
 
 em {

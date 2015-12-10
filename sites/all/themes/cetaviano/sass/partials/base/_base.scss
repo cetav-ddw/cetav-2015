@@ -1,4 +1,3 @@
-// Rules for base elements
 body {
     @include font-size(14);
     box-sizing: border-box;
@@ -11,7 +10,8 @@ html {
     font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*, 
+*:before, 
+*:after {
     box-sizing: inherit;
-    margin: 0;
 }

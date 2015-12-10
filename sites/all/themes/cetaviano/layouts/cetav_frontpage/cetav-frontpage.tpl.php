@@ -13,11 +13,13 @@
     </div>
   <?php endif ?>
   <div class="center-wrapper call-out call-out-home-intro">
-    <div class="panel-container panel-left-column">
-      <?php print $content['left']; ?>
-    </div>
-    <div class="panel-container panel-right-column">
-      <?php print $content['right']; ?>
+    <div class="grid-width">
+      <div class="panel-container panel-left-column">
+        <?php print $content['left']; ?>
+      </div>
+      <div class="panel-container panel-right-column">
+        <?php print $content['right']; ?>
+      </div>
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
@@ -25,25 +27,29 @@
       <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
-    <div class="panel-container panel-left-column">
-      <?php print $content['left_second']; ?>
-    </div>
-    <div class="panel-container panel-right-column">
-      <?php print $content['right_second']; ?>
+  <div class="center-wrapper section-free-courses">
+    <div class="grid-width">
+      <div class="panel-container panel-left-column">
+        <?php print $content['left_second']; ?>
+      </div>
+      <div class="panel-container panel-right-column">
+        <?php print $content['right_second']; ?>
+      </div>
     </div>
   </div>
-  <div class="center-wrapper">
-    <div class="panel-container panel-left-column">
-      <?php print $content['left_third']; ?>
-    </div>
-    <div class="panel-container panel-right-column">
-      <?php print $content['right_third']; ?>
+  <div class="center-wrapper section-free-courses">
+    <div class="grid-width">
+      <div class="panel-container panel-left-column">
+        <?php print $content['left_third']; ?>
+      </div>
+      <div class="panel-container panel-right-column">
+        <?php print $content['right_third']; ?>
+      </div>
     </div>
   </div>
   <?php if ($content['wide_fourth']): ?>
     <div class="panel-container panel-wide panel-wide-allies">
-      <div class="content-width center-wrapper">
+      <div class="grid-width center-wrapper">
       <?php print $content['wide_fourth']; ?>
       </div>
     </div>

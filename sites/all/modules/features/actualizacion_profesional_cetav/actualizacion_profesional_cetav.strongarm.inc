@@ -13,6 +13,15 @@ function actualizacion_profesional_cetav_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entityform_block_types';
+  $strongarm->value = array(
+    0 => 'formulario_envio_de_pago',
+  );
+  $export['entityform_block_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__actualizacion_profesional';
   $strongarm->value = array(
     'view_modes' => array(
@@ -20,7 +29,7 @@ function actualizacion_profesional_cetav_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -44,7 +53,7 @@ function actualizacion_profesional_cetav_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
           'weight' => '7',

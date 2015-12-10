@@ -29,7 +29,7 @@ function noticia_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -58,7 +58,7 @@ function noticia_cetav_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -83,7 +83,7 @@ function noticia_cetav_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'image-new-full',
+          'image_style' => 'imagen_en_la_noticia',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -122,10 +122,59 @@ function noticia_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-noticia-field_title_noticia'.
+  $field_instances['node-noticia-field_title_noticia'] = array(
+    'bundle' => 'noticia',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_title_noticia',
+    'label' => 'title-noticia',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Image');
+  t('title-noticia');
 
   return $field_instances;
 }
