@@ -1,0 +1,94 @@
+.views-field-field-testimonios {
+    background-color: #BE1D2C;
+    margin-top: 50px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.paragraphs-item-testimonios {
+    @include outer-container;
+    color: $gray;
+    float: left;
+    margin-left: 32px;
+    overflow: hidden;
+    position: relative;
+
+    .img-testimonial {
+        width: 22%;
+        position: absolute;
+
+        img {
+            border-radius: 50%;
+            box-shadow: 0px 4px 7px -2px $gray;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+        }
+    }
+
+    .text-testimonial {
+        @include shift(3);
+        @include span-columns(9);
+        @include omega();
+        padding: 10px 0;
+        position: relative;
+
+        p {
+            color: #fff;
+            margin: 0 11%;
+        }
+
+         &:before {
+            background-image: url(../images/comillas-apertura.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            content: "";
+            padding-bottom: 7%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 10%;
+        }
+
+         &:after {
+            background-image: url(../images/comillas-cierre.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: 0;
+            content: "";
+            padding-bottom: 7%;
+            position: absolute;
+            right: 0;
+            visibility: visible;
+            width: 10%;
+        }
+    }
+}
+
+.testimonial {
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 24px;
+    text-align: left;
+    width: 100%;
+
+    h5 {
+        @include span-columns(6);
+        @include shift(4);
+        @include font-size(14);
+        color: #fff;
+        font-weight: lighter;
+        margin-bottom: 3px;
+        margin-top: 10px;
+    }
+
+    .carrera-testimonial {
+        @include span-columns(6);
+        @include shift(4);
+        @include font-size(12);
+        color: #fff;
+    }
+}
