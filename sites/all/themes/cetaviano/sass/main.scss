@@ -2,28 +2,38 @@
 @import "bourbon";
 @import "neat";
 
-// Google fonts
-// ...
-
+//Utils
 @import "partials/utils/variables";
 @import "partials/utils/functions";
 @import "partials/utils/mixins";
 @import "partials/utils/placeholders";
 
+//Base
 @import "partials/base/base";
 @import "partials/base/type";
 @import "partials/base/headings";
 
+//Patterns
 @import "partials/patterns/links";
 @import "partials/patterns/list";
 @import "partials/patterns/buttons";
 @import "partials/patterns/tables";
+@import "partials/patterns/multi-media";
+
+//Forms
 @import "partials/patterns/forms/forms-drupal";
 @import "partials/patterns/forms/webforms";
+@import "partials/components/institution";
 
+//Layout
 @import "partials/layout/layout";
 
+//Third Party
 @import "partials/third-party/system/drupal";
 
+//Components
 @import "partials/components/careers";
 @import "partials/components/news-node";
+@import "partials/components/admission";
+@import "partials/components/news";
+@import "partials/components/preview-course";

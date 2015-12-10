@@ -82,7 +82,7 @@ function perfil_egresado_cetav_taxonomy_default_vocabularies() {
       'name' => 'Habilidades',
       'machine_name' => 'habilidades',
       'description' => '',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(
