@@ -1,47 +1,366 @@
 //
 // General layout rules
 //
-.main,
 .grid-width {
     margin: 0 auto;
     max-width: $max-width;
 }
 
-.center-wrapper,
-.panel-wide {
-    padding: 80px 16px;
-    overflow: hidden;
-    clear: both;
+.center-wrapper {
+    @include outer-container;
+    height: auto;
+    margin: 0 auto;
+    padding: 70px 16px;
 }
 
 .panel-left-column,
 .panel-right-column {
     @include span-columns(12);
     display: block;
-
-    @include mquery("large") {
+    
+    @include mquery("medium") {
         @include span-columns(6);
         display: inline-block;
     }
 }
 
-.pane-bundle-steps-admision {
-    @include outer-container;
+/* layouts left, right
+   ========================================================================== */
+   /*
+    * estos estilos todavía no son específicos, Fabian agregó clases desde php 
+    * nada más espero que esté arriba para hacer pull y ya darle el estilo
+    * específico ya que no tengo una clase de donde agarrarme.
+    */
+.panel-left-column {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
 
-    .paragraphs-item-steps {
-        @include span-columns(12);
-
-        @include mquery("small") {
-            @include span-columns(6);
-            @include omega();
-        }
-        @include mquery("medium") {
-            @include span-columns(4);
-            @include omega();
-        }
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
+    @include mquery("medium") {
+        margin-bottom: 30px;
+    }
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 40%; 
     }
 }
 
-.panel-header {
-    padding: 0;
+.panel-right-column {
+    @include mquery("medium") {
+        display: block;
+        width: 100%;
+    }
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
 }
+
+/* Section background header
+   ========================================================================== */
+.main-content .main .title {
+    display: none;
+}
+
+.panel-cetav-frontpage .panel-wide {
+    //background: url(../img/prueba.jpg) no-repeat center;
+    //background-attachment: fixed;
+    //background-size: cover;
+    background-color: #eee;
+    height: 700px;
+
+    @include mquery("x-large") {
+        background-size: 1200px;
+    }
+}
+
+/* Content Header
+   ========================================================================== */
+.content-header{
+    p:first-child{
+        @include font-size(48);
+        color: $white;
+        margin: 0 0 15px;
+    }
+
+    strong{
+        @include font-size(48);
+        color: $orange;
+    }
+ 
+    @include mquery("base") {
+        padding-top: 14.5%;
+    }
+    @include mquery("small") {
+        padding-top: 24.5%;
+    }
+    @include mquery("medium") {
+        padding-top: 17.5%;
+    }
+    @include mquery("large") {
+        padding-top: 14.5%;
+    }
+    @include mquery("x-large") {
+        padding-top: 9.5%;
+    }
+}
+
+.type-wrap{
+    @include font-size(48);
+    font-family: $contrast-font;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrap{
+    margin: 150px auto;
+    max-width: 600px;
+}
+
+/* layouts section call-out-home-intro
+   ========================================================================== */
+.call-out-home-intro .panel-left-column {
+    // aquí va el logo del cetav, estos estilos son provisionales
+    // para dar concepto de layout
+
+    background-color: #eee;
+    display: block;
+    float: left;
+    height: 171px;
+    text-align: center;
+    width: 100%;
+
+    @include mquery("large") {
+        display: inline-block;
+        margin-right: 0;
+        text-align: left;
+        width: 40%; 
+    }
+}
+
+.call-out-home-intro .panel-right-column {
+    @include mquery("medium") {
+        display: block;
+        width: 100%;
+    }
+    @include mquery("large") {
+        float: right;
+        margin-right: 60px;
+        width: 50%;
+    }
+}
+
+// text intro home
+.call-out-home-intro .panel-right-column p {
+    margin-top: 0;
+    @include mquery("large") {
+        @include font-size(18);
+        margin-top: 10px;
+    }
+}
+
+
+/* Section courses home
+   ========================================================================== */
+.panel-cetav-frontpage .panel-wide-courses {
+    background-color: #eee;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+.panel-wide-courses .panel-pane {
+    display: block;
+    height: 400px;
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    border: 1px solid #222;
+    @include mquery("large") {
+        width: calc(100% / 3);
+    }
+}
+
+
+/* Section free courses home
+   ========================================================================== */
+.section-free-courses .panel-right-column .view-cursos {
+    margin: 0;
+}
+
+.section-free-courses .views-row {
+    border-bottom: 1px solid #d6d6d6;
+    list-style: none;
+    padding: 17px 0;
+    position: relative;
+}
+
+/* Section allies home
+   ========================================================================== */
+.section-title-allies {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
+    @include mquery("medium") {
+        margin-bottom: 30px;
+    }
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 40%; 
+    }
+}
+
+.text-course-container {
+    @include mquery("medium") {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
+}
+
+.logo-allies .field-item {
+    display: inline-block;
+    float: left;
+
+    @include mquery("base") {
+        height: 60px;
+        margin-top: 50px;
+        width: 50%;
+    }
+    @include mquery("small") {
+        height: 70px;
+        margin-top: 50px;
+    }
+    @include mquery("medium") {
+        height: 70px;
+        width: 33%;
+    }
+    @include mquery("large") {
+        height: 80px;
+        margin-top: 60px;
+        width: 24.5%;
+    }
+    @include mquery("x-large") {
+        height: 90px;
+        margin-top: 60px;
+    }
+    // height provisional, solo para concepto de contenido
+    img {
+        height: 90px;
+        width: 100%;
+    }
+}
+
+.field-name-field-aliados-img {
+    clear: both;
+}
+
+
+/* styles for titles home
+   ========================================================================== */
+.panel-wide h2 {
+    color: $orange;
+    display: block;
+    font-family: $contrast-font;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+
+    @include mquery("base") {
+        @include font-size(24);
+    }
+    @include mquery("small") {
+        @include font-size(28);
+    }
+    @include mquery("medium") {
+        @include font-size(30);
+        width: 100%;
+        //text-align: center;
+    }
+    @include mquery("large") {
+        @include font-size(36);
+        text-align: left;
+    }
+}
+
+.section-title-free-courses h2 {
+    color: $light-blue;
+    font-family: $contrast-font;
+    width: 100%;
+    text-align: center;
+ 
+    @include mquery("base") {
+        @include font-size(24);
+    }
+    @include mquery("small") {
+        @include font-size(28);
+    }
+    @include mquery("medium") {
+        @include font-size(30);
+    }
+    @include mquery("large") {
+        @include font-size(36);
+        text-align: left;
+    }
+}
+
+/* styles for list courses
+   ========================================================================== */
+.title-course-item {
+    @include font-size(16);
+    color: $dark-gray;
+    display: inline-block;
+    font-family: $contrast-font;
+    margin: 0;
+    width: 100%;
+
+    @include mquery("large") {
+        width: 60%;
+    }
+}
+
+.date-course-item span {
+    @include font-size(13);
+    color: $ligth-gray;
+    font-family: $default-font;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
