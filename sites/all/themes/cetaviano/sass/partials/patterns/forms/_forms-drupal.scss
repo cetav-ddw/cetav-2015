@@ -5,7 +5,6 @@ label,
 .webform-container-inline label {
     @include font-size(14);
     color: #333;
-    display: none;
     font-weight: bold;
     margin-bottom: 8px;
 }
@@ -38,7 +37,7 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
 
-    @include media(min-width 767px) {
+    @include mquery("medium") {
         max-width: 300px;
     }
 }
@@ -58,9 +57,9 @@ input[type="file"]{
     outline: 0;
     padding: 8px 25px;
     transition: all 0.2s ease-in-out;
-    width: auto;
+    width: 100%;
 
-    @include media(min-width 767px) {
+    @include mquery("medium") {
         display: inline-block;
         width: auto;
     }
@@ -80,13 +79,17 @@ form .description {
 }
 
 // Formatting options
+.course-form label{
+    display: none;
+}
+
 input[type="text"].form-text {
     @include font-size(16);
-    background-color: $forms-back-colors;
-    border: none;
-    margin: 1rem 0;
+    background-color: $form-input-color;
+    border: 0;
+    margin: 10px 0;
     max-width: 100%;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .field-widget-text-textarea .form-type-textarea {
