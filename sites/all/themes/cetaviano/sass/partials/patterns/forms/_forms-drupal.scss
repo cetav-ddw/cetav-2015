@@ -38,7 +38,7 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
 
-    @include media(min-width 767px) {
+    @include mquery("medium") {
         max-width: 300px;
     }
 }
