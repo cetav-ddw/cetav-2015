@@ -38,7 +38,7 @@
 .course-details {
     p {
         @include font-size(14);
-        margin: 20px 0px 10px 0px;
+        margin: 20px 0 10px;
 
         &:first-of-type {
             @include font-size(16);
@@ -74,7 +74,7 @@
 }
 
 .course-form {
-    height: 0px;
+    height: 0;
     overflow: hidden;
     margin-top: 70px;
     text-align: center;

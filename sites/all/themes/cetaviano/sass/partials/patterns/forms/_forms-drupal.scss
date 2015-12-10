@@ -85,7 +85,7 @@ form .description {
 
 input[type="text"].form-text {
     @include font-size(16);
-    background-color: $form-input-color;
+    background-color: #ececec;
     border: 0;
     margin: 10px 0;
     max-width: 100%;
