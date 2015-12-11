@@ -2,13 +2,13 @@
     border-bottom: 2px solid $lighter-gray;
     padding: 10px 16px;
 
-    // @include mquery("small") {
-    //     margin: 0 auto;
-    //     width: 90%;
-    // }
-    // @include mquery("large") {
-    //     max-width: 1200px;
-    // }
+    @include mquery("small") {
+        margin: 0 auto;
+        width: 90%;
+    }
+    @include mquery("large") {
+        max-width: 1200px;
+    }
     li {
         display: inline-block;
         list-style: none;
@@ -22,11 +22,11 @@
     .item-list {
         width: 55%;
         margin: 0 auto;
-        // @include mquery("small") {
-        //     width: 37%;
-        // }
-        // @include mquery("large") {
-        //     width: 19%;
-        // }
+        @include mquery("small") {
+            width: 37%;
+        }
+        @include mquery("large") {
+            width: 19%;
+        }
     }
 }
