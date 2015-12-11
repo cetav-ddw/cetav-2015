@@ -80,7 +80,7 @@ function carreras_cetav_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'imagen_intro_carreras',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -92,6 +92,7 @@ function carreras_cetav_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_imagen_header_carrera',
     'label' => 'Imagen-header-carrera',
@@ -111,7 +112,7 @@ function carreras_cetav_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'preview_image_style' => 'imagen_intro_carreras',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',

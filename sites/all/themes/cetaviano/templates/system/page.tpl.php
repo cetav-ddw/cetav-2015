@@ -50,7 +50,21 @@
     <?php print render($page['header']); ?>
 
   </div><!-- /header-content -->
+  <?php if ($page['navigation']): ?>
+    <nav class="nav-main">
+      <div class="menu-collapse">
+          <div id ="menu-toggle" class="menu-toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+           </div>
+        </div>
+      <?php print render($page['navigation']); ?>
+    </nav>
+  <?php endif; // end Navigation ?>
 </header>
+
+
 
 <?php if ($page['above_content']): ?>
   <section class="above-content">
