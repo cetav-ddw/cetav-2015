@@ -1,25 +1,100 @@
 footer {
-	background: #292929;
-	overflow: hidden;
-	padding: 30px 0;
+    background: #292929;
+    overflow: hidden;
+    padding: 30px 0;
 
-	.grid-width div {
-		@include mquery("medium") {
-			@include span-columns(4);
-		}
-	}
+    h2 {
+        display: none;
+    }
 
-	h2 {
-		display: none;
-	}
+    h5 {
+        margin: 2px 0 20px 0;
+    }
 
-	h5 {
-		margin: 2px 0 20px 0;
-	}
+    h5, 
+    p {
+        color: $white;
+    }
 
-	h5, 
-	p {
-		color: $white;
-	}
+    .contact-info {
+        margin-bottom: 25px;
+
+        @include mquery("medium") {
+            @include span-columns(4);
+        }
+    }
+
+    .grid-width {
+        padding: 0 16px;
+
+        @include mquery("medium") {
+            padding: 0;
+        }
+    }
 }
 
+.logo-ministerio-footer {
+    background: url(../images/logo-ministerio.png) center;
+    background-size: cover;
+    display: inline-block;
+    height: 140px;
+    text-align: center;
+    width: 49%;
+
+    @include mquery("small") {
+        width: 30%;
+    }
+
+    @include mquery("medium") {
+        height: 110px;
+        width: 50%;
+    }
+
+    @include mquery("large") {
+        height: 140px;
+        width: 47%;
+    }
+}
+
+.logo-parque-footer {
+    background: url(../images/logo-parque.png) center;
+    background-size: cover;
+    display: inline-block;
+    height: 140px;
+    margin-right: 8%;
+    width: 23%;
+
+    @include mquery("small") {
+        width: 14%;
+    }
+
+    @include mquery("medium") {
+        height: 140;
+        margin-right: 18%;
+        width: 30%;
+    }
+    
+    @include mquery("large") {
+        width: 23%;
+    }
+}
+
+.icon-list {
+    list-style: none;
+    
+    li {
+        @include font-size(30);
+        display: inline-block;
+    }
+
+    .icon-face:before,
+    .icon-vimeo:before {
+        color: #fff;
+    }
+
+    i:hover {
+        .icon-face:before {
+            color: blue;
+        }
+    }
+}
