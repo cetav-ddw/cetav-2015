@@ -23,7 +23,8 @@
 //Forms
 @import "partials/patterns/forms/forms-drupal";
 @import "partials/patterns/forms/webforms";
-@import "partials/components/institution";
+@import "partials/patterns/forms/login";
+
 
 //Layout
 @import "partials/layout/layout";
@@ -35,6 +36,7 @@
 @import "partials/components/careers";
 @import "partials/components/courses";
 @import "partials/components/admission";
+@import "partials/components/institution";
 @import "partials/components/news";
 @import "partials/components/news-node";
 @import "partials/components/preview-course";
