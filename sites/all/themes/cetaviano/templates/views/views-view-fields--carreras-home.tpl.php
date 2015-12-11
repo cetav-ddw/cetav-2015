@@ -23,6 +23,7 @@
  *
  * @ingroup views_templates
  */
+dpm($fields)
 ?>
 <?php foreach ($fields as $id => $field): ?>
 
@@ -41,13 +42,23 @@
         <?php $class = 'icon-web'; ?>
       <?php endif; ?>
       <?php if (!empty($class)): ?>
-        <div class="<?php print $class; ?>">
+
+        <div class="container-card">
+  <div class="container-gif container-gif-animation">
+    <div class="container-title-course">
+
+        <div class="<?php print $class;?>">
       <?php endif; ?>
     <?php endif; ?>
     <?php print $field->label_html; ?>
     <?php print $field->content; ?>
     <?php if (!empty($class)): ?>
+        <?php print $field->wrapper_suffix; ?>
+
       </div>
+          </div> <!-- container-title-course -->
+  </div> <!-- container-gif -->
+</div> <!-- container-card -->
+
     <?php endif; ?>
-  <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
