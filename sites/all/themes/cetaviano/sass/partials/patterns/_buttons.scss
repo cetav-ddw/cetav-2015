@@ -7,7 +7,7 @@ button {
 }
 
 // Buttons Careers
-.btn-admision a, 
+.btn-admision a,
 .btn-download,
 .inscription-button {
     @include button($light-blue, $light-blue, $white);
@@ -49,4 +49,20 @@ button {
 
 .btn-download img {
     display: none;
+}
+
+//Button Login
+.container-account {
+
+    .form-actions {
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .form-submit {
+        @include button($orange, $orange, $white);
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        padding: 8px 18px;
+    }
 }
