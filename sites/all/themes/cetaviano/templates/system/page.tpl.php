@@ -130,11 +130,31 @@
 <?php endif; // end Below Content ?>
 
 <footer class="footer" role="contentinfo">
-  <div class="footer-content">
-    <div class="footer">
-      <?php print render($page['footer']); ?>
+<div class="grid-width">
+      <div class="contact-info">
+        <h5>¿Cómo llegar?</h5>
+        <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
+        <a href="#" class="btn-direction">Ver con Waze</a>
+        <a href="#" class="btn-direction">Ver con Maps</a>
+      </div>
+      <div class="contact-info">
+        <h5>Contacto</h5>
+        <p>Teléfono: 2276-9400 ext.2031</p>
+        <p>E-mail: cetav@parquelalibertad.org</p>
+        <nav>
+          <ul class="social-icon icon-list">
+            <li><i class="icon-face"><a href="#">facebook</a></i></li>
+            <li><i class="icon-vimeo"><a href="#">vimeo</a></i></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-info">
+        <h5>Somos parte del</h5>
+        <div class="logo-parque-footer"></div>
+        <div class="logo-ministerio-footer"></div>
+      </div>
     </div>
-  </div>
 </footer>
 
 <?php if ($page['closure']): ?>
