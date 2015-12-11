@@ -1,5 +1,6 @@
 .about-graduate {
     color: #848286;
+    overflow: hidden;
     padding-top: 0;
 
     .label-above {
@@ -38,17 +39,14 @@
         margin-bottom: 6px;
     }
 
-    .panels-ipe-sort-container {
+    .pane-entity-field{
+        @include span-columns(6);
+        @include omega();
+        margin-bottom: 20px;
         text-align: center;
 
-        .panels-ipe-portlet-marker {
-            @include span-columns(6);
-            @include omega();
-            margin-bottom: 20px;
-
-            @include mquery("small") {
-                @include span-columns(3);
-            }
+        @include mquery("medium") {
+            @include span-columns(3);
         }
     }
 }
@@ -64,9 +62,14 @@
     padding-bottom: 0;
     text-align: center;
 
+    img {
+        margin-bottom: 18px;
+    }
+
     p {
         @include font-size(16);
         color: #292929;
+        margin: 15px 0;
     }
 }
 
