@@ -8,16 +8,20 @@
 ?>
 <div class="panel-display panel-cetav-egresados">
   <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide">
-      <?php print $content['wide']; ?>
+    <div class="panel-container panel-wide info-graduate">
+      <div class="grid-width">
+        <?php print $content['wide']; ?>
+      </div>
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide panel-wide-courses">
-      <?php print $content['wide_second']; ?>
+    <div class="grid-width">
+      <div class="panel-container panel-wide availability-info">
+        <?php print $content['wide_second']; ?>
+      </div>
     </div>
   <?php endif ?>
-  <div class="center-wrapper call-out call-out-home-intro">
+  <div class="center-wrapper about-graduate">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left']; ?>

@@ -1493,6 +1493,11 @@ div.password-suggestions ul {
   padding-bottom: 17px;
   width: 100%; }
 
+@media only screen and (min-width: 87.5em) {
+  .view-id-cursos .view-content {
+    margin: 0 auto;
+    width: 90%; } }
+
 .view-preview-free-course {
   margin: 50px auto;
   max-width: 490px;

@@ -1,3 +1,12 @@
+.view-id-cursos {
+    .view-content {
+        @include mquery("x-large") {
+            margin: 0 auto;
+            width: 90%;
+        }
+    }
+}
+
 .view-preview-free-course {
     margin: 50px auto;
     max-width: 490px;
@@ -17,6 +26,7 @@
 
 .views-field-field-imagen-curso {
     overflow: hidden;
+
     img {
         height: 100%;
         max-width: none;
