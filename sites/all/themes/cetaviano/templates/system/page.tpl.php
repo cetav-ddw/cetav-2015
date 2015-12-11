@@ -51,6 +51,12 @@
 
   </div><!-- /header-content -->
   <?php if ($page['navigation']): ?>
+    <div class="menu-highlights">
+      <div class="menu-highlights-content">
+        <div class="pll-logo"></div>
+        <a class="link-nav" href="http://parquelalibertad.org">parquelalibertad.org</a>
+      </div>
+    </div><!-- /menu-highlights -->
     <nav class="nav-main">
       <div class="menu-collapse">
           <div id ="menu-toggle" class="menu-toggle">
