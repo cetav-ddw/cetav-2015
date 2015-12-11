@@ -31,36 +31,65 @@
 }
 
 .panel-cetav-frontpage .panel-wide {
-    //background: url(../img/prueba.jpg) no-repeat center;
-    //background-attachment: fixed;
-    //background-size: cover;
-    background-color: #eee;
-    height: 700px;
+    background: url(../images/prueba.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
 
+    @include mquery("base") {
+        height: 400px;
+    }
+    @include mquery("medium") {
+        height: 600px;
+    }
     @include mquery("x-large") {
         background-size: 1200px;
+        height: 700px;
     }
 }
 
 /* Content Header
    ========================================================================== */
-.content-header{
-    p:first-child{
-        @include font-size(48);
+.content-header {
+    p:first-child {
         color: $white;
         margin: 0 0 15px;
+        @include mquery("base") {
+            @include font-size(32);
+        }
+        @include mquery("small") {
+            @include font-size(38);
+        }
+        @include mquery("medium") {
+            @include font-size(40);
+        }
+        @include mquery("large") {
+            @include font-size(48);
+        }
     }
 
-    strong{
-        @include font-size(48);
+    strong {
         color: $orange;
+        @include mquery("base") {
+            @include font-size(32);
+        }
+        @include mquery("small") {
+            @include font-size(38);
+        }
+        @include mquery("medium") {
+            @include font-size(40);
+        }
+        @include mquery("large") {
+            @include font-size(48);
+        }
     }
  
     @include mquery("base") {
         padding-top: 14.5%;
     }
     @include mquery("small") {
-        padding-top: 24.5%;
+        padding-top: 8.5%;
     }
     @include mquery("medium") {
         padding-top: 17.5%;
@@ -74,14 +103,21 @@
 }
 
 .type-wrap{
-    @include font-size(48);
     font-family: $contrast-font;
     margin: 10px auto;
     padding: 20px;
     text-align: center;
 }
 
-.wrap{
+.type-wrap span {
+    white-space: normal;
+
+    @include mquery("medium") {
+        white-space: pre;
+    }
+}
+
+.wrap {
     margin: 150px auto;
     max-width: 600px;
 }
@@ -92,6 +128,7 @@
     display: block;
     text-align: center;
     width: 100%;
+    margin-right: 0;
 
     @include mquery("large") {
         display: inline-block;
@@ -131,7 +168,6 @@
         width: 240px;
     }
     @include mquery("medium") {
-        margin-top: 30px;
         width: 280px;
     }
     @include mquery("x-large") {
