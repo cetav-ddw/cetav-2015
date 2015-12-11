@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default simple view template to all the fields as a row.
@@ -43,22 +42,19 @@ dpm($fields)
       <?php endif; ?>
       <?php if (!empty($class)): ?>
 
-        <div class="container-card">
-  <div class="container-gif container-gif-animation">
-    <div class="container-title-course">
-
-        <div class="<?php print $class;?>">
-      <?php endif; ?>
-    <?php endif; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-    <?php if (!empty($class)): ?>
-        <?php print $field->wrapper_suffix; ?>
-
-      </div>
+      <div class="container-card">
+        <div class="container-gif container-gif-animation">
+          <div class="container-title-course">
+            <div class="<?php print $class;?>">
+              <?php endif; ?>
+              <?php endif; ?>
+              <?php print $field->label_html; ?>
+              <?php print $field->content; ?>
+              <?php if (!empty($class)): ?>
+              <?php print $field->wrapper_suffix; ?>
+            </div>
           </div> <!-- container-title-course -->
-  </div> <!-- container-gif -->
-</div> <!-- container-card -->
-
+        </div> <!-- container-gif -->
+      </div> <!-- container-card -->
     <?php endif; ?>
 <?php endforeach; ?>

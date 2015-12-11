@@ -8,18 +8,18 @@
       </h1>
     </div>
 
-    <div class="middle_part">
-      <h5 class="container-account-title"><?php print $title; ?></h5>
+    <div class="middle-part">
+      <h4 class="container-account-title"><?php print $title; ?></h4>
 
       <?php print $messages; ?>
 
       <?php print render($page['content']); ?>
-        <div class="bottom_part">
-        <div class="login_link">
+        <div class="bottom-part">
+        <div class="login-link">
           <?php print l(t('Login'), 'user/login'); ?>
         </div>
 
-        <div class="password_link">
+        <div class="password-link password-float">
           <?php print l(t('Forgot your password?'), 'user/password'); ?>
         </div>
       </div>

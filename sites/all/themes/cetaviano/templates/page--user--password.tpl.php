@@ -8,19 +8,19 @@
       </h1>
     </div>
 
-    <div class="middle_part">
-      <h5 class="container-account-title"><?php print $title; ?></h5>
+    <div class="middle-part">
+      <h4 class="container-account-title"><?php print $title; ?></h4>
 
       <?php print $messages; ?>
 
       <?php print render($page['content']); ?>
-      <div class="bottom_part">
-      <div class="login_link">
+      <div class="bottom-part">
+      <div class="login-link">
         <?php print l(t('Login'), 'user/login'); ?>
       </div>
 
       <?php if (variable_get('user_register')): ?>
-      <div class="register_link">
+      <div class="register-link">
         <?php print l(t('Register a new account'), 'user/register'); ?>
       </div>
       <?php endif; ?>
