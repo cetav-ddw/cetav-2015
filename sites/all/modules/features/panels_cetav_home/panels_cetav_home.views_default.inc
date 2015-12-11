@@ -103,7 +103,24 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'view-preview-free-course';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
+  $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset_1']['children'] = array(
+    0 => 'fieldset',
+    1 => 'field_imagen_curso',
+  );
+  $handler->display->display_options['fields']['fieldset_1']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset_1']['fieldset']['classes'] = 'preview-free-course';
   /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
@@ -122,6 +139,9 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h5';
+  $handler->display->display_options['fields']['title']['element_class'] = 'prev-title-course';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Fecha del curso */
   $handler->display->display_options['fields']['field_fecha_curso']['id'] = 'field_fecha_curso';
   $handler->display->display_options['fields']['field_fecha_curso']['table'] = 'field_data_field_fecha_curso';
@@ -150,8 +170,8 @@ function panels_cetav_home_views_default_views() {
   $handler->display->display_options['fields']['field_imagen_curso']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_imagen_curso']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_imagen_curso']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
+    'image_style' => 'imagen_cursos_perfil_profesional',
+    'image_link' => 'content',
   );
   $export['cursos'] = $view;
 

@@ -308,12 +308,7 @@ function configuracion_cetav_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
-  $strongarm->value = array(
-    'forum' => TRUE,
-    'node' => TRUE,
-    'taxonomy' => TRUE,
-    'user' => TRUE,
-  );
+  $strongarm->value = array();
   $export['path_alias_whitelist'] = $strongarm;
 
   $strongarm = new stdClass();
