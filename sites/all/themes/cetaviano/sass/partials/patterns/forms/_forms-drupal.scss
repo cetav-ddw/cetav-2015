@@ -49,23 +49,6 @@ input[type="radio"] {
     vertical-align: baseline;
 }
 
-input[type="submit"], 
-input[type="file"]{
-    @include button($light-blue, $light-blue, $white);
-    border: 0;
-    display: block;
-    margin-top: 20px;
-    outline: 0;
-    padding: 8px 25px;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-
-    @include mquery("medium") {
-        display: inline-block;
-        width: auto;
-    }
-}
-
 input[type="file"]{
     text-indent: 100%;
 }
@@ -80,17 +63,36 @@ form .description {
 }
 
 // Formatting options
-.course-form label{
-    display: none;
-}
+.course-form {
+    input[type="submit"], 
+    input[type="file"]{
+        @include button($light-blue, $light-blue, $white);
+        border: 0;
+        display: block;
+        margin-top: 20px;
+        outline: 0;
+        padding: 8px 25px;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
 
-input[type="text"].form-text {
-    @include font-size(16);
-    background-color: #ececec;
-    border: 0;
-    margin: 10px 0;
-    max-width: 100%;
-    padding: 20px;
+        @include mquery("medium") {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+    input[type="text"].form-text {
+        @include font-size(16);
+        background-color: #ececec;
+        border: 0;
+        margin: 10px 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    label {
+        display: none;
+    }
 }
 
 .field-widget-text-textarea .form-type-textarea {
