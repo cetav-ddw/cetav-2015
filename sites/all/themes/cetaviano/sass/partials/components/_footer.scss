@@ -1,0 +1,25 @@
+footer {
+	background: #292929;
+	overflow: hidden;
+	padding: 30px 0;
+
+	.grid-width div {
+		@include mquery("medium") {
+			@include span-columns(4);
+		}
+	}
+
+	h2 {
+		display: none;
+	}
+
+	h5 {
+		margin: 2px 0 20px 0;
+	}
+
+	h5, 
+	p {
+		color: $white;
+	}
+}
+
