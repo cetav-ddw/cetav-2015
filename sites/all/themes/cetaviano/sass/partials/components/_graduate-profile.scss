@@ -1,0 +1,95 @@
+.about-graduate {
+    color: #848286;
+    padding-top: 0;
+
+    .label-above {
+        color: #292929;
+        margin:20px 0 15px;
+    }   
+
+    .panel-left-column {
+        @include mquery("medium") {
+            @include span-columns(7);
+        }
+    } 
+
+    .panel-right-column {
+        @include mquery("medium") {
+            @include span-columns(4);
+        }
+    }
+}
+
+.availability-info {
+    @include font-size(16);
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+    color: #848286;
+    margin: 25px 0;
+    padding: 24px 0;
+
+    a {
+        color: #848286;
+    }
+
+    i {
+        @include font-size(22);
+        color: $blue-dark;
+        margin-bottom: 6px;
+    }
+
+    .panels-ipe-sort-container {
+        text-align: center;
+
+        .panels-ipe-portlet-marker {
+            @include span-columns(6);
+            @include omega();
+            margin-bottom: 20px;
+
+            @include mquery("small") {
+                @include span-columns(3);
+            }
+        }
+    }
+}
+
+.field-name-field-acerca-de-mi,
+.field-name-field-habilidades-egresado {
+    .field-label {
+        margin-top: 0;
+    }
+}
+
+.info-graduate {
+    padding-bottom: 0;
+    text-align: center;
+
+    p {
+        @include font-size(16);
+        color: #292929;
+    }
+}
+
+.pane-node-field-profesion-egresado {
+    @include font-size(14);
+}
+
+.skill {
+    @include font-size(14);
+    background-color: $blue-dark;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px #243842;
+    color: $white;
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-right: 12px;
+    padding: 4px;
+}
+
+.pane-title {
+    display: none;
+}
+
+
+
+
