@@ -22,6 +22,26 @@ button {
     }
 }
 
+.btn-direction {
+    @include button($white, $white, $ligth-gray);
+    @include font-size(14);
+    background: transparent;
+    display: inline-block;
+    height: 100%;
+    margin: 25px auto;
+    padding: 12px 12px;
+    text-align: center;
+    width: 45%;
+
+    @include mquery("small") {
+        width: 35%;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .btn-download {
     cursor: pointer;
     position: relative;
