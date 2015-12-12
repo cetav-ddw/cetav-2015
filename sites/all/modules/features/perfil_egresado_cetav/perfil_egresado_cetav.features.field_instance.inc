@@ -446,7 +446,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_habilidades_egresado',
-    'label' => 'habilidades_egresado',
+    'label' => 'Habilidades',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -578,9 +578,10 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_pasa_tiempos',
-    'label' => 'Pasa tiempos',
+    'label' => 'Pasatiempos',
     'required' => 1,
     'settings' => array(
       'display_summary' => 0,
@@ -763,12 +764,12 @@ function perfil_egresado_cetav_field_default_field_instances() {
   t('Foto Perfil');
   t('Generación Egresado');
   t('GitHub');
+  t('Habilidades');
   t('Linkedin');
   t('Número Teléfono');
-  t('Pasa tiempos');
+  t('Pasatiempos');
   t('Twitter');
   t('Vimeo');
-  t('habilidades_egresado');
   t('profesión_egresado');
 
   return $field_instances;
