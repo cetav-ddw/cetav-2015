@@ -579,15 +579,6 @@ form .description {
   margin: 0 auto;
   max-width: 1200px; }
 
-.center-wrapper {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .center-wrapper::after {
-    clear: both;
-    content: "";
-    display: table; }
-
 .center-wrapper,
 .panel-wide {
   padding: 80px 16px;
