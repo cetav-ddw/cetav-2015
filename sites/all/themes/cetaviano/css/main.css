@@ -168,12 +168,11 @@ button {
         color: red; } }
 
 .btn-admision a,
-.btn-download,
-.inscription-button {
+.btn-download {
   font-size: 18px;
   font-size: 1.8rem;
-  background-color: #00c9ed;
-  border: 2px solid #00c9ed;
+  background-color: #9e280e;
+  border: 2px solid #9e280e;
   color: #fff;
   padding: 15px 30px;
   display: block;
@@ -184,19 +183,46 @@ button {
   width: 250px; }
   @media only screen and (min-width: 68.75em) {
     .btn-admision a,
-    .btn-download,
-    .inscription-button {
+    .btn-download {
       background-color: transparent;
-      border: 2px solid #00c9ed;
-      color: #00c9ed; }
+      border: 2px solid #9e280e;
+      color: #9e280e; }
       .btn-admision a:hover,
-      .btn-download:hover,
-      .inscription-button:hover {
-        background-color: #00c9ed;
+      .btn-download:hover {
+        background-color: #9e280e;
         color: #fff; } }
   .btn-admision a:hover,
-  .btn-download:hover,
-  .inscription-button:hover {
+  .btn-download:hover {
+    text-decoration: none; }
+
+.btn-direction {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #9d9fa2;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background: transparent;
+  display: inline-block;
+  height: 100%;
+  margin: 25px auto;
+  padding: 12px 12px;
+  text-align: center;
+  width: 45%; }
+  @media only screen and (min-width: 68.75em) {
+    .btn-direction {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff; }
+      .btn-direction:hover {
+        background-color: #fff;
+        color: #9d9fa2; } }
+  @media only screen and (min-width: 37.5em) {
+    .btn-direction {
+      width: 35%; } }
+  .btn-direction:hover {
     text-decoration: none; }
 
 .btn-download {
@@ -221,6 +247,30 @@ button {
 
 .btn-download img {
   display: none; }
+
+.inscription-button {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #00c9ed;
+  border: 2px solid #00c9ed;
+  color: #fff;
+  padding: 15px 30px;
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  width: 250px; }
+  @media only screen and (min-width: 68.75em) {
+    .inscription-button {
+      background-color: transparent;
+      border: 2px solid #00c9ed;
+      color: #00c9ed; }
+      .inscription-button:hover {
+        background-color: #00c9ed;
+        color: #fff; } }
+  .inscription-button:hover {
+    text-decoration: none; }
 
 .container-account .form-actions {
   margin: 15px auto;
@@ -268,6 +318,83 @@ img {
   max-width: 100%;
   width: inherit;
   /* IEB */ }
+
+/* Icons-font*/
+@font-face {
+  font-family: 'cetav';
+  src: url("../fonts/cetav.eot");
+  src: url("../fonts/cetav.eot?#iefix") format("embedded-opentype"), url("../fonts/cetav.woff") format("woff"), url("../fonts/cetav.ttf") format("truetype"), url("../fonts/cetav.svg#cetav") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'cetav';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-animacion:before {
+  content: '\0041'; }
+
+.icon-web:before {
+  content: '\0042'; }
+
+.icon-post:before {
+  content: '\0043'; }
+
+.icon-face:before {
+  color: #4966a7;
+  content: '\0044'; }
+
+.icon-twitter:before {
+  color: #17b3e8;
+  content: '\0045'; }
+
+.icon-dribbble:before {
+  content: '\0046'; }
+
+.icon-github:before {
+  color: #211F20;
+  content: '\0047'; }
+
+.icon-linkedin:before {
+  color: #0077B5;
+  content: '\0048'; }
+
+.icon-vimeo:before {
+  color: #17b3e8;
+  content: '\0049'; }
+
+.icon-graduate:before {
+  content: '\004A'; }
+
+.icon-cellphone:before {
+  content: '\004B'; }
+
+.icon-clock:before {
+  content: '\004C'; }
+
+.icon-send:before {
+  content: '\004D'; }
+
+.social-icon {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 36px;
+  margin: 0 8px;
+  position: relative; }
+  .social-icon a {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 0;
+    width: 100%;
+    white-space: nowrap; }
 
 label,
 .webform-container-inline label {
@@ -1627,5 +1754,64 @@ div.password-suggestions ul {
   padding: 3px 7px;
   position: absolute;
   top: 190px; }
+
+footer {
+  background: #292929;
+  overflow: hidden;
+  padding: 30px 0; }
+  footer h2 {
+    display: none; }
+  footer h5 {
+    margin: 2px 0 20px 0; }
+  footer h5,
+  footer p {
+    color: #fff; }
+  footer .contact-info {
+    margin-bottom: 25px; }
+    @media only screen and (min-width: 56.25em) {
+      footer .contact-info {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 31.7615656014%; }
+        footer .contact-info:last-child {
+          margin-right: 0; } }
+  footer .grid-width {
+    padding: 0 16px; }
+    @media only screen and (min-width: 56.25em) {
+      footer .grid-width {
+        padding: 0; } }
+
+.logo-parque-ministerio {
+  background: url(../images/logo-parque-ministerio.png) center;
+  background-size: cover;
+  display: inline-block;
+  height: 118px;
+  text-align: center;
+  width: 65%; }
+  @media only screen and (min-width: 37.5em) {
+    .logo-parque-ministerio {
+      height: 99px;
+      width: 40%; } }
+  @media only screen and (min-width: 56.25em) {
+    .logo-parque-ministerio {
+      height: 110px;
+      width: 81%; } }
+  @media only screen and (min-width: 68.75em) {
+    .logo-parque-ministerio {
+      height: 112px;
+      width: 70%; } }
+
+.icon-list {
+  list-style: none; }
+  .icon-list li {
+    font-size: 30px;
+    font-size: 3rem;
+    display: inline-block; }
+  .icon-list .icon-face:before,
+  .icon-list .icon-vimeo:before {
+    color: #fff; }
+  .icon-list i:hover .icon-face:before {
+    color: blue; }
 
 /*# sourceMappingURL=main.css.map */

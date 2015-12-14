@@ -1,0 +1,74 @@
+footer {
+    background: #292929;
+    overflow: hidden;
+    padding: 30px 0;
+
+    h2 {
+        display: none;
+    }
+    h5 {
+        margin: 2px 0 20px 0;
+    }
+    h5, 
+    p {
+        color: $white;
+    }
+    .contact-info {
+        margin-bottom: 25px;
+
+        @include mquery("medium") {
+            @include span-columns(4);
+        }
+    }
+    .grid-width {
+        padding: 0 16px;
+
+        @include mquery("medium") {
+            padding: 0;
+        }
+    }
+}
+
+.logo-parque-ministerio {
+    background: url(../images/logo-parque-ministerio.png) center;
+    background-size: cover;
+    display: inline-block;
+    height: 118px;
+    text-align: center;
+    width: 65%;
+
+    @include mquery("small") {
+        height: 99px;
+        width: 40%;
+    }
+
+    @include mquery("medium") {
+        height: 110px;
+        width: 81%;
+    }
+
+    @include mquery("large") {
+        height: 112px;
+        width: 70%;
+    }
+}
+
+.icon-list {
+    list-style: none;
+    
+    li {
+        @include font-size(30);
+        display: inline-block;
+    }
+
+    .icon-face:before,
+    .icon-vimeo:before {
+        color: #fff;
+    }
+
+    i:hover {
+        .icon-face:before {
+            color: blue;
+        }
+    }
+}
