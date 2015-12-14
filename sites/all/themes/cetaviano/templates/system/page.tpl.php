@@ -160,7 +160,6 @@
         <h5>Somos parte del</h5>
         <div class="logo-parque-ministerio"></div>
       </div>
-      <?php print render($page['footer']); ?>
     </div>
   </div>
 </footer>
