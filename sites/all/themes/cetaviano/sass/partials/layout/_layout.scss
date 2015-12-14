@@ -31,11 +31,12 @@
 }
 
 .panel-cetav-frontpage .panel-wide {
-    background: url(../images/prueba.jpg) no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    //background: url(../images/prueba.jpg) no-repeat center center;
+    //background-attachment: fixed;
+    //background-size: cover;
+    //background-position: center;
     background-color: #000;
+    background-color: #eee;
 
     @include mquery("base") {
         height: 400px;
@@ -339,7 +340,7 @@
         height: 90px;
         margin-top: 60px;
     }
-    // height provisional, solo para concepto de contenido
+
     img {
         position: absolute;
         top: 0;
@@ -349,6 +350,10 @@
         height: auto;
         margin: auto;
         width: 100px;
+
+        @include mquery("large") {
+            width: 120px;
+        }
     }
 }
 
