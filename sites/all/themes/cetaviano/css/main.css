@@ -29,6 +29,9 @@ html {
 *:after {
   box-sizing: inherit; }
 
+.title {
+  text-indent: 100%; }
+
 dl,
 ol,
 p,
@@ -126,6 +129,10 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+
+.read-more {
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 .line-grid {
   clear: both;
@@ -1603,10 +1610,6 @@ div.password-suggestions ul {
 .latest-news h5 a {
   color: #414042;
   margin-bottom: 5px; }
-
-.latest-news .read-more {
-  font-size: 14px;
-  font-size: 1.4rem; }
 
 .img-news img {
   height: auto;
