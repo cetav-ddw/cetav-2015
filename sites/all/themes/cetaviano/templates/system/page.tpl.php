@@ -137,7 +137,7 @@
 <?php endif; // end Below Content ?>
 
 <footer class="footer" role="contentinfo">
-<div class="grid-width">
+    <div class="grid-width">
       <div class="contact-info">
         <h5>¿Cómo llegar?</h5>
         <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
@@ -158,12 +158,12 @@
 
       <div class="contact-info">
         <h5>Somos parte del</h5>
-        <div class="logo-parque-footer"></div>
-        <div class="logo-ministerio-footer"></div>
+        <div class="logo-parque-ministerio"></div>
       </div>
     </div>
+      <?php print render($page['footer']); ?>
+    </div>
 </footer>
-
 <?php if ($page['closure']): ?>
 <aside class="closure">
   <?php print render($page['closure']); ?>
