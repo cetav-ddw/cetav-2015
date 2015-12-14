@@ -68,6 +68,13 @@
       <?php print render($page['navigation']); ?>
     </nav>
   <?php endif; // end Navigation ?>
+
+  <?php if ($page['secundary_navigation']): ?>
+    <nav class="nav-secundary-main">
+      <?php print render($page['secundary_navigation']); ?>
+    </nav>
+  <?php endif; // end secundary_Navigation ?>
+
 </header>
 
 
