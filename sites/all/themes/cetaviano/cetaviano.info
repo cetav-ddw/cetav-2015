@@ -51,4 +51,5 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = css/main.css
 
 ;-------------- J S -------------
+scripts[] = js/vendor/typed.min.js
 scripts[] = js/script.min.js
