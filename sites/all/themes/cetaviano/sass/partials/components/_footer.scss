@@ -60,12 +60,10 @@ footer {
         @include font-size(30);
         display: inline-block;
     }
-
     .icon-face:before,
     .icon-vimeo:before {
         color: #fff;
     }
-
     i:hover {
         .icon-face:before {
             color: blue;

@@ -208,7 +208,7 @@ button {
   display: inline-block;
   height: 100%;
   margin: 25px auto;
-  padding: 12px 12px;
+  padding: 12px;
   text-align: center;
   width: 45%; }
   @media only screen and (min-width: 68.75em) {
