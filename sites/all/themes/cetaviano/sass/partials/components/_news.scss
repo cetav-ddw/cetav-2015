@@ -1,10 +1,10 @@
-.aside, 
+.aside,
 .container-news {
     background-color: $white;
     overflow: hidden;
 }
 
-.aside {    
+.aside {
     box-shadow: 0 0 13px #c2bebe;
     padding: 30px 30px;
 
@@ -18,7 +18,7 @@
 
     @include mquery("medium") {
         @include span-columns(8);
-        box-shadow: 0 0 13px #c2bebe;  
+        box-shadow: 0 0 13px #c2bebe;
     }
 }
 
@@ -26,7 +26,7 @@
 .date-news,
 .info-news {
     @include mquery("medium") {
-       padding: 0 80px; 
+       padding: 0 80px;
     }
 }
 
@@ -61,7 +61,7 @@
             border-bottom: none;
         }
     }
-    
+
     h2 {
         @include font-size(22);
         color: #848286;
@@ -72,13 +72,9 @@
         color: $dark-gray;
         margin-bottom: 5px;
     }
-
-    .read-more {
-        @include font-size(14);
-    }
 }
 
-.img-news { 
+.img-news {
     img {
         height: auto;
         width: 100%;
@@ -100,7 +96,7 @@
     @include font-size(12);
 }
 
-.views-field-created, 
+.views-field-created,
 .views-field-title {
     margin-bottom: 5px;
 }

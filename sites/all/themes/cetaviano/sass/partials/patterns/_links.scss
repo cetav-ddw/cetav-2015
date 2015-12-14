@@ -12,3 +12,6 @@ a {
     }
 }
 
+.read-more {
+    @include font-size(14);
+}
