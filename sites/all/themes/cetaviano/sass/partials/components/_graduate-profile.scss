@@ -5,15 +5,13 @@
 
     .label-above {
         color: #292929;
-        margin:20px 0 15px;
-    }   
-
+        margin: 20px 0 15px;
+    }
     .panel-left-column {
         @include mquery("medium") {
             @include span-columns(8);
         }
     } 
-
     .panel-right-column {
         @include mquery("medium") {
             @include span-columns(4);
@@ -32,13 +30,11 @@
     a {
         color: #848286;
     }
-
     i {
         @include font-size(22);
         color: $blue-dark;
         margin-bottom: 6px;
     }
-
     .pane-entity-field{
         @include span-columns(6);
         @include omega();
@@ -65,7 +61,6 @@
     img {
         margin-bottom: 18px;
     }
-
     p {
         @include font-size(16);
         color: #292929;
