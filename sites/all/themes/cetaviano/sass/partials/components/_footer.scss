@@ -33,49 +33,27 @@ footer {
     }
 }
 
-.logo-ministerio-footer {
-    background: url(../images/logo-ministerio.png) center;
+.logo-parque-ministerio {
+    background: url(../images/logo-parque-ministerio.png) center;
     background-size: cover;
     display: inline-block;
-    height: 140px;
+    height: 118px;
     text-align: center;
-    width: 49%;
+    width: 65%;
 
     @include mquery("small") {
-        width: 30%;
+        height: 99px;
+        width: 40%;
     }
 
     @include mquery("medium") {
         height: 110px;
-        width: 50%;
+        width: 81%;
     }
 
     @include mquery("large") {
-        height: 140px;
-        width: 47%;
-    }
-}
-
-.logo-parque-footer {
-    background: url(../images/logo-parque.png) center;
-    background-size: cover;
-    display: inline-block;
-    height: 140px;
-    margin-right: 8%;
-    width: 23%;
-
-    @include mquery("small") {
-        width: 14%;
-    }
-
-    @include mquery("medium") {
-        height: 140;
-        margin-right: 18%;
-        width: 30%;
-    }
-    
-    @include mquery("large") {
-        width: 23%;
+        height: 112px;
+        width: 70%;
     }
 }
 
