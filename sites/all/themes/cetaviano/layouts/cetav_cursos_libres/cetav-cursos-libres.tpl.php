@@ -7,7 +7,7 @@
  */
 ?>
 <div class="panel-display panel-cetav-cursos-libres">
-  <div class="center-wrapper call-out call-out-home-intro">
+  <div class="center-wrapper">
     <div class="panel-container panel-left-column">
       <?php print $content['left']; ?>
     </div>
@@ -20,7 +20,7 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
+  <div class="center-wrapper center-wrapper-courses">
     <div class="panel-container panel-left-column">
       <?php print $content['left_second']; ?>
     </div>
@@ -29,7 +29,7 @@
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide panel-wide-courses">
+    <div class="panel-container panel-wide  panel-wide-courses">
       <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>

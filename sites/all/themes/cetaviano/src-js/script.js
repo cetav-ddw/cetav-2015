@@ -14,12 +14,22 @@ jQuery(function($) {
     contentType: "html", // or text
     // defaults to false for infinite loop
     loopCount: false
-    //callback: function(){ foo(); },
-    //resetCallback: function() { newTyped(); }
   });
 
-  $(".reset").click(function(){
-    $("#typed").typed("reset");
-  });
+    $(".reset").click(function(){
+        $("#typed").typed("reset");
+    });
+
+    $("#show-pay-form").click(function () {
+        $(this).toggleClass("hide-button");
+        $("#course-form").toggleClass("show-course-form");
+        setTimeout(function(){
+            $("#show-pay-form").remove();
+        }, 1000);
+    });
+
+    $("#edit-field-form-nombre-und-0-value").attr("placeholder", "Nombre Completo");
+    $("#edit-field-form-email-und-0-email").attr("placeholder", "Correo Electrónico");
 
 });
+

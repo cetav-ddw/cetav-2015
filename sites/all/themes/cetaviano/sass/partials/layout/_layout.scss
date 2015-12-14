@@ -13,6 +13,13 @@
     padding: 70px 16px;
 }
 
+.center-wrapper,
+.panel-wide {
+    padding: 80px 16px;
+    overflow: hidden;
+    clear: both;
+}
+
 .panel-left-column,
 .panel-right-column {
     @include span-columns(12);
@@ -30,13 +37,12 @@
     display: none;
 }
 
-.panel-cetav-frontpage .panel-wide {
-    //background: url(../images/prueba.jpg) no-repeat center center;
-    //background-attachment: fixed;
-    //background-size: cover;
-    //background-position: center;
+.panel-wide-hero {
+    background: url(../images/prueba.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     background-color: #000;
-    background-color: #eee;
 
     @include mquery("base") {
         height: 400px;
@@ -55,7 +61,7 @@
 .content-header {
     p:first-child {
         color: $white;
-        margin: 0 0 15px;
+        margin: 0;
         @include mquery("base") {
             @include font-size(32);
         }
@@ -121,6 +127,50 @@
 .wrap {
     margin: 150px auto;
     max-width: 600px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    @include mquery("base") {
+        @include font-size(32);
+    }
+    @include mquery("small") {
+        @include font-size(38);
+    }
+    @include mquery("medium") {
+        @include font-size(40);
+    }
+    @include mquery("large") {
+        @include font-size(48);
+    }
+}
+
+// drupal metió 2 span con la clase .typed-cursor, a eso se debe este estilo
+// ya que duplica el span
+.typed-cursor:last-child {
+    display: none;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+
+
+
 }
 
 /* layouts section call-out-home-intro
@@ -213,6 +263,10 @@
 
 /* Section free courses home
    ========================================================================== */
+.section-free-courses-info {
+    padding-bottom: 0;
+}
+
 .section-free-courses .panel-left-column {
     display: block;
     float: left;
@@ -253,7 +307,7 @@
     background-position: right;
     background-size: 100%;
     //float: left;
-    height: 315px;
+    height: 300px;
     width: 100%;
     display: none; 
     @include mquery("large") {

@@ -1,0 +1,80 @@
+.page-user-login, 
+.page-user-register, 
+.page-user-password {
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.container-account {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    width: 340px;
+
+    form {
+        padding: 15px;
+    }
+
+    .container-account-title {
+        background-color: $orange;
+        color: $white;
+        font-family: $contrast-font;
+        padding: 18px;
+        position: relative;
+        text-align: center;
+
+        &:after {
+            border-color: $orange transparent transparent transparent;
+            border-style: solid;
+            border-width: 23px 20.5px 0 20.5px;
+            content: "";
+            height: 0;
+            left: 148px;
+            position: absolute;
+            top: 53px;
+            width: 0;
+        }
+    }
+
+    .middle-part {
+        background-color: $white;
+        box-shadow: 0 0 4px #c2bebe;
+        overflow: hidden;
+        padding-bottom: 15px;
+        position: relative;
+    }
+
+    .form-item {
+        margin-top: 10px;
+
+        label{
+            font-family: $contrast-font;
+        }
+    }
+
+    .form-required {
+        color: $dark-orange;
+    }
+}
+
+.bottom-part {
+    padding: 0 15px;
+
+    .password-link, 
+    .login-link {
+        @include font-size(12);
+        @include omega();
+        @include span-columns(6);
+    }
+
+    .register-link {
+        @include font-size(12);
+        float: right;
+    }
+
+    .password-float {
+
+        a {
+          float: right;
+        }
+    }
+}

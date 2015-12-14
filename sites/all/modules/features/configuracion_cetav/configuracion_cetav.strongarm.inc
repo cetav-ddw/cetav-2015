@@ -28,7 +28,7 @@ function configuracion_cetav_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_ignore_words';
-  $strongarm->value = 'a, an, as, at, before, but, by, for, from, is, in, into, like, of, off, on, onto, per, since, than, the, this, that, to, up, via, with';
+  $strongarm->value = 'a, an, as, at, before, but, by, for, from, is, in, into, like, of, off, on, onto, per, since, than, the, this, that, to, up, via, with, de, con, el, para, es, en, pero, como, la, lo, y,';
   $export['pathauto_ignore_words'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -287,7 +287,7 @@ function configuracion_cetav_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_transliterate';
-  $strongarm->value = 1;
+  $strongarm->value = FALSE;
   $export['pathauto_transliterate'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -309,10 +309,7 @@ function configuracion_cetav_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
-    'forum' => TRUE,
     'node' => TRUE,
-    'taxonomy' => TRUE,
-    'user' => TRUE,
   );
   $export['path_alias_whitelist'] = $strongarm;
 
