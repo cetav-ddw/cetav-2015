@@ -1900,4 +1900,29 @@ footer {
   .icon-list i:hover .icon-face:before {
     color: blue; }
 
+.view-global-search {
+  border-bottom: 2px solid #ececec;
+  padding: 10px 16px; }
+  @media only screen and (min-width: 37.5em) {
+    .view-global-search {
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1200px; } }
+  .view-global-search li {
+    display: inline-block;
+    list-style: none; }
+  .view-global-search .comment-add {
+    padding: 0 10px; }
+  .view-global-search .submitted {
+    display: none; }
+  .view-global-search .item-list {
+    width: 55%;
+    margin: 0 auto; }
+    @media only screen and (min-width: 37.5em) {
+      .view-global-search .item-list {
+        width: 37%; } }
+    @media only screen and (min-width: 68.75em) {
+      .view-global-search .item-list {
+        width: 19%; } }
+
 /*# sourceMappingURL=main.css.map */
