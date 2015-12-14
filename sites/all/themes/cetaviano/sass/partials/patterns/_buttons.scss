@@ -7,16 +7,35 @@ button {
 }
 
 // Buttons Careers
-.btn-admision a,
-.btn-download,
-.inscription-button {
-    @include button($light-blue, $light-blue, $white);
+.btn-admision a, 
+.btn-download {
+    @include button($dark-red, $dark-red, $white);
     display: block;
     margin: 25px auto;
     text-align: center;
     transform-style: preserve-3d;
     transition: transform 1s;
     width: 250px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-direction {
+    @include button($white, $white, $ligth-gray);
+    @include font-size(14);
+    background: transparent;
+    display: inline-block;
+    height: 100%;
+    margin: 25px auto;
+    padding: 12px;
+    text-align: center;
+    width: 45%;
+
+    @include mquery("small") {
+        width: 35%;
+    }
 
     &:hover {
         text-decoration: none;
@@ -49,6 +68,21 @@ button {
 
 .btn-download img {
     display: none;
+}
+
+
+.inscription-button {
+    @include button($light-blue, $light-blue, $white);
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 250px;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 //Button Login
