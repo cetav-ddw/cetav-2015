@@ -10,7 +10,7 @@
 
     .panel-left-column {
         @include mquery("medium") {
-            @include span-columns(7);
+            @include span-columns(8);
         }
     } 
 
