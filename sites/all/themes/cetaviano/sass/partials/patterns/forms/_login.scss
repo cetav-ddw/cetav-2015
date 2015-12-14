@@ -1,6 +1,6 @@
-.background-account {
+.page-user-login, .page-user-register, .page-user-password {
     background-color: #f4f4f4;
-    height: 100vh;
+    height: 100%;
 }
 
 .container-account {
@@ -14,35 +14,39 @@
 
     .container-account-title{
         background-color: $orange;
-        padding: 18px;
         color: $white;
-        text-align: center;
+        font-family: $contrast-font;
+        padding: 18px;
         position: relative;
+        text-align: center;
+
         &:after{
-            content: "";
-            width: 0;
-            height: 0;
+            border-color: $orange transparent transparent transparent;
             border-style: solid;
             border-width: 23px 20.5px 0 20.5px;
-            border-color: $orange transparent transparent transparent;
+            content: "";
+            height: 0;
+            left: 148px;
             position: absolute;
             top: 53px;
-            left: 148px;
+            width: 0;
         }
     }
 
     .middle-part {
-        box-shadow: 0px 0px 4px #c2bebe;
         background-color: $white;
+        box-shadow: 0 0 4px #c2bebe;
+        overflow: hidden;
         padding-bottom: 15px;
         position: relative;
-        overflow: hidden;
     }
 
     .form-item {
         margin-top: 10px;
-        font-family: $contrast-font;
-        color: $dark-gray;
+
+        label{
+            font-family: $contrast-font;
+        }
     }
 
     .form-required {
@@ -50,28 +54,25 @@
     }
 }
 
-.bottom-part{
+.bottom-part {
     padding: 0 15px;
 
-    .password-link {
+    .password-link, .login-link {
         @include font-size(12);
-        @include span-columns(6);
         @include omega();
+        @include span-columns(6);
     }
 
-    .register-link{
+    .register-link {
         @include font-size(12);
         float: right;
-    }
-
-    .login-link {
-        @include font-size(12);
-        @include span-columns(6);
-        @include omega();
     }
 
     .password-float {
-        float: right;
+
+        a{
+          float: right;
+        }
     }
 }
 
