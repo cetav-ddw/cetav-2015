@@ -333,7 +333,7 @@ function prev_cursos_libres_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'cetav-prev-cursos-libres';
   $page->admin_description = '';
-  $page->path = 'cursos-libres';
+  $page->path = 'actualizacion-profecional';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();

@@ -153,7 +153,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $display->content['new-93160eb6-ad84-44f2-8808-350b89bebe84'] = $pane;
     $display->panels['right'][0] = 'new-93160eb6-ad84-44f2-8808-350b89bebe84';
     $pane = new stdClass();
-    $pane->pid = 'new-c3bb95a4-b184-42b0-a69e-8741d2eaa815';
+    $pane->pid = 'new-44ea5f59-4c9b-438b-8ffd-dfc97c58149f';
     $pane->panel = 'wide';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_foto_perfil';
@@ -182,9 +182,9 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'c3bb95a4-b184-42b0-a69e-8741d2eaa815';
-    $display->content['new-c3bb95a4-b184-42b0-a69e-8741d2eaa815'] = $pane;
-    $display->panels['wide'][0] = 'new-c3bb95a4-b184-42b0-a69e-8741d2eaa815';
+    $pane->uuid = '44ea5f59-4c9b-438b-8ffd-dfc97c58149f';
+    $display->content['new-44ea5f59-4c9b-438b-8ffd-dfc97c58149f'] = $pane;
+    $display->panels['wide'][0] = 'new-44ea5f59-4c9b-438b-8ffd-dfc97c58149f';
     $pane = new stdClass();
     $pane->pid = 'new-db24002a-3258-49c7-858c-8f75d62ff02f';
     $pane->panel = 'wide';
