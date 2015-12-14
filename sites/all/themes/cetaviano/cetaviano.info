@@ -18,21 +18,23 @@ features[] = secondary_menu
 
 ;-------------- R E G I O N S -------------
 
-regions[header]             = Header
-regions[navigation]         = Navigation
+regions[header]                       = Header
+regions[navigation]                   = Navigation
+regions[secundary_navigation]         = Secundary Navigation
 
-regions[help]               = Help
-regions[highlighted]        = Highlighted
 
-regions[above_content]      = Above Content
-regions[content_aside]      = Content Aside
-regions[content]            = Content
-regions[sidebar_first]      = Sidebar First
-regions[sidebar_second]     = Sidebar Second
-regions[below_content]      = Below Content
+regions[help]                         = Help
+regions[highlighted]                  = Highlighted
 
-regions[footer]             = Footer
-regions[closure]            = Closure
+regions[above_content]                = Above Content
+regions[content_aside]                = Content Aside
+regions[content]                      = Content
+regions[sidebar_first]                = Sidebar First
+regions[sidebar_second]               = Sidebar Second
+regions[below_content]                = Below Content
+
+regions[footer]                       = Footer
+regions[closure]                      = Closure
 
 ;-------------- Panel custom layouts -------------
 plugins[panels][layouts] = layouts

@@ -80,7 +80,7 @@ function carreras_cetav_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'imagen_intro_carreras',
+          'image_style' => 'thumbnail',
         ),
         'type' => 'image',
         'weight' => 0,
