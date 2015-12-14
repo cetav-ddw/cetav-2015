@@ -51,6 +51,12 @@
 
   </div><!-- /header-content -->
   <?php if ($page['navigation']): ?>
+    <div class="menu-highlights">
+      <div class="menu-highlights-content">
+        <div class="pll-logo"></div>
+        <a class="link-nav" href="http://parquelalibertad.org">parquelalibertad.org</a>
+      </div>
+    </div><!-- /menu-highlights -->
     <nav class="nav-main">
       <div class="menu-collapse">
           <div id ="menu-toggle" class="menu-toggle">
@@ -62,6 +68,13 @@
       <?php print render($page['navigation']); ?>
     </nav>
   <?php endif; // end Navigation ?>
+
+  <?php if ($page['secundary_navigation']): ?>
+    <nav class="nav-secundary-main">
+      <?php print render($page['secundary_navigation']); ?>
+    </nav>
+  <?php endif; // end secundary_Navigation ?>
+
 </header>
 
 
@@ -125,8 +138,28 @@
 
 <footer class="footer" role="contentinfo">
   <div class="footer-content">
-    <div class="footer">
-      <?php print render($page['footer']); ?>
+    <div class="footer grid-width">
+      <div class="contact-info">
+        <h5>¿Cómo llegar?</h5>
+        <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
+        <a href="#" class="btn-direction">Ver con Waze</a>
+        <a href="#" class="btn-direction">Ver con Maps</a>
+      </div>
+      <div class="contact-info">
+        <h5>Contacto</h5>
+        <p>Teléfono: 2276-9400 ext.2031</p>
+        <p>E-mail: cetav@parquelalibertad.org</p>
+        <nav>
+          <ul class="social-icon icon-list">
+            <li><i class="icon-face"><a href="#">facebook</a></i></li>
+            <li><i class="icon-vimeo"><a href="#">vimeo</a></i></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact-info">
+        <h5>Somos parte del</h5>
+        <div class="logo-parque-ministerio"></div>
+      </div>
     </div>
   </div>
 </footer>
