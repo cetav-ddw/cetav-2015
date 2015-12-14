@@ -222,6 +222,29 @@ button {
 .btn-download img {
   display: none; }
 
+.container-account .form-actions {
+  margin: 15px auto;
+  text-align: center; }
+
+.container-account .form-submit {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #f19130;
+  border: 2px solid #f19130;
+  color: #fff;
+  padding: 15px 30px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  padding: 8px 18px; }
+  @media only screen and (min-width: 68.75em) {
+    .container-account .form-submit {
+      background-color: transparent;
+      border: 2px solid #f19130;
+      color: #f19130; }
+      .container-account .form-submit:hover {
+        background-color: #f19130;
+        color: #fff; } }
+
 table {
   font-size: 16px;
   font-size: 1.6rem;
@@ -293,8 +316,18 @@ input[type="radio"] {
   font-size: 1.6rem;
   vertical-align: baseline; }
 
-input[type="submit"],
 input[type="file"] {
+  text-indent: 100%; }
+
+input[name="field_subir_comprobante_und_0_upload_button"],
+form .description {
+  display: none; }
+
+.form-type-radio {
+  margin-bottom: 5px; }
+
+.course-form input[type="submit"],
+.course-form input[type="file"] {
   font-size: 18px;
   font-size: 1.8rem;
   background-color: #00c9ed;
@@ -309,35 +342,22 @@ input[type="file"] {
   transition: all 0.2s ease-in-out;
   width: 100%; }
   @media only screen and (min-width: 68.75em) {
-    input[type="submit"],
-    input[type="file"] {
+    .course-form input[type="submit"],
+    .course-form input[type="file"] {
       background-color: transparent;
       border: 2px solid #00c9ed;
       color: #00c9ed; }
-      input[type="submit"]:hover,
-      input[type="file"]:hover {
+      .course-form input[type="submit"]:hover,
+      .course-form input[type="file"]:hover {
         background-color: #00c9ed;
         color: #fff; } }
   @media only screen and (min-width: 56.25em) {
-    input[type="submit"],
-    input[type="file"] {
+    .course-form input[type="submit"],
+    .course-form input[type="file"] {
       display: inline-block;
       width: auto; } }
 
-input[type="file"] {
-  text-indent: 100%; }
-
-input[name="field_subir_comprobante_und_0_upload_button"],
-form .description {
-  display: none; }
-
-.form-type-radio {
-  margin-bottom: 5px; }
-
-.course-form label {
-  display: none; }
-
-input[type="text"].form-text {
+.course-form input[type="text"].form-text {
   font-size: 16px;
   font-size: 1.6rem;
   background-color: #ececec;
@@ -345,6 +365,9 @@ input[type="text"].form-text {
   margin: 10px 0;
   max-width: 100%;
   padding: 20px; }
+
+.course-form label {
+  display: none; }
 
 .field-widget-text-textarea .form-type-textarea {
   margin-bottom: 10px; }
@@ -362,80 +385,68 @@ input[type="text"].form-text {
 .webform-component {
   margin-bottom: 15px; }
 
-.personal-institution .field-items {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .personal-institution .field-items::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .personal-institution .field-items > .field-item {
-    margin-bottom: 20px;
+.page-user-login,
+.page-user-register,
+.page-user-password {
+  background-color: #f4f4f4;
+  height: 100%; }
+
+.container-account {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  width: 340px; }
+  .container-account form {
+    padding: 15px; }
+  .container-account .container-account-title {
+    background-color: #f19130;
+    color: #fff;
+    font-family: "Montserrat", Arial, Verdana, sans-serif;
+    padding: 18px;
+    position: relative;
     text-align: center; }
-    @media only screen and (min-width: 20em) {
-      .personal-institution .field-items > .field-item {
-        float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 100%; }
-        .personal-institution .field-items > .field-item:last-child {
-          margin-right: 0; } }
-    @media only screen and (min-width: 37.5em) {
-      .personal-institution .field-items > .field-item {
-        float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 48.821174201%; }
-        .personal-institution .field-items > .field-item:last-child {
-          margin-right: 0; } }
-    @media only screen and (min-width: 56.25em) {
-      .personal-institution .field-items > .field-item {
-        float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 23.2317613015%; }
-        .personal-institution .field-items > .field-item:last-child {
-          margin-right: 0; } }
-    .personal-institution .field-items > .field-item img {
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto; }
-  @media only screen and (min-width: 37.5em) {
-    .personal-institution .field-items .odd {
-      margin-right: 0; } }
-  @media only screen and (min-width: 56.25em) {
-    .personal-institution .field-items .odd {
-      margin-right: 2.3576515979%; } }
+    .container-account .container-account-title:after {
+      border-color: #f19130 transparent transparent transparent;
+      border-style: solid;
+      border-width: 23px 20.5px 0 20.5px;
+      content: "";
+      height: 0;
+      left: 148px;
+      position: absolute;
+      top: 53px;
+      width: 0; }
+  .container-account .middle-part {
+    background-color: #fff;
+    box-shadow: 0 0 4px #c2bebe;
+    overflow: hidden;
+    padding-bottom: 15px;
+    position: relative; }
+  .container-account .form-item {
+    margin-top: 10px; }
+    .container-account .form-item label {
+      font-family: "Montserrat", Arial, Verdana, sans-serif; }
+  .container-account .form-required {
+    color: #dc661e; }
 
-.personal-institution .personal-name {
-  color: #77787b;
-  margin-top: 20px;
-  text-align: center; }
-
-.personal-institution .personal-charge p {
-  font-size: 13px;
-  font-size: 1.3rem;
-  background-color: #ececec;
-  border-radius: 5px;
-  color: #77787b;
-  display: inline-block;
-  height: 54px;
-  margin: 21px 0 10px;
-  padding: 5px 10px;
-  width: 100%; }
-  @media only screen and (min-width: 56.25em) {
-    .personal-institution .personal-charge p {
-      height: 67px; } }
-  @media only screen and (min-width: 68.75em) {
-    .personal-institution .personal-charge p {
-      height: 54px; } }
-
-.personal-institution .personal-description p {
-  font-size: 12px;
-  font-size: 1.2rem;
-  color: #414042;
-  text-align: left; }
+.bottom-part {
+  padding: 0 15px; }
+  .bottom-part .password-link,
+  .bottom-part .login-link {
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin-right: 0;
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%; }
+    .bottom-part .password-link:last-child,
+    .bottom-part .login-link:last-child {
+      margin-right: 0; }
+  .bottom-part .register-link {
+    font-size: 12px;
+    font-size: 1.2rem;
+    float: right; }
+  .bottom-part .password-float a {
+    float: right; }
 
 .grid-width {
   margin: 0 auto;
@@ -1330,6 +1341,81 @@ div.password-suggestions ul {
     .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(4) {
       border-bottom: none;
       border-right: 1px solid #9d9fa2; } }
+
+.personal-institution .field-items {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .personal-institution .field-items::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .personal-institution .field-items > .field-item {
+    margin-bottom: 20px;
+    text-align: center; }
+    @media only screen and (min-width: 20em) {
+      .personal-institution .field-items > .field-item {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        .personal-institution .field-items > .field-item:last-child {
+          margin-right: 0; } }
+    @media only screen and (min-width: 37.5em) {
+      .personal-institution .field-items > .field-item {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 48.821174201%; }
+        .personal-institution .field-items > .field-item:last-child {
+          margin-right: 0; } }
+    @media only screen and (min-width: 56.25em) {
+      .personal-institution .field-items > .field-item {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 23.2317613015%; }
+        .personal-institution .field-items > .field-item:last-child {
+          margin-right: 0; } }
+    .personal-institution .field-items > .field-item img {
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto; }
+  @media only screen and (min-width: 37.5em) {
+    .personal-institution .field-items .odd {
+      margin-right: 0; } }
+  @media only screen and (min-width: 56.25em) {
+    .personal-institution .field-items .odd {
+      margin-right: 2.3576515979%; } }
+
+.personal-institution .personal-name {
+  color: #77787b;
+  margin-top: 20px;
+  text-align: center; }
+
+.personal-institution .personal-charge p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  background-color: #ececec;
+  border-radius: 5px;
+  color: #77787b;
+  display: inline-block;
+  height: 54px;
+  margin: 21px 0 10px;
+  padding: 5px 10px;
+  width: 100%; }
+  @media only screen and (min-width: 56.25em) {
+    .personal-institution .personal-charge p {
+      height: 67px; } }
+  @media only screen and (min-width: 68.75em) {
+    .personal-institution .personal-charge p {
+      height: 54px; } }
+
+.personal-institution .personal-description p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #414042;
+  text-align: left; }
 
 .aside,
 .container-news {
