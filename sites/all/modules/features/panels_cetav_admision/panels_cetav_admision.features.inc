@@ -15,3 +15,17 @@ function panels_cetav_admision_ctools_plugin_api($module = NULL, $api = NULL) {
     return array("version" => "1");
   }
 }
+
+/**
+ * Implements hook_paragraphs_info().
+ */
+function panels_cetav_admision_paragraphs_info() {
+  $items = array(
+    'steps' => array(
+      'name' => 'steps',
+      'bundle' => 'steps',
+      'locked' => '1',
+    ),
+  );
+  return $items;
+}

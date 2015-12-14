@@ -144,5 +144,47 @@ function perfil_egresado_cetav_strongarm() {
   $strongarm->value = 1;
   $export['node_submitted_perfil_egresado'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_perfil_egresado_pattern';
+  $strongarm->value = 'egresados/[node:title]';
+  $export['pathauto_node_perfil_egresado_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_carrera_tecnica_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_carrera_tecnica_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_disponibilidad_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_disponibilidad_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_generacion_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_generacion_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_habilidades_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_habilidades_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_skills_web_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_skills_web_pattern'] = $strongarm;
+
   return $export;
 }

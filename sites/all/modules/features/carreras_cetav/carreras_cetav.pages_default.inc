@@ -198,7 +198,7 @@ function carreras_cetav_default_page_manager_handlers() {
     $display->content['new-00196396-1f00-48ec-ba09-54c9797833fb'] = $pane;
     $display->panels['right'][0] = 'new-00196396-1f00-48ec-ba09-54c9797833fb';
     $pane = new stdClass();
-    $pane->pid = 'new-69a2b37d-1ee0-4c4f-8835-00918adb36c5';
+    $pane->pid = 'new-d485b057-5786-444e-ba3e-f8bf0e3773c5';
     $pane->panel = 'wide';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_imagen_header_carrera';
@@ -211,7 +211,7 @@ function carreras_cetav_default_page_manager_handlers() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_style' => 'large',
+        'image_style' => 'intro_carreras',
         'image_link' => '',
       ),
       'context' => 'argument_entity_id:node_1',
@@ -227,9 +227,9 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '69a2b37d-1ee0-4c4f-8835-00918adb36c5';
-    $display->content['new-69a2b37d-1ee0-4c4f-8835-00918adb36c5'] = $pane;
-    $display->panels['wide'][0] = 'new-69a2b37d-1ee0-4c4f-8835-00918adb36c5';
+    $pane->uuid = 'd485b057-5786-444e-ba3e-f8bf0e3773c5';
+    $display->content['new-d485b057-5786-444e-ba3e-f8bf0e3773c5'] = $pane;
+    $display->panels['wide'][0] = 'new-d485b057-5786-444e-ba3e-f8bf0e3773c5';
     $pane = new stdClass();
     $pane->pid = 'new-b0ac5ea2-322b-496c-b122-57a153ad579f';
     $pane->panel = 'wide';

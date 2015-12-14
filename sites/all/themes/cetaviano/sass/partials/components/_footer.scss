@@ -6,16 +6,13 @@ footer {
     h2 {
         display: none;
     }
-
     h5 {
         margin: 2px 0 20px 0;
     }
-
     h5, 
     p {
         color: $white;
     }
-
     .contact-info {
         margin-bottom: 25px;
 
@@ -23,7 +20,6 @@ footer {
             @include span-columns(4);
         }
     }
-
     .grid-width {
         padding: 0 16px;
 

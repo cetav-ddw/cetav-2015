@@ -70,7 +70,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
+      'label' => 'above',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -100,7 +100,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
+      'label' => 'above',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -130,7 +130,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '4',
       'delta_offset' => '0',
@@ -153,7 +153,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $display->content['new-93160eb6-ad84-44f2-8808-350b89bebe84'] = $pane;
     $display->panels['right'][0] = 'new-93160eb6-ad84-44f2-8808-350b89bebe84';
     $pane = new stdClass();
-    $pane->pid = 'new-c3bb95a4-b184-42b0-a69e-8741d2eaa815';
+    $pane->pid = 'new-44ea5f59-4c9b-438b-8ffd-dfc97c58149f';
     $pane->panel = 'wide';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_foto_perfil';
@@ -182,9 +182,9 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'c3bb95a4-b184-42b0-a69e-8741d2eaa815';
-    $display->content['new-c3bb95a4-b184-42b0-a69e-8741d2eaa815'] = $pane;
-    $display->panels['wide'][0] = 'new-c3bb95a4-b184-42b0-a69e-8741d2eaa815';
+    $pane->uuid = '44ea5f59-4c9b-438b-8ffd-dfc97c58149f';
+    $display->content['new-44ea5f59-4c9b-438b-8ffd-dfc97c58149f'] = $pane;
+    $display->panels['wide'][0] = 'new-44ea5f59-4c9b-438b-8ffd-dfc97c58149f';
     $pane = new stdClass();
     $pane->pid = 'new-db24002a-3258-49c7-858c-8f75d62ff02f';
     $pane->panel = 'wide';
@@ -223,7 +223,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'hidden',
       'formatter' => 'link_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -433,7 +433,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'hidden',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -517,6 +517,36 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->uuid = 'a261ab07-dcd6-498a-a00e-ddfd1e9e3970';
     $display->content['new-a261ab07-dcd6-498a-a00e-ddfd1e9e3970'] = $pane;
     $display->panels['wide_second'][3] = 'new-a261ab07-dcd6-498a-a00e-ddfd1e9e3970';
+    $pane = new stdClass();
+    $pane->pid = 'new-31714edc-ad26-48c7-8e2f-dd86c46f9d8b';
+    $pane->panel = 'wide_second';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_numero_telefono';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '31714edc-ad26-48c7-8e2f-dd86c46f9d8b';
+    $display->content['new-31714edc-ad26-48c7-8e2f-dd86c46f9d8b'] = $pane;
+    $display->panels['wide_second'][4] = 'new-31714edc-ad26-48c7-8e2f-dd86c46f9d8b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
