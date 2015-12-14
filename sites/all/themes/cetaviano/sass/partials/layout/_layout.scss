@@ -13,6 +13,13 @@
     padding: 70px 16px;
 }
 
+.center-wrapper,
+.panel-wide {
+    padding: 80px 16px;
+    overflow: hidden;
+    clear: both;
+}
+
 .panel-left-column,
 .panel-right-column {
     @include span-columns(12);
@@ -24,83 +31,72 @@
     }
 }
 
-/* layouts left, right
-   ========================================================================== */
-   /*
-    * estos estilos todavía no son específicos, Fabian agregó clases desde php 
-    * nada más espero que esté arriba para hacer pull y ya darle el estilo
-    * específico ya que no tengo una clase de donde agarrarme.
-    */
-.panel-left-column {
-    display: block;
-    float: left;
-    text-align: center;
-    width: 100%;
-
-    @include mquery("base") {
-        margin-bottom: 15px;
-    }
-    @include mquery("small") {
-        margin-bottom: 20px;
-    }
-    @include mquery("medium") {
-        margin-bottom: 30px;
-    }
-    @include mquery("large") {
-        display: inline-block;
-        text-align: left;
-        width: 40%; 
-    }
-}
-
-.panel-right-column {
-    @include mquery("medium") {
-        display: block;
-        width: 100%;
-    }
-    @include mquery("large") {
-        float: right;
-        width: 50%;
-    }
-}
-
 /* Section background header
    ========================================================================== */
 .main-content .main .title {
     display: none;
 }
 
-.panel-cetav-frontpage .panel-wide {
-    //background: url(../img/prueba.jpg) no-repeat center;
-    //background-attachment: fixed;
-    //background-size: cover;
-    background-color: #eee;
-    height: 700px;
+.panel-wide-hero {
+    background: url(../images/prueba.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
 
+    @include mquery("base") {
+        height: 400px;
+    }
+    @include mquery("medium") {
+        height: 600px;
+    }
     @include mquery("x-large") {
         background-size: 1200px;
+        height: 700px;
     }
 }
 
 /* Content Header
    ========================================================================== */
-.content-header{
-    p:first-child{
-        @include font-size(48);
+.content-header {
+    p:first-child {
         color: $white;
-        margin: 0 0 15px;
+        margin: 0;
+        @include mquery("base") {
+            @include font-size(32);
+        }
+        @include mquery("small") {
+            @include font-size(38);
+        }
+        @include mquery("medium") {
+            @include font-size(40);
+        }
+        @include mquery("large") {
+            @include font-size(48);
+        }
     }
 
-    strong{
-        @include font-size(48);
+    strong {
         color: $orange;
+        @include mquery("base") {
+            @include font-size(32);
+        }
+        @include mquery("small") {
+            @include font-size(38);
+        }
+        @include mquery("medium") {
+            @include font-size(40);
+        }
+        @include mquery("large") {
+            @include font-size(48);
+        }
     }
  
     @include mquery("base") {
         padding-top: 14.5%;
     }
     @include mquery("small") {
-        padding-top: 24.5%;
+        padding-top: 8.5%;
     }
     @include mquery("medium") {
         padding-top: 17.5%;
@@ -114,35 +110,80 @@
 }
 
 .type-wrap{
-    @include font-size(48);
     font-family: $contrast-font;
     margin: 10px auto;
     padding: 20px;
     text-align: center;
 }
 
-.wrap{
+.type-wrap span {
+    white-space: normal;
+
+    @include mquery("medium") {
+        white-space: pre;
+    }
+}
+
+.wrap {
     margin: 150px auto;
     max-width: 600px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    @include mquery("base") {
+        @include font-size(32);
+    }
+    @include mquery("small") {
+        @include font-size(38);
+    }
+    @include mquery("medium") {
+        @include font-size(40);
+    }
+    @include mquery("large") {
+        @include font-size(48);
+    }
+}
+
+// drupal metió 2 span con la clase .typed-cursor, a eso se debe este estilo
+// ya que duplica el span
+.typed-cursor:last-child {
+    display: none;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+
+
+
 }
 
 /* layouts section call-out-home-intro
    ========================================================================== */
 .call-out-home-intro .panel-left-column {
-    // aquí va el logo del cetav, estos estilos son provisionales
-    // para dar concepto de layout
-
-    background-color: #eee;
     display: block;
-    float: left;
-    height: 171px;
     text-align: center;
     width: 100%;
+    margin-right: 0;
 
     @include mquery("large") {
         display: inline-block;
-        margin-right: 0;
-        text-align: left;
+        margin: 0 auto;
         width: 40%; 
     }
 }
@@ -156,6 +197,34 @@
         float: right;
         margin-right: 60px;
         width: 50%;
+    }
+}
+
+.panels-ipe-empty-pane {
+    // background-image logo cetav
+    background-image: url(../images/logo-naranja-cetav.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: transparent;
+    display: block;
+    height: 131px;
+    margin: 0 auto;
+    text-align: center;
+ 
+    @include mquery("base") {
+        width: 200px;
+    }
+    @include mquery("small") {
+        margin-bottom: 10px;
+        width: 240px;
+    }
+    @include mquery("medium") {
+        width: 280px;
+    }
+    @include mquery("x-large") {
+        margin-bottom: 20px;
+        margin-top: 30px;
+        width: 300px;
     }
 }
 
@@ -192,11 +261,58 @@
     }
 }
 
-
 /* Section free courses home
    ========================================================================== */
-.section-free-courses .panel-right-column .view-cursos {
-    margin: 0;
+.section-free-courses-info {
+    padding-bottom: 0;
+}
+
+.section-free-courses .panel-left-column {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
+    @include mquery("medium") {
+        margin-bottom: 30px;
+    }
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 45%; 
+    }
+}
+
+.section-free-courses .panel-right-column {
+    @include mquery("medium") {
+        display: block;
+        width: 100%;
+    }
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
+}
+
+// solo desde este id me podía agarrar para darle un background-image al
+// contenedor
+#panels-ipe-regionid-left_third {
+    background-image: url(../images/course.png);
+    background-position: right;
+    background-size: 100%;
+    //float: left;
+    height: 300px;
+    width: 100%;
+    display: none; 
+    @include mquery("large") {
+        display: inline-block;
+    }
 }
 
 .section-free-courses .views-row {
@@ -206,8 +322,16 @@
     position: relative;
 }
 
+.text-course-description p {
+    margin-bottom: 10px;
+}
+
 /* Section allies home
    ========================================================================== */
+.panel-cetav-frontpage .panel-wide-allies {
+    height: auto;
+}
+
 .section-title-allies {
     display: block;
     float: left;
@@ -245,6 +369,8 @@
 .logo-allies .field-item {
     display: inline-block;
     float: left;
+    text-align: center;
+    position: relative;
 
     @include mquery("base") {
         height: 60px;
@@ -268,10 +394,20 @@
         height: 90px;
         margin-top: 60px;
     }
-    // height provisional, solo para concepto de contenido
+
     img {
-        height: 90px;
-        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        margin: auto;
+        width: 100px;
+
+        @include mquery("large") {
+            width: 120px;
+        }
     }
 }
 
