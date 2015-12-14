@@ -3,6 +3,7 @@
 //
 button {
     @include button(red, red, red); //$color-border-type, $color-hover-type, $color-hover-background
+    transition: all 0.2s ease-in-out;
 }
 
 // Buttons Careers
@@ -12,7 +13,29 @@ button {
     display: block;
     margin: 25px auto;
     text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
     width: 250px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-direction {
+    @include button($white, $white, $ligth-gray);
+    @include font-size(14);
+    background: transparent;
+    display: inline-block;
+    height: 100%;
+    margin: 25px auto;
+    padding: 12px;
+    text-align: center;
+    width: 45%;
+
+    @include mquery("small") {
+        width: 35%;
+    }
 
     &:hover {
         text-decoration: none;
@@ -49,29 +72,12 @@ button {
 
 // boton leer más, texto inicial
 .course-description a {
+    @include button($gray, $gray, $white)
     @include font-size(14);
     border-radius: 6px;
-    border: 2px solid $gray;
-    color: $gray;
-    float: left;
-    font-family: $default-font;
     padding: 5px 8px;
     text-decoration: none;
-    -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
-
-    /* Medium Devices, Desktops */
-    @include mquery("medium") {
-        margin: 0;
-    }
-
-    &:hover {
-        background-color: $gray;
-        color: white;
-    }
 }
 
 
@@ -82,17 +88,20 @@ button {
 
 
 .text-course-description a {
+    @include button($light-blue, $light-blue, $white)
     @include font-size(15);
-    color: $light-blue;
+    border-radius: 6px;
     display: inline-block;
-    //padding: 6px 0;
+    padding: 5px 8px;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-
+// boton de cada curso libre disponible
 .btn-course a {
-    @include button($white, #00acea, $white)
+    @include button($light-blue, $light-blue, $white)
     @include font-size(14);
-    background-color: $light-blue;
     border-radius: 6px;
     display: inline-block;
     padding: 6px 10px;
@@ -106,12 +115,22 @@ button {
     }
 
     &:hover{
-        -webkit-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 }
 
+
+//Button Login
+.container-account {
+    .form-actions {
+        margin: 15px auto;
+        text-align: center;
+    }
+    .form-submit {
+        @include button($orange, $orange, $white);
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        padding: 8px 18px;
+    }
+}
 

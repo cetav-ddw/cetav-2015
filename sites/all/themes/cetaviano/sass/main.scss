@@ -19,11 +19,13 @@
 @import "partials/patterns/buttons";
 @import "partials/patterns/tables";
 @import "partials/patterns/multi-media";
+@import "partials/patterns/cetav-icons";
 
 //Forms
 @import "partials/patterns/forms/forms-drupal";
 @import "partials/patterns/forms/webforms";
-@import "partials/components/institution";
+@import "partials/patterns/forms/login";
+
 
 //Layout
 @import "partials/layout/layout";
@@ -33,6 +35,13 @@
 
 //Components
 @import "partials/components/careers";
+@import "partials/components/courses";
 @import "partials/components/admission";
+@import "partials/components/institution";
 @import "partials/components/news";
+@import "partials/components/news-node";
 @import "partials/components/preview-course";
+@import "partials/components/graduate-profile";
+@import "partials/components/footer";
+@import "partials/components/search";
+

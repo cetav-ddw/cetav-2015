@@ -1,0 +1,179 @@
+.course-content {
+    background-color: $blue-dark;
+    padding: 50px 0 50px 6%;
+
+    h4 {
+        margin: 25px auto;
+        max-width: $max-width;
+    }
+    
+    // Esta lista mostrada en columnas debe ser una clase general para las otras listas de este estilo
+    // Temporalmente las reglas las defino por la "ul"
+    ul {
+        column-count: 1;
+        color: $white;
+        list-style: none;
+        margin: 0 auto;
+        max-width: $max-width;
+
+        @include mquery ("small") {
+            column-count: 2;
+        }
+
+        @include mquery("medium") {
+            column-count: 3;
+        }
+
+        li {
+            margin-bottom: 10px;
+            
+            &:before {
+                color: $light-blue;
+                content: "• ";
+            }
+        }
+    }
+}
+
+.course-details {
+    p {
+        @include font-size(14);
+        margin: 20px 10px;
+
+        &:first-of-type {
+            @include font-size(16);
+        }
+    }
+    strong {
+        color: $dark-gray;
+        font-weight: bold;
+    }
+}
+
+.course-info {
+    @include font-size(16);
+    color: $gray;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    .date-display-range span {
+        color: $gray;
+        font-weight: normal;
+    }
+    .date-display-range,
+    .label-inline {
+        display: inline;
+        font-weight: bold;
+    }
+    .label-inline {
+        color: $dark-gray;
+    }
+}
+
+.course-form {
+    height: 0;
+    overflow: hidden;
+    margin-top: 70px;
+    text-align: center;
+    transition: 1s;
+}
+
+.center-wrapper-courses .panel-left-column {
+    margin-top: 30px;
+
+    @include mquery("medium") {
+        float: left;
+        margin: 25px 3%;
+        width: 40%;
+    }
+}
+
+.center-wrapper-courses .panel-right-column {
+    margin-top: 30px;
+
+    @include mquery("medium") {
+        float: right;
+        margin: 25px 0;
+        width: 40%;
+    }
+}
+
+.flip-wrap {
+    perspective: 800px;
+}
+
+.hide-button {
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateX(93deg);
+    transition: 1s;
+}
+
+.hide-flip-wrap {
+    height: 0;
+    transition: 2s;
+}
+
+.inscription-button {
+    font-weight: bold;
+    left: 12%;
+    outline: none;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    
+    @include mquery("medium") {
+        left: 13%;
+    }
+}
+
+.panel-cetav-cursos-libres {
+    h3, 
+    h4 {
+        color: $light-blue;
+        margin-bottom: 25px
+    }
+    img {
+        border: 0;
+        box-shadow: 0 0 8px $gray;
+        height: auto;
+        width: 100%;
+
+    }
+    p {
+        color: $gray;
+    }
+    .panel-wide {
+        padding: 0;
+    }
+    .panel-wide-courses {
+        text-align: center;
+        margin: 0 auto;
+        width: 450px;
+        height: 500px;
+
+        form {
+            text-align: left;
+        }
+    }
+    .subtitle {
+        border-bottom: 2px solid;
+        padding-bottom: 10px;
+        text-align: center;
+
+        @include mquery("medium") {
+            text-align: left;
+            width: 370px;
+        }
+    }
+}
+
+.show-from-btn {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.show-course-form {
+    height: 400px;
+    transition: 2s;
+}
