@@ -1755,6 +1755,98 @@ div.password-suggestions ul {
   position: absolute;
   top: 190px; }
 
+.about-graduate {
+  color: #848286;
+  overflow: hidden;
+  padding-top: 0; }
+  .about-graduate .label-above {
+    color: #292929;
+    margin: 20px 0 15px; }
+  @media only screen and (min-width: 56.25em) {
+    .about-graduate .panel-left-column {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%; }
+      .about-graduate .panel-left-column:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 56.25em) {
+    .about-graduate .panel-right-column {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%; }
+      .about-graduate .panel-right-column:last-child {
+        margin-right: 0; } }
+
+.availability-info {
+  font-size: 16px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+  color: #848286;
+  margin: 25px 0;
+  padding: 24px 0; }
+  .availability-info a {
+    color: #848286; }
+  .availability-info i {
+    font-size: 22px;
+    font-size: 2.2rem;
+    color: #243842;
+    margin-bottom: 6px; }
+  .availability-info .pane-entity-field {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center; }
+    .availability-info .pane-entity-field:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 56.25em) {
+      .availability-info .pane-entity-field {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 23.2317613015%; }
+        .availability-info .pane-entity-field:last-child {
+          margin-right: 0; } }
+
+.field-name-field-acerca-de-mi .field-label,
+.field-name-field-habilidades-egresado .field-label {
+  margin-top: 0; }
+
+.info-graduate {
+  padding-bottom: 0;
+  text-align: center; }
+  .info-graduate img {
+    margin-bottom: 18px; }
+  .info-graduate p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #292929;
+    margin: 15px 0; }
+
+.pane-node-field-profesion-egresado {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.skill {
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #243842;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #243842;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 14px;
+  margin-right: 12px;
+  padding: 4px; }
+
+.pane-title {
+  display: none; }
+
 footer {
   background: #292929;
   overflow: hidden;
