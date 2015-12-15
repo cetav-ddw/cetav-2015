@@ -75,6 +75,7 @@ features[variable][] = menu_parent_carreras
 features[variable][] = node_options_carreras
 features[variable][] = node_preview_carreras
 features[variable][] = node_submitted_carreras
+features[variable][] = pathauto_node_carreras_pattern
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_subtitulo_skills_carreras] = field_subtitulo_skills_carreras
 features_exclude[field_base][field_cuatrimestre] = field_cuatrimestre
