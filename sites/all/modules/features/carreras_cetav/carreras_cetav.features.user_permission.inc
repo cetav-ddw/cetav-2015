@@ -13,7 +13,9 @@ function carreras_cetav_user_default_permissions() {
   // Exported permission: 'create carreras content'.
   $permissions['create carreras content'] = array(
     'name' => 'create carreras content',
-    'roles' => array(),
+    'roles' => array(
+      'content-admin' => 'content-admin',
+    ),
     'module' => 'node',
   );
 

@@ -231,6 +231,29 @@ function perfil_egresado_cetav_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Egresados', 'panel_pane_1');
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Foto Perfil */
+  $handler->display->display_options['fields']['field_foto_perfil']['id'] = 'field_foto_perfil';
+  $handler->display->display_options['fields']['field_foto_perfil']['table'] = 'field_data_field_foto_perfil';
+  $handler->display->display_options['fields']['field_foto_perfil']['field'] = 'field_foto_perfil';
+  $handler->display->display_options['fields']['field_foto_perfil']['label'] = '';
+  $handler->display->display_options['fields']['field_foto_perfil']['element_class'] = 'profile-image';
+  $handler->display->display_options['fields']['field_foto_perfil']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_foto_perfil']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_foto_perfil']['settings'] = array(
+    'image_style' => 'imagen_en_lista_de_egresados',
+    'image_link' => '',
+  );
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['children'] = array(
+    0 => 'title',
+    1 => 'field_profesion_egresado',
+    2 => 'field_generacion_egresado',
+    3 => 'field_disponibilidad_egresado',
+  );
+  $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'profesional-info-container';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -238,17 +261,8 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Foto Perfil */
-  $handler->display->display_options['fields']['field_foto_perfil']['id'] = 'field_foto_perfil';
-  $handler->display->display_options['fields']['field_foto_perfil']['table'] = 'field_data_field_foto_perfil';
-  $handler->display->display_options['fields']['field_foto_perfil']['field'] = 'field_foto_perfil';
-  $handler->display->display_options['fields']['field_foto_perfil']['label'] = '';
-  $handler->display->display_options['fields']['field_foto_perfil']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_foto_perfil']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_foto_perfil']['settings'] = array(
-    'image_style' => 'imagen_en_lista_de_egresados',
-    'image_link' => '',
-  );
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'profile-name';
   /* Field: Content: profesión_egresado */
   $handler->display->display_options['fields']['field_profesion_egresado']['id'] = 'field_profesion_egresado';
   $handler->display->display_options['fields']['field_profesion_egresado']['table'] = 'field_data_field_profesion_egresado';
@@ -281,6 +295,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'see-profile';
   $handler->display->display_options['fields']['view_node']['text'] = 'Ver perfil';
   $export['egresados'] = $view;
 
