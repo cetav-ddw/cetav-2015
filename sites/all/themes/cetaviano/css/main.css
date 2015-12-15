@@ -185,8 +185,11 @@ button {
   display: block;
   margin: 25px auto;
   text-align: center;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   width: 250px; }
   @media only screen and (min-width: 68.75em) {
     .btn-admision a,
@@ -265,8 +268,11 @@ button {
   display: block;
   margin: 25px auto;
   text-align: center;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   width: 250px; }
   @media only screen and (min-width: 68.75em) {
     .inscription-button {
@@ -290,8 +296,11 @@ button {
   border: 2px solid #f19130;
   color: #fff;
   padding: 15px 30px;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   padding: 8px 18px; }
   @media only screen and (min-width: 68.75em) {
     .container-account .form-submit {
@@ -742,8 +751,6 @@ fieldset.collapsible .fieldset-legend {
   display: block;
   margin: 0;
   width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .resizable-textarea .grippie {
@@ -983,8 +990,6 @@ html.js fieldset.collapsed .fieldset-legend {
   background: #ccc;
   border-color: #666;
   margin: 0 0.2em;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .progress .filled {
@@ -1296,17 +1301,23 @@ div.password-suggestions ul {
     margin: 25px auto;
     max-width: 1200px; }
   .course-content ul {
-    column-count: 1;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
     color: #fff;
     list-style: none;
     margin: 0 auto;
     max-width: 1200px; }
     @media only screen and (min-width: 37.5em) {
       .course-content ul {
-        column-count: 2; } }
+        -webkit-column-count: 2;
+           -moz-column-count: 2;
+                column-count: 2; } }
     @media only screen and (min-width: 56.25em) {
       .course-content ul {
-        column-count: 3; } }
+        -webkit-column-count: 3;
+           -moz-column-count: 3;
+                column-count: 3; } }
     .course-content ul li {
       margin-bottom: 10px; }
       .course-content ul li:before {
@@ -1365,12 +1376,16 @@ div.password-suggestions ul {
       width: 40%; } }
 
 .flip-wrap {
-  perspective: 800px; }
+  -webkit-perspective: 800px;
+          perspective: 800px; }
 
 .hide-button {
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateX(93deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(93deg);
+          transform: rotateX(93deg);
   transition: 1s; }
 
 .hide-flip-wrap {
@@ -1430,42 +1445,49 @@ div.password-suggestions ul {
   height: 400px;
   transition: 2s; }
 
-.pane-bundle-steps-admision h4 {
-  font-size: 22px;
-  font-size: 2.2rem;
-  color: #77787b;
-  padding: 0 0 3% 0; }
-
-.pane-bundle-steps-admision p {
-  height: 100px;
-  margin: 0;
+.pane-bundle-steps-admision {
   text-align: center; }
-
-.pane-bundle-steps-admision .paragraphs-item-steps {
-  padding: 10% 2%; }
-  @media only screen and (min-width: 20em) {
-    .pane-bundle-steps-admision .paragraphs-item-steps {
-      border-bottom: 1px solid #9d9fa2; }
+  .pane-bundle-steps-admision h4 {
+    font-size: 22px;
+    font-size: 2.2rem;
+    color: #77787b;
+    padding: 0 0 3% 0; }
+  .pane-bundle-steps-admision p {
+    height: 100px;
+    margin: 20px;
+    text-align: center; }
+  .pane-bundle-steps-admision span {
+    border: 2px solid #9d9fa2;
+    border-radius: 100px;
+    color: #9d9fa2;
+    font-size: 35px;
+    margin: 20px;
+    padding: 5px 18px; }
+  .pane-bundle-steps-admision .paragraphs-item-steps {
+    padding: 8% 2% 2%; }
+    @media only screen and (min-width: 20em) {
+      .pane-bundle-steps-admision .paragraphs-item-steps {
+        border-bottom: 1px solid #9d9fa2; }
+        .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
+          border-bottom: none; } }
+    @media only screen and (min-width: 37.5em) {
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(1) {
+        border-right: 1px solid #9d9fa2; }
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
+        border-right: 1px solid #9d9fa2; }
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(5) {
+        border-bottom: none;
+        border-right: 1px solid #9d9fa2; }
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
         border-bottom: none; } }
-  @media only screen and (min-width: 37.5em) {
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(1) {
-      border-right: 1px solid #9d9fa2; }
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
-      border-right: 1px solid #9d9fa2; }
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(5) {
-      border-bottom: none;
-      border-right: 1px solid #9d9fa2; }
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
-      border-bottom: none; } }
-  @media only screen and (min-width: 56.25em) {
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(2) {
-      border-right: 1px solid #9d9fa2; }
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
-      border-right: none; }
-    .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(4) {
-      border-bottom: none;
-      border-right: 1px solid #9d9fa2; } }
+    @media only screen and (min-width: 56.25em) {
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(2) {
+        border-right: 1px solid #9d9fa2; }
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
+        border-right: none; }
+      .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(4) {
+        border-bottom: none;
+        border-right: 1px solid #9d9fa2; } }
 
 .personal-institution .field-items {
   max-width: 1200px;
@@ -1924,5 +1946,4 @@ footer {
     @media only screen and (min-width: 68.75em) {
       .view-global-search .item-list {
         width: 19%; } }
-
 /*# sourceMappingURL=main.css.map */

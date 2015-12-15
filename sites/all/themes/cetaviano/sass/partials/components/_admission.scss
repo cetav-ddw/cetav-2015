@@ -1,4 +1,6 @@
 .pane-bundle-steps-admision {
+    text-align: center;
+
     h4 {
         @include font-size(22);
         color: $gray;
@@ -6,11 +8,19 @@
     }
     p {
         height: 100px;
-        margin: 0;
+        margin: 20px;
         text-align: center;
     }
+    span {
+        border: 2px solid $ligth-gray;
+        border-radius: 100px;
+        color: $ligth-gray;
+        font-size: 35px;
+        margin: 20px;
+        padding:  5px 18px;
+    }
     .paragraphs-item-steps {
-        padding: 10% 2%;
+        padding: 8% 2% 2%;
 
         @include mquery("base") {
             border-bottom: 1px solid $ligth-gray;
@@ -20,6 +30,7 @@
             }
         }
         @include mquery("small") {
+
             &:nth-child(1) {
                 border-right: 1px solid $ligth-gray;
             }
@@ -35,6 +46,7 @@
             }
         }
         @include mquery("medium") {
+
             &:nth-child(2) {
                 border-right: 1px solid $ligth-gray;
             }
@@ -48,6 +60,3 @@
         }
     }
 }
-
-
-
