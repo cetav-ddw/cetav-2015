@@ -1,0 +1,45 @@
+.node-perfil_egresado-form {
+    @include outer-container;
+    box-shadow: 0px 0px 4px 0px $dark-orange;
+    margin-top: 5%;
+    padding: 3% 0;
+    
+    > div {
+        @include span-columns(12)
+
+        > div {
+        @include span-columns(5);
+        @include shift(1);
+        @include omega();
+        margin-top: 2%;
+        }
+    }
+    
+    label {
+        text-transform: capitalize;
+    }
+
+    table {
+        td {
+            background-color: transparent;
+            border: solid #e1e1e1 1px;
+        }
+
+        .field-multiple-drag {
+            display: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .tabledrag-toggle-weight-wrapper {
+        display: none;
+    }
+
+    ul.vertical-tabs-list {
+        margin: 0;
+    }
+
+}
