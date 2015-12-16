@@ -8,9 +8,12 @@
 
 .center-wrapper,
 .panel-wide {
-    padding: 80px 16px;
-    overflow: hidden;
     clear: both;
+    overflow: hidden;
+    padding: 30px 16px;
+    @include mquery("medium") {
+        padding: 80px 16px;
+    }
 }
 
 .panel-left-column,
