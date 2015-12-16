@@ -74,5 +74,6 @@ features[variable][] = menu_parent_actualizacion_profesional
 features[variable][] = node_options_actualizacion_profesional
 features[variable][] = node_preview_actualizacion_profesional
 features[variable][] = node_submitted_actualizacion_profesional
+features[variable][] = pathauto_node_actualizacion_profesional_pattern
 features_exclude[field_base][field_descripci_n_curso] = field_descripci_n_curso
 features_exclude[field_instance][node-actualizacion_profesional-field_descripci_n_curso] = node-actualizacion_profesional-field_descripci_n_curso
