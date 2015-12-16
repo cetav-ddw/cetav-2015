@@ -7,12 +7,8 @@
         max-width: $max-width;
     }
     
-    // Esta lista mostrada en columnas debe ser una clase general para las otras listas de este estilo
-    // Temporalmente las reglas las defino por la "ul"
     ul {
         column-count: 1;
-        color: $white;
-        list-style: none;
         margin: 0 auto;
         max-width: $max-width;
 
@@ -22,15 +18,6 @@
 
         @include mquery("medium") {
             column-count: 3;
-        }
-
-        li {
-            margin-bottom: 10px;
-            
-            &:before {
-                color: $light-blue;
-                content: "• ";
-            }
         }
     }
 }
