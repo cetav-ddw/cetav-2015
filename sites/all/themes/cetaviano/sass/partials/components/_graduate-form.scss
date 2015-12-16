@@ -23,46 +23,15 @@
             }
         }
     }
-
-    .description,
-    fieldset {
-        display: none;
-    }
-    
-    .form-file,
-    .form-submit {
-        background-color: $orange;
-        color: $white;
-        border: 0;
-        border-radius: 4px;
-    }
-
-    .form-file {
-        padding: 5px;
-    }
-
-    .form-submit {
-        padding: 6px;
-        margin-left: 5px;
-    }
-
-    .form-actions{
-        .form-submit {
-            @include button($orange, $orange, $white);
-        }
-    }
-    
     label {
         text-transform: capitalize;
     }
-
     select {
         background-color: $orange;
         border: 0;
         color: $white;
         width: auto;
     }
-
     table {
         td {
             background-color: transparent;
@@ -73,11 +42,32 @@
             display: none;
         }
     }
-
     textarea {
         resize: none;
     }
-
+    .description,
+    fieldset {
+        display: none;
+    }
+    .form-file,
+    .form-submit {
+        background-color: $orange;
+        color: $white;
+        border: 0;
+        border-radius: 4px;
+    }
+    .form-file {
+        padding: 5px;
+    }
+    .form-submit {
+        padding: 6px;
+        margin-left: 5px;
+    }
+    .form-actions{
+        .form-submit {
+            @include button($orange, $orange, $white);
+        }
+    }
     .tabledrag-toggle-weight-wrapper {
         display: none;
     }
