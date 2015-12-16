@@ -1,15 +1,15 @@
 .view-generacion .views-row{
     position: relative;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 0 0 50px 0;
+    margin: 0 0 50px 0;
 
     @include mquery("large") {
-        margin-bottom: 100px;
+        margin: 0 0 100px 0;
     }
 
     .views-field-title {
         display: block;
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
         position: relative;
         text-align: center;
 
@@ -22,8 +22,7 @@
 
     .views-field-field-btn-anuario {
         display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
         overflow: hidden;
         position: relative;
         text-align: center;
@@ -40,13 +39,13 @@
         display: block;
         position: relative;
         width: 100%;
-        padding-bottom: 47%;
+        padding: 0 0 47% 0;
 
         @include mquery("medium") {
             display: inline-block;
-            margin-left: 35%;
+            margin: 0 0 0 35%;
             width: 65%;
-            padding-bottom: 36%;
+            padding: 0 0 36% 0;
         }
 
         iframe {
@@ -59,7 +58,7 @@
 
 .views-field-field-testimonios {
     background-color: #BE1D2C;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
     padding: 0px;
     width: 100%;
 }
@@ -75,22 +74,22 @@
         @include mquery("base") {
             display: block;
             height: 200px;
-            margin:0 auto;
-            margin-bottom: 20px;
+            margin:0 auto 20px;
             position: relative;
             width: 200px;
         }
 
         @include mquery("medium") {
+            @include span-columns(3);
             margin: -11.6% 0%;
             position: absolute;
             top: 50%;
-            @include span-columns(3);
+
         }
 
         img {
             border-radius: 50%;
-            box-shadow: 0px 4px 7px -2px $gray;
+            box-shadow: 0 4px 7px $gray;
             position: absolute;
             width: 100%;
         }
@@ -146,8 +145,7 @@
 }
 
 .testimonial {
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0;
     position: relative;
     padding: 24px;
     text-align: left;
@@ -168,8 +166,7 @@
         @include font-size(14);
         color: #fff;
         font-weight: lighter;
-        margin-bottom: 3px;
-        margin-top: 10px;
+        margin: 10px 0 3px 0;
     }
 
     .carrera-testimonial {
