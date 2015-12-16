@@ -7,7 +7,7 @@ button {
 }
 
 // Buttons Careers
-.btn-admision a, 
+.btn-admision a,
 .btn-download {
     @include button($dark-red, $dark-red, $white);
     display: block;
@@ -96,5 +96,15 @@ button {
         transform-style: preserve-3d;
         transition: transform 1s;
         padding: 8px 18px;
+    }
+}
+
+//Botón anuario
+.btn-yearbook a {
+    @include button($gray, $gray, $white);
+    float: left;
+    width: 180px;
+    &:hover {
+        text-decoration: none;
     }
 }
