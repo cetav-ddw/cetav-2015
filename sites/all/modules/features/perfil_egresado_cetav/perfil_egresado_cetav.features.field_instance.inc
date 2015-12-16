@@ -452,10 +452,17 @@ function perfil_egresado_cetav_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'multiple_selects',
-      'settings' => array(),
-      'type' => 'multiple_selects',
+      'active' => 1,
+      'module' => 'shs',
+      'settings' => array(
+        'shs' => array(
+          'create_new_levels' => 1,
+          'create_new_terms' => 0,
+          'force_deepest' => 1,
+          'node_count' => 1,
+        ),
+      ),
+      'type' => 'taxonomy_shs',
       'weight' => 8,
     ),
   );
