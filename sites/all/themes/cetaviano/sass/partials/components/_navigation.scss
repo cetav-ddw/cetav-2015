@@ -1,0 +1,127 @@
+.header-style{
+    background-color: $white;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.menu-highlights-content {
+
+    a {
+        display: none;
+    }
+}
+
+.nav-main {
+    margin-top: 150px;
+}
+
+.site-logo {
+    margin-top: 18px;
+
+    img {
+        margin: 25px 16px;
+        position: absolute;
+        top: 0;
+        width: 140px;
+    }
+}
+
+#block-views-exp-global-search-page {
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.views-exposed-form .views-exposed-widget {
+    padding: 0;
+}
+
+div .views-exposed-form, .content > .menu {
+    display: none;
+}
+
+.content .expandir{
+    display: block;
+}
+
+.views-submit-button input {
+    background: url(../images/search.svg) no-repeat center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    margin: 10.5px;
+    transition: opacity .4s ease;
+    margin-left: -30px;
+    width: 24px;
+}
+
+.expanded {
+
+    .menu {
+        display: none;
+        height: 0;
+    }
+    .show {
+        display: block;
+        height: 80px;
+    }
+}
+
+.menu-collapse {
+    margin: 10px 30px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    height: 30px;
+    margin-top: 15px;
+    width: 30px;
+}
+
+.block-menu h2{
+    display: none;
+}
+
+.menu-toggle.on .one {
+    transform: rotate(45deg) translate(12px, 10px);
+}
+
+.menu-toggle.on .two {
+    opacity: 0;
+}
+
+.menu-toggle.on .three {
+    transform: rotate(-45deg) translate(2px, -1px)
+}
+
+.one,
+.two,
+.three {
+    background: $orange;
+    backface-visibility: hidden;
+    border-radius: 2px;
+    height: 3px;
+    margin: 6px 0;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100%;
+}
+
+.extended {
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    li {
+        display: block;
+    }
+}
