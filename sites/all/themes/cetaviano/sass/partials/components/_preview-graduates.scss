@@ -157,7 +157,7 @@
 
 
     a {
-        @include button($blue-dark, $white, $blue-dark);
+        @include button($blue-dark, $blue-dark, $white);
         font-family: $contrast-font;
         margin: 0 auto;
         text-align: center;
