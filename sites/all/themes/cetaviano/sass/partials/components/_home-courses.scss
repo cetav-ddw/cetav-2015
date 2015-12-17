@@ -1,0 +1,134 @@
+.section-free-courses-info {
+    padding: 60px 16px 0 !important;
+
+    @include mquery("large") {
+        padding: 80px 16px 0 !important;
+    }
+}
+
+.section-free-courses {
+    padding: 20px 16px 80px;
+
+    @include mquery("large") {
+        padding: 80px 16px;
+    }
+}
+
+.section-free-courses .panel-left-column {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+
+    @include mquery("base") {
+        margin-bottom: 15px;
+    }
+    @include mquery("small") {
+        margin-bottom: 20px;
+    }
+    @include mquery("medium") {
+        margin-bottom: 30px;
+    }
+    @include mquery("large") {
+        display: inline-block;
+        text-align: left;
+        width: 45%;
+    }
+}
+
+.section-free-courses-info h2 {
+    color: $light-blue;
+    font-family: $contrast-font;
+    text-align: center;
+    width: 100%;
+ 
+    @include mquery("base") {
+        @include font-size(24);
+    }
+    @include mquery("small") {
+        @include font-size(28);
+    }
+    @include mquery("medium") {
+        @include font-size(30);
+    }
+    @include mquery("large") {
+        @include font-size(36);
+        text-align: left;
+    }
+}
+
+// solo desde este id me podía agarrar para darle un background-image al
+// contenedor
+#panels-ipe-regionid-left_third {
+    background-image: url(../images/course.png);
+    background-position: right;
+    background-size: 100%;
+    height: 300px;
+    width: 100%;
+    display: none; 
+
+    @include mquery("large") {
+        display: inline-block;
+    }
+}
+
+.section-free-courses .panel-right-column {
+    @include mquery("medium") {
+        display: block;
+        width: 100%;
+    }
+    @include mquery("large") {
+        float: right;
+        width: 50%;
+    }
+}
+
+.section-free-courses .view-content {
+    width: 100% !important;
+}
+
+.section-free-courses .views-row {
+    border-bottom: 1px solid #d6d6d6;
+    list-style: none;
+    padding: 17px 0;
+    position: relative;
+}
+
+.section-free-courses h4 {
+    @include font-size(16);
+    display: inline-block;
+    font-family: $contrast-font;
+    font-weight: bolder;
+    margin: 0;
+    width: 100%;
+
+    @include mquery("large") {
+        width: 60%;
+    }
+}
+
+.text-course-description p {
+    margin: 0 0 20px;
+}
+
+.title-course-item {
+    @include font-size(16);
+    color: $dark-gray;
+    display: inline-block;
+    font-family: $contrast-font;
+    margin: 0;
+    width: 100%;
+
+    @include mquery("large") {
+        width: 60%;
+    }
+}
+
+.date-course-item span {
+    @include font-size(13);
+    color: $ligth-gray;
+    font-family: $default-font;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+

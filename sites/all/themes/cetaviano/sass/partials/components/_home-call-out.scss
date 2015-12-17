@@ -1,0 +1,34 @@
+.call-out-home-intro .panel-left-column {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    @include mquery("large") {
+        display: inline-block;
+        margin: 0 auto;
+        width: 40%; 
+    }
+}
+
+.call-out-home-intro .panel-right-column {
+    @include mquery("medium") {
+        display: block;
+        width: 100%;
+    }
+    @include mquery("large") {
+        float: right;
+        margin-right: 60px;
+        width: 50%;
+    }
+}
+
+.call-out-home-intro .panel-right-column p {
+    margin: 0 0 30px;
+    
+    @include mquery("large") {
+        @include font-size(18);
+        margin-top: 10px;
+    }
+}

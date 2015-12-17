@@ -1,0 +1,19 @@
+.main-content .main .title {
+    display: none;
+}
+
+.panel-wide-hero {
+    background: #000 url(../images/prueba.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    @include mquery("base") {
+        height: 400px;
+    }
+    @include mquery("medium") {
+        height: 600px;
+    }
+    @include mquery("x-large") {
+        background-size: 1200px;
+        height: 700px;
+    }
+}
