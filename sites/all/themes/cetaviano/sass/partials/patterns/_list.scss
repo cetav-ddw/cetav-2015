@@ -34,3 +34,26 @@
         }
     }
 }
+
+ //estilos para las listas de institución
+.panel-cetav-institucion ul {
+    column-count: 1;
+    color: $gray;
+    list-style: none;
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: 5px 0 0 20px;
+
+    @include mquery ("small") {
+        column-count: 2;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        &:before {
+            color: $gray;
+            content: "• ";
+        }
+    }
+}
