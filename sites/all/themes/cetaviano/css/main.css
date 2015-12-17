@@ -2116,6 +2116,16 @@ footer {
       .view-global-search .item-list {
         width: 19%; } }
 
+.generation {
+  display: block;
+  margin: 0 auto 100px;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative; }
+  @media only screen and (min-width: 68.75em) {
+    .generation {
+      margin: 0 auto 150px; } }
+
 .view-generacion .views-row {
   position: relative;
   padding: 0 0 50px;
@@ -2130,9 +2140,9 @@ footer {
     text-align: center; }
     @media only screen and (min-width: 56.25em) {
       .view-generacion .views-row .views-field-title {
-        position: absolute;
+        float: left;
         text-align: left;
-        width: 32%; } }
+        width: 35%; } }
   .view-generacion .views-row .views-field-field-btn-anuario {
     display: block;
     margin: 0 auto 20px;
@@ -2143,8 +2153,8 @@ footer {
     @media only screen and (min-width: 56.25em) {
       .view-generacion .views-row .views-field-field-btn-anuario {
         position: absolute;
-        top: 120px;
-        margin: 0; } }
+        margin-top: 120px;
+        text-align: center; } }
   .view-generacion .views-row .views-field-field-reel-generacion {
     display: block;
     position: relative;
@@ -2152,8 +2162,7 @@ footer {
     padding: 0 0 47%; }
     @media only screen and (min-width: 56.25em) {
       .view-generacion .views-row .views-field-field-reel-generacion {
-        display: inline-block;
-        margin: 0 0 0 35%;
+        float: right;
         width: 65%;
         padding: 0 0 36%; } }
     .view-generacion .views-row .views-field-field-reel-generacion iframe {
