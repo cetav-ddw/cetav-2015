@@ -1,0 +1,172 @@
+.panel-cetav-prev-egresados {
+    .panel-left-column {
+         display: block;
+
+        @include mquery("medium") {
+            @include span-columns(12);
+            display: inline-block;
+        }
+
+        @include mquery('large') {
+            @include span-columns(4);
+        }
+    }
+    .panel-right-column {
+        @include mquery('large') {
+            @include span-columns(8);
+            @include omega();
+        }
+    }
+}
+
+.pane-views-exp-egresados-panel-pane-1 {
+    .views-exposed-form {
+        background-color: $blue-dark;
+        padding: 40px 72px;
+    }
+    .views-exposed-form .form-item {
+        margin-bottom: 12px;
+    }
+    .views-exposed-widget {
+        margin-right: 30px;
+        margin-top: 20px;
+        padding-bottom: 20px !important;
+
+        @include mquery("medium") {
+            @include span-columns(3);
+            width: 30%;
+        }
+
+        @include mquery("large") {
+            @include span-columns(4);
+            border-bottom: solid 1px $ligth-gray;
+            width: 100%;
+
+            &:nth-of-type(1n+3){
+               border: 0;
+            }
+        }
+
+        label {
+            @include font-size(22);
+            color: $white;
+            font-family: $contrast-font;
+            margin-bottom: 12px;
+        }
+        .form-item {
+            label {
+                @include font-size(14);
+                font-family: $contrast-font;
+            }
+        }
+    }
+}
+
+.views-field-field-generacion-egresado,
+.views-field-field-disponibilidad-egresado {
+    @include font-size(13);
+    color: $ligth-gray;
+    display: inline-block;
+    margin: 8px 12px 0 0;
+    vertical-align: top;
+}
+
+.views-field-field-profesion-egresado {
+    @include font-size(15);
+    color: $dark-gray;
+
+    @include mquery('large') {
+        width: 100%;
+    }
+}
+
+.profesional-info-container {
+    text-align: center;
+
+    @include mquery("medium") {
+        @include span-columns(4 of 8);
+        padding: 15px 0;
+        position: relative;
+        text-align: left;
+    }
+}
+
+.view-egresados {
+    .views-row {
+        border-bottom: 1px solid #ececec;
+        overflow: hidden;
+        padding: 40px 0;
+        position: relative;
+    }
+    .profile-name  {
+        font-family: $contrast-font;
+
+        a {
+            color: $blue-dark;
+            @include font-size(25);
+
+            @include mquery("large") {
+                @include font-size(22);
+                display: inline-block;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.profile-image, 
+.pane-node-field-foto-perfil {
+    img {
+        border-radius: 100%;
+        box-shadow: 0 4px 7px -2px $blue-dark;
+        height: 0 auto;
+        padding: 1px;
+    }
+}
+
+.profile-image{
+    clear: both;
+    text-align: center;
+
+    @include mquery("medium") {
+        float: left;
+        margin-right: 20px;
+    }
+
+    @include mquery("large") {
+        display: inline-block;
+        margin-right: 30px;
+
+    }
+}
+
+.see-profile  {
+    margin: 35px 0;
+    text-align: center;
+
+    a {
+        @include button($blue-dark, $blue-dark, $white);
+        font-family: $contrast-font;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        width: 50%;
+
+        @include mquery('medium') {
+            padding: 6px 16px;
+        }
+    }
+
+    @include mquery('medium') {
+        float: right;
+        margin: 0;
+        padding-top: 33px;
+        text-align: right;
+    }
+
+    @include mquery('large') {
+        @include font-size(14);
+        margin: 35px 0;
+        padding: 8px 14px;
+    }
+}
