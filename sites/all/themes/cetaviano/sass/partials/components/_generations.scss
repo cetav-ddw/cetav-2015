@@ -1,3 +1,15 @@
+.generation {
+    display: block;
+    margin: 0 auto 100px;
+    max-width: $max-width;
+    overflow: hidden;
+    position: relative;
+
+    @include mquery("large") {
+        margin: 0 auto 150px;
+    }
+}
+
 .view-generacion .views-row {
     position: relative;
     padding: 0 0 50px;
@@ -14,9 +26,9 @@
         text-align: center;
 
         @include mquery("medium") {
-            position: absolute;
+            float: left;
             text-align: left;
-            width: 32%;
+            width: 35%;
         }
     }
     .views-field-field-btn-anuario {
@@ -29,8 +41,8 @@
 
         @include mquery("medium") {
             position: absolute;
-            top: 120px;
-            margin: 0;
+            margin-top: 120px;
+            text-align: center;
         }
     }
     .views-field-field-reel-generacion {
@@ -40,8 +52,7 @@
         padding: 0 0 47%;
 
         @include mquery("medium") {
-            display: inline-block;
-            margin: 0 0 0 35%;
+            float: right;
             width: 65%;
             padding: 0 0 36%;
         }

@@ -302,6 +302,26 @@ button {
         background-color: #f19130;
         color: #fff; } }
 
+.btn-yearbook a {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #77787b;
+  border: 2px solid #77787b;
+  color: #fff;
+  padding: 15px 30px;
+  float: left;
+  width: 180px; }
+  @media only screen and (min-width: 68.75em) {
+    .btn-yearbook a {
+      background-color: transparent;
+      border: 2px solid #77787b;
+      color: #77787b; }
+      .btn-yearbook a:hover {
+        background-color: #77787b;
+        color: #fff; } }
+  .btn-yearbook a:hover {
+    text-decoration: none; }
+
 table {
   font-size: 16px;
   font-size: 1.6rem;
@@ -1924,5 +1944,199 @@ footer {
     @media only screen and (min-width: 68.75em) {
       .view-global-search .item-list {
         width: 19%; } }
+
+.generation {
+  display: block;
+  margin: 0 auto 100px;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative; }
+  @media only screen and (min-width: 68.75em) {
+    .generation {
+      margin: 0 auto 150px; } }
+
+.view-generacion .views-row {
+  position: relative;
+  padding: 0 0 50px;
+  margin: 0 0 50px; }
+  @media only screen and (min-width: 68.75em) {
+    .view-generacion .views-row {
+      margin: 0 0 100px; } }
+  .view-generacion .views-row .views-field-title {
+    display: block;
+    margin: 0 0 20px;
+    position: relative;
+    text-align: center; }
+    @media only screen and (min-width: 56.25em) {
+      .view-generacion .views-row .views-field-title {
+        float: left;
+        text-align: left;
+        width: 35%; } }
+  .view-generacion .views-row .views-field-field-btn-anuario {
+    display: block;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 180px; }
+    @media only screen and (min-width: 56.25em) {
+      .view-generacion .views-row .views-field-field-btn-anuario {
+        position: absolute;
+        margin-top: 120px;
+        text-align: center; } }
+  .view-generacion .views-row .views-field-field-reel-generacion {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0 0 47%; }
+    @media only screen and (min-width: 56.25em) {
+      .view-generacion .views-row .views-field-field-reel-generacion {
+        float: right;
+        width: 65%;
+        padding: 0 0 36%; } }
+    .view-generacion .views-row .views-field-field-reel-generacion iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+
+.views-field-field-testimonios {
+  background-color: #BE1D2C;
+  margin: 50px 0 0;
+  padding: 0;
+  width: 100%; }
+
+.paragraphs-item-testimonios {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #77787b;
+  margin: 0 auto;
+  position: relative; }
+  .paragraphs-item-testimonios::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (min-width: 20em) {
+    .paragraphs-item-testimonios .img-testimonial {
+      display: block;
+      height: 200px;
+      margin: 0 auto 20px;
+      position: relative;
+      width: 200px; } }
+  @media only screen and (min-width: 56.25em) {
+    .paragraphs-item-testimonios .img-testimonial {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 23.2317613015%;
+      margin: -11.6% 0;
+      position: absolute;
+      top: 50%; }
+      .paragraphs-item-testimonios .img-testimonial:last-child {
+        margin-right: 0; } }
+  .paragraphs-item-testimonios .img-testimonial img {
+    border-radius: 50%;
+    box-shadow: 0 4px 7px #77787b;
+    position: absolute;
+    width: 100%; }
+  @media only screen and (min-width: 20em) {
+    .paragraphs-item-testimonios .text-testimonial {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 100%;
+      display: block;
+      position: relative; }
+      .paragraphs-item-testimonios .text-testimonial:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 56.25em) {
+    .paragraphs-item-testimonios .text-testimonial {
+      margin-left: 25.5894128995%;
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 74.4105871005%;
+      margin-right: 0;
+      padding: 10px 0;
+      position: relative; }
+      .paragraphs-item-testimonios .text-testimonial:last-child {
+        margin-right: 0; } }
+  .paragraphs-item-testimonios .text-testimonial:before {
+    background-image: url(../images/comillas-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    padding: 0 0 7%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10%; }
+  .paragraphs-item-testimonios .text-testimonial:after {
+    background-image: url(../images/comillas-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: "";
+    padding: 0 0 7%;
+    position: absolute;
+    right: 0;
+    visibility: visible;
+    width: 10%; }
+  .paragraphs-item-testimonios .text-testimonial p {
+    color: #fff;
+    margin: 0 11%; }
+
+.testimonial {
+  margin: 10px auto 0;
+  position: relative;
+  padding: 24px;
+  text-align: left;
+  width: 100%; }
+  .testimonial h5 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: lighter;
+    margin: 10px 0 3px; }
+    @media only screen and (min-width: 20em) {
+      .testimonial h5 {
+        margin-left: 11.0887455898%;
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        .testimonial h5:last-child {
+          margin-right: 0; } }
+    @media only screen and (min-width: 56.25em) {
+      .testimonial h5 {
+        margin-left: 34.1192171993%;
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 48.821174201%; }
+        .testimonial h5:last-child {
+          margin-right: 0; } }
+  .testimonial .carrera-testimonial {
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #fff; }
+    @media only screen and (min-width: 20em) {
+      .testimonial .carrera-testimonial {
+        margin-left: 11.0887455898%;
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        .testimonial .carrera-testimonial:last-child {
+          margin-right: 0; } }
+    @media only screen and (min-width: 56.25em) {
+      .testimonial .carrera-testimonial {
+        margin-left: 34.1192171993%;
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 48.821174201%; }
+        .testimonial .carrera-testimonial:last-child {
+          margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
