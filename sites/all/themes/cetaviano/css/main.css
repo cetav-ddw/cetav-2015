@@ -29,6 +29,9 @@ html {
 *:after {
   box-sizing: inherit; }
 
+.title {
+  text-indent: 100%; }
+
 dl,
 ol,
 p,
@@ -127,6 +130,10 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.read-more {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
 .line-grid {
   clear: both;
   padding-top: 50px; }
@@ -168,12 +175,11 @@ button {
         color: red; } }
 
 .btn-admision a,
-.btn-download,
-.inscription-button {
+.btn-download {
   font-size: 18px;
   font-size: 1.8rem;
-  background-color: #00c9ed;
-  border: 2px solid #00c9ed;
+  background-color: #9e280e;
+  border: 2px solid #9e280e;
   color: #fff;
   padding: 15px 30px;
   display: block;
@@ -184,19 +190,46 @@ button {
   width: 250px; }
   @media only screen and (min-width: 68.75em) {
     .btn-admision a,
-    .btn-download,
-    .inscription-button {
+    .btn-download {
       background-color: transparent;
-      border: 2px solid #00c9ed;
-      color: #00c9ed; }
+      border: 2px solid #9e280e;
+      color: #9e280e; }
       .btn-admision a:hover,
-      .btn-download:hover,
-      .inscription-button:hover {
-        background-color: #00c9ed;
+      .btn-download:hover {
+        background-color: #9e280e;
         color: #fff; } }
   .btn-admision a:hover,
-  .btn-download:hover,
-  .inscription-button:hover {
+  .btn-download:hover {
+    text-decoration: none; }
+
+.btn-direction {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #9d9fa2;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  background: transparent;
+  display: inline-block;
+  height: 100%;
+  margin: 25px auto;
+  padding: 12px;
+  text-align: center;
+  width: 45%; }
+  @media only screen and (min-width: 68.75em) {
+    .btn-direction {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff; }
+      .btn-direction:hover {
+        background-color: #fff;
+        color: #9d9fa2; } }
+  @media only screen and (min-width: 37.5em) {
+    .btn-direction {
+      width: 35%; } }
+  .btn-direction:hover {
     text-decoration: none; }
 
 .btn-download {
@@ -221,6 +254,30 @@ button {
 
 .btn-download img {
   display: none; }
+
+.inscription-button {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #00c9ed;
+  border: 2px solid #00c9ed;
+  color: #fff;
+  padding: 15px 30px;
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  width: 250px; }
+  @media only screen and (min-width: 68.75em) {
+    .inscription-button {
+      background-color: transparent;
+      border: 2px solid #00c9ed;
+      color: #00c9ed; }
+      .inscription-button:hover {
+        background-color: #00c9ed;
+        color: #fff; } }
+  .inscription-button:hover {
+    text-decoration: none; }
 
 .container-account .form-actions {
   margin: 15px auto;
@@ -268,6 +325,83 @@ img {
   max-width: 100%;
   width: inherit;
   /* IEB */ }
+
+/* Icons-font*/
+@font-face {
+  font-family: 'cetav';
+  src: url("../fonts/cetav.eot");
+  src: url("../fonts/cetav.eot?#iefix") format("embedded-opentype"), url("../fonts/cetav.woff") format("woff"), url("../fonts/cetav.ttf") format("truetype"), url("../fonts/cetav.svg#cetav") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'cetav';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-animacion:before {
+  content: '\0041'; }
+
+.icon-web:before {
+  content: '\0042'; }
+
+.icon-post:before {
+  content: '\0043'; }
+
+.icon-face:before {
+  color: #4966a7;
+  content: '\0044'; }
+
+.icon-twitter:before {
+  color: #17b3e8;
+  content: '\0045'; }
+
+.icon-dribbble:before {
+  content: '\0046'; }
+
+.icon-github:before {
+  color: #211F20;
+  content: '\0047'; }
+
+.icon-linkedin:before {
+  color: #0077B5;
+  content: '\0048'; }
+
+.icon-vimeo:before {
+  color: #17b3e8;
+  content: '\0049'; }
+
+.icon-graduate:before {
+  content: '\004A'; }
+
+.icon-cellphone:before {
+  content: '\004B'; }
+
+.icon-clock:before {
+  content: '\004C'; }
+
+.icon-send:before {
+  content: '\004D'; }
+
+.social-icon {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 36px;
+  margin: 0 8px;
+  position: relative; }
+  .social-icon a {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 0;
+    width: 100%;
+    white-space: nowrap; }
 
 label,
 .webform-container-inline label {
@@ -451,15 +585,6 @@ form .description {
 .grid-width {
   margin: 0 auto;
   max-width: 1200px; }
-
-.center-wrapper {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .center-wrapper::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .center-wrapper,
 .panel-wide {
@@ -1486,10 +1611,6 @@ div.password-suggestions ul {
   color: #414042;
   margin-bottom: 5px; }
 
-.latest-news .read-more {
-  font-size: 14px;
-  font-size: 1.4rem; }
-
 .img-news img {
   height: auto;
   width: 100%; }
@@ -1627,5 +1748,181 @@ div.password-suggestions ul {
   padding: 3px 7px;
   position: absolute;
   top: 190px; }
+
+.about-graduate {
+  color: #848286;
+  overflow: hidden;
+  padding-top: 0; }
+  .about-graduate .label-above {
+    color: #292929;
+    margin: 20px 0 15px; }
+  @media only screen and (min-width: 56.25em) {
+    .about-graduate .panel-left-column {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%; }
+      .about-graduate .panel-left-column:last-child {
+        margin-right: 0; } }
+  @media only screen and (min-width: 56.25em) {
+    .about-graduate .panel-right-column {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%; }
+      .about-graduate .panel-right-column:last-child {
+        margin-right: 0; } }
+
+.availability-info {
+  font-size: 16px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
+  color: #848286;
+  margin: 25px 0;
+  padding: 24px 0; }
+  .availability-info a {
+    color: #848286; }
+  .availability-info i {
+    font-size: 22px;
+    font-size: 2.2rem;
+    color: #243842;
+    margin-bottom: 6px; }
+  .availability-info .pane-entity-field {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center; }
+    .availability-info .pane-entity-field:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 56.25em) {
+      .availability-info .pane-entity-field {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 23.2317613015%; }
+        .availability-info .pane-entity-field:last-child {
+          margin-right: 0; } }
+
+.field-name-field-acerca-de-mi .field-label,
+.field-name-field-habilidades-egresado .field-label {
+  margin-top: 0; }
+
+.info-graduate {
+  padding-bottom: 0;
+  text-align: center; }
+  .info-graduate img {
+    margin-bottom: 18px; }
+  .info-graduate p {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: #292929;
+    margin: 15px 0; }
+
+.pane-node-field-profesion-egresado {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.skill {
+  font-size: 14px;
+  font-size: 1.4rem;
+  background-color: #243842;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px #243842;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 14px;
+  margin-right: 12px;
+  padding: 4px; }
+
+.pane-title {
+  display: none; }
+
+footer {
+  background: #292929;
+  overflow: hidden;
+  padding: 30px 0; }
+  footer h2 {
+    display: none; }
+  footer h5 {
+    margin: 2px 0 20px; }
+  footer h5,
+  footer p {
+    color: #fff; }
+  footer .contact-info {
+    margin-bottom: 25px; }
+    @media only screen and (min-width: 56.25em) {
+      footer .contact-info {
+        float: left;
+        display: block;
+        margin-right: 2.3576515979%;
+        width: 31.7615656014%; }
+        footer .contact-info:last-child {
+          margin-right: 0; } }
+  footer .grid-width {
+    padding: 0 16px; }
+    @media only screen and (min-width: 56.25em) {
+      footer .grid-width {
+        padding: 0; } }
+
+.logo-parque-ministerio {
+  background: url(../images/logo-parque-ministerio.png) center;
+  background-size: cover;
+  display: inline-block;
+  height: 118px;
+  text-align: center;
+  width: 65%; }
+  @media only screen and (min-width: 37.5em) {
+    .logo-parque-ministerio {
+      height: 99px;
+      width: 40%; } }
+  @media only screen and (min-width: 56.25em) {
+    .logo-parque-ministerio {
+      height: 110px;
+      width: 81%; } }
+  @media only screen and (min-width: 68.75em) {
+    .logo-parque-ministerio {
+      height: 112px;
+      width: 70%; } }
+
+.icon-list {
+  list-style: none; }
+  .icon-list li {
+    font-size: 30px;
+    font-size: 3rem;
+    display: inline-block; }
+  .icon-list .icon-face:before,
+  .icon-list .icon-vimeo:before {
+    color: #fff; }
+  .icon-list i:hover .icon-face:before {
+    color: blue; }
+
+.view-global-search {
+  border-bottom: 2px solid #ececec;
+  padding: 10px 16px; }
+  @media only screen and (min-width: 37.5em) {
+    .view-global-search {
+      margin: 0 auto;
+      width: 90%;
+      max-width: 1200px; } }
+  .view-global-search li {
+    display: inline-block;
+    list-style: none; }
+  .view-global-search .comment-add {
+    padding: 0 10px; }
+  .view-global-search .submitted {
+    display: none; }
+  .view-global-search .item-list {
+    width: 55%;
+    margin: 0 auto; }
+    @media only screen and (min-width: 37.5em) {
+      .view-global-search .item-list {
+        width: 37%; } }
+    @media only screen and (min-width: 68.75em) {
+      .view-global-search .item-list {
+        width: 19%; } }
 
 /*# sourceMappingURL=main.css.map */

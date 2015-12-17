@@ -10,8 +10,12 @@ html {
     font-size: 62.5%;
 }
 
-*, 
-*:before, 
+*,
+*:before,
 *:after {
     box-sizing: inherit;
+}
+
+.title {
+  text-indent: 100%;
 }

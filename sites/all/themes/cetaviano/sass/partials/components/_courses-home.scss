@@ -1,0 +1,251 @@
+/* Section courses home
+   ========================================================================== */
+.panel-cetav-frontpage .panel-wide-courses {
+    background-color: $white;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+.panel-cetav-frontpage .views-field-title {
+    margin-bottom: 0;
+}
+
+.panel-wide-courses .container-card {
+    display: block;
+    height: 400px;
+    float: left;
+    font-family: $default-font;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+    //border: 1px solid #222;
+    width: 100%;
+    @include mquery("large") {
+        margin-top: 0;
+        width: calc(100% / 3);
+    }
+}
+
+.container-card:before {
+    content: "";
+    background-color: #222;
+    display: block;
+    height: 100%;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    width: 100%;
+    z-index: 0;
+}
+
+.container-gif {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    padding: 30px 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.container-title-course {
+    padding: 0;
+    position: relative;
+    top: 3em;
+    //transform: translateY(-50%);
+    @include mquery("large") {
+        top: 0;
+    }
+    @include mquery("x-large") {
+        top: 2em;
+    }
+}
+
+.container-title-course h2 {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include mquery("base") {
+        @include font-size(24);
+    }
+    @include mquery("small") {
+        @include font-size(26);
+        padding: 0 5%;
+    }
+    @include mquery("medium") {
+        @include font-size(28);
+    }
+    @include mquery("large") {
+        @include font-size(30);
+        padding: 0 10%;
+    }
+}
+
+// display none a estos elementos ya que drupal lo duplica
+.container-title-course h2:first-child {
+    display: none;
+}
+
+.container-title-course a:first-child {
+    display: none;
+}
+
+.container-title-course a {
+    @include font-size(16);
+    border-radius: 3px;
+    color: $white;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+// logos para cada carrera
+.icon-animacion:before {
+    content: "";
+    background-image: url(../images/logo-animacion.png);
+    background-image: url(../images/logo-animacion.svg);
+    background-repeat: no-repeat;
+    height: 92px;
+    margin-bottom: 20px;
+    width: 97px;
+}
+
+.icon-web:before {
+    content: "";
+    background-image: url(../images/logo-web.png);
+    background-image: url(../images/logo-web.svg);
+    background-repeat: no-repeat;
+    height: 92px;
+    margin-bottom: 20px;
+    width: 97px;
+}
+
+.icon-post:before {
+    content: "";
+    background-image: url(../images/logo-post.png);
+    background-image: url(../images/logo-post.svg);
+    background-repeat: no-repeat;
+    height: 92px;
+    margin-bottom: 20px;
+    width: 97px;
+}
+
+
+// gif background para cada carrera
+/**
+ * card animation
+ */
+.icon-animacion div {
+    position: absolute;
+    top: 25em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include mquery("large") {
+        top: 30em;
+    }
+}
+
+.container-gif-animacion {
+    background-image: url(../images/animacion-cover.png);
+}
+
+.container-card:hover .container-gif-animacion {
+    @include mquery("large") {
+        background-image: url(../images/animacion-gif.gif);
+        transition: all 0.3s ease;
+    }
+}
+
+/**
+ * card web
+ */
+.icon-web div {
+    position: absolute;
+    top: 25em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include mquery("large") {
+        top: 30em;
+    }
+}
+
+.container-gif-web {
+    background-image: url(../images/web-cover.png);
+}
+
+.container-card:hover .container-gif-web {
+    @include mquery("large") {
+        background-image: url(../images/web-gif.gif);
+        transition: all 0.3s ease;
+    }
+}
+
+/**
+ * card post
+ */
+.icon-post div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    @include mquery("base") {
+        top: 28em;
+    }
+    @include mquery("large") {
+        top: 31.5em;
+    }
+    @include mquery("x-large") {
+        top: 30em;
+    }
+}
+
+.container-gif-post {
+    background-image: url(../images/post-cover.png);
+}
+
+.container-card:hover .container-gif-post {
+    @include mquery("large") {
+        background-image: url(../images/post-gif.gif);
+        transition: all 0.3s ease;
+    }
+}
+
+// botones de carreras home
+.container-title-course a {
+    @include font-size(15);
+}
+
+.icon-animacion a {
+    background-color: $dark-orange;
+}
+
+.icon-web a {
+    background-color: $dark-red;
+}
+
+.icon-post a {
+    background-color: $dark-green;
+}
+
+
+// padding diferente por el largo del texto de cada carrera
+.icon-web h2 {
+    padding: 0 7%;
+}
+
+.icon-post h2 {
+    padding: 0 6%;
+}

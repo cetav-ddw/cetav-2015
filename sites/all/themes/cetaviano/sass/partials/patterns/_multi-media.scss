@@ -14,26 +14,18 @@ img {
     width: inherit; /* IEB */
 }
 
+// logo cetav home intro
 .fieldable-panels-pane img {
-    /* Custom, iPhone Retina */ 
-    @media (min-width : 320px) {
+    @include mquery("base") {
         width: 200px;
     }
-    /* Extra Small Devices, Phones */ 
-    @media ( min-width : 600px ) {
+    @include mquery("small") {
         width: 240px;
     }
-    /* Small Devices, Tablets */
-    @media ( min-width : 900px ) {
+    @include mquery("medium") {
         width: 280px;
     }
-    /* Medium Devices, Desktops */
-    @media ( min-width : 1100px ) {
-        width: 300px;
-        margin-top: 30px;
-    }
-    /* Large Devices, Wide Screens */
-     @media (min-width : 1280px) {
+    @include mquery("large") {
         width: 300px;
         margin-top: 30px;
     }	
