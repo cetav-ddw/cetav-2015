@@ -293,7 +293,10 @@ function carreras_cetav_default_page_manager_handlers() {
       ),
       'style' => 'semantic_panels',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'title-career',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();

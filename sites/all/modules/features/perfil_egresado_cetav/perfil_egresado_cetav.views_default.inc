@@ -190,7 +190,7 @@ function perfil_egresado_cetav_views_default_views() {
   );
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['vocabulary'] = 'carrera_tecnica';
-  /* Filter criterion: Content: Disponibilidad_Egresado (field_disponibilidad_egresado) */
+  /* Filter criterion: Content: Disponibilidad Egresado (field_disponibilidad_egresado) */
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['id'] = 'field_disponibilidad_egresado_tid';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['table'] = 'field_data_field_disponibilidad_egresado';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['field'] = 'field_disponibilidad_egresado_tid';
@@ -263,7 +263,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'profile-name';
-  /* Field: Content: profesión_egresado */
+  /* Field: Content: Profesión egresado */
   $handler->display->display_options['fields']['field_profesion_egresado']['id'] = 'field_profesion_egresado';
   $handler->display->display_options['fields']['field_profesion_egresado']['table'] = 'field_data_field_profesion_egresado';
   $handler->display->display_options['fields']['field_profesion_egresado']['field'] = 'field_profesion_egresado';
@@ -280,7 +280,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['field_generacion_egresado']['element_class'] = 'graduate-list-profile-info-tag';
   $handler->display->display_options['fields']['field_generacion_egresado']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_generacion_egresado']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Content: Disponibilidad_Egresado */
+  /* Field: Content: Disponibilidad Egresado */
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['id'] = 'field_disponibilidad_egresado';
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['table'] = 'field_data_field_disponibilidad_egresado';
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['field'] = 'field_disponibilidad_egresado';
