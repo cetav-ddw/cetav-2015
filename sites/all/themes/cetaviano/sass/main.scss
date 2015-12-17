@@ -25,6 +25,8 @@
 @import "partials/patterns/forms/forms-drupal";
 @import "partials/patterns/forms/webforms";
 @import "partials/patterns/forms/login";
+@import "partials/components/institution";
+@import "partials/components/graduate-form";
 
 
 //Layout
@@ -45,4 +47,5 @@
 @import "partials/components/footer";
 @import "partials/components/search";
 @import "partials/components/preview-graduates";
+@import "partials/components/generations";
 
