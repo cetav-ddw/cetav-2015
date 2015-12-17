@@ -32,17 +32,21 @@
   <?php print $field->wrapper_prefix; ?>
     <?php if ($id === 'title'): ?>
       <?php $class = ''; ?>
+      <?php $class1 = ''; ?>
       <?php if (strpos($field->raw, 'Animación') !== FALSE): ?>
         <?php $class = 'icon-animacion'; ?>
+        <?php $class1 = 'container-gif-animacion'; ?>
       <?php elseif (strpos($field->raw, 'Postproducción') !== FALSE): ?>
-        <?php $class = 'icon-post'; ?>
+        <?php $class = 'container-gif-post'; ?>
+                <?php $class = 'icon-post'; ?>
       <?php elseif (strpos($field->raw, 'web') !== FALSE): ?>
         <?php $class = 'icon-web'; ?>
+        <?php $class1 = 'container-gif-web'; ?>
       <?php endif; ?>
       <?php if (!empty($class)): ?>
 
       <div class="container-card">
-        <div class="container-gif container-gif-animation">
+        <div class="container-gif <?php print $class1;?>">
           <div class="container-title-course">
             <div class="<?php print $class;?>">
               <?php endif; ?>

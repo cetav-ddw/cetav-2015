@@ -58,7 +58,9 @@ function panels_cetav_home_user_default_permissions() {
   // Exported permission: 'create fieldable cetav_carreras_home'.
   $permissions['create fieldable cetav_carreras_home'] = array(
     'name' => 'create fieldable cetav_carreras_home',
-    'roles' => array(),
+    'roles' => array(
+      'content-admin' => 'content-admin',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -67,6 +69,7 @@ function panels_cetav_home_user_default_permissions() {
     'name' => 'create fieldable fieldable_panels_pane',
     'roles' => array(
       'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -74,7 +77,9 @@ function panels_cetav_home_user_default_permissions() {
   // Exported permission: 'delete fieldable cetav_carreras_home'.
   $permissions['delete fieldable cetav_carreras_home'] = array(
     'name' => 'delete fieldable cetav_carreras_home',
-    'roles' => array(),
+    'roles' => array(
+      'content-admin' => 'content-admin',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -83,6 +88,7 @@ function panels_cetav_home_user_default_permissions() {
     'name' => 'delete fieldable fieldable_panels_pane',
     'roles' => array(
       'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -90,7 +96,9 @@ function panels_cetav_home_user_default_permissions() {
   // Exported permission: 'edit fieldable cetav_carreras_home'.
   $permissions['edit fieldable cetav_carreras_home'] = array(
     'name' => 'edit fieldable cetav_carreras_home',
-    'roles' => array(),
+    'roles' => array(
+      'content-admin' => 'content-admin',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
@@ -99,6 +107,7 @@ function panels_cetav_home_user_default_permissions() {
     'name' => 'edit fieldable fieldable_panels_pane',
     'roles' => array(
       'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -108,6 +117,7 @@ function panels_cetav_home_user_default_permissions() {
     'name' => 'use ipe with page manager',
     'roles' => array(
       'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
     ),
     'module' => 'panels',
   );
@@ -135,6 +145,7 @@ function panels_cetav_home_user_default_permissions() {
     'name' => 'use panels in place editing',
     'roles' => array(
       'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
     ),
     'module' => 'panels',
   );
