@@ -53,11 +53,6 @@ input[type="file"]{
     text-indent: 100%;
 }
 
-input[name="field_subir_comprobante_und_0_upload_button"],
-form .description {
-    display: none;
-}
-
 .form-type-radio {
     margin-bottom: 5px;
 }
@@ -89,10 +84,24 @@ form .description {
         max-width: 100%;
         padding: 20px;
     }
-}
 
-.course-form label{
-    display: none;
+    input[type="text"].form-text {
+        @include font-size(16);
+        background-color: #ececec;
+        border: 0;
+        margin: 10px 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    input[name="field_subir_comprobante_und_0_upload_button"],
+    form .description {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
 }
 
 .field-widget-text-textarea .form-type-textarea {

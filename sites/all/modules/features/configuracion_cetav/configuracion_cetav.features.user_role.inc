@@ -16,6 +16,18 @@ function configuracion_cetav_user_default_roles() {
     'weight' => 2,
   );
 
+  // Exported role: content-admin.
+  $roles['content-admin'] = array(
+    'name' => 'content-admin',
+    'weight' => 4,
+  );
+
+  // Exported role: content-editor.
+  $roles['content-editor'] = array(
+    'name' => 'content-editor',
+    'weight' => 5,
+  );
+
   // Exported role: egresado.
   $roles['egresado'] = array(
     'name' => 'egresado',

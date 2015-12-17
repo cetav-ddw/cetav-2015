@@ -5,7 +5,7 @@
     margin: 30px 6px;
 
     h4 {
-        background-color: $dark-red;
+        background-color: $orange;
         color: white;
         margin-top: 0;
         padding: 15px;
@@ -50,8 +50,12 @@
     }
 
     h4 {
-        @include font-size(28);
+        @include font-size(22);
         color: $light-blue;
+
+        @include mquery("medium") {
+            @include font-size(28);
+        }
     }
 }
     

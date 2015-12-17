@@ -1,0 +1,25 @@
+// 
+// Sections Header Image
+//
+.panel-header {
+    position: relative;
+    
+    img {
+        width: 100%;
+    }
+}
+
+.title-career {
+    background: rgba(241,145,48,.9);
+    bottom: 3px;
+    padding: 20px;
+    position: absolute;
+
+    @include mquery("medium") {
+        padding: 40px;
+    }
+
+    h2 {
+        color: $white;
+    }
+}

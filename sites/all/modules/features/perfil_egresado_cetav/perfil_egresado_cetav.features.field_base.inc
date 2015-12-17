@@ -29,6 +29,27 @@ function perfil_egresado_cetav_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_apellido'.
+  $field_bases['field_apellido'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_apellido',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_behance'.
   $field_bases['field_behance'] = array(
     'active' => 1,
@@ -234,7 +255,7 @@ function perfil_egresado_cetav_field_default_field_bases() {
   // Exported field_base: 'field_habilidades_egresado'.
   $field_bases['field_habilidades_egresado'] = array(
     'active' => 1,
-    'cardinality' => 4,
+    'cardinality' => 5,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_habilidades_egresado',

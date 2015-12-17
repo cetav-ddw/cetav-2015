@@ -8,7 +8,7 @@
 ?>
 <div class="panel-display panel-cetav-generaciones">
   <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide">
+    <div class="panel-container">
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
