@@ -102,17 +102,37 @@ h1 {
   font-size: 4.4rem; }
 
 h2 {
-  font-size: 40px;
-  font-size: 4rem;
+  font-size: 25px;
+  font-size: 2.5rem;
   color: #f19130; }
+  @media only screen and (min-width: 37.5em) {
+    h2 {
+      font-size: 35px;
+      font-size: 3.5rem; } }
+  @media only screen and (min-width: 56.25em) {
+    h2 {
+      font-size: 40px;
+      font-size: 4rem; } }
 
 h3 {
-  font-size: 36px;
-  font-size: 3.6rem; }
+  font-size: 21px;
+  font-size: 2.1rem; }
+  @media only screen and (min-width: 37.5em) {
+    h3 {
+      font-size: 31px;
+      font-size: 3.1rem; } }
+  @media only screen and (min-width: 56.25em) {
+    h3 {
+      font-size: 36px;
+      font-size: 3.6rem; } }
 
 h4 {
-  font-size: 22px;
-  font-size: 2.2rem; }
+  font-size: 16px;
+  font-size: 1.6rem; }
+  @media only screen and (min-width: 37.5em) {
+    h4 {
+      font-size: 22px;
+      font-size: 2.2rem; } }
 
 h5 {
   font-size: 18px;
@@ -182,8 +202,8 @@ button {
 .btn-download {
   font-size: 18px;
   font-size: 1.8rem;
-  background-color: #9e280e;
-  border: 2px solid #9e280e;
+  background-color: #f19130;
+  border: 2px solid #f19130;
   color: #fff;
   padding: 15px 30px;
   display: block;
@@ -196,11 +216,11 @@ button {
     .btn-admision a,
     .btn-download {
       background-color: transparent;
-      border: 2px solid #9e280e;
-      color: #9e280e; }
+      border: 2px solid #f19130;
+      color: #f19130; }
       .btn-admision a:hover,
       .btn-download:hover {
-        background-color: #9e280e;
+        background-color: #f19130;
         color: #fff; } }
   .btn-admision a:hover,
   .btn-download:hover {
@@ -779,9 +799,13 @@ input[type="file"] {
 
 .center-wrapper,
 .panel-wide {
-  padding: 80px 16px;
+  clear: both;
   overflow: hidden;
-  clear: both; }
+  padding: 30px 16px; }
+  @media only screen and (min-width: 56.25em) {
+    .center-wrapper,
+    .panel-wide {
+      padding: 80px 16px; } }
 
 .panel-left-column,
 .panel-right-column {
@@ -1414,7 +1438,7 @@ div.password-suggestions ul {
   height: 300px;
   margin: 30px 6px; }
   .career-program .paragraphs-item-programas-carreras h4 {
-    background-color: #9e280e;
+    background-color: #f19130;
     color: white;
     margin-top: 0;
     padding: 15px; }
@@ -1463,9 +1487,13 @@ div.password-suggestions ul {
       margin-right: 0; } }
 
 .pane-node-field-titulo-skills-carreras h4 {
-  font-size: 28px;
-  font-size: 2.8rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   color: #00c9ed; }
+  @media only screen and (min-width: 56.25em) {
+    .pane-node-field-titulo-skills-carreras h4 {
+      font-size: 28px;
+      font-size: 2.8rem; } }
 
 @media only screen and (min-width: 56.25em) {
   .pane-node-field-cuerpo-skills-carreras {
@@ -2115,6 +2143,22 @@ footer {
     @media only screen and (min-width: 68.75em) {
       .view-global-search .item-list {
         width: 19%; } }
+
+.panel-header {
+  position: relative; }
+  .panel-header img {
+    width: 100%; }
+
+.title-career {
+  background: rgba(241, 145, 48, 0.9);
+  bottom: 3px;
+  padding: 20px;
+  position: absolute; }
+  @media only screen and (min-width: 56.25em) {
+    .title-career {
+      padding: 40px; } }
+  .title-career h2 {
+    color: #fff; }
 
 .panel-cetav-prev-egresados .panel-left-column {
   display: block; }
