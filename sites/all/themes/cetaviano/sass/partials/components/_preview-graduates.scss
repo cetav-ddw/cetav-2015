@@ -22,68 +22,52 @@
     }
 }
 
-//description  carreras-disponibilidad-generación
-.views-exposed-widget {
-    margin-right: 30px;
-    margin-top: 20px;
-    padding-bottom: 20px !important;
+.pane-views-exp-egresados-panel-pane-1{
 
-    label {
-        @include font-size(22);
-        color: $white;
-        font-family: $contrast-font;
+    .views-exposed-form {
+        background-color: $blue-dark;
+        padding: 40px 72px;
+    }
+
+    .views-exposed-form .form-item {
         margin-bottom: 12px;
     }
 
-    .form-item {
+    .views-exposed-widget {
+        margin-right: 30px;
+        margin-top: 20px;
+        padding-bottom: 20px !important;
 
         label {
-            @include font-size(14);
+            @include font-size(22);
+            color: $white;
             font-family: $contrast-font;
+            margin-bottom: 12px;
         }
-    }
 
-    @include mquery("medium") {
-        @include span-columns(3);
-        width: 30%;
-    }
+        .form-item {
 
-    @include mquery("large") {
-        @include span-columns(4);
-        border-bottom: solid 1px $ligth-gray;
-        width: 100%;
-
-        &:nth-of-type(1n+3){
-           border: 0;
+            label {
+                @include font-size(14);
+                font-family: $contrast-font;
+            }
         }
-   }
-}
 
-//block filter
-.views-exposed-form {
-    background-color: $blue-dark;
-    padding: 40px 72px;
-}
-
-// #edit-field-disponibilidad-egresado-tid-wrapper {
-.views-exposed-form .form-item {
-    margin-bottom: 12px;
-}
-
-.profile-name  {
-  font-family: $contrast-font;
-
-    a {
-        color: $blue-dark;
-        @include font-size(25);
+        @include mquery("medium") {
+            @include span-columns(3);
+            width: 30%;
+        }
 
         @include mquery("large") {
-            @include font-size(22);
-            display: inline-block;
-            text-align: left;
+            @include span-columns(4);
+            border-bottom: solid 1px $ligth-gray;
+            width: 100%;
+
+            &:nth-of-type(1n+3){
+               border: 0;
+            }
         }
     }
-
 }
 
 .views-field-field-generacion-egresado,
@@ -117,17 +101,31 @@
 
 .view-egresados {
 
-  .views-row{
-    border-bottom: 1px solid #ececec;
-    overflow: hidden;
-    padding: 40px 0;
-    position: relative;
-  }
+    .views-row {
+        border-bottom: 1px solid #ececec;
+        overflow: hidden;
+        padding: 40px 0;
+        position: relative;
+    }
+
+    .profile-name  {
+        font-family: $contrast-font;
+
+        a {
+            color: $blue-dark;
+            @include font-size(25);
+
+            @include mquery("large") {
+                @include font-size(22);
+                display: inline-block;
+                text-align: left;
+            }
+        }
+    }
 }
 
-.profile-image {
-    clear: both;
-    text-align: center;
+.profile-image, .pane-node-field-foto-perfil{
+
 
     img {
         border-radius: 100%;
@@ -135,6 +133,11 @@
         height: 0 auto;
         padding: 1px;
     }
+}
+
+.profile-image{
+    clear: both;
+    text-align: center;
 
     @include mquery("medium") {
         float: left;
@@ -154,7 +157,7 @@
 
 
     a {
-        @include button($blue-dark, $white, $blue-dark);
+        @include button($blue-dark, $blue-dark, $white);
         font-family: $contrast-font;
         margin: 0 auto;
         text-align: center;
@@ -175,6 +178,7 @@
 
     @include mquery('large') {
         @include font-size(14);
+        margin: 35px 0;
         padding: 8px 14px;
     }
 }
