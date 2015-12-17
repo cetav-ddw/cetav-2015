@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the panel_submission feature.
+ */
+
+include_once 'panel_submission.features.inc';

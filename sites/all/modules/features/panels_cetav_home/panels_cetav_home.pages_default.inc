@@ -80,6 +80,7 @@ function panels_cetav_home_default_page_manager_pages() {
           'element_class' => '',
         ),
       ),
+      'right_third' => NULL,
     ),
     'wide_second' => array(
       'style' => 'semantic_panels',
@@ -104,7 +105,9 @@ function panels_cetav_home_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -320,7 +323,9 @@ function panels_cetav_home_default_page_manager_pages() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -344,14 +349,16 @@ function panels_cetav_home_default_page_manager_pages() {
             <div id="typed-strings" style="display: none;">
                 <p><strong>Creatividad, Innovación y Tecnología</strong></p>
             </div>
-            <span id="typed" style="white-space:pre;"><strong>Creatividad, Innovación y Tecnología</strong></span><span class="typed-cursor">|</span>
+            <span id="typed"><strong>Creatividad, Innovación y Tecnología</strong></span><span class="typed-cursor">|</span>
         </div>
     </div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -492,7 +499,9 @@ function panels_cetav_home_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
@@ -509,7 +518,9 @@ function panels_cetav_home_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array();
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;

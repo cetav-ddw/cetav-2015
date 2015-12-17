@@ -14,10 +14,6 @@
           // defaults to false for infinite loop
           loopCount: false
         });
-
-        /*$(".reset").click(function(){
-            $("#typed").typed("reset");
-        });*/
       } // end typedWords
 
       return {
