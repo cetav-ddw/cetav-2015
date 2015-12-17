@@ -1,16 +1,26 @@
-// Manatí Base Theme JS functions
-(function($) {
-  //Este js se incorporara en un patron, temporalmente esta asi hasta terminar de incorporar las funciones resantes.
-  $(function() { 
-    $("#show-pay-form").click(function () {
-      $(this).toggleClass("hide-button");
-      $("#course-form").toggleClass("show-course-form");
-      setTimeout(function(){
-        $("#show-pay-form").remove();
-      }, 1000);
-    });
+// Cetaviano Theme JS functions
+(function ($) {
+  jQuery(document).ready(function($) {
 
-    $("#edit-field-form-nombre-und-0-value").attr("placeholder", "Nombre Completo");
-    $("#edit-field-form-email-und-0-email").attr("placeholder", "Correo Electrónico");
+    var cetav = ( function() {
+      function typedText() {
+        // Typing Text Header
+        $("#typed").typed({
+          stringsElement: $("#typed-strings"),
+          typeSpeed: 50,
+          backDelay: 500,
+          loop: false,
+          contentType: "html", // or text
+          // defaults to false for infinite loop
+          loopCount: false
+        });
+      } // end typedWords
+
+      return {
+        appTypedText : typedText
+      };
+    })();
+
+    cetav.appTypedText();
   });
-})(jQuery);
+}(jQuery));

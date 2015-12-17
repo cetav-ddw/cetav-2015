@@ -57,6 +57,7 @@ button {
         width: 100%;
         white-space: nowrap;
     }
+
     .file {
         height: 100%;
         left: 0;
@@ -70,20 +71,55 @@ button {
     display: none;
 }
 
+// boton leer más, texto inicial
+.course-description a {
+    @include button($gray, $gray, $white)
+    @include font-size(14);
+    border-radius: 6px;
+    padding: 5px 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
 
-.inscription-button {
-    @include button($light-blue, $light-blue, $white);
-    display: block;
-    margin: 25px auto;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-    width: 250px;
 
+// boton más información, cursos libres
+.text-course-description .field-name-field-link-view-more {
+    display: inline-block;
+}
+
+
+.text-course-description a {
+    @include button($light-blue, $light-blue, $white)
+    @include font-size(15);
+    border-radius: 6px;
+    display: inline-block;
+    padding: 5px 8px;
     &:hover {
         text-decoration: none;
     }
 }
+
+// boton de cada curso libre disponible
+.btn-course a {
+    @include button($light-blue, $light-blue, $white)
+    @include font-size(14);
+    border-radius: 6px;
+    display: inline-block;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+
+    @include mquery("large") {
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+
+    &:hover{
+        transition: all 0.3s;
+    }
+}
+
 
 //Button Login
 .container-account {
@@ -98,6 +134,7 @@ button {
         padding: 8px 18px;
     }
 }
+
 
 //Botón anuario
 .btn-yearbook a {
