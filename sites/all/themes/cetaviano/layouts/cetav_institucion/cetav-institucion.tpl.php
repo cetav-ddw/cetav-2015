@@ -8,11 +8,9 @@
 ?>
 
 <div class="panel-display panel-cetav-institucion">
-  <div class="center-wrapper">
   <?php if ($content['wide_main']): ?>
-    <div class="panel-container panel-wide">
+    <div class="panel-container panel-wide panel-header">
       <?php print $content['wide_main']; ?>
-    </div>
   <?php endif ?>
     <div class="grid-width">
       <div class="panel-container panel-left-column">

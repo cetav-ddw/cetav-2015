@@ -626,6 +626,25 @@ function noticia_cetav_default_page_manager_pages() {
     $pane->uuid = '9920eae0-f345-429d-91a4-5c4c4a6f69c9';
     $display->content['new-9920eae0-f345-429d-91a4-5c4c4a6f69c9'] = $pane;
     $display->panels['right'][0] = 'new-9920eae0-f345-429d-91a4-5c4c4a6f69c9';
+    $pane = new stdClass();
+    $pane->pid = 'new-2174f8c4-826b-4673-9a6e-d997249295be';
+    $pane->panel = 'wide';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:34';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2174f8c4-826b-4673-9a6e-d997249295be';
+    $display->content['new-2174f8c4-826b-4673-9a6e-d997249295be'] = $pane;
+    $display->panels['wide'][0] = 'new-2174f8c4-826b-4673-9a6e-d997249295be';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

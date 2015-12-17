@@ -253,6 +253,7 @@ function perfil_egresado_cetav_views_default_views() {
     2 => 'field_generacion_egresado',
     3 => 'field_disponibilidad_egresado',
   );
+  $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'profesional-info-container';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';

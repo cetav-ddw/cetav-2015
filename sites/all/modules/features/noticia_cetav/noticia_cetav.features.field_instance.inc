@@ -73,7 +73,7 @@ function noticia_cetav_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'imagen_lista_de_noticias',
         ),
         'type' => 'image',
         'weight' => 1,

@@ -204,6 +204,25 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $display->content['new-94afee93-0a9a-4eb9-b124-057aba80cf8c'] = $pane;
     $display->panels['wide'][0] = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
     $pane = new stdClass();
+    $pane->pid = 'new-a550a51a-f4cd-4d80-bf58-a5088144ff87';
+    $pane->panel = 'wide_main';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:32';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a550a51a-f4cd-4d80-bf58-a5088144ff87';
+    $display->content['new-a550a51a-f4cd-4d80-bf58-a5088144ff87'] = $pane;
+    $display->panels['wide_main'][0] = 'new-a550a51a-f4cd-4d80-bf58-a5088144ff87';
+    $pane = new stdClass();
     $pane->pid = 'new-46e4b806-5240-462d-a7a9-1dc7f06ddddf';
     $pane->panel = 'wide_second';
     $pane->type = 'custom';
@@ -213,7 +232,7 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p><strong>El Consejo Asesor está conformado por un miembro de:</strong></p><p>&nbsp;</p><ul><li>Viceministro de Cultura​</li><li dir="ltr"><p dir="ltr"><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Viceministro de Juventud</b></p></li><li dir="ltr"><p dir="ltr"><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Subgerencia Técnica Instituto Nacional de Aprendizaje (INA)</b></p></li><li dir="ltr"><p dir="ltr"><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Costa Rica Animation Holdings</b></p></li><li dir="ltr"><p dir="ltr"><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Director Nacional de Empleo (EMPLÉATE)</b></p></li><li dir="ltr"><p dir="ltr"><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Promotora de Comercio Exterior (PROCOMER)</b></p></li><li dir="ltr"><p dir="ltr"><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Cámara de Tecnologías de Información y Comunicación (CAMTIC)</b></p></li></ul><p>​</p><ul><li dir="ltr">&nbsp;</li></ul>',
+      'body' => '<p><strong>El Consejo Asesor está conformado por un miembro de:</strong></p><ul><li>Viceministro de Cultura​</li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Viceministro de Juventud</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Subgerencia Técnica Instituto Nacional de Aprendizaje (INA)</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Costa Rica Animation Holdings</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Director Nacional de Empleo (EMPLÉATE)</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Promotora de Comercio Exterior (PROCOMER)</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Cámara de Tecnologías de Información y Comunicación (CAMTIC)</b>​​</li></ul>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );

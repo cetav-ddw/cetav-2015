@@ -37,8 +37,8 @@
         <?php $class = 'icon-animacion'; ?>
         <?php $class1 = 'container-gif-animacion'; ?>
       <?php elseif (strpos($field->raw, 'Postproducción') !== FALSE): ?>
-        <?php $class = 'container-gif-post'; ?>
-                <?php $class = 'icon-post'; ?>
+        <?php $class = 'icon-post'; ?>
+        <?php $class1 = 'container-gif-post'; ?>
       <?php elseif (strpos($field->raw, 'web') !== FALSE): ?>
         <?php $class = 'icon-web'; ?>
         <?php $class1 = 'container-gif-web'; ?>

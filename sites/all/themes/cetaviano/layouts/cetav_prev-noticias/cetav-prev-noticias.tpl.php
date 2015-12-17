@@ -7,6 +7,11 @@
  */
 ?>
 <div class="panel-display panel-cetav-prev-noticias">
+  <?php if ($content['wide']): ?>
+    <div class="panel-container panel-wide panel-header">
+      <?php print $content['wide']; ?>
+    </div>
+  <?php endif ?>
   <div class="center-wrapper">
   <div class="grid-width">
     <div class="panel-container panel-left-column container-news-prev">
@@ -18,3 +23,4 @@
   </div>
   </div>
 </div>
+

@@ -9,6 +9,7 @@ $plugin = array(
   'css' => 'cetav_prev-noticias.css',
 
   'regions' => array(
+    'wide' => t('Wide'),
     'left' => t('Left side'),
     'right' => t('Right side'),
   ),
