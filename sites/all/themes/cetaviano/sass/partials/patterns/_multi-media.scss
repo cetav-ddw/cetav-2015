@@ -13,3 +13,20 @@ img {
     max-width: 100%;
     width: inherit; /* IEB */
 }
+
+// logo cetav home intro
+.fieldable-panels-pane img {
+    @include mquery("base") {
+        width: 200px;
+    }
+    @include mquery("small") {
+        width: 240px;
+    }
+    @include mquery("medium") {
+        width: 280px;
+    }
+    @include mquery("large") {
+        width: 300px;
+        margin-top: 30px;
+    }   
+}

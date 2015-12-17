@@ -247,7 +247,7 @@ button {
   font-size: 1.8rem;
   background-color: #fff;
   border: 2px solid #fff;
-  color: #9d9fa2;
+  color: #848286;
   padding: 15px 30px;
   font-size: 14px;
   font-size: 1.4rem;
@@ -265,7 +265,7 @@ button {
       color: #fff; }
       .btn-direction:hover {
         background-color: #fff;
-        color: #9d9fa2; } }
+        color: #848286; } }
   @media only screen and (min-width: 37.5em) {
     .btn-direction {
       width: 35%; } }
@@ -362,6 +362,84 @@ button {
   .btn-yearbook a:hover {
     text-decoration: none; }
 
+.course-description a {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #77787b;
+  border: 2px solid #77787b;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  padding: 5px 8px;
+  text-decoration: none;
+  transition: all 0.3s; }
+  @media only screen and (min-width: 68.75em) {
+    .course-description a {
+      background-color: transparent;
+      border: 2px solid #77787b;
+      color: #77787b; }
+      .course-description a:hover {
+        background-color: #77787b;
+        color: #fff; } }
+
+.text-course-description .field-name-field-link-view-more {
+  display: inline-block; }
+
+.text-course-description a {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #00c9ed;
+  border: 2px solid #00c9ed;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px 8px; }
+  @media only screen and (min-width: 68.75em) {
+    .text-course-description a {
+      background-color: transparent;
+      border: 2px solid #00c9ed;
+      color: #00c9ed; }
+      .text-course-description a:hover {
+        background-color: #00c9ed;
+        color: #fff; } }
+  .text-course-description a:hover {
+    text-decoration: none; }
+
+.btn-course a {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #00c9ed;
+  border: 2px solid #00c9ed;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 6px 10px;
+  text-decoration: none;
+  margin-top: 10px; }
+  @media only screen and (min-width: 68.75em) {
+    .btn-course a {
+      background-color: transparent;
+      border: 2px solid #00c9ed;
+      color: #00c9ed; }
+      .btn-course a:hover {
+        background-color: #00c9ed;
+        color: #fff; } }
+  @media only screen and (min-width: 68.75em) {
+    .btn-course a {
+      position: absolute;
+      right: 0;
+      top: 12px; } }
+  .btn-course a:hover {
+    transition: all 0.3s; }
+
 table {
   font-size: 16px;
   font-size: 1.6rem;
@@ -369,7 +447,7 @@ table {
   table thead {
     color: #f19130; }
   table td {
-    background-color: #9d9fa2;
+    background-color: #848286;
     padding: 25px;
     width: 30%; }
   table tr {
@@ -385,6 +463,23 @@ img {
   max-width: 100%;
   width: inherit;
   /* IEB */ }
+
+@media only screen and (min-width: 20em) {
+  .fieldable-panels-pane img {
+    width: 200px; } }
+
+@media only screen and (min-width: 37.5em) {
+  .fieldable-panels-pane img {
+    width: 240px; } }
+
+@media only screen and (min-width: 56.25em) {
+  .fieldable-panels-pane img {
+    width: 280px; } }
+
+@media only screen and (min-width: 68.75em) {
+  .fieldable-panels-pane img {
+    width: 300px;
+    margin-top: 30px; } }
 
 /* Icons-font*/
 @font-face {
@@ -402,15 +497,6 @@ img {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-.icon-animacion:before {
-  content: '\0041'; }
-
-.icon-web:before {
-  content: '\0042'; }
-
-.icon-post:before {
-  content: '\0043'; }
 
 .icon-face:before {
   color: #4966a7;
@@ -1448,6 +1534,128 @@ div.password-suggestions ul {
   clear: left;
   /* LTR */ }
 
+.content-header p:first-child {
+  color: #fff;
+  margin: 0; }
+  @media only screen and (min-width: 20em) {
+    .content-header p:first-child {
+      font-size: 32px;
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .content-header p:first-child {
+      font-size: 38px;
+      font-size: 3.8rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .content-header p:first-child {
+      font-size: 40px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .content-header p:first-child {
+      font-size: 48px;
+      font-size: 4.8rem; } }
+
+.content-header strong {
+  color: #f19130; }
+  @media only screen and (min-width: 20em) {
+    .content-header strong {
+      font-size: 32px;
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .content-header strong {
+      font-size: 38px;
+      font-size: 3.8rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .content-header strong {
+      font-size: 40px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .content-header strong {
+      font-size: 48px;
+      font-size: 4.8rem; } }
+
+@media only screen and (min-width: 20em) {
+  .content-header {
+    padding-top: 14.5%; } }
+
+@media only screen and (min-width: 37.5em) {
+  .content-header {
+    padding-top: 8.5%; } }
+
+@media only screen and (min-width: 56.25em) {
+  .content-header {
+    padding-top: 17.5%; } }
+
+@media only screen and (min-width: 68.75em) {
+  .content-header {
+    padding-top: 14.5%; } }
+
+@media only screen and (min-width: 87.5em) {
+  .content-header {
+    padding-top: 9.5%; } }
+
+.type-wrap {
+  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center; }
+
+.type-wrap span {
+  white-space: normal; }
+  @media only screen and (min-width: 56.25em) {
+    .type-wrap span {
+      white-space: pre; } }
+
+.wrap {
+  margin: 150px auto;
+  max-width: 600px; }
+
+.typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite; }
+  @media only screen and (min-width: 20em) {
+    .typed-cursor {
+      font-size: 32px;
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .typed-cursor {
+      font-size: 38px;
+      font-size: 3.8rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .typed-cursor {
+      font-size: 40px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .typed-cursor {
+      font-size: 48px;
+      font-size: 4.8rem; } }
+
+.typed-cursor:last-child {
+  display: none; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .career-program .paragraphs-item-programas-carreras {
   background-color: #fff;
   box-shadow: 0 0 13px #c2bebe;
@@ -1670,9 +1878,9 @@ div.password-suggestions ul {
     margin: 20px;
     text-align: center; }
   .pane-bundle-steps-admision span {
-    border: 2px solid #9d9fa2;
+    border: 2px solid #848286;
     border-radius: 100px;
-    color: #9d9fa2;
+    color: #848286;
     font-size: 35px;
     margin: 20px;
     padding: 5px 18px; }
@@ -1680,27 +1888,27 @@ div.password-suggestions ul {
     padding: 8% 2% 2%; }
     @media only screen and (min-width: 20em) {
       .pane-bundle-steps-admision .paragraphs-item-steps {
-        border-bottom: 1px solid #9d9fa2; }
+        border-bottom: 1px solid #848286; }
         .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
           border-bottom: none; } }
     @media only screen and (min-width: 37.5em) {
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(1) {
-        border-right: 1px solid #9d9fa2; }
+        border-right: 1px solid #848286; }
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
-        border-right: 1px solid #9d9fa2; }
+        border-right: 1px solid #848286; }
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(5) {
         border-bottom: none;
-        border-right: 1px solid #9d9fa2; }
+        border-right: 1px solid #848286; }
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(6) {
         border-bottom: none; } }
     @media only screen and (min-width: 56.25em) {
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(2) {
-        border-right: 1px solid #9d9fa2; }
+        border-right: 1px solid #848286; }
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(3) {
         border-right: none; }
       .pane-bundle-steps-admision .paragraphs-item-steps:nth-child(4) {
         border-bottom: none;
-        border-right: 1px solid #9d9fa2; } }
+        border-right: 1px solid #848286; } }
 
 .personal-institution .field-items {
   max-width: 1200px;
@@ -2176,6 +2384,485 @@ footer {
   .title-career h2 {
     color: #fff; }
 
+.panel-cetav-frontpage .panel-wide-allies {
+  background-color: #eee;
+  height: auto;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.section-title-allies {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100%; }
+  @media only screen and (min-width: 20em) {
+    .section-title-allies {
+      margin-bottom: 15px; } }
+  @media only screen and (min-width: 37.5em) {
+    .section-title-allies {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 56.25em) {
+    .section-title-allies {
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 68.75em) {
+    .section-title-allies {
+      display: inline-block;
+      text-align: left;
+      width: 40%; } }
+
+@media only screen and (min-width: 56.25em) {
+  .text-course-container {
+    display: block;
+    margin: 0 auto;
+    width: 90%; } }
+
+@media only screen and (min-width: 68.75em) {
+  .text-course-container {
+    float: right;
+    width: 50%; } }
+
+.pane-bundle-aliados-logo-home .field-item {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  position: relative; }
+  @media only screen and (min-width: 20em) {
+    .pane-bundle-aliados-logo-home .field-item {
+      height: 60px;
+      margin-top: 50px;
+      width: 50%; } }
+  @media only screen and (min-width: 37.5em) {
+    .pane-bundle-aliados-logo-home .field-item {
+      height: 70px;
+      margin-top: 50px; } }
+  @media only screen and (min-width: 56.25em) {
+    .pane-bundle-aliados-logo-home .field-item {
+      height: 70px;
+      width: 33%; } }
+  @media only screen and (min-width: 68.75em) {
+    .pane-bundle-aliados-logo-home .field-item {
+      height: 80px;
+      margin-top: 60px;
+      width: 24.5%; } }
+  @media only screen and (min-width: 87.5em) {
+    .pane-bundle-aliados-logo-home .field-item {
+      height: 90px;
+      margin-top: 60px; } }
+  .pane-bundle-aliados-logo-home .field-item img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin: auto;
+    width: 100px; }
+    @media only screen and (min-width: 68.75em) {
+      .pane-bundle-aliados-logo-home .field-item img {
+        width: 120px; } }
+
+.field-name-field-aliados-img {
+  clear: both; }
+
+.panel-wide-allies h2 {
+  color: #f19130;
+  display: block;
+  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%; }
+  @media only screen and (min-width: 20em) {
+    .panel-wide-allies h2 {
+      font-size: 24px;
+      font-size: 2.4rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .panel-wide-allies h2 {
+      font-size: 28px;
+      font-size: 2.8rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .panel-wide-allies h2 {
+      font-size: 30px;
+      font-size: 3rem;
+      width: 100%; } }
+  @media only screen and (min-width: 68.75em) {
+    .panel-wide-allies h2 {
+      font-size: 36px;
+      font-size: 3.6rem;
+      text-align: left; } }
+
+.call-out-home-intro .panel-left-column {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 30px; }
+  @media only screen and (min-width: 68.75em) {
+    .call-out-home-intro .panel-left-column {
+      display: inline-block;
+      margin: 0 auto;
+      width: 40%; } }
+
+@media only screen and (min-width: 56.25em) {
+  .call-out-home-intro .panel-right-column {
+    display: block;
+    width: 100%; } }
+
+@media only screen and (min-width: 68.75em) {
+  .call-out-home-intro .panel-right-column {
+    float: right;
+    margin-right: 60px;
+    width: 50%; } }
+
+.call-out-home-intro .panel-right-column p {
+  margin: 0 0 30px; }
+  @media only screen and (min-width: 68.75em) {
+    .call-out-home-intro .panel-right-column p {
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin-top: 10px; } }
+
+.section-free-courses-info {
+  padding: 60px 16px 0 !important; }
+  @media only screen and (min-width: 68.75em) {
+    .section-free-courses-info {
+      padding: 80px 16px 0 !important; } }
+
+.section-free-courses {
+  padding: 20px 16px 80px; }
+  @media only screen and (min-width: 68.75em) {
+    .section-free-courses {
+      padding: 80px 16px; } }
+
+.section-free-courses .panel-left-column {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100%; }
+  @media only screen and (min-width: 20em) {
+    .section-free-courses .panel-left-column {
+      margin-bottom: 15px; } }
+  @media only screen and (min-width: 37.5em) {
+    .section-free-courses .panel-left-column {
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 56.25em) {
+    .section-free-courses .panel-left-column {
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 68.75em) {
+    .section-free-courses .panel-left-column {
+      display: inline-block;
+      text-align: left;
+      width: 45%; } }
+
+.section-free-courses-info h2 {
+  color: #00c9ed;
+  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  text-align: center;
+  width: 100%; }
+  @media only screen and (min-width: 20em) {
+    .section-free-courses-info h2 {
+      font-size: 24px;
+      font-size: 2.4rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .section-free-courses-info h2 {
+      font-size: 28px;
+      font-size: 2.8rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .section-free-courses-info h2 {
+      font-size: 30px;
+      font-size: 3rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .section-free-courses-info h2 {
+      font-size: 36px;
+      font-size: 3.6rem;
+      text-align: left; } }
+
+#panels-ipe-regionid-left_third {
+  background-image: url(../images/course.png);
+  background-position: right;
+  background-size: 100%;
+  height: 300px;
+  width: 100%;
+  display: none; }
+  @media only screen and (min-width: 68.75em) {
+    #panels-ipe-regionid-left_third {
+      display: inline-block; } }
+
+@media only screen and (min-width: 56.25em) {
+  .section-free-courses .panel-right-column {
+    display: block;
+    width: 100%; } }
+
+@media only screen and (min-width: 68.75em) {
+  .section-free-courses .panel-right-column {
+    float: right;
+    width: 50%; } }
+
+.section-free-courses .view-content {
+  width: 100% !important; }
+
+.section-free-courses .views-row {
+  border-bottom: 1px solid #d6d6d6;
+  list-style: none;
+  padding: 17px 0;
+  position: relative; }
+
+.section-free-courses h4 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  display: inline-block;
+  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  width: 100%; }
+  @media only screen and (min-width: 68.75em) {
+    .section-free-courses h4 {
+      width: 60%; } }
+
+.text-course-description p {
+  margin: 0 0 20px; }
+
+.title-course-item {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #414042;
+  display: inline-block;
+  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  margin: 0;
+  width: 100%; }
+  @media only screen and (min-width: 68.75em) {
+    .title-course-item {
+      width: 60%; } }
+
+.date-course-item span {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #848286;
+  font-family: "Open Sans", Arial, Verdana, sans-serif;
+  margin-bottom: 0;
+  margin-top: 6px; }
+
+.main-content .main .title {
+  display: none; }
+
+.panel-wide-hero {
+  background: #000 url(../images/prueba.jpg) no-repeat center center fixed;
+  background-size: cover; }
+  @media only screen and (min-width: 20em) {
+    .panel-wide-hero {
+      height: 400px; } }
+  @media only screen and (min-width: 56.25em) {
+    .panel-wide-hero {
+      height: 600px; } }
+  @media only screen and (min-width: 87.5em) {
+    .panel-wide-hero {
+      background-size: 1200px;
+      height: 700px; } }
+
+.panel-cetav-frontpage .panel-wide-courses {
+  background-color: #fff;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  width: 100%; }
+
+.panel-cetav-frontpage .views-field-title {
+  margin-bottom: 0; }
+
+.panel-wide-courses .container-card {
+  display: block;
+  height: 400px;
+  float: left;
+  font-family: "Open Sans", Arial, Verdana, sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 15px;
+  width: 100%; }
+  @media only screen and (min-width: 68.75em) {
+    .panel-wide-courses .container-card {
+      margin-top: 0;
+      width: calc(100% / 3); } }
+
+.container-card:before {
+  content: "";
+  background-color: #222;
+  display: block;
+  height: 100%;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  z-index: 0; }
+
+.container-gif {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  padding: 30px 15px;
+  transition: all 0.3s ease;
+  width: 100%; }
+
+.container-title-course {
+  padding: 0;
+  position: relative;
+  top: 3em; }
+  @media only screen and (min-width: 68.75em) {
+    .container-title-course {
+      top: 0; } }
+  @media only screen and (min-width: 87.5em) {
+    .container-title-course {
+      top: 2em; } }
+
+.container-title-course h2 {
+  color: white;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center; }
+  @media only screen and (min-width: 20em) {
+    .container-title-course h2 {
+      font-size: 24px;
+      font-size: 2.4rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .container-title-course h2 {
+      font-size: 26px;
+      font-size: 2.6rem;
+      padding: 0 5%; } }
+  @media only screen and (min-width: 56.25em) {
+    .container-title-course h2 {
+      font-size: 28px;
+      font-size: 2.8rem; } }
+  @media only screen and (min-width: 68.75em) {
+    .container-title-course h2 {
+      font-size: 30px;
+      font-size: 3rem;
+      padding: 0 10%; } }
+
+.container-title-course h2:first-child {
+  display: none; }
+
+.container-title-course a:first-child {
+  display: none; }
+
+.container-title-course a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 15px 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s ease; }
+
+.icon-animacion:before {
+  content: "";
+  background-image: url(../images/logo-animacion.png);
+  background-image: url(../images/logo-animacion.svg);
+  background-repeat: no-repeat;
+  height: 92px;
+  margin-bottom: 20px;
+  width: 97px; }
+
+.icon-web:before {
+  content: "";
+  background-image: url(../images/logo-web.png);
+  background-image: url(../images/logo-web.svg);
+  background-repeat: no-repeat;
+  height: 92px;
+  margin-bottom: 20px;
+  width: 97px; }
+
+.icon-post:before {
+  content: "";
+  background-image: url(../images/logo-post.png);
+  background-image: url(../images/logo-post.svg);
+  background-repeat: no-repeat;
+  height: 92px;
+  margin-bottom: 20px;
+  width: 97px; }
+
+.icon-animacion div {
+  position: absolute;
+  top: 25em;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  @media only screen and (min-width: 68.75em) {
+    .icon-animacion div {
+      top: 30em; } }
+
+.container-gif-animacion {
+  background-image: url(../images/animacion-cover.png); }
+
+@media only screen and (min-width: 68.75em) {
+  .container-card:hover .container-gif-animacion {
+    background-image: url(../images/animacion-gif.gif);
+    transition: all 0.3s ease; } }
+
+.icon-web div {
+  position: absolute;
+  top: 25em;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  @media only screen and (min-width: 68.75em) {
+    .icon-web div {
+      top: 30em; } }
+
+.container-gif-web {
+  background-image: url(../images/web-cover.png); }
+
+@media only screen and (min-width: 68.75em) {
+  .container-card:hover .container-gif-web {
+    background-image: url(../images/web-gif.gif);
+    transition: all 0.3s ease; } }
+
+.icon-post div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  @media only screen and (min-width: 20em) {
+    .icon-post div {
+      top: 28em; } }
+  @media only screen and (min-width: 68.75em) {
+    .icon-post div {
+      top: 31.5em; } }
+  @media only screen and (min-width: 87.5em) {
+    .icon-post div {
+      top: 30em; } }
+
+.container-gif-post {
+  background-image: url(../images/post-cover.png); }
+
+@media only screen and (min-width: 68.75em) {
+  .container-card:hover .container-gif-post {
+    background-image: url(../images/post-gif.gif);
+    transition: all 0.3s ease; } }
+
+.container-title-course a {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+.icon-animacion a {
+  background-color: #dc661e; }
+
+.icon-web a {
+  background-color: #9e280e; }
+
+.icon-post a {
+  background-color: #819535; }
+
+.icon-web h2 {
+  padding: 0 7%; }
+
+.icon-post h2 {
+  padding: 0 6%; }
+
 .panel-cetav-prev-egresados .panel-left-column {
   display: block; }
   @media only screen and (min-width: 56.25em) {
@@ -2232,7 +2919,7 @@ footer {
       display: block;
       margin-right: 2.3576515979%;
       width: 31.7615656014%;
-      border-bottom: solid 1px #9d9fa2;
+      border-bottom: solid 1px #848286;
       width: 100%; }
       .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget:last-child {
         margin-right: 0; }
@@ -2253,7 +2940,7 @@ footer {
 .views-field-field-disponibilidad-egresado {
   font-size: 13px;
   font-size: 1.3rem;
-  color: #9d9fa2;
+  color: #848286;
   display: inline-block;
   margin: 8px 12px 0 0;
   vertical-align: top; }

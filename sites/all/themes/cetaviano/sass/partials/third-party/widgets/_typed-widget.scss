@@ -1,0 +1,111 @@
+.content-header {
+    p:first-child {
+        color: $white;
+        margin: 0;
+
+        @include mquery("base") {
+            @include font-size(32);
+        }
+        @include mquery("small") {
+            @include font-size(38);
+        }
+        @include mquery("medium") {
+            @include font-size(40);
+        }
+        @include mquery("large") {
+            @include font-size(48);
+        }
+    }
+
+    strong {
+        color: $orange;
+        @include mquery("base") {
+            @include font-size(32);
+        }
+        @include mquery("small") {
+            @include font-size(38);
+        }
+        @include mquery("medium") {
+            @include font-size(40);
+        }
+        @include mquery("large") {
+            @include font-size(48);
+        }
+    }
+ 
+    @include mquery("base") {
+        padding-top: 14.5%;
+    }
+    @include mquery("small") {
+        padding-top: 8.5%;
+    }
+    @include mquery("medium") {
+        padding-top: 17.5%;
+    }
+    @include mquery("large") {
+        padding-top: 14.5%;
+    }
+    @include mquery("x-large") {
+        padding-top: 9.5%;
+    }
+}
+
+.type-wrap{
+    font-family: $contrast-font;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.type-wrap span {
+    white-space: normal;
+
+    @include mquery("medium") {
+        white-space: pre;
+    }
+}
+
+.wrap {
+    margin: 150px auto;
+    max-width: 600px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    
+    @include mquery("base") {
+        @include font-size(32);
+    }
+    @include mquery("small") {
+        @include font-size(38);
+    }
+    @include mquery("medium") {
+        @include font-size(40);
+    }
+    @include mquery("large") {
+        @include font-size(48);
+    }
+}
+
+// drupal metió 2 span con la clase .typed-cursor, a eso se debe este estilo
+// ya que duplica el span
+.typed-cursor:last-child {
+    display: none;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
