@@ -63,3 +63,9 @@ blockquote {
     }
   }
 }
+
+.title {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
