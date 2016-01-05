@@ -106,7 +106,47 @@ function panels_cetav_home_default_page_manager_pages() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 1,
+          'class' => 'logo-cetav-home',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -177,7 +217,7 @@ function panels_cetav_home_default_page_manager_pages() {
     $display->content['new-a1046911-13f0-43ee-965c-77454acaa059'] = $pane;
     $display->panels['left_second'][0] = 'new-a1046911-13f0-43ee-965c-77454acaa059';
     $pane = new stdClass();
-    $pane->pid = 'new-4b31f7f4-fe31-40a4-83b2-54487f55ba81';
+    $pane->pid = 'new-59c2459f-d28f-430f-905f-ae12c5bdb381';
     $pane->panel = 'left_third';
     $pane->type = 'fieldable_panels_pane';
     $pane->subtype = 'fpid:35';
@@ -187,14 +227,16 @@ function panels_cetav_home_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '4b31f7f4-fe31-40a4-83b2-54487f55ba81';
-    $display->content['new-4b31f7f4-fe31-40a4-83b2-54487f55ba81'] = $pane;
-    $display->panels['left_third'][0] = 'new-4b31f7f4-fe31-40a4-83b2-54487f55ba81';
+    $pane->uuid = '59c2459f-d28f-430f-905f-ae12c5bdb381';
+    $display->content['new-59c2459f-d28f-430f-905f-ae12c5bdb381'] = $pane;
+    $display->panels['left_third'][0] = 'new-59c2459f-d28f-430f-905f-ae12c5bdb381';
     $pane = new stdClass();
     $pane->pid = 'new-3db7319d-b598-43e4-9845-74c27a29abac';
     $pane->panel = 'right';

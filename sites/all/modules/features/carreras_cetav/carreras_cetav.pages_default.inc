@@ -428,7 +428,7 @@ function carreras_cetav_default_page_manager_handlers() {
           'attributes_array' => array(),
         ),
         'element_wrapper' => array(
-          'type' => 'h3',
+          'type' => '',
           'class_enable' => 0,
           'class' => '',
           'attributes' => array(),

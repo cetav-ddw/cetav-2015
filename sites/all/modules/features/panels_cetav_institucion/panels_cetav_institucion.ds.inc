@@ -29,6 +29,11 @@ function panels_cetav_institucion_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_imagen_personal' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_linkedin' => array(
       'formatter_settings' => array(
         'ft' => array(
