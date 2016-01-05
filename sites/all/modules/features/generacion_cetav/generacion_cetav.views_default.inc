@@ -123,6 +123,11 @@ function generacion_cetav_views_default_views() {
   $handler->display->display_options['fields']['field_testimonios']['settings'] = array(
     'view_mode' => 'full',
   );
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['pane_category']['name'] = 'cetav';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $export['generacion'] = $view;

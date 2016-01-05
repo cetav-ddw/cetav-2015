@@ -177,6 +177,25 @@ function panels_cetav_home_default_page_manager_pages() {
     $display->content['new-a1046911-13f0-43ee-965c-77454acaa059'] = $pane;
     $display->panels['left_second'][0] = 'new-a1046911-13f0-43ee-965c-77454acaa059';
     $pane = new stdClass();
+    $pane->pid = 'new-4b31f7f4-fe31-40a4-83b2-54487f55ba81';
+    $pane->panel = 'left_third';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:35';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '4b31f7f4-fe31-40a4-83b2-54487f55ba81';
+    $display->content['new-4b31f7f4-fe31-40a4-83b2-54487f55ba81'] = $pane;
+    $display->panels['left_third'][0] = 'new-4b31f7f4-fe31-40a4-83b2-54487f55ba81';
+    $pane = new stdClass();
     $pane->pid = 'new-3db7319d-b598-43e4-9845-74c27a29abac';
     $pane->panel = 'right';
     $pane->type = 'fieldable_panels_pane';

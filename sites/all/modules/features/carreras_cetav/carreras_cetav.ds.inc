@@ -53,7 +53,7 @@ function carreras_cetav_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'fi' => TRUE,
-          'fi-el' => 'div',
+          'fi-el' => 'h4',
           'fi-cl' => 'title-skills',
           'fi-at' => '',
           'fi-def-at' => FALSE,

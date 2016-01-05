@@ -166,7 +166,7 @@ function carreras_cetav_default_page_manager_handlers() {
     $display->content['new-ba57a7fd-16c8-47bb-9799-5c8bffd6c574'] = $pane;
     $display->panels['left'][1] = 'new-ba57a7fd-16c8-47bb-9799-5c8bffd6c574';
     $pane = new stdClass();
-    $pane->pid = 'new-00196396-1f00-48ec-ba09-54c9797833fb';
+    $pane->pid = 'new-25e15c9e-f88c-4057-8e67-10a4e88951d2';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_video_carrera';
@@ -194,9 +194,9 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '00196396-1f00-48ec-ba09-54c9797833fb';
-    $display->content['new-00196396-1f00-48ec-ba09-54c9797833fb'] = $pane;
-    $display->panels['right'][0] = 'new-00196396-1f00-48ec-ba09-54c9797833fb';
+    $pane->uuid = '25e15c9e-f88c-4057-8e67-10a4e88951d2';
+    $display->content['new-25e15c9e-f88c-4057-8e67-10a4e88951d2'] = $pane;
+    $display->panels['right'][0] = 'new-25e15c9e-f88c-4057-8e67-10a4e88951d2';
     $pane = new stdClass();
     $pane->pid = 'new-d485b057-5786-444e-ba3e-f8bf0e3773c5';
     $pane->panel = 'wide';
@@ -396,7 +396,47 @@ function carreras_cetav_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'h3',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
