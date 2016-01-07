@@ -3,24 +3,16 @@
     box-shadow: 0 0 4px 0 $dark-orange;
     margin: 2%;
     padding: 2%;
+    margin: 2% auto;
+    padding: 1% 0;
 
-    @include mquery("small") {
-        margin: 2% auto;
-        padding: 1% 0; 
-    }
-    
     > div {
         @include span-columns(12);
 
         > div {
             margin: 2%;
+            margin-top: 2%;
 
-            @include mquery("small") {
-                @include span-columns(5);
-                @include shift(1);
-                @include omega();
-                margin-top: 2%;
-            }
         }
     }
     label {
@@ -33,6 +25,9 @@
         width: auto;
     }
     table {
+        tr{
+            text-align: left;
+        }
         td {
             background-color: transparent;
             border: solid #e1e1e1 1px;

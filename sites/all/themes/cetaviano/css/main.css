@@ -807,15 +807,13 @@ input[type="file"] {
   margin-right: auto;
   box-shadow: 0 0 4px 0 #dc661e;
   margin: 2%;
-  padding: 2%; }
+  padding: 2%;
+  margin: 2% auto;
+  padding: 1% 0; }
   .node-form::after {
     clear: both;
     content: "";
     display: table; }
-  @media only screen and (min-width: 37.5em) {
-    .node-form {
-      margin: 2% auto;
-      padding: 1% 0; } }
   .node-form > div {
     float: left;
     display: block;
@@ -824,18 +822,8 @@ input[type="file"] {
     .node-form > div:last-child {
       margin-right: 0; }
     .node-form > div > div {
-      margin: 2%; }
-      @media only screen and (min-width: 37.5em) {
-        .node-form > div > div {
-          float: left;
-          display: block;
-          margin-right: 2.3576515979%;
-          width: 40.2913699012%;
-          margin-left: 8.5298042998%;
-          margin-right: 0;
-          margin-top: 2%; }
-          .node-form > div > div:last-child {
-            margin-right: 0; } }
+      margin: 2%;
+      margin-top: 2%; }
   .node-form label {
     text-transform: capitalize; }
   .node-form select {
@@ -843,6 +831,8 @@ input[type="file"] {
     border: 0;
     color: #fff;
     width: auto; }
+  .node-form table tr {
+    text-align: left; }
   .node-form table td {
     background-color: transparent;
     border: solid #e1e1e1 1px; }
