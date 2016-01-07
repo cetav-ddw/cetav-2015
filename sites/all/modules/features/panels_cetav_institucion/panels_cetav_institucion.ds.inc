@@ -17,21 +17,29 @@ function panels_cetav_institucion_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'colaboradores_institucion';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'field_behance' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-el' => 'icon-behance social-icon',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => FALSE,
+        ),
+      ),
+    ),
     'field_facebook' => array(
       'formatter_settings' => array(
         'ft' => array(
           'ow' => TRUE,
           'ow-el' => 'i',
-          'ow-cl' => 'icon-face',
+          'ow-cl' => 'icon-face social-icon',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
-      ),
-    ),
-    'field_imagen_personal' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
       ),
     ),
     'field_linkedin' => array(
@@ -39,7 +47,7 @@ function panels_cetav_institucion_ds_field_settings_info() {
         'ft' => array(
           'ow' => TRUE,
           'ow-el' => 'i',
-          'ow-cl' => 'icon-linkedin',
+          'ow-cl' => 'icon-linkedin social-icon',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -77,7 +85,7 @@ function panels_cetav_institucion_ds_field_settings_info() {
         'ft' => array(
           'ow' => TRUE,
           'ow-el' => 'i',
-          'ow-cl' => 'icon-linkedin',
+          'ow-cl' => 'icon-twitter social-icon',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
