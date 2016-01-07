@@ -15,7 +15,7 @@ img {
 }
 
 // logo cetav home intro
-.fieldable-panels-pane img {
+.logo-cetav-home img {
     @include mquery("base") {
         width: 200px;
     }
@@ -28,5 +28,5 @@ img {
     @include mquery("large") {
         width: 300px;
         margin-top: 30px;
-    }   
+    }
 }
