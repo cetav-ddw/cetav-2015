@@ -8,6 +8,13 @@
 ?>
 
 <div class="panel-display panel-cetav-admission">
+ <?php if ($content['wide']): ?>
+    <div class="panel-container panel-wide">
+      <div>
+        <?php print $content['wide']; ?>
+      </div>
+    </div>
+  <?php endif ?>
   <div class="center-wrapper call-out call-out-admission-intro">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
@@ -33,7 +40,7 @@
     <?php if ($content['wide']): ?>
     <div class="panel-container panel-wide">
       <div>
-        <?php print $content['wide']; ?>
+        <?php print $content['wide_second']; ?>
       </div>
     </div>
   <?php endif ?>
