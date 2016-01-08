@@ -2352,15 +2352,15 @@ footer {
   .panel-header img {
     width: 100%; }
 
-.title-career {
+.title-headers {
   background: rgba(241, 145, 48, 0.9);
   bottom: 3px;
   padding: 20px;
   position: absolute; }
   @media only screen and (min-width: 56.25em) {
-    .title-career {
+    .title-headers {
       padding: 40px; } }
-  .title-career h2 {
+  .title-headers h2 {
     color: #fff; }
 
 .panel-cetav-frontpage .panel-wide-allies {
