@@ -1,0 +1,322 @@
+.header-style{
+    background-color: $white;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.menu-highlights {
+
+    @include mquery("medium") {
+        background-color: $orange;
+    }
+    .menu-highlights-content {
+        @include mquery("medium") {
+            height: 120px;
+            margin: 0 auto;
+            width: 800px;
+        }
+        @include mquery("large") {
+            width: 1000px;
+        }
+        @include mquery("x-large") {
+            width: 1200px;
+        }
+    }
+    a {
+        display: none;
+        @include mquery("medium") {
+            @include font-size(16);
+            color: $white;
+            display: block;
+            float: right;
+            margin: -50px 0;
+        }
+    }
+}
+
+.pll-logo{
+    @include mquery("medium") {
+        background: url(../images/logo-parque.png) no-repeat;
+        background-size: 50%;
+        height: 100px;
+        width: 140px;
+    }
+}
+
+.nav-main {
+    margin-top: 150px;
+    @include mquery("medium") {
+        background-color: $white;
+        margin: 0 auto;
+        text-align: right;
+        width: 800px;
+    }
+    @include mquery("large") {
+        width: 1000px;
+    }
+    @include mquery("x-large") {
+        width: 1200px;
+    }
+}
+
+.site-logo {
+
+    @include mquery("medium") {
+        float: left;
+    }
+    img {
+        margin: 25px 20px;
+        position: absolute;
+        top: 0;
+        width: 140px;
+
+        @include mquery("medium") {
+            margin: 25px 0;
+            top: 120px;
+        }
+    }
+}
+
+.main .title{
+    display: none;
+}
+
+#block-views-exp-global-search-page {
+    margin: 0 15px;
+    position: absolute;
+    top: 110px;
+    width: 91.5%;
+    @include mquery("medium") {
+        right: 48px;
+        top: 144px;
+        width: 33%;
+    }
+}
+
+.views-exposed-form .views-exposed-widget {
+    padding: 0;
+}
+
+#block-system-main-menu .menu li.first.expanded {
+    .menu {
+        display: none;
+        height: 0;
+    }
+    .show {
+        background-color: #f3f3f3;
+        border-top: 4px solid $orange;
+        display: block;
+        height: 265px;
+        li a {
+            color: $dark-gray;
+        }
+    }
+    @include mquery("medium") {
+       border-right: 0;
+       margin: 0;
+       padding-bottom: 3%;
+       .menu {
+            display: none;
+            height: 0;
+            position: absolute;
+            text-align: left;
+            width: 230px;
+        }
+        &:hover {
+            .menu {
+                display: block;
+                height: 265px;
+                position: absolute;
+                transition: all 0.3s ease;
+                background: #f3f3f3;
+                border-top: 4px solid $orange;
+                margin-top: 15px;
+                width: 280px;
+            }
+            li {
+                display: block;
+                margin: 15px;
+                padding: 10px 20px;
+                width: 90%;
+                transition: border 0.3s ease;
+                border: none;
+                &:hover {
+                    a {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div .views-exposed-form, .content > .menu {
+    display: none;
+    @include mquery("medium") {
+        display: block;
+        width: 94%;
+        li {
+            border-right: 1px solid $dark-gray;
+            color: $dark-gray;
+            display: inline-block;
+            font-weight: 600;
+            list-style: none;
+            margin: 35px 0;
+            padding: 0 18px;
+            text-transform: uppercase;
+
+            a {
+                color: $dark-gray;
+                text-decoration: none;
+            }
+        }
+        & li:nth-child(2) {
+            border-left: 0 solid $dark-gray;
+        }
+    }
+}
+
+.content .expandir{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    body {
+        overflow: hidden;
+    }
+    span, a {
+        color: $main-color;
+        padding-bottom: 3px;
+        text-decoration: none;
+    }
+    li {
+        @include font-size(18);
+        list-style: none;
+        padding: 16px;
+        span {
+            padding-right: 295px;
+            @include mquery("medium") {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.views-widget-filter-search_api_multi_fulltext {
+    width: 100%;
+    @include mquery("medium") {
+        visibility: hidden;
+    }
+}
+
+.display {
+    visibility: visible;
+}
+
+.views-submit-button input {
+    background: url(../images/search.svg) no-repeat center;
+    background-size: cover;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    margin-left: -30px;
+    transition: opacity .4s ease;
+    width: 19px;
+}
+
+.hola {
+    overflow: hidden;
+    position: fixed;
+}
+
+.nav-secundary-main {
+    @include mquery("medium") {
+        background-color: $dark-gray;
+        margin-top: 20px;
+
+        .block{
+            text-align: right;
+            width: 800px;
+            margin: 0 auto;
+            @include mquery("large") {
+                width: 1000px;
+            }
+            @include mquery("x-large") {
+                width: 1200px;
+            }
+        }
+        .content .menu {
+            text-align: right;
+            margin: 0 10px;
+            li {
+                padding: 0 6px;
+                margin: 8px 2px;
+                a{
+                    color: $white;
+                    @include font-size(10);
+                }
+            }
+        }
+    }
+}
+
+.menu-collapse {
+    margin: 10px 30px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .menu-toggle {
+        cursor: pointer;
+        height: 30px;
+        margin-top: 15px;
+        width: 30px;
+    }
+    @include mquery("medium") {
+        display: none;
+    }
+}
+
+.block-menu h2{
+    display: none;
+}
+
+.menu-toggle.on .one {
+    transform: rotate(45deg) translate(12px, 10px);
+}
+
+.menu-toggle.on .two {
+    opacity: 0;
+}
+
+.menu-toggle.on .three {
+    transform: rotate(-45deg) translate(2px, -1px);
+}
+
+.menu-toggle-one,
+.menu-toggle-two,
+.menu-toggle-three {
+    background: $main-color;
+    backface-visibility: hidden;
+    border-radius: 2px;
+    height: 3px;
+    margin: 6px 0;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100%;
+}
+
+.extended {
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    li {
+        display: block;
+    }
+}
