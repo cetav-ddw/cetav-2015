@@ -53,9 +53,9 @@
     <nav class="nav-main">
       <div class="menu-collapse">
           <div id ="menu-toggle" class="menu-toggle">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
+              <div class="menu-toggle-one"></div>
+              <div class="menu-toggle-two"></div>
+              <div class="menu-toggle-three"></div>
            </div>
         </div>
       <?php if ($logo): ?>
