@@ -1,0 +1,31 @@
+.panel-cetav-submission {
+  background-color: #00c9ed;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    @include font-size(100);
+    color: #fff;
+  }
+
+  h3 {
+    @include font-size(20);
+    border: 2px solid #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+
+    span {
+      background-image: url(../img/check-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      height: 33px;
+      width: 34px;
+    }
+  }
+}
