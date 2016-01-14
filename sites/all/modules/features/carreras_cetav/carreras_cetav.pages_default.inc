@@ -285,7 +285,7 @@ function carreras_cetav_default_page_manager_handlers() {
         'element_wrapper' => array(
           'type' => '',
           'class_enable' => 1,
-          'class' => 'title-career',
+          'class' => 'title-headers',
           'attributes' => array(),
           'attributes_array' => array(),
         ),
