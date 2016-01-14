@@ -86,6 +86,7 @@
         cetavDisplayFormCourse :  displayFormCourse,
         cetavShowMenu          :  showMenu,
         cetavShowSubmenu       :  showSubmenu,
+        cetavshowSearch        :  showSearch,
         cetavRequiredForm      :  requiredForm,
         cetavTyped             :  typed
       };

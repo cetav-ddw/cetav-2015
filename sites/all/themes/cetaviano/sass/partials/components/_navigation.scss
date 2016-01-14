@@ -103,26 +103,12 @@
 }
 
 #block-system-main-menu .menu li.first.expanded {
-    .menu {
-        display: none;
-        height: 0;
-    }
-    .show {
-        background-color: #f3f3f3;
-        border-top: 4px solid $orange;
-        display: block;
-        height: 265px;
-        li a {
-            color: $dark-gray;
-        }
-    }
     @include mquery("medium") {
        border-right: 0;
        margin: 0;
        padding-bottom: 3%;
+
        .menu {
-            display: none;
-            height: 0;
             position: absolute;
             text-align: left;
             width: 230px;
@@ -145,6 +131,7 @@
                 width: 90%;
                 transition: border 0.3s ease;
                 border: none;
+
                 &:hover {
                     a {
                         color: $orange;
@@ -153,13 +140,31 @@
             }
         }
     }
+
+    .menu {
+        display: none;
+        height: 0;
+    }
+    .show {
+        background-color: #f3f3f3;
+        border-top: 4px solid $orange;
+        display: block;
+        height: 265px;
+
+        li a {
+            color: $dark-gray;
+        }
+    }
 }
 
-div .views-exposed-form, .content > .menu {
+div .views-exposed-form, 
+.content > .menu {
     display: none;
+
     @include mquery("medium") {
         display: block;
         width: 94%;
+
         li {
             border-right: 1px solid $dark-gray;
             color: $dark-gray;
@@ -181,7 +186,7 @@ div .views-exposed-form, .content > .menu {
     }
 }
 
-.content .expandir{
+.content .expandir {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -271,6 +276,7 @@ div .views-exposed-form, .content > .menu {
     position: absolute;
     right: 0;
     top: 0;
+    
     .menu-toggle {
         cursor: pointer;
         height: 30px;

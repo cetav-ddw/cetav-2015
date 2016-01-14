@@ -3313,26 +3313,12 @@ footer {
 .views-exposed-form .views-exposed-widget {
   padding: 0; }
 
-#block-system-main-menu .menu li.first.expanded .menu {
-  display: none;
-  height: 0; }
-
-#block-system-main-menu .menu li.first.expanded .show {
-  background-color: #f3f3f3;
-  border-top: 4px solid #f19130;
-  display: block;
-  height: 265px; }
-  #block-system-main-menu .menu li.first.expanded .show li a {
-    color: #414042; }
-
 @media only screen and (min-width: 56.25em) {
   #block-system-main-menu .menu li.first.expanded {
     border-right: 0;
     margin: 0;
     padding-bottom: 3%; }
     #block-system-main-menu .menu li.first.expanded .menu {
-      display: none;
-      height: 0;
       position: absolute;
       text-align: left;
       width: 230px; }
@@ -3355,13 +3341,28 @@ footer {
       #block-system-main-menu .menu li.first.expanded:hover li:hover a {
         color: #f19130; } }
 
-div .views-exposed-form, .content > .menu {
+#block-system-main-menu .menu li.first.expanded .menu {
+  display: none;
+  height: 0; }
+
+#block-system-main-menu .menu li.first.expanded .show {
+  background-color: #f3f3f3;
+  border-top: 4px solid #f19130;
+  display: block;
+  height: 265px; }
+  #block-system-main-menu .menu li.first.expanded .show li a {
+    color: #414042; }
+
+div .views-exposed-form,
+.content > .menu {
   display: none; }
   @media only screen and (min-width: 56.25em) {
-    div .views-exposed-form, .content > .menu {
+    div .views-exposed-form,
+    .content > .menu {
       display: block;
       width: 94%; }
-      div .views-exposed-form li, .content > .menu li {
+      div .views-exposed-form li,
+      .content > .menu li {
         border-right: 1px solid #414042;
         color: #414042;
         display: inline-block;
@@ -3370,10 +3371,12 @@ div .views-exposed-form, .content > .menu {
         margin: 35px 0;
         padding: 0 18px;
         text-transform: uppercase; }
-        div .views-exposed-form li a, .content > .menu li a {
+        div .views-exposed-form li a,
+        .content > .menu li a {
           color: #414042;
           text-decoration: none; }
-      div .views-exposed-form li:nth-child(2), .content > .menu li:nth-child(2) {
+      div .views-exposed-form li:nth-child(2),
+      .content > .menu li:nth-child(2) {
         border-left: 0 solid #414042; } }
 
 .content .expandir {
