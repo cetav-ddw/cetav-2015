@@ -627,6 +627,27 @@ function noticia_cetav_default_page_manager_pages() {
     $display->content['new-9920eae0-f345-429d-91a4-5c4c4a6f69c9'] = $pane;
     $display->panels['right'][0] = 'new-9920eae0-f345-429d-91a4-5c4c4a6f69c9';
     $pane = new stdClass();
+    $pane->pid = 'new-dbe30117-2684-4fba-a144-37695e48a5b1';
+    $pane->panel = 'wide';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:43';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'dbe30117-2684-4fba-a144-37695e48a5b1';
+    $display->content['new-dbe30117-2684-4fba-a144-37695e48a5b1'] = $pane;
+    $display->panels['wide'][0] = 'new-dbe30117-2684-4fba-a144-37695e48a5b1';
+    $pane = new stdClass();
     $pane->pid = 'new-2174f8c4-826b-4673-9a6e-d997249295be';
     $pane->panel = 'wide';
     $pane->type = 'fieldable_panels_pane';
@@ -637,14 +658,56 @@ function noticia_cetav_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h2',
+          'class_enable' => 1,
+          'class' => 'title-headers',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '2174f8c4-826b-4673-9a6e-d997249295be';
     $display->content['new-2174f8c4-826b-4673-9a6e-d997249295be'] = $pane;
-    $display->panels['wide'][0] = 'new-2174f8c4-826b-4673-9a6e-d997249295be';
+    $display->panels['wide'][1] = 'new-2174f8c4-826b-4673-9a6e-d997249295be';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

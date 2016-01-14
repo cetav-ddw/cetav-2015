@@ -40,12 +40,19 @@
 
     a {
         height: 100%;
-        left: 0;
         overflow: hidden;
         position: absolute;
         text-indent: 100%;
         top: 0;
-        width: 100%;
+        width: 50%;
         white-space: nowrap;
+    }
+
+    .facebook{
+        right: 0;
+    }
+
+    .vimeo{
+        left: 0;
     }
 }

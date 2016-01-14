@@ -46,9 +46,9 @@
       }
 
       function requiredForm() {
-        $("input").prop("required",true);
-        $("#edit-field-form-email-und-0-email").prop("type", "email");
-        $( "#edit-field-form-nombre-und-0-value" ).on( "keypress", function( event ) {
+        $("input").attr("required","required");
+        $("#edit-field-form-email-und-0-email").attr("type", "email");
+        $( "#edit-field-form-nombre-und-0-value" ).bind( "keypress", function( event ) {
           return validateText(event);
         });
       }
@@ -65,15 +65,29 @@
         return patron.test(tecla_final);
       }
 
+      function typed() {
+        $("#typed").typed({
+        stringsElement: $("#typed-strings"),
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: false,
+        contentType: "html", // or text
+        loopCount: false
+        });
+
+        $(".reset").click(function(){
+          $("#typed").typed("reset");
+        });
+      }
+
 
       return {
-        cetavMenuToggle : menuToggle,
-        cetavDisplayFormCourse : displayFormCourse,
-        cetavShowMenu : showMenu,
-        cetavShowSubmenu : showSubmenu,
-        cetavshowSearch : showSearch,
-        cetavRequiredForm : requiredForm,
-        cetavValidateText : validateText
+        cetavMenuToggle        :  menuToggle,
+        cetavDisplayFormCourse :  displayFormCourse,
+        cetavShowMenu          :  showMenu,
+        cetavShowSubmenu       :  showSubmenu,
+        cetavRequiredForm      :  requiredForm,
+        cetavTyped             :  typed
       };
 
     })();
@@ -84,7 +98,7 @@
     cetav.cetavshowSearch();
     cetav.cetavDisplayFormCourse();
     cetav.cetavRequiredForm();
-    cetav.cetavValidateText();
+    cetav.cetavTyped();
 
   });
 

@@ -263,7 +263,9 @@ function panels_cetav_admision_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -347,7 +349,9 @@ function panels_cetav_admision_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -421,8 +425,90 @@ function panels_cetav_admision_default_page_manager_pages() {
     $display->content['new-85e09660-3c8b-43c7-8b57-327c91aa9d5c'] = $pane;
     $display->panels['right_second'][0] = 'new-85e09660-3c8b-43c7-8b57-327c91aa9d5c';
     $pane = new stdClass();
-    $pane->pid = 'new-e67f4b1e-e53c-4c21-a2b7-52b170909eac';
+    $pane->pid = 'new-c7a0a41a-84cb-48a9-8d56-5fee04bd310b';
     $pane->panel = 'wide';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:44';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c7a0a41a-84cb-48a9-8d56-5fee04bd310b';
+    $display->content['new-c7a0a41a-84cb-48a9-8d56-5fee04bd310b'] = $pane;
+    $display->panels['wide'][0] = 'new-c7a0a41a-84cb-48a9-8d56-5fee04bd310b';
+    $pane = new stdClass();
+    $pane->pid = 'new-77a2bcfe-2349-419f-a9be-a8ce6f94ddb7';
+    $pane->panel = 'wide';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:45';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 1,
+          'class' => 'title-headers',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '77a2bcfe-2349-419f-a9be-a8ce6f94ddb7';
+    $display->content['new-77a2bcfe-2349-419f-a9be-a8ce6f94ddb7'] = $pane;
+    $display->panels['wide'][1] = 'new-77a2bcfe-2349-419f-a9be-a8ce6f94ddb7';
+    $pane = new stdClass();
+    $pane->pid = 'new-e67f4b1e-e53c-4c21-a2b7-52b170909eac';
+    $pane->panel = 'wide_second';
     $pane->type = 'fieldable_panels_pane';
     $pane->subtype = 'fpid:24';
     $pane->shown = TRUE;
@@ -431,14 +517,16 @@ function panels_cetav_admision_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'e67f4b1e-e53c-4c21-a2b7-52b170909eac';
     $display->content['new-e67f4b1e-e53c-4c21-a2b7-52b170909eac'] = $pane;
-    $display->panels['wide'][0] = 'new-e67f4b1e-e53c-4c21-a2b7-52b170909eac';
+    $display->panels['wide_second'][0] = 'new-e67f4b1e-e53c-4c21-a2b7-52b170909eac';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

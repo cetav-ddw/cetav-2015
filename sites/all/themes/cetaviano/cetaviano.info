@@ -36,10 +36,10 @@ regions[below_content]                = Below Content
 regions[footer]                       = Footer
 regions[closure]                      = Closure
 
-;-------------- Panel custom layouts -------------
+;-------------- PANELS CUSTOM LAYOUTS -------------
 plugins[panels][layouts] = layouts
 
-;-------------- FOAD -------------
+;-------------- F O A D -------------
 stylesheets[all][] = node.css
 stylesheets[all][] = field.css
 stylesheets[all][] = user.css
