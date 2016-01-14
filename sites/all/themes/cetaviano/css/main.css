@@ -2773,13 +2773,10 @@ footer {
 
 .icon-animacion div {
   position: absolute;
-  top: 25em;
+  top: 280px;
   right: 0;
   bottom: 0;
   left: 0; }
-  @media only screen and (min-width: 68.75em) {
-    .icon-animacion div {
-      top: 30em; } }
 
 .container-gif-animacion {
   background-image: url(../images/animacion-cover.png); }
@@ -2790,14 +2787,11 @@ footer {
     transition: all 0.3s ease; } }
 
 .icon-web div {
-  position: absolute;
-  top: 25em;
-  right: 0;
   bottom: 0;
-  left: 0; }
-  @media only screen and (min-width: 68.75em) {
-    .icon-web div {
-      top: 30em; } }
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 280px; }
 
 .container-gif-web {
   background-image: url(../images/web-cover.png); }
@@ -2811,16 +2805,8 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0;
-  left: 0; }
-  @media only screen and (min-width: 20em) {
-    .icon-post div {
-      top: 28em; } }
-  @media only screen and (min-width: 68.75em) {
-    .icon-post div {
-      top: 31.5em; } }
-  @media only screen and (min-width: 87.5em) {
-    .icon-post div {
-      top: 30em; } }
+  left: 0;
+  top: 280px; }
 
 .container-gif-post {
   background-image: url(../images/post-cover.png); }
