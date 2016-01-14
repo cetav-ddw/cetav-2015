@@ -76,7 +76,7 @@ input[type="file"]{
         }
     }
 
-    input[type="text"].form-text {
+    input[type="email"].form-text {
         @include font-size(16);
         background-color: #ececec;
         border: 0;
