@@ -726,7 +726,7 @@ input[type="file"] {
   .bottom-part .password-float a {
     float: right; }
 
-.panel-cetav-institucion {
+.panel-cetav-institucion > p {
   padding: 20px; }
 
 .personal-institution {
@@ -1891,7 +1891,7 @@ div.password-suggestions ul {
         border-bottom: none;
         border-right: 1px solid #848286; } }
 
-.panel-cetav-institucion {
+.panel-cetav-institucion > p {
   padding: 20px; }
 
 .personal-institution {
