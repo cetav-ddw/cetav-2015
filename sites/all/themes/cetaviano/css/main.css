@@ -1815,9 +1815,7 @@ div.password-suggestions ul {
 
 .panel-cetav-cursos-libres img {
   border: 0;
-  box-shadow: 0 0 8px #77787b;
-  height: auto;
-  width: 100%; }
+  box-shadow: 0 0 8px #77787b; }
 
 .panel-cetav-cursos-libres p {
   color: #77787b; }

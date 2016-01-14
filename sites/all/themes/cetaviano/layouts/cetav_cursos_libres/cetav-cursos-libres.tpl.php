@@ -7,7 +7,7 @@
  */
 ?>
 <div class="panel-display panel-cetav-cursos-libres">
-  <div class="center-wrapper">
+  <div class="center-wrapper grid-width">
     <div class="panel-container panel-left-column">
       <?php print $content['left']; ?>
     </div>
@@ -20,7 +20,7 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper center-wrapper-courses">
+  <div class="center-wrapper center-wrapper-courses grid-width">
     <div class="panel-container panel-left-column">
       <?php print $content['left_second']; ?>
     </div>
