@@ -625,7 +625,7 @@ input[type="file"] {
       display: inline-block;
       width: auto; } }
 
-.course-form input[type="text"].form-text {
+.course-form input[type="email"].form-text {
   font-size: 16px;
   font-size: 1.6rem;
   background-color: #ececec;
