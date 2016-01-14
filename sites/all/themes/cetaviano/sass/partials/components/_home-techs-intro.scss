@@ -142,13 +142,10 @@
 // gif background para cada carrera
 .icon-animacion div {
     position: absolute;
-    top: 25em;
+    top: 280px;
     right: 0;
     bottom: 0;
     left: 0;
-    @include mquery("large") {
-        top: 30em;
-    }
 }
 
 .container-gif-animacion {
@@ -163,14 +160,11 @@
 }
 
 .icon-web div {
-    position: absolute;
-    top: 25em;
-    right: 0;
     bottom: 0;
     left: 0;
-    @include mquery("large") {
-        top: 30em;
-    }
+    position: absolute;
+    right: 0;
+    top: 280px;
 }
 
 .container-gif-web {
@@ -189,16 +183,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-
-    @include mquery("base") {
-        top: 28em;
-    }
-    @include mquery("large") {
-        top: 31.5em;
-    }
-    @include mquery("x-large") {
-        top: 30em;
-    }
+    top: 280px;
 }
 
 .container-gif-post {
