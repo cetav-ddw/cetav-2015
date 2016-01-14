@@ -530,13 +530,16 @@ img {
   position: relative; }
   .social-icon a {
     height: 100%;
-    left: 0;
     overflow: hidden;
     position: absolute;
     text-indent: 100%;
     top: 0;
-    width: 100%;
+    width: 50%;
     white-space: nowrap; }
+  .social-icon .facebook {
+    right: 0; }
+  .social-icon .vimeo {
+    left: 0; }
 
 label,
 .webform-container-inline label {

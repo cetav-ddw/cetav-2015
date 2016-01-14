@@ -140,8 +140,8 @@
       <div class="contact-info">
         <h5>¿Cómo llegar?</h5>
         <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
-        <a href="#" class="btn-direction">Ver con Waze</a>
-        <a href="#" class="btn-direction">Ver con Maps</a>
+        <a href="https://www.waze.com/es/livemap?zoom=17&lat=9.88995&lon=-84.03393" class="btn-direction" target="_blank">Ver con Waze</a>
+        <a href="https://www.google.com/maps/place/Parque+la+Libertad/@9.8864408,-84.0333174,14.54z/data=!4m2!3m1!1s0x0:0x3aff2bcc0b34d035" target="_blank" class="btn-direction">Ver con Maps</a>
       </div>
       <div class="contact-info">
         <h5>Contacto</h5>
@@ -149,8 +149,8 @@
         <p>E-mail: cetav@parquelalibertad.org</p>
         <nav>
           <ul class="social-icon icon-list">
-            <li><i class="icon-face"><a href="#">facebook</a></i></li>
-            <li><i class="icon-vimeo"><a href="#">vimeo</a></i></li>
+            <li><i class="icon-vimeo"><a class="vimeo" href="https://vimeo.com/cetav" target="_blank">vimeo</a></i></li>
+            <li><i class="icon-face"><a class="facebook" href="https://www.facebook.com/cetavcr" target="_blank">facebook</a></i></li>
           </ul>
         </nav>
       </div>
