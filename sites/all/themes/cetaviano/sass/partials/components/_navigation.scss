@@ -1,4 +1,4 @@
-.header-style{
+.header-style {
     background-color: $white;
     height: 100%;
     position: absolute;
@@ -7,9 +7,20 @@
 }
 
 .menu-highlights {
-
     @include mquery("medium") {
         background-color: $orange;
+    }
+    
+    a {
+        display: none;
+
+        @include mquery("medium") {
+            @include font-size(16);
+            color: $white;
+            display: block;
+            float: right;
+            margin: -50px 0;
+        }
     }
     .menu-highlights-content {
         @include mquery("medium") {
@@ -22,16 +33,6 @@
         }
         @include mquery("x-large") {
             width: 1200px;
-        }
-    }
-    a {
-        display: none;
-        @include mquery("medium") {
-            @include font-size(16);
-            color: $white;
-            display: block;
-            float: right;
-            margin: -50px 0;
         }
     }
 }
@@ -47,6 +48,7 @@
 
 .nav-main {
     margin-top: 150px;
+
     @include mquery("medium") {
         background-color: $white;
         margin: 0 auto;
@@ -62,10 +64,10 @@
 }
 
 .site-logo {
-
     @include mquery("medium") {
         float: left;
     }
+
     img {
         margin: 25px 20px;
         position: absolute;
@@ -88,6 +90,7 @@
     position: absolute;
     top: 110px;
     width: 91.5%;
+
     @include mquery("medium") {
         right: 48px;
         top: 144px;
@@ -303,17 +306,11 @@ div .views-exposed-form, .content > .menu {
     border-radius: 2px;
     height: 3px;
     margin: 6px 0;
-    -moz-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     width: 100%;
 }
 
 .extended {
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 
     li {
