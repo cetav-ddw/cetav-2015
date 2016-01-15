@@ -10,7 +10,7 @@
     @include mquery("medium") {
         background-color: $orange;
     }
-    
+
     a {
         display: none;
 
@@ -157,7 +157,7 @@
     }
 }
 
-div .views-exposed-form, 
+header div .views-exposed-form,
 .content > .menu {
     display: none;
 
@@ -276,7 +276,7 @@ div .views-exposed-form,
     position: absolute;
     right: 0;
     top: 0;
-    
+
     .menu-toggle {
         cursor: pointer;
         height: 30px;
