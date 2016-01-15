@@ -6,56 +6,6 @@
     z-index: 99;
 }
 
-.menu-highlights {
-    @include mquery("medium") {
-        background-color: $orange;
-        border-bottom: 2px solid $dark-orange;
-        padding-top:5px;
-    }
-
-    .link-nav {
-        display: none;
-
-        @include mquery("medium") {
-            @include font-size(13);
-            color: $white;
-            display: block;
-            float: right;
-            font-weight: bold;
-            margin: -70px 0;
-            text-decoration: none;
-        }
-    }
-    .menu-highlights-content {
-        @include mquery("medium") {
-            height: 80px;
-            margin: 0 auto;
-            width: 800px;
-        }
-        @include mquery("large") {
-            width: 1000px;
-        }
-        @include mquery("x-large") {
-            width: 1200px;
-        }
-    }
-}
-
-.link-pll{
-    padding: 35px;
-    position: absolute;
-    text-indent: 100%;
-}
-
-.pll-logo{
-    @include mquery("medium") {
-        background: url(../images/logo-parque-ministerio.png) no-repeat;
-        background-size: 165px;
-        height: 100px;
-        width: 100%;
-    }
-}
-
 .nav-main {
     background-color: $white;
     margin-top: 150px;
@@ -92,7 +42,7 @@
     }
 }
 
-.main .title{
+.main .title {
     display: none;
 }
 

@@ -47,3 +47,25 @@
 .panel-header {
     padding: 0;
 }
+
+.helper-nav {
+    @include mquery("medium") {
+        background-color: $orange;
+        border-bottom: 2px solid $dark-orange;
+        padding: 8px 0;
+    }
+}
+
+.helper-nav-content {
+    @include mquery("medium") {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 800px;
+    }
+    @include mquery("large") {
+        width: 1000px;
+    }
+    @include mquery("x-large") {
+        width: 1200px;
+    }
+}
