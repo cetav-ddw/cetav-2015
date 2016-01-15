@@ -39,6 +39,12 @@
         });
       }
 
+      function showSearch() {
+        $("#edit-submit-global-search").click(function() {
+          $(".views-widget-filter-search_api_multi_fulltext").toggleClass("display");
+        });
+      }
+
       function requiredForm() {
         $("input").attr("required","required");
         $("#edit-field-form-email-und-0-email").attr("type", "email");
@@ -47,8 +53,7 @@
         });
       }
 
-      function validateText(e) {
-        console.log(e);
+      function validateText(e){
         var tecla = (document.all) ? e.keyCode : e.which;
         //Tecla de retroceso para borrar, siempre la permite
         if (tecla===8) {
@@ -81,6 +86,7 @@
         cetavDisplayFormCourse :  displayFormCourse,
         cetavShowMenu          :  showMenu,
         cetavShowSubmenu       :  showSubmenu,
+        cetavshowSearch        :  showSearch,
         cetavRequiredForm      :  requiredForm,
         cetavTyped             :  typed
       };
@@ -90,6 +96,7 @@
     cetav.cetavMenuToggle();
     cetav.cetavShowSubmenu();
     cetav.cetavShowMenu();
+    cetav.cetavshowSearch();
     cetav.cetavDisplayFormCourse();
     cetav.cetavRequiredForm();
     cetav.cetavTyped();
@@ -97,4 +104,3 @@
   });
 
 }(jQuery));
-
