@@ -9,22 +9,26 @@
 .menu-highlights {
     @include mquery("medium") {
         background-color: $orange;
+        border-bottom: 2px solid $dark-orange;
+        padding-top:5px;
     }
-    
-    a {
+
+    .link-nav {
         display: none;
 
         @include mquery("medium") {
-            @include font-size(16);
+            @include font-size(13);
             color: $white;
             display: block;
             float: right;
-            margin: -50px 0;
+            font-weight: bold;
+            margin: -70px 0;
+            text-decoration: none;
         }
     }
     .menu-highlights-content {
         @include mquery("medium") {
-            height: 120px;
+            height: 80px;
             margin: 0 auto;
             width: 800px;
         }
@@ -37,16 +41,23 @@
     }
 }
 
+.link-pll{
+    padding: 35px;
+    position: absolute;
+    text-indent: 100%;
+}
+
 .pll-logo{
     @include mquery("medium") {
-        background: url(../images/logo-parque.png) no-repeat;
-        background-size: 50%;
+        background: url(../images/logo-parque-ministerio.png) no-repeat;
+        background-size: 165px;
         height: 100px;
-        width: 140px;
+        width: 100%;
     }
 }
 
 .nav-main {
+    background-color: $white;
     margin-top: 150px;
 
     @include mquery("medium") {
@@ -76,7 +87,7 @@
 
         @include mquery("medium") {
             margin: 25px 0;
-            top: 120px;
+            top: 85px;
         }
     }
 }
@@ -107,16 +118,16 @@
        border-right: 0;
        margin: 0;
        padding-bottom: 3%;
-
        .menu {
             position: absolute;
             text-align: left;
             width: 230px;
         }
+
         &:hover {
             .menu {
                 display: block;
-                height: 265px;
+                height: 220px;
                 position: absolute;
                 transition: all 0.3s ease;
                 background: #f3f3f3;
@@ -126,11 +137,12 @@
             }
             li {
                 display: block;
-                margin: 15px;
-                padding: 10px 20px;
+                margin: 10px;
+                padding: 8px 20px;
                 width: 90%;
                 transition: border 0.3s ease;
                 border: none;
+                border-bottom: solid #fff 1px;
 
                 &:hover {
                     a {
@@ -157,13 +169,18 @@
     }
 }
 
-div .views-exposed-form, 
+div .views-exposed-form,
 .content > .menu {
     display: none;
 
     @include mquery("medium") {
         display: block;
         width: 94%;
+
+        .nolink{
+            border-right: 1px solid $dark-gray;
+            padding: 0 18px;
+        }
 
         li {
             border-right: 1px solid $dark-gray;
@@ -172,16 +189,22 @@ div .views-exposed-form,
             font-weight: 600;
             list-style: none;
             margin: 35px 0;
-            padding: 0 18px;
             text-transform: uppercase;
 
-            a {
+                &:nth-child(n+2){
+                    padding: 0 18px;
+                }
+
+            a,
+            span {
                 color: $dark-gray;
+                cursor: pointer;
                 text-decoration: none;
+
+                &:hover{
+                    color: $orange;
+                }
             }
-        }
-        & li:nth-child(2) {
-            border-left: 0 solid $dark-gray;
         }
     }
 }
@@ -203,8 +226,10 @@ div .views-exposed-form,
         @include font-size(18);
         list-style: none;
         padding: 16px;
+        border-bottom: solid #fff 1px;
+
         span {
-            padding-right: 295px;
+            padding-right: 200px;
             @include mquery("medium") {
                 padding-right: 0;
             }
@@ -234,12 +259,14 @@ div .views-exposed-form,
     width: 19px;
 }
 
-.hola {
+.hide-content {
     overflow: hidden;
     position: fixed;
 }
 
 .nav-secundary-main {
+    background-color: $white;
+
     @include mquery("medium") {
         background-color: $dark-gray;
         margin-top: 20px;
@@ -264,6 +291,10 @@ div .views-exposed-form,
                 a{
                     color: $white;
                     @include font-size(10);
+
+                    &:hover{
+                        color: $orange;
+                    }
                 }
             }
         }
@@ -276,7 +307,7 @@ div .views-exposed-form,
     position: absolute;
     right: 0;
     top: 0;
-    
+
     .menu-toggle {
         cursor: pointer;
         height: 30px;
@@ -292,15 +323,15 @@ div .views-exposed-form,
     display: none;
 }
 
-.menu-toggle.on .one {
+.menu-toggle.on .menu-toggle-one {
     transform: rotate(45deg) translate(12px, 10px);
 }
 
-.menu-toggle.on .two {
+.menu-toggle.on .menu-toggle-two {
     opacity: 0;
 }
 
-.menu-toggle.on .three {
+.menu-toggle.on .menu-toggle-three {
     transform: rotate(-45deg) translate(2px, -1px);
 }
 

@@ -46,7 +46,9 @@
   <?php if ($page['navigation']): ?>
     <div class="menu-highlights">
       <div class="menu-highlights-content">
-        <div class="pll-logo"></div>
+        <div class="pll-logo">
+          <a class="link-pll" href="http://parquelalibertad.org">parquelalibertad.org</a>
+        </div>
         <a class="link-nav" href="http://parquelalibertad.org">parquelalibertad.org</a>
       </div>
     </div><!-- /menu-highlights -->
