@@ -1840,8 +1840,8 @@ div.password-suggestions ul {
 .panel-cetav-cursos-libres .panel-wide-courses {
   text-align: center;
   margin: 0 auto;
-  width: 450px;
-  height: 500px; }
+  padding-bottom: 100px;
+  width: 450px; }
   .panel-cetav-cursos-libres .panel-wide-courses form {
     font-size: 16px;
     font-size: 1.6rem;
@@ -1861,7 +1861,7 @@ div.password-suggestions ul {
   margin: 0 auto; }
 
 .show-course-form {
-  height: 400px;
+  height: 320px;
   transition: 2s; }
 
 .pane-bundle-steps-admision {
