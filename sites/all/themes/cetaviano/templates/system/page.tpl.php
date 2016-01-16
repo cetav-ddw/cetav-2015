@@ -33,7 +33,7 @@
   <?php endif; ?>
 
   <?php if ($page['navigation']): ?>
-    <nav class="nav-main">
+    <div class="nav-main">
       <div class="menu-collapse">
           <div id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
@@ -47,7 +47,7 @@
         </a>
       <?php endif; ?>
       <?php print render($page['navigation']); ?>
-    </nav>
+    </div>
   <?php endif; // end Navigation ?>
 
   <?php if ($page['secundary_navigation']): ?>

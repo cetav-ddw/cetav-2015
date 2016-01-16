@@ -69,3 +69,21 @@
         width: 1200px;
     }
 }
+
+.nav-main {
+    background-color: $white;
+    margin-top: 150px;
+
+    @include mquery("medium") {
+        background-color: $white;
+        margin: 0 auto;
+        text-align: right;
+        width: 800px;
+    }
+    @include mquery("large") {
+        width: 1000px;
+    }
+    @include mquery("x-large") {
+        width: 1200px;
+    }
+}
