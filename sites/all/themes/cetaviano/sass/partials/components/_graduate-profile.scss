@@ -44,7 +44,7 @@
         text-align: center;
 
         @include mquery("medium") {
-            @include span-columns(3);
+            width: 25%;
             margin-bottom: 0;
         }
     }
