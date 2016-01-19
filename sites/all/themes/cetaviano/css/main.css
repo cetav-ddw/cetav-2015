@@ -2295,13 +2295,8 @@ div.password-suggestions ul {
       margin-right: 0; }
     @media only screen and (min-width: 56.25em) {
       .availability-info .pane-entity-field {
-        float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 23.2317613015%;
-        margin-bottom: 0; }
-        .availability-info .pane-entity-field:last-child {
-          margin-right: 0; } }
+        width: 25%;
+        margin-bottom: 0; } }
 
 .field-name-field-acerca-de-mi .field-label,
 .field-name-field-habilidades-egresado .field-label {
