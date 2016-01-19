@@ -6,82 +6,7 @@
     z-index: 99;
 }
 
-.menu-highlights {
-    @include mquery("medium") {
-        background-color: $orange;
-    }
-
-    a {
-        display: none;
-
-        @include mquery("medium") {
-            @include font-size(16);
-            color: $white;
-            display: block;
-            float: right;
-            margin: -50px 0;
-        }
-    }
-    .menu-highlights-content {
-        @include mquery("medium") {
-            height: 120px;
-            margin: 0 auto;
-            width: 800px;
-        }
-        @include mquery("large") {
-            width: 1000px;
-        }
-        @include mquery("x-large") {
-            width: 1200px;
-        }
-    }
-}
-
-.pll-logo{
-    @include mquery("medium") {
-        background: url(../images/logo-parque.png) no-repeat;
-        background-size: 50%;
-        height: 100px;
-        width: 140px;
-    }
-}
-
-.nav-main {
-    margin-top: 150px;
-
-    @include mquery("medium") {
-        background-color: $white;
-        margin: 0 auto;
-        text-align: right;
-        width: 800px;
-    }
-    @include mquery("large") {
-        width: 1000px;
-    }
-    @include mquery("x-large") {
-        width: 1200px;
-    }
-}
-
-.site-logo {
-    @include mquery("medium") {
-        float: left;
-    }
-
-    img {
-        margin: 25px 20px;
-        position: absolute;
-        top: 0;
-        width: 140px;
-
-        @include mquery("medium") {
-            margin: 25px 0;
-            top: 120px;
-        }
-    }
-}
-
-.main .title{
+.main .title {
     display: none;
 }
 
@@ -102,17 +27,46 @@
     padding: 0;
 }
 
-#block-system-main-menu .menu li.first.expanded {
-    @include mquery("medium") {
-       border-right: 0;
-       margin: 0;
-       padding-bottom: 3%;
+div .views-exposed-form,
+#block-system-main-menu {
+    display: none;
 
-       .menu {
-            position: absolute;
-            text-align: left;
-            width: 230px;
+    @include mquery("medium") {
+        display: block;
+        width: 94%;
+
+        li {
+            color: $dark-gray;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            list-style: none;
+            margin-top: 30px;
+            position: relative;
+            text-transform: uppercase;
+
+            a,
+            span {
+                color: $dark-gray;
+                text-decoration: none;
+
+                &:hover{
+                    color: $orange;
+                }
+            }
         }
+    }
+}
+
+@include mquery("medium") {
+    #block-system-main-menu .menu a,
+    #block-system-main-menu .expanded {
+        padding: 15px 30px 27px;
+    }
+}
+
+#block-system-main-menu .expanded {
+     @include mquery("medium") {
         &:hover {
             .menu {
                 display: block;
@@ -125,26 +79,56 @@
                 width: 280px;
                 z-index: 1;
             }
-            li {
-                display: block;
-                margin: 15px;
-                padding: 10px 20px;
-                width: 90%;
-                transition: border 0.3s ease;
-                border: none;
 
+            li {
                 &:hover {
                     a {
                         color: $orange;
                     }
                 }
             }
+            .nolink {
+                color: $orange;
+            }
+            .menu {
+                display: block;
+            }
         }
     }
+    a {
+        border-bottom: 1px solid #e5e5e5;
+        border-top: 1px solid #F9F7F7;
+        display: block;
+        padding: 12px 20px;
+    }
+    li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        transition: border 0.3s ease;
+        border: 0;
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: none;
 
+        &:last-child a {
+            border-bottom: 0;
+        }
+    }
     .menu {
         display: none;
-        height: 0;
+
+        @include mquery("medium") {
+            background: #f3f3f3;
+            border-top: 4px solid $orange;
+            left: -80px;
+            position: absolute;
+            transition: all 0.3s ease;
+            text-align: left;
+            top: 50px;
+            width: 380px;
+            z-index: 10;
+        }
     }
     .show {
         background-color: #f3f3f3;
@@ -195,7 +179,8 @@ div .views-exposed-form,
     body {
         overflow: hidden;
     }
-    span, a {
+    span, 
+    a {
         color: $main-color;
         padding-bottom: 3px;
         text-decoration: none;
@@ -204,8 +189,11 @@ div .views-exposed-form,
         @include font-size(18);
         list-style: none;
         padding: 16px;
+        border-bottom: solid #fff 1px;
+
         span {
-            padding-right: 295px;
+            padding-right: 200px;
+
             @include mquery("medium") {
                 padding-right: 0;
             }
@@ -215,6 +203,7 @@ div .views-exposed-form,
 
 .views-widget-filter-search_api_multi_fulltext {
     width: 100%;
+
     @include mquery("medium") {
         visibility: hidden;
     }
@@ -235,40 +224,9 @@ div .views-exposed-form,
     width: 19px;
 }
 
-.hola {
+.hide-content {
     overflow: hidden;
     position: fixed;
-}
-
-.nav-secundary-main {
-    @include mquery("medium") {
-        background-color: $dark-gray;
-        margin-top: 20px;
-
-        .block{
-            text-align: right;
-            width: 800px;
-            margin: 0 auto;
-            @include mquery("large") {
-                width: 1000px;
-            }
-            @include mquery("x-large") {
-                width: 1200px;
-            }
-        }
-        .content .menu {
-            text-align: right;
-            margin: 0 10px;
-            li {
-                padding: 0 6px;
-                margin: 8px 2px;
-                a{
-                    color: $white;
-                    @include font-size(10);
-                }
-            }
-        }
-    }
 }
 
 .menu-collapse {
@@ -293,15 +251,15 @@ div .views-exposed-form,
     display: none;
 }
 
-.menu-toggle.on .one {
+.menu-toggle.on .menu-toggle-one {
     transform: rotate(45deg) translate(12px, 10px);
 }
 
-.menu-toggle.on .two {
+.menu-toggle.on .menu-toggle-two {
     opacity: 0;
 }
 
-.menu-toggle.on .three {
+.menu-toggle.on .menu-toggle-three {
     transform: rotate(-45deg) translate(2px, -1px);
 }
 

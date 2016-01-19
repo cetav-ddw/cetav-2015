@@ -17,40 +17,23 @@
     </div>
   </div>
   <?php endif; ?>
-  <div class="header-content">
-    <?php if ($site_name || $site_slogan): ?>
+  
+  <div class="helper-nav">
+    <div class="helper-nav-content">
+      <a class="cta-pll-logo" href="http://parquelalibertad.org">parquelalibertad.org</a>
+      
+      <a class="cta-pll-url" href="http://parquelalibertad.org">parquelalibertad.org</a>
+    </div>
+  </div><!-- /menu-highlights -->
+  
+  <?php if ($page['header']): ?>
+    <div class="header-content">
+      <?php print render($page['header']); ?>
+    </div><!-- /header-content -->
+  <?php endif; ?>
 
-        <?php if ($site_name): ?>
-          <?php if ($title): ?>
-          <div class="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-        <?php endif; ?>
-
-        <?php if ($site_slogan): ?>
-          <div class="site-slogan">
-            <?php print $site_slogan; ?>
-          </div>
-        <?php endif; ?>
-
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-
-  </div><!-- /header-content -->
   <?php if ($page['navigation']): ?>
-    <div class="menu-highlights">
-      <div class="menu-highlights-content">
-        <div class="pll-logo"></div>
-        <a class="link-nav" href="http://parquelalibertad.org">parquelalibertad.org</a>
-      </div>
-    </div><!-- /menu-highlights -->
-    <nav class="nav-main">
+    <div class="nav-main">
       <div class="menu-collapse">
           <div id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
@@ -64,7 +47,7 @@
         </a>
       <?php endif; ?>
       <?php print render($page['navigation']); ?>
-    </nav>
+    </div>
   <?php endif; // end Navigation ?>
 
   <?php if ($page['secundary_navigation']): ?>
@@ -74,8 +57,6 @@
   <?php endif; // end secundary_Navigation ?>
 
 </header>
-
-
 
 <?php if ($page['above_content']): ?>
   <section class="above-content">
