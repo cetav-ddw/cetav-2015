@@ -11,7 +11,7 @@
         @include mquery("medium") {
             @include span-columns(8);
         }
-    } 
+    }
     .panel-right-column {
         @include mquery("medium") {
             @include span-columns(4);
@@ -42,7 +42,7 @@
         text-align: center;
 
         @include mquery("medium") {
-            @include span-columns(3);
+            width: 25%;
         }
     }
 }
