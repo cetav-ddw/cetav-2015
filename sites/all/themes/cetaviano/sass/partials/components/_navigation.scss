@@ -68,6 +68,18 @@ div .views-exposed-form,
 #block-system-main-menu .expanded {
      @include mquery("medium") {
         &:hover {
+            .menu {
+                display: block;
+                height: 265px;
+                position: absolute;
+                transition: all 0.3s ease;
+                background: #f3f3f3;
+                border-top: 4px solid $orange;
+                margin-top: 15px;
+                width: 280px;
+                z-index: 1;
+            }
+
             li {
                 &:hover {
                     a {
@@ -126,6 +138,35 @@ div .views-exposed-form,
 
         li a {
             color: $dark-gray;
+        }
+    }
+}
+
+.header div .views-exposed-form,
+.content > .menu {
+    display: none;
+
+    @include mquery("medium") {
+        display: block;
+        width: 94%;
+
+        li {
+            border-right: 1px solid $dark-gray;
+            color: $dark-gray;
+            display: inline-block;
+            font-weight: 600;
+            list-style: none;
+            margin: 35px 0;
+            padding: 0 18px;
+            text-transform: uppercase;
+
+            a {
+                color: $dark-gray;
+                text-decoration: none;
+            }
+        }
+        & li:nth-child(2) {
+            border-left: 0 solid $dark-gray;
         }
     }
 }
@@ -230,7 +271,7 @@ div .views-exposed-form,
     border-radius: 2px;
     height: 3px;
     margin: 6px 0;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
     width: 100%;
 }
 

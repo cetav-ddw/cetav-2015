@@ -25,14 +25,16 @@
     border-top: 1px solid #ececec;
     color: #848286;
     margin: 25px 0;
-    padding: 24px 0;
+    padding: 15px 0;
 
     a {
         color: #848286;
+        text-decoration: none;
     }
     i {
         @include font-size(22);
         color: $blue-dark;
+        font-style: normal;
         margin-bottom: 6px;
     }
     .pane-entity-field{
@@ -43,6 +45,7 @@
 
         @include mquery("medium") {
             width: 25%;
+            margin-bottom: 0;
         }
     }
 }

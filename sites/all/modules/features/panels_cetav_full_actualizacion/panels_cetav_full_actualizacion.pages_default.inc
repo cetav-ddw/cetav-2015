@@ -700,7 +700,7 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
     $display->content['new-f9a11063-11f5-438e-a954-41e241fb95c5'] = $pane;
     $display->panels['left_second'][3] = 'new-f9a11063-11f5-438e-a954-41e241fb95c5';
     $pane = new stdClass();
-    $pane->pid = 'new-adc10f87-6559-4fb0-9807-14254abca939';
+    $pane->pid = 'new-975cba1c-86af-4687-b491-a467b0b1ff6d';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_imagen_curso';
@@ -713,7 +713,7 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_style' => '',
+        'image_style' => 'imagen_en_el_curso_especifico',
         'image_link' => '',
       ),
       'context' => 'argument_entity_id:node_1',
@@ -729,9 +729,9 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'adc10f87-6559-4fb0-9807-14254abca939';
-    $display->content['new-adc10f87-6559-4fb0-9807-14254abca939'] = $pane;
-    $display->panels['right'][0] = 'new-adc10f87-6559-4fb0-9807-14254abca939';
+    $pane->uuid = '975cba1c-86af-4687-b491-a467b0b1ff6d';
+    $display->content['new-975cba1c-86af-4687-b491-a467b0b1ff6d'] = $pane;
+    $display->panels['right'][0] = 'new-975cba1c-86af-4687-b491-a467b0b1ff6d';
     $pane = new stdClass();
     $pane->pid = 'new-4a69a0c3-afa4-4477-9c2a-52074abc1366';
     $pane->panel = 'right_second';

@@ -79,7 +79,47 @@ function panels_cetav_institucion_default_page_manager_pages() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 1,
+          'class' => 'intro-admin',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -152,6 +192,25 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $display->content['new-7e1ab8fa-06ef-4301-8be9-43a484b6c25f'] = $pane;
     $display->panels['right_second'][0] = 'new-7e1ab8fa-06ef-4301-8be9-43a484b6c25f';
     $pane = new stdClass();
+    $pane->pid = 'new-c961f169-2b7a-4547-9f11-4c21c26d4d15';
+    $pane->panel = 'wide';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:47';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array();
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c961f169-2b7a-4547-9f11-4c21c26d4d15';
+    $display->content['new-c961f169-2b7a-4547-9f11-4c21c26d4d15'] = $pane;
+    $display->panels['wide'][0] = 'new-c961f169-2b7a-4547-9f11-4c21c26d4d15';
+    $pane = new stdClass();
     $pane->pid = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
     $pane->panel = 'wide';
     $pane->type = 'fieldable_panels_pane';
@@ -207,11 +266,11 @@ function panels_cetav_institucion_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '94afee93-0a9a-4eb9-b124-057aba80cf8c';
     $display->content['new-94afee93-0a9a-4eb9-b124-057aba80cf8c'] = $pane;
-    $display->panels['wide'][0] = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
+    $display->panels['wide'][1] = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
     $pane = new stdClass();
     $pane->pid = 'new-c18787d3-9797-49e7-90ce-ef0fcc5d6548';
     $pane->panel = 'wide_main';
@@ -262,7 +321,7 @@ function panels_cetav_institucion_default_page_manager_pages() {
           'attributes_array' => array(),
         ),
         'element_content' => array(
-          'type' => 'h2',
+          'type' => '',
           'class_enable' => 1,
           'class' => 'title-headers',
           'attributes' => array(),

@@ -442,6 +442,39 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $display->content['new-94bbdff5-7a72-4784-b9f8-89c8193ea3e8'] = $pane;
     $display->panels['wide'][8] = 'new-94bbdff5-7a72-4784-b9f8-89c8193ea3e8';
     $pane = new stdClass();
+    $pane->pid = 'new-4d2df9d9-c158-4844-ba7b-bfc2f33e920b';
+    $pane->panel = 'wide';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_portfolio';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'link_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'social-icon',
+    );
+    $pane->extras = array();
+    $pane->position = 9;
+    $pane->locks = array();
+    $pane->uuid = '4d2df9d9-c158-4844-ba7b-bfc2f33e920b';
+    $display->content['new-4d2df9d9-c158-4844-ba7b-bfc2f33e920b'] = $pane;
+    $display->panels['wide'][9] = 'new-4d2df9d9-c158-4844-ba7b-bfc2f33e920b';
+    $pane = new stdClass();
     $pane->pid = 'new-fcce9ddd-bbdc-4260-95c7-9d80337be7ba';
     $pane->panel = 'wide_second';
     $pane->type = 'entity_field';

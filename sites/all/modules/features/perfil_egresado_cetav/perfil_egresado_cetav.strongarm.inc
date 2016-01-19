@@ -96,7 +96,7 @@ function perfil_egresado_cetav_strongarm() {
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '18',
+          'weight' => '19',
         ),
       ),
       'display' => array(),
