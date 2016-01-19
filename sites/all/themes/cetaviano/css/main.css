@@ -2273,13 +2273,15 @@ div.password-suggestions ul {
   border-top: 1px solid #ececec;
   color: #848286;
   margin: 25px 0;
-  padding: 24px 0; }
+  padding: 15px 0; }
   .availability-info a {
-    color: #848286; }
+    color: #848286;
+    text-decoration: none; }
   .availability-info i {
     font-size: 22px;
     font-size: 2.2rem;
     color: #243842;
+    font-style: normal;
     margin-bottom: 6px; }
   .availability-info .pane-entity-field {
     float: left;
@@ -2296,7 +2298,8 @@ div.password-suggestions ul {
         float: left;
         display: block;
         margin-right: 2.3576515979%;
-        width: 23.2317613015%; }
+        width: 23.2317613015%;
+        margin-bottom: 0; }
         .availability-info .pane-entity-field:last-child {
           margin-right: 0; } }
 
