@@ -21,13 +21,13 @@
 
     @include mquery("small") {
         @include span-columns(6);
-        @include omega();       
+        @include omega();
         vertical-top: top;
     }
 
     @include mquery("medium") {
         @include span-columns(4);
-        margin: 30px 13px;        
+        margin: 30px 13px;
         @include omega();
         vertical-top: top;
     }
@@ -40,7 +40,14 @@
     width: 100%;
 
     p {
+        @include font-size(16);
         color: $white;
+        margin-top: 33px;
+        width: 95%;
+
+        @include mquery("medium") {
+            float: right;
+        }
     }
 }
 
@@ -52,13 +59,15 @@
     h4 {
         @include font-size(22);
         color: $light-blue;
+        margin-top: 33px;
+        width: 95%;
 
         @include mquery("medium") {
             @include font-size(28);
         }
     }
 }
-    
+
 .pane-node-field-cuerpo-skills-carreras {
     @include mquery("medium") {
         @include span-columns(7);
