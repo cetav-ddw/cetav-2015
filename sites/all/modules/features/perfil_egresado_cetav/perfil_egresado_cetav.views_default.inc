@@ -249,9 +249,10 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['children'] = array(
     0 => 'title',
-    1 => 'field_profesion_egresado',
-    2 => 'field_generacion_egresado',
-    3 => 'field_disponibilidad_egresado',
+    1 => 'field_apellido',
+    2 => 'field_profesion_egresado',
+    3 => 'field_generacion_egresado',
+    4 => 'field_disponibilidad_egresado',
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'profesional-info-container';
@@ -264,6 +265,12 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'profile-name';
+  /* Field: Content: Apellido */
+  $handler->display->display_options['fields']['field_apellido']['id'] = 'field_apellido';
+  $handler->display->display_options['fields']['field_apellido']['table'] = 'field_data_field_apellido';
+  $handler->display->display_options['fields']['field_apellido']['field'] = 'field_apellido';
+  $handler->display->display_options['fields']['field_apellido']['label'] = '';
+  $handler->display->display_options['fields']['field_apellido']['element_label_colon'] = FALSE;
   /* Field: Content: Profesión egresado */
   $handler->display->display_options['fields']['field_profesion_egresado']['id'] = 'field_profesion_egresado';
   $handler->display->display_options['fields']['field_profesion_egresado']['table'] = 'field_data_field_profesion_egresado';

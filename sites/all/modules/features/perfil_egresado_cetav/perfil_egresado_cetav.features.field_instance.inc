@@ -22,7 +22,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -59,10 +59,9 @@ function perfil_egresado_cetav_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 25,
+        'type' => 'hidden',
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -103,7 +102,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -160,7 +159,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 13,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -198,7 +197,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 9,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -236,7 +235,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 10,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -275,7 +274,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -334,7 +333,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
           'image_style' => 'imagen_en_el_perfil',
         ),
         'type' => 'image',
-        'weight' => 12,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -382,7 +381,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -420,7 +419,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -477,7 +476,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -522,7 +521,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 24,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -579,7 +578,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -619,7 +618,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -649,6 +648,64 @@ function perfil_egresado_cetav_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-perfil_egresado-field_portfolio'.
+  $field_instances['node-perfil_egresado-field_portfolio'] = array(
+    'bundle' => 'perfil_egresado',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_portfolio',
+    'label' => 'Portfolio',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 18,
+    ),
+  );
+
   // Exported field_instance: 'node-perfil_egresado-field_profesion_egresado'.
   $field_instances['node-perfil_egresado-field_profesion_egresado'] = array(
     'bundle' => 'perfil_egresado',
@@ -661,7 +718,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -702,7 +759,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 20,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -759,7 +816,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -820,6 +877,7 @@ function perfil_egresado_cetav_field_default_field_instances() {
   t('Linkedin');
   t('Número Teléfono');
   t('Pasatiempos');
+  t('Portfolio');
   t('Profesión egresado');
   t('Twitter');
   t('Vimeo');
