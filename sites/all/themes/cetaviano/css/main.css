@@ -2208,7 +2208,7 @@ div.password-suggestions ul {
   @media only screen and (min-width: 68.75em) {
     .view-preview-free-course {
       display: inline-block;
-      margin: 50px 15px; } }
+      margin: 20px; } }
 
 .views-field-field-imagen-curso {
   overflow: hidden; }
@@ -2273,13 +2273,15 @@ div.password-suggestions ul {
   border-top: 1px solid #ececec;
   color: #848286;
   margin: 25px 0;
-  padding: 24px 0; }
+  padding: 15px 0; }
   .availability-info a {
-    color: #848286; }
+    color: #848286;
+    text-decoration: none; }
   .availability-info i {
     font-size: 22px;
     font-size: 2.2rem;
     color: #243842;
+    font-style: normal;
     margin-bottom: 6px; }
   .availability-info .pane-entity-field {
     float: left;
@@ -2296,7 +2298,8 @@ div.password-suggestions ul {
         float: left;
         display: block;
         margin-right: 2.3576515979%;
-        width: 23.2317613015%; }
+        width: 23.2317613015%;
+        margin-bottom: 0; }
         .availability-info .pane-entity-field:last-child {
           margin-right: 0; } }
 
@@ -2931,6 +2934,7 @@ footer {
 
 .pane-views-exp-egresados-panel-pane-1 .views-exposed-form {
   background-color: #243842;
+  margin: 0 auto;
   padding: 40px 72px; }
 
 .pane-views-exp-egresados-panel-pane-1 .views-exposed-form .form-item {
@@ -3012,9 +3016,10 @@ footer {
 .view-egresados .profile-name {
   font-family: "Montserrat", Arial, Verdana, sans-serif; }
   .view-egresados .profile-name a {
+    font-size: 27px;
+    font-size: 2.7rem;
     color: #243842;
-    font-size: 25px;
-    font-size: 2.5rem; }
+    text-decoration: none; }
     @media only screen and (min-width: 68.75em) {
       .view-egresados .profile-name a {
         font-size: 22px;
@@ -3051,6 +3056,8 @@ footer {
     border: 2px solid #243842;
     color: #fff;
     padding: 15px 30px;
+    font-size: 14px;
+    font-size: 1.4rem;
     font-family: "Montserrat", Arial, Verdana, sans-serif;
     margin: 0 auto;
     text-align: center;
@@ -3075,8 +3082,6 @@ footer {
       text-align: right; } }
   @media only screen and (min-width: 68.75em) {
     .see-profile {
-      font-size: 14px;
-      font-size: 1.4rem;
       margin: 35px 0;
       padding: 8px 14px; } }
 
@@ -3391,15 +3396,15 @@ div .views-exposed-form,
   #block-system-main-menu .expanded .show li a {
     color: #414042; }
 
-div .views-exposed-form,
+.header div .views-exposed-form,
 .content > .menu {
   display: none; }
   @media only screen and (min-width: 56.25em) {
-    div .views-exposed-form,
+    .header div .views-exposed-form,
     .content > .menu {
       display: block;
       width: 94%; }
-      div .views-exposed-form li,
+      .header div .views-exposed-form li,
       .content > .menu li {
         border-right: 1px solid #414042;
         color: #414042;
@@ -3409,11 +3414,11 @@ div .views-exposed-form,
         margin: 35px 0;
         padding: 0 18px;
         text-transform: uppercase; }
-        div .views-exposed-form li a,
+        .header div .views-exposed-form li a,
         .content > .menu li a {
           color: #414042;
           text-decoration: none; }
-      div .views-exposed-form li:nth-child(2),
+      .header div .views-exposed-form li:nth-child(2),
       .content > .menu li:nth-child(2) {
         border-left: 0 solid #414042; } }
 
