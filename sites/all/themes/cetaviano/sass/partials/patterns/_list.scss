@@ -4,7 +4,7 @@
 
     @include mquery("medium") {
         column-count: 2;
-    }    
+    }
 
     li {
         color: #00c9ed;
@@ -21,7 +21,7 @@
         color: $white;
         line-height: 20px;
         list-style: none;
-        margin: 0 10px 10px 20px;
+        margin-bottom: 10px;
 
         a {
             color: $white;
