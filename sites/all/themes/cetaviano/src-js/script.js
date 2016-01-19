@@ -80,15 +80,65 @@
         });
       }
 
+      function valOrFunction(val, ctx, args) {
+        if (typeof val === "function") {
+            return val.apply(ctx, args);
+        } else {
+            return val;
+        }
+      }
+
+      function InvalidInputHelper(input, options) {
+        input.setCustomValidity(valOrFunction(options.defaultText, window, [input]));
+
+        function changeOrInput() {
+            if (input.value === "") {
+                input.setCustomValidity(valOrFunction(options.emptyText, window, [input]));
+            } else {
+                input.setCustomValidity("");
+            }
+      }
+
+      function invalid() {
+            if (input.value === "") {
+                input.setCustomValidity(valOrFunction(options.emptyText, window, [input]));
+            } else {
+               console.log("INVALID!"); input.setCustomValidity(valOrFunction(options.invalidText, window, [input]));
+            }
+      }
+
+        input.addEventListener("change", changeOrInput);
+        input.addEventListener("input", changeOrInput);
+        input.addEventListener("invalid", invalid);
+    }
+
+      new InvalidInputHelper(document.getElementById("edit-field-form-nombre-und-0-value"), {
+          defaultText: "Por favor ingrese su nombre",
+          emptyText: "Por favor ingrese su nombre",
+      });
+
+      new InvalidInputHelper(document.getElementById("edit-field-form-email-und-0-email"), {
+          defaultText: "Por favor ingrese una dirección de email",
+          emptyText: "Por favor ingrese una dirección de email",
+            invalidText: function (input) {
+                return "Este email '" + input.value + "' es invalido";
+            }
+      });
+
+      new InvalidInputHelper(document.getElementById("edit-field-subir-comprobante-und-0-upload"), {
+          defaultText: "Por favor seleccione un archivo",
+          emptyText: "Por favor seleccione un archivo",
+      });
 
       return {
-        cetavMenuToggle        :  menuToggle,
-        cetavDisplayFormCourse :  displayFormCourse,
-        cetavShowMenu          :  showMenu,
-        cetavShowSubmenu       :  showSubmenu,
-        cetavshowSearch        :  showSearch,
-        cetavRequiredForm      :  requiredForm,
-        cetavTyped             :  typed
+        cetavMenuToggle             :  menuToggle,
+        cetavDisplayFormCourse      :  displayFormCourse,
+        cetavShowMenu               :  showMenu,
+        cetavShowSubmenu            :  showSubmenu,
+        cetavshowSearch             :  showSearch,
+        cetavRequiredForm           :  requiredForm,
+        cetavTyped                  :  typed,
+        cetavInvalidInputHelper     :  InvalidInputHelper
       };
 
     })();
@@ -100,6 +150,7 @@
     cetav.cetavDisplayFormCourse();
     cetav.cetavRequiredForm();
     cetav.cetavTyped();
+    cetav.cetavInvalidInputHelper();
 
   });
 
