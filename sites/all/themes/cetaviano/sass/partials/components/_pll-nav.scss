@@ -1,0 +1,24 @@
+.cta-pll-logo {
+    @include mquery("medium") {
+        background: url(../images/logo-parque-ministerio.png) no-repeat;
+        background-size: 165px;
+        height: 68px;
+        width: 230px;
+        float: left;
+        text-indent: -9999px;
+    }
+}
+
+.cta-pll-url {
+    display: none;
+
+    @include mquery("medium") {
+        color: $white;
+        display: block;
+        float: right;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 28px;
+        text-decoration: none;
+    }
+}
