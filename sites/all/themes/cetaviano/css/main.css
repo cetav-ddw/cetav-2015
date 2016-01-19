@@ -3501,7 +3501,7 @@ div .views-exposed-form,
   border-radius: 2px;
   height: 3px;
   margin: 6px 0;
-  transition-duration: 0.3s;
+  transition-duration: .3s;
   width: 100%; }
 
 .extended {
