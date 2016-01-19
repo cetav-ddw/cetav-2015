@@ -9,7 +9,7 @@ footer {
     h5 {
         margin: 2px 0 20px;
     }
-    h5, 
+    h5,
     p {
         color: $white;
     }
@@ -22,10 +22,6 @@ footer {
     }
     .grid-width {
         padding: 0 16px;
-
-        @include mquery("medium") {
-            padding: 0;
-        }
     }
 }
 
@@ -35,27 +31,27 @@ footer {
     display: inline-block;
     height: 118px;
     text-align: center;
-    width: 65%;
+    width: 275px;
 
     @include mquery("small") {
         height: 99px;
-        width: 40%;
+        width: 245px;
     }
 
     @include mquery("medium") {
         height: 110px;
-        width: 81%;
+        width: 256px;
     }
 
     @include mquery("large") {
         height: 112px;
-        width: 70%;
+        width: 261px;
     }
 }
 
 .icon-list {
     list-style: none;
-    
+
     li {
         @include font-size(30);
         display: inline-block;
