@@ -22,6 +22,7 @@
 .pane-views-exp-egresados-panel-pane-1 {
     .views-exposed-form {
         background-color: $blue-dark;
+        margin: 0 auto;
         padding: 40px 72px;
     }
     .views-exposed-form .form-item {
@@ -102,8 +103,9 @@
         font-family: $contrast-font;
 
         a {
+            @include font-size(27);
             color: $blue-dark;
-            @include font-size(25);
+            text-decoration: none;
 
             @include mquery("large") {
                 @include font-size(22);
@@ -114,7 +116,7 @@
     }
 }
 
-.profile-image, 
+.profile-image,
 .pane-node-field-foto-perfil {
     img {
         border-radius: 100%;
@@ -146,6 +148,7 @@
 
     a {
         @include button($blue-dark, $blue-dark, $white);
+        @include font-size(14);
         font-family: $contrast-font;
         margin: 0 auto;
         text-align: center;
@@ -165,7 +168,6 @@
     }
 
     @include mquery('large') {
-        @include font-size(14);
         margin: 35px 0;
         padding: 8px 14px;
     }
