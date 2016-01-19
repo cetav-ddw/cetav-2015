@@ -24,7 +24,7 @@
 .course-details {
     p {
         @include font-size(14);
-        margin: 20px 10px;
+        margin: 10px 0;
 
         &:first-of-type {
             @include font-size(16);
@@ -39,8 +39,7 @@
 .course-info {
     @include font-size(16);
     color: $gray;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 2px;
 
     .date-display-range span {
         color: $gray;
@@ -49,7 +48,6 @@
     .date-display-range,
     .label-inline {
         display: inline;
-        font-weight: bold;
     }
     .label-inline {
         color: $dark-gray;
@@ -117,7 +115,7 @@
     h3,
     h4 {
         color: $light-blue;
-        margin-bottom: 25px
+        margin-bottom: 15px
     }
     img {
         border: 0;
