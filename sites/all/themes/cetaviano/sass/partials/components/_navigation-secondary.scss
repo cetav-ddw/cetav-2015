@@ -1,0 +1,39 @@
+.nav-secundary-main {
+    background-color: $white;
+
+    @include mquery("medium") {
+        background-color: $dark-gray;
+
+        .block {
+            text-align: right;
+            width: 800px;
+            margin: 0 auto;
+
+            @include mquery("large") {
+                width: 1000px;
+            }
+            @include mquery("x-large") {
+                width: 1200px;
+            }
+        }
+        .menu {
+            text-align: right;
+            margin: 0 10px;
+
+            li {
+                display: inline-block;
+                padding: 0 6px;
+                margin: 8px 2px;
+
+                a {
+                    color: $white;
+                    @include font-size(10);
+
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

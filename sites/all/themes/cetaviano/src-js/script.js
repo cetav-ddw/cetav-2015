@@ -19,7 +19,7 @@
       function showMenu() {
         $("#menu-toggle").click(function() {
           $(".content > .menu, .views-exposed-form").toggleClass("expandir");
-          $(".main-content").toggleClass("hola");
+          $(".main-content").toggleClass("hide-content");
         });
 
       $("#edit-search-api-multi-fulltext").attr("placeholder", "Buscar");
