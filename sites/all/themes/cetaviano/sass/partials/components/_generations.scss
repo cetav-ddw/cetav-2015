@@ -1,4 +1,4 @@
-.generation {
+    .generation {
     display: block;
     margin: 90px auto;
     max-width: $max-width;
@@ -113,7 +113,7 @@
         }
 
         &:before {
-            background-image: url(../images/comillas-1.png);
+            background-image: url(../img/comillas-1.png);
             background-size: contain;
             background-repeat: no-repeat;
             content: "";
@@ -124,7 +124,7 @@
             width: 10%;
         }
          &:after {
-            background-image: url(../images/comillas-2.png);
+            background-image: url(../img/comillas-2.png);
             background-size: contain;
             background-repeat: no-repeat;
             bottom: 0;

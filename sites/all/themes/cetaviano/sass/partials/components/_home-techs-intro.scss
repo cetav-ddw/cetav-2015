@@ -110,8 +110,8 @@
 // logos para cada carrera
 .icon-animacion:before {
     content: "";
-    background-image: url(../images/logo-animacion.png);
-    background-image: url(../images/logo-animacion.svg);
+    background-image: url(../img/logo-animacion.png);
+    background-image: url(../img/logo-animacion.svg);
     background-repeat: no-repeat;
     height: 92px;
     margin-bottom: 20px;
@@ -120,8 +120,8 @@
 
 .icon-web:before {
     content: "";
-    background-image: url(../images/logo-web.png);
-    background-image: url(../images/logo-web.svg);
+    background-image: url(../img/logo-web.png);
+    background-image: url(../img/logo-web.svg);
     background-repeat: no-repeat;
     height: 92px;
     margin-bottom: 20px;
@@ -130,8 +130,8 @@
 
 .icon-post:before {
     content: "";
-    background-image: url(../images/logo-post.png);
-    background-image: url(../images/logo-post.svg);
+    background-image: url(../img/logo-post.png);
+    background-image: url(../img/logo-post.svg);
     background-repeat: no-repeat;
     height: 92px;
     margin-bottom: 20px;
@@ -149,12 +149,12 @@
 }
 
 .container-gif-animacion {
-    background-image: url(../images/animacion-cover.png);
+    background-image: url(../img/animacion-cover.png);
 }
 
 .container-card:hover .container-gif-animacion {
     @include mquery("large") {
-        background-image: url(../images/animacion-gif.gif);
+        background-image: url(../img/animacion-gif.gif);
         transition: all 0.3s ease;
     }
 }
@@ -168,12 +168,12 @@
 }
 
 .container-gif-web {
-    background-image: url(../images/web-cover.png);
+    background-image: url(../img/web-cover.png);
 }
 
 .container-card:hover .container-gif-web {
     @include mquery("large") {
-        background-image: url(../images/web-gif.gif);
+        background-image: url(../img/web-gif.gif);
         transition: all 0.3s ease;
     }
 }
@@ -187,12 +187,12 @@
 }
 
 .container-gif-post {
-    background-image: url(../images/post-cover.png);
+    background-image: url(../img/post-cover.png);
 }
 
 .container-card:hover .container-gif-post {
     @include mquery("large") {
-        background-image: url(../images/post-gif.gif);
+        background-image: url(../img/post-gif.gif);
         transition: all 0.3s ease;
     }
 }
