@@ -266,7 +266,6 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['field_apellido']['field'] = 'field_apellido';
   $handler->display->display_options['fields']['field_apellido']['label'] = '';
   $handler->display->display_options['fields']['field_apellido']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_apellido']['element_type'] = '0';
   $handler->display->display_options['fields']['field_apellido']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_apellido']['element_default_classes'] = FALSE;
   /* Field: Content: Title */
