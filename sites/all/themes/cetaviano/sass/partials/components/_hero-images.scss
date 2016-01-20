@@ -10,7 +10,6 @@
 }
 
 .title-headers {
-    background: rgba(241,145,48,.9);
     bottom: 3px;
     padding: 20px;
     position: absolute;
@@ -22,4 +21,16 @@
     h2 {
         color: $white;
     }
+}
+
+.animacion-3d .title-headers {
+    background-color: $animation-color;
+}
+
+.diseno-desarrollo-web .title-headers {
+    background-color: $ddw-color;
+}
+
+.post-produccion .title-headers {
+    background-color: $post-color;
 }
