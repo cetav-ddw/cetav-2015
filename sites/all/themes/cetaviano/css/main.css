@@ -2498,6 +2498,7 @@ footer {
     width: 100%; }
 
 .title-headers {
+  background-color: #f19130;
   bottom: 3px;
   padding: 20px;
   position: absolute; }
