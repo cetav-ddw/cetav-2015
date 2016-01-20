@@ -45,8 +45,10 @@
         });
       }
 
+      $("#edit-search-api-multi-fulltext").val("");
+
       function requiredForm() {
-        $(".entitytype-formulario_envio_de_pago-form input").attr("required","required");
+        $("#edit-search-api-multi-fulltext").add(".entitytype-formulario_envio_de_pago-form input").attr("required","required");
         $("#edit-field-form-email-und-0-email").attr("type", "email");
         $( "#edit-field-form-nombre-und-0-value" ).bind( "keypress", function( event ) {
           return validateText(event);
