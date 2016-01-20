@@ -21,8 +21,8 @@ function panels_cetav_institucion_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'fi' => TRUE,
-          'fi-el' => 'icon-behance social-icon',
-          'fi-cl' => '',
+          'fi-el' => 'i',
+          'fi-cl' => 'icon-behance social-icon',
           'fi-at' => '',
           'fi-def-at' => FALSE,
           'fi-odd-even' => FALSE,
