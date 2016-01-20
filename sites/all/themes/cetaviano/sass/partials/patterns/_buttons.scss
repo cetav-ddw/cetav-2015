@@ -9,7 +9,7 @@ button {
 // Buttons Careers
 .btn-admision a,
 .btn-download {
-    @include button($orange, $orange, $white);
+    @include button($animation-color, $animation-color, $white);
     display: block;
     margin: 25px auto;
     text-align: center;
@@ -20,6 +20,21 @@ button {
     &:hover {
         text-decoration: none;
     }
+}
+
+.animacion-3d .btn-admision a,
+.animacion-3d .btn-download {
+    @include button($animation-color, $animation-color, $white);
+}
+
+.diseno-desarrollo-web .btn-admision a,
+.diseno-desarrollo-web .btn-download {
+    @include button($ddw-color, $ddw-color, $white);
+}
+
+.post-produccion .btn-admision a,
+.post-produccion .btn-download {
+    @include button($post-color, $post-color, $white);
 }
 
 .btn-direction {

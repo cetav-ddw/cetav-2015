@@ -5,7 +5,6 @@
     margin: 30px 6px;
 
     h4 {
-        background-color: $orange;
         color: white;
         margin-top: 0;
         padding: 15px;
@@ -31,6 +30,17 @@
         @include omega();
         vertical-top: top;
     }
+}
+
+.animacion-3d .paragraphs-item-programas-carreras h4{
+    background-color: $animation-color;
+}
+.diseno-desarrollo-web .paragraphs-item-programas-carreras h4{
+    background-color: $ddw-color;
+}
+
+.post-produccion .paragraphs-item-programas-carreras h4{
+    background-color: $post-color;
 }
 
 .section-skills {
