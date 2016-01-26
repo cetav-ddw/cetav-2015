@@ -14,7 +14,7 @@
     margin: 0 15px;
     position: absolute;
     top: 110px;
-    width: 91.5%;
+    width: 96%;
 
     @include mquery("medium") {
         right: 48px;
@@ -23,13 +23,20 @@
     }
 }
 
-.views-exposed-form .views-exposed-widget {
-    padding: 0;
+.header .views-exposed-form .views-exposed-widget {
+    @include mquery("medium") {
+        padding: 0;
+    right: 85px;
+    float: right;
+    width: 62%;
+    position: relative;
+    }
+
 }
 
-div .views-exposed-form,
+.header div .views-exposed-form,
 #block-system-main-menu {
-    display: none;
+    /*display: none;*/
 
     @include mquery("medium") {
         display: block;
@@ -144,7 +151,7 @@ div .views-exposed-form,
 
 .header div .views-exposed-form,
 .content > .menu {
-    display: none;
+    /*display: none;*/
 
     @include mquery("medium") {
         display: block;
@@ -179,7 +186,7 @@ div .views-exposed-form,
     body {
         overflow: hidden;
     }
-    span, 
+    span,
     a {
         color: $main-color;
         padding-bottom: 3px;
@@ -204,24 +211,29 @@ div .views-exposed-form,
 .views-widget-filter-search_api_multi_fulltext {
     width: 100%;
 
+    label {
+        display: none;
+    }
     @include mquery("medium") {
-        visibility: hidden;
+        display: none;
     }
 }
 
 .display {
-    visibility: visible;
+    display: block;
 }
 
-.views-submit-button input {
-    background: url(../images/search.svg) no-repeat center;
+.header .views-submit-button input {
+    background: url(../img/search.svg) no-repeat center;
     background-size: cover;
     border: none;
     color: transparent;
     cursor: pointer;
-    margin-left: -30px;
+    position: absolute;
+    right: 21px;
+    top: 13px;
     transition: opacity .4s ease;
-    width: 19px;
+    width: 20px;
 }
 
 .hide-content {

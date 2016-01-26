@@ -3,7 +3,7 @@
 }
 
 .panel-wide-hero {
-    background: #000 url(../images/prueba.jpg) no-repeat center center fixed;
+    background: #000 url(../img/header.jpg) no-repeat center center fixed;
     background-size: cover;
 
     @include mquery("base") {
