@@ -12,7 +12,8 @@
     <div class="panel-container panel-wide panel-header">
       <?php print $content['wide_main']; ?>
   <?php endif ?>
-    <div class="grid-width">
+  </div>
+  <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left']; ?>
       </div>
@@ -20,7 +21,6 @@
         <?php print $content['right']; ?>
       </div>
     </div>
-  </div>
     <?php if ($content['wide']): ?>
     <div class="panel-container panel-wide">
       <div class="grid-width">

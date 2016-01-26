@@ -9,10 +9,8 @@
 
 <div class="panel-display panel-cetav-admission">
  <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide">
-      <div>
+    <div class="panel-container panel-wide panel-header">
         <?php print $content['wide']; ?>
-      </div>
     </div>
   <?php endif ?>
   <div class="center-wrapper call-out call-out-admission-intro">
