@@ -186,19 +186,11 @@ a {
     margin-right: 11px; }
 
 .panel-cetav-institucion ul {
-  -webkit-column-count: 1;
-     -moz-column-count: 1;
-          column-count: 1;
   color: #77787b;
   list-style: none;
   margin: 0 auto;
   max-width: 1200px;
   padding: 5px 0 0 20px; }
-  @media only screen and (min-width: 37.5em) {
-    .panel-cetav-institucion ul {
-      -webkit-column-count: 2;
-         -moz-column-count: 2;
-              column-count: 2; } }
   .panel-cetav-institucion ul li {
     margin-bottom: 10px; }
     .panel-cetav-institucion ul li:before {
@@ -970,7 +962,7 @@ input[type="file"] {
   @media only screen and (min-width: 56.25em) {
     .center-wrapper,
     .panel-wide {
-      padding: 80px 16px; } }
+      padding: 50px 16px; } }
 
 .panel-left-column,
 .panel-right-column {
@@ -2211,12 +2203,7 @@ div.password-suggestions ul {
     margin-right: 0; }
   @media only screen and (min-width: 56.25em) {
     .container-news-prev {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 65.8807828007%; }
-      .container-news-prev:last-child {
-        margin-right: 0; } }
+      width: 63%; } }
 
 .news-prev img {
   width: 100%; }
@@ -2797,6 +2784,9 @@ footer {
   overflow: hidden;
   padding: 0;
   width: 100%; }
+
+.panel-cetav-frontpage .center-wrapper {
+  padding: 80px 16px; }
 
 .panel-cetav-frontpage .views-field-title {
   margin-bottom: 0; }
@@ -3644,8 +3634,7 @@ div .views-exposed-form,
 
 .pager {
   margin: 10px 0;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
   .pager li {
     display: inline-block;
     padding: 0 5px; }
