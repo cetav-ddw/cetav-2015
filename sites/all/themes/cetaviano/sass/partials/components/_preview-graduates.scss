@@ -140,19 +140,6 @@
     margin: 35px 0;
     text-align: center;
 
-    a {
-        @include button($blue-dark, $blue-dark, $white);
-        font-family: $contrast-font;
-        margin: 0 auto;
-        text-align: center;
-        text-decoration: none;
-        width: 50%;
-
-        @include mquery('medium') {
-            padding: 6px 16px;
-        }
-    }
-
     @include mquery('medium') {
         float: right;
         margin: 0;
