@@ -2,35 +2,10 @@
     p:first-child {
         color: $white;
         margin: 0;
-
-        @include mquery("base") {
-            @include font-size(32);
-        }
-        @include mquery("small") {
-            @include font-size(38);
-        }
-        @include mquery("medium") {
-            @include font-size(40);
-        }
-        @include mquery("large") {
-            @include font-size(48);
-        }
     }
 
     strong {
         color: $orange;
-        @include mquery("base") {
-            @include font-size(32);
-        }
-        @include mquery("small") {
-            @include font-size(38);
-        }
-        @include mquery("medium") {
-            @include font-size(40);
-        }
-        @include mquery("large") {
-            @include font-size(48);
-        }
     }
  
     @include mquery("base") {
@@ -73,19 +48,6 @@
 .typed-cursor {
     opacity: 1;
     animation: blink 0.7s infinite;
-    
-    @include mquery("base") {
-        @include font-size(32);
-    }
-    @include mquery("small") {
-        @include font-size(38);
-    }
-    @include mquery("medium") {
-        @include font-size(40);
-    }
-    @include mquery("large") {
-        @include font-size(48);
-    }
 }
 
 // drupal metió 2 span con la clase .typed-cursor, a eso se debe este estilo

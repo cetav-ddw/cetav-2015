@@ -96,18 +96,7 @@
     text-align: center;
     width: 100%;
 
-    @include mquery("base") {
-        @include font-size(24);
-    }
-    @include mquery("small") {
-        @include font-size(28);
-    }
-    @include mquery("medium") {
-        @include font-size(30);
-        width: 100%;
-    }
     @include mquery("large") {
-        @include font-size(36);
         text-align: left;
     }
 }

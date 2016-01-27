@@ -74,18 +74,10 @@
     margin-bottom: 40px;
     text-align: center;
 
-    @include mquery("base") {
-        @include font-size(24);
-    }
     @include mquery("small") {
-        @include font-size(26);
         padding: 0 5%;
     }
-    @include mquery("medium") {
-        @include font-size(28);
-    }
     @include mquery("large") {
-        @include font-size(30);
         padding: 0 10%;
     }
 }
@@ -100,7 +92,6 @@
 }
 
 .container-title-course a {
-    @include font-size(16);
     border-radius: 3px;
     color: $white;
     font-weight: bold;
@@ -202,7 +193,7 @@
 }
 
 .container-title-course a {
-    @include font-size(15);
+
 }
 
 .icon-animacion a {

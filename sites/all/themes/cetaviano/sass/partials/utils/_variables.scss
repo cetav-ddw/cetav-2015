@@ -1,19 +1,13 @@
-//
-// Variables
-//
-
 // Sprite
 $sprite-image: "../images/global-sprite";
 
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Montserrat),
-url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Palanquin+Dark:500|Quicksand:400,700);
 
-$contrast-font:"Montserrat", Arial, Verdana, sans-serif; //Typography for titles
-$default-font: "Open Sans", Arial, Verdana, sans-serif; //Typography for body
+$contrast-font: 'Palanquin Dark', Arial, Verdana, sans-serif; //Typography for titles
+$default-font: 'Quicksand', Arial, Verdana, sans-serif; // Typography for body
 
 // Colors
-
 // Main Colors in CETAV's Brand book
 $dark-gray: #414042;
 $dark-green: #819535;

@@ -2,7 +2,7 @@ dl,
 ol,
 p,
 ul {
-    margin: 0 0 .5em;
+    margin: 0 0 1.3em;
 }
 
 ol,
@@ -11,26 +11,17 @@ ul {
 }
 
 p {
-    @include font-size(14);
-    color: $gray;
-    line-height: 1.5;
-}
 
-em {
-    color: $gray;
 }
 
 cite {
-    color: $gray;
-
     &:before {
         content: "\2014 \2009";
     }
 }
 
 li {
-    @include font-size(14);
-    line-height: 1.5;
+    margin-bottom: .4em
 }
 
 strong {
@@ -38,34 +29,45 @@ strong {
 }
 
 blockquote {
-  border-left: 5px solid $main-color;
-  margin: 10px;
-  padding: 10px;
-  quotes: "“" "”" "‘" "’";
+    border-left: 5px solid $main-color;
+    margin: 10px;
+    padding: 10px;
+    quotes: "“" "”" "‘" "’";
 
-  p {
-    display: inline-block;
+    p {
+        display: inline-block;
 
-    &:before {
-        @include font-size(35);
-        color: #ccc;
-        content: open-quote;
-        line-height: 0;
-        margin-right: 5px;
-        vertical-align: -15px;
+        &:before {
+            color: #ccc;
+            content: open-quote;
+            line-height: 0;
+            margin-right: 5px;
+            vertical-align: -15px;
+        }
+        &:after {
+            color: #ccc;
+            content: close-quote;
+            margin-left: 5px;
+            vertical-align: -15px;
+        }
     }
-    &:after {
-        @include font-size(35);
-        color: #ccc;
-        content: close-quote;
-        margin-left: 5px;
-        vertical-align: -15px;
-    }
-  }
+}
+
+.call-out { // intro type
+    font-size: 1.44em;
+}
+
+.contrast-small-text {
+    font-size: .833em;
+}
+
+small, 
+.small-text {
+    font-size: .694em;
 }
 
 .title {
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
 }

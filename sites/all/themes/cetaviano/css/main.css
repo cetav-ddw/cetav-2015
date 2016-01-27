@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Palanquin+Dark:500|Quicksand:400,700);
 html {
   box-sizing: border-box; }
 
@@ -13,16 +12,20 @@ html {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important; }
 
-body {
-  font-size: 14px;
-  font-size: 1.4rem;
-  box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: "Open Sans", Arial, Verdana, sans-serif; }
-
 html {
+  background: #292929;
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 1em; }
+  @media only screen and (min-width: 68.75em) {
+    html {
+      font-size: 1.125em; } }
+
+body {
+  background: #292929;
+  box-sizing: border-box;
+  font-family: "Quicksand", Arial, Verdana, sans-serif;
+  color: #464646;
+  line-height: 1.45; }
 
 *,
 *:before,
@@ -33,30 +36,17 @@ dl,
 ol,
 p,
 ul {
-  margin: 0 0 .5em; }
+  margin: 0 0 1.3em; }
 
 ol,
 ul {
   padding: 0; }
 
-p {
-  font-size: 14px;
-  font-size: 1.4rem;
-  color: #77787b;
-  line-height: 1.5; }
-
-em {
-  color: #77787b; }
-
-cite {
-  color: #77787b; }
-  cite:before {
-    content: "\2014 \2009"; }
+cite:before {
+  content: "\2014 \2009"; }
 
 li {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.5; }
+  margin-bottom: .4em; }
 
 strong {
   color: #f19130; }
@@ -69,20 +59,26 @@ blockquote {
   blockquote p {
     display: inline-block; }
     blockquote p:before {
-      font-size: 35px;
-      font-size: 3.5rem;
       color: #ccc;
       content: open-quote;
       line-height: 0;
       margin-right: 5px;
       vertical-align: -15px; }
     blockquote p:after {
-      font-size: 35px;
-      font-size: 3.5rem;
       color: #ccc;
       content: close-quote;
       margin-left: 5px;
       vertical-align: -15px; }
+
+.call-out {
+  font-size: 1.44em; }
+
+.contrast-small-text {
+  font-size: .833em; }
+
+small,
+.small-text {
+  font-size: .694em; }
 
 .title {
   overflow: hidden;
@@ -92,58 +88,24 @@ blockquote {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", Arial, Verdana, sans-serif;
+h4 {
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   line-height: 1.2;
-  margin: 0; }
+  margin: 1.414em 0 0.5em; }
 
 h1 {
-  font-size: 44px;
-  font-size: 4.4rem; }
+  font-size: 3.157em;
+  margin-top: 0; }
 
 h2 {
-  font-size: 25px;
-  font-size: 2.5rem;
-  color: #f19130; }
-  @media only screen and (min-width: 37.5em) {
-    h2 {
-      font-size: 35px;
-      font-size: 3.5rem; } }
-  @media only screen and (min-width: 56.25em) {
-    h2 {
-      font-size: 40px;
-      font-size: 4rem; } }
+  color: #f19130;
+  font-size: 2.369em; }
 
 h3 {
-  font-size: 21px;
-  font-size: 2.1rem; }
-  @media only screen and (min-width: 37.5em) {
-    h3 {
-      font-size: 31px;
-      font-size: 3.1rem; } }
-  @media only screen and (min-width: 56.25em) {
-    h3 {
-      font-size: 36px;
-      font-size: 3.6rem; } }
+  font-size: 1.777em; }
 
 h4 {
-  font-size: 16px;
-  font-size: 1.6rem; }
-  @media only screen and (min-width: 37.5em) {
-    h4 {
-      font-size: 22px;
-      font-size: 2.2rem; } }
-
-h5 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  color: #414042; }
-
-h6 {
-  font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.333em; }
 
 a {
   color: #f19130;
@@ -151,10 +113,6 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
-
-.read-more {
-  font-size: 14px;
-  font-size: 1.4rem; }
 
 .line-grid {
   clear: both;
@@ -171,10 +129,7 @@ a {
   background: #243842; }
 
 .split-list li {
-  font-size: 14px;
-  font-size: 1.4rem;
   color: #fff;
-  line-height: 20px;
   list-style: none;
   margin-bottom: 10px; }
   .split-list li a {
@@ -186,20 +141,11 @@ a {
     margin-right: 11px; }
 
 .panel-cetav-institucion ul {
-  color: #77787b;
-  list-style: none;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 5px 0 0 20px; }
-  .panel-cetav-institucion ul li {
-    margin-bottom: 10px; }
-    .panel-cetav-institucion ul li:before {
-      color: #77787b;
-      content: "• "; }
+  list-style: none; }
+  .panel-cetav-institucion ul li:before {
+    content: "• "; }
 
 button {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: red;
   border: 2px solid red;
   color: red;
@@ -216,8 +162,6 @@ button {
 
 .btn-admision a,
 .btn-download {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #dc661e;
   border: 2px solid #dc661e;
   color: #fff;
@@ -247,8 +191,6 @@ button {
 
 .animacion-3d .btn-admision a,
 .animacion-3d .btn-download {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #dc661e;
   border: 2px solid #dc661e;
   color: #fff;
@@ -266,8 +208,6 @@ button {
 
 .diseno-desarrollo-web .btn-admision a,
 .diseno-desarrollo-web .btn-download {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #9e280e;
   border: 2px solid #9e280e;
   color: #fff;
@@ -285,8 +225,6 @@ button {
 
 .post-produccion .btn-admision a,
 .post-produccion .btn-download {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #819535;
   border: 2px solid #819535;
   color: #fff;
@@ -303,14 +241,10 @@ button {
         color: #fff; } }
 
 .btn-direction {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #fff;
   border: 2px solid #fff;
   color: #848286;
   padding: 15px 30px;
-  font-size: 14px;
-  font-size: 1.4rem;
   background: transparent;
   display: inline-block;
   height: 100%;
@@ -356,8 +290,6 @@ button {
   display: none; }
 
 .inscription-button {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #00c9ed;
   border: 2px solid #00c9ed;
   color: #fff;
@@ -387,8 +319,6 @@ button {
   text-align: center; }
 
 .container-account .form-submit {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #f19130;
   border: 2px solid #f19130;
   color: #fff;
@@ -409,8 +339,6 @@ button {
         color: #fff; } }
 
 .btn-yearbook a {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #77787b;
   border: 2px solid #77787b;
   color: #fff;
@@ -429,14 +357,10 @@ button {
     text-decoration: none; }
 
 .course-description a {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #77787b;
   border: 2px solid #77787b;
   color: #fff;
   padding: 15px 30px;
-  font-size: 14px;
-  font-size: 1.4rem;
   border-radius: 6px;
   padding: 5px 8px;
   text-decoration: none;
@@ -454,14 +378,10 @@ button {
   display: inline-block; }
 
 .text-course-description a {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #00c9ed;
   border: 2px solid #00c9ed;
   color: #fff;
   padding: 15px 30px;
-  font-size: 15px;
-  font-size: 1.5rem;
   border-radius: 6px;
   display: inline-block;
   padding: 5px 8px; }
@@ -477,14 +397,10 @@ button {
     text-decoration: none; }
 
 .btn-course a {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #00c9ed;
   border: 2px solid #00c9ed;
   color: #fff;
   padding: 15px 30px;
-  font-size: 14px;
-  font-size: 1.4rem;
   border-radius: 6px;
   display: inline-block;
   padding: 6px 10px;
@@ -614,8 +530,6 @@ img {
 
 label,
 .webform-container-inline label {
-  font-size: 14px;
-  font-size: 1.4rem;
   color: #333;
   display: block;
   font-weight: bold;
@@ -627,16 +541,12 @@ label.option {
   margin-left: 0.5em; }
 
 select {
-  font-size: 12px;
-  font-size: 1.2rem;
   width: 100%; }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-  font-size: 12px;
-  font-size: 1.2rem;
   background: #fff;
   border-radius: 3px;
   border: solid #e1e1e1 1px;
@@ -655,8 +565,6 @@ input[type="password"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  font-size: 16px;
-  font-size: 1.6rem;
   vertical-align: baseline; }
 
 input[type="file"] {
@@ -667,8 +575,6 @@ input[type="file"] {
 
 .course-form input[type="submit"],
 .course-form input[type="file"] {
-  font-size: 18px;
-  font-size: 1.8rem;
   background-color: #00c9ed;
   border: 2px solid #00c9ed;
   color: #fff;
@@ -697,8 +603,6 @@ input[type="file"] {
       width: auto; } }
 
 .course-form input[type="email"].form-text {
-  font-size: 16px;
-  font-size: 1.6rem;
   background-color: #ececec;
   border: 0;
   margin: 10px 0;
@@ -706,8 +610,6 @@ input[type="file"] {
   padding: 20px; }
 
 .course-form input[type="text"].form-text {
-  font-size: 16px;
-  font-size: 1.6rem;
   background-color: #ececec;
   border: 0;
   margin: 10px 0;
@@ -752,7 +654,7 @@ input[type="file"] {
   .container-account .container-account-title {
     background-color: #f19130;
     color: #fff;
-    font-family: "Montserrat", Arial, Verdana, sans-serif;
+    font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
     padding: 18px;
     position: relative;
     text-align: center; }
@@ -775,7 +677,7 @@ input[type="file"] {
   .container-account .form-item {
     margin-top: 10px; }
     .container-account .form-item label {
-      font-family: "Montserrat", Arial, Verdana, sans-serif; }
+      font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
   .container-account .form-required {
     color: #dc661e; }
 
@@ -783,8 +685,6 @@ input[type="file"] {
   padding: 0 15px; }
   .bottom-part .password-link,
   .bottom-part .login-link {
-    font-size: 12px;
-    font-size: 1.2rem;
     margin-right: 0;
     float: left;
     display: block;
@@ -794,8 +694,6 @@ input[type="file"] {
     .bottom-part .login-link:last-child {
       margin-right: 0; }
   .bottom-part .register-link {
-    font-size: 12px;
-    font-size: 1.2rem;
     float: right; }
   .bottom-part .password-float a {
     float: right; }
@@ -855,8 +753,6 @@ input[type="file"] {
     margin-top: 20px;
     text-align: center; }
   .personal-institution .personal-charge p {
-    font-size: 13px;
-    font-size: 1.3rem;
     background-color: #ececec;
     border-radius: 5px;
     color: #77787b;
@@ -872,8 +768,6 @@ input[type="file"] {
       .personal-institution .personal-charge p {
         height: 54px; } }
   .personal-institution .personal-description p {
-    font-size: 12px;
-    font-size: 1.2rem;
     color: #414042;
     text-align: left; }
 
@@ -931,8 +825,6 @@ input[type="file"] {
     padding: 6px;
     margin-left: 5px; }
   .node-form .form-actions .form-submit {
-    font-size: 18px;
-    font-size: 1.8rem;
     background-color: #f19130;
     border: 2px solid #f19130;
     color: #fff;
@@ -953,6 +845,48 @@ input[type="file"] {
 .grid-width {
   margin: 0 auto;
   max-width: 1200px; }
+
+.header {
+  background: #fff; }
+
+@media only screen and (min-width: 56.25em) {
+  .helper-nav {
+    background-color: #f19130;
+    border-bottom: 2px solid #dc661e;
+    padding: 8px 0; } }
+
+@media only screen and (min-width: 56.25em) {
+  .helper-nav-content {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 800px; } }
+
+@media only screen and (min-width: 68.75em) {
+  .helper-nav-content {
+    width: 1000px; } }
+
+@media only screen and (min-width: 87.5em) {
+  .helper-nav-content {
+    width: 1200px; } }
+
+.main-content {
+  background: #fff; }
+
+.nav-main {
+  background-color: #fff;
+  margin-top: 150px; }
+  @media only screen and (min-width: 56.25em) {
+    .nav-main {
+      background-color: #fff;
+      margin: 0 auto;
+      text-align: right;
+      width: 800px; } }
+  @media only screen and (min-width: 68.75em) {
+    .nav-main {
+      width: 1000px; } }
+  @media only screen and (min-width: 87.5em) {
+    .nav-main {
+      width: 1200px; } }
 
 .center-wrapper,
 .panel-wide {
@@ -1023,50 +957,12 @@ input[type="file"] {
 .panel-header {
   padding: 0; }
 
-@media only screen and (min-width: 56.25em) {
-  .helper-nav {
-    background-color: #f19130;
-    border-bottom: 2px solid #dc661e;
-    padding: 8px 0; } }
-
-@media only screen and (min-width: 56.25em) {
-  .helper-nav-content {
-    margin: 0 auto;
-    overflow: hidden;
-    width: 800px; } }
-
-@media only screen and (min-width: 68.75em) {
-  .helper-nav-content {
-    width: 1000px; } }
-
-@media only screen and (min-width: 87.5em) {
-  .helper-nav-content {
-    width: 1200px; } }
-
-.nav-main {
-  background-color: #fff;
-  margin-top: 150px; }
-  @media only screen and (min-width: 56.25em) {
-    .nav-main {
-      background-color: #fff;
-      margin: 0 auto;
-      text-align: right;
-      width: 800px; } }
-  @media only screen and (min-width: 68.75em) {
-    .nav-main {
-      width: 1000px; } }
-  @media only screen and (min-width: 87.5em) {
-    .nav-main {
-      width: 1200px; } }
-
 .tabs {
   border-bottom: 1px solid #ccc;
   margin: 10px 0;
   overflow: hidden;
   padding: 0; }
   .tabs a {
-    font-size: 14px;
-    font-size: 1.4rem;
     color: #333;
     padding-right: 20px; }
     .tabs a.active {
@@ -1624,41 +1520,9 @@ div.password-suggestions ul {
 .content-header p:first-child {
   color: #fff;
   margin: 0; }
-  @media only screen and (min-width: 20em) {
-    .content-header p:first-child {
-      font-size: 32px;
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 37.5em) {
-    .content-header p:first-child {
-      font-size: 38px;
-      font-size: 3.8rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .content-header p:first-child {
-      font-size: 40px;
-      font-size: 4rem; } }
-  @media only screen and (min-width: 68.75em) {
-    .content-header p:first-child {
-      font-size: 48px;
-      font-size: 4.8rem; } }
 
 .content-header strong {
   color: #f19130; }
-  @media only screen and (min-width: 20em) {
-    .content-header strong {
-      font-size: 32px;
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 37.5em) {
-    .content-header strong {
-      font-size: 38px;
-      font-size: 3.8rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .content-header strong {
-      font-size: 40px;
-      font-size: 4rem; } }
-  @media only screen and (min-width: 68.75em) {
-    .content-header strong {
-      font-size: 48px;
-      font-size: 4.8rem; } }
 
 @media only screen and (min-width: 20em) {
   .content-header {
@@ -1681,7 +1545,7 @@ div.password-suggestions ul {
     padding-top: 9.5%; } }
 
 .type-wrap {
-  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   margin: 10px auto;
   padding: 20px;
   text-align: center; }
@@ -1700,22 +1564,6 @@ div.password-suggestions ul {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
           animation: blink 0.7s infinite; }
-  @media only screen and (min-width: 20em) {
-    .typed-cursor {
-      font-size: 32px;
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 37.5em) {
-    .typed-cursor {
-      font-size: 38px;
-      font-size: 3.8rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .typed-cursor {
-      font-size: 40px;
-      font-size: 4rem; } }
-  @media only screen and (min-width: 68.75em) {
-    .typed-cursor {
-      font-size: 48px;
-      font-size: 4.8rem; } }
 
 .typed-cursor:last-child {
   display: none; }
@@ -1801,8 +1649,6 @@ div.password-suggestions ul {
   margin: 0;
   width: 100%; }
   .section-skills p {
-    font-size: 16px;
-    font-size: 1.6rem;
     color: #fff;
     margin-top: 33px;
     width: 95%; }
@@ -1820,15 +1666,9 @@ div.password-suggestions ul {
       margin-right: 0; } }
 
 .pane-node-field-titulo-skills-carreras h4 {
-  font-size: 22px;
-  font-size: 2.2rem;
   color: #00c9ed;
   margin-top: 33px;
   width: 95%; }
-  @media only screen and (min-width: 56.25em) {
-    .pane-node-field-titulo-skills-carreras h4 {
-      font-size: 28px;
-      font-size: 2.8rem; } }
 
 @media only screen and (min-width: 56.25em) {
   .pane-node-field-cuerpo-skills-carreras {
@@ -1867,20 +1707,13 @@ div.password-suggestions ul {
                 column-count: 3; } }
 
 .course-details p {
-  font-size: 14px;
-  font-size: 1.4rem;
   margin: 10px 0; }
-  .course-details p:first-of-type {
-    font-size: 16px;
-    font-size: 1.6rem; }
 
 .course-details strong {
   color: #414042;
   font-weight: bold; }
 
 .course-info {
-  font-size: 16px;
-  font-size: 1.6rem;
   color: #77787b;
   margin-top: 2px; }
   .course-info .date-display-range span {
@@ -1964,8 +1797,6 @@ div.password-suggestions ul {
   padding-bottom: 100px;
   width: 450px; }
   .panel-cetav-cursos-libres .panel-wide-courses form {
-    font-size: 16px;
-    font-size: 1.6rem;
     text-align: left; }
 
 .panel-cetav-cursos-libres .subtitle {
@@ -1988,10 +1819,8 @@ div.password-suggestions ul {
 .pane-bundle-steps-admision {
   text-align: center; }
   .pane-bundle-steps-admision h4 {
-    font-size: 22px;
-    font-size: 2.2rem;
     color: #77787b;
-    padding: 0 0 3% 0; }
+    padding: 0 0 3%; }
   .pane-bundle-steps-admision p {
     height: 100px;
     margin: 20px;
@@ -2084,8 +1913,6 @@ div.password-suggestions ul {
     margin-top: 20px;
     text-align: center; }
   .personal-institution .personal-charge p {
-    font-size: 13px;
-    font-size: 1.3rem;
     background-color: #ececec;
     border-radius: 5px;
     color: #77787b;
@@ -2101,8 +1928,6 @@ div.password-suggestions ul {
       .personal-institution .personal-charge p {
         height: 54px; } }
   .personal-institution .personal-description p {
-    font-size: 12px;
-    font-size: 1.2rem;
     color: #414042;
     text-align: left; }
 
@@ -2148,8 +1973,6 @@ div.password-suggestions ul {
       padding-top: 80px; } }
 
 .date-news {
-  font-size: 14px;
-  font-size: 1.4rem;
   padding-bottom: 35px; }
 
 .info-news {
@@ -2166,8 +1989,6 @@ div.password-suggestions ul {
     border-bottom: none; }
 
 .latest-news h2 {
-  font-size: 22px;
-  font-size: 2.2rem;
   color: #848286;
   padding-bottom: 25px; }
 
@@ -2185,10 +2006,6 @@ div.password-suggestions ul {
 .title-news {
   margin-bottom: 16px;
   padding-bottom: 5px; }
-
-.views-field-created {
-  font-size: 12px;
-  font-size: 1.2rem; }
 
 .views-field-created,
 .views-field-title {
@@ -2213,7 +2030,7 @@ div.password-suggestions ul {
   display: block;
   margin-right: 3.5786636068%;
   width: 100%;
-  box-shadow: 0px 0px 4px #c2bebe;
+  box-shadow: 0 0 4px #c2bebe;
   margin-bottom: 20px;
   margin-left: 0;
   overflow: hidden;
@@ -2251,8 +2068,6 @@ div.password-suggestions ul {
     width: 0; }
 
 .date-new-preview {
-  font-size: 12px;
-  font-size: 1.2rem;
   border-bottom: 1px solid #cecece;
   display: block;
   margin-bottom: 17px;
@@ -2285,7 +2100,7 @@ div.password-suggestions ul {
 .details-preview-course {
   background-color: #00c9ed;
   height: 250px;
-  opacity: 0.85;
+  opacity: .85;
   padding: 30px 20px;
   position: absolute;
   right: 0;
@@ -2296,13 +2111,11 @@ div.password-suggestions ul {
   color: #fff; }
 
 .date-display-range {
-  color: #fff;
-  font-size: 13px; }
+  color: #fff; }
 
 .views-field-field-precio {
   color: #00c9ed;
   background-color: #fff;
-  font-size: 15px;
   font-weight: bold;
   padding: 3px 7px;
   position: absolute;
@@ -2333,8 +2146,6 @@ div.password-suggestions ul {
         margin-right: 0; } }
 
 .availability-info {
-  font-size: 16px;
-  font-size: 1.6rem;
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
   color: #848286;
@@ -2344,8 +2155,6 @@ div.password-suggestions ul {
     color: #848286;
     text-decoration: none; }
   .availability-info i {
-    font-size: 22px;
-    font-size: 2.2rem;
     color: #243842;
     font-style: normal;
     margin-bottom: 6px; }
@@ -2374,18 +2183,10 @@ div.password-suggestions ul {
   .info-graduate img {
     margin-bottom: 18px; }
   .info-graduate p {
-    font-size: 16px;
-    font-size: 1.6rem;
     color: #292929;
     margin: 15px 0; }
 
-.pane-node-field-profesion-egresado {
-  font-size: 14px;
-  font-size: 1.4rem; }
-
 .skill {
-  font-size: 14px;
-  font-size: 1.4rem;
   background-color: #243842;
   border-radius: 5px;
   box-shadow: 0 0 0 2px #243842;
@@ -2445,8 +2246,6 @@ footer {
 .icon-list {
   list-style: none; }
   .icon-list li {
-    font-size: 30px;
-    font-size: 3rem;
     display: inline-block; }
   .icon-list .icon-face:before,
   .icon-list .icon-vimeo:before {
@@ -2587,27 +2386,12 @@ footer {
 .panel-wide-allies h2 {
   color: #f19130;
   display: block;
-  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   line-height: 1.2;
   text-align: center;
   width: 100%; }
-  @media only screen and (min-width: 20em) {
-    .panel-wide-allies h2 {
-      font-size: 24px;
-      font-size: 2.4rem; } }
-  @media only screen and (min-width: 37.5em) {
-    .panel-wide-allies h2 {
-      font-size: 28px;
-      font-size: 2.8rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .panel-wide-allies h2 {
-      font-size: 30px;
-      font-size: 3rem;
-      width: 100%; } }
   @media only screen and (min-width: 68.75em) {
     .panel-wide-allies h2 {
-      font-size: 36px;
-      font-size: 3.6rem;
       text-align: left; } }
 
 .call-out-home-intro .panel-left-column {
@@ -2637,8 +2421,6 @@ footer {
   margin: 0 0 30px; }
   @media only screen and (min-width: 68.75em) {
     .call-out-home-intro .panel-right-column p {
-      font-size: 18px;
-      font-size: 1.8rem;
       margin-top: 10px; } }
 
 .section-free-courses-info {
@@ -2675,25 +2457,11 @@ footer {
 
 .section-free-courses-info h2 {
   color: #00c9ed;
-  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   text-align: center;
   width: 100%; }
-  @media only screen and (min-width: 20em) {
-    .section-free-courses-info h2 {
-      font-size: 24px;
-      font-size: 2.4rem; } }
-  @media only screen and (min-width: 37.5em) {
-    .section-free-courses-info h2 {
-      font-size: 28px;
-      font-size: 2.8rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .section-free-courses-info h2 {
-      font-size: 30px;
-      font-size: 3rem; } }
   @media only screen and (min-width: 68.75em) {
     .section-free-courses-info h2 {
-      font-size: 36px;
-      font-size: 3.6rem;
       text-align: left; } }
 
 #panels-ipe-regionid-left_third {
@@ -2727,10 +2495,8 @@ footer {
   position: relative; }
 
 .section-free-courses h4 {
-  font-size: 16px;
-  font-size: 1.6rem;
   display: inline-block;
-  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   font-weight: bolder;
   margin: 0;
   width: 100%; }
@@ -2742,11 +2508,9 @@ footer {
   margin: 0 0 20px; }
 
 .title-course-item {
-  font-size: 16px;
-  font-size: 1.6rem;
   color: #414042;
   display: inline-block;
-  font-family: "Montserrat", Arial, Verdana, sans-serif;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   margin: 0;
   width: 100%; }
   @media only screen and (min-width: 68.75em) {
@@ -2754,10 +2518,8 @@ footer {
       width: 60%; } }
 
 .date-course-item span {
-  font-size: 13px;
-  font-size: 1.3rem;
   color: #848286;
-  font-family: "Open Sans", Arial, Verdana, sans-serif;
+  font-family: "Quicksand", Arial, Verdana, sans-serif;
   margin-bottom: 0;
   margin-top: 6px; }
 
@@ -2795,7 +2557,7 @@ footer {
   display: block;
   height: 400px;
   float: left;
-  font-family: "Open Sans", Arial, Verdana, sans-serif;
+  font-family: "Quicksand", Arial, Verdana, sans-serif;
   text-align: center;
   position: relative;
   margin-top: 15px;
@@ -2844,23 +2606,11 @@ footer {
   margin-top: 0;
   margin-bottom: 40px;
   text-align: center; }
-  @media only screen and (min-width: 20em) {
-    .container-title-course h2 {
-      font-size: 24px;
-      font-size: 2.4rem; } }
   @media only screen and (min-width: 37.5em) {
     .container-title-course h2 {
-      font-size: 26px;
-      font-size: 2.6rem;
       padding: 0 5%; } }
-  @media only screen and (min-width: 56.25em) {
-    .container-title-course h2 {
-      font-size: 28px;
-      font-size: 2.8rem; } }
   @media only screen and (min-width: 68.75em) {
     .container-title-course h2 {
-      font-size: 30px;
-      font-size: 3rem;
       padding: 0 10%; } }
 
 .container-title-course h2:first-child {
@@ -2870,8 +2620,6 @@ footer {
   display: none; }
 
 .container-title-course a {
-  font-size: 16px;
-  font-size: 1.6rem;
   border-radius: 3px;
   color: #fff;
   font-weight: bold;
@@ -2953,10 +2701,6 @@ footer {
     background-image: url(../img/post-gif.gif);
     transition: all 0.3s ease; } }
 
-.container-title-course a {
-  font-size: 15px;
-  font-size: 1.5rem; }
-
 .icon-animacion a {
   background-color: #dc661e; }
 
@@ -3036,28 +2780,20 @@ footer {
       .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget:nth-of-type(1n+3) {
         border: 0; } }
   .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget label {
-    font-size: 22px;
-    font-size: 2.2rem;
     color: #fff;
-    font-family: "Montserrat", Arial, Verdana, sans-serif;
+    font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
     margin-bottom: 12px; }
   .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget .form-item label {
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-family: "Montserrat", Arial, Verdana, sans-serif; }
+    font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
 
 .views-field-field-generacion-egresado,
 .views-field-field-disponibilidad-egresado {
-  font-size: 13px;
-  font-size: 1.3rem;
   color: #848286;
   display: inline-block;
   margin: 8px 12px 0 0;
   vertical-align: top; }
 
 .views-field-field-profesion-egresado {
-  font-size: 15px;
-  font-size: 1.5rem;
   color: #414042; }
   @media only screen and (min-width: 68.75em) {
     .views-field-field-profesion-egresado {
@@ -3084,16 +2820,12 @@ footer {
   position: relative; }
 
 .view-egresados .profile-name {
-  font-family: "Montserrat", Arial, Verdana, sans-serif; }
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
   .view-egresados .profile-name a {
-    font-size: 27px;
-    font-size: 2.7rem;
     color: #243842;
     text-decoration: none; }
     @media only screen and (min-width: 68.75em) {
       .view-egresados .profile-name a {
-        font-size: 22px;
-        font-size: 2.2rem;
         display: inline-block;
         text-align: left; } }
 
@@ -3120,15 +2852,11 @@ footer {
   margin: 35px 0;
   text-align: center; }
   .see-profile a {
-    font-size: 18px;
-    font-size: 1.8rem;
     background-color: #243842;
     border: 2px solid #243842;
     color: #fff;
     padding: 15px 30px;
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-family: "Montserrat", Arial, Verdana, sans-serif;
+    font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
@@ -3300,8 +3028,6 @@ footer {
   text-align: left;
   width: 100%; }
   .testimonial h5 {
-    font-size: 14px;
-    font-size: 1.4rem;
     color: #fff;
     font-weight: lighter;
     margin: 10px 0 3px; }
@@ -3324,8 +3050,6 @@ footer {
         .testimonial h5:last-child {
           margin-right: 0; } }
   .testimonial .carrera-testimonial {
-    font-size: 12px;
-    font-size: 1.2rem;
     color: #fff; }
     @media only screen and (min-width: 20em) {
       .testimonial .carrera-testimonial {
@@ -3375,35 +3099,31 @@ footer {
     width: 62%;
     position: relative; } }
 
-.header div .views-exposed-form,
-#block-system-main-menu {
-  /*display: none;*/ }
-  @media only screen and (min-width: 56.25em) {
-    .header div .views-exposed-form,
-    #block-system-main-menu {
-      display: block;
-      width: 94%; }
-      .header div .views-exposed-form li,
-      #block-system-main-menu li {
+@media only screen and (min-width: 56.25em) {
+  .header div .views-exposed-form,
+  #block-system-main-menu {
+    display: block;
+    width: 94%; }
+    .header div .views-exposed-form li,
+    #block-system-main-menu li {
+      color: #414042;
+      display: inline-block;
+      font-weight: bold;
+      list-style: none;
+      margin-top: 30px;
+      position: relative;
+      text-transform: uppercase; }
+      .header div .views-exposed-form li a,
+      .header div .views-exposed-form li span,
+      #block-system-main-menu li a,
+      #block-system-main-menu li span {
         color: #414042;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        list-style: none;
-        margin-top: 30px;
-        position: relative;
-        text-transform: uppercase; }
-        .header div .views-exposed-form li a,
-        .header div .views-exposed-form li span,
-        #block-system-main-menu li a,
-        #block-system-main-menu li span {
-          color: #414042;
-          text-decoration: none; }
-          .header div .views-exposed-form li a:hover,
-          .header div .views-exposed-form li span:hover,
-          #block-system-main-menu li a:hover,
-          #block-system-main-menu li span:hover {
-            color: #f19130; } }
+        text-decoration: none; }
+        .header div .views-exposed-form li a:hover,
+        .header div .views-exposed-form li span:hover,
+        #block-system-main-menu li a:hover,
+        #block-system-main-menu li span:hover {
+          color: #f19130; } }
 
 @media only screen and (min-width: 56.25em) {
   #block-system-main-menu .menu a,
@@ -3440,7 +3160,6 @@ footer {
   padding: 0;
   transition: border 0.3s ease;
   border: 0;
-  font-size: 14px;
   font-weight: normal;
   text-transform: none; }
   #block-system-main-menu .expanded li:last-child a {
@@ -3468,31 +3187,28 @@ footer {
   #block-system-main-menu .expanded .show li a {
     color: #414042; }
 
-.header div .views-exposed-form,
-.content > .menu {
-  /*display: none;*/ }
-  @media only screen and (min-width: 56.25em) {
-    .header div .views-exposed-form,
-    .content > .menu {
-      display: block;
-      width: 94%; }
-      .header div .views-exposed-form li,
-      .content > .menu li {
-        border-right: 1px solid #414042;
+@media only screen and (min-width: 56.25em) {
+  .header div .views-exposed-form,
+  .content > .menu {
+    display: block;
+    width: 94%; }
+    .header div .views-exposed-form li,
+    .content > .menu li {
+      border-right: 1px solid #414042;
+      color: #414042;
+      display: inline-block;
+      font-weight: 600;
+      list-style: none;
+      margin: 35px 0;
+      padding: 0 18px;
+      text-transform: uppercase; }
+      .header div .views-exposed-form li a,
+      .content > .menu li a {
         color: #414042;
-        display: inline-block;
-        font-weight: 600;
-        list-style: none;
-        margin: 35px 0;
-        padding: 0 18px;
-        text-transform: uppercase; }
-        .header div .views-exposed-form li a,
-        .content > .menu li a {
-          color: #414042;
-          text-decoration: none; }
-      .header div .views-exposed-form li:nth-child(2),
-      .content > .menu li:nth-child(2) {
-        border-left: 0 solid #414042; } }
+        text-decoration: none; }
+    .header div .views-exposed-form li:nth-child(2),
+    .content > .menu li:nth-child(2) {
+      border-left: 0 solid #414042; } }
 
 .content .expandir {
   display: block;
@@ -3506,8 +3222,6 @@ footer {
     padding-bottom: 3px;
     text-decoration: none; }
   .content .expandir li {
-    font-size: 18px;
-    font-size: 1.8rem;
     list-style: none;
     padding: 16px;
     border-bottom: solid #fff 1px; }
@@ -3614,9 +3328,7 @@ footer {
           padding: 0 6px;
           margin: 8px 2px; }
           .nav-secundary-main .menu li a {
-            color: #fff;
-            font-size: 10px;
-            font-size: 1rem; }
+            color: #fff; }
             .nav-secundary-main .menu li a:hover {
               color: #f19130; } }
 
@@ -3647,10 +3359,4 @@ footer {
   .pager li {
     display: inline-block;
     padding: 0 5px; }
-    .pager li a {
-      font-size: 16px;
-      font-size: 1.6rem; }
-  .pager .pager-current {
-    font-size: 16px;
-    font-size: 1.6rem; }
 /*# sourceMappingURL=main.css.map */

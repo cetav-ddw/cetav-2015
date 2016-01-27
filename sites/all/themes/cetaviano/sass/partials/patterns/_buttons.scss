@@ -39,7 +39,6 @@ button {
 
 .btn-direction {
     @include button($white, $white, $ligth-gray);
-    @include font-size(14);
     background: transparent;
     display: inline-block;
     height: 100%;
@@ -126,8 +125,7 @@ button {
 
 // boton leer más, texto inicial
 .course-description a {
-    @include button($gray, $gray, $white)
-    @include font-size(14);
+    @include button($gray, $gray, $white);
     border-radius: 6px;
     padding: 5px 8px;
     text-decoration: none;
@@ -140,8 +138,7 @@ button {
 }
 
 .text-course-description a {
-    @include button($light-blue, $light-blue, $white)
-    @include font-size(15);
+    @include button($light-blue, $light-blue, $white);
     border-radius: 6px;
     display: inline-block;
     padding: 5px 8px;
@@ -153,8 +150,7 @@ button {
 
 // boton de cada curso libre disponible
 .btn-course a {
-    @include button($light-blue, $light-blue, $white)
-    @include font-size(14);
+    @include button($light-blue, $light-blue, $white);
     border-radius: 6px;
     display: inline-block;
     padding: 6px 10px;

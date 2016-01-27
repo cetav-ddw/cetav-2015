@@ -7,7 +7,6 @@ form {
         @include button(red, red, red); //$color-border-type, $color-hover-type, $color-hover-background
     }
     input {
-        @include font-size(16);
         background-color: $ligth-gray;
         border: 0;
         margin: 16px 0;

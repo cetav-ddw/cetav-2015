@@ -36,7 +36,7 @@
 .details-preview-course {
     background-color: $light-blue;
     height: 250px;
-    opacity: 0.85;
+    opacity: .85;
     padding: 30px 20px;
     position: absolute;
     right: 0;
@@ -52,13 +52,11 @@
 
 .date-display-range {
     color: $white;
-    font-size: 13px;
 }
 
 .views-field-field-precio {
     color: $light-blue;
     background-color: $white;
-    font-size: 15px;
     font-weight: bold;
     padding: 3px 7px;
     position: absolute;

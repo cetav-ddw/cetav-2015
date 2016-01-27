@@ -1,13 +1,19 @@
-body {
-    @include font-size(14);
+html {
+    background: #292929;
     box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: $default-font;
+    font-size: 1em;
+
+    @include mquery("large") {
+        font-size: 1.125em;
+    }
 }
 
-html {
+body {
+    background: #292929;
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-family: $default-font;
+    color: #464646;
+    line-height: 1.45;
 }
 
 *,

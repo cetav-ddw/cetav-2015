@@ -1,56 +1,26 @@
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
     font-family: $contrast-font;
     line-height: 1.2;
-    margin: 0;
+    margin: 1.414em 0 0.5em;
 }
 
 h1 {
-    @include font-size(44);
+    font-size: 3.157em;
+    margin-top: 0;
 }
 
 h2 {
-    @include font-size(25);
     color: $main-color;
-
-    @include mquery("small") {
-        @include font-size(35);
-    }
-
-    @include mquery("medium") {
-        @include font-size(40);
-    }
+    font-size: 2.369em;
 }
 
 h3 {
-    @include font-size(21);
-
-    @include mquery("small") {
-        @include font-size(31);
-    }
-
-    @include mquery("medium") {
-        @include font-size(36);
-    }
+    font-size: 1.777em;
 }
 
 h4 {
-    @include font-size(16);
-
-    @include mquery("small") {
-        @include font-size(22);
-    }
-}
-
-h5 {
-    @include font-size(18);
-    color: $dark-gray;
-}
-
-h6 {
-    @include font-size(14);
+    font-size: 1.333em;
 }

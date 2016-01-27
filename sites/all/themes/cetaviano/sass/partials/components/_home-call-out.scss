@@ -28,7 +28,6 @@
     margin: 0 0 30px;
     
     @include mquery("large") {
-        @include font-size(18);
         margin-top: 10px;
     }
 }

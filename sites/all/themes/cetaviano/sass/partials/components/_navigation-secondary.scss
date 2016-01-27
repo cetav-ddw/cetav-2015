@@ -27,7 +27,6 @@
 
                 a {
                     color: $white;
-                    @include font-size(10);
 
                     &:hover{
                         color: $orange;

@@ -12,7 +12,7 @@
     }
     .views-row {
         @include span-columns(8 of 8);
-        box-shadow: 0px 0px 4px #c2bebe;
+        box-shadow: 0 0 4px #c2bebe;
         margin-bottom: 20px;
         margin-left: 0;
         overflow: hidden;
@@ -51,7 +51,6 @@
 }
 
 .date-new-preview {
-    @include font-size(12);
     border-bottom: 1px solid #cecece;
     display: block;
     margin-bottom: 17px;

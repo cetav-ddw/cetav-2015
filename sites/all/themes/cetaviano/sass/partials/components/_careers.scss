@@ -50,7 +50,6 @@
     width: 100%;
 
     p {
-        @include font-size(16);
         color: $white;
         margin-top: 33px;
         width: 95%;
@@ -67,14 +66,9 @@
     }
 
     h4 {
-        @include font-size(22);
         color: $light-blue;
         margin-top: 33px;
         width: 95%;
-
-        @include mquery("medium") {
-            @include font-size(28);
-        }
     }
 }
 

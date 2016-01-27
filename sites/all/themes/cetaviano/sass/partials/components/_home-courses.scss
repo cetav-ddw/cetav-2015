@@ -42,17 +42,7 @@
     text-align: center;
     width: 100%;
 
-    @include mquery("base") {
-        @include font-size(24);
-    }
-    @include mquery("small") {
-        @include font-size(28);
-    }
-    @include mquery("medium") {
-        @include font-size(30);
-    }
     @include mquery("large") {
-        @include font-size(36);
         text-align: left;
     }
 }
@@ -95,7 +85,6 @@
 }
 
 .section-free-courses h4 {
-    @include font-size(16);
     display: inline-block;
     font-family: $contrast-font;
     font-weight: bolder;
@@ -112,7 +101,6 @@
 }
 
 .title-course-item {
-    @include font-size(16);
     color: $dark-gray;
     display: inline-block;
     font-family: $contrast-font;
@@ -125,10 +113,8 @@
 }
 
 .date-course-item span {
-    @include font-size(13);
     color: $ligth-gray;
     font-family: $default-font;
     margin-bottom: 0;
     margin-top: 6px;
 }
-

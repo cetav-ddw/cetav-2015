@@ -1,4 +1,4 @@
-    .generation {
+.generation {
     display: block;
     margin: 90px auto;
     max-width: $max-width;
@@ -150,7 +150,6 @@
     width: 100%;
 
     h5 {
-        @include font-size(14);
         color: #fff;
         font-weight: lighter;
         margin: 10px 0 3px;
@@ -167,7 +166,6 @@
     }
 
     .carrera-testimonial {
-        @include font-size(12);
         color: #fff;
 
         @include mquery("base") {

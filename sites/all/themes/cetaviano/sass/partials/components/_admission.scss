@@ -2,9 +2,8 @@
     text-align: center;
 
     h4 {
-        @include font-size(22);
         color: $gray;
-        padding: 0 0 3% 0;
+        padding: 0 0 3%;
     }
     p {
         height: 100px;
