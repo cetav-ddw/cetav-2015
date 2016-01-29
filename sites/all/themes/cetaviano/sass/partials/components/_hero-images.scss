@@ -1,17 +1,15 @@
-//
-// Sections Header Image
-//
 .panel-header {
     position: relative;
 
     img {
+        display: block;
         width: 100%;
     }
 }
 
-.title-headers {
+.section-call-out {
     background-color: $main-color;
-    bottom: 3px;
+    bottom: 0;
     padding: 20px;
     position: absolute;
 
@@ -24,14 +22,14 @@
     }
 }
 
-.animacion-3d .title-headers {
+.animacion-3d .section-call-out {
     background-color: $animation-color;
 }
 
-.diseno-desarrollo-web .title-headers {
+.diseno-desarrollo-web .section-call-out {
     background-color: $ddw-color;
 }
 
-.post-produccion .title-headers {
+.post-produccion .section-call-out {
     background-color: $post-color;
 }

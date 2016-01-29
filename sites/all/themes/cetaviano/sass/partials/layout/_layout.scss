@@ -54,11 +54,11 @@
 
 .center-wrapper,
 .panel-wide {
-    clear: both;
     overflow: hidden;
     padding: 30px 16px;
+
     @include mquery("medium") {
-        padding: 50px 16px;
+        padding: 80px 16px;
     }
 }
 

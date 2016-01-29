@@ -1,6 +1,3 @@
-//
-// Buttons
-//
 button {
     @include button(red, red, red); //$color-border-type, $color-hover-type, $color-hover-background
     transition: all 0.2s ease-in-out;
@@ -115,7 +112,6 @@ button {
     }
 }
 
-// boton leer más, texto inicial
 .course-description a {
     @include button($gray, $gray, $white);
     text-decoration: none;
