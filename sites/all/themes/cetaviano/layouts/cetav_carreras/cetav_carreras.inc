@@ -14,5 +14,7 @@ $plugin = array(
     'right' => t('Right side'),
     'wide_second' => t('Wide second'),
     'wide_third' => t('Wide third'),
+    'wide_four' => t('Wide four'),
+
   ),
 );

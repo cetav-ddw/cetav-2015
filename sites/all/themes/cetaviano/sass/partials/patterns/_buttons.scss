@@ -5,6 +5,7 @@ button {
 
 // Buttons Careers
 .btn-admision a,
+.btn-cta,
 .btn-download {
     @include button($animation-color, $animation-color, $white);
     display: block;
@@ -20,16 +21,19 @@ button {
 }
 
 .animacion-3d .btn-admision a,
+.animacion-3d .btn-cta,
 .animacion-3d .btn-download {
     @include button($animation-color, $animation-color, $white);
 }
 
 .diseno-desarrollo-web .btn-admision a,
+.diseno-desarrollo-web .btn-cta,
 .diseno-desarrollo-web .btn-download {
     @include button($ddw-color, $ddw-color, $white);
 }
 
 .post-produccion .btn-admision a,
+.post-produccion .btn-cta,
 .post-produccion .btn-download {
     @include button($post-color, $post-color, $white);
 }

@@ -80,6 +80,12 @@
         });
       }
 
+      function changePage(){
+        $("#cta-carrers").click(function(){
+          window.location.href="/admision";
+        });
+      }
+
 
       return {
         cetavMenuToggle        :  menuToggle,
@@ -88,7 +94,8 @@
         cetavShowSubmenu       :  showSubmenu,
         cetavshowSearch        :  showSearch,
         cetavRequiredForm      :  requiredForm,
-        cetavTyped             :  typed
+        cetavTyped             :  typed,
+        cetavChangePage        :  changePage
       };
 
     })();
@@ -100,7 +107,7 @@
     cetav.cetavDisplayFormCourse();
     cetav.cetavRequiredForm();
     cetav.cetavTyped();
-
+    cetav.cetavChangePage();
   });
 
 }(jQuery));

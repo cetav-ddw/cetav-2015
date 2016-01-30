@@ -82,3 +82,23 @@
 .pane-node-field-skills-carrera {
     clear: both;
 }
+
+.cta-carrers{
+    text-align: center;
+
+    .content-title{
+        margin-bottom: 30px;
+    }
+}
+
+.animacion-3d .cta-carrers h4{
+    color: $animation-color;
+}
+
+.diseno-desarrollo-web .cta-carrers h4{
+    color: $ddw-color;
+}
+
+.post-produccion .cta-carrers h4{
+    color: $post-color;
+}

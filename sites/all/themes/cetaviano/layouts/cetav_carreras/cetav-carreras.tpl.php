@@ -36,4 +36,11 @@
       </div>
     </div>
   <?php endif ?>
+   <?php if ($content['wide_four']): ?>
+    <div class="panel-container panel-wide cta-carrers">
+      <div class="grid-width">
+        <?php print $content['wide_four']; ?>
+      </div>
+    </div>
+  <?php endif ?>
 </div>

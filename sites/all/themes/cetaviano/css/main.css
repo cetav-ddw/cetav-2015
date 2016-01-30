@@ -168,6 +168,7 @@ button {
         color: red; } }
 
 .btn-admision a,
+.btn-cta,
 .btn-download {
   background-color: #dc661e;
   border: 2px solid #dc661e;
@@ -185,19 +186,23 @@ button {
   width: 250px; }
   @media only screen and (min-width: 68.75em) {
     .btn-admision a,
+    .btn-cta,
     .btn-download {
       background-color: transparent;
       border: 2px solid #dc661e;
       color: #dc661e; }
       .btn-admision a:hover,
+      .btn-cta:hover,
       .btn-download:hover {
         background-color: #dc661e;
         color: #fff; } }
   .btn-admision a:hover,
+  .btn-cta:hover,
   .btn-download:hover {
     text-decoration: none; }
 
 .animacion-3d .btn-admision a,
+.animacion-3d .btn-cta,
 .animacion-3d .btn-download {
   background-color: #dc661e;
   border: 2px solid #dc661e;
@@ -206,16 +211,19 @@ button {
   padding: 15px 30px; }
   @media only screen and (min-width: 68.75em) {
     .animacion-3d .btn-admision a,
+    .animacion-3d .btn-cta,
     .animacion-3d .btn-download {
       background-color: transparent;
       border: 2px solid #dc661e;
       color: #dc661e; }
       .animacion-3d .btn-admision a:hover,
+      .animacion-3d .btn-cta:hover,
       .animacion-3d .btn-download:hover {
         background-color: #dc661e;
         color: #fff; } }
 
 .diseno-desarrollo-web .btn-admision a,
+.diseno-desarrollo-web .btn-cta,
 .diseno-desarrollo-web .btn-download {
   background-color: #9e280e;
   border: 2px solid #9e280e;
@@ -224,16 +232,19 @@ button {
   padding: 15px 30px; }
   @media only screen and (min-width: 68.75em) {
     .diseno-desarrollo-web .btn-admision a,
+    .diseno-desarrollo-web .btn-cta,
     .diseno-desarrollo-web .btn-download {
       background-color: transparent;
       border: 2px solid #9e280e;
       color: #9e280e; }
       .diseno-desarrollo-web .btn-admision a:hover,
+      .diseno-desarrollo-web .btn-cta:hover,
       .diseno-desarrollo-web .btn-download:hover {
         background-color: #9e280e;
         color: #fff; } }
 
 .post-produccion .btn-admision a,
+.post-produccion .btn-cta,
 .post-produccion .btn-download {
   background-color: #819535;
   border: 2px solid #819535;
@@ -242,11 +253,13 @@ button {
   padding: 15px 30px; }
   @media only screen and (min-width: 68.75em) {
     .post-produccion .btn-admision a,
+    .post-produccion .btn-cta,
     .post-produccion .btn-download {
       background-color: transparent;
       border: 2px solid #819535;
       color: #819535; }
       .post-produccion .btn-admision a:hover,
+      .post-produccion .btn-cta:hover,
       .post-produccion .btn-download:hover {
         background-color: #819535;
         color: #fff; } }
@@ -1711,6 +1724,20 @@ div.password-suggestions ul {
 
 .pane-node-field-skills-carrera {
   clear: both; }
+
+.cta-carrers {
+  text-align: center; }
+  .cta-carrers .content-title {
+    margin-bottom: 30px; }
+
+.animacion-3d .cta-carrers h4 {
+  color: #dc661e; }
+
+.diseno-desarrollo-web .cta-carrers h4 {
+  color: #9e280e; }
+
+.post-produccion .cta-carrers h4 {
+  color: #819535; }
 
 .course-content {
   background-color: #243842;
