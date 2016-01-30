@@ -73,8 +73,29 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p dir="ltr"><b id="docs-internal-guid-639b0e3e-68f9-fbb9-d450-522aa40475c1">Somos una institución que le brinda la oportunidad de estudiar lo que le apasiona y reforzar sus habilidades en las áreas creativas y tecnológicas, así como el fortalecimiento de habilidades blandas, formación en gestión de negocios y desarrollo del pensamiento creativo y crítico para que sea competitivo en el mundo laboral y un profesional exitoso. ver propuesta de arriba :)</b></p><p>&nbsp;</p><p dir="ltr"><b id="docs-internal-guid-639b0e3e-68f9-fbb9-d450-522aa40475c1">El CETAV ofrece programas técnicos certificados por el INA de 5 cuatrimestres de formación continua y a tiempo completo en las siguientes áreas técnicas:</b></p><ul dir="ltr"><li><b id="docs-internal-guid-639b0e3e-68f9-fbb9-d450-522aa40475c1">&nbsp;Edición y Postproducción Digital de Imagen y Sonido.</b></li><li><b id="docs-internal-guid-639b0e3e-68f9-fbb9-d450-522aa40475c1">&nbsp;Diseño y Desarrollo Web.</b></li><li><b id="docs-internal-guid-639b0e3e-68f9-fbb9-d450-522aa40475c1">&nbsp;Animación Digital 3D.</b></li></ul>',
-      'format' => 'manati_texto_formato',
+      'body' => '<p>El Centro de Tecnologías y Artes Visuales (CETAV), busca Fomentar el desarrollo humano y la formación de jóvenes a partir de opciones de especialización técnica alineadas con las demandas del mercado.</p>
+
+<p>Nuestra población prioritaria son adultos jóvenes de las comunidades de Desamparados, La Unión y Curridabat. Nuestras carreras de especialización técnicas se encuentran certificadas por el Instituto Nacional de Aprendizaje (INA), tienen una duración de 5 cuatrimestres a tiempo completo y los interesados cuentan con la posibilidad de subsidio a través del Programa EMPLEATE del Ministerio de Trabajo y Seguridad Social.</p>
+
+<p>Nuestros programas:</p>
+<ul>
+<li>Técnico en Edición y Postproducción Digital de Imagen y Sonido.</li>
+  <li>Técnico en Diseño y Desarrollo Web.</li>
+    <li>Técnico en Animación Digital 3D (Tercera Dimensión).</li>
+</ul>
+
+<p>Cada uno de ellos trabaja con cuatro líneas curriculares básicas:</p>
+
+<ul>
+<li>Formación técnica y generación de competencias para el mercado.</li>
+ <li>Formación del idioma inglés como herramienta clave para la competitividad.</li>
+   <li> Formación en gestión de negocios para la administración,  gestión de proyectos y empresas, con miras en desarrollar sus propios emprendimientos.</li>
+   <li> Formación en áreas transversales como el desarrollo del pensamiento creativo y crítico, así como el fortalecimiento de habilidades blandas y de habilidades para la vida.</li>
+</ul>
+
+<p>Además, ofrecemos cursos de actualización profesional, en las áreas tecnológicas afines al CETAV.</p>
+',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -202,7 +223,9 @@ function panels_cetav_institucion_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -363,8 +386,17 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p><strong>El Consejo Asesor está conformado por un miembro de:</strong></p><ul><li>Viceministro de Cultura​</li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Viceministro de Juventud</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Subgerencia Técnica Instituto Nacional de Aprendizaje (INA)</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Costa Rica Animation Holdings</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Director Nacional de Empleo (EMPLÉATE)</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Promotora de Comercio Exterior (PROCOMER)</b></li><li><b id="docs-internal-guid-639b0e3e-6969-03af-05d8-57a4ed821330">Cámara de Tecnologías de Información y Comunicación (CAMTIC)</b>​​</li></ul>',
-      'format' => 'manati_texto_formato',
+      'body' => 'El Consejo Asesor está conformado por: 
+<ol>
+<li>Laura Molina – Centro Costarricense de Producción Cinematográfica, representante del Viceministro de Cultura</li> 
+<li>Ileana Leandro Gómez – Subgerencia Técnica Instituto Nacional de Aprendizaje (INA)</li> 
+<li>Vanessa Gibson – Coalición Costarricense de Iniciativas de Desarrollo (CINDE)</li>
+<li>Oliver Zúñiga – Costa Rica Animation Holdings</li>
+<li>Andrés Romero – Director Nacional de Empleo (EMPLÉATE)</li>
+<li>Micaela Mazzei – Promotora de Comercio Exterior (PROCOMER)</li>
+<li>Claudio Pinto – Cámara de Tecnologías de Información y Comunicación (CAMTIC)</li>
+</ol>',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();

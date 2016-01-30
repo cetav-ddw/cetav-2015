@@ -62,6 +62,13 @@ function carreras_cetav_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_intro_carreras' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_minimal',
+        ),
+      ),
+    ),
   );
   $export['node|carreras|full'] = $ds_fieldsetting;
 

@@ -205,6 +205,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'naked',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -236,7 +237,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => array(
         'element_title' => array(
-          'type' => '',
+          'type' => '0',
           'class_enable' => 0,
           'class' => '',
           'attributes' => array(),
@@ -272,7 +273,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
       'style' => 'semantic_panels',
     );

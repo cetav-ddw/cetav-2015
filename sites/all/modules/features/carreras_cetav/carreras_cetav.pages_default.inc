@@ -58,6 +58,7 @@ function carreras_cetav_default_page_manager_handlers() {
       'left_second' => NULL,
       'right_second' => NULL,
       'wide_third' => NULL,
+      'wide_four' => NULL,
     ),
   );
   $display->cache = array();
@@ -156,7 +157,47 @@ function carreras_cetav_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => 'call-out-text',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'call-out-text',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 0,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -303,6 +344,29 @@ function carreras_cetav_default_page_manager_handlers() {
     $pane->uuid = 'b0ac5ea2-322b-496c-b122-57a153ad579f';
     $display->content['new-b0ac5ea2-322b-496c-b122-57a153ad579f'] = $pane;
     $display->panels['wide'][1] = 'new-b0ac5ea2-322b-496c-b122-57a153ad579f';
+    $pane = new stdClass();
+    $pane->pid = 'new-5af4d77d-8704-414a-bbd7-7190b3c0379c';
+    $pane->panel = 'wide_four';
+    $pane->type = 'block';
+    $pane->subtype = 'block-3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => 'cta carreras',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '5af4d77d-8704-414a-bbd7-7190b3c0379c';
+    $display->content['new-5af4d77d-8704-414a-bbd7-7190b3c0379c'] = $pane;
+    $display->panels['wide_four'][0] = 'new-5af4d77d-8704-414a-bbd7-7190b3c0379c';
     $pane = new stdClass();
     $pane->pid = 'new-2266c091-7d97-4a25-a4d4-26debf6adbb5';
     $pane->panel = 'wide_second';
