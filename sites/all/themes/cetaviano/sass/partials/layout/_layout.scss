@@ -1,4 +1,5 @@
 .grid-width {
+    @include micro-clearfix;
     margin: 0 auto;
     max-width: $max-width;
 }

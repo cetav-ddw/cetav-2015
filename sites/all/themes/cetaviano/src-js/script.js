@@ -86,7 +86,6 @@
         });
       }
 
-
       return {
         cetavMenuToggle        :  menuToggle,
         cetavDisplayFormCourse :  displayFormCourse,

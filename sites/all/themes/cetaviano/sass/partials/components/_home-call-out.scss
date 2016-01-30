@@ -19,7 +19,6 @@
     }
     @include mquery("large") {
         float: right;
-        margin-right: 60px;
         width: 50%;
     }
 }

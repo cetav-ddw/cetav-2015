@@ -7,27 +7,13 @@
     strong {
         color: $orange;
     }
- 
-    @include mquery("base") {
-        padding-top: 14.5%;
-    }
-    @include mquery("small") {
-        padding-top: 8.5%;
-    }
-    @include mquery("medium") {
-        padding-top: 17.5%;
-    }
-    @include mquery("large") {
-        padding-top: 14.5%;
-    }
-    @include mquery("x-large") {
-        padding-top: 9.5%;
-    }
 }
 
-.type-wrap{
+.type-wrap {
     font-family: $contrast-font;
+    font-size: 2.75em;
     margin: 10px auto;
+    max-width: $max-width;
     padding: 20px;
     text-align: center;
 }

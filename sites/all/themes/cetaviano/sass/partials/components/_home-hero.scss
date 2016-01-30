@@ -7,13 +7,9 @@
     background-size: cover;
 
     @include mquery("base") {
-        height: 400px;
-    }
-    @include mquery("medium") {
-        height: 600px;
+        max-height: 400px;
     }
     @include mquery("x-large") {
         background-size: 1200px;
-        height: 700px;
     }
 }
