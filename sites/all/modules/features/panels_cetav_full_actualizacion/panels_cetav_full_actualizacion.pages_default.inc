@@ -102,7 +102,7 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
           'attributes_array' => array(),
         ),
         'element_content' => array(
-          'type' => 'h3',
+          'type' => 'h2',
           'class_enable' => 1,
           'class' => 'curso-detail-h',
           'attributes' => array(),

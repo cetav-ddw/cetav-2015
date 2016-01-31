@@ -1,7 +1,7 @@
 name = panels-cetav-full-actualizacion
 core = 7.x
 package = CETAV
-version = 7.x-1.2
+version = 7.x-1.3
 dependencies[] = actualizacion_profesional_cetav
 dependencies[] = ctools
 dependencies[] = ds
