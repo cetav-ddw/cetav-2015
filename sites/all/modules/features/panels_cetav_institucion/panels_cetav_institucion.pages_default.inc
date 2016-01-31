@@ -56,6 +56,7 @@ function panels_cetav_institucion_default_page_manager_pages() {
       'right_second' => NULL,
       'wide_second' => NULL,
       'wide_main' => NULL,
+      'wide_intro' => NULL,
     ),
   );
   $display->cache = array();
@@ -73,27 +74,11 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>El Centro de Tecnologías y Artes Visuales (CETAV), busca Fomentar el desarrollo humano y la formación de jóvenes a partir de opciones de especialización técnica alineadas con las demandas del mercado.</p>
+      'body' => '<p>El Centro de Tecnologías y Artes Visuales (CETAV), es un programa del Ministerio de Cultura y Juventud (MCJ), que se lleva a cabo en el <a href="http://parquelalibertad.org/">Parque La Libertad</a>.</p>
 
-<p>Nuestra población prioritaria son adultos jóvenes de las comunidades de Desamparados, La Unión y Curridabat. Nuestras carreras de especialización técnicas se encuentran certificadas por el Instituto Nacional de Aprendizaje (INA), tienen una duración de 5 cuatrimestres a tiempo completo y los interesados cuentan con la posibilidad de subsidio a través del Programa EMPLEATE del Ministerio de Trabajo y Seguridad Social.</p>
+<p>El CETAV, busca fomentar el desarrollo humano y la formación de jóvenes a partir de opciones de especialización técnica alineadas con las demandas del mercado.</p>
 
-<p>Nuestros programas:</p>
-<ul>
-<li>Técnico en Edición y Postproducción Digital de Imagen y Sonido.</li>
-  <li>Técnico en Diseño y Desarrollo Web.</li>
-    <li>Técnico en Animación Digital 3D (Tercera Dimensión).</li>
-</ul>
 
-<p>Cada uno de ellos trabaja con cuatro líneas curriculares básicas:</p>
-
-<ul>
-<li>Formación técnica y generación de competencias para el mercado.</li>
- <li>Formación del idioma inglés como herramienta clave para la competitividad.</li>
-   <li> Formación en gestión de negocios para la administración,  gestión de proyectos y empresas, con miras en desarrollar sus propios emprendimientos.</li>
-   <li> Formación en áreas transversales como el desarrollo del pensamiento creativo y crítico, así como el fortalecimiento de habilidades blandas y de habilidades para la vida.</li>
-</ul>
-
-<p>Además, ofrecemos cursos de actualización profesional, en las áreas tecnológicas afines al CETAV.</p>
 ',
       'format' => 'full_html',
       'substitute' => TRUE,
@@ -134,11 +119,11 @@ function panels_cetav_institucion_default_page_manager_pages() {
         'element_wrapper' => array(
           'type' => '',
           'class_enable' => 1,
-          'class' => 'intro-admin',
+          'class' => 'course-intro',
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
       'style' => 'semantic_panels',
     );
@@ -205,7 +190,10 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -294,6 +282,27 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->uuid = '94afee93-0a9a-4eb9-b124-057aba80cf8c';
     $display->content['new-94afee93-0a9a-4eb9-b124-057aba80cf8c'] = $pane;
     $display->panels['wide'][1] = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
+    $pane = new stdClass();
+    $pane->pid = 'new-2735620d-f0ef-4526-865a-2668d01b309e';
+    $pane->panel = 'wide_intro';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:48';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '2735620d-f0ef-4526-865a-2668d01b309e';
+    $display->content['new-2735620d-f0ef-4526-865a-2668d01b309e'] = $pane;
+    $display->panels['wide_intro'][0] = 'new-2735620d-f0ef-4526-865a-2668d01b309e';
     $pane = new stdClass();
     $pane->pid = 'new-c18787d3-9797-49e7-90ce-ef0fcc5d6548';
     $pane->panel = 'wide_main';
@@ -386,16 +395,16 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => 'El Consejo Asesor está conformado por: 
-<ol>
-<li>Laura Molina – Centro Costarricense de Producción Cinematográfica, representante del Viceministro de Cultura</li> 
-<li>Ileana Leandro Gómez – Subgerencia Técnica Instituto Nacional de Aprendizaje (INA)</li> 
-<li>Vanessa Gibson – Coalición Costarricense de Iniciativas de Desarrollo (CINDE)</li>
-<li>Oliver Zúñiga – Costa Rica Animation Holdings</li>
-<li>Andrés Romero – Director Nacional de Empleo (EMPLÉATE)</li>
-<li>Micaela Mazzei – Promotora de Comercio Exterior (PROCOMER)</li>
-<li>Claudio Pinto – Cámara de Tecnologías de Información y Comunicación (CAMTIC)</li>
-</ol>',
+      'body' => '<h3 class="board-h">El Consejo Asesor está conformado por:</h3>
+<ul class="board-table">
+<li><b>Laura Molina</b> Centro Costarricense de Producción Cinematográfica, representante del Viceministro de Cultura</li> 
+<li><b>Ileana Leandro Gómez</b> Subgerencia Técnica Instituto Nacional de Aprendizaje (INA)</li> 
+<li><b>Vanessa Gibson</b> Coalición Costarricense de Iniciativas de Desarrollo (CINDE)</li>
+<li><b>Oliver Zúñiga</b> Costa Rica Animation Holdings</li>
+<li><b>Andrés Romero</b> Director Nacional de Empleo (EMPLÉATE)</li>
+<li><b>Micaela Mazzei</b> Promotora de Comercio Exterior (PROCOMER)</li>
+<li><b>Claudio Pinto</b> Cámara de Tecnologías de Información y Comunicación (CAMTIC)</li>
+</ul>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -439,7 +448,7 @@ function panels_cetav_institucion_default_page_manager_pages() {
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
       'style' => 'semantic_panels',
     );
