@@ -35,6 +35,8 @@ button {
 
 .btn-direction {
     @include btn-transparent;
+    font-size: $text-small;
+    margin-right: 5px;
 }
 
 .btn-download {

@@ -253,7 +253,9 @@ button {
   text-decoration: none;
   transition: background-color .3s;
   vertical-align: middle;
-  border-color: #fff; }
+  border-color: #fff;
+  font-size: 0.833em;
+  margin-right: 5px; }
   .btn-direction:hover {
     background-color: #fff;
     color: #464646;
@@ -2234,14 +2236,15 @@ div.password-suggestions ul {
 footer {
   background: #292929;
   overflow: hidden;
-  padding: 30px 0; }
+  padding: 40px 0; }
+  @media only screen and (min-width: 56.25em) {
+    footer {
+      padding-top: 80px; } }
   footer h2 {
     display: none; }
-  footer h5 {
-    margin: 2px 0 20px; }
-  footer h5,
   footer p {
-    color: #fff; }
+    color: #fff;
+    font-size: 0.833em; }
   footer .contact-info {
     margin-bottom: 25px; }
     @media only screen and (min-width: 56.25em) {
@@ -2252,8 +2255,10 @@ footer {
         width: 31.7615656014%; }
         footer .contact-info:last-child {
           margin-right: 0; } }
-  footer .grid-width {
-    padding: 0 16px; }
+
+.foot-h {
+  color: #fff;
+  margin: 2px 0 20px; }
 
 .logo-parque-ministerio {
   background: url(../img/logo-parque-ministerio.png) center;

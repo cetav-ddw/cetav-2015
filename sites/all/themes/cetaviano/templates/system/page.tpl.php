@@ -118,14 +118,15 @@
 <footer class="footer" role="contentinfo">
   <div class="footer-content">
     <div class="footer grid-width">
+    <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
       <div class="contact-info">
-        <h5>¿Cómo llegar?</h5>
+        <h4 class="foot-h">¿Cómo llegar?</h4>
         <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
         <a href="https://www.waze.com/es/livemap?zoom=17&lat=9.88995&lon=-84.03393" class="btn-direction" target="_blank">Ver con Waze</a>
         <a href="https://www.google.com/maps/place/Parque+la+Libertad/@9.8864408,-84.0333174,14.54z/data=!4m2!3m1!1s0x0:0x3aff2bcc0b34d035" target="_blank" class="btn-direction">Ver con Maps</a>
       </div>
       <div class="contact-info">
-        <h5>Contacto</h5>
+        <h4 class="foot-h">Contacto</h4>
         <p>Teléfono: 2276-9400 ext.2031</p>
         <p>E-mail: cetav@parquelalibertad.org</p>
         <nav>
@@ -136,7 +137,7 @@
         </nav>
       </div>
       <div class="contact-info">
-        <h5>Somos parte del</h5>
+        <h4 class="foot-h">Somos parte de</h4>
         <div class="logo-parque-ministerio"></div>
       </div>
     </div>
