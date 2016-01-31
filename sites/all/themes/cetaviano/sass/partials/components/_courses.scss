@@ -1,7 +1,4 @@
 .course-content {
-    background-color: $blue-dark;
-    padding: 50px 0 50px 6%;
-
     h4 {
         margin: 25px auto;
         max-width: $max-width;
@@ -60,26 +57,6 @@
     margin-top: 70px;
     text-align: center;
     transition: 1s;
-}
-
-.center-wrapper-courses .panel-left-column {
-    margin-top: 30px;
-
-    @include mquery("medium") {
-        float: left;
-        margin: 25px 3%;
-        width: 40%;
-    }
-}
-
-.center-wrapper-courses .panel-right-column {
-    margin-top: 30px;
-
-    @include mquery("medium") {
-        float: right;
-        margin: 25px 0;
-        width: 40%;
-    }
 }
 
 .flip-wrap {

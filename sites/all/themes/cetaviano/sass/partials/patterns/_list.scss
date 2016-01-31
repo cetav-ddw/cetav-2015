@@ -6,10 +6,6 @@
     }
 }
 
-.requirements-admission-wrapper {
-    background: $blue-dark;
-}
-
 .split-list {
     ul {
         @include bullet-color($light-blue, $white);

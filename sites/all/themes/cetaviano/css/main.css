@@ -128,9 +128,6 @@ a {
          -moz-column-count: 2;
               column-count: 2; } }
 
-.requirements-admission-wrapper {
-  background: #243842; }
-
 .split-list ul {
   list-style-type: none;
   position: relative;
@@ -966,6 +963,10 @@ footer {
 .section-intro {
   padding-bottom: 0; }
 
+.slab-blue {
+  background: #243842;
+  color: #fff; }
+
 .panel-left-column,
 .panel-right-column {
   float: left;
@@ -1694,15 +1695,11 @@ div.password-suggestions ul {
 .post-produccion .paragraphs-item-programas-carreras h4 {
   background-color: #819535; }
 
-.section-skills {
-  background-color: #243842;
-  margin: 0;
-  width: 100%; }
-  .section-skills p {
-    color: #fff; }
-    @media only screen and (min-width: 56.25em) {
-      .section-skills p {
-        float: right; } }
+.section-skills p {
+  color: #fff; }
+  @media only screen and (min-width: 56.25em) {
+    .section-skills p {
+      float: right; } }
 
 @media only screen and (min-width: 56.25em) {
   .pane-node-field-titulo-skills-carreras {
@@ -1744,28 +1741,26 @@ div.password-suggestions ul {
 .post-produccion .cta-register-h {
   color: #819535; }
 
-.course-content {
-  background-color: #243842;
-  padding: 50px 0 50px 6%; }
-  .course-content h4 {
-    margin: 25px auto;
-    max-width: 1200px; }
-  .course-content ul {
-    -webkit-column-count: 1;
-       -moz-column-count: 1;
-            column-count: 1;
-    margin: 0 auto;
-    max-width: 1200px; }
-    @media only screen and (min-width: 37.5em) {
-      .course-content ul {
-        -webkit-column-count: 2;
-           -moz-column-count: 2;
-                column-count: 2; } }
-    @media only screen and (min-width: 56.25em) {
-      .course-content ul {
-        -webkit-column-count: 3;
-           -moz-column-count: 3;
-                column-count: 3; } }
+.course-content h4 {
+  margin: 25px auto;
+  max-width: 1200px; }
+
+.course-content ul {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  margin: 0 auto;
+  max-width: 1200px; }
+  @media only screen and (min-width: 37.5em) {
+    .course-content ul {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2; } }
+  @media only screen and (min-width: 56.25em) {
+    .course-content ul {
+      -webkit-column-count: 3;
+         -moz-column-count: 3;
+              column-count: 3; } }
 
 .course-details p {
   margin: 10px 0; }
@@ -1795,22 +1790,6 @@ div.password-suggestions ul {
   margin-top: 70px;
   text-align: center;
   transition: 1s; }
-
-.center-wrapper-courses .panel-left-column {
-  margin-top: 30px; }
-  @media only screen and (min-width: 56.25em) {
-    .center-wrapper-courses .panel-left-column {
-      float: left;
-      margin: 25px 3%;
-      width: 40%; } }
-
-.center-wrapper-courses .panel-right-column {
-  margin-top: 30px; }
-  @media only screen and (min-width: 56.25em) {
-    .center-wrapper-courses .panel-right-column {
-      float: right;
-      margin: 25px 0;
-      width: 40%; } }
 
 .flip-wrap {
   -webkit-perspective: 800px;

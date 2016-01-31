@@ -93,6 +93,11 @@ footer {
     padding-bottom: 0;
 }
 
+.slab-blue {
+    background: $blue-dark;
+    color: $white;
+}
+
 .panel-left-column,
 .panel-right-column {
     @include span-columns(12);

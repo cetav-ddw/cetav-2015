@@ -7,25 +7,31 @@
  */
 ?>
 <div class="panel-display panel-cetav-cursos-libres">
-  <div class="center-wrapper grid-width">
-    <div class="panel-container panel-left-column">
-      <?php print $content['left']; ?>
-    </div>
-    <div class="panel-container panel-right-column">
-      <?php print $content['right']; ?>
+  <div class="section-wide">
+    <div class="grid-width">
+      <div class="panel-container panel-left-column">
+        <?php print $content['left']; ?>
+      </div>
+      <div class="panel-container panel-right-column">
+        <?php print $content['right']; ?>
+      </div>
     </div>
   </div>
     <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide">
-      <?php print $content['wide']; ?>
+    <div class="section-wide slab-blue">
+      <div class="grid-width">
+        <?php print $content['wide']; ?>
+      </div>  
     </div>
   <?php endif ?>
-  <div class="center-wrapper center-wrapper-courses grid-width">
-    <div class="panel-container panel-left-column">
-      <?php print $content['left_second']; ?>
-    </div>
-    <div class="panel-container panel-right-column">
-      <?php print $content['right_second']; ?>
+  <div class="section-wide">
+    <div class="grid-width">
+      <div class="panel-container panel-left-column">
+        <?php print $content['left_second']; ?>
+      </div>
+      <div class="panel-container panel-right-column">
+        <?php print $content['right_second']; ?>
+      </div>
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
