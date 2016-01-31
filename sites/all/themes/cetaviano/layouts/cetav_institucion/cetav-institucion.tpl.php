@@ -11,9 +11,10 @@
   <?php if ($content['wide_main']): ?>
     <div class="panel-container panel-wide panel-header">
       <?php print $content['wide_main']; ?>
+    </div>
   <?php endif ?>
-  </div>
-  <div class="grid-width">
+  <div class="section-wide section-intro">
+    <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left']; ?>
       </div>
@@ -21,14 +22,22 @@
         <?php print $content['right']; ?>
       </div>
     </div>
-    <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide">
+  </div>
+
+  <div class="section-wide">
+    <div class="grid-width">
+        <?php print $content['wide_intro']; ?>
+    </div>
+  </div>
+
+  <?php if ($content['wide']): ?>
+    <div class="section-wide">
       <div class="grid-width">
         <?php print $content['wide']; ?>
       </div>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
+  <div class="section-wide layout-breve slab-light-blue">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_second']; ?>
@@ -39,7 +48,7 @@
     </div>
   </div>
     <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide">
+    <div class="section-wide layout-breve slab-light-blue">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
       </div>

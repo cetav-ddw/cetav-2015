@@ -1,24 +1,6 @@
-.course-content {
-    h4 {
-        margin: 25px auto;
-        max-width: $max-width;
-    }
-    ul {
-        column-count: 1;
-        margin: 0 auto;
-        max-width: $max-width;
-
-        @include mquery ("small") {
-            column-count: 2;
-        }
-
-        @include mquery("medium") {
-            column-count: 3;
-        }
-    }
-}
-
 .course-details {
+    margin-top: 40px;
+    
     p {
         margin: 10px 0;
     }
@@ -157,6 +139,6 @@
 }
 
 .show-course-form {
-    height: 320px;
+    height: 420px;
     transition: 2s;
 }

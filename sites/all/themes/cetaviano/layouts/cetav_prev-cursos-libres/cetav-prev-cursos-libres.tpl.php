@@ -8,7 +8,7 @@
 ?>
 
 <div class="panel-display panel-cetav-prev-cursos-libres">
-  <div class="center-wrapper">
+  <div class="section-wide section-intro">
   <?php if ($content['wide']): ?>
     <div class="panel-container panel-wide">
       <?php print $content['wide']; ?>
@@ -24,7 +24,7 @@
     </div>    
   </div>
     <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide">
+    <div class="section-wide">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
       </div>

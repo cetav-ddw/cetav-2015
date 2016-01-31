@@ -11,21 +11,11 @@
         @include bullet-color($light-blue, $white);
     }
     li {
+        margin-bottom: 0;
         margin-top: 10px;
 
         a {
             color: $white;
-        }
-    }
-}
-
- //estilos para las listas de institución
-.panel-cetav-institucion ul {
-    list-style: none;
-
-    li {
-        &:before {
-            content: "• ";
         }
     }
 }

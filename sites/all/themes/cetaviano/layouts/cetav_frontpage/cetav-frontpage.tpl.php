@@ -48,7 +48,7 @@
     </div>
   </div>
   <?php if ($content['wide_fourth']): ?>
-    <div class="section-wide panel-wide-allies">
+    <div class="section-wide slab-gray">
       <div class="grid-width ">
       <?php print $content['wide_fourth']; ?>
       </div>

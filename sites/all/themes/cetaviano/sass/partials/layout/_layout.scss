@@ -93,9 +93,29 @@ footer {
     padding-bottom: 0;
 }
 
+.layout-breve {
+    & + & {
+        padding-top: 0;
+    }
+
+    .section-call-out-h {
+        color: $white;
+    }
+}
+
 .slab-blue {
     background: $blue-dark;
     color: $white;
+}
+
+.slab-light-blue {
+    background: $light-blue;
+    color: $white;
+}
+
+.slab-gray {
+    background-color: $lighter-gray;
+    background-color: rgba($lighter-gray, .5);
 }
 
 .panel-left-column,

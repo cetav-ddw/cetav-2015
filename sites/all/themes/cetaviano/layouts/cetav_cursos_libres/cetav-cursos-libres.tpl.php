@@ -24,7 +24,7 @@
       </div>  
     </div>
   <?php endif ?>
-  <div class="section-wide">
+  <div class="section-wide section-intro">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_second']; ?>
@@ -35,7 +35,7 @@
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide  panel-wide-courses">
+    <div class="section-wide panel-wide-courses">
       <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>

@@ -1,15 +1,11 @@
-.intro-admin{
-    padding:20px;
-}
-
 .personal-institution {
-    padding: 50px;
-
     .field-items {
         @include outer-container;
+        margin-top: 100px;
 
-        >.field-item {
+        .field-item {
             margin-bottom: 20px;
+            padding: 0 3em 3em;
             text-align: center;
 
             @include mquery("base") {
@@ -20,60 +16,52 @@
                 @include span-columns(6);
             }
 
-            @include mquery("medium") {
-                @include span-columns(3);
-            }
-
             img {
                 border-radius: 50%;
                 display: block;
                 margin: 0 auto;
             }
         }
-
         .odd {
-
-            @include mquery("small") {
-                margin-right: 0;
-            }
-
-            @include mquery("medium") {
-                margin-right: 2.3576515979%;
-            }
+            @include omega();
         }
     }
-
     .personal-name {
-        color: $gray;
         margin-top: 20px;
         text-align: center;
     }
-
     .personal-charge {
         p {
-            background-color: $lighter-gray;
-            border-radius: 5px;
-            color: $gray;
+            color: $orange;
             display: inline-block;
-            height: 54px;
-            margin: 21px 0 10px;
-            padding: 5px 10px;
-            width: 100%;
-
-            @include mquery("medium") {
-                height: 67px;
-            }
-
-            @include mquery("large") {
-                height: 54px;
-            }
+            font-size: $text-small;
+            font-weight: bold;
+            margin: 0 0 10px;
         }
     }
-
     .personal-description {
         p {
-            color: $black;
             text-align: left;
         }
+    }
+}
+
+.board-h {
+    font-size: $text-h4;
+}
+
+.board-table {
+    border-top: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    list-style-type: none;
+    
+    b {
+        min-width: 230px;
+        display: inline-block;
+    }
+    li {
+        border-bottom: 1px solid #e9e9e9;
+        margin: 0;
+        padding: .75em 0;
     }
 }
