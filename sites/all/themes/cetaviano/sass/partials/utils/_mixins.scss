@@ -20,6 +20,31 @@
     }
 }
 
+// List color
+// ===================
+// Setting a different ul bullet colour
+
+@mixin bullet-color($bulletcolor, $textcolor) {
+    list-style-type: none;
+    position: relative;
+    margin-left: 1em;
+    padding-left: 0;
+
+    li {
+        color: $textcolor;
+        list-style-type: none;
+        position: relative;
+    }
+
+    li:before {
+        content: "\2022";
+        position: absolute;
+        left: -1em;
+        color: $bulletcolor;
+        margin-right: 5px;
+    }
+}
+
 // Buttons
 // ===================
 

@@ -121,30 +121,36 @@ a {
     text-decoration: underline; }
 
 .line-grid {
-  clear: both;
   padding-top: 50px; }
   @media only screen and (min-width: 56.25em) {
     .line-grid {
       -webkit-column-count: 2;
          -moz-column-count: 2;
               column-count: 2; } }
-  .line-grid li {
-    color: #00c9ed; }
 
 .requirements-admission-wrapper {
   background: #243842; }
 
+.split-list ul {
+  list-style-type: none;
+  position: relative;
+  margin-left: 1em;
+  padding-left: 0; }
+  .split-list ul li {
+    color: #fff;
+    list-style-type: none;
+    position: relative; }
+  .split-list ul li:before {
+    content: "\2022";
+    position: absolute;
+    left: -1em;
+    color: #00c9ed;
+    margin-right: 5px; }
+
 .split-list li {
-  color: #fff;
-  list-style: none;
-  margin-bottom: 10px; }
+  margin-top: 10px; }
   .split-list li a {
     color: #fff; }
-  .split-list li:before {
-    color: #00c9ed;
-    content: "• ";
-    float: left;
-    margin-right: 11px; }
 
 .panel-cetav-institucion ul {
   list-style: none; }
@@ -435,7 +441,6 @@ button {
     text-decoration: none; }
 
 iframe {
-  margin-top: 9px;
   vertical-align: top;
   width: 100%; }
 
@@ -943,17 +948,23 @@ footer {
     .nav-main {
       width: 1200px; } }
 
-.center-wrapper {
+.center-wrapper,
+.section-wide {
   overflow: hidden;
   padding: 40px 16px; }
   @media only screen and (min-width: 56.25em) {
-    .center-wrapper {
+    .center-wrapper,
+    .section-wide {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media only screen and (min-width: 68.75em) {
-    .center-wrapper {
+    .center-wrapper,
+    .section-wide {
       padding-bottom: 100px;
       padding-top: 100px; } }
+
+.section-intro {
+  padding-bottom: 0; }
 
 .panel-left-column,
 .panel-right-column {
@@ -1639,18 +1650,9 @@ div.password-suggestions ul {
 
 .career-program .paragraphs-item-programas-carreras {
   background-color: #fff;
-  box-shadow: 0 0 13px #c2bebe;
+  box-shadow: 0px 4px 10px rgba(194, 190, 189, 0.25);
   height: 300px;
   margin: 30px 6px; }
-  .career-program .paragraphs-item-programas-carreras h4 {
-    color: white;
-    margin-top: 0;
-    padding: 15px; }
-  .career-program .paragraphs-item-programas-carreras ul {
-    list-style: none;
-    padding: 25px; }
-    .career-program .paragraphs-item-programas-carreras ul li {
-      margin-bottom: 10px; }
   @media only screen and (min-width: 37.5em) {
     .career-program .paragraphs-item-programas-carreras {
       float: left;
@@ -1667,11 +1669,21 @@ div.password-suggestions ul {
       display: block;
       margin-right: 2.3576515979%;
       width: 31.7615656014%;
-      margin: 30px 13px;
+      margin: 0 13px 13px;
       margin-right: 0;
       vertical-top: top; }
       .career-program .paragraphs-item-programas-carreras:last-child {
         margin-right: 0; } }
+  .career-program .paragraphs-item-programas-carreras h4 {
+    color: #fff;
+    margin-top: 0;
+    padding: 15px; }
+  .career-program .paragraphs-item-programas-carreras li {
+    font-size: 0.833em;
+    margin-bottom: 10px; }
+  .career-program .paragraphs-item-programas-carreras ul {
+    list-style: none;
+    padding: 25px; }
 
 .animacion-3d .paragraphs-item-programas-carreras h4 {
   background-color: #dc661e; }
@@ -1684,13 +1696,10 @@ div.password-suggestions ul {
 
 .section-skills {
   background-color: #243842;
-  background-image: url(../img/skills-back.png);
   margin: 0;
   width: 100%; }
   .section-skills p {
-    color: #fff;
-    margin-top: 33px;
-    width: 95%; }
+    color: #fff; }
     @media only screen and (min-width: 56.25em) {
       .section-skills p {
         float: right; } }
@@ -1706,8 +1715,8 @@ div.password-suggestions ul {
 
 .pane-node-field-titulo-skills-carreras h4 {
   color: #00c9ed;
-  margin-top: 33px;
-  width: 95%; }
+  font-size: 1.777em;
+  margin-top: 0; }
 
 @media only screen and (min-width: 56.25em) {
   .pane-node-field-cuerpo-skills-carreras {
@@ -1722,18 +1731,17 @@ div.password-suggestions ul {
 .pane-node-field-skills-carrera {
   clear: both; }
 
-.cta-carrers {
+.cta-register-h {
+  font-size: 1.777em;
   text-align: center; }
-  .cta-carrers .content-title {
-    margin-bottom: 30px; }
 
-.animacion-3d .cta-carrers h4 {
+.animacion-3d .cta-register-h {
   color: #dc661e; }
 
-.diseno-desarrollo-web .cta-carrers h4 {
+.diseno-desarrollo-web .cta-register-h {
   color: #9e280e; }
 
-.post-produccion .cta-carrers h4 {
+.post-produccion .cta-register-h {
   color: #819535; }
 
 .course-content {
@@ -1807,6 +1815,22 @@ div.password-suggestions ul {
 .flip-wrap {
   -webkit-perspective: 800px;
           perspective: 800px; }
+
+.cta-register-wrap {
+  margin: 0 auto;
+  text-align: center; }
+
+.cta-register-detail {
+  color: #464646;
+  font-size: 0.833em;
+  margin-top: 1em; }
+  .cta-register-detail a:link {
+    color: #464646; }
+  .cta-register-detail strong {
+    color: #464646;
+    display: block;
+    font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
+    margin-bottom: 5px; }
 
 .hide-button {
   -webkit-transform-origin: center;
@@ -2464,9 +2488,6 @@ footer p {
       display: inline-block;
       text-align: left;
       width: 45%; } }
-
-.section-course-intro {
-  padding-bottom: 0; }
 
 .section-course-intro .section-call-out-h {
   color: #00c9ed; }

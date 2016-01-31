@@ -1,13 +1,8 @@
 .line-grid {
-    clear: both;
     padding-top: 50px;
 
     @include mquery("medium") {
         column-count: 2;
-    }
-
-    li {
-        color: #00c9ed;
     }
 }
 
@@ -16,19 +11,14 @@
 }
 
 .split-list {
+    ul {
+        @include bullet-color($light-blue, $white);
+    }
     li {
-        color: $white;
-        list-style: none;
-        margin-bottom: 10px;
+        margin-top: 10px;
 
         a {
             color: $white;
-        }
-        &:before {
-            color: $light-blue;
-            content: "• ";
-            float: left;
-            margin-right: 11px;
         }
     }
 }

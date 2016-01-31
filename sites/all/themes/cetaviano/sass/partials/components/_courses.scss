@@ -86,6 +86,27 @@
     perspective: 800px;
 }
 
+.cta-register-wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-register-detail {
+    color: $black;
+    font-size: $text-small;
+    margin-top: 1em;
+    
+    a:link {
+       color: $black; 
+    }
+    strong {
+        color: $black;
+        display: block;
+        font-family: $contrast-font;
+        margin-bottom: 5px;
+    }
+}
+
 .hide-button {
     transform-origin: center;
     transform-style: preserve-3d;

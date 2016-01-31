@@ -73,7 +73,8 @@ footer {
     }
 }
 
-.center-wrapper {
+.center-wrapper,
+.section-wide {
     overflow: hidden;
     padding: 40px 16px;
 
@@ -86,6 +87,10 @@ footer {
         padding-bottom: 100px;
         padding-top: 100px;
     }
+}
+
+.section-intro {
+    padding-bottom: 0;
 }
 
 .panel-left-column,

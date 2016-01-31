@@ -1,22 +1,8 @@
 .career-program .paragraphs-item-programas-carreras {
     background-color: $white;
-    box-shadow: 0 0 13px #c2bebe;
+    box-shadow: 0px 4px 10px rgba(194, 190, 189, .25);
     height: 300px;
     margin: 30px 6px;
-
-    h4 {
-        color: white;
-        margin-top: 0;
-        padding: 15px;
-    }
-    ul {
-        list-style: none;
-        padding: 25px;
-
-        li {
-            margin-bottom: 10px;
-        }
-    }
 
     @include mquery("small") {
         @include span-columns(6);
@@ -26,33 +12,44 @@
 
     @include mquery("medium") {
         @include span-columns(4);
-        margin: 30px 13px;
+        margin: 0 13px 13px;
         @include omega();
         vertical-top: top;
     }
+
+    h4 {
+        color: $white;
+        margin-top: 0;
+        padding: 15px;
+    }
+    li {
+        font-size: $text-small;
+        margin-bottom: 10px;
+    }
+    ul {
+        list-style: none;
+        padding: 25px;
+    }
 }
 
-.animacion-3d .paragraphs-item-programas-carreras h4{
+.animacion-3d .paragraphs-item-programas-carreras h4 {
     background-color: $animation-color;
 }
-.diseno-desarrollo-web .paragraphs-item-programas-carreras h4{
+.diseno-desarrollo-web .paragraphs-item-programas-carreras h4 {
     background-color: $ddw-color;
 }
 
-.post-produccion .paragraphs-item-programas-carreras h4{
+.post-produccion .paragraphs-item-programas-carreras h4 {
     background-color: $post-color;
 }
 
 .section-skills {
     background-color: $blue-dark;
-    background-image: url(../img/skills-back.png);
     margin: 0;
     width: 100%;
 
     p {
         color: $white;
-        margin-top: 33px;
-        width: 95%;
 
         @include mquery("medium") {
             float: right;
@@ -62,19 +59,19 @@
 
 .pane-node-field-titulo-skills-carreras {
     @include mquery("medium") {
-        @include span-columns(5);
+        @include span-columns(5 of 12);
     }
 
     h4 {
         color: $light-blue;
-        margin-top: 33px;
-        width: 95%;
+        font-size: $text-h3;
+        margin-top: 0;
     }
 }
 
 .pane-node-field-cuerpo-skills-carreras {
     @include mquery("medium") {
-        @include span-columns(7);
+        @include span-columns(7 of 12);
         @include omega();
     }
 }
@@ -83,22 +80,19 @@
     clear: both;
 }
 
-.cta-carrers{
+.cta-register-h {
+    font-size: $text-h3;
     text-align: center;
-
-    .content-title{
-        margin-bottom: 30px;
-    }
 }
 
-.animacion-3d .cta-carrers h4{
+.animacion-3d .cta-register-h {
     color: $animation-color;
 }
 
-.diseno-desarrollo-web .cta-carrers h4{
+.diseno-desarrollo-web .cta-register-h {
     color: $ddw-color;
 }
 
-.post-produccion .cta-carrers h4{
+.post-produccion .cta-register-h {
     color: $post-color;
 }

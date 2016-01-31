@@ -12,7 +12,7 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
+  <div class="section-wide section-intro">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left']; ?>
@@ -23,21 +23,21 @@
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
-    <div class="panel-container panel-wide">
+    <div class="section-wide">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
       </div>
     </div>
   <?php endif ?>
  <?php if ($content['wide_third']): ?>
-    <div class="panel-container panel-wide section-skills">
+    <div class="section-wide section-skills">
       <div class="grid-width">
         <?php print $content['wide_third']; ?>
       </div>
     </div>
   <?php endif ?>
    <?php if ($content['wide_four']): ?>
-    <div class="panel-container panel-wide cta-carrers">
+    <div class="section-wide cta-carrers">
       <div class="grid-width">
         <?php print $content['wide_four']; ?>
       </div>
