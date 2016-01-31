@@ -2175,7 +2175,6 @@ div.password-suggestions ul {
   top: 190px; }
 
 .about-graduate {
-  color: #848286;
   overflow: hidden;
   padding-top: 0; }
   .about-graduate .label-above {
@@ -2241,13 +2240,12 @@ div.password-suggestions ul {
 
 .skill {
   background-color: #243842;
-  border-radius: 5px;
-  box-shadow: 0 0 0 2px #243842;
+  border-radius: 2px;
   color: #fff;
   display: inline-block;
   margin-bottom: 14px;
   margin-right: 12px;
-  padding: 4px; }
+  padding: 2px 6px; }
 
 .pane-title {
   display: none; }
@@ -2778,10 +2776,7 @@ footer p {
         border: 0; } }
   .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget label {
     color: #fff;
-    font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
     margin-bottom: 12px; }
-  .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget .form-item label {
-    font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
 
 .views-field-field-generacion-egresado,
 .views-field-field-disponibilidad-egresado {
