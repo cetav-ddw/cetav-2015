@@ -778,7 +778,7 @@ input[type="file"] {
       .personal-institution .personal-charge p {
         height: 54px; } }
   .personal-institution .personal-description p {
-    color: #414042;
+    color: #464646;
     text-align: left; }
 
 .node-form {
@@ -1737,20 +1737,20 @@ div.password-suggestions ul {
   margin: 10px 0; }
 
 .course-details strong {
-  color: #414042;
+  color: #464646;
   font-weight: bold; }
 
 .course-info {
-  color: #77787b;
   margin-top: 2px; }
   .course-info .date-display-range span {
-    color: #77787b;
+    color: #464646;
     font-weight: normal; }
   .course-info .date-display-range,
   .course-info .label-inline {
     display: inline; }
   .course-info .label-inline {
-    color: #414042; }
+    color: #464646;
+    font-weight: bold; }
 
 .course-form {
   height: 0;
@@ -1803,6 +1803,11 @@ div.password-suggestions ul {
     .inscription-button {
       left: 13%; } }
 
+.curso-detail-h {
+  color: #00c9ed;
+  font-size: 1.777em;
+  margin-top: 0; }
+
 .panel-cetav-cursos-libres h3,
 .panel-cetav-cursos-libres h4 {
   color: #00c9ed;
@@ -1811,9 +1816,6 @@ div.password-suggestions ul {
 .panel-cetav-cursos-libres img {
   border: 0;
   box-shadow: 0 0 8px #77787b; }
-
-.panel-cetav-cursos-libres p {
-  color: #77787b; }
 
 .panel-cetav-cursos-libres .panel-wide {
   padding: 0; }
@@ -1955,7 +1957,7 @@ div.password-suggestions ul {
       .personal-institution .personal-charge p {
         height: 54px; } }
   .personal-institution .personal-description p {
-    color: #414042;
+    color: #464646;
     text-align: left; }
 
 .aside,
@@ -2020,7 +2022,7 @@ div.password-suggestions ul {
   padding-bottom: 25px; }
 
 .latest-news h5 a {
-  color: #414042;
+  color: #464646;
   margin-bottom: 5px; }
 
 .img-news img {
@@ -2411,16 +2413,8 @@ footer {
 .field-name-field-aliados-img {
   clear: both; }
 
-.panel-wide-allies h2 {
-  color: #f19130;
-  display: block;
-  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
-  line-height: 1.2;
-  text-align: center;
-  width: 100%; }
-  @media only screen and (min-width: 68.75em) {
-    .panel-wide-allies h2 {
-      text-align: left; } }
+.panel-wide-allies .section-call-out-h {
+  color: #f19130; }
 
 .call-out-home-intro .panel-left-column {
   display: block;
@@ -2482,14 +2476,8 @@ footer {
       text-align: left;
       width: 45%; } }
 
-.section-free-courses-info h2 {
-  color: #00c9ed;
-  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
-  text-align: center;
-  width: 100%; }
-  @media only screen and (min-width: 68.75em) {
-    .section-free-courses-info h2 {
-      text-align: left; } }
+.section-free-courses-info .section-call-out-h {
+  color: #00c9ed; }
 
 #panels-ipe-regionid-left_third {
   background-image: url(../img/course.png);
@@ -2535,7 +2523,7 @@ footer {
   margin: 0 0 20px; }
 
 .title-course-item {
-  color: #414042;
+  color: #464646;
   display: inline-block;
   font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   margin: 0;
@@ -2817,7 +2805,7 @@ footer {
   vertical-align: top; }
 
 .views-field-field-profesion-egresado {
-  color: #414042; }
+  color: #464646; }
   @media only screen and (min-width: 68.75em) {
     .views-field-field-profesion-egresado {
       width: 100%; } }
@@ -3108,7 +3096,7 @@ footer {
     width: 94%; }
     .header div .views-exposed-form li,
     #block-system-main-menu li {
-      color: #414042;
+      color: #464646;
       display: inline-block;
       font-weight: bold;
       list-style: none;
@@ -3119,7 +3107,7 @@ footer {
       .header div .views-exposed-form li span,
       #block-system-main-menu li a,
       #block-system-main-menu li span {
-        color: #414042;
+        color: #464646;
         text-decoration: none; }
         .header div .views-exposed-form li a:hover,
         .header div .views-exposed-form li span:hover,
@@ -3187,7 +3175,7 @@ footer {
   display: block;
   height: 265px; }
   #block-system-main-menu .expanded .show li a {
-    color: #414042; }
+    color: #464646; }
 
 @media only screen and (min-width: 56.25em) {
   .header div .views-exposed-form,
@@ -3196,8 +3184,8 @@ footer {
     width: 94%; }
     .header div .views-exposed-form li,
     .content > .menu li {
-      border-right: 1px solid #414042;
-      color: #414042;
+      border-right: 1px solid #464646;
+      color: #464646;
       display: inline-block;
       font-weight: 600;
       list-style: none;
@@ -3206,11 +3194,11 @@ footer {
       text-transform: uppercase; }
       .header div .views-exposed-form li a,
       .content > .menu li a {
-        color: #414042;
+        color: #464646;
         text-decoration: none; }
     .header div .views-exposed-form li:nth-child(2),
     .content > .menu li:nth-child(2) {
-      border-left: 0 solid #414042; } }
+      border-left: 0 solid #464646; } }
 
 .content .expandir {
   display: block;
@@ -3310,7 +3298,7 @@ footer {
   background-color: #fff; }
   @media only screen and (min-width: 56.25em) {
     .nav-secundary-main {
-      background-color: #414042; }
+      background-color: #464646; }
       .nav-secundary-main .block {
         text-align: right;
         width: 800px;

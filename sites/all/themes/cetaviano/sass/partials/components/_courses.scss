@@ -30,17 +30,16 @@
         }
     }
     strong {
-        color: $dark-gray;
+        color: $black;
         font-weight: bold;
     }
 }
 
 .course-info {
-    color: $gray;
     margin-top: 2px;
 
     .date-display-range span {
-        color: $gray;
+        color: $black;
         font-weight: normal;
     }
     .date-display-range,
@@ -48,7 +47,8 @@
         display: inline;
     }
     .label-inline {
-        color: $dark-gray;
+        color: $black;
+        font-weight: bold;
     }
 }
 
@@ -109,6 +109,12 @@
     }
 }
 
+.curso-detail-h {
+    color: $light-blue;
+    font-size: $text-h3;
+    margin-top: 0;
+}
+
 .panel-cetav-cursos-libres {
     h3,
     h4 {
@@ -119,9 +125,6 @@
         border: 0;
         box-shadow: 0 0 8px $gray;
 
-    }
-    p {
-        color: $gray;
     }
     .panel-wide {
         padding: 0;

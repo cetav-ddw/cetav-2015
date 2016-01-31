@@ -88,15 +88,6 @@
     clear: both;
 }
 
-.panel-wide-allies h2 {
+.panel-wide-allies .section-call-out-h {
     color: $orange;
-    display: block;
-    font-family: $contrast-font;
-    line-height: 1.2;
-    text-align: center;
-    width: 100%;
-
-    @include mquery("large") {
-        text-align: left;
-    }
 }

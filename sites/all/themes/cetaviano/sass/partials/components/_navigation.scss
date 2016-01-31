@@ -40,7 +40,7 @@
         width: 94%;
 
         li {
-            color: $dark-gray;
+            color: $black;
             display: inline-block;
             font-weight: bold;
             list-style: none;
@@ -50,7 +50,7 @@
 
             a,
             span {
-                color: $dark-gray;
+                color: $black;
                 text-decoration: none;
 
                 &:hover{
@@ -139,7 +139,7 @@
         height: 265px;
 
         li a {
-            color: $dark-gray;
+            color: $black;
         }
     }
 }
@@ -151,8 +151,8 @@
         width: 94%;
 
         li {
-            border-right: 1px solid $dark-gray;
-            color: $dark-gray;
+            border-right: 1px solid $black;
+            color: $black;
             display: inline-block;
             font-weight: 600;
             list-style: none;
@@ -161,12 +161,12 @@
             text-transform: uppercase;
 
             a {
-                color: $dark-gray;
+                color: $black;
                 text-decoration: none;
             }
         }
         & li:nth-child(2) {
-            border-left: 0 solid $dark-gray;
+            border-left: 0 solid $black;
         }
     }
 }

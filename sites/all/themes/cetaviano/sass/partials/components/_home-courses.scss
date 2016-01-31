@@ -36,15 +36,8 @@
     }
 }
 
-.section-free-courses-info h2 {
+.section-free-courses-info .section-call-out-h {
     color: $light-blue;
-    font-family: $contrast-font;
-    text-align: center;
-    width: 100%;
-
-    @include mquery("large") {
-        text-align: left;
-    }
 }
 
 // solo desde este id me podía agarrar para darle un background-image al
@@ -101,7 +94,7 @@
 }
 
 .title-course-item {
-    color: $dark-gray;
+    color: $black;
     display: inline-block;
     font-family: $contrast-font;
     margin: 0;

@@ -27,17 +27,6 @@
 // -------------------
 // Mixins for common color combinations.
 
-@mixin btn-disabled {
-    background-color: $gray-lighter; 
-    border: 1px solid $gray-lighter; 
-    color: $white;
-
-    &:hover {
-        background-color: $gray-lighter; 
-        color: $white;
-    }
-}
-
 // Btn default
 @mixin btn($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white) {
     background-color: $bgcolor;
@@ -72,6 +61,16 @@
     border-color: $white;
 }
 
+@mixin btn-disabled {
+    background-color: $gray-lighter; 
+    border: 1px solid $gray-lighter; 
+    color: $white;
+
+    &:hover {
+        background-color: $gray-lighter; 
+        color: $white;
+    }
+}
 
 //
 // Media Queries mixin. Suppor min-width, you can pass it a varible
