@@ -1,7 +1,7 @@
 html {
     background: #292929;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: $text-base ;
 
     @include mquery("large") {
         font-size: 1.125em;

@@ -54,11 +54,11 @@ blockquote {
 }
 
 .call-out-text { // intro type
-    font-size: 1.325em;
+    font-size: $text-large;
 }
 
 .contrast-small-text {
-    font-size: .833em;
+    font-size: $text-small;
 }
 
 .section-call-out-h {
@@ -67,7 +67,7 @@ blockquote {
 
 small, 
 .small-text {
-    font-size: .694em;
+    font-size: $text-xsmall;
 }
 
 .subtitle-career {

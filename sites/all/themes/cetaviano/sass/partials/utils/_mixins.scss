@@ -20,25 +20,58 @@
     }
 }
 
-// button mixin
-@mixin button($color, $hover-color, $hover-font-color) {
-    background-color: $hover-color;
-    border: 2px solid $color;
-    border-radius: 4px;
-    color: $hover-font-color;
-    padding: 15px 30px;
+// Buttons
+// ===================
 
-    @include mquery("large") {
-        background-color: transparent;
-        border: 2px solid $color;
-        color: $color;
-    
-        &:hover {
-            background-color: $hover-color;
-            color: $hover-font-color;
-        }
+// Button Colors
+// -------------------
+// Mixins for common color combinations.
+
+@mixin btn-disabled {
+    background-color: $gray-lighter; 
+    border: 1px solid $gray-lighter; 
+    color: $white;
+
+    &:hover {
+        background-color: $gray-lighter; 
+        color: $white;
     }
 }
+
+// Btn default
+@mixin btn($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white) {
+    background-color: $bgcolor;
+    border: 2px solid $textcolor;
+    border-radius: 4px;
+    color: $textcolor;
+    display: inline-block;
+    font-size: $text-base;
+    overflow: hidden;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    vertical-align: middle;
+    
+    &:hover {
+        background-color: $hovercolor;
+        color: $hovertext;
+        text-decoration: none;
+    }
+}
+
+@mixin btn-blue {
+    @include btn($white, $light-blue, $light-blue);
+}
+
+@mixin btn-orange {
+    @include btn($white, $orange, $orange);
+}
+
+@mixin btn-transparent {
+    @include btn(transparent, $white, $white, $black);
+    border-color: $white;
+}
+
 
 //
 // Media Queries mixin. Suppor min-width, you can pass it a varible

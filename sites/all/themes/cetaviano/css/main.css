@@ -74,14 +74,14 @@ blockquote {
   font-size: 1.325em; }
 
 .contrast-small-text {
-  font-size: .833em; }
+  font-size: 0.833em; }
 
 .section-call-out-h {
   margin: 0; }
 
 small,
 .small-text {
-  font-size: .694em; }
+  font-size: 0.694em; }
 
 .subtitle-career {
   margin-top: 0; }
@@ -152,136 +152,115 @@ a {
     content: "• "; }
 
 button {
-  background-color: red;
-  border: 2px solid red;
+  background-color: #fff;
+  border: 2px solid #464646;
   border-radius: 4px;
-  color: red;
-  padding: 15px 30px;
-  transition: all 0.2s ease-in-out; }
-  @media only screen and (min-width: 68.75em) {
-    button {
-      background-color: transparent;
-      border: 2px solid red;
-      color: red; }
-      button:hover {
-        background-color: red;
-        color: red; } }
+  color: #464646;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle; }
+  button:hover {
+    background-color: #464646;
+    color: #fff;
+    text-decoration: none; }
 
-.btn-admision a,
-.btn-cta,
-.btn-download {
-  background-color: #dc661e;
-  border: 2px solid #dc661e;
-  border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
-  display: block;
+.btn-cta {
   margin: 25px auto;
-  text-align: center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   transition: -webkit-transform 1s;
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  width: 250px; }
-  @media only screen and (min-width: 68.75em) {
-    .btn-admision a,
-    .btn-cta,
-    .btn-download {
-      background-color: transparent;
-      border: 2px solid #dc661e;
-      color: #dc661e; }
-      .btn-admision a:hover,
-      .btn-cta:hover,
-      .btn-download:hover {
-        background-color: #dc661e;
-        color: #fff; } }
-  .btn-admision a:hover,
-  .btn-cta:hover,
-  .btn-download:hover {
-    text-decoration: none; }
+  transition: transform 1s, -webkit-transform 1s; }
 
 .animacion-3d .btn-admision a,
 .animacion-3d .btn-cta,
 .animacion-3d .btn-download {
-  background-color: #dc661e;
+  background-color: #fff;
   border: 2px solid #dc661e;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px; }
-  @media only screen and (min-width: 68.75em) {
-    .animacion-3d .btn-admision a,
-    .animacion-3d .btn-cta,
-    .animacion-3d .btn-download {
-      background-color: transparent;
-      border: 2px solid #dc661e;
-      color: #dc661e; }
-      .animacion-3d .btn-admision a:hover,
-      .animacion-3d .btn-cta:hover,
-      .animacion-3d .btn-download:hover {
-        background-color: #dc661e;
-        color: #fff; } }
+  color: #dc661e;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle; }
+  .animacion-3d .btn-admision a:hover,
+  .animacion-3d .btn-cta:hover,
+  .animacion-3d .btn-download:hover {
+    background-color: #dc661e;
+    color: #fff;
+    text-decoration: none; }
 
 .diseno-desarrollo-web .btn-admision a,
 .diseno-desarrollo-web .btn-cta,
 .diseno-desarrollo-web .btn-download {
-  background-color: #9e280e;
+  background-color: #fff;
   border: 2px solid #9e280e;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px; }
-  @media only screen and (min-width: 68.75em) {
-    .diseno-desarrollo-web .btn-admision a,
-    .diseno-desarrollo-web .btn-cta,
-    .diseno-desarrollo-web .btn-download {
-      background-color: transparent;
-      border: 2px solid #9e280e;
-      color: #9e280e; }
-      .diseno-desarrollo-web .btn-admision a:hover,
-      .diseno-desarrollo-web .btn-cta:hover,
-      .diseno-desarrollo-web .btn-download:hover {
-        background-color: #9e280e;
-        color: #fff; } }
+  color: #9e280e;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle; }
+  .diseno-desarrollo-web .btn-admision a:hover,
+  .diseno-desarrollo-web .btn-cta:hover,
+  .diseno-desarrollo-web .btn-download:hover {
+    background-color: #9e280e;
+    color: #fff;
+    text-decoration: none; }
 
 .post-produccion .btn-admision a,
 .post-produccion .btn-cta,
 .post-produccion .btn-download {
-  background-color: #819535;
+  background-color: #fff;
   border: 2px solid #819535;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px; }
-  @media only screen and (min-width: 68.75em) {
-    .post-produccion .btn-admision a,
-    .post-produccion .btn-cta,
-    .post-produccion .btn-download {
-      background-color: transparent;
-      border: 2px solid #819535;
-      color: #819535; }
-      .post-produccion .btn-admision a:hover,
-      .post-produccion .btn-cta:hover,
-      .post-produccion .btn-download:hover {
-        background-color: #819535;
-        color: #fff; } }
+  color: #819535;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle; }
+  .post-produccion .btn-admision a:hover,
+  .post-produccion .btn-cta:hover,
+  .post-produccion .btn-download:hover {
+    background-color: #819535;
+    color: #fff;
+    text-decoration: none; }
+
+.btn-admision a,
+.btn-download {
+  display: block !important;
+  margin: 30px auto 0;
+  max-width: 230px; }
 
 .btn-direction {
-  background-color: #fff;
+  background-color: transparent;
   border: 2px solid #fff;
   border-radius: 4px;
-  color: #848286;
-  padding: 15px 30px;
-  background: transparent;
+  color: #fff;
   display: inline-block;
-  text-align: center; }
-  @media only screen and (min-width: 68.75em) {
-    .btn-direction {
-      background-color: transparent;
-      border: 2px solid #fff;
-      color: #fff; }
-      .btn-direction:hover {
-        background-color: #fff;
-        color: #848286; } }
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
+  border-color: #fff; }
   .btn-direction:hover {
+    background-color: #fff;
+    color: #464646;
     text-decoration: none; }
 
 .btn-download {
@@ -308,11 +287,17 @@ button {
   display: none; }
 
 .inscription-button {
-  background-color: #00c9ed;
+  background-color: #fff;
   border: 2px solid #00c9ed;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
+  color: #00c9ed;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
   display: block;
   margin: 25px auto;
   text-align: center;
@@ -322,15 +307,9 @@ button {
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   width: 250px; }
-  @media only screen and (min-width: 68.75em) {
-    .inscription-button {
-      background-color: transparent;
-      border: 2px solid #00c9ed;
-      color: #00c9ed; }
-      .inscription-button:hover {
-        background-color: #00c9ed;
-        color: #fff; } }
   .inscription-button:hover {
+    background-color: #00c9ed;
+    color: #fff;
     text-decoration: none; }
 
 .container-account .form-actions {
@@ -338,125 +317,123 @@ button {
   text-align: center; }
 
 .container-account .form-submit {
-  background-color: #f19130;
+  background-color: #fff;
   border: 2px solid #f19130;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  padding: 8px 18px; }
-  @media only screen and (min-width: 68.75em) {
-    .container-account .form-submit {
-      background-color: transparent;
-      border: 2px solid #f19130;
-      color: #f19130; }
-      .container-account .form-submit:hover {
-        background-color: #f19130;
-        color: #fff; } }
+  color: #f19130;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle; }
+  .container-account .form-submit:hover {
+    background-color: #f19130;
+    color: #fff;
+    text-decoration: none; }
 
 .btn-yearbook a {
-  background-color: #77787b;
-  border: 2px solid #77787b;
+  background-color: #fff;
+  border: 2px solid #f19130;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
+  color: #f19130;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
   float: left; }
-  @media only screen and (min-width: 68.75em) {
-    .btn-yearbook a {
-      background-color: transparent;
-      border: 2px solid #77787b;
-      color: #77787b; }
-      .btn-yearbook a:hover {
-        background-color: #77787b;
-        color: #fff; } }
+  .btn-yearbook a:hover {
+    background-color: #f19130;
+    color: #fff;
+    text-decoration: none; }
   .btn-yearbook a:hover {
     text-decoration: none; }
 
 .course-description a {
-  background-color: #77787b;
-  border: 2px solid #77787b;
+  background-color: #fff;
+  border: 2px solid #464646;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
+  color: #464646;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
   text-decoration: none;
-  transition: all 0.3s; }
-  @media only screen and (min-width: 68.75em) {
-    .course-description a {
-      background-color: transparent;
-      border: 2px solid #77787b;
-      color: #77787b; }
-      .course-description a:hover {
-        background-color: #77787b;
-        color: #fff; } }
+  transition: background-color .3s;
+  vertical-align: middle;
+  padding: 15px 30px; }
+  .course-description a:hover {
+    background-color: #464646;
+    color: #fff;
+    text-decoration: none; }
 
 .text-course-description .field-name-field-link-view-more {
   display: inline-block; }
 
 .text-course-description a {
-  background-color: #00c9ed;
+  background-color: #fff;
   border: 2px solid #00c9ed;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
-  display: inline-block; }
-  @media only screen and (min-width: 68.75em) {
-    .text-course-description a {
-      background-color: transparent;
-      border: 2px solid #00c9ed;
-      color: #00c9ed; }
-      .text-course-description a:hover {
-        background-color: #00c9ed;
-        color: #fff; } }
+  color: #00c9ed;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
+  padding: 15px 30px; }
   .text-course-description a:hover {
+    background-color: #00c9ed;
+    color: #fff;
     text-decoration: none; }
 
 .btn-course a {
-  background-color: #00c9ed;
+  background-color: #fff;
   border: 2px solid #00c9ed;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
+  color: #00c9ed;
   display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
   text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
+  font-size: .833em;
   margin-top: 10px; }
-  @media only screen and (min-width: 68.75em) {
-    .btn-course a {
-      background-color: transparent;
-      border: 2px solid #00c9ed;
-      color: #00c9ed; }
-      .btn-course a:hover {
-        background-color: #00c9ed;
-        color: #fff; } }
+  .btn-course a:hover {
+    background-color: #00c9ed;
+    color: #fff;
+    text-decoration: none; }
   @media only screen and (min-width: 68.75em) {
     .btn-course a {
       position: absolute;
       right: 0;
       top: 12px; } }
-  .btn-course a:hover {
-    transition: all 0.3s; }
 
 .see-profile a {
-  background-color: #243842;
-  border: 2px solid #243842;
+  background-color: #fff;
+  border: 2px solid #464646;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
-  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
+  color: #464646;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
   margin: 0 auto;
-  text-align: center;
-  text-decoration: none; }
-  @media only screen and (min-width: 68.75em) {
-    .see-profile a {
-      background-color: transparent;
-      border: 2px solid #243842;
-      color: #243842; }
-      .see-profile a:hover {
-        background-color: #243842;
-        color: #fff; } }
+  text-align: center; }
+  .see-profile a:hover {
+    background-color: #464646;
+    color: #fff;
+    text-decoration: none; }
 
 iframe {
   margin-top: 9px;
@@ -611,33 +588,33 @@ input[type="file"] {
 
 .course-form input[type="submit"],
 .course-form input[type="file"] {
-  background-color: #00c9ed;
+  background-color: #fff;
   border: 2px solid #00c9ed;
   border-radius: 4px;
-  color: #fff;
-  padding: 15px 30px;
-  border: 0;
-  display: block;
+  color: #00c9ed;
+  display: inline-block;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
   margin-top: 20px;
   outline: 0;
   padding: 8px 25px;
-  transition: all 0.2s ease-in-out;
   width: 100%; }
-  @media only screen and (min-width: 68.75em) {
-    .course-form input[type="submit"],
-    .course-form input[type="file"] {
-      background-color: transparent;
-      border: 2px solid #00c9ed;
-      color: #00c9ed; }
-      .course-form input[type="submit"]:hover,
-      .course-form input[type="file"]:hover {
-        background-color: #00c9ed;
-        color: #fff; } }
+  .course-form input[type="submit"]:hover,
+  .course-form input[type="file"]:hover {
+    background-color: #00c9ed;
+    color: #fff;
+    text-decoration: none; }
   @media only screen and (min-width: 56.25em) {
     .course-form input[type="submit"],
     .course-form input[type="file"] {
-      display: inline-block;
       width: auto; } }
+
+.course-form input[type="file"] {
+  max-width: 80%; }
 
 .course-form input[type="email"].form-text {
   background-color: #ececec;
@@ -862,19 +839,30 @@ input[type="file"] {
     padding: 6px;
     margin-left: 5px; }
   .node-form .form-actions .form-submit {
+    border: 1px solid #d66d04;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #f0b77d;
+    color: #333333;
+    display: inline-block;
+    font-size: #fff;
+    font-weight: bold;
     background-color: #f19130;
-    border: 2px solid #f19130;
-    border-radius: 4px;
-    color: #fff;
-    padding: 15px 30px; }
-    @media only screen and (min-width: 68.75em) {
-      .node-form .form-actions .form-submit {
-        background-color: transparent;
-        border: 2px solid #f19130;
-        color: #f19130; }
-        .node-form .form-actions .form-submit:hover {
-          background-color: #f19130;
-          color: #fff; } }
+    background-image: linear-gradient(#f19130, #e57504);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fc9b39;
+    background-clip: padding-box; }
+    .node-form .form-actions .form-submit:hover:not(:disabled) {
+      background-color: #ea841d;
+      background-image: linear-gradient(#ea841d, #d56d05);
+      box-shadow: inset 0 1px 0 0 #ec9e4f;
+      cursor: pointer; }
+    .node-form .form-actions .form-submit:active:not(:disabled), .node-form .form-actions .form-submit:focus:not(:disabled) {
+      border: 1px solid #d66d04;
+      box-shadow: inset 0 0 8px 4px #c56606, inset 0 0 8px 4px #c56606; }
+    .node-form .form-actions .form-submit:disabled {
+      cursor: not-allowed;
+      opacity: 0.5; }
   .node-form .tabledrag-toggle-weight-wrapper {
     display: none; }
   .node-form ul.vertical-tabs-list {

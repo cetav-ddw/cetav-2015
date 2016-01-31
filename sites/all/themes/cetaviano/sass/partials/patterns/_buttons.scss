@@ -1,52 +1,41 @@
 button {
-    @include button(red, red, red); //$color-border-type, $color-hover-type, $color-hover-background
-    transition: all 0.2s ease-in-out;
+    @include btn;
 }
 
 // Buttons Careers
-.btn-admision a,
-.btn-cta,
-.btn-download {
-    @include button($animation-color, $animation-color, $white);
-    display: block;
+.btn-cta {
     margin: 25px auto;
-    text-align: center;
     transform-style: preserve-3d;
     transition: transform 1s;
-    width: 250px;
-
-    &:hover {
-        text-decoration: none;
-    }
 }
 
 .animacion-3d .btn-admision a,
 .animacion-3d .btn-cta,
 .animacion-3d .btn-download {
-    @include button($animation-color, $animation-color, $white);
+    @include btn($white, $animation-color, $animation-color);
 }
 
 .diseno-desarrollo-web .btn-admision a,
 .diseno-desarrollo-web .btn-cta,
 .diseno-desarrollo-web .btn-download {
-    @include button($ddw-color, $ddw-color, $white);
+    @include btn($white, $ddw-color, $ddw-color);
 }
 
 .post-produccion .btn-admision a,
 .post-produccion .btn-cta,
 .post-produccion .btn-download {
-    @include button($post-color, $post-color, $white);
+    @include btn($white, $post-color, $post-color);
+}
+
+.btn-admision a,
+.btn-download {
+    display: block !important;
+    margin: 30px auto 0;
+    max-width: 230px;
 }
 
 .btn-direction {
-    @include button($white, $white, $ligth-gray);
-    background: transparent;
-    display: inline-block;
-    text-align: center;
-
-    &:hover {
-        text-decoration: none;
-    }
+    @include btn-transparent;
 }
 
 .btn-download {
@@ -79,17 +68,13 @@ button {
 
 
 .inscription-button {
-    @include button($light-blue, $light-blue, $white);
+    @include btn-blue;
     display: block;
     margin: 25px auto;
     text-align: center;
     transform-style: preserve-3d;
     transition: transform 1s;
     width: 250px;
-
-    &:hover {
-        text-decoration: none;
-    }
 }
 
 //Button Login
@@ -99,16 +84,13 @@ button {
         text-align: center;
     }
     .form-submit {
-        @include button($orange, $orange, $white);
-        transform-style: preserve-3d;
-        transition: transform 1s;
-        padding: 8px 18px;
+        @include btn-orange;
     }
 }
 
 //Botón anuario
 .btn-yearbook a {
-    @include button($gray, $gray, $white);
+    @include btn-orange;
     float: left;
 
     &:hover {
@@ -117,9 +99,8 @@ button {
 }
 
 .course-description a {
-    @include button($gray, $gray, $white);
-    text-decoration: none;
-    transition: all 0.3s;
+    @include btn;
+    padding: 15px 30px;
 }
 
 // boton más información, cursos libres
@@ -128,19 +109,14 @@ button {
 }
 
 .text-course-description a {
-    @include button($light-blue, $light-blue, $white);
-    display: inline-block;
-
-    &:hover {
-        text-decoration: none;
-    }
+    @include btn-blue;
+    padding: 15px 30px;
  }
 
 // boton de cada curso libre disponible
 .btn-course a {
-    @include button($light-blue, $light-blue, $white);
-    display: inline-block;
-    text-decoration: none;
+    @include btn-blue;
+    font-size: .833em;
     margin-top: 10px;
 
     @include mquery("large") {
@@ -148,18 +124,12 @@ button {
         right: 0;
         top: 12px;
     }
-
-    &:hover {
-        transition: all 0.3s;
-    }
 }
 
 .see-profile  {
     a {
-        @include button($blue-dark, $blue-dark, $white);
-        font-family: $contrast-font;
+        @include btn;
         margin: 0 auto;
         text-align: center;
-        text-decoration: none;
     }
 }

@@ -56,22 +56,21 @@ input[type="file"]{
 // Formatting options
 .course-form {
     input[type="submit"],
-    input[type="file"]{
-        @include button($light-blue, $light-blue, $white);
-        border: 0;
-        display: block;
+    input[type="file"] {
+        @include btn-blue;
         margin-top: 20px;
         outline: 0;
         padding: 8px 25px;
-        transition: all 0.2s ease-in-out;
         width: 100%;
 
         @include mquery("medium") {
-            display: inline-block;
             width: auto;
         }
     }
 
+    input[type="file"] {
+        max-width: 80%;
+    }
     input[type="email"].form-text {
         background-color: #ececec;
         border: 0;
