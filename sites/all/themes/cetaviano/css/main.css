@@ -170,11 +170,7 @@ button {
 
 .btn-cta {
   margin: 25px auto;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s; }
+  padding: 15px 30px; }
 
 .animacion-3d .btn-admision a,
 .animacion-3d .btn-cta,
