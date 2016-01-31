@@ -1,20 +1,4 @@
-.section-free-courses-info {
-    padding: 60px 16px 0 !important;
-
-    @include mquery("large") {
-        padding: 80px 16px 0 !important;
-    }
-}
-
-.section-free-courses {
-    padding: 20px 16px 80px;
-
-    @include mquery("large") {
-        padding: 80px 16px;
-    }
-}
-
-.section-free-courses .panel-left-column {
+.section-course-details .panel-left-column {
     display: block;
     float: left;
     text-align: center;
@@ -36,7 +20,11 @@
     }
 }
 
-.section-free-courses-info .section-call-out-h {
+.section-course-intro {
+    padding-bottom: 0;
+}
+
+.section-course-intro .section-call-out-h {
     color: $light-blue;
 }
 
@@ -55,7 +43,7 @@
     }
 }
 
-.section-free-courses .panel-right-column {
+.section-course-details .panel-right-column {
     @include mquery("medium") {
         display: block;
         width: 100%;
@@ -66,18 +54,18 @@
     }
 }
 
-.section-free-courses .view-content {
+.section-course-details .view-content {
     width: 100% !important;
 }
 
-.section-free-courses .views-row {
-    border-bottom: 1px solid #d6d6d6;
+.section-course-details .views-row {
+    border-bottom: 1px solid $lighter-gray;
     list-style: none;
     padding: 17px 0;
     position: relative;
 }
 
-.section-free-courses h4 {
+.section-course-details h4 {
     display: inline-block;
     font-family: $contrast-font;
     font-weight: bolder;

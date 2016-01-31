@@ -27,7 +27,7 @@
       <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper section-free-courses section-free-courses-info">
+  <div class="center-wrapper section-course-intro">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_second']; ?>
@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="center-wrapper section-free-courses">
+  <div class="center-wrapper section-course-details">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_third']; ?>

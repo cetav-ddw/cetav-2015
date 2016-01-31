@@ -363,6 +363,7 @@ button {
   text-decoration: none;
   transition: background-color .3s;
   vertical-align: middle;
+  margin-top: 20px;
   padding: 15px 30px; }
   .course-description a:hover {
     background-color: #464646;
@@ -384,6 +385,7 @@ button {
   text-decoration: none;
   transition: background-color .3s;
   vertical-align: middle;
+  margin-top: 20px;
   padding: 15px 30px; }
   .text-course-description a:hover {
     background-color: #00c9ed;
@@ -922,14 +924,17 @@ input[type="file"] {
     .nav-main {
       width: 1200px; } }
 
-.center-wrapper,
-.panel-wide {
+.center-wrapper {
   overflow: hidden;
-  padding: 30px 16px; }
+  padding: 40px 16px; }
   @media only screen and (min-width: 56.25em) {
-    .center-wrapper,
-    .panel-wide {
-      padding: 80px 16px; } }
+    .center-wrapper {
+      padding-bottom: 80px;
+      padding-top: 80px; } }
+  @media only screen and (min-width: 68.75em) {
+    .center-wrapper {
+      padding-bottom: 100px;
+      padding-top: 100px; } }
 
 .panel-left-column,
 .panel-right-column {
@@ -2342,10 +2347,7 @@ footer {
   background-color: #819535; }
 
 .panel-cetav-frontpage .panel-wide-allies {
-  background-color: #eee;
-  height: auto;
-  padding-top: 0;
-  padding-bottom: 0; }
+  background-color: #ececec; }
 
 .section-title-allies {
   display: block;
@@ -2446,45 +2448,30 @@ footer {
     float: right;
     width: 50%; } }
 
-.call-out-home-intro .panel-right-column p {
-  margin: 0 0 30px; }
-  @media only screen and (min-width: 68.75em) {
-    .call-out-home-intro .panel-right-column p {
-      margin-top: 10px; } }
-
-.section-free-courses-info {
-  padding: 60px 16px 0 !important; }
-  @media only screen and (min-width: 68.75em) {
-    .section-free-courses-info {
-      padding: 80px 16px 0 !important; } }
-
-.section-free-courses {
-  padding: 20px 16px 80px; }
-  @media only screen and (min-width: 68.75em) {
-    .section-free-courses {
-      padding: 80px 16px; } }
-
-.section-free-courses .panel-left-column {
+.section-course-details .panel-left-column {
   display: block;
   float: left;
   text-align: center;
   width: 100%; }
   @media only screen and (min-width: 20em) {
-    .section-free-courses .panel-left-column {
+    .section-course-details .panel-left-column {
       margin-bottom: 15px; } }
   @media only screen and (min-width: 37.5em) {
-    .section-free-courses .panel-left-column {
+    .section-course-details .panel-left-column {
       margin-bottom: 20px; } }
   @media only screen and (min-width: 56.25em) {
-    .section-free-courses .panel-left-column {
+    .section-course-details .panel-left-column {
       margin-bottom: 30px; } }
   @media only screen and (min-width: 68.75em) {
-    .section-free-courses .panel-left-column {
+    .section-course-details .panel-left-column {
       display: inline-block;
       text-align: left;
       width: 45%; } }
 
-.section-free-courses-info .section-call-out-h {
+.section-course-intro {
+  padding-bottom: 0; }
+
+.section-course-intro .section-call-out-h {
   color: #00c9ed; }
 
 #panels-ipe-regionid-left_third {
@@ -2499,32 +2486,32 @@ footer {
       display: inline-block; } }
 
 @media only screen and (min-width: 56.25em) {
-  .section-free-courses .panel-right-column {
+  .section-course-details .panel-right-column {
     display: block;
     width: 100%; } }
 
 @media only screen and (min-width: 68.75em) {
-  .section-free-courses .panel-right-column {
+  .section-course-details .panel-right-column {
     float: right;
     width: 50%; } }
 
-.section-free-courses .view-content {
+.section-course-details .view-content {
   width: 100% !important; }
 
-.section-free-courses .views-row {
-  border-bottom: 1px solid #d6d6d6;
+.section-course-details .views-row {
+  border-bottom: 1px solid #ececec;
   list-style: none;
   padding: 17px 0;
   position: relative; }
 
-.section-free-courses h4 {
+.section-course-details h4 {
   display: inline-block;
   font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
   font-weight: bolder;
   margin: 0;
   width: 100%; }
   @media only screen and (min-width: 68.75em) {
-    .section-free-courses h4 {
+    .section-course-details h4 {
       width: 60%; } }
 
 .text-course-description p {
@@ -2565,9 +2552,6 @@ footer {
   overflow: hidden;
   padding: 0;
   width: 100%; }
-
-.panel-cetav-frontpage .center-wrapper {
-  padding: 80px 16px; }
 
 .panel-cetav-frontpage .views-field-title {
   margin-bottom: 0; }
@@ -2620,7 +2604,8 @@ footer {
       top: 2em; } }
 
 .container-title-course h2 {
-  color: white;
+  color: #fff;
+  font-size: 1.875em;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 40px;
@@ -2633,9 +2618,6 @@ footer {
       padding: 0 10%; } }
 
 .container-title-course h2:first-child {
-  display: none; }
-
-.container-title-course a:first-child {
   display: none; }
 
 .container-title-course a {

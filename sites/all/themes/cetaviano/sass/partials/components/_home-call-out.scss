@@ -22,11 +22,3 @@
         width: 50%;
     }
 }
-
-.call-out-home-intro .panel-right-column p {
-    margin: 0 0 30px;
-    
-    @include mquery("large") {
-        margin-top: 10px;
-    }
-}
