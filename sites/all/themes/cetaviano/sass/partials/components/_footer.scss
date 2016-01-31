@@ -1,25 +1,10 @@
 footer {
-    background: #292929;
-    overflow: hidden;
-    padding: 40px 0;
-
-    @include mquery("medium") {
-        padding-top: 80px;
-    }
-
     h2 {
         display: none;
     }
     p {
         color: $white;
         font-size: $text-small;
-    }
-    .contact-info {
-        margin-bottom: 25px;
-
-        @include mquery("medium") {
-            @include span-columns(4);
-        }
     }
 }
 

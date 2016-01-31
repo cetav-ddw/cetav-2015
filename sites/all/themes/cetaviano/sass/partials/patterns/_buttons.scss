@@ -119,12 +119,11 @@ button {
 .btn-course a {
     @include btn-blue;
     font-size: .833em;
-    margin-top: 10px;
 
     @include mquery("large") {
         position: absolute;
         right: 0;
-        top: 12px;
+        top: 20px;
     }
 }
 

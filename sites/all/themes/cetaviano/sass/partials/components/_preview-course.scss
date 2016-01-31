@@ -1,26 +1,18 @@
-.view-id-cursos {
-    .view-content {
-        @include mquery("x-large") {
-            margin: 0 auto;
-            width: 90%;
-        }
-    }
-}
-
 .view-preview-free-course {
     margin: 50px auto;
     max-width: 490px;
     position: relative;
 
-    &:hover{
+    @include mquery("large") {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    &:hover {
         .details-preview-course {
             opacity: 1;
             transition: 1s;
         }
-    }
-    @include mquery("large") {
-        display: inline-block;
-        margin: 20px;
     }
 }
 

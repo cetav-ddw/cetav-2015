@@ -54,26 +54,23 @@
     }
 }
 
-.section-course-details .view-content {
-    width: 100% !important;
-}
-
-.section-course-details .views-row {
+.section-course-details .list-item {
     border-bottom: 1px solid $lighter-gray;
     list-style: none;
-    padding: 17px 0;
+    margin: 0;
+    padding: 20px 0;
     position: relative;
 }
 
-.section-course-details h4 {
-    display: inline-block;
-    font-family: $contrast-font;
-    font-weight: bolder;
-    margin: 0;
-    width: 100%;
+.section-course-details .list-item:last-child {
+    border-bottom: 0;
+}
+
+.section-course-details .tiltle-course-item {
+    margin: 0 0 5px;
 
     @include mquery("large") {
-        width: 60%;
+        width: 70%;
     }
 }
 

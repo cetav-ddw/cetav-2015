@@ -1,3 +1,23 @@
+footer {
+    background: #292929;
+    border-top: 5px solid #000;
+    overflow: hidden;
+    padding: 40px 0;
+
+    @include mquery("medium") {
+        border-top-width: 15px;
+        padding-top: 80px;
+    }
+    
+    .contact-info {
+        margin-bottom: 25px;
+
+        @include mquery("medium") {
+            @include span-columns(4);
+        }
+    }
+}
+
 .grid-width {
     @include micro-clearfix;
     margin: 0 auto;
