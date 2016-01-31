@@ -168,10 +168,6 @@ button {
     color: #fff;
     text-decoration: none; }
 
-.btn-cta {
-  margin: 25px auto;
-  padding: 15px 30px; }
-
 .animacion-3d .btn-admision a,
 .animacion-3d .btn-cta,
 .animacion-3d .btn-download {
@@ -240,6 +236,10 @@ button {
   display: block !important;
   margin: 30px auto 0;
   max-width: 230px; }
+
+.btn-cta {
+  margin: 25px auto;
+  padding: 15px 30px !important; }
 
 .btn-direction {
   background-color: transparent;
