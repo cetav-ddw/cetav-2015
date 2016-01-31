@@ -1574,7 +1574,7 @@ div.password-suggestions ul {
   clear: left;
   /* LTR */ }
 
-.content-header p:first-child {
+.content-header p {
   color: #fff;
   margin: 0; }
 
@@ -2532,7 +2532,8 @@ footer p {
 
 .panel-wide-hero {
   background: #000 url(../img/header.jpg) no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  padding: 5em 0; }
   @media only screen and (min-width: 20em) {
     .panel-wide-hero {
       max-height: 400px; } }

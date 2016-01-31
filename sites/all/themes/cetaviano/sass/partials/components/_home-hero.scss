@@ -5,6 +5,7 @@
 .panel-wide-hero {
     background: #000 url(../img/header.jpg) no-repeat center center fixed;
     background-size: cover;
+    padding: 5em 0;
 
     @include mquery("base") {
         max-height: 400px;
