@@ -310,8 +310,8 @@ function carreras_cetav_default_page_manager_handlers() {
         ),
         'element_content' => array(
           'type' => 'h2',
-          'class_enable' => 0,
-          'class' => '',
+          'class_enable' => 1,
+          'class' => 'section-call-out-h',
           'attributes' => array(),
           'link_enabled' => 0,
           'link' => array(
@@ -326,11 +326,11 @@ function carreras_cetav_default_page_manager_handlers() {
         'element_wrapper' => array(
           'type' => '',
           'class_enable' => 1,
-          'class' => 'title-headers',
+          'class' => 'section-call-out',
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
       'style' => 'semantic_panels',
     );

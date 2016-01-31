@@ -1740,6 +1740,9 @@ div.password-suggestions ul {
   color: #464646;
   font-weight: bold; }
 
+.course-intro p:first-of-type {
+  font-size: 1.325em; }
+
 .course-info {
   margin-top: 2px; }
   .course-info .date-display-range span {

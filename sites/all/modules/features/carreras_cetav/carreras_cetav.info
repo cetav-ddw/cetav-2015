@@ -1,7 +1,7 @@
 name = Carreras
 core = 7.x
 package = CETAV
-version = 7.x-1.0
+version = 7.x-1.1
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools

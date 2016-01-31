@@ -17,21 +17,15 @@ function panels_cetav_home_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'call_out_img';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'field_image' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
     'field_titulo' => array(
       'formatter_settings' => array(
         'ft' => array(
-          'fi' => TRUE,
-          'fi-el' => 'h2',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
+          'ow' => TRUE,
+          'ow-el' => 'h2',
+          'ow-cl' => 'section-call-out-h',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
         ),
       ),
     ),

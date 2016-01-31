@@ -35,6 +35,12 @@
     }
 }
 
+.course-intro {
+    p:first-of-type {
+        font-size: $text-large;
+    }
+}
+
 .course-info {
     margin-top: 2px;
 

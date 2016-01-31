@@ -155,11 +155,12 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
+      'style' => 'default',
       'settings' => NULL,
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => '',
+      'css_class' => 'course-intro',
     );
     $pane->extras = array();
     $pane->position = 1;
