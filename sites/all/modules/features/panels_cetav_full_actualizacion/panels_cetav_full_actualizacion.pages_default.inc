@@ -103,8 +103,8 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
         ),
         'element_content' => array(
           'type' => 'h3',
-          'class_enable' => 0,
-          'class' => '',
+          'class_enable' => 1,
+          'class' => 'curso-detail-h',
           'attributes' => array(),
           'link_enabled' => 0,
           'link' => array(
@@ -123,7 +123,7 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
       'style' => 'semantic_panels',
     );

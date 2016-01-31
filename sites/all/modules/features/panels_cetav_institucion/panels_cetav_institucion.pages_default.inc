@@ -344,9 +344,9 @@ function panels_cetav_institucion_default_page_manager_pages() {
           'attributes_array' => array(),
         ),
         'element_content' => array(
-          'type' => '',
-          'class_enable' => 1,
-          'class' => 'title-headers',
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => 'section-call-out-h',
           'attributes' => array(),
           'link_enabled' => 0,
           'link' => array(
@@ -359,13 +359,13 @@ function panels_cetav_institucion_default_page_manager_pages() {
           'attributes_array' => array(),
         ),
         'element_wrapper' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'section-call-out',
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
       'style' => 'semantic_panels',
     );
