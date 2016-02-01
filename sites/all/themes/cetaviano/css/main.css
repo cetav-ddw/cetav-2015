@@ -3328,6 +3328,10 @@ footer p {
     border-radius: 50%;
     display: block;
     margin: 0 auto; }
+  .team-item .read-more {
+    font-size: 0.833em;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 .team-list {
   max-width: 1080px;

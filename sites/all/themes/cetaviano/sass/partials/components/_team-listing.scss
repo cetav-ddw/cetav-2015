@@ -12,6 +12,11 @@
         display: block;
         margin: 0 auto;
     }
+    .read-more {
+        font-size: $text-small;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 
 .team-list {
