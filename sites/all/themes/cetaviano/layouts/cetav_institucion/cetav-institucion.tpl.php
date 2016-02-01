@@ -24,20 +24,20 @@
     </div>
   </div>
 
-  <div id="#about-info" class="section-wide">
+  <div id="about-info" class="section-wide">
     <div class="grid-width">
         <?php print $content['wide_intro']; ?>
     </div>
   </div>
 
   <?php if ($content['wide']): ?>
-    <div id="#team-info" class="section-wide">
+    <div id="team-info" class="section-wide">
       <div class="grid-width">
         <?php print $content['wide']; ?>
       </div>
     </div>
   <?php endif ?>
-  <div id="#board-info" class="section-wide layout-breve slab-light-blue">
+  <div id="board-info" class="section-wide layout-breve slab-light-blue">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left_second']; ?>
