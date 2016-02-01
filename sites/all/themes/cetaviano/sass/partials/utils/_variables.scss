@@ -43,7 +43,8 @@ $white: #fff;
 
 // Neat variables
 $grid-colums: 12;
-$max-width: 1200px;
+$max-width: 1080px;
+$grid-limit: 1400px;
 
 // Breakpoints
 // TL;DR, ems don't depend on the physical device size, whereas pixels do.

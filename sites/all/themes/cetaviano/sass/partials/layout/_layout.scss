@@ -16,12 +16,18 @@ footer {
             @include span-columns(4);
         }
     }
+
+    .grid-width {
+        width: 96%;
+        max-width: $grid-limit;
+    }
 }
 
 .grid-width {
     @include micro-clearfix;
     margin: 0 auto;
     max-width: $max-width;
+    padding: 0 2%;
 }
 
 .header {
@@ -76,7 +82,7 @@ footer {
 .center-wrapper,
 .section-wide {
     overflow: hidden;
-    padding: 40px 16px;
+    padding: 40px 0;
 
     @include mquery("medium") {
         padding-bottom: 80px;
