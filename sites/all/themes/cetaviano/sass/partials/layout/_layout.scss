@@ -126,9 +126,6 @@ footer {
 
 .panel-left-column,
 .panel-right-column {
-    @include span-columns(12);
-    display: block;
-
     @include mquery("large") {
         @include span-columns(6);
         display: inline-block;

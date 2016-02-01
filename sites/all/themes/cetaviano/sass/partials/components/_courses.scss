@@ -101,7 +101,7 @@
     h3,
     h4 {
         color: $light-blue;
-        margin-bottom: 15px
+        margin: 0;
     }
     img {
         border: 0;
@@ -123,6 +123,7 @@
     }
     .subtitle {
         border-bottom: 2px solid;
+        margin-bottom: 20px;
         padding-bottom: 10px;
         text-align: center;
 
@@ -130,6 +131,9 @@
             text-align: left;
             width: 370px;
         }
+    }
+    .title-form {
+        margin-bottom: 20px;
     }
 }
 

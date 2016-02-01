@@ -15,16 +15,16 @@
   <?php endif ?>
   <div class="section-wide section-intro">
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-right-column">
         <?php print $content['right']; ?>
       </div>
     </div>
   </div>
 
-  <div id="about-info" class="section-wide">
+  <div id="about-info" class="section-wide section-intro">
     <div class="grid-width">
         <?php print $content['wide_intro']; ?>
     </div>
@@ -39,10 +39,10 @@
   <?php endif ?>
   <div id="board-info" class="section-wide layout-breve slab-light-blue">
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-left-column">
         <?php print $content['left_second']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-right-column">
         <?php print $content['right_second']; ?>
       </div>
     </div>

@@ -9,10 +9,10 @@
 <div class="panel-display panel-cetav-cursos-libres">
   <div class="section-wide">
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-right-column">
         <?php print $content['right']; ?>
       </div>
     </div>
@@ -26,10 +26,10 @@
   <?php endif ?>
   <div class="section-wide section-intro">
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-left-column">
         <?php print $content['left_second']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-right-column">
         <?php print $content['right_second']; ?>
       </div>
     </div>

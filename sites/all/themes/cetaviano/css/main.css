@@ -984,27 +984,17 @@ footer {
   background-color: #ececec;
   background-color: rgba(236, 236, 236, 0.5); }
 
-.panel-left-column,
-.panel-right-column {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 100%;
-  display: block; }
-  .panel-left-column:last-child,
-  .panel-right-column:last-child {
-    margin-right: 0; }
-  @media only screen and (min-width: 68.75em) {
-    .panel-left-column,
-    .panel-right-column {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 48.821174201%;
-      display: inline-block; }
-      .panel-left-column:last-child,
-      .panel-right-column:last-child {
-        margin-right: 0; } }
+@media only screen and (min-width: 68.75em) {
+  .panel-left-column,
+  .panel-right-column {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    display: inline-block; }
+    .panel-left-column:last-child,
+    .panel-right-column:last-child {
+      margin-right: 0; } }
 
 .pane-bundle-steps-admision {
   max-width: 1080px;
@@ -1840,7 +1830,7 @@ div.password-suggestions ul {
 .panel-cetav-cursos-libres h3,
 .panel-cetav-cursos-libres h4 {
   color: #00c9ed;
-  margin-bottom: 15px; }
+  margin: 0; }
 
 .panel-cetav-cursos-libres img {
   border: 0;
@@ -1859,12 +1849,16 @@ div.password-suggestions ul {
 
 .panel-cetav-cursos-libres .subtitle {
   border-bottom: 2px solid;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   text-align: center; }
   @media only screen and (min-width: 56.25em) {
     .panel-cetav-cursos-libres .subtitle {
       text-align: left;
       width: 370px; } }
+
+.panel-cetav-cursos-libres .title-form {
+  margin-bottom: 20px; }
 
 .show-from-btn {
   width: 80%;
@@ -2728,14 +2722,12 @@ footer p {
 
 .pane-views-exp-egresados-panel-pane-1 .views-exposed-form {
   background-color: #243842;
-  margin: 0 auto;
-  padding: 40px 72px; }
+  padding: 15px 30px; }
 
 .pane-views-exp-egresados-panel-pane-1 .views-exposed-form .form-item {
   margin-bottom: 12px; }
 
 .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget {
-  margin-right: 30px;
   margin-top: 20px;
   padding-bottom: 20px !important; }
   @media only screen and (min-width: 56.25em) {
@@ -2754,6 +2746,8 @@ footer p {
       margin-right: 2.3576515979%;
       width: 31.7615656014%;
       border-bottom: solid 1px #848286;
+      margin-right: 0;
+      padding-right: 0;
       width: 100%; }
       .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget:last-child {
         margin-right: 0; }
@@ -2809,8 +2803,6 @@ footer p {
 .profile-image img,
 .pane-node-field-foto-perfil img {
   border-radius: 100%;
-  box-shadow: 0 4px 7px -2px #243842;
-  height: 0 auto;
   padding: 1px; }
 
 .profile-image {

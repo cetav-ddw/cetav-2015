@@ -10,15 +10,15 @@
 <div class="panel-display panel-cetav-prev-cursos-libres">
   <div class="section-wide section-intro">
   <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide">
+    <div class="grid-width">
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-right-column">
         <?php print $content['right']; ?>
       </div>
     </div>    

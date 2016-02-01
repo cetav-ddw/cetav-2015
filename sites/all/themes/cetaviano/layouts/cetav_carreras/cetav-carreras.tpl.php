@@ -8,16 +8,16 @@
 ?>
 <div class="panel-display panel-cetav-carreras">
   <?php if ($content['wide']): ?>
-    <div class="panel-container panel-wide panel-header">
+    <div class="panel-wide panel-header">
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
   <div class="section-wide section-intro">
     <div class="grid-width">
-      <div class="panel-container panel-left-column">
+      <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-container panel-right-column">
+      <div class="panel-right-column">
         <?php print $content['right']; ?>
       </div>
     </div>

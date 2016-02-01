@@ -9,10 +9,10 @@
 <div class="panel-display panel-cetav-prev-egresados">
   <div class="center-wrapper">
   <div class="grid-width">
-    <div class="panel-container panel-left-column">
+    <div class="panel-left-column">
       <?php print $content['left']; ?>
     </div>
-    <div class="panel-container panel-right-column">
+    <div class="panel-right-column">
       <?php print $content['right']; ?>
     </div>
   </div>
