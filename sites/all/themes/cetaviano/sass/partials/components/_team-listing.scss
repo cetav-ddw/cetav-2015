@@ -20,8 +20,8 @@
     margin: 50px 0 0;
     padding: 0;
 
-    .odd {
-         @include omega();
+    .views-row-even {
+        @include omega();
     }
 }
 

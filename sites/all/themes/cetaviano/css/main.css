@@ -3340,7 +3340,7 @@ footer p {
     clear: both;
     content: "";
     display: table; }
-  .team-list .odd {
+  .team-list .views-row-even {
     margin-right: 0; }
 
 .personal-charge {
