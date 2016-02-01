@@ -27,12 +27,12 @@
         }
     }
     .personal-name {
+        margin-bottom: 0;
         margin-top: 20px;
         text-align: center;
     }
     .personal-charge {
         p {
-            color: $orange;
             display: inline-block;
             font-size: $text-small;
             font-weight: bold;

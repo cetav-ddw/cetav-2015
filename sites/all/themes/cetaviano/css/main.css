@@ -758,11 +758,11 @@ input[type="file"] {
     margin-right: 0; }
 
 .personal-institution .personal-name {
+  margin-bottom: 0;
   margin-top: 20px;
   text-align: center; }
 
 .personal-institution .personal-charge p {
-  color: #f19130;
   display: inline-block;
   font-size: 0.833em;
   font-weight: bold;
@@ -1951,11 +1951,11 @@ div.password-suggestions ul {
     margin-right: 0; }
 
 .personal-institution .personal-name {
+  margin-bottom: 0;
   margin-top: 20px;
   text-align: center; }
 
 .personal-institution .personal-charge p {
-  color: #f19130;
   display: inline-block;
   font-size: 0.833em;
   font-weight: bold;
