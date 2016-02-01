@@ -56,6 +56,12 @@ footer {
     }
 }
 
+.layout-semibreve { // limita el ancho de las secciones con contendio
+    @include mquery("medium") {
+        max-width: 75%;
+    }
+}
+
 .main-content {
     @include micro-clearfix;
     background: $white;
