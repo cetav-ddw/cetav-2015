@@ -1,0 +1,39 @@
+.team-item {
+    margin-bottom: 20px;
+    padding: 0 3em 3em;
+    text-align: center;
+
+    @include mquery("small") {
+        @include span-columns(6);
+    }
+
+    img {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.team-list {
+    @include outer-container;
+    list-style-type: none;
+    margin: 50px 0 0;
+    padding: 0;
+
+    .odd {
+         @include omega();
+    }
+}
+
+.personal-charge {
+    display: inline-block;
+    font-size: $text-small;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.personal-name {
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+}

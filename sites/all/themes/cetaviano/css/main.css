@@ -3311,4 +3311,46 @@ footer p {
   .pager li {
     display: inline-block;
     padding: 0 5px; }
+
+.team-item {
+  margin-bottom: 20px;
+  padding: 0 3em 3em;
+  text-align: center; }
+  @media only screen and (min-width: 37.5em) {
+    .team-item {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%; }
+      .team-item:last-child {
+        margin-right: 0; } }
+  .team-item img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; }
+
+.team-list {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0; }
+  .team-list::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .team-list .odd {
+    margin-right: 0; }
+
+.personal-charge {
+  display: inline-block;
+  font-size: 0.833em;
+  font-weight: bold;
+  margin: 0 0 10px; }
+
+.personal-name {
+  margin-bottom: 0;
+  margin-top: 20px;
+  text-align: center; }
 /*# sourceMappingURL=main.css.map */
