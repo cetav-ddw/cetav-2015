@@ -84,10 +84,16 @@ small,
   font-size: 0.694em; }
 
 .section-sh {
+  margin-bottom: 1em;
   margin-top: 0;
   position: relative; }
   .section-sh:after {
-    content: ""; }
+    background-color: #464646;
+    bottom: -10px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 60px; }
 
 .subtitle-career {
   margin-top: 0; }

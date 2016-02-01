@@ -71,11 +71,17 @@ small,
 }
 
 .section-sh {
+    margin-bottom: 1em;
     margin-top: 0;
     position: relative;
 
     &:after {
+        background-color: $black;
+        bottom: -10px;
         content: "";
+        height: 4px;
+        position: absolute;
+        width: 60px;
     }
 }
 
