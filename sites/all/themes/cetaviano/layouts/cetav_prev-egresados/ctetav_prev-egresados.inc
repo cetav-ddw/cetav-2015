@@ -10,6 +10,8 @@ $plugin = array(
 
   'regions' => array(
     'left' => t('Left side'),
+    'left_intro' => t('Left Intro'),
     'right' => t('Right side'),
+    'right_intro' => t('Right Intro')
   ),
 );
