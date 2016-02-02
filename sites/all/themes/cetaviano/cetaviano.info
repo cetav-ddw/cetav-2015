@@ -48,6 +48,8 @@ stylesheets[all][] = system.base.css
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
+stylesheets[all][] = ds_2col.css
+stylesheets[all][] = ds_3col_equal_width.css
 
 ;-------------- C S S -------------
 stylesheets[all][] = css/main.css

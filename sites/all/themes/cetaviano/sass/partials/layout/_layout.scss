@@ -62,6 +62,16 @@ footer {
     }
 }
 
+.layout-minor {
+    @include span-columns(4);
+    float: left;
+}
+
+.layout-medium {
+    @include span-columns(7);
+    float: right;
+}
+
 .main-content {
     @include micro-clearfix;
     background: $white;
