@@ -42,6 +42,13 @@ footer {
     }
 }
 
+.heading {
+    border-bottom: 1px solid $lighter-gray;
+    margin: 2em 0;
+    padding-bottom: .5em;
+    width: 100%;
+}
+
 .helper-nav-content {
     @include mquery("medium") {
         margin: 0 auto;

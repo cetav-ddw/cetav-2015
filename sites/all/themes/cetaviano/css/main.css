@@ -910,6 +910,12 @@ footer {
     border-bottom: 2px solid #dc661e;
     padding: 8px 0; } }
 
+.heading {
+  border-bottom: 1px solid #ececec;
+  margin: 2em 0;
+  padding-bottom: .5em;
+  width: 100%; }
+
 @media only screen and (min-width: 56.25em) {
   .helper-nav-content {
     margin: 0 auto;
