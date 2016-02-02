@@ -7,7 +7,7 @@
  */
 ?>
 <div class="panel-display panel-cetav-prev-egresados">
-  <div class="section-wide section-intro">
+  <div class="section-wide">
     <div class="grid-width">
       <div class="panel-left-column">
         <?php print $content['left_intro']; ?>
