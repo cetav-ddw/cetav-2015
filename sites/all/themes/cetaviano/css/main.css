@@ -2450,6 +2450,12 @@ footer p {
     float: right;
     width: 50%; } }
 
+.date-course-item span {
+  color: #848286;
+  font-family: "Quicksand", Arial, Verdana, sans-serif;
+  margin-bottom: 0;
+  margin-top: 6px; }
+
 .section-course-details .panel-left-column {
   display: block;
   float: left;
@@ -2500,15 +2506,18 @@ footer p {
   margin: 0;
   padding: 20px 0;
   position: relative; }
+  .section-course-details .list-item .date-display-single {
+    font-size: 0.833em; }
 
 .section-course-details .list-item:last-child {
   border-bottom: 0; }
 
 .section-course-details .tiltle-course-item {
+  font-size: 1em;
   margin: 0 0 5px; }
   @media only screen and (min-width: 68.75em) {
     .section-course-details .tiltle-course-item {
-      width: 70%; } }
+      width: 65%; } }
 
 .text-course-description p {
   margin: 0 0 20px; }
@@ -2522,12 +2531,6 @@ footer p {
   @media only screen and (min-width: 68.75em) {
     .title-course-item {
       width: 60%; } }
-
-.date-course-item span {
-  color: #848286;
-  font-family: "Quicksand", Arial, Verdana, sans-serif;
-  margin-bottom: 0;
-  margin-top: 6px; }
 
 .main-content .main .title {
   display: none; }

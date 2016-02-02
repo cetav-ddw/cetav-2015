@@ -1,3 +1,10 @@
+.date-course-item span {
+    color: $ligth-gray;
+    font-family: $default-font;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
 .section-course-details .panel-left-column {
     display: block;
     float: left;
@@ -56,6 +63,10 @@
     margin: 0;
     padding: 20px 0;
     position: relative;
+
+    .date-display-single {
+        font-size: $text-small;
+    }
 }
 
 .section-course-details .list-item:last-child {
@@ -63,10 +74,11 @@
 }
 
 .section-course-details .tiltle-course-item {
+    font-size: $text-base;
     margin: 0 0 5px;
 
     @include mquery("large") {
-        width: 70%;
+        width: 65%;
     }
 }
 
@@ -84,11 +96,4 @@
     @include mquery("large") {
         width: 60%;
     }
-}
-
-.date-course-item span {
-    color: $ligth-gray;
-    font-family: $default-font;
-    margin-bottom: 0;
-    margin-top: 6px;
 }
