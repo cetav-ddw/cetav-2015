@@ -17,7 +17,7 @@
       </div>
     </div>
   </div>
-  <div class="section-wide">
+  <div class="section-wide slab-gray">
     <div class="grid-width">
       <div class="center-column">
         <?php print $content['center_intro']; ?>
