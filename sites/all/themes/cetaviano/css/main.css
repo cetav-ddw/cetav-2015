@@ -1000,6 +1000,9 @@ footer {
   background: #243842;
   color: #fff; }
 
+.slab-cta {
+  padding: 2em 0; }
+
 .slab-light-blue {
   background: #00c9ed;
   color: #fff; }
@@ -1813,7 +1816,8 @@ div.password-suggestions ul {
 .cta-register-detail {
   color: #464646;
   font-size: 0.833em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  text-align: center; }
   .cta-register-detail a:link {
     color: #464646; }
   .cta-register-detail strong {
