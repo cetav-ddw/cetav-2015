@@ -42,10 +42,11 @@ footer {
     }
 }
 
+.heading,
 .main-content .heading {
     border-bottom: 1px solid $lighter-gray;
-    margin: 2em 0 4em;
-    padding-bottom: .5em;
+    margin-bottom: 4em;
+    padding-bottom: 1em;
     width: 100%;
 }
 
