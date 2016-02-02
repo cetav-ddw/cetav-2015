@@ -42,9 +42,9 @@ footer {
     }
 }
 
-.heading {
+.main-content .heading {
     border-bottom: 1px solid $lighter-gray;
-    margin: 2em 0;
+    margin: 2em 0 4em;
     padding-bottom: .5em;
     width: 100%;
 }
@@ -69,12 +69,14 @@ footer {
     }
 }
 
-.layout-minor {
+.layout-minor,
+.main-content .layout-minor {
     @include span-columns(4);
     float: left;
 }
 
-.layout-medium {
+.layout-medium,
+.main-content .layout-medium {
     @include span-columns(7);
     float: right;
 }

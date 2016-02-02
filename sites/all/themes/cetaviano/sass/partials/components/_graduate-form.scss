@@ -60,7 +60,7 @@
     }
     .form-actions{
         .form-submit {
-            @include button($orange, $orange, $white);
+            @include btn-orange;
         }
     }
     .tabledrag-toggle-weight-wrapper {
