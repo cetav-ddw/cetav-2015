@@ -19,6 +19,13 @@
   </div>
   <div class="section-wide">
     <div class="grid-width">
+      <div class="center-column">
+        <?php print $content['center_intro']; ?>
+      </div>
+    </div>
+  </div>
+  <div class="section-wide">
+    <div class="grid-width">
       <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
