@@ -457,6 +457,10 @@ img {
   width: inherit;
   /* IEB */ }
 
+@media only screen and (min-width: 56.25em) {
+  [class*="-column"] .embedded-video {
+    padding-left: 2em; } }
+
 @media only screen and (min-width: 20em) {
   .logo-cetav-home img {
     width: 200px; } }

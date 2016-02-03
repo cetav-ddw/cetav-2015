@@ -9,6 +9,14 @@ img {
     width: inherit; /* IEB */
 }
 
+.embedded-video {
+    [class*="-column"] & {
+        @include mquery("medium") {
+            padding-left: 2em;
+        }
+    }
+}
+
 // logo cetav home intro
 .logo-cetav-home img {
     @include mquery("base") {
