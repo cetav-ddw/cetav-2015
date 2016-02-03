@@ -1,24 +1,3 @@
-.panel-cetav-prev-egresados {
-    .panel-left-column {
-         display: block;
-
-        @include mquery("medium") {
-            @include span-columns(12);
-            display: inline-block;
-        }
-
-        @include mquery('large') {
-            @include span-columns(4);
-        }
-    }
-    .panel-right-column {
-        @include mquery('large') {
-            @include span-columns(8);
-            @include omega();
-        }
-    }
-}
-
 .pane-views-exp-egresados-panel-pane-1 {
     .views-exposed-form {
         background-color: $blue-dark;
