@@ -13,7 +13,7 @@
       <?php print $content['wide_main']; ?>
     </div>
   <?php endif ?>
-  <div class="section-wide section-intro">
+  <div class="section-wide">
     <div class="grid-width">
       <div class="panel-left-column">
         <?php print $content['left']; ?>
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div id="about-info" class="section-wide section-intro">
+  <div id="about-info" class="section-wide slab-gray">
     <div class="grid-width">
         <?php print $content['wide_intro']; ?>
     </div>
