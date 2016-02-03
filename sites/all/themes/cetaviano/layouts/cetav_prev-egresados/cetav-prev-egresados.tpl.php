@@ -26,10 +26,10 @@
   </div>
   <div class="section-wide">
     <div class="grid-width">
-      <div class="panel-left-column">
+      <div class="panel-left-column layout-minor">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-right-column">
+      <div class="panel-right-column layout-medium">
         <?php print $content['right']; ?>
       </div>
     </div>
