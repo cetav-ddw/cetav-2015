@@ -162,7 +162,8 @@ a {
   .split-list li a {
     color: #fff; }
 
-button {
+button,
+.btn {
   background-color: #fff;
   border: 2px solid #464646;
   border-radius: 4px;
@@ -174,7 +175,8 @@ button {
   text-decoration: none;
   transition: background-color .3s;
   vertical-align: middle; }
-  button:hover {
+  button:hover,
+  .btn:hover {
     background-color: #464646;
     color: #fff;
     text-decoration: none; }
@@ -384,7 +386,7 @@ button {
 .text-course-description .field-name-field-link-view-more {
   display: inline-block; }
 
-.text-course-description a {
+.text-course-description .intro-action {
   background-color: #fff;
   border: 2px solid #00c9ed;
   border-radius: 4px;
@@ -398,7 +400,7 @@ button {
   vertical-align: middle;
   margin-top: 20px;
   padding: 15px 30px; }
-  .text-course-description a:hover {
+  .text-course-description .intro-action:hover {
     background-color: #00c9ed;
     color: #fff;
     text-decoration: none; }
@@ -2480,7 +2482,7 @@ footer p {
       text-align: left;
       width: 45%; } }
 
-.section-course-intro .section-call-out-h {
+.section-title-free-course .section-call-out-h {
   color: #00c9ed; }
 
 #panels-ipe-regionid-left_third {
