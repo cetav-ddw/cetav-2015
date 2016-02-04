@@ -34,22 +34,6 @@
     }
 }
 
-.views-field-field-generacion-egresado,
-.views-field-field-disponibilidad-egresado {
-    color: $ligth-gray;
-    display: inline-block;
-    margin: 8px 12px 0 0;
-    vertical-align: top;
-}
-
-.views-field-field-profesion-egresado {
-    color: $black;
-
-    @include mquery('large') {
-        width: 100%;
-    }
-}
-
 .profesional-info-container {
     text-align: center;
 
@@ -61,25 +45,19 @@
     }
 }
 
-.view-egresados {
-    .views-row {
-        border-bottom: 1px solid #ececec;
-        overflow: hidden;
-        padding: 40px 0;
-        position: relative;
-    }
-    .profile-name  {
-        font-family: $contrast-font;
+.profile-info {
+    font-size: $text-small;
+    margin: 0 0 .5em;
+}
 
-        a {
-            color: $blue-dark;
-            text-decoration: none;
+.profile-name {
+    font-size: $text-h4;
+    margin-bottom: .25em;
+    margin-top: 0;
 
-            @include mquery("large") {
-                display: inline-block;
-                text-align: left;
-            }
-        }
+    a {
+        color: $blue-dark;
+        text-decoration: none;
     }
 }
 
@@ -91,7 +69,7 @@
     }
 }
 
-.profile-image{
+.profile-image {
     clear: both;
     text-align: center;
 

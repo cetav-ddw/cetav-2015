@@ -49,7 +49,7 @@ li {
   margin-bottom: .4em; }
 
 strong {
-  color: #f19130; }
+  color: #464646; }
 
 blockquote {
   border-left: 5px solid #f19130;
@@ -2766,19 +2766,6 @@ footer p {
     color: #fff;
     margin-bottom: 12px; }
 
-.views-field-field-generacion-egresado,
-.views-field-field-disponibilidad-egresado {
-  color: #848286;
-  display: inline-block;
-  margin: 8px 12px 0 0;
-  vertical-align: top; }
-
-.views-field-field-profesion-egresado {
-  color: #464646; }
-  @media only screen and (min-width: 68.75em) {
-    .views-field-field-profesion-egresado {
-      width: 100%; } }
-
 .profesional-info-container {
   text-align: center; }
   @media only screen and (min-width: 56.25em) {
@@ -2793,21 +2780,17 @@ footer p {
       .profesional-info-container:last-child {
         margin-right: 0; } }
 
-.view-egresados .views-row {
-  border-bottom: 1px solid #ececec;
-  overflow: hidden;
-  padding: 40px 0;
-  position: relative; }
+.profile-info {
+  font-size: 0.833em;
+  margin: 0 0 .5em; }
 
-.view-egresados .profile-name {
-  font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
-  .view-egresados .profile-name a {
+.profile-name {
+  font-size: 1.333em;
+  margin-bottom: .25em;
+  margin-top: 0; }
+  .profile-name a {
     color: #243842;
     text-decoration: none; }
-    @media only screen and (min-width: 68.75em) {
-      .view-egresados .profile-name a {
-        display: inline-block;
-        text-align: left; } }
 
 .profile-image img,
 .pane-node-field-foto-perfil img {
