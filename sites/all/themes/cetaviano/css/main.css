@@ -2164,29 +2164,28 @@ div.password-suggestions ul {
   padding-bottom: 17px;
   width: 100%; }
 
-.course-listing img {
-  display: block;
-  width: 100%; }
-
-.course-listing li {
-  padding: 0;
-  position: relative; }
-
-.course-listing .details {
-  background-color: rgba(0, 201, 237, 0.8);
-  bottom: 0;
-  left: 40%;
-  padding: 20px;
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.course-listing .price {
-  background-color: #fff;
-  color: #00c9ed;
-  display: inline-block;
-  font-weight: bold;
-  padding: 3px 7px; }
+.course-listing {
+  margin-top: 4em; }
+  .course-listing img {
+    display: block;
+    width: 100%; }
+  .course-listing li {
+    padding: 0;
+    position: relative; }
+  .course-listing .details {
+    background-color: rgba(0, 201, 237, 0.8);
+    bottom: 0;
+    left: 40%;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .course-listing .price {
+    background-color: #fff;
+    color: #00c9ed;
+    display: inline-block;
+    font-weight: bold;
+    padding: 3px 7px; }
 
 .prev-title-course {
   font-size: 1em;
