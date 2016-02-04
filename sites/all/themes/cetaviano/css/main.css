@@ -991,17 +991,14 @@ footer {
     .nav-main {
       width: 1200px; } }
 
-.center-wrapper,
 .section-wide {
   overflow: hidden;
   padding: 40px 0; }
   @media only screen and (min-width: 56.25em) {
-    .center-wrapper,
     .section-wide {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media only screen and (min-width: 68.75em) {
-    .center-wrapper,
     .section-wide {
       padding-bottom: 100px;
       padding-top: 100px; } }
@@ -1880,8 +1877,7 @@ div.password-suggestions ul {
   margin: 0; }
 
 .panel-cetav-cursos-libres img {
-  border: 0;
-  box-shadow: 0 0 8px #77787b; }
+  padding-left: 2em; }
 
 .panel-cetav-cursos-libres .panel-wide {
   padding: 0; }

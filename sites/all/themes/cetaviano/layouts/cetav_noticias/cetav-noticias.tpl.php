@@ -7,7 +7,7 @@
  */
 ?>
 <div class="panel-display panel-cetav-noticias">
-  <div class="center-wrapper">
+  <div class="section-wide">
   <div class="grid-width">
     <div class="panel-container panel-left-column container-news">
       <?php print $content['left']; ?>

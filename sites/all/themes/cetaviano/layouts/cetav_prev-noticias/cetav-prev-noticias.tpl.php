@@ -12,7 +12,7 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-  <div class="center-wrapper">
+  <div class="section-wide">
   <div class="grid-width">
     <div class="panel-container panel-left-column container-news-prev">
       <?php print $content['left']; ?>

@@ -21,7 +21,7 @@
       </div>
     </div>
   <?php endif ?>
-  <div class="center-wrapper about-graduate">
+  <div class="section-wide about-graduate">
     <div class="grid-width">
       <div class="panel-container panel-left-column">
         <?php print $content['left']; ?>
