@@ -1,0 +1,12 @@
+// lista de elementos con divisor
+.list-item {
+    border-bottom: 1px solid $lighter-gray;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}

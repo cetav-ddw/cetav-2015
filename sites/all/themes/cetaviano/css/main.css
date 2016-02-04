@@ -163,6 +163,15 @@ a {
   .split-list li a {
     color: #fff; }
 
+.list-item {
+  border-bottom: 1px solid #ececec;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  position: relative; }
+  .list-item:last-child {
+    border-bottom: 0; }
+
 button,
 .btn {
   background-color: #fff;
@@ -2511,17 +2520,8 @@ footer p {
     float: right;
     width: 50%; } }
 
-.section-course-details .list-item {
-  border-bottom: 1px solid #ececec;
-  list-style: none;
-  margin: 0;
-  padding: 20px 0;
-  position: relative; }
-  .section-course-details .list-item .date-display-single {
-    font-size: 0.833em; }
-
-.section-course-details .list-item:last-child {
-  border-bottom: 0; }
+.section-course-details .date-display-single {
+  font-size: 0.833em; }
 
 .section-course-details .tiltle-course-item {
   font-size: 1em;
