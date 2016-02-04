@@ -73,6 +73,7 @@ footer {
 .layout-minim {
     li {
         @include span-columns(6);
+        margin-bottom: 2%;
     }
     .views-row-even {
         @include omega();

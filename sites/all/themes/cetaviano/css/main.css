@@ -936,7 +936,8 @@ footer {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 48.821174201%; }
+  width: 48.821174201%;
+  margin-bottom: 2%; }
   .layout-minim li:last-child {
     margin-right: 0; }
 
@@ -2172,49 +2173,29 @@ div.password-suggestions ul {
 
 .course-listing .details {
   background-color: rgba(0, 201, 237, 0.8);
-  width: 50%; }
-
-.view-preview-free-course {
-  margin: 50px auto;
-  max-width: 490px;
-  position: relative; }
-  @media only screen and (min-width: 68.75em) {
-    .view-preview-free-course {
-      display: inline-block;
-      margin: 20px; } }
-  .view-preview-free-course:hover .details-preview-course {
-    opacity: 1;
-    transition: 1s; }
-
-.views-field-field-imagen-curso {
-  overflow: hidden; }
-  .views-field-field-imagen-curso img {
-    height: 100%;
-    max-width: none; }
-
-.details-preview-course {
-  background-color: #00c9ed;
-  height: 250px;
-  opacity: .85;
-  padding: 30px 20px;
+  bottom: 0;
+  left: 40%;
+  padding: 20px;
   position: absolute;
   right: 0;
-  transition: 1s;
+  top: 0;
   width: 50%; }
 
-.prev-title-course a {
-  color: #fff; }
+.course-listing .precio {
+  background-color: #fff;
+  color: #00c9ed;
+  display: block;
+  font-weight: bold;
+  padding: 3px 7px; }
+
+.prev-title-course {
+  margin: 0 0 .5em; }
+  .prev-title-course a {
+    color: #fff; }
 
 .date-display-range {
-  color: #fff; }
-
-.views-field-field-precio {
-  color: #00c9ed;
-  background-color: #fff;
-  font-weight: bold;
-  padding: 3px 7px;
-  position: absolute;
-  top: 190px; }
+  color: #fff;
+  font-size: 0.833em; }
 
 .about-graduate {
   overflow: hidden;
