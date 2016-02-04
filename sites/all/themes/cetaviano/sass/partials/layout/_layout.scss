@@ -70,6 +70,12 @@ footer {
     }
 }
 
+.layout-minim {
+    li {
+        @include span-columns(6);
+    }
+}
+
 .layout-minor,
 .main-content .layout-minor {
     @include span-columns(4);

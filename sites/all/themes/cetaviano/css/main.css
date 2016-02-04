@@ -932,6 +932,14 @@ footer {
   .layout-semibreve {
     max-width: 75%; } }
 
+.layout-minim li {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .layout-minim li:last-child {
+    margin-right: 0; }
+
 .layout-minor,
 .main-content .layout-minor {
   float: left;
