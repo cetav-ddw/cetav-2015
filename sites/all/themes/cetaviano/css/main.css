@@ -2178,17 +2178,17 @@ div.password-suggestions ul {
   padding: 20px;
   position: absolute;
   right: 0;
-  top: 0;
-  width: 50%; }
+  top: 0; }
 
-.course-listing .precio {
+.course-listing .price {
   background-color: #fff;
   color: #00c9ed;
-  display: block;
+  display: inline-block;
   font-weight: bold;
   padding: 3px 7px; }
 
 .prev-title-course {
+  font-size: 1em;
   margin: 0 0 .5em; }
   .prev-title-course a {
     color: #fff; }

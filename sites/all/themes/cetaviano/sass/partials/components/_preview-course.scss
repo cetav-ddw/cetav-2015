@@ -15,18 +15,18 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: 50%;
     }
-    .precio {
+    .price {
         background-color: $white;
         color: $light-blue;
-        display: block;
+        display: inline-block;
         font-weight: bold;
         padding: 3px 7px;
     }
 }
 
 .prev-title-course {
+    font-size: $text-base;
     margin: 0 0 .5em;
 
     a {
