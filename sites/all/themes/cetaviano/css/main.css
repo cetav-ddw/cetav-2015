@@ -2195,7 +2195,8 @@ div.password-suggestions ul {
 
 .date-display-range {
   color: #fff;
-  font-size: 0.833em; }
+  font-size: 0.833em;
+  margin-bottom: .5em; }
 
 .about-graduate {
   overflow: hidden;
