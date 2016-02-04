@@ -1,8 +1,9 @@
-// lista de elementos con divisor
+// lista de elementos con divisor ejem: listado cursos en home o lista de egresados
 .list-item {
     border-bottom: 1px solid $lighter-gray;
     list-style: none;
     margin: 0;
+    overflow: hidden;
     padding: 20px 0;
     position: relative;
 
