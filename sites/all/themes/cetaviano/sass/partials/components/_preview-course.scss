@@ -1,3 +1,18 @@
+.course-listing {
+    img {
+        display: block;
+        width: 100%;
+    }
+    li {
+        padding: 0;
+        position: relative;
+    }
+    .details {
+        background-color: rgba($light-blue, .8);
+        width: 50%;
+    }
+}
+
 .view-preview-free-course {
     margin: 50px auto;
     max-width: 490px;

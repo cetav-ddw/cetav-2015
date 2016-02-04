@@ -940,6 +940,9 @@ footer {
   .layout-minim li:last-child {
     margin-right: 0; }
 
+.layout-minim .views-row-even {
+  margin-right: 0; }
+
 .layout-minor,
 .main-content .layout-minor {
   float: left;
@@ -2158,6 +2161,18 @@ div.password-suggestions ul {
   margin-bottom: 17px;
   padding-bottom: 17px;
   width: 100%; }
+
+.course-listing img {
+  display: block;
+  width: 100%; }
+
+.course-listing li {
+  padding: 0;
+  position: relative; }
+
+.course-listing .details {
+  background-color: rgba(0, 201, 237, 0.8);
+  width: 50%; }
 
 .view-preview-free-course {
   margin: 50px auto;
