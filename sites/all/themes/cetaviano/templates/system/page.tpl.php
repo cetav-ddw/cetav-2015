@@ -18,14 +18,6 @@
   </div>
   <?php endif; ?>
   
-  <div class="helper-nav">
-    <div class="helper-nav-content">
-      <a class="cta-pll-logo" href="http://parquelalibertad.org">parquelalibertad.org</a>
-      
-      <a class="cta-pll-url" href="http://parquelalibertad.org">parquelalibertad.org</a>
-    </div>
-  </div><!-- /menu-highlights -->
-  
   <?php if ($page['header']): ?>
     <div class="header-content">
       <?php print render($page['header']); ?>

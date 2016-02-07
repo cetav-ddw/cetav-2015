@@ -912,32 +912,12 @@ footer {
 .header {
   background: #fff; }
 
-@media only screen and (min-width: 56.25em) {
-  .helper-nav {
-    background-color: #f19130;
-    border-bottom: 2px solid #dc661e;
-    padding: 8px 0; } }
-
 .heading,
 .main-content .heading {
   border-bottom: 1px solid #ececec;
   margin-bottom: 4em;
   padding-bottom: 1em;
   width: 100%; }
-
-@media only screen and (min-width: 56.25em) {
-  .helper-nav-content {
-    margin: 0 auto;
-    overflow: hidden;
-    width: 800px; } }
-
-@media only screen and (min-width: 68.75em) {
-  .helper-nav-content {
-    width: 1000px; } }
-
-@media only screen and (min-width: 87.5em) {
-  .helper-nav-content {
-    width: 1200px; } }
 
 @media only screen and (min-width: 56.25em) {
   .layout-semibreve {
@@ -3274,27 +3254,6 @@ footer p {
             color: #fff; }
             .nav-secundary-main .menu li a:hover {
               color: #f19130; } }
-
-@media only screen and (min-width: 56.25em) {
-  .cta-pll-logo {
-    background: url(../img/logo-parque-ministerio.png) no-repeat;
-    background-size: 165px;
-    height: 68px;
-    width: 230px;
-    float: left;
-    text-indent: -9999px; } }
-
-.cta-pll-url {
-  display: none; }
-  @media only screen and (min-width: 56.25em) {
-    .cta-pll-url {
-      color: #fff;
-      display: block;
-      float: right;
-      font-size: 13px;
-      font-weight: bold;
-      margin-top: 28px;
-      text-decoration: none; } }
 
 .pager {
   margin: 10px 0;

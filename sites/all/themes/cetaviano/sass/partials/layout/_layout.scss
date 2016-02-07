@@ -34,13 +34,6 @@ footer {
     background: $white;
 }
 
-.helper-nav {
-    @include mquery("medium") {
-        background-color: $orange;
-        border-bottom: 2px solid $dark-orange;
-        padding: 8px 0;
-    }
-}
 
 .heading,
 .main-content .heading {
@@ -48,20 +41,6 @@ footer {
     margin-bottom: 4em;
     padding-bottom: 1em;
     width: 100%;
-}
-
-.helper-nav-content {
-    @include mquery("medium") {
-        margin: 0 auto;
-        overflow: hidden;
-        width: 800px;
-    }
-    @include mquery("large") {
-        width: 1000px;
-    }
-    @include mquery("x-large") {
-        width: 1200px;
-    }
 }
 
 .layout-semibreve { // limita el ancho de las secciones con contendio
