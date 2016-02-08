@@ -36,9 +36,6 @@
 .header div .views-exposed-form,
 #block-system-main-menu {
     @include mquery("medium") {
-        display: block;
-        width: 94%;
-
         li {
             color: $black;
             display: inline-block;
@@ -58,13 +55,6 @@
                 }
             }
         }
-    }
-}
-
-@include mquery("medium") {
-    #block-system-main-menu .menu a,
-    #block-system-main-menu .expanded {
-        padding: 15px 30px 27px;
     }
 }
 
