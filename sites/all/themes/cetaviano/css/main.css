@@ -1675,19 +1675,8 @@ div.password-suggestions ul {
   100% {
     opacity: 1; } }
 
-@media only screen and (min-width: 56.25em) {
-  .site-logo {
-    float: left; } }
-
 .site-logo img {
-  margin: 25px 20px;
-  position: absolute;
-  top: 0;
   width: 140px; }
-  @media only screen and (min-width: 56.25em) {
-    .site-logo img {
-      margin: 25px 0;
-      top: 85px; } }
 
 .career-program .paragraphs-item-programas-carreras {
   background-color: #fff;

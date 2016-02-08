@@ -1,17 +1,5 @@
 .site-logo {
-    @include mquery("medium") {
-        float: left;
-    }
-
     img {
-        margin: 25px 20px;
-        position: absolute;
-        top: 0;
         width: 140px;
-
-        @include mquery("medium") {
-            margin: 25px 0;
-            top: 85px;
-        }
     }
 }
