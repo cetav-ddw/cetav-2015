@@ -965,22 +965,6 @@ footer {
   .main-content:after, .main-content:after {
     clear: both; }
 
-.nav-main {
-  background-color: #fff;
-  margin-top: 150px; }
-  @media only screen and (min-width: 56.25em) {
-    .nav-main {
-      background-color: #fff;
-      margin: 0 auto;
-      text-align: right;
-      width: 800px; } }
-  @media only screen and (min-width: 68.75em) {
-    .nav-main {
-      width: 1000px; } }
-  @media only screen and (min-width: 87.5em) {
-    .nav-main {
-      width: 1200px; } }
-
 .section-wide {
   overflow: hidden;
   padding: 40px 0; }
@@ -992,6 +976,10 @@ footer {
     .section-wide {
       padding-bottom: 100px;
       padding-top: 100px; } }
+
+.head-nav {
+  overflow: visible;
+  padding: 0; }
 
 .section-intro {
   padding-bottom: 0; }
@@ -1008,6 +996,9 @@ footer {
 
 .slab-cta {
   padding: 2em 0; }
+
+.slab-orange {
+  background: #f19130; }
 
 .slab-light-blue {
   background: #00c9ed;
@@ -1677,6 +1668,20 @@ div.password-suggestions ul {
 
 .site-logo img {
   width: 140px; }
+
+.header .views-submit-button input {
+  background: url(../img/search.svg) no-repeat center;
+  background-size: cover;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  right: 21px;
+  top: 13px;
+  transition: opacity .4s ease;
+  width: 20px; }
+
+#block-views-exp-global-search-page {
+  display: none; }
 
 .career-program .paragraphs-item-programas-carreras {
   background-color: #fff;
@@ -2982,6 +2987,80 @@ footer p {
         .testimonial .carrera-testimonial:last-child {
           margin-right: 0; } }
 
+nav[role="navigation"] li {
+  color: #fff;
+  font-size: 1em;
+  display: inline;
+  float: left;
+  margin: 0 7px;
+  position: relative; }
+
+nav[role="navigation"] a,
+nav[role="navigation"] .nolink {
+  display: block;
+  float: left;
+  padding: 10px 8px 7px; }
+  nav[role="navigation"] a:hover,
+  nav[role="navigation"] .nolink:hover {
+    text-decoration: none; }
+
+nav[role="navigation"] .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  nav[role="navigation"] .menu a {
+    border-bottom: 3px solid #f19130;
+    color: #fff; }
+    nav[role="navigation"] .menu a:hover {
+      border-color: #fff;
+      font-weight: bold; }
+
+nav[role="navigation"] .expanded a {
+  width: 100%; }
+  nav[role="navigation"] .expanded a:hover {
+    border-color: transparent; }
+
+nav[role="navigation"] .expanded li {
+  border-bottom: 1px solid #fff;
+  display: block;
+  float: none;
+  font-size: 0.833em;
+  margin: 0;
+  overflow: hidden; }
+  nav[role="navigation"] .expanded li:last-child {
+    border: 0; }
+
+nav[role="navigation"] .expanded .menu {
+  background: #f19130;
+  display: none;
+  left: -30px;
+  position: absolute;
+  text-align: left;
+  top: 43px;
+  width: 300px; }
+
+nav[role="navigation"] .expanded:hover .menu {
+  display: block; }
+
+.nav-main {
+  margin-top: 150px; }
+  .nav-main:before, .nav-main:after {
+    content: " ";
+    display: table; }
+  .nav-main:after, .nav-main:after {
+    clear: both; }
+  @media only screen and (min-width: 56.25em) {
+    .nav-main {
+      margin: 0 auto;
+      text-align: right;
+      width: 800px; } }
+  @media only screen and (min-width: 68.75em) {
+    .nav-main {
+      width: 1000px; } }
+  @media only screen and (min-width: 87.5em) {
+    .nav-main {
+      width: 1200px; } }
+
 .header-style {
   background-color: #fff;
   height: 100%;
@@ -3016,18 +3095,6 @@ footer p {
 .display {
   display: block; }
 
-.header .views-submit-button input {
-  background: url(../img/search.svg) no-repeat center;
-  background-size: cover;
-  border: none;
-  color: transparent;
-  cursor: pointer;
-  position: absolute;
-  right: 21px;
-  top: 13px;
-  transition: opacity .4s ease;
-  width: 20px; }
-
 .hide-content {
   overflow: hidden;
   position: fixed; }
@@ -3046,9 +3113,6 @@ footer p {
   @media only screen and (min-width: 56.25em) {
     .menu-collapse {
       display: none; } }
-
-.block-menu h2 {
-  display: none; }
 
 .menu-toggle.on .menu-toggle-one {
   -webkit-transform: rotate(45deg) translate(12px, 10px);

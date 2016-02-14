@@ -34,7 +34,6 @@ footer {
     background: $white;
 }
 
-
 .heading,
 .main-content .heading {
     border-bottom: 1px solid $lighter-gray;
@@ -76,24 +75,6 @@ footer {
     background: $white;
 }
 
-.nav-main {
-    background-color: $white;
-    margin-top: 150px;
-
-    @include mquery("medium") {
-        background-color: $white;
-        margin: 0 auto;
-        text-align: right;
-        width: 800px;
-    }
-    @include mquery("large") {
-        width: 1000px;
-    }
-    @include mquery("x-large") {
-        width: 1200px;
-    }
-}
-
 .section-wide {
     overflow: hidden;
     padding: 40px 0;
@@ -107,6 +88,11 @@ footer {
         padding-bottom: 100px;
         padding-top: 100px;
     }
+}
+
+.head-nav { // aqui para sobre escribir cascada
+    overflow: visible;
+    padding: 0;
 }
 
 .section-intro {
@@ -130,6 +116,10 @@ footer {
 
 .slab-cta {
     padding: 2em 0;
+}
+
+.slab-orange {
+    background: $orange;
 }
 
 .slab-light-blue {

@@ -1,0 +1,15 @@
+.header .views-submit-button input {
+    background: url(../img/search.svg) no-repeat center;
+    background-size: cover;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    right: 21px;
+    top: 13px;
+    transition: opacity .4s ease;
+    width: 20px;
+}
+
+#block-views-exp-global-search-page {
+    display: none;
+}

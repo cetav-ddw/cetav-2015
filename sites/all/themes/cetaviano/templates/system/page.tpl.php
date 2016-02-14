@@ -10,13 +10,20 @@
  */
 ?>
 <header class="header" role="banner">
-  <?php if ($messages): ?>
-  <div class="messages-wrapper">
-    <div class="messages-content">
-      <?php print $messages; ?>
-    </div>
+  <div class="section-wide head-nav slab-orange">
+    <?php if ($page['navigation']): ?>
+      <div class="nav-main">
+        <div class="menu-collapse">
+            <div id ="menu-toggle" class="menu-toggle">
+                <div class="menu-toggle-one"></div>
+                <div class="menu-toggle-two"></div>
+                <div class="menu-toggle-three"></div>
+             </div>
+          </div>
+        <?php print render($page['navigation']); ?>
+      </div>
+    <?php endif; // end Navigation ?>
   </div>
-  <?php endif; ?>
   
   <?php if ($page['header']): ?>
     <div class="header-content">
@@ -24,29 +31,13 @@
     </div><!-- /header-content -->
   <?php endif; ?>
 
-  <?php if ($page['navigation']): ?>
-    <div class="nav-main">
-      <div class="menu-collapse">
-          <div id ="menu-toggle" class="menu-toggle">
-              <div class="menu-toggle-one"></div>
-              <div class="menu-toggle-two"></div>
-              <div class="menu-toggle-three"></div>
-           </div>
-        </div>
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" class="site-logo" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" />
-        </a>
-      <?php endif; ?>
-      <?php print render($page['navigation']); ?>
+  <?php if ($messages): ?>
+  <div class="messages-wrapper">
+    <div class="messages-content">
+      <?php print $messages; ?>
     </div>
-  <?php endif; // end Navigation ?>
-
-  <?php if ($page['secundary_navigation']): ?>
-    <nav class="nav-secundary-main">
-      <?php print render($page['secundary_navigation']); ?>
-    </nav>
-  <?php endif; // end secundary_Navigation ?>
+  </div>
+  <?php endif; ?>
 
 </header>
 
