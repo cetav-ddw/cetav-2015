@@ -32,6 +32,16 @@ body {
 *:after {
   box-sizing: inherit; }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 dl,
 ol,
 p,
@@ -909,6 +919,9 @@ footer {
   .grid-width:after, .grid-width:after {
     clear: both; }
 
+.grid-full-limit {
+  max-width: 1400px; }
+
 .header {
   background: #fff; }
 
@@ -977,9 +990,11 @@ footer {
       padding-bottom: 100px;
       padding-top: 100px; } }
 
-.head-nav {
-  overflow: visible;
+.section-no-padding {
   padding: 0; }
+
+.head-nav {
+  overflow: visible; }
 
 .section-intro {
   padding-bottom: 0; }
@@ -1055,6 +1070,8 @@ footer {
           margin-right: 0; } }
 
 .panel-header {
+  max-height: 350px;
+  overflow: hidden;
   padding: 0; }
 
 .tabs {
@@ -1666,8 +1683,35 @@ div.password-suggestions ul {
   100% {
     opacity: 1; } }
 
-.site-logo img {
-  width: 140px; }
+.brand-wrap {
+  padding: 25px 0; }
+
+.cetav-logo {
+  background: url("../img/logo-cetav.png") center no-repeat;
+  background-size: contain;
+  display: block;
+  float: left;
+  height: 100px;
+  margin: 0 auto;
+  width: 150px; }
+
+.pll-logo {
+  background: url("../img/logo-pll.png") center no-repeat;
+  background-size: contain;
+  display: block;
+  float: right;
+  height: 100px;
+  margin: 0 auto;
+  width: 150px; }
+
+.triada-logo {
+  background: url("../img/triada-l.png") center no-repeat;
+  background-size: contain;
+  display: block;
+  height: 175px;
+  margin: 0 auto;
+  text-align: center;
+  width: 300px; }
 
 .header .views-submit-button input {
   background: url(../img/search.svg) no-repeat center;
@@ -3014,6 +3058,12 @@ nav[role="navigation"] .menu {
     nav[role="navigation"] .menu a:hover {
       border-color: #fff;
       font-weight: bold; }
+  nav[role="navigation"] .menu .active-trail {
+    border-color: #fff;
+    font-weight: bold; }
+
+nav[role="navigation"] .expanded:hover {
+  font-weight: bold; }
 
 nav[role="navigation"] .expanded a {
   width: 100%; }
@@ -3025,6 +3075,7 @@ nav[role="navigation"] .expanded li {
   display: block;
   float: none;
   font-size: 0.833em;
+  font-weight: normal;
   margin: 0;
   overflow: hidden; }
   nav[role="navigation"] .expanded li:last-child {
@@ -3037,29 +3088,38 @@ nav[role="navigation"] .expanded .menu {
   position: absolute;
   text-align: left;
   top: 43px;
-  width: 300px; }
+  width: 300px;
+  z-index: 10; }
 
 nav[role="navigation"] .expanded:hover .menu {
   display: block; }
 
+.back-pll {
+  border-bottom: 3px solid #f19130;
+  color: #fff;
+  display: block;
+  padding: 10px 8px 7px;
+  position: absolute;
+  right: 25px;
+  top: 0; }
+  .back-pll:before {
+    background-color: #fff;
+    content: "";
+    height: 27px;
+    left: -10px;
+    position: absolute;
+    width: 1px; }
+  .back-pll:hover {
+    border-color: #fff;
+    text-decoration: none; }
+
 .nav-main {
-  margin-top: 150px; }
+  position: relative; }
   .nav-main:before, .nav-main:after {
     content: " ";
     display: table; }
   .nav-main:after, .nav-main:after {
     clear: both; }
-  @media only screen and (min-width: 56.25em) {
-    .nav-main {
-      margin: 0 auto;
-      text-align: right;
-      width: 800px; } }
-  @media only screen and (min-width: 68.75em) {
-    .nav-main {
-      width: 1000px; } }
-  @media only screen and (min-width: 87.5em) {
-    .nav-main {
-      width: 1200px; } }
 
 .header-style {
   background-color: #fff;

@@ -31,11 +31,18 @@ nav[role="navigation"] {
                 font-weight: bold;
             }
         }
+        .active-trail {
+            border-color: $white;
+            font-weight: bold;
+        }
     }
 }
 
 nav[role="navigation"] { 
     .expanded {
+        &:hover {
+            font-weight: bold;
+        }
         a {
             width: 100%;
             
@@ -48,6 +55,7 @@ nav[role="navigation"] {
             display: block;
             float: none;
             font-size: $text-small;
+            font-weight: normal;
             margin: 0;
             overflow: hidden;
 
@@ -63,6 +71,7 @@ nav[role="navigation"] {
             text-align: left;
             top: 43px;
             width: 300px;
+            z-index: 10;
         }
     }
     .expanded:hover {
@@ -72,21 +81,33 @@ nav[role="navigation"] {
     }
 }
 
+.back-pll {
+    border-bottom: 3px solid $orange;
+    color: $white;
+    display: block;
+    padding: 10px 8px 7px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+
+    &:before {
+        background-color: $white;
+        content: "";
+        height: 27px;
+        left: -10px;
+        position: absolute;
+        width: 1px;
+    }
+
+    &:hover {
+        border-color: $white;
+        text-decoration: none;
+    }
+}
+
 .nav-main {
     @include micro-clearfix;
-    margin-top: 150px;
-
-    @include mquery("medium") {
-        margin: 0 auto;
-        text-align: right;
-        width: 800px;
-    }
-    @include mquery("large") {
-        width: 1000px;
-    }
-    @include mquery("x-large") {
-        width: 1200px;
-    }
+    position: relative;
 }
 
 .header-style {

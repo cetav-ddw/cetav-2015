@@ -10,9 +10,9 @@
  */
 ?>
 <header class="header" role="banner">
-  <div class="section-wide head-nav slab-orange">
+  <div class="section-wide section-no-padding head-nav slab-orange">
     <?php if ($page['navigation']): ?>
-      <div class="nav-main">
+      <div class="grid-width grid-full-limit">
         <div class="menu-collapse">
             <div id ="menu-toggle" class="menu-toggle">
                 <div class="menu-toggle-one"></div>
@@ -21,8 +21,20 @@
              </div>
           </div>
         <?php print render($page['navigation']); ?>
+        <a href="http://parquelalibertad.org/" class="back-pll">Ir al Parque La Libertad</a>
       </div>
     <?php endif; // end Navigation ?>
+  </div>
+
+  <div class="section-wide section-no-padding brand-wrap">
+    <div class="grid-width grid-full-limit">
+      <?php if(drupal_is_front_page()):?>
+        <a href="http://parquelalibertad.org/cetav" class="triada-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
+      <?php else: ?>  
+        <a href="http://parquelalibertad.org/cetav" class="cetav-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
+        <a href="http://parquelalibertad.org/" class="pll-logo"><span class="visually-hidden">Parque La Libertad</span></a>
+      <?php endif?>
+    </div>
   </div>
   
   <?php if ($page['header']): ?>

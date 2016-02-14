@@ -1,5 +1,33 @@
-.site-logo {
-    img {
-        width: 140px;
-    }
+.brand-wrap {
+    padding: 25px 0;
+}
+
+.cetav-logo {
+    background: url("../img/logo-cetav.png") center no-repeat;
+    background-size: contain;
+    display: block;
+    float: left;
+    height: 100px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.pll-logo {
+    background: url("../img/logo-pll.png") center no-repeat;
+    background-size: contain;
+    display: block;
+    float: right;
+    height: 100px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.triada-logo {
+    background: url("../img/triada-l.png") center no-repeat;
+    background-size: contain;
+    display: block;
+    height: 175px;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
 }

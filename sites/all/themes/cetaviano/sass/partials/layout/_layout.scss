@@ -30,6 +30,10 @@ footer {
     padding: 0 2%;
 }
 
+.grid-full-limit {
+    max-width: $grid-limit;
+}
+
 .header {
     background: $white;
 }
@@ -90,9 +94,12 @@ footer {
     }
 }
 
+.section-no-padding {
+    padding: 0;
+}
+
 .head-nav { // aqui para sobre escribir cascada
     overflow: visible;
-    padding: 0;
 }
 
 .section-intro {
@@ -158,5 +165,7 @@ footer {
 }
 
 .panel-header {
+    max-height: 350px;
+    overflow: hidden;
     padding: 0;
 }
