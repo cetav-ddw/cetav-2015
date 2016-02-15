@@ -22,6 +22,12 @@
     }
 }
 
+.container-news-prev {
+    .view-content {
+        @include micro-clearfix;
+    }
+}
+
 .container-title,
 .date-news,
 .info-news {
@@ -88,10 +94,6 @@
 .title-news {
     margin-bottom: 16px;
     padding-bottom: 5px;
-}
-
-.views-field-created {
-
 }
 
 .views-field-created,

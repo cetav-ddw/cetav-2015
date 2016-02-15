@@ -2074,6 +2074,13 @@ div.password-suggestions ul {
       .container-news:last-child {
         margin-right: 0; } }
 
+.container-news-prev .view-content:before, .container-news-prev .view-content:after {
+  content: " ";
+  display: table; }
+
+.container-news-prev .view-content:after, .container-news-prev .view-content:after {
+  clear: both; }
+
 @media only screen and (min-width: 56.25em) {
   .container-title,
   .date-news,
@@ -2166,6 +2173,8 @@ div.password-suggestions ul {
 
 .title-new-preview {
   margin-bottom: 5px; }
+  .title-new-preview a {
+    color: #464646; }
 
 .details-preview-news {
   padding: 20px;
@@ -2184,6 +2193,7 @@ div.password-suggestions ul {
 .date-new-preview {
   border-bottom: 1px solid #cecece;
   display: block;
+  font-size: 0.833em;
   margin-bottom: 17px;
   padding-bottom: 17px;
   width: 100%; }
@@ -3121,6 +3131,7 @@ nav[role="navigation"] .expanded:hover .menu {
     width: 1px; }
   .back-pll:hover {
     border-color: #fff;
+    font-weight: bold;
     text-decoration: none; }
 
 .nav-main {

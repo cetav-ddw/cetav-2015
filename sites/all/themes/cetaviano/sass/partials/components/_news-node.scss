@@ -31,6 +31,10 @@
 
 .title-new-preview {
     margin-bottom:5px;
+
+    a {
+        color: $black;
+    }
 }
 
 .details-preview-news {
@@ -53,6 +57,7 @@
 .date-new-preview {
     border-bottom: 1px solid #cecece;
     display: block;
+    font-size: $text-small;
     margin-bottom: 17px;
     padding-bottom: 17px;
     width: 100%;
