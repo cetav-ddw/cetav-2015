@@ -60,14 +60,6 @@
 <?php endif; // end Above Content ?>
 
 <div class="main-content">
-  <?php if ($breadcrumb): ?>
-    <!-- <?php print $breadcrumb; ?> -->
-  <?php endif; ?>
-
-  <?php if ($page['highlighted']): ?>
-    <?php print render($page['highlighted']); ?>
-  <?php endif; ?>
-
     <a id="main-content"></a>
     <div class="main" role="main">
       <?php print render($title_prefix); ?>
@@ -76,7 +68,6 @@
 
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
-
       <?php endif; ?>
 
       <?php print render($page['help']); ?>

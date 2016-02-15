@@ -1,17 +1,17 @@
 nav[role="navigation"] {
     li {
         color: $white;
-        font-size: $text-base;
+        font-size: .875em;
         display: inline;
         float: left;
-        margin: 0 7px;
+        margin: 0 10px;
         position: relative;
     }
     a,
     .nolink {
         display: block;
         float: left;
-        padding: 10px 8px 7px;
+        padding: 10px;
 
         &:hover {
             text-decoration: none;
@@ -85,7 +85,8 @@ nav[role="navigation"] {
     border-bottom: 3px solid $orange;
     color: $white;
     display: block;
-    padding: 10px 8px 7px;
+    font-size: .875em;
+    padding: 10px;
     position: absolute;
     right: 25px;
     top: 0;

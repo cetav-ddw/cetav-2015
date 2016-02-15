@@ -6,8 +6,7 @@
  * This template provides a noticias for CETAV panel display layout.
  */
 ?>
-<div class="panel-display panel-cetav-noticias">
-  <div class="section-wide">
+<div class="section-wide panel-cetav-noticias">
   <div class="grid-width">
     <div class="panel-container panel-left-column container-news">
       <?php print $content['left']; ?>
@@ -15,6 +14,5 @@
     <div class="panel-container panel-right-column aside">
       <?php print $content['right']; ?>
     </div>
-  </div>
   </div>
 </div>

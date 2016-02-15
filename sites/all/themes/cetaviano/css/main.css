@@ -912,7 +912,8 @@ footer {
 .grid-width {
   margin: 0 auto;
   max-width: 1080px;
-  padding: 0 2%; }
+  padding: 0 2%;
+  position: relative; }
   .grid-width:before, .grid-width:after {
     content: " ";
     display: table; }
@@ -1684,7 +1685,7 @@ div.password-suggestions ul {
     opacity: 1; } }
 
 .brand-wrap {
-  padding: 25px 0; }
+  padding: 0; }
 
 .cetav-logo {
   background: url("../img/logo-cetav.png") center no-repeat;
@@ -1708,10 +1709,10 @@ div.password-suggestions ul {
   background: url("../img/triada-l.png") center no-repeat;
   background-size: contain;
   display: block;
-  height: 175px;
+  height: 200px;
   margin: 0 auto;
   text-align: center;
-  width: 300px; }
+  width: 380px; }
 
 .header .views-submit-button input {
   background: url(../img/search.svg) no-repeat center;
@@ -1896,7 +1897,6 @@ div.password-suggestions ul {
 
 .curso-detail-h {
   color: #00c9ed;
-  font-size: 1.777em;
   margin-top: 0; }
 
 .panel-cetav-cursos-libres h3,
@@ -2249,7 +2249,8 @@ div.password-suggestions ul {
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
   color: #848286;
-  margin: 25px 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
   padding: 15px 0; }
   .availability-info a {
     color: #848286;
@@ -2258,6 +2259,8 @@ div.password-suggestions ul {
     color: #243842;
     font-style: normal;
     margin-bottom: 6px; }
+  .availability-info p {
+    margin: 0; }
   .availability-info .pane-entity-field {
     float: left;
     display: block;
@@ -2297,6 +2300,10 @@ div.password-suggestions ul {
 
 .pane-title {
   display: none; }
+
+.hard-inline {
+  display: inline;
+  margin: 0; }
 
 footer h2 {
   display: none; }
@@ -2858,16 +2865,18 @@ footer p {
   @media only screen and (min-width: 68.75em) {
     .view-generacion .views-row {
       margin: 0 0 100px; } }
-  .view-generacion .views-row .views-field-title {
+  .view-generacion .views-row .title-gen {
     display: block;
     margin: 0 0 20px;
     position: relative;
     text-align: center; }
     @media only screen and (min-width: 56.25em) {
-      .view-generacion .views-row .views-field-title {
+      .view-generacion .views-row .title-gen {
         float: left;
         text-align: left;
         width: 35%; } }
+  .view-generacion .views-row .title-generaciones {
+    margin-top: 0; }
   .view-generacion .views-row .views-field-field-btn-anuario {
     display: block;
     margin: 0 auto 20px;
@@ -3033,17 +3042,17 @@ footer p {
 
 nav[role="navigation"] li {
   color: #fff;
-  font-size: 1em;
+  font-size: .875em;
   display: inline;
   float: left;
-  margin: 0 7px;
+  margin: 0 10px;
   position: relative; }
 
 nav[role="navigation"] a,
 nav[role="navigation"] .nolink {
   display: block;
   float: left;
-  padding: 10px 8px 7px; }
+  padding: 10px; }
   nav[role="navigation"] a:hover,
   nav[role="navigation"] .nolink:hover {
     text-decoration: none; }
@@ -3098,7 +3107,8 @@ nav[role="navigation"] .expanded:hover .menu {
   border-bottom: 3px solid #f19130;
   color: #fff;
   display: block;
-  padding: 10px 8px 7px;
+  font-size: .875em;
+  padding: 10px;
   position: absolute;
   right: 25px;
   top: 0; }

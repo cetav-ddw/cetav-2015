@@ -22,7 +22,8 @@
     border-bottom: 1px solid #ececec;
     border-top: 1px solid #ececec;
     color: #848286;
-    margin: 25px 0;
+    margin-bottom: 25px;
+    margin-top: 25px;
     padding: 15px 0;
 
     a {
@@ -33,6 +34,9 @@
         color: $blue-dark;
         font-style: normal;
         margin-bottom: 6px;
+    }
+    p {
+        margin: 0;
     }
     .pane-entity-field{
         @include span-columns(6);
@@ -67,10 +71,6 @@
     }
 }
 
-.pane-node-field-profesion-egresado {
-
-}
-
 .skill {
     background-color: $blue-dark;
     border-radius: 2px;
@@ -83,4 +83,9 @@
 
 .pane-title {
     display: none;
+}
+
+.hard-inline {
+    display: inline;
+    margin: 0;
 }
