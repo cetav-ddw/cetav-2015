@@ -21,7 +21,7 @@
              </div>
           </div>
         <?php print render($page['navigation']); ?>
-        <a href="http://parquelalibertad.org/" class="back-pll">Ir al Parque La Libertad</a>
+        <a href="http://parquelalibertad.org/" class="back-pll">Inicio Parque La Libertad</a>
       </div>
     <?php endif; // end Navigation ?>
   </div>
@@ -121,10 +121,6 @@
             <li><i class="icon-face"><a class="facebook" href="https://www.facebook.com/cetavcr" target="_blank">facebook</a></i></li>
           </ul>
         </nav>
-      </div>
-      <div class="contact-info">
-        <h4 class="foot-h">Somos parte de</h4>
-        <div class="logo-parque-ministerio"></div>
       </div>
     </div>
   </div>
