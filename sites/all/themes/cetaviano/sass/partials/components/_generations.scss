@@ -65,82 +65,42 @@
 }
 
 .views-field-field-testimonios {
-    background-color: #BE1D2C;
     margin: 50px 0 0;
     padding: 0;
     width: 100%;
 }
 
-.paragraphs-item-testimonios {
-    @include outer-container;
-    color: $gray;
-    margin: 0 auto;
+.text-testimonial {
+    background: url("../img/quotes.svg") left top no-repeat;
+    background-size: auto 50%;
+    border: 0;
+    margin: 60px 0;
+    max-width: 80%;
+    overflow: hidden;
+    padding: 0;
     position: relative;
-
-    .img-testimonial {
-        @include mquery("base") {
-            display: block;
-            height: 200px;
-            margin: 0 auto 20px;
-            position: relative;
-            width: 200px;
-        }
-
-        @include mquery("medium") {
-            @include span-columns(3);
-            margin: -11.6% 0;
-            position: absolute;
-            top: 50%;
-        }
-
-        img {
-            border-radius: 50%;
-            box-shadow: 0 4px 7px $gray;
-            position: absolute;
-            width: 100%;
-        }
+    
+    img {
+        float: left;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -webkit-shape-outside: circle();
+        shape-outside: circle();
+        margin: 10px;
     }
-    .text-testimonial {
-        @include mquery("base") {
-            @include span-columns(12);
-            display: block;
-            position: relative;
-        }
-
-        @include mquery("medium") {
-            @include shift(3);
-            @include span-columns(9);
-            @include omega();
-            padding: 10px 0;
-            position: relative;
-        }
-
-        &:before {
-            background-image: url(../img/comillas-1.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            content: "";
-            padding: 0 0 7%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 10%;
-        }
-         &:after {
-            background-image: url(../img/comillas-2.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            bottom: 0;
-            content: "";
-            padding: 0 0 7%;
-            position: absolute;
-            right: 0;
-            visibility: visible;
-            width: 10%;
-        }
+    p {
+        font-family: $contrast-font;
+        font-size: $text-large;
+        font-weight: bold;
+    }
+    .cite {
+        h4,
         p {
-            color: #fff;
-            margin: 0 11%;
+            font-family: $default-font;
+            font-size: 1em;
+            font-weight: normal;
+            margin: 0;
         }
     }
 }

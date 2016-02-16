@@ -6,9 +6,9 @@
  * This template provides a generaciones for CETAV panel display layout.
  */
 ?>
-<div class="panel-display panel-cetav-generaciones">
+<div class="section-wide panel-cetav-generaciones">
   <?php if ($content['wide']): ?>
-    <div class="panel-container">
+    <div class="grid-width">
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>

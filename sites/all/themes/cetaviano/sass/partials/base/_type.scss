@@ -29,28 +29,7 @@ strong {
 }
 
 blockquote {
-    border-left: 5px solid $main-color;
-    margin: 10px;
-    padding: 10px;
     quotes: "“" "”" "‘" "’";
-
-    p {
-        display: inline-block;
-
-        &:before {
-            color: #ccc;
-            content: open-quote;
-            line-height: 0;
-            margin-right: 5px;
-            vertical-align: -15px;
-        }
-        &:after {
-            color: #ccc;
-            content: close-quote;
-            margin-left: 5px;
-            vertical-align: -15px;
-        }
-    }
 }
 
 .call-out-text { // intro type

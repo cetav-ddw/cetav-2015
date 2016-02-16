@@ -62,23 +62,7 @@ strong {
   color: #464646; }
 
 blockquote {
-  border-left: 5px solid #f19130;
-  margin: 10px;
-  padding: 10px;
   quotes: "“" "”" "‘" "’"; }
-  blockquote p {
-    display: inline-block; }
-    blockquote p:before {
-      color: #ccc;
-      content: open-quote;
-      line-height: 0;
-      margin-right: 5px;
-      vertical-align: -15px; }
-    blockquote p:after {
-      color: #ccc;
-      content: close-quote;
-      margin-left: 5px;
-      vertical-align: -15px; }
 
 .call-out-text {
   font-size: 1.325em; }
@@ -2915,91 +2899,37 @@ footer p {
       height: 100%; }
 
 .views-field-field-testimonios {
-  background-color: #BE1D2C;
   margin: 50px 0 0;
   padding: 0;
   width: 100%; }
 
-.paragraphs-item-testimonios {
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #77787b;
-  margin: 0 auto;
+.text-testimonial {
+  background: url("../img/quotes.svg") left top no-repeat;
+  background-size: auto 50%;
+  border: 0;
+  margin: 60px 0;
+  max-width: 80%;
+  overflow: hidden;
+  padding: 0;
   position: relative; }
-  .paragraphs-item-testimonios::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media only screen and (min-width: 20em) {
-    .paragraphs-item-testimonios .img-testimonial {
-      display: block;
-      height: 200px;
-      margin: 0 auto 20px;
-      position: relative;
-      width: 200px; } }
-  @media only screen and (min-width: 56.25em) {
-    .paragraphs-item-testimonios .img-testimonial {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 23.2317613015%;
-      margin: -11.6% 0;
-      position: absolute;
-      top: 50%; }
-      .paragraphs-item-testimonios .img-testimonial:last-child {
-        margin-right: 0; } }
-  .paragraphs-item-testimonios .img-testimonial img {
+  .text-testimonial img {
+    float: left;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    box-shadow: 0 4px 7px #77787b;
-    position: absolute;
-    width: 100%; }
-  @media only screen and (min-width: 20em) {
-    .paragraphs-item-testimonios .text-testimonial {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 100%;
-      display: block;
-      position: relative; }
-      .paragraphs-item-testimonios .text-testimonial:last-child {
-        margin-right: 0; } }
-  @media only screen and (min-width: 56.25em) {
-    .paragraphs-item-testimonios .text-testimonial {
-      margin-left: 25.5894128995%;
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 74.4105871005%;
-      margin-right: 0;
-      padding: 10px 0;
-      position: relative; }
-      .paragraphs-item-testimonios .text-testimonial:last-child {
-        margin-right: 0; } }
-  .paragraphs-item-testimonios .text-testimonial:before {
-    background-image: url(../img/comillas-1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    content: "";
-    padding: 0 0 7%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 10%; }
-  .paragraphs-item-testimonios .text-testimonial:after {
-    background-image: url(../img/comillas-2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 0;
-    content: "";
-    padding: 0 0 7%;
-    position: absolute;
-    right: 0;
-    visibility: visible;
-    width: 10%; }
-  .paragraphs-item-testimonios .text-testimonial p {
-    color: #fff;
-    margin: 0 11%; }
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+    margin: 10px; }
+  .text-testimonial p {
+    font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
+    font-size: 1.325em;
+    font-weight: bold; }
+  .text-testimonial .cite h4,
+  .text-testimonial .cite p {
+    font-family: "Quicksand", Arial, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0; }
 
 .testimonial {
   margin: 10px auto 0;
@@ -3013,7 +2943,7 @@ footer p {
     margin: 10px 0 3px; }
     @media only screen and (min-width: 20em) {
       .testimonial h5 {
-        margin-left: 11.0887455898%;
+        margin-left: 16.8315328361%;
         float: left;
         display: block;
         margin-right: 2.3576515979%;
