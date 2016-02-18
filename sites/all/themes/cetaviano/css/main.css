@@ -89,8 +89,9 @@ small,
     left: 0;
     position: absolute;
     width: 60px; }
-  .section-sh .slab-blue:after {
-    background-color: #fff; }
+
+.slab-blue .section-sh:after {
+  background-color: #fff; }
 
 .subtitle-career {
   margin-top: 0; }

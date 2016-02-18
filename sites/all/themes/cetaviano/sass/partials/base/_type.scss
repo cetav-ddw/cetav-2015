@@ -63,12 +63,12 @@ small,
         position: absolute;
         width: 60px;
     }
+}
 
-    .slab-blue {
-       &:after {
-            background-color: $white;
-        } 
-    }
+.slab-blue {
+   .section-sh:after {
+        background-color: $white;
+    } 
 }
 
 .subtitle-career {
