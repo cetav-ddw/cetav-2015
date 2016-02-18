@@ -104,12 +104,12 @@
 <footer class="footer" role="contentinfo">
   <div class="footer-content">
     <div class="footer grid-width">
+    <a class="top" href="#">Back to top</a>
     <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
       <div class="contact-info">
         <h4 class="foot-h">¿Cómo llegar?</h4>
         <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
-        <a href="https://www.waze.com/es/livemap?zoom=17&lat=9.88995&lon=-84.03393" class="btn-direction" target="_blank">Ver con Waze</a>
-        <a href="https://www.google.com/maps/place/Parque+la+Libertad/@9.8864408,-84.0333174,14.54z/data=!4m2!3m1!1s0x0:0x3aff2bcc0b34d035" target="_blank" class="btn-direction">Ver con Maps</a>
+        <a href="" class="btn-direction" target="_blank">Ve cómo llegar</a>
       </div>
       <div class="contact-info">
         <h4 class="foot-h">Contacto</h4>

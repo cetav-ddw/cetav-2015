@@ -26,6 +26,7 @@
 
   <div class="section-wide slab-blue">
     <div class="grid-width">
+      <?php print $content['wide_intro']; ?>
       <div class="panel-left-column">
         <?php print $content['left_second']; ?>
       </div>
