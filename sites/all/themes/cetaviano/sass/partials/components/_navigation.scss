@@ -1,11 +1,25 @@
 nav[role="navigation"] {
+    display: none;
+
+    @include mquery("medium") {
+        display: block;
+    }
+
     li {
         color: $white;
-        font-size: .875em;
+        font-size: .75em;
         display: inline;
         float: left;
-        margin: 0 10px;
+        margin: 0 5px;
         position: relative;
+
+        @include mquery(62.5em) {
+            font-size: .875em;
+        }
+
+        @include mquery("x-large") {
+            margin: 0 10px;
+        }
     }
     a,
     .nolink {
@@ -82,28 +96,48 @@ nav[role="navigation"] {
 }
 
 .back-pll {
-    border-bottom: 3px solid $orange;
-    color: $white;
-    display: block;
-    font-size: .875em;
-    padding: 10px;
-    position: absolute;
-    right: 25px;
-    top: 0;
-
-    &:before {
-        background-color: $white;
-        content: "";
-        height: 27px;
-        left: -10px;
+    display: none;
+    
+    @include mquery("medium") {
+        border-bottom: 3px solid $orange;
+        color: $white;
+        display: block;
+        font-size: .75em;
+        padding: 10px 5px;
         position: absolute;
-        width: 1px;
+        right: 25px;
+        top: 0;
+
+        &:before {
+            background-color: $white;
+            content: "";
+            height: 18px;
+            left: -10px;
+            position: absolute;
+            width: 1px;
+        }
+
+        &:hover {
+            border-color: $white;
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
 
-    &:hover {
-        border-color: $white;
-        font-weight: bold;
-        text-decoration: none;
+    @include mquery(62.5em) {
+        font-size: .875em;
+
+        &:before {
+            height: 23px;
+        }
+    }
+
+    @include mquery("large") {
+        padding: 10px;
+
+        &:before {
+            height: 27px;
+        }
     }
 }
 
@@ -112,45 +146,8 @@ nav[role="navigation"] {
     position: relative;
 }
 
-.header-style {
-    background-color: $white;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-}
-
 .main .title {
     display: none;
-}
-
-.content .expandir {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-
-    body {
-        overflow: hidden;
-    }
-    span,
-    a {
-        color: $main-color;
-        padding-bottom: 3px;
-        text-decoration: none;
-    }
-    li {
-        list-style: none;
-        padding: 16px;
-        border-bottom: solid #fff 1px;
-
-        span {
-            padding-right: 200px;
-
-            @include mquery("medium") {
-                padding-right: 0;
-            }
-        }
-    }
 }
 
 .display {
@@ -171,10 +168,12 @@ nav[role="navigation"] {
 
     .menu-toggle {
         cursor: pointer;
+        display: block;
         height: 30px;
         margin-top: 15px;
         width: 30px;
     }
+
     @include mquery("medium") {
         display: none;
     }

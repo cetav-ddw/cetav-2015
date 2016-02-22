@@ -16,29 +16,6 @@
         $("#edit-field-form-email-und-0-email").attr("placeholder", "Correo Electrónico");
       }
 
-      function showMenu() {
-        $("#menu-toggle").click(function() {
-          $(".content > .menu, .views-exposed-form").toggleClass("expandir");
-          $(".main-content").toggleClass("hide-content");
-        });
-
-      $("#edit-search-api-multi-fulltext").attr("placeholder", "Buscar");
-      }
-
-      function showSubmenu() {
-        $(".nolink").click(function() {
-          $(".content .expandir li.expanded").toggleClass("cero");
-          $(".expanded > ul").toggleClass("show");
-        });
-      }
-
-      function menuToggle() {
-        $(".menu-toggle").click(function() {
-          $(".menu-toggle").toggleClass("on");
-          $(".header").toggleClass("header-style");
-        });
-      }
-
       function showSearch() {
         $("#edit-submit-global-search").click(function() {
           $(".views-widget-filter-search_api_multi_fulltext").toggleClass("display");
@@ -87,10 +64,7 @@
       }
 
       return {
-        cetavMenuToggle        :  menuToggle,
         cetavDisplayFormCourse :  displayFormCourse,
-        cetavShowMenu          :  showMenu,
-        cetavShowSubmenu       :  showSubmenu,
         cetavshowSearch        :  showSearch,
         cetavRequiredForm      :  requiredForm,
         cetavTyped             :  typed,
@@ -98,10 +72,7 @@
       };
 
     })();
-
-    cetav.cetavMenuToggle();
-    cetav.cetavShowSubmenu();
-    cetav.cetavShowMenu();
+    
     cetav.cetavshowSearch();
     cetav.cetavDisplayFormCourse();
     cetav.cetavRequiredForm();

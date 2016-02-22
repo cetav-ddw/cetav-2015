@@ -13,12 +13,9 @@
     padding: 20px;
     position: absolute;
 
-    @include mquery("medium") {
-        padding: 40px;
-    }
-
     h2 {
         color: $white;
+        font-size: 2em;
     }
 }
 

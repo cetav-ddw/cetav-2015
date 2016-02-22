@@ -1,10 +1,18 @@
 footer {
+    text-align: center;
+
+    @include mquery("medium") {
+        text-align: left;
+    }
+    
     h2 {
         display: none;
     }
+    li,
     p {
         color: $white;
         font-size: $text-small;
+        margin-bottom: 0.75em;
     }
 }
 

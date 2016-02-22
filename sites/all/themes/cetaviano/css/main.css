@@ -887,11 +887,7 @@ footer {
     @media only screen and (min-width: 56.25em) {
       footer .contact-info {
         float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 31.7615656014%; }
-        footer .contact-info:last-child {
-          margin-right: 0; } }
+        width: 25%; } }
   footer .grid-width {
     width: 96%;
     max-width: 1400px; }
@@ -1672,7 +1668,10 @@ div.password-suggestions ul {
     opacity: 1; } }
 
 .brand-wrap {
-  padding: 0; }
+  padding: 65px 0 0; }
+  @media only screen and (min-width: 56.25em) {
+    .brand-wrap {
+      padding-top: 0; } }
 
 .cetav-logo {
   background: url("../img/logo-cetav.png") center no-repeat;
@@ -1814,9 +1813,6 @@ div.password-suggestions ul {
   .course-details strong {
     color: #464646;
     font-weight: bold; }
-
-.course-intro p:first-of-type {
-  font-size: 1.325em; }
 
 .course-info {
   margin-top: 2px; }
@@ -2302,12 +2298,18 @@ div.password-suggestions ul {
   display: inline;
   margin: 0; }
 
-footer h2 {
-  display: none; }
-
-footer p {
-  color: #fff;
-  font-size: 0.833em; }
+footer {
+  text-align: center; }
+  @media only screen and (min-width: 56.25em) {
+    footer {
+      text-align: left; } }
+  footer h2 {
+    display: none; }
+  footer li,
+  footer p {
+    color: #fff;
+    font-size: 0.833em;
+    margin-bottom: 0.75em; }
 
 .foot-h {
   color: #fff;
@@ -2379,11 +2381,9 @@ footer p {
   bottom: 0;
   padding: 20px;
   position: absolute; }
-  @media only screen and (min-width: 56.25em) {
-    .section-call-out {
-      padding: 40px; } }
   .section-call-out h2 {
-    color: #fff; }
+    color: #fff;
+    font-size: 2em; }
 
 .animacion-3d .section-call-out {
   background-color: #dc661e; }
@@ -2983,36 +2983,45 @@ footer p {
         .testimonial .carrera-testimonial:last-child {
           margin-right: 0; } }
 
-nav[role="navigation"] li {
-  color: #fff;
-  font-size: .875em;
-  display: inline;
-  float: left;
-  margin: 0 10px;
-  position: relative; }
-
-nav[role="navigation"] a,
-nav[role="navigation"] .nolink {
-  display: block;
-  float: left;
-  padding: 10px; }
-  nav[role="navigation"] a:hover,
-  nav[role="navigation"] .nolink:hover {
-    text-decoration: none; }
-
-nav[role="navigation"] .menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  nav[role="navigation"] .menu a {
-    border-bottom: 3px solid #f19130;
-    color: #fff; }
-    nav[role="navigation"] .menu a:hover {
+nav[role="navigation"] {
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    nav[role="navigation"] {
+      display: block; } }
+  nav[role="navigation"] li {
+    color: #fff;
+    font-size: .75em;
+    display: inline;
+    float: left;
+    margin: 0 5px;
+    position: relative; }
+    @media only screen and (min-width: 62.5em) {
+      nav[role="navigation"] li {
+        font-size: .875em; } }
+    @media only screen and (min-width: 87.5em) {
+      nav[role="navigation"] li {
+        margin: 0 10px; } }
+  nav[role="navigation"] a,
+  nav[role="navigation"] .nolink {
+    display: block;
+    float: left;
+    padding: 10px; }
+    nav[role="navigation"] a:hover,
+    nav[role="navigation"] .nolink:hover {
+      text-decoration: none; }
+  nav[role="navigation"] .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav[role="navigation"] .menu a {
+      border-bottom: 3px solid #f19130;
+      color: #fff; }
+      nav[role="navigation"] .menu a:hover {
+        border-color: #fff;
+        font-weight: bold; }
+    nav[role="navigation"] .menu .active-trail {
       border-color: #fff;
       font-weight: bold; }
-  nav[role="navigation"] .menu .active-trail {
-    border-color: #fff;
-    font-weight: bold; }
 
 nav[role="navigation"] .expanded:hover {
   font-weight: bold; }
@@ -3047,25 +3056,38 @@ nav[role="navigation"] .expanded:hover .menu {
   display: block; }
 
 .back-pll {
-  border-bottom: 3px solid #f19130;
-  color: #fff;
-  display: block;
-  font-size: .875em;
-  padding: 10px;
-  position: absolute;
-  right: 25px;
-  top: 0; }
-  .back-pll:before {
-    background-color: #fff;
-    content: "";
-    height: 27px;
-    left: -10px;
-    position: absolute;
-    width: 1px; }
-  .back-pll:hover {
-    border-color: #fff;
-    font-weight: bold;
-    text-decoration: none; }
+  display: none; }
+  @media only screen and (min-width: 56.25em) {
+    .back-pll {
+      border-bottom: 3px solid #f19130;
+      color: #fff;
+      display: block;
+      font-size: .75em;
+      padding: 10px 5px;
+      position: absolute;
+      right: 25px;
+      top: 0; }
+      .back-pll:before {
+        background-color: #fff;
+        content: "";
+        height: 18px;
+        left: -10px;
+        position: absolute;
+        width: 1px; }
+      .back-pll:hover {
+        border-color: #fff;
+        font-weight: bold;
+        text-decoration: none; } }
+  @media only screen and (min-width: 62.5em) {
+    .back-pll {
+      font-size: .875em; }
+      .back-pll:before {
+        height: 23px; } }
+  @media only screen and (min-width: 68.75em) {
+    .back-pll {
+      padding: 10px; }
+      .back-pll:before {
+        height: 27px; } }
 
 .nav-main {
   position: relative; }
@@ -3075,36 +3097,8 @@ nav[role="navigation"] .expanded:hover .menu {
   .nav-main:after, .nav-main:after {
     clear: both; }
 
-.header-style {
-  background-color: #fff;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 99; }
-
 .main .title {
   display: none; }
-
-.content .expandir {
-  display: block;
-  margin: 0 auto;
-  width: 100%; }
-  .content .expandir body {
-    overflow: hidden; }
-  .content .expandir span,
-  .content .expandir a {
-    color: #f19130;
-    padding-bottom: 3px;
-    text-decoration: none; }
-  .content .expandir li {
-    list-style: none;
-    padding: 16px;
-    border-bottom: solid #fff 1px; }
-    .content .expandir li span {
-      padding-right: 200px; }
-      @media only screen and (min-width: 56.25em) {
-        .content .expandir li span {
-          padding-right: 0; } }
 
 .display {
   display: block; }
@@ -3121,6 +3115,7 @@ nav[role="navigation"] .expanded:hover .menu {
   top: 0; }
   .menu-collapse .menu-toggle {
     cursor: pointer;
+    display: block;
     height: 30px;
     margin-top: 15px;
     width: 30px; }
@@ -3154,6 +3149,17 @@ nav[role="navigation"] .expanded:hover .menu {
 .extended {
   transition: all 0.2s ease; }
   .extended li {
+    display: block; }
+
+.action-top {
+  position: absolute;
+  right: 0;
+  top: -40px; }
+
+.foot-menu {
+  list-style-type: none; }
+  .foot-menu a {
+    color: #fff;
     display: block; }
 
 .nav-secundary-main {

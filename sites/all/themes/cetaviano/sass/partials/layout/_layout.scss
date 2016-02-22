@@ -13,7 +13,8 @@ footer {
         margin-bottom: 25px;
 
         @include mquery("medium") {
-            @include span-columns(4);
+            float: left;
+            width: 25%;
         }
     }
 
