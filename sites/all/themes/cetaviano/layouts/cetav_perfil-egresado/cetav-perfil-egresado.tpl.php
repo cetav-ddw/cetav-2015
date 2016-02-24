@@ -18,8 +18,10 @@
     </div>
   <?php endif ?>
   <div class="grid-width about-graduate">
+    <?php if ($content['intro_wide']): ?>
       <p class="current-job"><?php print $content['intro_wide']; ?></p>
-
+    <?php endif ?>
+    
       <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
