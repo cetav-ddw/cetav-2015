@@ -2269,6 +2269,11 @@ div.password-suggestions ul {
         width: 25%;
         margin-bottom: 0; } }
 
+.current-job {
+  background-color: #ececec;
+  padding: 5px 15px;
+  margin: 1em 0 .5em; }
+
 .field-name-field-acerca-de-mi .field-label,
 .field-name-field-habilidades-egresado .field-label {
   margin-top: 0; }
