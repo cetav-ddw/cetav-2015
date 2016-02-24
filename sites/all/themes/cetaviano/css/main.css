@@ -2271,6 +2271,7 @@ div.password-suggestions ul {
 
 .current-job {
   background-color: #ececec;
+  display: inline-block;
   padding: 5px 15px;
   margin: 1em 0 .5em; }
 
