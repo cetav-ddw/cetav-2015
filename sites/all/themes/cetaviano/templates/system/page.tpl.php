@@ -111,28 +111,28 @@
       <div class="contact-info">
       <h4 class="foot-h">Conozca m&aacute;s</h4>
         <ul class="foot-menu">
-        <li><a href="/institucion" title="">Sobre el CETAV</a></li>
-        <li><a href="/actualizacion-profesional" title="">Actualización Profesional</a></li>
-        <li><a href="/egresados" title="">Egresados</a></li>
-        <li><a href="/noticias" title="">Noticias</a></li>
-        <li class="no-desktop"><a href="/user?current=home" title="">Mi Cuenta</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/institucion" title="">Sobre el CETAV</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/actualizacion-profesional" title="">Actualización Profesional</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/egresados" title="">Egresados</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/noticias" title="">Noticias</a></li>
+        <li class="no-desktop"><a href="http://www.parquelalibertad.org/cetav/user?current=home" title="">Mi Cuenta</a></li>
         </ul>
       </div>
 
       <div class="contact-info">
       <h4 class="foot-h">Carreras</h4>
         <ul class="foot-menu">
-          <li><a href="/carreras/animacion-digital-3d">Animación Digital 3D</a></li>
-          <li><a href="/carreras/diseno-desarrollo-web">Diseño y Desarrollo Web</a></li>
-          <li><a href="/carreras/postproduccion-imagen-sonido">Edición y Post Producción Digital de Imagen y Sonido</a></li>
-          <li><a href="/admision" title="">Proceso de Admisión</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/carreras/animacion-digital-3d">Animación Digital 3D</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/carreras/diseno-desarrollo-web">Diseño y Desarrollo Web</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/carreras/postproduccion-imagen-sonido">Edición y Post Producción Digital de Imagen y Sonido</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/admision" title="">Proceso de Admisión</a></li>
         </ul>
       </div>
 
       <div class="contact-info">
         <h4 class="foot-h">¿Cómo llegar?</h4>
         <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
-        <a href="" class="btn-direction" target="_blank">Ve cómo llegar</a>
+        <a href="http://parquelalibertad.org/#arrive" class="btn-direction" target="_blank">Ve cómo llegar</a>
       </div>
       <div class="contact-info">
         <h4 class="foot-h">Contacto</h4>
