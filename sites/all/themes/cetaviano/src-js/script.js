@@ -51,9 +51,10 @@
         });
       }
 
+      // esto debe estar en un bloque, no mantenible desde JS
       function changePage(){
         $("#cta-carrers").click(function(){
-          window.location.href="/admision";
+          window.location.href="/cetav/admision";
         });
       }
 
