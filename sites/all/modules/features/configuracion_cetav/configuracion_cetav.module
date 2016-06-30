@@ -17,3 +17,7 @@ function configuracion_cetav_form_user_profile_form_alter(&$form, &$form_alter){
   }
   krumo($form);
 }
+
+function configuracion_cetav_form_user_register_form_alter(&$form, &$form_alter){
+  unset($form['field_perfil_de_egresado']);
+}
