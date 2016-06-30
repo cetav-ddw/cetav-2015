@@ -86,5 +86,7 @@ features[variable][] = site_default_country
 features[variable][] = site_mail
 features[variable][] = site_name
 features[variable][] = smtp_on
+features[variable][] = user_pictures
+features[variable][] = user_register
 features[views_view][] = global_search
 features_exclude[dependencies][entity] = entity
