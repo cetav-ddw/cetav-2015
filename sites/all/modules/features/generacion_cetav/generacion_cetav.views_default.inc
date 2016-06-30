@@ -77,31 +77,39 @@ function generacion_cetav_views_default_views() {
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['children'] = array(
-    0 => 'title',
-    1 => 'field_btn_anuario',
+    0 => 'field_btn_anuario',
+    1 => 'title',
     2 => 'field_reel_generacion',
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'generation';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['title']['element_class'] = 'title-generaciones';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: btn-anuario */
   $handler->display->display_options['fields']['field_btn_anuario']['id'] = 'field_btn_anuario';
   $handler->display->display_options['fields']['field_btn_anuario']['table'] = 'field_data_field_btn_anuario';
   $handler->display->display_options['fields']['field_btn_anuario']['field'] = 'field_btn_anuario';
   $handler->display->display_options['fields']['field_btn_anuario']['label'] = '';
-  $handler->display->display_options['fields']['field_btn_anuario']['element_class'] = 'btn btn-yearbook';
+  $handler->display->display_options['fields']['field_btn_anuario']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_btn_anuario']['element_class'] = 'btn-yearbook';
   $handler->display->display_options['fields']['field_btn_anuario']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_btn_anuario']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_btn_anuario']['click_sort_column'] = 'url';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h2 class="title-generaciones">[title]</h2>
+<div class="btn-yearbook">[field_btn_anuario]</div>';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'title-gen';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Reel Generación */
   $handler->display->display_options['fields']['field_reel_generacion']['id'] = 'field_reel_generacion';
   $handler->display->display_options['fields']['field_reel_generacion']['table'] = 'field_data_field_reel_generacion';
@@ -117,9 +125,14 @@ function generacion_cetav_views_default_views() {
   $handler->display->display_options['fields']['field_testimonios']['table'] = 'field_data_field_testimonios';
   $handler->display->display_options['fields']['field_testimonios']['field'] = 'field_testimonios';
   $handler->display->display_options['fields']['field_testimonios']['label'] = '';
-  $handler->display->display_options['fields']['field_testimonios']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_testimonios']['element_class'] = 'testimonial';
+  $handler->display->display_options['fields']['field_testimonios']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_testimonios']['alter']['text'] = '<blockquote class="text-testimonial">
+[field_testimonios]
+</blockquote>';
+  $handler->display->display_options['fields']['field_testimonios']['element_type'] = '0';
   $handler->display->display_options['fields']['field_testimonios']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_testimonios']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_testimonios']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_testimonios']['settings'] = array(
     'view_mode' => 'full',
   );

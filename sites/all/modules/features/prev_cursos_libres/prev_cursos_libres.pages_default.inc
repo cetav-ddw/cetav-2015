@@ -333,7 +333,7 @@ function prev_cursos_libres_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'cetav-prev-cursos-libres';
   $page->admin_description = '';
-  $page->path = 'actualizacion-profecional';
+  $page->path = 'actualizacion-profesional';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -389,7 +389,9 @@ function prev_cursos_libres_default_page_manager_pages() {
       'view_mode' => 'full',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -407,12 +409,14 @@ function prev_cursos_libres_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p dir="ltr"><b id="docs-internal-guid-639b0e3e-69c4-725b-df92-1da96a3220b1">Nuestros programas le permiten a los profesionales capacitarse y mantenerse actualizado, brindando nuevas herramientas y conocimientos que les permitan mantenerse en la cima del mercado audiovisual y digital. La misma que pusimos arriba.</b></p><p>&nbsp;</p>',
-      'format' => 'manati_texto_formato',
+      'body' => '<p class="call-out-text">Nuestros programas le permiten a los profesionales <b>capacitarse y mantenerse actualizado</b>, brindando nuevas herramientas y conocimientos que les permitan mantenerse en la cima del mercado audiovisual y digital. </p>',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -430,12 +434,14 @@ function prev_cursos_libres_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<h4>Cursos libres</h4>',
+      'body' => '<h3 class="section-sh">Próximos cursos libres</h3>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -468,7 +474,9 @@ function prev_cursos_libres_default_page_manager_pages() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;

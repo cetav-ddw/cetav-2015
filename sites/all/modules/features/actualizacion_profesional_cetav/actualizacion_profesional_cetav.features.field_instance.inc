@@ -438,7 +438,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_duracion',
-    'label' => 'Duracion',
+    'label' => 'Duración',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -600,6 +600,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => 'theme_ds_field_reset',
     'entity_type' => 'node',
     'field_name' => 'field_imagen_curso',
     'label' => 'Imagen-curso',
@@ -872,7 +873,7 @@ function actualizacion_profesional_cetav_field_default_field_instances() {
   t('Correo');
   t('Cupo');
   t('Curso');
-  t('Duracion');
+  t('Duración');
   t('Email');
   t('Fecha del curso');
   t('Horario');

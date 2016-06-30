@@ -177,7 +177,7 @@ function generacion_cetav_field_default_field_instances() {
           'image_style' => 'imagen_perfil_testimonial',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -235,7 +235,7 @@ function generacion_cetav_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',

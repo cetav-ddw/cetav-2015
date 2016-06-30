@@ -182,7 +182,6 @@ function configuracion_cetav_default_search_api_index() {
         "body:summary" : { "type" : "text" },
         "body:value" : { "type" : "text" },
         "changed" : { "type" : "date" },
-        "comment_count" : { "type" : "integer" },
         "created" : { "type" : "date" },
         "field_acerca_de_mi" : { "type" : "text" },
         "field_carrera_tecnica" : { "type" : "integer", "entity_type" : "taxonomy_term" },
@@ -495,12 +494,6 @@ function configuracion_cetav_default_search_api_server() {
           "author" : {
             "table" : "search_api_db_default_node_index",
             "column" : "author",
-            "type" : "integer",
-            "boost" : "1.0"
-          },
-          "comment_count" : {
-            "table" : "search_api_db_default_node_index",
-            "column" : "comment_count",
             "type" : "integer",
             "boost" : "1.0"
           },

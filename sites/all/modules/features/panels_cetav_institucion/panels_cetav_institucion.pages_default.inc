@@ -74,12 +74,11 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>El Centro de Tecnologías y Artes Visuales (CETAV), es un programa del Ministerio de Cultura y Juventud (MCJ), que se lleva a cabo en el <a href="http://parquelalibertad.org/">Parque La Libertad</a>.</p>
+      'body' => '<p>El Centro de Tecnología y Artes Visuales (CETAV), es un programa del Ministerio de Cultura y Juventud (MCJ), que se lleva a cabo en el <a href="http://parquelalibertad.org/">Parque La Libertad</a>.</p>
 
-<p>El CETAV, busca fomentar el desarrollo humano y la formación de jóvenes a partir de opciones de especialización técnica alineadas con las demandas del mercado.</p>
+<p>El CETAV, busca fomentar el desarrollo humano y la formación de personas jóvenes a partir de opciones de especialización técnica alineadas con las demandas del mercado.</p>
 
-
-',
+<p><a href="#about-info">Nuestro Enfoque</a> | <a href="#team-info">Nuestro Equipo</a> | <a href="#board-info">Consejo Asesor</a></p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -148,7 +147,10 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -190,10 +192,7 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -201,31 +200,10 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $display->content['new-7e1ab8fa-06ef-4301-8be9-43a484b6c25f'] = $pane;
     $display->panels['right_second'][0] = 'new-7e1ab8fa-06ef-4301-8be9-43a484b6c25f';
     $pane = new stdClass();
-    $pane->pid = 'new-c961f169-2b7a-4547-9f11-4c21c26d4d15';
+    $pane->pid = 'new-68728cd5-c5ab-4119-96b0-e595889872dd';
     $pane->panel = 'wide';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:47';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'full',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'c961f169-2b7a-4547-9f11-4c21c26d4d15';
-    $display->content['new-c961f169-2b7a-4547-9f11-4c21c26d4d15'] = $pane;
-    $display->panels['wide'][0] = 'new-c961f169-2b7a-4547-9f11-4c21c26d4d15';
-    $pane = new stdClass();
-    $pane->pid = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
-    $pane->panel = 'wide';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:18';
+    $pane->subtype = 'fpid:51';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -250,6 +228,91 @@ function panels_cetav_institucion_default_page_manager_pages() {
           'attributes_array' => array(),
         ),
         'element_content' => array(
+          'type' => 'h3',
+          'class_enable' => 1,
+          'class' => 'section-sh',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 0,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array(
+      'css_id' => 'team-info',
+      'css_class' => '',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '68728cd5-c5ab-4119-96b0-e595889872dd';
+    $display->content['new-68728cd5-c5ab-4119-96b0-e595889872dd'] = $pane;
+    $display->panels['wide'][0] = 'new-68728cd5-c5ab-4119-96b0-e595889872dd';
+    $pane = new stdClass();
+    $pane->pid = 'new-fd9bb0ce-5ffd-43f6-9805-2eb6e6172ae8';
+    $pane->panel = 'wide';
+    $pane->type = 'views';
+    $pane->subtype = 'equipo';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '5',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'fd9bb0ce-5ffd-43f6-9805-2eb6e6172ae8';
+    $display->content['new-fd9bb0ce-5ffd-43f6-9805-2eb6e6172ae8'] = $pane;
+    $display->panels['wide'][1] = 'new-fd9bb0ce-5ffd-43f6-9805-2eb6e6172ae8';
+    $pane = new stdClass();
+    $pane->pid = 'new-7e60f511-ed01-4abf-98b9-d4799e7ea358';
+    $pane->panel = 'wide_intro';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:50';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'semantic_panels',
+      'settings' => array(
+        'element_title' => array(
           'type' => '',
           'class_enable' => 0,
           'class' => '',
@@ -264,26 +327,43 @@ function panels_cetav_institucion_default_page_manager_pages() {
           ),
           'attributes_array' => array(),
         ),
-        'element_wrapper' => array(
-          'type' => 'div',
+        'element_content' => array(
+          'type' => 'h3',
           'class_enable' => 1,
-          'class' => 'personal-institution',
+          'class' => 'section-sh',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => '',
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 1,
+        'add_default_classes' => 0,
       ),
-      'style' => 'semantic_panels',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => 'about-info',
+      'css_class' => '',
+    );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '94afee93-0a9a-4eb9-b124-057aba80cf8c';
-    $display->content['new-94afee93-0a9a-4eb9-b124-057aba80cf8c'] = $pane;
-    $display->panels['wide'][1] = 'new-94afee93-0a9a-4eb9-b124-057aba80cf8c';
+    $pane->uuid = '7e60f511-ed01-4abf-98b9-d4799e7ea358';
+    $display->content['new-7e60f511-ed01-4abf-98b9-d4799e7ea358'] = $pane;
+    $display->panels['wide_intro'][0] = 'new-7e60f511-ed01-4abf-98b9-d4799e7ea358';
     $pane = new stdClass();
-    $pane->pid = 'new-2735620d-f0ef-4526-865a-2668d01b309e';
+    $pane->pid = 'new-3b974c0a-c78e-4087-a2f4-304c8b49ec9c';
     $pane->panel = 'wide_intro';
     $pane->type = 'fieldable_panels_pane';
     $pane->subtype = 'fpid:48';
@@ -296,13 +376,16 @@ function panels_cetav_institucion_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'layout-semibreve',
+    );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '2735620d-f0ef-4526-865a-2668d01b309e';
-    $display->content['new-2735620d-f0ef-4526-865a-2668d01b309e'] = $pane;
-    $display->panels['wide_intro'][0] = 'new-2735620d-f0ef-4526-865a-2668d01b309e';
+    $pane->uuid = '3b974c0a-c78e-4087-a2f4-304c8b49ec9c';
+    $display->content['new-3b974c0a-c78e-4087-a2f4-304c8b49ec9c'] = $pane;
+    $display->panels['wide_intro'][1] = 'new-3b974c0a-c78e-4087-a2f4-304c8b49ec9c';
     $pane = new stdClass();
     $pane->pid = 'new-c18787d3-9797-49e7-90ce-ef0fcc5d6548';
     $pane->panel = 'wide_main';
@@ -448,11 +531,14 @@ function panels_cetav_institucion_default_page_manager_pages() {
           'attributes' => array(),
           'attributes_array' => array(),
         ),
-        'add_default_classes' => 0,
+        'add_default_classes' => 1,
       ),
       'style' => 'semantic_panels',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();

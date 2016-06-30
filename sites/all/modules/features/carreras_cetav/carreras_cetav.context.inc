@@ -19,7 +19,7 @@ function carreras_cetav_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'carreras/animación-digital-3d' => 'carreras/animación-digital-3d',
+        'carreras/animacion-digital-3d' => 'carreras/animacion-digital-3d',
       ),
     ),
   );
@@ -40,7 +40,7 @@ function carreras_cetav_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'carreras/diseño-desarrollo-web' => 'carreras/diseño-desarrollo-web',
+        'carreras/diseno-desarrollo-web' => 'carreras/diseno-desarrollo-web',
       ),
     ),
   );
@@ -65,7 +65,7 @@ function carreras_cetav_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'carreras/edición-postproducción-digital-imagen-sonido' => 'carreras/edición-postproducción-digital-imagen-sonido',
+        'carreras/postproduccion-imagen-sonido' => 'carreras/postproduccion-imagen-sonido',
       ),
     ),
   );

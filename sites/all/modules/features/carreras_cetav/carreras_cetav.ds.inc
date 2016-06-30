@@ -208,13 +208,18 @@ function carreras_cetav_ds_layout_settings_info() {
       'field_cuerpo_skills_carreras' => 'wide',
       'field_skills_carrera' => 'wide',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'layout_class' => array(
+        '' => '',
+      ),
+    ),
     'wrappers' => array(
       'wide' => 'div',
       'left' => 'div',
       'right' => 'div',
       'wide_second' => 'div',
       'wide_third' => 'div',
+      'wide_four' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
@@ -222,6 +227,8 @@ function carreras_cetav_ds_layout_settings_info() {
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
+    'hide_page_title' => '0',
+    'page_option_title' => '',
   );
   $export['node|carreras|full'] = $ds_layout;
 

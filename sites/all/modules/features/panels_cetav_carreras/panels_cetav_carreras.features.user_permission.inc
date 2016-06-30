@@ -22,7 +22,9 @@ function panels_cetav_carreras_user_default_permissions() {
   // Exported permission: 'delete own carreras content'.
   $permissions['delete own carreras content'] = array(
     'name' => 'delete own carreras content',
-    'roles' => array(),
+    'roles' => array(
+      'content-admin' => 'content-admin',
+    ),
     'module' => 'node',
   );
 
@@ -31,6 +33,7 @@ function panels_cetav_carreras_user_default_permissions() {
     'name' => 'edit any carreras content',
     'roles' => array(
       'content-admin' => 'content-admin',
+      'content-editor' => 'content-editor',
     ),
     'module' => 'node',
   );

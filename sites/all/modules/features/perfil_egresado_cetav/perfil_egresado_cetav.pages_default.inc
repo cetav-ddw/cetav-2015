@@ -55,6 +55,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
       'wide_second' => NULL,
       'left' => NULL,
       'right' => NULL,
+      'intro_wide' => NULL,
     ),
   );
   $display->cache = array();
@@ -63,65 +64,145 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-74d1f391-2053-415d-aa82-ab7d405ec9e6';
-    $pane->panel = 'left';
+    $pane->pid = 'new-6b233541-300b-4edc-b794-983ea6d83dca';
+    $pane->panel = 'intro_wide';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_acerca_de_mi';
+    $pane->subtype = 'node:field_puesto_actual';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
+      'label' => 'hidden',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Actualmente',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'span',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'strong',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 0,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '74d1f391-2053-415d-aa82-ab7d405ec9e6';
-    $display->content['new-74d1f391-2053-415d-aa82-ab7d405ec9e6'] = $pane;
-    $display->panels['left'][0] = 'new-74d1f391-2053-415d-aa82-ab7d405ec9e6';
+    $pane->uuid = '6b233541-300b-4edc-b794-983ea6d83dca';
+    $display->content['new-6b233541-300b-4edc-b794-983ea6d83dca'] = $pane;
+    $display->panels['intro_wide'][0] = 'new-6b233541-300b-4edc-b794-983ea6d83dca';
     $pane = new stdClass();
-    $pane->pid = 'new-3670adce-9fb6-4dad-8190-edb4401f2cf1';
-    $pane->panel = 'left';
+    $pane->pid = 'new-d15dc398-cdfa-4e11-80e6-fe0bd61ece22';
+    $pane->panel = 'intro_wide';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_pasa_tiempos';
+    $pane->subtype = 'node:field_lugar_trabajo_actual';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
+      'label' => 'hidden',
       'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'en',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'strong',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 0,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '3670adce-9fb6-4dad-8190-edb4401f2cf1';
-    $display->content['new-3670adce-9fb6-4dad-8190-edb4401f2cf1'] = $pane;
-    $display->panels['left'][1] = 'new-3670adce-9fb6-4dad-8190-edb4401f2cf1';
+    $pane->uuid = 'd15dc398-cdfa-4e11-80e6-fe0bd61ece22';
+    $display->content['new-d15dc398-cdfa-4e11-80e6-fe0bd61ece22'] = $pane;
+    $display->panels['intro_wide'][1] = 'new-d15dc398-cdfa-4e11-80e6-fe0bd61ece22';
     $pane = new stdClass();
     $pane->pid = 'new-93160eb6-ad84-44f2-8808-350b89bebe84';
     $pane->panel = 'right';
@@ -196,7 +277,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
       'link' => 0,
       'markup' => 'h4',
       'id' => '',
-      'class' => '',
+      'class' => 'hard-inline',
       'context' => 'argument_entity_id:node_1',
       'override_title' => 0,
       'override_title_text' => '',
@@ -253,8 +334,8 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
         ),
         'element_content' => array(
           'type' => 'h4',
-          'class_enable' => 0,
-          'class' => '',
+          'class_enable' => 1,
+          'class' => 'hard-inline',
           'attributes' => array(),
           'link_enabled' => 0,
           'link' => array(
@@ -267,7 +348,7 @@ function perfil_egresado_cetav_default_page_manager_handlers() {
           'attributes_array' => array(),
         ),
         'element_wrapper' => array(
-          'type' => '',
+          'type' => '0',
           'class_enable' => 0,
           'class' => '',
           'attributes' => array(),
@@ -751,8 +832,14 @@ function perfil_egresado_cetav_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'wide' => NULL,
-      'left' => NULL,
       'right' => NULL,
+      'left_intro' => NULL,
+      'right_intro' => NULL,
+      'center_intro' => NULL,
+      'left' => NULL,
+    ),
+    'left' => array(
+      'style' => '-1',
     ),
   );
   $display->cache = array();
@@ -761,17 +848,14 @@ function perfil_egresado_cetav_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-68b9a7e0-a1d4-4419-b4d1-a863711eefd3';
-    $pane->panel = 'left';
-    $pane->type = 'block';
-    $pane->subtype = 'views--exp-egresados-panel_pane_1';
+    $pane->pid = 'new-a04742d4-16b2-462f-9779-f3d36381333b';
+    $pane->panel = 'center_intro';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:54';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'inherit_path' => 1,
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'view_mode' => 'full',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -781,9 +865,55 @@ function perfil_egresado_cetav_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
+    $pane->uuid = 'a04742d4-16b2-462f-9779-f3d36381333b';
+    $display->content['new-a04742d4-16b2-462f-9779-f3d36381333b'] = $pane;
+    $display->panels['center_intro'][0] = 'new-a04742d4-16b2-462f-9779-f3d36381333b';
+    $pane = new stdClass();
+    $pane->pid = 'new-68b9a7e0-a1d4-4419-b4d1-a863711eefd3';
+    $pane->panel = 'left';
+    $pane->type = 'block';
+    $pane->subtype = 'views--exp-egresados-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 1,
+      'override_title_text' => 'Filtros',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'default',
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
     $pane->uuid = '68b9a7e0-a1d4-4419-b4d1-a863711eefd3';
     $display->content['new-68b9a7e0-a1d4-4419-b4d1-a863711eefd3'] = $pane;
     $display->panels['left'][0] = 'new-68b9a7e0-a1d4-4419-b4d1-a863711eefd3';
+    $pane = new stdClass();
+    $pane->pid = 'new-194e7f4a-cdc1-46a1-bc6a-e7b530979251';
+    $pane->panel = 'left_intro';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:52';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '194e7f4a-cdc1-46a1-bc6a-e7b530979251';
+    $display->content['new-194e7f4a-cdc1-46a1-bc6a-e7b530979251'] = $pane;
+    $display->panels['left_intro'][0] = 'new-194e7f4a-cdc1-46a1-bc6a-e7b530979251';
     $pane = new stdClass();
     $pane->pid = 'new-c9278bde-42ef-47bb-af7a-7f084b73e575';
     $pane->panel = 'right';
@@ -796,13 +926,77 @@ function perfil_egresado_cetav_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => 'filter-section',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'c9278bde-42ef-47bb-af7a-7f084b73e575';
     $display->content['new-c9278bde-42ef-47bb-af7a-7f084b73e575'] = $pane;
     $display->panels['right'][0] = 'new-c9278bde-42ef-47bb-af7a-7f084b73e575';
+    $pane = new stdClass();
+    $pane->pid = 'new-28d34c71-e1e5-44c9-9068-11a28c93b99c';
+    $pane->panel = 'right_intro';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:53';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '0',
+          'class_enable' => 0,
+          'class' => 'call-out-text',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'course-intro',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 0,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '28d34c71-e1e5-44c9-9068-11a28c93b99c';
+    $display->content['new-28d34c71-e1e5-44c9-9068-11a28c93b99c'] = $pane;
+    $display->panels['right_intro'][0] = 'new-28d34c71-e1e5-44c9-9068-11a28c93b99c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-c9278bde-42ef-47bb-af7a-7f084b73e575';
   $handler->conf['display'] = $display;

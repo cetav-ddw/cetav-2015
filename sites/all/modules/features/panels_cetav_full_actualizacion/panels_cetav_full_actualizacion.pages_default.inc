@@ -155,7 +155,6 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'style' => 'default',
       'settings' => NULL,
     );
     $pane->css = array(
@@ -1013,7 +1012,7 @@ function panels_cetav_full_actualizacion_default_page_manager_handlers() {
         'element_content' => array(
           'type' => 'div',
           'class_enable' => 1,
-          'class' => 'line-grid split-list',
+          'class' => 'split-list',
           'attributes' => array(),
           'link_enabled' => 0,
           'link' => array(

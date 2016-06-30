@@ -148,7 +148,11 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['row_class'] = 'list-item';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['class'] = 'list-items';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -182,7 +186,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['field'] = 'field_carrera_tecnica_tid';
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['expose']['operator_id'] = 'field_carrera_tecnica_tid_op';
-  $handler->display->display_options['filters']['field_carrera_tecnica_tid']['expose']['label'] = 'Carreras';
+  $handler->display->display_options['filters']['field_carrera_tecnica_tid']['expose']['label'] = 'Filtrar por Carrera';
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['expose']['operator'] = 'field_carrera_tecnica_tid_op';
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['expose']['identifier'] = 'field_carrera_tecnica_tid';
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['expose']['multiple'] = TRUE;
@@ -191,6 +195,8 @@ function perfil_egresado_cetav_views_default_views() {
     1 => 0,
     3 => 0,
     4 => 0,
+    5 => 0,
+    6 => 0,
   );
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_carrera_tecnica_tid']['vocabulary'] = 'carrera_tecnica';
@@ -200,7 +206,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['field'] = 'field_disponibilidad_egresado_tid';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['expose']['operator_id'] = 'field_disponibilidad_egresado_tid_op';
-  $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['expose']['label'] = 'Disponibilidad';
+  $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['expose']['label'] = 'Filtrar por Disponibilidad';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['expose']['operator'] = 'field_disponibilidad_egresado_tid_op';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['expose']['identifier'] = 'field_disponibilidad_egresado_tid';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['expose']['multiple'] = TRUE;
@@ -209,6 +215,8 @@ function perfil_egresado_cetav_views_default_views() {
     1 => 0,
     3 => 0,
     4 => 0,
+    5 => 0,
+    6 => 0,
   );
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_disponibilidad_egresado_tid']['vocabulary'] = 'disponibilidad';
@@ -218,7 +226,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['field'] = 'field_generacion_egresado_tid';
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['expose']['operator_id'] = 'field_generacion_egresado_tid_op';
-  $handler->display->display_options['filters']['field_generacion_egresado_tid']['expose']['label'] = 'Generación';
+  $handler->display->display_options['filters']['field_generacion_egresado_tid']['expose']['label'] = 'Filtrar por Generación';
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['expose']['operator'] = 'field_generacion_egresado_tid_op';
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['expose']['identifier'] = 'field_generacion_egresado_tid';
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['expose']['multiple'] = TRUE;
@@ -227,12 +235,16 @@ function perfil_egresado_cetav_views_default_views() {
     1 => 0,
     3 => 0,
     4 => 0,
+    5 => 0,
+    6 => 0,
   );
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_generacion_egresado_tid']['vocabulary'] = 'generacion';
 
   /* Display: Egresados */
   $handler = $view->new_display('panel_pane', 'Egresados', 'panel_pane_1');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Foto Perfil */
@@ -277,7 +289,7 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['text'] = '[title] [field_apellido]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_class'] = 'profile-name';
   $handler->display->display_options['fields']['title']['element_label_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
@@ -288,34 +300,42 @@ function perfil_egresado_cetav_views_default_views() {
   $handler->display->display_options['fields']['field_profesion_egresado']['table'] = 'field_data_field_profesion_egresado';
   $handler->display->display_options['fields']['field_profesion_egresado']['field'] = 'field_profesion_egresado';
   $handler->display->display_options['fields']['field_profesion_egresado']['label'] = '';
-  $handler->display->display_options['fields']['field_profesion_egresado']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_profesion_egresado']['element_class'] = 'graduate-list-profile-info-profession';
+  $handler->display->display_options['fields']['field_profesion_egresado']['element_type'] = 'strong';
   $handler->display->display_options['fields']['field_profesion_egresado']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profesion_egresado']['element_wrapper_type'] = 'p';
+  $handler->display->display_options['fields']['field_profesion_egresado']['element_wrapper_class'] = 'profile-info profile-prof';
+  $handler->display->display_options['fields']['field_profesion_egresado']['element_default_classes'] = FALSE;
   /* Field: Content: Generación Egresado */
   $handler->display->display_options['fields']['field_generacion_egresado']['id'] = 'field_generacion_egresado';
   $handler->display->display_options['fields']['field_generacion_egresado']['table'] = 'field_data_field_generacion_egresado';
   $handler->display->display_options['fields']['field_generacion_egresado']['field'] = 'field_generacion_egresado';
-  $handler->display->display_options['fields']['field_generacion_egresado']['label'] = '';
-  $handler->display->display_options['fields']['field_generacion_egresado']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_generacion_egresado']['element_class'] = 'graduate-list-profile-info-tag';
-  $handler->display->display_options['fields']['field_generacion_egresado']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_generacion_egresado']['label'] = 'Generación';
+  $handler->display->display_options['fields']['field_generacion_egresado']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_generacion_egresado']['element_label_type'] = 'strong';
+  $handler->display->display_options['fields']['field_generacion_egresado']['element_wrapper_type'] = 'p';
+  $handler->display->display_options['fields']['field_generacion_egresado']['element_wrapper_class'] = 'profile-info profile-gen';
+  $handler->display->display_options['fields']['field_generacion_egresado']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_generacion_egresado']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Disponibilidad Egresado */
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['id'] = 'field_disponibilidad_egresado';
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['table'] = 'field_data_field_disponibilidad_egresado';
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['field'] = 'field_disponibilidad_egresado';
-  $handler->display->display_options['fields']['field_disponibilidad_egresado']['label'] = '';
-  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_class'] = 'graduate-list-profile-info-tag';
-  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_disponibilidad_egresado']['label'] = 'Disponibilidad';
+  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_label_type'] = 'strong';
+  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_wrapper_type'] = 'p';
+  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_wrapper_class'] = 'profile-info profile-available';
+  $handler->display->display_options['fields']['field_disponibilidad_egresado']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_disponibilidad_egresado']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = '0';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'see-profile';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Ver perfil';
   $export['egresados'] = $view;
 

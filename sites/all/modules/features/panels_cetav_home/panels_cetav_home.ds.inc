@@ -61,7 +61,11 @@ function panels_cetav_home_ds_layout_settings_info() {
       'field_image' => 'ds_content',
       'field_titulo' => 'ds_content',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'layout_class' => array(
+        '' => '',
+      ),
+    ),
     'wrappers' => array(
       'ds_content' => 'div',
     ),
