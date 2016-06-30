@@ -338,6 +338,81 @@ function noticia_cetav_default_page_manager_handlers() {
     $pane->uuid = '5587843c-bd8e-4d09-90ae-c87d8700d21f';
     $display->content['new-5587843c-bd8e-4d09-90ae-c87d8700d21f'] = $pane;
     $display->panels['left'][3] = 'new-5587843c-bd8e-4d09-90ae-c87d8700d21f';
+    $pane = new stdClass();
+    $pane->pid = 'new-a047e658-8bc8-40e7-a161-2670faf1a011';
+    $pane->panel = 'right';
+    $pane->type = 'views';
+    $pane->subtype = 'noticias';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '3',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'default',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'latest-news',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'a047e658-8bc8-40e7-a161-2670faf1a011';
+    $display->content['new-a047e658-8bc8-40e7-a161-2670faf1a011'] = $pane;
+    $display->panels['right'][0] = 'new-a047e658-8bc8-40e7-a161-2670faf1a011';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -476,6 +551,81 @@ function noticia_cetav_default_page_manager_pages() {
     $pane->uuid = '2dc8375d-c512-4d77-88ad-09302edcc660';
     $display->content['new-2dc8375d-c512-4d77-88ad-09302edcc660'] = $pane;
     $display->panels['left'][0] = 'new-2dc8375d-c512-4d77-88ad-09302edcc660';
+    $pane = new stdClass();
+    $pane->pid = 'new-9920eae0-f345-429d-91a4-5c4c4a6f69c9';
+    $pane->panel = 'right';
+    $pane->type = 'views';
+    $pane->subtype = 'noticias';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '3',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => array(
+        'element_title' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'latest-news',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '9920eae0-f345-429d-91a4-5c4c4a6f69c9';
+    $display->content['new-9920eae0-f345-429d-91a4-5c4c4a6f69c9'] = $pane;
+    $display->panels['right'][0] = 'new-9920eae0-f345-429d-91a4-5c4c4a6f69c9';
     $pane = new stdClass();
     $pane->pid = 'new-dbe30117-2684-4fba-a144-37695e48a5b1';
     $pane->panel = 'wide';
