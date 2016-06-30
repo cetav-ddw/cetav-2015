@@ -14,6 +14,10 @@ function configuracion_cetav_form_user_profile_form_alter(&$form, &$form_alter){
 
   global $user;
 
+  if (!in_array('egresado', $form['#user']->roles) && $form['#user']->uid == $user->uid) {
+    unset($form['field_perfil_de_egresado']);
+  }
+  
   krumo($form); 
 
 }
