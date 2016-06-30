@@ -5,3 +5,15 @@
  */
 
 include_once 'configuracion_cetav.features.inc';
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function configuracion_cetav_form_user_profile_form_alter(&$form, &$form_alter){
+
+  global $user;
+
+  krumo($form); 
+
+}
