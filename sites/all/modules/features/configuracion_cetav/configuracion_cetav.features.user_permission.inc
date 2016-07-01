@@ -10,6 +10,17 @@
 function configuracion_cetav_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access administration menu'.
+  $permissions['access administration menu'] = array(
+    'name' => 'access administration menu',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
+      'content-editor' => 'content-editor',
+    ),
+    'module' => 'admin_menu',
+  );
+
   // Exported permission: 'access private fields'.
   $permissions['access private fields'] = array(
     'name' => 'access private fields',
