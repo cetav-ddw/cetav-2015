@@ -83,7 +83,6 @@ features[variable][] = comment_form_location_perfil_egresado
 features[variable][] = comment_perfil_egresado
 features[variable][] = comment_preview_perfil_egresado
 features[variable][] = comment_subject_field_perfil_egresado
-features[variable][] = configurable_timezones
 features[variable][] = field_bundle_settings_node__perfil_egresado
 features[variable][] = menu_options_perfil_egresado
 features[variable][] = menu_parent_perfil_egresado
