@@ -55,7 +55,7 @@ function configuracion_cetav_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form_single',
-      'weight' => 0,
+      'weight' => -20,
     ),
   );
 
