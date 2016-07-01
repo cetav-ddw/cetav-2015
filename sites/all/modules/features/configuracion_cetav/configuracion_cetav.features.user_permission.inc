@@ -13,9 +13,7 @@ function configuracion_cetav_user_default_permissions() {
   // Exported permission: 'access private fields'.
   $permissions['access private fields'] = array(
     'name' => 'access private fields',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
@@ -31,19 +29,14 @@ function configuracion_cetav_user_default_permissions() {
   // Exported permission: 'create field_perfil_de_egresado'.
   $permissions['create field_perfil_de_egresado'] = array(
     'name' => 'create field_perfil_de_egresado',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
   // Exported permission: 'edit field_perfil_de_egresado'.
   $permissions['edit field_perfil_de_egresado'] = array(
     'name' => 'edit field_perfil_de_egresado',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
@@ -59,9 +52,7 @@ function configuracion_cetav_user_default_permissions() {
   // Exported permission: 'view field_perfil_de_egresado'.
   $permissions['view field_perfil_de_egresado'] = array(
     'name' => 'view field_perfil_de_egresado',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'field_permissions',
   );
 
@@ -69,7 +60,6 @@ function configuracion_cetav_user_default_permissions() {
   $permissions['view own field_perfil_de_egresado'] = array(
     'name' => 'view own field_perfil_de_egresado',
     'roles' => array(
-      'administrator' => 'administrator',
       'egresado' => 'egresado',
     ),
     'module' => 'field_permissions',

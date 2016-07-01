@@ -36,6 +36,7 @@ features[user_role][] = administrator
 features[user_role][] = content-admin
 features[user_role][] = content-editor
 features[user_role][] = egresado
+features[variable][] = configurable_timezones
 features[variable][] = date_format_date_global
 features[variable][] = path_alias_whitelist
 features[variable][] = pathauto_case

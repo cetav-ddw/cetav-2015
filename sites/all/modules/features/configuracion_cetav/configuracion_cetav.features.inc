@@ -237,12 +237,10 @@ function configuracion_cetav_default_search_api_index() {
         "field_admision_title" : { "type" : "text" },
         "field_cetav_font_character" : { "type" : "text" },
         "field_personal" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "paragraphs_item" },
-        "field_preview_curso_home" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "paragraphs_item" },
         "field_steps_admisions" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "paragraphs_item" },
         "field_sub_title" : { "type" : "text" },
         "field_title_carrers" : { "type" : "text" },
         "field_titulo" : { "type" : "text" },
-        "field_titulo_proximos_cursos" : { "type" : "text" },
         "language" : { "type" : "string" },
         "link" : { "type" : "boolean" },
         "path" : { "type" : "uri" },
@@ -705,17 +703,6 @@ function configuracion_cetav_default_search_api_server() {
             "boost" : "1.0"
           },
           "field_cetav_font_character" : {
-            "table" : "search_api_db_fpp_index_text",
-            "type" : "text",
-            "boost" : "1.0"
-          },
-          "field_preview_curso_home" : {
-            "table" : "search_api_db_fpp_index_field_preview_curso_home",
-            "column" : "value",
-            "type" : "list\\u003Cinteger\\u003E",
-            "boost" : "1.0"
-          },
-          "field_titulo_proximos_cursos" : {
             "table" : "search_api_db_fpp_index_text",
             "type" : "text",
             "boost" : "1.0"

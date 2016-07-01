@@ -17,13 +17,14 @@ function configuracion_cetav_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 0,
+        'type' => 'entityreference_entity_view',
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -54,7 +55,7 @@ function configuracion_cetav_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form_single',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
