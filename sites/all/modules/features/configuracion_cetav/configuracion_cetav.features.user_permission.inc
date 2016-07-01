@@ -21,6 +21,16 @@ function configuracion_cetav_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: 'access administration pages'.
+  $permissions['access administration pages'] = array(
+    'name' => 'access administration pages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
+    ),
+    'module' => 'system',
+  );
+
   // Exported permission: 'access private fields'.
   $permissions['access private fields'] = array(
     'name' => 'access private fields',
@@ -74,6 +84,16 @@ function configuracion_cetav_user_default_permissions() {
       'egresado' => 'egresado',
     ),
     'module' => 'field_permissions',
+  );
+
+  // Exported permission: 'view the administration theme'.
+  $permissions['view the administration theme'] = array(
+    'name' => 'view the administration theme',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'content-admin' => 'content-admin',
+    ),
+    'module' => 'system',
   );
 
   return $permissions;
