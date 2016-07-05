@@ -1063,6 +1063,10 @@ footer {
   margin: 10px 0;
   overflow: hidden;
   padding: 0; }
+  @media only screen and (min-width: 68.75em) {
+    .tabs {
+      max-width: 1400px;
+      padding: 0 5%; } }
   .tabs a {
     color: #333;
     padding-right: 20px; }
@@ -2767,15 +2771,6 @@ footer {
 .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget {
   margin-top: 20px;
   padding-bottom: 20px !important; }
-  @media only screen and (min-width: 56.25em) {
-    .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget {
-      float: left;
-      display: block;
-      margin-right: 2.3576515979%;
-      width: 23.2317613015%;
-      width: 30%; }
-      .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget:last-child {
-        margin-right: 0; } }
   @media only screen and (min-width: 68.75em) {
     .pane-views-exp-egresados-panel-pane-1 .views-exposed-widget {
       float: left;
@@ -3262,4 +3257,24 @@ nav[role="navigation"] .expanded:hover .menu {
 
 .team-detail-h {
   margin: 0; }
+
+.user-profile {
+  padding-bottom: 50px; }
+  @media only screen and (min-width: 56.25em) {
+    .user-profile {
+      padding-bottom: 80px; } }
+  @media only screen and (min-width: 68.75em) {
+    .user-profile {
+      padding-bottom: 100px; } }
+
+#user-profile-form {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding-bottom: 50px; }
+  @media only screen and (min-width: 56.25em) {
+    #user-profile-form {
+      padding-bottom: 80px; } }
+  @media only screen and (min-width: 68.75em) {
+    #user-profile-form {
+      padding-bottom: 100px; } }
 /*# sourceMappingURL=main.css.map */
