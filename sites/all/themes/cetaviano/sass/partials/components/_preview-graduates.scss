@@ -10,6 +10,11 @@
         margin-top: 20px;
         padding-bottom: 20px !important;
 
+        @include mquery("medium") {
+            @include span-columns(3);
+            width: 30%;
+        }
+
         @include mquery("large") {
             @include span-columns(4);
             border-bottom: solid 1px $ligth-gray;
