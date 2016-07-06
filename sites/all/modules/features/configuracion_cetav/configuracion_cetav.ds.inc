@@ -28,11 +28,6 @@ function configuracion_cetav_ds_field_settings_info() {
         'ft' => array(),
       ),
     ),
-    'field_perfil_de_egresado' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['user|user|default'] = $ds_fieldsetting;
 
@@ -65,7 +60,7 @@ function configuracion_cetav_ds_layout_settings_info() {
     ),
     'classes' => array(
       'layout_class' => array(
-        '' => '',
+        'grid-width' => 'grid-width',
       ),
     ),
     'wrappers' => array(

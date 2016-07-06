@@ -92,6 +92,8 @@ function configuracion_cetav_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content-admin' => 'content-admin',
+      'content-editor' => 'content-editor',
+      'egresado' => 'egresado',
     ),
     'module' => 'system',
   );
