@@ -12,7 +12,7 @@ footer {
     p {
         color: $white;
         font-size: $text-small;
-        margin-bottom: 0.75em;
+        margin-bottom: .75em;
     }
 }
 
@@ -50,6 +50,7 @@ footer {
 
     li {
         display: inline-block;
+        position: relative;
     }
     .icon-face:before,
     .icon-vimeo:before {
