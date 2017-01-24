@@ -1,0 +1,15 @@
+html, .maintenance-page {
+    background: #f0f0f0;
+}
+
+.maintenance-page {
+    #logo {
+        max-width: 370px;
+        display: inline-block;
+    }
+    #page {
+        width: 70%;
+        margin: 5% auto 0;
+        text-align: center;
+    }
+}
