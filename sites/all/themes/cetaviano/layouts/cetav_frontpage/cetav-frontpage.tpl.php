@@ -27,7 +27,7 @@
       <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>
-  <div class="section-wide section-intro">
+<!--   <div class="section-wide section-intro">
     <div class="grid-width">
       <div class="panel-left-column">
         <?php print $content['left_second']; ?>
@@ -46,7 +46,7 @@
         <?php print $content['right_third']; ?>
       </div>
     </div>
-  </div>
+  </div> -->
   <?php if ($content['wide_fourth']): ?>
     <div class="section-wide slab-gray">
       <div class="grid-width ">
