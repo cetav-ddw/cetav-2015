@@ -132,6 +132,7 @@ module.exports = function (grunt) {
     // $ grunt build
 
     grunt.registerTask('prod', [
+        'imagemin',
         'jshint',
         'uglify:prod',
         'sass:prod',
@@ -139,7 +140,6 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'imagemin',
         'newer:jshint',
         'uglify:dev',
         'sass:dev',
