@@ -35,8 +35,9 @@ $post-color: $dark-green;
 $ddw-color: $dark-red;
 
 $blue-dark: #243842;
+$darkest-blue: #0D1819;
 $light-blue: #00c9ed;
-$lighter-gray: #ececec;
+$lighter-gray: #ececec; //Background color
 $main-color: $orange;
 $orange-light: #fab853;
 $white: #fff;
@@ -57,3 +58,12 @@ $site-breakpoints: (
     "large": "68.75em", //1100px
     "x-large": "87.5em", //1400px
 );
+
+//Spacing
+//multiple 1.5
+$space-x-small: 1em; //16px
+$space-base: 2em; //32px
+$space-small: 3.5em; //56px Between components
+$space-medium: 5em; //80px Between titles and p
+$space-large: 6.5em; //104px Top regions
+$space-x-large: 8em; //128px Bottom regions
