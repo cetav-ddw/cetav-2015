@@ -16,14 +16,6 @@
         $("#edit-field-form-email-und-0-email").attr("placeholder", "Correo Electrónico");
       }
 
-      function requiredForm() {
-        $(".entitytype-formulario_envio_de_pago-form input").attr("required","required");
-        $("#edit-field-form-email-und-0-email").attr("type", "email");
-        $( "#edit-field-form-nombre-und-0-value" ).bind( "keypress", function( event ) {
-          return validateText(event);
-        });
-      }
-
       function validateText(e){
         var tecla = (document.all) ? e.keyCode : e.which;
         //Tecla de retroceso para borrar, siempre la permite
@@ -34,6 +26,14 @@
         var patron =/[A-Za-z]/;
         var tecla_final = String.fromCharCode(tecla);
         return patron.test(tecla_final);
+      }
+
+      function requiredForm() {
+        $(".entitytype-formulario_envio_de_pago-form input").attr("required","required");
+        $("#edit-field-form-email-und-0-email").attr("type", "email");
+        $( "#edit-field-form-nombre-und-0-value" ).bind( "keypress", function( event ) {
+          return validateText(event);
+        });
       }
 
       function typed() {
