@@ -1,0 +1,14 @@
+<?php
+// Plugin definition
+$plugin = array(
+  'title' => t('CETAV Egresados'),
+  'category' => t('CETAV'),
+  'icon' => 'cetav_egresados.png',
+  'theme' => 'cetav_egresados',
+  'css' => 'cetav_egresados.css',
+  'regions' => array(
+    'top' => t('Top'),
+    'wide' => t('Wide'),
+    'bottom' => t('Botton')
+  ),
+);
