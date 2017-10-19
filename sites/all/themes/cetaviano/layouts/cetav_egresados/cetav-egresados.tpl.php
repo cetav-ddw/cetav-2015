@@ -3,7 +3,7 @@
  * @file
  * Template for a 3 column panel layout.
  *
- * This template provides a carreras for CETAV panel display layout.
+ * This template provides a egresados for CETAV panel display layout.
  */
 ?>
 <div class="panel-display">

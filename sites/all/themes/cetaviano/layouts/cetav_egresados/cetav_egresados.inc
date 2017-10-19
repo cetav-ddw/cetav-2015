@@ -13,7 +13,6 @@ $plugin = array(
     'wide_first' => t('Wide First'),
     'wide_second' => t('Wide Second'),
     'wide_third' => t('Wide Third'),
-    'bottom' => t('Botton'),
-
+    'bottom' => t('Botton')
   ),
 );
