@@ -32,12 +32,10 @@ module.exports = function (grunt) {
 
         // Sass
         sass: {
-          options: {
-            sourceMap: true,
-            includePaths: require('node-neat').includePaths,
-          },
           dev: {
             options: {
+              sourceMap: true,
+              includePaths: require('node-neat').includePaths,
               outputStyle: 'nested',
             },
             files: {
