@@ -10,15 +10,15 @@
     margin-bottom: 0;
 }
 
-.panel-wide-courses .container-card {
-    display: block;
+.container-card {
+    display: inline;
     height: 400px;
     float: left;
     font-family: $default-font;
     text-align: center;
     position: relative;
     margin-top: 15px;
-    width: 100%;
+    width: 400px;
 
     @include mquery("large") {
         margin-top: 0;
@@ -95,37 +95,6 @@
     transition: all 0.5s ease;
 }
 
-// logos para cada carrera
-.icon-animacion:before {
-    content: "";
-    background-image: url(../img/logo-animacion.png);
-    background-image: url(../img/logo-animacion.svg);
-    background-repeat: no-repeat;
-    height: 92px;
-    margin-bottom: 20px;
-    width: 97px;
-}
-
-.icon-web:before {
-    content: "";
-    background-image: url(../img/logo-web.png);
-    background-image: url(../img/logo-web.svg);
-    background-repeat: no-repeat;
-    height: 92px;
-    margin-bottom: 20px;
-    width: 97px;
-}
-
-.icon-post:before {
-    content: "";
-    background-image: url(../img/logo-post.png);
-    background-image: url(../img/logo-post.svg);
-    background-repeat: no-repeat;
-    height: 92px;
-    margin-bottom: 20px;
-    width: 97px;
-}
-
 // gif background para cada carrera
 .icon-animacion div {
     position: absolute;
@@ -182,10 +151,6 @@
         background-image: url(../img/post-gif.gif);
         transition: all 0.3s ease;
     }
-}
-
-.container-title-course a {
-
 }
 
 .icon-animacion a {
