@@ -8,8 +8,10 @@
 ?>
 <div class="panel-display">
   <?php if ($content['top']): ?>
-    <div class="panel-wide panel-header">
-      <?php print $content['top']; ?>
+    <div class="section-wide">
+      <div class="grid-width">
+        <?php print $content['top']; ?>
+      </div>
     </div>
   <?php endif ?>
   <?php if ($content['wide']): ?>
