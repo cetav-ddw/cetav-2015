@@ -3,24 +3,36 @@
  * @file
  * Template for a 3 column panel layout.
  *
- * This template provides a prev-noticias for CETAV panel display layout.
+ * This template provides noticias for CETAV panel display layout.
  */
 ?>
-<div class="panel-cetav-prev-noticias">
-  <?php if ($content['wide']): ?>
-    <div class="panel-header">
-      <?php print $content['wide']; ?>
+<div class="panel-display noticias-section"> 
+  <?php if ($content['top']): ?>
+    <div class="grid-width">
+      <div class="panel-wide panel-header">
+        <?php print $content['top']; ?>
+      </div>
     </div>
   <?php endif ?>
   <div class="section-wide">
     <div class="grid-width">
-      <div class="panel-left-column container-news-prev">
-        <?php print $content['left']; ?>
-      </div>
-      <div class="panel-right-column aside">
-        <?php print $content['right']; ?>
+      <?php if ($content['left']): ?>
+        <div class="layout-large">
+          <?php print $content['left']; ?>
+        </div>
+      <?php endif ?>
+      <?php if ($content['right']): ?>
+        <div class="layout-minor">
+          <?php print $content['right']; ?>
+        </div>
+      <?php endif ?>
+    </div>
+  </div>    
+  <?php if ($content['wide']): ?>
+    <div class="grid-width">
+      <div class="section-wide">
+        <?php print $content['wide']; ?>
       </div>
     </div>
-  </div>
+  <?php endif ?>
 </div>
-
