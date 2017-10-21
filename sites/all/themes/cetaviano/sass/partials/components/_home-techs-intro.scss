@@ -12,17 +12,16 @@
 
 .container-card {
     display: inline;
-    height: 400px;
     float: left;
     font-family: $default-font;
     text-align: center;
     position: relative;
     margin-top: 15px;
-    width: 400px;
+    margin-left: $space-base;
+    box-sizing: border-box;
 
     @include mquery("large") {
         margin-top: 0;
-        width: calc(100% / 3); // ToDo: Verificar soporte cross browser
     }
 }
 
@@ -38,16 +37,18 @@
     transition: opacity 0.5s ease;
     width: 100%;
     z-index: 0;
+    border-radius: 50%;
 }
 
 .container-gif {
     background-position: center;
     background-size: cover;
     display: block;
-    height: 100%;
+    height: 318px;
     padding: 30px 15px;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 318px; 
+    border-radius: 50%;
 }
 
 .container-title-course {
@@ -63,46 +64,32 @@
     }
 }
 
-.container-title-course h2 {
+.container-title-course h3 {
     color: $white;
-    font-size: 1.875em;
+    font-size: 1.6875em;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 40px;
     text-align: center;
-
-    @include mquery("small") {
-        padding: 0 5%;
-    }
-    @include mquery("large") {
-        padding: 0 10%;
-    }
+    padding: 0 10%;
 }
 
 // display none a estos elementos ya que drupal lo duplica
-.container-title-course h2:first-child {
+.container-title-course h3:first-child {
     display: none;
 }
 
 .container-title-course a {
     border-radius: 3px;
     color: $white;
-    font-weight: bold;
+    font-weight: regular;
     margin: 0 auto;
     padding: 15px 22px;
-    text-transform: uppercase;
     text-decoration: none;
     transition: all 0.5s ease;
 }
 
 // gif background para cada carrera
-.icon-animacion div {
-    position: absolute;
-    top: 280px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
 
 .container-gif-animacion {
     background-image: url(../img/animacion-cover.png);
@@ -114,15 +101,6 @@
         transition: all 0.3s ease;
     }
 }
-
-.icon-web div {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 280px;
-}
-
 .container-gif-web {
     background-image: url(../img/web-cover.png);
 }
@@ -132,14 +110,6 @@
         background-image: url(../img/web-gif.gif);
         transition: all 0.3s ease;
     }
-}
-
-.icon-post div {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 280px;
 }
 
 .container-gif-post {
@@ -165,10 +135,10 @@
     background-color: $dark-green;
 }
 
-.icon-web h2 {
+.icon-web h3 {
     padding: 0 7%;
 }
 
-.icon-post h2 {
+.icon-post h3 {
     padding: 0 6%;
 }
