@@ -14,11 +14,10 @@
     display: inline;
     float: left;
     font-family: $default-font;
-    text-align: center;
-    position: relative;
     margin-top: 15px;
     margin-left: $space-base;
-    box-sizing: border-box;
+    text-align: center;
+    position: relative;
 
     @include mquery("large") {
         margin-top: 0;
@@ -27,28 +26,33 @@
 
 .container-card:before {
     content: "";
-    background-color: #222;
+    background-color: #333;
+    border-radius: 50%;
     display: block;
     height: 100%;
     opacity: .5;
-    top: 0;
     left: 0;
     position: absolute;
     transition: opacity 0.5s ease;
+    top: 0;
     width: 100%;
     z-index: 0;
-    border-radius: 50%;
 }
+
+.container-card:before:hover {
+    opacity: .1;
+}
+
 
 .container-gif {
     background-position: center;
     background-size: cover;
+    border-radius: 50%;
     display: block;
     height: 318px;
     padding: 30px 15px;
     transition: all 0.3s ease;
     width: 318px; 
-    border-radius: 50%;
 }
 
 .container-title-course {
@@ -74,11 +78,6 @@
     padding: 0 10%;
 }
 
-// display none a estos elementos ya que drupal lo duplica
-.container-title-course h3:first-child {
-    display: none;
-}
-
 .container-title-course a {
     border-radius: 3px;
     color: $white;
@@ -89,8 +88,6 @@
     transition: all 0.5s ease;
 }
 
-// gif background para cada carrera
-
 .container-gif-animacion {
     background-image: url(../img/animacion-cover.png);
 }
@@ -98,6 +95,7 @@
 .container-card:hover .container-gif-animacion {
     @include mquery("large") {
         background-image: url(../img/animacion-gif.gif);
+        border: 10px solid $animation-color; 
         transition: all 0.3s ease;
     }
 }
@@ -107,7 +105,8 @@
 
 .container-card:hover .container-gif-web {
     @include mquery("large") {
-        background-image: url(../img/web-gif.gif);
+        background-image: url(../img/web-gif.gif) ;
+        border: 10px solid $ddw-color; 
         transition: all 0.3s ease;
     }
 }
@@ -119,6 +118,7 @@
 .container-card:hover .container-gif-post {
     @include mquery("large") {
         background-image: url(../img/post-gif.gif);
+        border: 10px solid $post-color;         
         transition: all 0.3s ease;
     }
 }
