@@ -15,9 +15,13 @@
     float: left;
     font-family: $default-font;
     margin-top: 15px;
-    margin-left: $space-base;
-    text-align: center;
+    margin-left: 0;
     position: relative;
+    text-align: center;
+
+    @include mquery("small") {
+        margin-left: $space-base;
+    }
 
     @include mquery("large") {
         margin-top: 0;
@@ -29,13 +33,14 @@
     background-color: #333;
     border-radius: 50%;
     display: block;
-    height: 100%;
+    height: 93.75%;
+    left: 50%;
     opacity: .5;
-    left: 0;
     position: absolute;
     transition: opacity 0.5s ease;
-    top: 0;
-    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 93.75%;
     z-index: 0;
 }
 
@@ -43,29 +48,22 @@
     opacity: .1;
 }
 
-
 .container-gif {
     background-position: center;
     background-size: cover;
+    border: 10px solid rgba(51, 51, 51, 0.5); 
     border-radius: 50%;
     display: block;
     height: 318px;
-    padding: 30px 15px;
+    padding: 20px 15px;
     transition: all 0.3s ease;
-    width: 318px; 
+    width: 318px;
 }
 
 .container-title-course {
     padding: 0;
     position: relative;
-    top: 3em;
-
-    @include mquery("large") {
-        top: 0;
-    }
-    @include mquery("x-large") {
-        top: 2em;
-    }
+    top: 2em;
 }
 
 .container-title-course h3 {
@@ -74,8 +72,8 @@
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 40px;
+    padding: 0 5%;
     text-align: center;
-    padding: 0 10%;
 }
 
 .container-title-course a {
@@ -95,8 +93,8 @@
 .container-card:hover .container-gif-animacion {
     @include mquery("large") {
         background-image: url(../img/animacion-gif.gif);
-        border: 10px solid $animation-color; 
-        transition: all 0.3s ease;
+        border-color: $animation-color; 
+        transition: all .5s ease;
     }
 }
 .container-gif-web {
@@ -106,8 +104,8 @@
 .container-card:hover .container-gif-web {
     @include mquery("large") {
         background-image: url(../img/web-gif.gif) ;
-        border: 10px solid $ddw-color; 
-        transition: all 0.3s ease;
+        border-color: $ddw-color; 
+        transition: all .5s ease;
     }
 }
 
@@ -118,8 +116,8 @@
 .container-card:hover .container-gif-post {
     @include mquery("large") {
         background-image: url(../img/post-gif.gif);
-        border: 10px solid $post-color;         
-        transition: all 0.3s ease;
+        border-color: $post-color;         
+        transition: all .5s ease;
     }
 }
 
