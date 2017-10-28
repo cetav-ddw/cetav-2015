@@ -93,16 +93,16 @@ footer {
 
 .section-wide {
     overflow: hidden;
-    padding: 40px 0;
+    padding: $space-base $space-x-small;
 
     @include mquery("medium") {
-        padding-bottom: 80px;
-        padding-top: 80px;
+        padding-bottom: $space-medium;
+        padding-top: $space-medium;
     }
 
     @include mquery("large") {
-        padding-bottom: 100px;
-        padding-top: 100px;
+        padding-bottom: $space-x-large;
+        padding-top: $space-large;
     }
 }
 
