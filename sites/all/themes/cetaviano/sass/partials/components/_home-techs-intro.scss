@@ -10,129 +10,80 @@
     margin-bottom: 0;
 }
 
-.panel-wide-courses .container-card {
-    display: block;
-    height: 400px;
+.container-card {
+    display: inline;
     float: left;
     font-family: $default-font;
-    text-align: center;
-    position: relative;
     margin-top: 15px;
-    width: 100%;
+    margin-left: 0;
+    position: relative;
+    text-align: center;
+
+    @include mquery("small") {
+        margin-left: $space-base;
+    }
 
     @include mquery("large") {
         margin-top: 0;
-        width: calc(100% / 3); // ToDo: Verificar soporte cross browser
     }
 }
 
 .container-card:before {
     content: "";
-    background-color: #222;
+    background-color: #333;
+    border-radius: 50%;
     display: block;
-    height: 100%;
+    height: 93.75%;
+    left: 50%;
     opacity: .5;
-    top: 0;
-    left: 0;
     position: absolute;
     transition: opacity 0.5s ease;
-    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 93.75%;
     z-index: 0;
+}
+
+.container-card:before:hover {
+    opacity: .1;
 }
 
 .container-gif {
     background-position: center;
     background-size: cover;
+    border: 10px solid rgba(51, 51, 51, 0.5); 
+    border-radius: 50%;
     display: block;
-    height: 100%;
-    padding: 30px 15px;
+    height: 318px;
+    padding: 20px 15px;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 318px;
 }
 
 .container-title-course {
     padding: 0;
     position: relative;
-    top: 3em;
-
-    @include mquery("large") {
-        top: 0;
-    }
-    @include mquery("x-large") {
-        top: 2em;
-    }
+    top: 2em;
 }
 
-.container-title-course h2 {
+.container-title-course h3 {
     color: $white;
-    font-size: 1.875em;
+    font-size: 1.6875em;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 40px;
+    padding: 0 5%;
     text-align: center;
-
-    @include mquery("small") {
-        padding: 0 5%;
-    }
-    @include mquery("large") {
-        padding: 0 10%;
-    }
-}
-
-// display none a estos elementos ya que drupal lo duplica
-.container-title-course h2:first-child {
-    display: none;
 }
 
 .container-title-course a {
     border-radius: 3px;
     color: $white;
-    font-weight: bold;
+    font-weight: regular;
     margin: 0 auto;
     padding: 15px 22px;
-    text-transform: uppercase;
     text-decoration: none;
     transition: all 0.5s ease;
-}
-
-// logos para cada carrera
-.icon-animacion:before {
-    content: "";
-    background-image: url(../img/logo-animacion.png);
-    background-image: url(../img/logo-animacion.svg);
-    background-repeat: no-repeat;
-    height: 92px;
-    margin-bottom: 20px;
-    width: 97px;
-}
-
-.icon-web:before {
-    content: "";
-    background-image: url(../img/logo-web.png);
-    background-image: url(../img/logo-web.svg);
-    background-repeat: no-repeat;
-    height: 92px;
-    margin-bottom: 20px;
-    width: 97px;
-}
-
-.icon-post:before {
-    content: "";
-    background-image: url(../img/logo-post.png);
-    background-image: url(../img/logo-post.svg);
-    background-repeat: no-repeat;
-    height: 92px;
-    margin-bottom: 20px;
-    width: 97px;
-}
-
-// gif background para cada carrera
-.icon-animacion div {
-    position: absolute;
-    top: 280px;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 .container-gif-animacion {
@@ -142,35 +93,20 @@
 .container-card:hover .container-gif-animacion {
     @include mquery("large") {
         background-image: url(../img/animacion-gif.gif);
-        transition: all 0.3s ease;
+        border-color: $animation-color; 
+        transition: all .5s ease;
     }
 }
-
-.icon-web div {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 280px;
-}
-
 .container-gif-web {
     background-image: url(../img/web-cover.png);
 }
 
 .container-card:hover .container-gif-web {
     @include mquery("large") {
-        background-image: url(../img/web-gif.gif);
-        transition: all 0.3s ease;
+        background-image: url(../img/web-gif.gif) ;
+        border-color: $ddw-color; 
+        transition: all .5s ease;
     }
-}
-
-.icon-post div {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 280px;
 }
 
 .container-gif-post {
@@ -180,12 +116,9 @@
 .container-card:hover .container-gif-post {
     @include mquery("large") {
         background-image: url(../img/post-gif.gif);
-        transition: all 0.3s ease;
+        border-color: $post-color;         
+        transition: all .5s ease;
     }
-}
-
-.container-title-course a {
-
 }
 
 .icon-animacion a {
@@ -200,10 +133,10 @@
     background-color: $dark-green;
 }
 
-.icon-web h2 {
+.icon-web h3 {
     padding: 0 7%;
 }
 
-.icon-post h2 {
+.icon-post h3 {
     padding: 0 6%;
 }
