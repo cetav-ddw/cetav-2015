@@ -8,7 +8,7 @@
 ?>
 <div class="panel-display">
   <?php if ($content['top']): ?>
-    <div class="section-wide">
+    <div class="section-wide section-intro">
       <div class="grid-width">
         <?php print $content['top']; ?>
       </div>
