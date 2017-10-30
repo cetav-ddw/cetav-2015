@@ -62,7 +62,7 @@
         }
     }
 
-    @include mquery(600px) {
+    @include mquery("small") {
         top: 16%;
         img {
             height: 317px;
@@ -84,7 +84,7 @@
         }
     }
 
-     @include mquery(900px) {
+     @include mquery("medium") {
         img {
             height: 250px;
         }
