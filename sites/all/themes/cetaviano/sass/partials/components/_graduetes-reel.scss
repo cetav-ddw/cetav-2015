@@ -29,7 +29,7 @@
         padding: $space-base;
     }
 
-    @include mquery(900px) {          
+    @include mquery("medium") {          
         width: 49%;
         padding: 4rem $space-small 0 $space-small;
     }
