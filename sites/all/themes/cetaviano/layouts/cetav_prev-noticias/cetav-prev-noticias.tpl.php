@@ -8,13 +8,13 @@
 ?>
 <div class="panel-display noticias-section"> 
   <?php if ($content['top']): ?>
-    <div class="grid-width">
+    <div class="grid-width section-minor">
       <div class="panel-wide panel-header">
         <?php print $content['top']; ?>
       </div>
     </div>
   <?php endif ?>
-  <div class="section-wide">
+  <div class="section-wide slab-gray">
     <div class="grid-width">
       <?php if ($content['left']): ?>
         <div class="layout-large">

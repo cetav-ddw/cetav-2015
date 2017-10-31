@@ -181,3 +181,40 @@ footer {
     overflow: hidden;
     padding: 0;
 }
+
+.news-layout,
+.news-layout--minor {
+    margin-bottom: $space-small;
+    
+    @include span-columns(12);
+}
+
+.news-layout {
+    @include mquery("medium") {
+        @include span-columns(4); 
+
+        &:nth-child(3n+3) {
+            @include omega();
+        }
+    }
+}
+
+.news-layout--minor {
+    @include mquery("medium") {
+        @include span-columns(6);
+    }
+}
+
+.section-minor {
+    padding: $space-x-small;
+
+    @include mquery("medium") {
+        padding-bottom: $space-medium;
+        padding-top: $space-medium;
+    }
+
+    @include mquery("large") {
+        padding-bottom: $space-large;
+        padding-top: $space-large;
+    }
+}
