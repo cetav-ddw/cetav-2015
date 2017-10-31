@@ -76,14 +76,22 @@ footer {
     float: right;
 }
 
-.noticias-section .layout-large {
-    @include span-columns(8);
-    float: left;
+.news-section .layout-large {
+    @include span-columns(12);
+
+    @include mquery("medium") {
+        @include span-columns(8);
+        float: left;
+    }
 }
 
-.noticias-section .layout-minor {
-    @include span-columns(4);
-    float: left;
+.news-section .layout-minor {
+    @include span-columns(12);
+
+    @include mquery("medium") {
+        @include span-columns(4);
+        float: right;
+    }
 }
 
 .main-content {
@@ -205,7 +213,7 @@ footer {
     }
 }
 
-.section-minor {
+.news-layout__heading {
     padding: $space-x-small;
 
     @include mquery("medium") {
@@ -214,7 +222,21 @@ footer {
     }
 
     @include mquery("large") {
-        padding-bottom: $space-large;
         padding-top: $space-large;
+    }
+}
+
+.layout-categories {
+    @include span-columns(6);
+    margin: 0 $space-base $space-base 0;
+
+    @include mquery(400px) {
+        @include span-columns(4);
+        margin: 0 $space-base $space-small 0;
+    }
+
+    @include mquery("medium") {
+        @include span-columns(12);
+        margin: 0 0 $space-x-small $space-base;
     }
 }
