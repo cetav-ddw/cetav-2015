@@ -128,6 +128,11 @@ footer {
     }
 }
 
+.slab-dark-blue {
+    background-color: $blue-darker;
+    color: $white;
+}
+
 .slab-blue {
     background: $blue-dark;
     color: $white;
@@ -159,6 +164,24 @@ footer {
     }
 }
 
+.grid-quotes,
+.grid-employers-list {
+    @include span-columns(12);
+
+    @include mquery("small") {
+        @include span-columns(6);
+        @include omega();
+    }
+
+    @include mquery("medium") {
+        @include span-columns(4);
+    }
+}
+
+.grid-employers-list {
+    text-align: center;
+}
+
 .pane-bundle-steps-admision {
     @include outer-container;
 
@@ -171,7 +194,6 @@ footer {
         }
         @include mquery("medium") {
             @include span-columns(4);
-            @include omega();
         }
     }
 }
