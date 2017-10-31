@@ -164,7 +164,8 @@ footer {
     }
 }
 
-.grid-quotes {
+.grid-quotes,
+.grid-employers-list {
     @include span-columns(12);
 
     @include mquery("small") {
@@ -179,20 +180,7 @@ footer {
 }
 
 .grid-employers-list {
-
     text-align: center;
-
-    @include span-columns(12);
-
-    @include mquery("small") {
-        @include span-columns(6);
-        @include omega();
-    }
-
-    @include mquery("medium") {
-        @include span-columns(4);
-        @include omega();
-    }
 }
 
 .pane-bundle-steps-admision {
