@@ -1,0 +1,12 @@
+.grid-quotes {
+    padding: 2rem;
+    background-image: url("../img/blue-quotes.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+
+    div {
+    	&:nth-child(2) {
+    		margin-top: $space-x-small;
+    	}
+    }
+}

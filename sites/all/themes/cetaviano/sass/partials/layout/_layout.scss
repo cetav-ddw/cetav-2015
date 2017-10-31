@@ -128,6 +128,11 @@ footer {
     }
 }
 
+.slab-dark-blue {
+    background-color: $blue-darker;
+    color: $white;
+}
+
 .slab-blue {
     background: $blue-dark;
     color: $white;
@@ -156,6 +161,37 @@ footer {
     @include mquery("large") {
         @include span-columns(6);
         display: inline-block;
+    }
+}
+
+.grid-quotes {
+    @include span-columns(12);
+
+    @include mquery("small") {
+        @include span-columns(6);
+        @include omega();
+    }
+
+    @include mquery("medium") {
+        @include span-columns(4);
+        @include omega();
+    }
+}
+
+.grid-employers-list {
+
+    text-align: center;
+
+    @include span-columns(12);
+
+    @include mquery("small") {
+        @include span-columns(6);
+        @include omega();
+    }
+
+    @include mquery("medium") {
+        @include span-columns(4);
+        @include omega();
     }
 }
 
