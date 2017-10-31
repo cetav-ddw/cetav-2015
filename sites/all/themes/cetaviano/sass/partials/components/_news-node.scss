@@ -1,64 +1,30 @@
-.container-news-prev {
-    @include span-columns(12);
+.news-title {
+    @include mquery(800px) {
+        width: 70%;
+    }
 
-    @include mquery(medium) {
-        width: 63%;
+    @include mquery("large") {
+        width: 60%;
     }
 }
 
-.news-prev {
-    img {
-        width: 100%;
-    }
-    .views-row {
-        @include span-columns(8 of 8);
-        box-shadow: 0 0 4px #c2bebe;
-        margin-bottom: 20px;
-        margin-left: 0;
-        overflow: hidden;
-        position: relative;
-        vertical-align: top;
+.news-category {
+    float: left;
+}
 
-        @include mquery(small) {
-            @include span-columns(4 of 8);
-        }
-    }
-
-    .views-row-even {
-        @include omega();
+.news-date {
+    span::before {
+        content: "/";
+        margin: 0 .5em;
     }
 }
 
-.title-new-preview {
-    margin-bottom:5px;
-
-    a {
-        color: $black;
-    }
-}
-
-.details-preview-news {
-    padding: 20px;
-    position: relative;
-
-    &:before{
-        border-color: transparent transparent white transparent;
-        border-style: solid;
-        border-width: 0 15px 15px 15px;
-        content: "";
-        height: 0;
-        left: 22px;
-        position: absolute;
-        top: -15px;
-        width: 0;
-    }
-}
-
-.date-new-preview {
-    border-bottom: 1px solid #cecece;
-    display: block;
-    font-size: $text-small;
-    margin-bottom: 17px;
-    padding-bottom: 17px;
+.news-image-description {
+    background-color: $orange;
+    color: #fff;
+    font-weight: 300;
+    height: auto;
+    margin: -.4em 0 $space-small;
+    padding: .4em 0 .4em 1em;
     width: 100%;
 }
