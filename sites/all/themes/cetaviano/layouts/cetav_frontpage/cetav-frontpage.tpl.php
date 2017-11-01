@@ -35,7 +35,7 @@
   <?php if ($content['wide_fourth']): ?>
     <div class="section-wide slab-gray">
       <div class="grid-width">
-      <?php print $content['wide_fourth']; ?>
+        <?php print $content['wide_fourth']; ?>
       </div>
     </div>
   <?php endif ?>
