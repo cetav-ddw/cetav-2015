@@ -112,9 +112,9 @@
       <h4 class="foot-h">Conozca m&aacute;s</h4>
         <ul class="foot-menu">
         <li><a href="http://www.parquelalibertad.org/cetav/institucion" title="">Sobre el CETAV</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/actualizacion-profesional" title="">Actualización Profesional</a></li>
+        <!-- <li><a href="http://www.parquelalibertad.org/cetav/actualizacion-profesional" title="">Actualización Profesional</a></li> -->
         <li><a href="http://www.parquelalibertad.org/cetav/egresados" title="">Egresados</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/noticias" title="">Noticias</a></li>
+        <!-- <li><a href="http://www.parquelalibertad.org/cetav/noticias" title="">Noticias</a></li> -->
         <li class="no-desktop"><a href="http://www.parquelalibertad.org/cetav/user?current=home" title="">Mi Cuenta</a></li>
         </ul>
       </div>
