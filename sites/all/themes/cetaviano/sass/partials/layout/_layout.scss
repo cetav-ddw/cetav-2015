@@ -212,14 +212,10 @@ footer {
     padding: 0;
 }
 
-.news-layout,
-.news-layout--minor {
-    margin-bottom: $space-small;
-    
-    @include span-columns(12);
-}
-
 .news-layout {
+    margin-bottom: $space-small;
+    @include span-columns(12);
+
     @include mquery("medium") {
         @include span-columns(4); 
 
@@ -230,6 +226,9 @@ footer {
 }
 
 .news-layout--minor {
+    margin-bottom: $space-small;
+    @include span-columns(12);
+
     @include mquery("medium") {
         @include span-columns(6);
     }
