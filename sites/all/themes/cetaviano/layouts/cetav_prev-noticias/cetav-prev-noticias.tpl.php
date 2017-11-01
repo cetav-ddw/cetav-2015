@@ -17,7 +17,7 @@
   <div class="section-wide slab-gray">
     <div class="grid-width">
       <?php if ($content['right']): ?>
-        <div class="layout-minor">
+        <div class="layout-minor news__category-list">
           <?php print $content['right']; ?>
         </div>
       <?php endif ?>

@@ -139,7 +139,9 @@ button,
 .btn-news {
     @include btn(transparent, $orange, $orange);
     cursor: pointer;
+    margin-top: $space-x-small;
     padding: 0 1em;
+
 }
 
 .btn-categories {

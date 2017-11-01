@@ -13,10 +13,6 @@
     } 
 }
 
-.news-btn-container {
-    margin-top: $space-x-small;
-}
-
 .news-categories-title {
     color: #243842;
     font-size: 1.25em;
@@ -26,4 +22,10 @@
     @include mquery("medium") {
         margin: 0 0 $space-x-small 1.5em;
     }
+}
+
+.news__category-list {
+  @include mquery("medium") {
+    float: right;
+  }
 }
