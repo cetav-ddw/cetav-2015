@@ -138,7 +138,6 @@ button,
 
 .btn-news {
     @include btn(transparent, $orange, $orange);
-
     cursor: pointer;
     padding: 0 1em;
 }
