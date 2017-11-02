@@ -15,7 +15,7 @@
     </div>
   <?php endif ?>
   <?php if ($content['wide_first']): ?>
-    <div class="section-wide">
+    <div class="section-wide slab-blue">
       <div class="grid-width">
         <?php print $content['wide_first']; ?>
       </div>
