@@ -65,7 +65,6 @@ footer {
 }
 
 .layout-minor {
-    @include span-columns(12);
     @include mquery("medium") {
         @include span-columns(4);
     }
@@ -78,8 +77,6 @@ footer {
 }
 
 .layout-large {
-    @include span-columns(12);
-
     @include mquery("medium") {
         @include span-columns(8);
     }
@@ -205,7 +202,6 @@ footer {
 
 .news-layout {
     margin-bottom: $space-small;
-    @include span-columns(12);
 
     @include mquery("medium") {
         @include span-columns(4); 
@@ -218,7 +214,6 @@ footer {
 
 .news-layout--minor {
     margin-bottom: $space-small;
-    @include span-columns(12);
 
     @include mquery("medium") {
         @include span-columns(6);
