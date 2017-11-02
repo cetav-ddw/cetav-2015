@@ -23,13 +23,17 @@
     </div>
   </div>
   <?php if ($content['wide_second']): ?>
-    <div class="grid-width section-wide panel-wide-home__courses section-intro">
-      <?php print $content['wide_second']; ?>
+    <div class="section-wide ">
+      <div class="grid-width panel-wide-home__courses section-intro">
+        <?php print $content['wide_second']; ?>
+      </div>      
     </div>
   <?php endif ?>
   <?php if ($content['wide_third']): ?>
-    <div class="section-wide grid-width">
-      <?php print $content['wide_third']; ?>
+    <div class="section-wide">
+      <div class="grid-width">
+        <?php print $content['wide_third']; ?>
+      </div>
     </div>
   <?php endif ?>
   <?php if ($content['wide_fourth']): ?>
