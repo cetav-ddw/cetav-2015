@@ -2,18 +2,25 @@
     .views-exposed-form {
         background-color: $blue-dark;
         padding: 15px 30px;
-        
-        @include mquery("medium") {
-            min-height: 1450px;
-        }
+        position: relative;
 
-        @include mquery(1250px) {
-            min-height: 1200px;
+        @include mquery("medium") {
+            &::after {
+                background-color: $blue-dark;
+                content: "";
+                height: 1500px;
+                left: 0;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+            }
         }
     }
+
     .views-exposed-form .form-item {
         margin-bottom: 12px;
     }
+
     .views-exposed-widget {
 
         @include mquery("medium") {

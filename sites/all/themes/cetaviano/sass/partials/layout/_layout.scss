@@ -64,15 +64,14 @@ footer {
     }
 }
 
+.layout-minor {
+    @include mquery("medium") {
+        @include span-columns(4);
+    }
 
-.layout-minor,
-.main-content .layout-minor {
-    @include span-columns(4);
-    float: left;
 }
 
-.layout-medium,
-.main-content .layout-medium {
+.layout-medium {
     @include span-columns(7);
     float: right;
 }
@@ -89,14 +88,10 @@ footer {
     }
 }
 
-.noticias-section .layout-large {
-    @include span-columns(8);
-    float: left;
-}
-
-.noticias-section .layout-minor {
-    @include span-columns(4);
-    float: left;
+.layout-large {
+    @include mquery("medium") {
+        @include span-columns(8);
+    }
 }
 
 .main-content {
