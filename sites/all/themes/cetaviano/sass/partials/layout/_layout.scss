@@ -64,6 +64,7 @@ footer {
     }
 }
 
+
 .layout-minor,
 .main-content .layout-minor {
     @include span-columns(4);
@@ -74,6 +75,18 @@ footer {
 .main-content .layout-medium {
     @include span-columns(7);
     float: right;
+}
+
+.layout-small {
+    @include mquery ("medium") {
+        @include span-columns(3);
+    }
+}
+
+.layout-x-large {
+    @include mquery ("medium") {
+        @include span-columns(9);
+    }
 }
 
 .noticias-section .layout-large {
