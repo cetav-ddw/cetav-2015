@@ -6,6 +6,10 @@
 .graduetes-reel__img-left {
     display: none;
 
+    img {
+        display: block;
+    }
+
     @include mquery(700px) { 
         display: inline;
         width: 50%;
@@ -15,6 +19,10 @@
 
 .graduetes-reel__img-right {
     width: 100%;
+
+    img {
+        display: block;
+    }
 
     @include mquery(700px) { 
         display: inline;
@@ -39,7 +47,7 @@
 
 .video-modal {
     width: 100%;
-    opacity: 0.2;
+    opacity: .2;
     position: absolute;
     top: 0;
     right: 0;
@@ -60,4 +68,9 @@
     img {
         width: auto;
     }
+}
+
+.video-modal:hover {
+    opacity: .3;
+    background-color: rgba(128, 128, 128, 0.514)
 }
