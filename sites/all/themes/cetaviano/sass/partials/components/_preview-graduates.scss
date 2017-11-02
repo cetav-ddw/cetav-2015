@@ -49,9 +49,9 @@
 }
 
 .graduetes-container {
-    margin: $space-x-small;
-
     @include micro-clearfix;
+    
+    margin: $space-x-small;
 }
 
 .graduetes-item {
