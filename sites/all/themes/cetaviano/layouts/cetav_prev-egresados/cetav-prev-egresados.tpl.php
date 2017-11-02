@@ -25,13 +25,11 @@
     </div>
   </div>
   <div class="section-wide section-no-padding">
-    <div>
       <div class="layout-small">
         <?php print $content['left']; ?>
       </div>
       <div class="layout-x-large">
         <?php print $content['right']; ?>
       </div>
-    </div>
   </div>
 </div>
