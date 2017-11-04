@@ -163,21 +163,16 @@ button,
 
 // boton general sub carreras 
 
-.btn--sub-career {
-    
-    a {
-        border-radius: 3px;
-        color: $white;
-        font-weight: regular;
-        margin: 0 auto;
-        padding: 15px 22px;
-        text-decoration: none;
-        transition: all 0.5s ease;
-    }
+.btn--sub-career {    
+    border-radius: 3px;
+    color: $white;
+    font-weight: regular;
+    margin: 0 auto;
+    padding: 15px 22px;
+    text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .btn--commercial-img {
-    a {
-        background-color: $commercial-imag-color;
-    }
+    background-color: $commercial-imag-color;
 }

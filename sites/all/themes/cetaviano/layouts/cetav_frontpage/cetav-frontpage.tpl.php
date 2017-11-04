@@ -30,17 +30,19 @@
     </div>
   <?php endif ?>
   <div class="section-wide">
-    <div class="panel-left-column">
-      <?php print $content['left']; ?>
-    </div>
-    <div class="panel-right-column">
-      <?php print $content['right']; ?>
+    <div class="grid-width">
+      <div>
+        <?php print $content['left_second']; ?>
+      </div>
+      <div>
+        <?php print $content['right_second']; ?>
+      </div>
     </div>
   </div>
-  <?php if ($content['wide_fourth']): ?>
+  <?php if ($content['wide_third']): ?>
     <div class="section-wide slab-gray">
       <div class="grid-width">
-        <?php print $content['wide_fourth']; ?>
+        <?php print $content['wide_third']; ?>
       </div>
     </div>
   <?php endif ?>

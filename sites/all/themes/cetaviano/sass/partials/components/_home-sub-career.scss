@@ -1,5 +1,29 @@
+.sub-careers {
+
+}
+
+.new-careeer {
+    padding-right: $space-x-small;    
+    
+    @include mquery("small") {
+        width: 75%;
+    }
+
+    @include mquery("medium") {
+         @include span-columns(8);
+    }
+}
+
 .sub-career {
 	background-color: green;
+	text-align: center;
+	margin-top: $space-small;
+    width: 318px;
+
+    @include mquery("medium") {
+        margin-top: 0;
+        @include span-columns(4);
+    }
 }
 
 .sub-career__title {
