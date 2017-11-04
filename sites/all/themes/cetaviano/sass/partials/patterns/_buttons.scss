@@ -153,6 +153,7 @@ button,
     a {
         @include btn($gray-lighter, $black, $orange, $white);
         border: none;
+        font-size: .8em;
 
         &:hover {
             border: none;
