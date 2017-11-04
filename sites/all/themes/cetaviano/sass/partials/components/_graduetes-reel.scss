@@ -1,4 +1,6 @@
 .graduetes-reel {
+    padding: $space-small 0;
+
     @include mquery(700px) {          
         img {
             width: 50%;
@@ -38,7 +40,6 @@
 .video-modal {
     width: 100%;
     opacity: 0.0;
-    border: 1px solid #000;
     float: right;
     position: absolute;
     top: 39%;
