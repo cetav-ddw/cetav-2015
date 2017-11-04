@@ -6,71 +6,40 @@
 .graduetes-reel__img-left {
     display: none;
 
-    img {
-        display: block;
-    }
-
     @include mquery(700px) { 
         display: inline;
-        width: 50%;
         float: left;
+        width: 50%;
+    }
+
+    img {
+        display: block;
     }
 }
 
 .graduetes-reel__img-right {
     width: 100%;
 
-    img {
-        display: block;
-    }
-
     @include mquery(700px) { 
         display: inline;
-        width: 50%;
         float: right;
+        width: 50%;
+    }
 
+    img {
+        display: block;
     }
 }
 
 .graduetes-reel__title {
     @include mquery(700px) {          
         position: absolute;
-        width: 50%;
         padding: $space-base;
+        width: 50%;
     }
 
     @include mquery("medium") {          
-        width: 49%;
         padding: 4rem $space-small 0 $space-small;
+        width: 49%;
     }
 } 
-
-.video-modal {
-    width: 100%;
-    opacity: .2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-
-    @include mquery(700px) { 
-        width: 50%;
-    }
-
-    a {
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-    }
-
-    img {
-        width: auto;
-    }
-}
-
-.video-modal:hover {
-    opacity: .3;
-    background-color: rgba(128, 128, 128, 0.514)
-}
