@@ -29,13 +29,14 @@
       </div>      
     </div>
   <?php endif ?>
-  <?php if ($content['wide_third']): ?>
-    <div class="section-wide">
-      <div class="grid-width">
-        <?php print $content['wide_third']; ?>
-      </div>
+  <div class="section-wide">
+    <div class="panel-left-column">
+      <?php print $content['left']; ?>
     </div>
-  <?php endif ?>
+    <div class="panel-right-column">
+      <?php print $content['right']; ?>
+    </div>
+  </div>
   <?php if ($content['wide_fourth']): ?>
     <div class="section-wide slab-gray">
       <div class="grid-width">

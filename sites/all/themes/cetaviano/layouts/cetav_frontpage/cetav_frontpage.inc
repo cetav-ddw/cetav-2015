@@ -13,7 +13,8 @@ $plugin = array(
     'left' => t('Left side'),
     'right' => t('Right side'),
     'wide_second' => t('Wide second'),
-    'wide_third' => t('Wide third'),
+    'left' => t('Left side'),
+    'right' => t('Right side'),
     'wide_fourth' => t('Wide fourth')
   ),
 );
