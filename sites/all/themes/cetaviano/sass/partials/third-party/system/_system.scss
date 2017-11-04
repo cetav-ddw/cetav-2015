@@ -7,6 +7,7 @@
 // field.css
 // user.css
 // search.css
+// views.css
 
 
 // ====================
@@ -571,4 +572,16 @@ div.password-suggestions ul {
 .search-advanced .action {
   float: left; /* LTR */
   clear: left; /* LTR */
+}
+
+// ====================
+// views.css
+// ====================
+
+/**
+ * Current pager style.
+ */
+
+.pager-current {
+  background-color: $orange;
 }
