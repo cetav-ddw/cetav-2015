@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  <div class="section-wide section-no-padding">
+  <div class="section-wide section-no-padding slab-blue">
       <div class="layout-small">
         <?php print $content['left']; ?>
       </div>

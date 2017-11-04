@@ -1,20 +1,6 @@
 .pane-views-exp-egresados-panel-pane-1 {
     .views-exposed-form {
-        background-color: $blue-dark;
         padding: 15px 30px;
-        position: relative;
-
-        @include mquery("medium") {
-            &::after {
-                background-color: $blue-dark;
-                content: "";
-                height: 1500px;
-                left: 0;
-                position: absolute;
-                top: 100%;
-                width: 100%;
-            }
-        }
     }
 
     .views-exposed-form .form-item {
@@ -50,8 +36,6 @@
 
 .graduetes-container {
     @include micro-clearfix;
-    
-    margin: $space-x-small;
 }
 
 .graduetes-item {
@@ -77,4 +61,12 @@
     @include mquery(1450px) {
         width: 18.9668588148%;
     }
+}
+
+.view-egresados ul {
+    margin-bottom: 0;
+}
+
+.pager-current {
+    background-color: $orange;
 }

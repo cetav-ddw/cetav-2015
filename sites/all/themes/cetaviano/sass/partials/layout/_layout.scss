@@ -164,6 +164,10 @@ footer {
     background-color: rgba($lighter-gray, .5);
 }
 
+.slab-light-gray {
+    background-color: $lighter-gray;
+}
+
 .panel-left-column,
 .panel-right-column {
     @include mquery("large") {
