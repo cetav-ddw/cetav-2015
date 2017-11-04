@@ -12,10 +12,7 @@ module.exports = function (grunt) {
         watch: {
           sass: {
             files: ['sass/{,**/}*.scss'],
-            tasks: ['sass:dev', 'postcss'],
-            options: {
-              livereload: true,
-            }
+            tasks: ['sass:dev', 'postcss']
           },
           js: {
             files: '<%= jshint.all %>',
