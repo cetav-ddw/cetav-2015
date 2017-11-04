@@ -76,6 +76,18 @@ footer {
     float: right;
 }
 
+.layout-small {
+    @include mquery ("medium") {
+        @include span-columns(3);
+    }
+}
+
+.layout-x-large {
+    @include mquery ("medium") {
+        @include span-columns(9);
+    }
+}
+
 .layout-large {
     @include mquery("medium") {
         @include span-columns(8);
@@ -150,6 +162,10 @@ footer {
 .slab-gray {
     background-color: $lighter-gray;
     background-color: rgba($lighter-gray, .5);
+}
+
+.slab-light-gray {
+    background-color: $lighter-gray;
 }
 
 .panel-left-column,
