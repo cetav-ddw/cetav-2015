@@ -1,9 +1,9 @@
 .video-modal {
     opacity: .2;
     position: absolute;
+    bottom: 0;
     top: 0;
     right: 0;
-    bottom: 0;
     width: 100%;
 
     @include mquery(700px) { 
@@ -13,8 +13,8 @@
     a {
         display: block;
         position: absolute;
-        top: 0;
         bottom: 0;
+        top: 0;
         width: 100%;
     }
 
@@ -24,6 +24,6 @@
 }
 
 .video-modal:hover {
-    background-color: rgba(128, 128, 128, 0.514);
+    background-color: rgba(128, 128, 128, .514);
     opacity: .3;
 }
