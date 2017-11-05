@@ -18,13 +18,14 @@
   <?php if ($content['left'] && $content['right']): ?>
     <div class="section-wide">
       <div class="grid-width">
-        <div class="panel-left-column">
+        <div class="panel-left-column graph-layout">
           <?php print $content['left']; ?>
         </div>
-        <div class="panel-right-column">
+        <div class="panel-right-column graph-layout">
         <?php print $content['right']; ?>
       </div>
       </div>
+      <script src="<?=drupal_get_path('theme', 'cetaviano') . '/js/graph.min.js'?>"></script>
     </div>
   <?php endif ?> 
 

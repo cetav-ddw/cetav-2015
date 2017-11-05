@@ -1,0 +1,105 @@
+.graph-percent {
+  color: #fff;
+  font-size: 5em;
+  left: 50%;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%)
+}
+
+.graph-img {
+  text-align: center;
+}
+
+.graph-title {
+  text-align: center;
+}
+
+.graph-layout {
+  position: relative;
+}
+
+.graph-svg {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e384c;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.percent {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: lighter;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__inner {
+    display: inline-block;
+  }
+  &__num {
+    display: inline-block;
+    font-size: 6rem;
+  }
+  &__sign {
+    display: inline-block;
+    font-size: 4rem;
+  }
+}
+
+.water {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  background: #32bafa;
+  transform: translate(0, 100%);
+  &__inner {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  &__wave {
+    width: 200%;
+    position: absolute;
+    bottom: 100%;
+    &_back {
+      right: 0;
+      fill: #2c7fbe;
+      animation: wave-back 1.4s infinite linear;
+    }
+    &_front {
+      left: 0;
+      fill: #32bafa;
+      margin-bottom: -1px;
+      animation: wave-front .7s infinite linear;
+    }
+  }
+}
+
+@keyframes wave-front {
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes wave-back {
+  100% {
+    transform: translate(50%, 0);
+  }
+}
