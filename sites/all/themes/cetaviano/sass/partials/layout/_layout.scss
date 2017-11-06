@@ -114,6 +114,14 @@ footer {
     }
 }
 
+.section-wide-egresados {
+    padding: $space-base $space-x-small; 
+
+     @include mquery("small") {
+        padding: $space-medium $space-x-small 15rem; 
+    }
+}
+
 .section-no-padding {
     padding: 0;
 }
@@ -144,6 +152,7 @@ footer {
 .slab-blue {
     background: $blue-dark;
     color: $white;
+    @include micro-clearfix;
 }
 
 .slab-cta {
@@ -214,4 +223,8 @@ footer {
     max-height: 350px;
     overflow: hidden;
     padding: 0;
+}
+
+.aling-center {
+    text-align: center;
 }
