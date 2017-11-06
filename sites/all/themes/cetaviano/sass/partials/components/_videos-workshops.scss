@@ -6,20 +6,19 @@
     margin: 2% 0;
 
     @include mquery(900px) {
-		margin: 2% 2.2%;
-	}
+        margin: 2% 2.2%;
+    }
 }
 
 .opacity-img-videos {
-	opacity: 0;
+    opacity: 0;
 }
 
 .vimeo-employability {
-	float: right;
-	text-align: center;
-	width: 100%  
+    text-align: center;
+    width: 100%  
 }
 
 .container-videos-employability {
-	position: relative;
+    position: relative;
 }
