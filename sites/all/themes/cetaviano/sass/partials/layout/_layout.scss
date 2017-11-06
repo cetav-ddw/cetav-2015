@@ -118,6 +118,14 @@ footer {
     padding: 0;
 }
 
+.section-no-padding-top {
+    padding: 0 0 $space-x-large 0;
+}
+
+.section-no-padding-bottom {
+    padding: $space-large 0 0 0;
+}
+
 .head-nav { // aqui para sobre escribir cascada
     overflow: visible;
 }
@@ -177,7 +185,8 @@ footer {
 }
 
 .grid-quotes,
-.grid-employers-list {
+.grid-employers-list,
+.grid-employers-videos {
     @include span-columns(12);
 
     @include mquery("small") {
@@ -213,5 +222,5 @@ footer {
 .panel-header {
     max-height: 350px;
     overflow: hidden;
-    padding: 0;
+    padding: 0 ;
 }
