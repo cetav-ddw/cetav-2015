@@ -14,7 +14,6 @@
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-
 }
 
 .panel-wide-home__courses {
@@ -35,8 +34,7 @@
     text-align: center;
        
     @include mquery("small") {
-        margin-left: $space-base;
-    
+        margin-left: $space-base;    
     }
 
     @include mquery("large") {
