@@ -14,7 +14,7 @@ $plugin = array(
     'left' => t('Left'),
     'right' => t('Right'),
     'wide_second' => t('Wide second'),
+    'wide_third' => t('Wide third'),
     'buttom' => t('Buttom'),
-
   ),
 );
