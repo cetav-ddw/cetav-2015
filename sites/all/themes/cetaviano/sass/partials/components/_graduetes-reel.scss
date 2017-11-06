@@ -1,11 +1,6 @@
 .graduetes-reel {
-    padding: $space-small 0;
-
-    @include mquery(700px) {          
-        img {
-            width: 50%;
-        }
-    }
+    margin: $space-small 0;
+    position: relative;
 }
 
 .graduetes-reel__img-left {
@@ -13,100 +8,38 @@
 
     @include mquery(700px) { 
         display: inline;
-        img {
-            float: left;
-        }
+        float: left;
+        width: 50%;
     }
-    
+
+    img {
+        display: block;
+    }
 }
 
 .graduetes-reel__img-right {
-    float: rignt;
+    width: 100%;
+
+    @include mquery(700px) { 
+        display: inline;
+        float: right;
+        width: 50%;
+    }
+
+    img {
+        display: block;
+    }
 }
 
 .graduetes-reel__title {
     @include mquery(700px) {          
         position: absolute;
-        width: 50%;
         padding: $space-base;
+        width: 50%;
     }
 
     @include mquery("medium") {          
-        width: 49%;
         padding: 4rem $space-small 0 $space-small;
+        width: 49%;
     }
 } 
-
-.video-modal {
-    width: 100%;
-    opacity: 0.0;
-    float: right;
-    position: absolute;
-    top: 39%;
-
-    img {
-        width: 100%;
-        height: 161px;
-    }
-
-    @include mquery(410px) {
-        top: 33%;
-        img {
-            height: 212px;
-        }
-    }
-
-    @include mquery(500px) {
-        top: 29%;
-        img {
-            height: 260px;
-        }
-    }
-
-    @include mquery("small") {
-        top: 16%;
-        img {
-            height: 317px;
-        }
-    }
-
-    @include mquery(700px) {
-        width: 50%;
-        top: 0%;
-        right: 0px;
-        img {
-            height: 185px;
-        }
-    }
-
-     @include mquery(800px) {
-        img {
-            height: 214px;
-        }
-    }
-
-     @include mquery("medium") {
-        img {
-            height: 250px;
-        }
-    }
-
-    @include mquery(950px) {
-        img {
-            height: 255px;
-        }
-    }
-
-    @include mquery(1000px) {
-        img {
-            height: 275px;
-        }
-    }
-
-    @include mquery(1050px) {
-        img {
-            height: 302px;
-        }
-    }
-
-}

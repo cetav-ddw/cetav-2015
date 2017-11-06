@@ -24,14 +24,12 @@
       </div>
     </div>
   </div>
-  <div class="section-wide">
-    <div class="grid-width">
-      <div class="panel-left-column layout-minor">
+  <div class="section-wide section-no-padding slab-blue">
+      <div class="layout-small">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-right-column layout-medium">
+      <div class="layout-x-large">
         <?php print $content['right']; ?>
       </div>
-    </div>
   </div>
 </div>

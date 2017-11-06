@@ -1,30 +1,17 @@
 .pane-views-exp-egresados-panel-pane-1 {
     .views-exposed-form {
-        background-color: $blue-dark;
         padding: 15px 30px;
     }
+
     .views-exposed-form .form-item {
         margin-bottom: 12px;
     }
+
     .views-exposed-widget {
-        margin-top: 20px;
-        padding-bottom: 20px !important;
 
         @include mquery("medium") {
-            @include span-columns(3);
-            width: 30%;
-        }
-
-        @include mquery("large") {
-            @include span-columns(4);
-            border-bottom: solid 1px $ligth-gray;
-            margin-right: 0;
-            padding-right: 0;
+            text-align: right;
             width: 100%;
-
-            &:nth-of-type(1n+3){
-               border: 0;
-            }
         }
 
         label {
@@ -34,35 +21,9 @@
     }
 }
 
-.profesional-info-container {
-    text-align: center;
-
-    @include mquery("medium") {
-        @include span-columns(4 of 8);
-        padding: 15px 0;
-        position: relative;
-        text-align: left;
-    }
-}
-
-.profile-info {
-    font-size: $text-small;
-    margin: 0 0 .25em;
-}
-
-.profile-prof {
-    margin-bottom: 1em;
-}
-
 .profile-name {
+    color: $blue-dark;
     font-size: $text-h4;
-    margin-bottom: .25em;
-    margin-top: 0;
-
-    a {
-        color: $blue-dark;
-        text-decoration: none;
-    }
 }
 
 .profile-image,
@@ -73,35 +34,35 @@
     }
 }
 
-.profile-image {
-    clear: both;
-    text-align: center;
+.graduetes-container {
+    @include micro-clearfix;
+}
 
-    @include mquery("medium") {
-        float: left;
-        margin-right: 20px;
+.graduetes-item {
+    display: inline-block;
+    list-style: none;
+    margin: 2em 0;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+
+    @include mquery(400px) {
+        width: 48.8211739883%;
     }
 
-    @include mquery("large") {
-        display: inline-block;
-        margin-right: 30px;
+    @include mquery("small") {
+        width: 31.7615653177%;
+    }
 
+    @include mquery(1250px) {
+        width: 23.2317609825%;
+    }
+
+    @include mquery(1450px) {
+        width: 18.9668588148%;
     }
 }
 
-.see-profile  {
-    margin: 35px 0;
-    text-align: center;
-
-    @include mquery('medium') {
-        float: right;
-        margin: 0;
-        padding-top: 33px;
-        text-align: right;
-    }
-
-    @include mquery('large') {
-        margin: 35px 0;
-        padding: 8px 14px;
-    }
+.view-egresados ul {
+    margin-bottom: 0;
 }
