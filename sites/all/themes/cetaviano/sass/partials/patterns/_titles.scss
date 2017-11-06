@@ -10,3 +10,35 @@
 .panel-dark-title {
     color: $orange;
 }
+
+.center-tittle-videos {
+    bottom: 0;
+    height: 148px;
+    margin-top: -74px;
+    padding:  0 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+
+    &::before {
+    	background: center no-repeat url(../img/play-video.png);
+        background-size: 80%;
+        content: "";
+    	display: block;
+        margin: 0 auto;
+        height: 100px;
+    	width: 100px;
+    }
+
+    h3,
+    h4 {
+    	text-align: center;
+        font-size: $text-base;
+    }
+
+    h3 {
+        @include mquery(900px) {
+            font-size: $text-h1;
+        }
+    }
+}
