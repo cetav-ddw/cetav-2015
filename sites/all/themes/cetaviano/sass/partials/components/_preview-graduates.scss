@@ -74,6 +74,14 @@
     margin-bottom: 0;
 }
 
+.views-widget-filter-field_carrera_tecnica_tid {
+    @include mquery("small") {
+        label:nth-child(1) {
+            display: none;
+        }
+    }
+}
+
 .form-item-field-carrera-tecnica-tid {
     @include mquery("small") {
         input {
@@ -90,7 +98,6 @@
 }
 
 .form-item-edit-field-carrera-tecnica-tid-1 {
-  
     @include mquery("small") {
         background-image: url(../img/animacion-cover.png);
         border: 10px solid rgba(51, 51, 51, 0.5);
@@ -130,7 +137,9 @@
 }
 
 .form-item-edit-field-carrera-tecnica-tid-1:hover {
-    border: 10px solid $ddw-color;
+    @include mquery("small") {
+        border: 10px solid $ddw-color;
+    }
 }
 
 
@@ -173,7 +182,9 @@
 } 
 
 .form-item-edit-field-carrera-tecnica-tid-2:hover {
-    border: 10px solid  $post-color;
+    @include mquery("small") {
+        border: 10px solid  $post-color;
+    }
 }
 
 
@@ -221,5 +232,17 @@
 }
 
 .form-item-edit-field-carrera-tecnica-tid-3:hover {
-    border: 10px solid $animation-color;
+    @include mquery("small") {
+        border: 10px solid $animation-color;
+    }
+}
+
+
+.section-wide-egresados {
+    padding: $space-base $space-x-small; 
+    text-align: center;
+
+     @include mquery("small") {
+        padding: $space-medium $space-x-small 15rem; 
+    }
 }
