@@ -1,28 +1,46 @@
-.sub-careers {
-
-}
-
 .new-careeer {
-    padding-right: $space-x-small;    
+    padding-right: 0;    
     
     @include mquery("small") {
         width: 75%;
     }
 
     @include mquery("medium") {
-         @include span-columns(8);
+        padding-right: $space-x-small;    
+        @include span-columns(8);
     }
 }
 
 .sub-career {
-	background-color: green;
+	background-position: center;
+    background-size: cover;
+    margin-top: $space-small;
+    padding-bottom: $space-base;
+    repeat: no-repeat;
 	text-align: center;
-	margin-top: $space-small;
-    width: 318px;
+    width: 268px; 
 
     @include mquery("medium") {
-        margin-top: 0;
         @include span-columns(4);
+        width: 318px;        
+    }
+
+    @include mquery(1018px) {
+        margin-top: 0;     
+    }
+
+    &:before {
+        content: "";
+        background-color: #333;
+        height: 100%;
+        left: 50%;
+        opacity: .5;
+        position: absolute;
+        top: 50%;
+        transition: opacity 0.5s ease;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 0;
     }
 }
 
@@ -31,8 +49,19 @@
     font-size: 1.6875em;
     font-weight: bold;
     font: bold  1.6875em $contrast-font;
+    margin-bottom: 40px;
     text-align: center;
     padding: 10px;
-    background-color: red;
-    margin-bottom: 40px;
+    position: relative;
+}
+
+.sub-career--commercial-image {
+    background-image: url("../img/animacion-cover.png");  
+    border: 8px solid $white;  
+    transition: all .5s ease;
+
+    &:hover {
+        background-image: url("../img/animacion-gif.gif");
+        border: 8px solid $commercial-imag-color;  
+    }
 }
