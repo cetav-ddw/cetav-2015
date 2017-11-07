@@ -30,8 +30,8 @@
     }
 
     &:before {
-        content: "";
         background-color: #333;
+        content: "";
         height: 100%;
         left: 50%;
         opacity: .5;
@@ -48,11 +48,11 @@
     color: $white;
     font-size: 1.6875em;
     font-weight: bold;
-    font: bold  1.6875em $contrast-font;
+    font: bold 1.6875em $contrast-font;
     margin-bottom: 40px;
-    text-align: center;
     padding: 10px;
     position: relative;
+    text-align: center;
 }
 
 .sub-career--commercial-image {
@@ -62,6 +62,6 @@
 
     &:hover {
         background-image: url("../img/animacion-gif.gif");
-        border: 8px solid $commercial-imag-color;  
+        border: 8px solid $commercial-image-color;  
     }
 }
