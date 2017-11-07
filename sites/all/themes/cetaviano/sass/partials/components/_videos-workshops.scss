@@ -1,0 +1,24 @@
+.margin-workshops-videos-first {
+    margin: 2% 0;
+}
+
+.margin-workshops-videos {
+    margin: 2% 0;
+
+    @include mquery(900px) {
+        margin: 2% 2.2%;
+    }
+}
+
+.opacity-img-videos {
+    opacity: 0;
+}
+
+.vimeo-employability {
+    text-align: center;
+    width: 100%  
+}
+
+.container-videos-employability {
+    position: relative;
+}

@@ -1,19 +1,16 @@
-.video-modal {
+.video-modal,
+.video-modal-employability {
+    bottom: 0;
     opacity: .2;
     position: absolute;
-    bottom: 0;
-    top: 0;
     right: 0;
+    top: 0;
     width: 100%;
 
-    @include mquery(700px) { 
-        width: 50%;
-    }
-
     a {
+        bottom: 0;
         display: block;
         position: absolute;
-        bottom: 0;
         top: 0;
         width: 100%;
     }
@@ -23,7 +20,13 @@
     }
 }
 
-.video-modal:hover {
-    background-color: rgba(128, 128, 128, .5);
-    opacity: .3;
+.video-modal {
+    @include mquery(700px) { 
+        width: 50%;
+    }
+    
+    &:hover {
+        background-color: rgba(128, 128, 128, .5);
+        opacity: .3;  
+    }
 }
