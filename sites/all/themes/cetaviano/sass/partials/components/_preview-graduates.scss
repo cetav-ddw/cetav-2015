@@ -8,6 +8,13 @@
     }
 
     .views-exposed-widget {
+        position: relative;
+
+        @include mquery(400px) {
+            @include span-columns(3);
+            margin: 0;
+            width: 50%;
+        }
 
         @include mquery("medium") {
             text-align: right;
@@ -65,4 +72,191 @@
 
 .view-egresados ul {
     margin-bottom: 0;
+}
+
+.views-widget-filter-field_carrera_tecnica_tid {
+    @include mquery("small") {
+        label:nth-child(1) {
+            display: none;
+        }
+    }
+}
+
+.form-item-field-carrera-tecnica-tid {
+    @include mquery("small") {
+        input {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            display: table-cell;
+            font-size: 0.8rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.form-item-edit-field-carrera-tecnica-tid-1 {
+    @include mquery("small") {
+        background-image: url(../img/animacion-cover.png);
+        border: 10px solid rgba(51, 51, 51, 0.5);
+        border-radius: 50%;
+        bottom: 100px;
+        display: table;
+        height: 130px;
+        left: -18%;
+        position: absolute;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 130px;
+        -webkit-transition: all 0.3s ease;
+    }
+
+    @include mquery("medium") {
+        bottom: 215px;
+        height: 150px;
+        left: 233%;
+        position: absolute;
+        width: 150px;
+    }
+
+    @include mquery("large") {
+        bottom: 250px;
+        height: 170px;
+        left: 228%;
+        position: absolute;
+        width: 170px;
+    }
+
+    @include mquery("x-large") {
+        left: 221%;
+        position: absolute;
+    }
+
+}
+
+.form-item-edit-field-carrera-tecnica-tid-1:hover {
+    @include mquery("small") {
+        border: 10px solid $ddw-color;
+    }
+}
+
+
+.form-item-edit-field-carrera-tecnica-tid-2 {
+    @include mquery("small") {
+        background-image: url(../img/animacion-cover.png);
+        border: 10px solid rgba(51, 51, 51, 0.5);
+        border-radius: 50%;
+        bottom: 100px;
+        display: table;
+        height: 130px;
+        left: 54%;
+        position: absolute;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 130px;
+        -webkit-transition: all 0.3s ease;  
+    }
+
+    @include mquery("medium") {
+        bottom: 215px;
+        height: 150px;
+        left: 408%;
+        position: absolute;
+        width: 150px;     
+    }
+
+    @include mquery("large") {
+        bottom: 250px;
+        height: 170px;
+        left: 387%; 
+        position: absolute;
+        width: 170px;  
+    }
+
+    @include mquery("x-large") {
+        left: 344%;
+        position: absolute;
+    }
+} 
+
+.form-item-edit-field-carrera-tecnica-tid-2:hover {
+    @include mquery("small") {
+        border: 10px solid  $post-color;
+    }
+}
+
+
+.form-item-edit-field-carrera-tecnica-tid-3 {
+    @include mquery("small") {
+        background-color: #243842;
+        border: 10px solid rgba(51, 51, 51, 0.5);
+        border-radius: 50%;
+        bottom: 100px;
+        display: table;
+        height: 130px;
+        left: -93%;
+        position: absolute;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 130px;
+        -webkit-transition: all 0.3s ease;
+    }
+
+    @include mquery("medium") {
+        bottom: 215px;
+        left: 59%;
+        height: 150px;
+        position: absolute;
+        width: 150px;
+    }
+
+    @include mquery("large") {
+        bottom: 250px;
+        left: 68%;
+        height: 170px;
+        position: absolute;
+        width: 170px;
+    }
+
+    @include mquery("x-large") {
+        left: 82%;
+        position: absolute;
+    }
+
+    @include mquery("x-large") {
+        left: 94%;
+        position: absolute;
+    }
+}
+
+.form-item-edit-field-carrera-tecnica-tid-3:hover {
+    @include mquery("small") {
+        border: 10px solid $animation-color;
+        background-color: #ec9e44;
+    }
+}
+
+
+.section-wide-egresados {
+    padding: $space-base $space-x-small; 
+    text-align: center;
+
+    @include mquery("small") {
+        padding: $space-medium $space-x-small 15rem; 
+    }
+}
+
+
+.career-web__filter__clicked {
+    border: 10px solid $ddw-color;
+}
+
+.career-3d__filter__clicked {
+    border: 10px solid $animation-color;
+}
+
+.career-post__filter__clicked {
+    border: 10px solid $post-color;
 }

@@ -22,9 +22,19 @@
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
-    <div class="section-wide">
+    <div class="section-wide-egresados">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
+      </div>
+    </div>
+  <?php endif ?>
+  <?php if ($content['left'] && $content['right']): ?>
+    <div class="section-no-padding graduetes-container slab-blue">
+      <div class="layout-small">
+        <?php print $content['left']; ?>
+      </div>
+      <div class="layout-x-large">
+        <?php print $content['right']; ?>
       </div>
     </div>
   <?php endif ?>
@@ -42,4 +52,5 @@
       </div>
     </div>
   <?php endif ?>
+  <script src="<?= drupal_get_path("theme", "cetaviano") . "/js/graduates.min.js"?>"></script>
 </div>
