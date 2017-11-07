@@ -190,7 +190,7 @@
 
 .form-item-edit-field-carrera-tecnica-tid-3 {
     @include mquery("small") {
-        background-image: url(../img/animacion-cover.png);
+        background-color: #243842;
         border: 10px solid rgba(51, 51, 51, 0.5);
         border-radius: 50%;
         bottom: 100px;
@@ -234,6 +234,7 @@
 .form-item-edit-field-carrera-tecnica-tid-3:hover {
     @include mquery("small") {
         border: 10px solid $animation-color;
+        background-color: #ec9e44;
     }
 }
 
@@ -242,7 +243,20 @@
     padding: $space-base $space-x-small; 
     text-align: center;
 
-     @include mquery("small") {
+    @include mquery("small") {
         padding: $space-medium $space-x-small 15rem; 
     }
+}
+
+
+.career-web__filter__clicked {
+    border: 10px solid $ddw-color;
+}
+
+.career-3d__filter__clicked {
+    border: 10px solid $animation-color;
+}
+
+.career-post__filter__clicked {
+    border: 10px solid $post-color;
 }
