@@ -6,6 +6,7 @@
  * This template provides a carreras for CETAV panel display layout.
  */
 ?>
+<div id="initGraph"></div>
 <div class="panel-display">
   <?php if ($content['top']): ?>
     <div class="section-wide">

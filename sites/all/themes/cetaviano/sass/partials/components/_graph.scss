@@ -31,21 +31,20 @@
     @include span-columns(6);
     margin-bottom: $space-x-large;    
   }
-
 }
 
 .graph-svg {
-    background: #1e384c;
-    border-radius: 50%;
-    height: 250px;
-    left: 50%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    transform: translateX(-50%);
-    width: 250px;
+  background: #1e384c;
+  border-radius: 50%;
+  height: 250px;
+  left: 50%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translateX(-50%);
+  width: 250px;
     
-    @include mquery("large") {
+  @include mquery("large") {
     height: 300px;
     width: 300px;
   }
@@ -64,6 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__inner {
     display: inline-block;
     font-size: 3rem;
