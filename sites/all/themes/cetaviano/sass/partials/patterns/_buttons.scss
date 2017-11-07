@@ -162,7 +162,7 @@ button,
     }
 }
 
-.btn-anuary {
+.btn-anuary a {
     @include btn($orange, $white, $white, $orange);
     border: 2px solid $orange;
     border-radius: 10px;
