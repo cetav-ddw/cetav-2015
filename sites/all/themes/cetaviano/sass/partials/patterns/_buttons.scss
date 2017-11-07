@@ -160,3 +160,12 @@ button,
         }
     }
 }
+
+.btn-anuary {
+    @include btn($orange, $white, $white, $orange);
+    border: 2px solid $orange;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: $space-x-small;
+    padding: .3em 1.5em;
+}
