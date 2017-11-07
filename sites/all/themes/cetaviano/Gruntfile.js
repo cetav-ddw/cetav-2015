@@ -99,7 +99,7 @@ module.exports = function (grunt) {
               beautify: true
             },
             files: {
-              'js/script.min.js': ['src-js/script.js']
+              'js/script.min.js': ['src-js/script.js', 'src-js/graph.js']
             }
           },
           prod: {
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
               compress: {}
             },
             files: {
-              'js/script.min.js': ['src-js/script.js']
+              'js/script.min.js': ['src-js/script.js', 'src-js/graph.js']
             }
           }
         }

@@ -12,7 +12,6 @@ function cetaviano_preprocess_page(&$variables) {
 
   // Livereload - Disable this on production
   drupal_add_js('//localhost:35729/livereload.js', array('type' => 'external', 'scope' => 'footer'));
-
 }
 
 /**
