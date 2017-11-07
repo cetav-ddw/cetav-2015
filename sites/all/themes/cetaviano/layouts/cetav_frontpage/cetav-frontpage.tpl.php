@@ -31,10 +31,10 @@
   <?php endif ?>
   <div class="section-wide">
     <div class="grid-width">
-      <div>
+      <div class="sub-careers__title">
         <?php print $content['left_second']; ?>
       </div>
-      <div>
+      <div class="">
         <?php print $content['right_second']; ?>
       </div>
     </div>
