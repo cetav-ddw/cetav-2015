@@ -1,4 +1,4 @@
-.new-careeer {
+.sub-careers__title {
     padding-right: 0;    
     
     @include mquery("small") {
@@ -11,12 +11,12 @@
     }
 }
 
-.sub-career {
+.sub-careers__cta {
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-top: $space-small;
     padding-bottom: $space-base;
-    background-repeat: no-repeat;
     text-align: center;
     width: 268px; 
 
@@ -44,7 +44,7 @@
     }
 }
 
-.sub-career__title {
+.sub-careers__cta__title {
     color: $white;
     font-size: 1.6875em;
     font-weight: bold;
@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-.sub-career--commercial-image {
+.sub-careers__cta--commercial-image {
     background-image: url("../img/animacion-cover.png");  
     border: 8px solid $white;  
     transition: all .5s ease;
