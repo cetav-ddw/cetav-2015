@@ -24,7 +24,6 @@
       <?php print $content['right']; ?>
     </div>
     </div>
-    <script src="<?=drupal_get_path('theme', 'cetaviano') . '/js/graph.min.js'?>"></script>
   <?php endif ?> 
 
   <?php if ($content['wide_first']): ?>

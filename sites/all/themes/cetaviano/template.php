@@ -13,6 +13,10 @@ function cetaviano_preprocess_page(&$variables) {
   // Livereload - Disable this on production
   drupal_add_js('//localhost:35729/livereload.js', array('type' => 'external', 'scope' => 'footer'));
 
+  if (arg(0) == 'empleabilidad') {
+    drupal_add_js(drupal_get_path('theme', 'cetaviano') . '/js/graph.min.js', array('scope' => 'footer'));
+    $vars['scripts'] = drupal_get_js();
+  }
 }
 
 /**

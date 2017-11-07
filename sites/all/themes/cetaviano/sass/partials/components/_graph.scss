@@ -27,7 +27,6 @@
 }
 
 .graph-layout {  
-  
   @include mquery("small") {
     @include span-columns(6);
     margin-bottom: $space-x-large;    
