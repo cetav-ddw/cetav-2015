@@ -8,27 +8,48 @@
 }
 
 .graph-img {
+  height: 250px;
+  position: relative;
   text-align: center;
+
+  @include mquery("large") {
+    height: 300px;
+  }
 }
 
 .graph-title {
+  margin: 1rem 0 3rem;
   text-align: center;
+
+  @include mquery("large") {
+    margin: 1rem 0;    
+  }
 }
 
-.graph-layout {
-  position: relative;
+.graph-layout {  
+  
+  @include mquery("small") {
+    @include span-columns(6);
+    margin-bottom: $space-x-large;    
+  }
+
 }
 
 .graph-svg {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #1e384c;
-  border-radius: 50%;
-  overflow: hidden;
+    background: #1e384c;
+    border-radius: 50%;
+    height: 250px;
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    transform: translateX(-50%);
+    width: 250px;
+    
+    @include mquery("large") {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .percent {
@@ -46,6 +67,7 @@
   justify-content: center;
   &__inner {
     display: inline-block;
+    font-size: 3rem;
   }
   &__num {
     display: inline-block;
@@ -81,13 +103,13 @@
     &_back {
       right: 0;
       fill: #2c7fbe;
-      animation: wave-back 1.4s infinite linear;
+      animation: wave-back 1.7s infinite linear;
     }
     &_front {
       left: 0;
       fill: #32bafa;
       margin-bottom: -1px;
-      animation: wave-front .7s infinite linear;
+      animation: wave-front 1s infinite linear;
     }
   }
 }
