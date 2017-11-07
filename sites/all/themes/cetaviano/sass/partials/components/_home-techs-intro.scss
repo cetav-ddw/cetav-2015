@@ -6,6 +6,16 @@
     width: 100%;
 }
 
+.view-carreras-home .view-content {
+    text-align: center;
+}
+
+.view-carreras-home .views-row {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
 .panel-wide-home__courses {
     padding-left: 0;
     padding-right: 0;
@@ -16,16 +26,15 @@
 }
 
 .container-card {
-    display: inline;
-    float: left;
+    display: inline-block;
     font-family: $default-font;
     margin-top: 15px;
     margin-left: 0;
     position: relative;
     text-align: center;
-
+       
     @include mquery("small") {
-        margin-left: $space-base;
+        margin-left: $space-base;    
     }
 
     @include mquery("large") {
@@ -59,10 +68,15 @@
     border: 10px solid rgba(51, 51, 51, 0.5); 
     border-radius: 50%;
     display: block;
-    height: 318px;
+    height: 286px;
     padding: 20px 15px;
     transition: all 0.3s ease;
-    width: 318px;
+    width: 286px;
+
+    @include mquery("medium") {
+        height: 318px;
+        width: 318px; 
+    }
 }
 
 .container-title-course {
@@ -78,7 +92,6 @@
     margin-top: 0;
     margin-bottom: 40px;
     padding: 0 5%;
-    text-align: center;
 }
 
 .container-title-course a {

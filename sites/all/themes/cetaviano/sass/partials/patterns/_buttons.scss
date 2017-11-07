@@ -153,10 +153,20 @@ button,
     a {
         @include btn($gray-lighter, $black, $orange, $white);
         border: none;
+        font-size: .8em;
 
         &:hover {
             border: none;
             font-weight: 300;
         }
     }
+}
+
+.btn-anuary {
+    @include btn($orange, $white, $white, $orange);
+    border: 2px solid $orange;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: $space-x-small;
+    padding: .3em 1.5em;
 }
