@@ -29,7 +29,7 @@
     </div>
   <?php endif ?>
   <?php if ($content['left'] && $content['right']): ?>
-    <div class="section-no-padding slab-blue">
+    <div class="section-no-padding graduetes-container slab-blue">
       <div class="layout-small">
         <?php print $content['left']; ?>
       </div>
