@@ -175,3 +175,22 @@ button,
     margin-top: $space-x-small;
     padding: .3em 1.5em;
 }
+
+.btn--sub-careers {    
+    border-radius: 3px;
+    color: $white;
+    font-weight: regular;
+    margin: 0 auto;
+    padding: 15px 22px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn--commercial-image {
+    background-color: $commercial-image-color;
+    position: relative;
+}
