@@ -12,13 +12,16 @@
 }
 
 .sub-careers__cta {
+    background-image: url("../img/animacion-cover.png");  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 8px solid $white;  
     margin-top: $space-small;
     padding-bottom: $space-base;
     position: relative;
     text-align: center;
+    transition: all .5s ease;
     width: 268px; 
 
     @include mquery("medium") {
@@ -43,25 +46,19 @@
         width: 100%;
         z-index: 0;
     }
-}
-
-.sub-careers__cta__title {
-    color: $white;
-    font-weight: bold;
-    font: bold 1.6875em $contrast-font;
-    margin-bottom: 40px;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-}
-
-.sub-careers__cta--commercial-image {
-    background-image: url("../img/animacion-cover.png");  
-    border: 8px solid $white;  
-    transition: all .5s ease;
-
+    
     &:hover {
         background-image: url("../img/animacion-gif.gif");
         border: 8px solid $commercial-image-color;  
     }
+}
+
+.sub-careers__cta-title {
+    color: $white;
+    font-weight: bold;
+    font: bold 1.5625em $contrast-font;
+    margin-bottom: 40px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
 }
