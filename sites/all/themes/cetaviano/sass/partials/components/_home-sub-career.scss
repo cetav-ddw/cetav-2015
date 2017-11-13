@@ -6,8 +6,8 @@
     }
 
     @include mquery("medium") {
-        padding-right: $space-x-small;    
         @include span-columns(8);
+        padding-right: $space-x-small;    
     }
 }
 
@@ -47,7 +47,6 @@
 
 .sub-careers__cta__title {
     color: $white;
-    font-size: 1.6875em;
     font-weight: bold;
     font: bold 1.6875em $contrast-font;
     margin-bottom: 40px;
