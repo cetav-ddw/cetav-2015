@@ -91,56 +91,61 @@
 
         label {
             cursor: pointer;
-            font-size: 0.8rem;
-        }
-    }
-}
-
-.form-item-edit-field-carrera-tecnica-tid-1 {
-
-    label {
-        @include mquery("small") {
-            background-image: url(../img/web-cover-filter.png);
             background-size: 150%;
             border-radius: 50%;
             bottom: 100px;
             display: flex;
             flex-direction: column;
+            font-size: .8rem;
             height: 130px;
             justify-content: center;
-            left: -18%;
             padding: 10px;
             position: absolute;
             text-align: center;
             transition: all 0.3s ease;
             width: 130px;
         }
+    }
 
-        @include mquery("medium") {
+    @include mquery("medium") {
+        label {
             bottom: 215px;
             height: 150px;
-            left: 233%;
-            position: absolute;
             width: 150px;
+        }
+    }
+
+    @include mquery("large") {
+        label {
+            bottom: 250px;
+            height: 170px;
+            width: 170px;
+        }
+    }
+}
+
+.form-item-edit-field-carrera-tecnica-tid-1 {
+    label {
+        @include mquery("small") {
+            background-image: url(../img/web-cover-filter.png);
+            left: -18%;
+        }
+
+        @include mquery("medium") {
+            left: 233%;
         }
 
         @include mquery("large") {
-            bottom: 250px;
-            height: 170px;
             left: 228%;
-            position: absolute;
-            width: 170px;
         }
 
         @include mquery("x-large") {
             left: 221%;
-            position: absolute;
         }
     }
 }
 
 .form-item-edit-field-carrera-tecnica-tid-1:hover {
-
     label {
         @include mquery("small") {
             border: 10px solid $ddw-color;
@@ -157,40 +162,19 @@
     label {
         @include mquery("small") {
             background-image: url(../img/post-cover-filter.png);
-            background-size: 150%;
-            border-radius: 50%;
-            bottom: 100px;
-            display: flex;
-            flex-direction: column;
-            height: 130px;
-            justify-content: center;
             left: 54%;
-            padding: 10px;
-            position: absolute;
-            text-align: center;
-            transition: all 0.3s ease;
-            width: 130px;
         }
 
         @include mquery("medium") {
-            bottom: 215px;
-            height: 150px;
-            left: 408%;
-            position: absolute;
-            width: 150px;     
+            left: 408%;    
         }
 
         @include mquery("large") {
-            bottom: 250px;
-            height: 170px;
-            left: 387%; 
-            position: absolute;
-            width: 170px;  
+            left: 387%;  
         }
 
         @include mquery("x-large") {
             left: 344%;
-            position: absolute;
         }
     }
 } 
@@ -212,45 +196,23 @@
     label {
         @include mquery("small") {
             background-image: url(../img/animacion-cover-filter.png);
-            background-size: 150%;
-            border-radius: 50%;
-            bottom: 100px;
-            display: flex;
-            flex-direction: column;
-            height: 130px;
-            justify-content: center;
             left: -93%;
-            padding: 10px;
-            position: absolute;
-            text-align: center;
-            transition: all 0.3s ease;
-            width: 130px;
         }
 
         @include mquery("medium") {
-            bottom: 215px;
             left: 59%;
-            height: 150px;
-            position: absolute;
-            width: 150px;
         }
 
         @include mquery("large") {
-            bottom: 250px;
             left: 68%;
-            height: 170px;
-            position: absolute;
-            width: 170px;
         }
 
         @include mquery("x-large") {
             left: 82%;
-            position: absolute;
         }
 
         @include mquery("x-large") {
             left: 94%;
-            position: absolute;
         }
     }
 }
