@@ -1,32 +1,123 @@
 button,
-.btn {
+.btn a {
     @include btn;
 }
 
-// Buttons Careers
-.animacion-3d .btn-admision a,
-.animacion-3d .btn-cta,
-.animacion-3d .btn-download {
-    @include btn($white, $animation-color, $animation-color);
+// Buttons Sizes
+.btn--large a {
+    @include btn--large;
 }
 
-.diseno-desarrollo-web .btn-admision a,
-.diseno-desarrollo-web .btn-cta,
-.diseno-desarrollo-web .btn-download {
-    @include btn($white, $ddw-color, $ddw-color);
+.btn--small a {
+  @include btn--small;
 }
 
-.post-produccion .btn-admision a,
-.post-produccion .btn-cta,
-.post-produccion .btn-download {
-    @include btn($white, $post-color, $post-color);
+// Buttons Styles
+.btn--default a {
+    background-color: transparent;
+    border: 2px solid $black;
+    color: $black;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
 }
 
-.btn-admision a,
+.btn--default-inverse a {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+.btn--secondary a {
+    background-color: transparent;
+    border: 2px solid $orange;
+    color: $orange;
+
+    &:hover {
+        background-color: $orange;
+        color: $white;
+    }
+}
+
+.btn--secondary-inverse a {
+    background-color: $orange;
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $orange;
+
+    }
+}
+
+.animacion-3d .btn--career a {
+    background-color: $white;
+    border: 2px solid $animation-color;
+    color: $animation-color;
+
+    &:hover {
+        background-color: $animation-color;
+        border: 2px solid $animation-color;
+        color: $white;
+    }
+}
+
+.diseno-desarrollo-web .btn--career a {
+    background-color: $white;
+    border: 2px solid $ddw-color;
+    color: $ddw-color;
+
+    &:hover {
+        background-color: $ddw-color;
+        border: 2px solid $ddw-color;
+        color: $white;
+    }
+}
+
+.post-produccion .btn--career a {
+  background-color: $white;
+  border: 2px solid $post-color;
+  color: $post-color;
+  &:hover {
+    background-color: $post-color;
+    border: 2px solid $post-color;
+    color: $white;
+  }
+}
+
+// .animacion-3d .btn-admision a,
+// .animacion-3d .btn-cta,
+// .animacion-3d .btn-download {
+//     @include btn($white, $animation-color, $animation-color);
+// }
+
+// .diseno-desarrollo-web .btn-admision a,
+// .diseno-desarrollo-web .btn-cta,
+// .diseno-desarrollo-web .btn-download {
+//     @include btn($white, $ddw-color, $ddw-color);
+// }
+
+// .post-produccion .btn-admision a,
+// .post-produccion .btn-cta,
+// .post-produccion .btn-download {
+//     @include btn($white, $post-color, $post-color);
+// }
+
+
+// Borrar
+// Agregar estos estilos de otra manera
+.btn-admision,
 .btn-download {
-    display: block !important;
-    margin: 30px auto 0;
-    max-width: 230px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .btn-cta {
@@ -84,7 +175,7 @@ button,
         text-align: center;
     }
     .form-submit {
-        @include btn-orange;
+        //@include btn--small(transparent, $orange, $orange, $white, $orange);    
     }
 }
 
@@ -135,11 +226,11 @@ button,
     }
 }
 
-.btn--small a {
-    @include btn--small(transparent, $orange, $orange, $white, $orange);
-    margin-top: $space-x-small;
+.btn--news a {
+    margin-top: $space-x-small; //agregarlo de diferente manera
 }
 
+//.news-categories y .btn
 .btn-categories {
     text-align: center;
 
@@ -148,8 +239,9 @@ button,
     }
     
     a {
-        @include btn($gray-lighter, $black, $orange, $white);
-        border: none;
+        //@include btn($gray-lighter, $black, $orange, $white);
+        //@include btn(transparent, $orange, $orange, $white, $orange);
+        //border: none;
         font-size: .8em;
 
         &:hover {
@@ -158,7 +250,17 @@ button,
     }
 }
 
-.btn--inverse a {
-    @include btn($orange, $white, $white, $orange, $orange);
+.btn--anuary a {
+    //@include btn($orange, $white, $white, $orange, $orange);
     margin-top: $space-x-small;
 }
+
+/*
+*   Botones:
+*       .btn: blanco y negro
+*       .btn--inverse: negro y blanco
+*       .btn--secondary: blanco naranja 
+*       .btn--secondary-inverse: naranja y blanco
+*       .btn-careers; ddw, animation, post-produccion
+*       .btn--sizes: large, small
+*/

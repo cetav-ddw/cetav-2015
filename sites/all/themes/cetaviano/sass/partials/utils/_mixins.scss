@@ -53,11 +53,8 @@
 // Mixins for common color combinations.
 
 // Btn default
-  @mixin btn($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white, $bdcolor: $black) {
-    background-color: $bgcolor;
-    border: 2px solid $bdcolor;
+  @mixin btn {
     border-radius: 4px;
-    color: $textcolor;
     cursor: pointer;
     display: inline-block;
     font-size: $text-base;
@@ -66,46 +63,52 @@
     text-decoration: none;
     transition: background-color .3s;
     vertical-align: middle;
-    
-    &:hover {
-        background-color: $hovercolor;
-        color: $hovertext;
-        text-decoration: none;
-    }
 }
 
-@mixin btn--small($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white, $bdcolor: $black) {
-    background-color: $bgcolor;
-    border: 2px solid $bdcolor;
-    border-radius: 10px;
-    color: $textcolor;
+@mixin btn--small {
+    border-radius: 4px;
     cursor: pointer;
     display: inline-block;
     font-size: $text-base;
     overflow: hidden;
-    padding: 0 1em;
+    padding: 2px 16px;
     text-decoration: none;
     transition: background-color .3s;
     vertical-align: middle;
-
-    &:hover {
-      background-color: $hovercolor;
-      color: $hovertext;
-      text-decoration: none;
-    }
-
 }
 
+@mixin btn--large {
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $text-base;
+  overflow: hidden;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: background-color .3s;
+  vertical-align: middle;
+}
+
+/*
+*   En los siguientes botones cambiar las propiedades: 
+*   $bgcolor,
+*   $textcolor,
+*   $hovercolor,
+*   $hovertext,
+*   $bdcolor
+
+*/
 @mixin btn-blue {
-    @include btn($white, $light-blue, $light-blue);
+    //@include btn($white, $light-blue, $light-blue);
 }
 
 @mixin btn-orange {
-    @include btn($white, $orange, $orange);
+    //@include btn($white, $orange, $orange);
 }
 
+// Se cambia a btn--default-inverse
 @mixin btn-transparent {
-    @include btn(transparent, $white, $white, $black);
+    //@include btn(transparent, $white, $white, $black);
     border-color: $white;
 }
 

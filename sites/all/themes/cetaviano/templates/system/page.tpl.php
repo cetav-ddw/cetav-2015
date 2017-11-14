@@ -132,7 +132,9 @@
       <div class="contact-info">
         <h4 class="foot-h">¿Cómo llegar?</h4>
         <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
-        <a href="http://parquelalibertad.org/#arrive" class="btn-direction" target="_blank">Ve cómo llegar</a>
+        <div class="btn--small btn--default-inverse" >
+          <a href="http://parquelalibertad.org/#arrive" target="_blank">Ve cómo llegar</a>
+        </div>
       </div>
       <div class="contact-info">
         <h4 class="foot-h">Contacto</h4>
