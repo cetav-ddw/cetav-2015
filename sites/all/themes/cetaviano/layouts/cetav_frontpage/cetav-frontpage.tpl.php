@@ -29,17 +29,20 @@
       </div>      
     </div>
   <?php endif ?>
-  <?php if ($content['wide_third']): ?>
-    <div class="section-wide">
-      <div class="grid-width">
-        <?php print $content['wide_third']; ?>
+  <div class="section-wide">
+    <div class="grid-width">
+      <div class="sub-careers__title">
+        <?php print $content['left_second']; ?>
+      </div>
+      <div class="sub-careers__cta">
+        <?php print $content['right_second']; ?>
       </div>
     </div>
-  <?php endif ?>
-  <?php if ($content['wide_fourth']): ?>
+  </div>
+  <?php if ($content['wide_third']): ?>
     <div class="section-wide slab-gray">
       <div class="grid-width">
-        <?php print $content['wide_fourth']; ?>
+        <?php print $content['wide_third']; ?>
       </div>
     </div>
   <?php endif ?>
