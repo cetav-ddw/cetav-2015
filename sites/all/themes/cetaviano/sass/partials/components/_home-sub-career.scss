@@ -12,10 +12,7 @@
 }
 
 .sub-careers__cta {
-    background-image: url("../img/animacion-cover.png");  
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("../img/animacion-cover.png") no-repeat center / cover;
     border: 8px solid $white;  
     margin-top: $space-small;
     padding-bottom: $space-base;

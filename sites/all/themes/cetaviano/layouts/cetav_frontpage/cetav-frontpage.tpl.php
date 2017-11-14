@@ -34,7 +34,7 @@
       <div class="sub-careers__title">
         <?php print $content['left_second']; ?>
       </div>
-      <div class="sub-careers__cta sub-careers__cta--commercial-image">
+      <div class="sub-careers__cta">
         <?php print $content['right_second']; ?>
       </div>
     </div>
