@@ -22,7 +22,7 @@
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
-    <div class="section-wide">
+    <div class="section-wide-egresados">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
       </div>
