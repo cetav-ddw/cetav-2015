@@ -235,7 +235,7 @@
     text-align: center;
 
     @include mquery("small") {
-        padding: $space-medium $space-x-small 15rem; 
+        padding: $space-medium $space-x-small 20rem; 
     }
 }
 
