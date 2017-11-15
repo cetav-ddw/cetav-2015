@@ -14,7 +14,7 @@
     <?php if ($page['navigation']): ?>
       <div class="grid-width grid-full-limit">
         <div class="menu-collapse">
-          <a id ="menu-toggle" href="#foot-nav" class="menu-toggle">
+          <a id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
               <div class="menu-toggle-two"></div>
               <div class="menu-toggle-three"></div>
@@ -106,7 +106,7 @@
 <footer class="footer" id="foot-nav" role="contentinfo">
   <div class="footer-content">
     <div class="footer grid-width">
-    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Back to top</a>
+    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Volver al inicio</a>
     <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
       <div class="contact-info">
       <h4 class="foot-h">Conozca m&aacute;s</h4>
