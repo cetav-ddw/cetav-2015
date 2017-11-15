@@ -1,50 +1,75 @@
 nav[role="navigation"] {
-    display: none;
+    // display: none;
+    padding: 3em $space-x-small 0;
 
-    @include mquery("medium") {
-        display: block;
+    @include mquery ("medium") {
+        padding: 0;
     }
 
     li {
         color: $white;
-        font-size: .75em;
-        display: inline;
-        float: left;
+        font-size: 1em;
         margin: 0 5px;
         position: relative;
 
         @include mquery(62.5em) {
             font-size: .875em;
         }
-
-        @include mquery("x-large") {
+    
+        @include mquery("medium") {
             margin: 0 10px;
         }
+
+        @include mquery("x-large") {
+            margin: 0 20px;
+        }
     }
+
     a,
     .nolink {
         display: block;
-        float: left;
-        padding: 10px;
-
-        &:hover {
-            text-decoration: none;
-        }
+        padding: 10px 0;
+        text-decoration: none;
     }
+
     .menu {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        @include mquery ("medium") {
+            flex-direction: row;
+            margin: 0;
+        }
 
         a {
             border-bottom: 3px solid $orange;
             color: $white;
+            position: relative;
 
             &:hover {
                 border-color: $white;
                 font-weight: bold;
             }
         }
+        
+        a::before {
+            content: '';
+            border-bottom: 3px solid $orange;
+            bottom: -3px;
+            position: absolute;
+            right: 0;
+            width: 50%;
+
+            @include mquery("small") {
+                width: 70%;
+            }
+
+            @include mquery("medium") {
+                width: 0;
+            }
+        }
+
         .active-trail {
             border-color: $white;
             font-weight: bold;
@@ -57,37 +82,43 @@ nav[role="navigation"] {
         &:hover {
             font-weight: bold;
         }
-        a {
-            width: 100%;
-            
-            &:hover {
-                border-color: transparent;
-            }
+
+        a:hover {
+            border-color: transparent;
         }
+
         li {
-            border-bottom: 1px solid $white;
             display: block;
             float: none;
             font-size: $text-small;
             font-weight: normal;
-            margin: 0;
-            overflow: hidden;
+            margin: 0 1rem;
+            
+            @include mquery("medium") {
+                border-bottom: 1px solid $white;
+            }
 
             &:last-child {
                 border: 0;
             }
         }
+
         .menu {
-            background: $orange;
-            display: none;
-            left: -30px;
-            position: absolute;
-            text-align: left;
-            top: 43px;
-            width: 300px;
-            z-index: 10;
+            margin: 0;
+
+            @include mquery ("medium") {
+                background: $orange;
+                display: none;
+                left: -30px;
+                position: absolute;
+                text-align: left;
+                top: 43px;
+                width: 300px;
+                z-index: 10;
+            }
         }
     }
+    
     .expanded:hover {
         .menu {
             display: block;
@@ -194,7 +225,7 @@ nav[role="navigation"] {
 .menu-toggle-one,
 .menu-toggle-two,
 .menu-toggle-three {
-    background: $main-color;
+    background: $white;
     backface-visibility: hidden;
     border-radius: 2px;
     height: 3px;
