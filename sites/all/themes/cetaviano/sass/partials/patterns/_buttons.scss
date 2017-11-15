@@ -1,3 +1,23 @@
+/*
+*   Botones:
+*       .btn: blanco y negro
+*       .btn--inverse: negro y blanco
+*       .btn--secondary: blanco naranja 
+*       .btn--secondary-inverse: naranja y blanco
+*       .btn-careers; ddw, animation, post-produccion
+*       .btn--sizes: large, small
+*
+*   Detalles:
+*       1. .btn y sus modificadores de tamaño dan estilos base de botón además de un padding, sin color ni borde definido.
+*       2. Los modificadores de estilo dan color de letra, borde y background.
+*       3. Hay un .btn-career que cambia dependiendo de la página en la que se encuentre(animación, ddw, post).
+*
+*   Dudas:
+*       1. Los modificadores de tamaño repiden código, deberían más bien de sobreescribir paddings?(que es lo único que cambia detro de modificadores).       
+*       2. Los demás estilos que no afectan ni paddings ni estilos del botón deberían de ser específicos a la sección?.
+*       
+*/
+
 button,
 .btn a {
     @include btn;
@@ -111,7 +131,6 @@ button,
 //     @include btn($white, $post-color, $post-color);
 // }
 
-
 // Borrar
 // Agregar estos estilos de otra manera
 .btn-admision,
@@ -125,11 +144,11 @@ button,
     padding: 15px 30px !important;
 }
 
-.btn-direction {
-    @include btn-transparent;
-    font-size: $text-small;
-    margin-right: 5px;
-}
+// .btn-direction {
+//     @include btn-transparent;
+//     font-size: $text-small;
+//     margin-right: 5px;  
+// }
 
 .btn-download {
     position: relative;
@@ -255,17 +274,8 @@ button,
     margin-top: $space-x-small;
 }
 
-/*
-*   Botones:
-*       .btn: blanco y negro
-*       .btn--inverse: negro y blanco
-*       .btn--secondary: blanco naranja 
-*       .btn--secondary-inverse: naranja y blanco
-*       .btn-careers; ddw, animation, post-produccion
-*       .btn--sizes: large, small
-*/
 
-// This buttons need work too
+// This buttons needs work too
 .btn--sub-careers {    
     border-radius: 3px;
     color: $white;
