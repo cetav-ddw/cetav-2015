@@ -46,7 +46,7 @@
     </div>
   <?php endif ?>
    <?php if ($content['bottom']): ?>
-    <div class="section-wide">
+    <div class="section-wide slab-gray">
       <div class="grid-width">
         <?php print $content['bottom']; ?>
       </div>
