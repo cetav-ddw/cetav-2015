@@ -4,13 +4,14 @@
     top: -40px;
 }
 
-.action-top:after {
+.action-top:before {
     content: "";
-    background: center no-repeat url(../img/back-to-top.png);
-    background-size: contain;
+    background: center no-repeat url(/cetav-2015/sites/all/themes/cetaviano/img/back-to-top.png);
+    background-size: 31%;
     display: inline-block;
-    height: 30px;
-    width: 60px;
+    margin-right: -7px;
+    height: 17px;
+    width: 46px;
 }
 
 .foot-menu {
