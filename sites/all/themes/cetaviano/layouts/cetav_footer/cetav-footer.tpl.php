@@ -9,7 +9,7 @@
 <footer class="footer" id="foot-nav" role="contentinfo">
   <div class="footer-content">
     <div class="footer grid-width">
-    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">volver arriba</a>
+    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">subir</a>
       <?php if ($content['wide_first']): ?>
         <div class="contact-info">
             <?php print $content['wide_first']; ?>
