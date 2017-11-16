@@ -1,30 +1,10 @@
-/*
-*   Botones:
-*       .btn: blanco y negro
-*       .btn--inverse: negro y blanco
-*       .btn--secondary: blanco naranja 
-*       .btn--secondary-inverse: naranja y blanco
-*       .btn-careers; ddw, animation, post-produccion
-*       .btn--sizes: large, small
-*
-*   Detalles:
-*       1. .btn y sus modificadores de tamaño dan estilos base de botón además de un padding, sin color ni borde definido.
-*       2. Los modificadores de estilo dan color de letra, borde y background.
-*       3. Hay un .btn-career que cambia dependiendo de la página en la que se encuentre(animación, ddw, post).
-*
-*   Dudas:
-*       1. Los modificadores de tamaño repiden código, deberían más bien de sobreescribir paddings?(que es lo único que cambia detro de modificadores).       
-*       2. Los demás estilos que no afectan ni paddings ni estilos del botón deberían de ser específicos a la sección?.   
-*/
-
 button,
 .btn a,
-a.btn
+a.btn,
 %btn {
     @include btn;
 }
 
-// Buttons Sizes
 .btn--large a,
 a.btn--large {
     padding: 15px 30px !important;
@@ -35,7 +15,6 @@ a.btn--small {
     padding: 2px 16px;
 }
 
-// Buttons Styles 
 .btn-inverse a,
 a.btn-inverse {
     @include btn(transparent, $white, $white, $black, $white);
@@ -51,79 +30,6 @@ a.btn-secondary--inverse {
     @include btn($orange, $white, $white, $orange);
 }
 
-// Cambiar a Partial Especifico
-.animacion-3d .btn--career a,
-.animacion-3d a.btn--career {
-    @include btn($white, $animation-color, $animation-color, $white);
-}
-
-// $bgcolor, $textcolor, $hovercolor, $hovertext, $bdcolor
-.diseno-desarrollo-web .btn--career a,
-.diseno-desarrollo-web a.btn--career {
-    @include btn($white, $ddw-color, $ddw-color, $white);
-}
-
-.post-produccion .btn--career a,
-.post-produccion a.btn--career {
-    @include btn($white, $post-color, $post-color, $white);
-}
-
-// Borrar
-// Agregar estos estilos de otra manera
-.btn-admision,
-.btn-download {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.btn-cta {
-    margin: 25px auto;
-    padding: 15px 30px !important;
-}
-
-// .btn-direction {
-//     @include btn-transparent;
-//     font-size: $text-small;
-//     margin-right: 5px;  
-// }
-
-.btn-download {
-    position: relative;
-
-    a {
-        display: block;
-        height: 100%;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        text-indent: 100%;
-        top: 0;
-        width: 100%;
-        white-space: nowrap;
-    }
-    .file {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-}
-
-.btn-download img {
-    display: none;
-}
-
-.inscription-button {
-    @include btn-blue;
-    display: block;
-    margin: 25px auto;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-    width: 250px;
-}
-
 //Button Login
 .container-account {
     .form-actions {
@@ -131,27 +37,11 @@ a.btn-secondary--inverse {
         text-align: center;
     }
     .form-submit {
-        //@include btn--small(transparent, $orange, $orange, $white, $orange);    
+        @include btn(transparent, $orange, $orange, $white, $orange);
     }
 }
 
-//Botón anuario
-.btn-yearbook a {
-    @include btn-orange;
-    float: left;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-// Borrar
-// .course-description a {
-//     @include btn;
-//     margin-top: 20px;
-//     padding: 15px 30px;
-// }
-
+// Dudas sobre las secciones de cursos libres, existen? se usan? como fueron hechas, etc
 // boton más información, cursos libres
 .text-course-description .field-name-field-link-view-more {
     display: inline-block;
@@ -173,58 +63,4 @@ a.btn-secondary--inverse {
         right: 0;
         top: 20px;
     }
-}
-
-.see-profile  {
-    a {
-        @include btn;
-        margin: 0 auto;
-        text-align: center;
-    }
-}
-
-.btn--news a {
-    margin-top: $space-x-small; //agregarlo de diferente manera
-}
-
-//.news-categories y .btn
-.btn-categories {
-    text-align: center;
-
-    @include mquery("medium") {
-        text-align: left;
-    }
-    
-    a {
-        font-size: .8em;
-
-        &:hover {
-            font-weight: 300;
-        }
-    }
-}
-
-.btn--anuary a {
-    //@include btn($orange, $white, $white, $orange, $orange);
-    margin-top: $space-x-small;
-}
-
-
-// Deberia ser especifico de su partial, agregar clase para darle tama;o
-.btn--sub-careers {    
-    border-radius: 3px;
-    color: $white;
-    font-weight: regular;
-    margin: 0 auto;
-    padding: 15px 22px;
-    transition: all 0.5s ease;
-    
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.btn--commercial-image {
-    background-color: $commercial-image-color;
-    position: relative;
 }

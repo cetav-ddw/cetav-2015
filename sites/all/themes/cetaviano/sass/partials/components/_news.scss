@@ -58,7 +58,7 @@
         color: $blue-dark;
         font-size: 1.25em;
         font-weight: 700;
-    } 
+    }
 }
 
 .news-categories-title {
@@ -77,3 +77,24 @@
     float: right;
   }
 }
+
+.news-link {
+    margin-top: $space-x-small;
+}
+
+//.news-categories ver que hace news__category-list, si me sirve agregarlo ahi, sino dejarlo como news-categories
+// .btn-categories {
+//     text-align: center;
+//
+//     @include mquery("medium") {
+//         text-align: left;
+//     }
+//
+//     a {
+//         font-size: .8em;
+//
+//         &:hover {
+//             font-weight: 300;
+//         }
+//     }
+// }

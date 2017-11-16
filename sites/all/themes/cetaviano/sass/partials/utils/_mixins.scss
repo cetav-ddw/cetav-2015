@@ -66,34 +66,21 @@
     text-decoration: none;
     transition: background-color .3s;
     vertical-align: middle;
-   
+
     &:hover {
       background-color: $hovercolor;
       color: $hovertext;
     }
 }
 
-@mixin btn-blue {
-    @include btn($white, $light-blue, $light-blue);
-}
-
-@mixin btn-orange {
-    //@include btn($white, $orange, $orange);
-}
-
-// Se cambia a btn--default-inverse
-@mixin btn-transparent {
-    //@include btn(transparent, $white, $white, $black);
-    border-color: $white;
-}
-
 @mixin btn-disabled {
-    background-color: $gray-lighter; 
-    border: 1px solid $gray-lighter; 
+    background-color: $gray-lighter;
+    border: 1px solid $gray-lighter;
     color: $white;
-
+    cursor: not-allowed;
+    
     &:hover {
-        background-color: $gray-lighter; 
+        background-color: $gray-lighter;
         color: $white;
     }
 }

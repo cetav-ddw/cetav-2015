@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a single Drupal page.
@@ -14,7 +13,7 @@
     <?php if ($page['navigation']): ?>
       <div class="grid-width grid-full-limit">
         <div class="menu-collapse">
-          <a id ="menu-toggle" class="menu-toggle">
+          <a id ="menu-toggle" href="#foot-nav" class="menu-toggle">
               <div class="menu-toggle-one"></div>
               <div class="menu-toggle-two"></div>
               <div class="menu-toggle-three"></div>
@@ -103,9 +102,31 @@
   </section>
 <?php endif; // end Below Content ?>
 
-<?php if ($page['footer']): ?>
-  <?php print render($page['footer']); ?>
-<?php endif; // end footer ?>
+<footer class="footer" id="foot-nav" role="contentinfo">
+  <div class="footer-content">
+    <div class="footer grid-width">
+    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Back to top</a>
+    <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
+      <div class="contact-info">
+      <h4 class="foot-h">Conozca m&aacute;s</h4>
+        <ul class="foot-menu">
+        <li><a href="http://www.parquelalibertad.org/cetav/institucion" title="">Sobre el CETAV</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/actualizacion-profesional" title="">Actualización Profesional</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/egresados" title="">Egresados</a></li>
+        <li><a href="http://www.parquelalibertad.org/cetav/noticias" title="">Noticias</a></li>
+        <li class="no-desktop"><a href="http://www.parquelalibertad.org/cetav/user?current=home" title="">Mi Cuenta</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+      <h4 class="foot-h">Carreras</h4>
+        <ul class="foot-menu">
+          <li><a href="http://www.parquelalibertad.org/cetav/carreras/animacion-digital-3d">Animación Digital 3D</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/carreras/diseno-desarrollo-web">Diseño y Desarrollo Web</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/carreras/postproduccion-imagen-sonido">Edición y Post Producción Digital de Imagen y Sonido</a></li>
+          <li><a href="http://www.parquelalibertad.org/cetav/admision" title="">Proceso de Admisión</a></li>
+        </ul>
+      </div>
 
       <div class="contact-info">
         <h4 class="foot-h">¿Cómo llegar?</h4>
