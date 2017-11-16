@@ -1,5 +1,5 @@
 nav[role="navigation"] {
-    background-color: #f19130;
+    background-color: $orange;
     left: 0;
     padding: 3em 1em 0;
     position: absolute;
@@ -239,7 +239,6 @@ nav[role="navigation"] {
 .menu-toggle-two,
 .menu-toggle-three {
     background: $orange;
-    backface-visibility: hidden;
     border-radius: 2px;
     height: 3px;
     margin: 6px 0;

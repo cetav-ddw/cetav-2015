@@ -106,7 +106,7 @@
 <footer class="footer" id="foot-nav" role="contentinfo">
   <div class="footer-content">
     <div class="footer grid-width">
-    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Volver al inicio</a>
+    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Back to top</a>
     <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
       <div class="contact-info">
       <h4 class="foot-h">Conozca m&aacute;s</h4>
