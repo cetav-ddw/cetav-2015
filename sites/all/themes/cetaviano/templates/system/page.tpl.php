@@ -14,15 +14,15 @@
     <?php if ($page['navigation']): ?>
       <div class="grid-width grid-full-limit">
         <div class="menu-collapse">
-          <a id ="menu-toggle" href="#foot-nav" class="menu-toggle">
+          <a id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
               <div class="menu-toggle-two"></div>
               <div class="menu-toggle-three"></div>
           </a>
         </div>
-        
+
         <?php print render($page['navigation']); ?>
-        
+
         <a href="http://parquelalibertad.org/" class="back-pll">Inicio Parque La Libertad</a>
       </div>
     <?php endif; // end Navigation ?>
@@ -32,13 +32,13 @@
     <div class="grid-width grid-full-limit">
       <?php if(drupal_is_front_page()):?>
         <a href="http://parquelalibertad.org/cetav" class="triada-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
-      <?php else: ?>  
+      <?php else: ?>
         <a href="http://parquelalibertad.org/cetav" class="cetav-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
         <a href="http://parquelalibertad.org/" class="pll-logo"><span class="visually-hidden">Parque La Libertad</span></a>
       <?php endif?>
     </div>
   </div>
-  
+
   <?php if ($page['header']): ?>
     <div class="header-content">
       <?php print render($page['header']); ?>
@@ -103,31 +103,9 @@
   </section>
 <?php endif; // end Below Content ?>
 
-<footer class="footer" id="foot-nav" role="contentinfo">
-  <div class="footer-content">
-    <div class="footer grid-width">
-    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Back to top</a>
-    <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
-      <div class="contact-info">
-      <h4 class="foot-h">Conozca m&aacute;s</h4>
-        <ul class="foot-menu">
-        <li><a href="http://www.parquelalibertad.org/cetav/institucion" title="">Sobre el CETAV</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/actualizacion-profesional" title="">Actualización Profesional</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/egresados" title="">Egresados</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/noticias" title="">Noticias</a></li>
-        <li class="no-desktop"><a href="http://www.parquelalibertad.org/cetav/user?current=home" title="">Mi Cuenta</a></li>
-        </ul>
-      </div>
-
-      <div class="contact-info">
-      <h4 class="foot-h">Carreras</h4>
-        <ul class="foot-menu">
-          <li><a href="http://www.parquelalibertad.org/cetav/carreras/animacion-digital-3d">Animación Digital 3D</a></li>
-          <li><a href="http://www.parquelalibertad.org/cetav/carreras/diseno-desarrollo-web">Diseño y Desarrollo Web</a></li>
-          <li><a href="http://www.parquelalibertad.org/cetav/carreras/postproduccion-imagen-sonido">Edición y Post Producción Digital de Imagen y Sonido</a></li>
-          <li><a href="http://www.parquelalibertad.org/cetav/admision" title="">Proceso de Admisión</a></li>
-        </ul>
-      </div>
+<?php if ($page['footer']): ?>
+  <?php print render($page['footer']); ?>
+<?php endif; // end footer ?>
 
       <div class="contact-info">
         <h4 class="foot-h">¿Cómo llegar?</h4>

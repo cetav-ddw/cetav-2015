@@ -33,6 +33,10 @@
 .icon-graduate:before{content:'\004b';}
 .icon-clock:before{content:'\004c';}
 
+//Footer icons
+.icon-vimeo--white:before{color:#fff; content:'\0047';}
+.icon-face--white:before{color:#fff; content:'\0048';}
+
 // Styles for social-icons
 .social-icon {
     cursor: pointer;
@@ -51,12 +55,5 @@
         width: 100%;
         white-space: nowrap;
     }
-
-    .facebook{
-        right: 0;
-    }
-
-    .vimeo{
-        left: 0;
-    }
 }
+
