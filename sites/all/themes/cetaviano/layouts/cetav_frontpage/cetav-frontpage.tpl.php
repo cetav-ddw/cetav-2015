@@ -12,12 +12,12 @@
       <?php print $content['wide']; ?>
     </div>
   <?php endif ?>
-  <div class="section-wide call-out call-out-home-intro">
+  <div class="section-wide slab-gray">
     <div class="grid-width">
       <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
-      <div class="panel-right-column">
+      <div class="panel-right-column one-pager">
         <?php print $content['right']; ?>
       </div>
     </div>
