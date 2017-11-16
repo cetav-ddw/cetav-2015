@@ -53,8 +53,11 @@
 // Mixins for common color combinations.
 
 // Btn default
-  @mixin btn {
+@mixin btn($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white, $bdcolor: $textcolor) {
+    background-color: $bgcolor;
+    border: 2px solid $bdcolor;
     border-radius: 4px;
+    color: $textcolor;
     cursor: pointer;
     display: inline-block;
     font-size: $text-base;
@@ -63,43 +66,15 @@
     text-decoration: none;
     transition: background-color .3s;
     vertical-align: middle;
+   
+    &:hover {
+      background-color: $hovercolor;
+      color: $hovertext;
+    }
 }
 
-@mixin btn--small {
-    border-radius: 4px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: $text-base;
-    overflow: hidden;
-    padding: 2px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    vertical-align: middle;
-}
-
-@mixin btn--large {
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: $text-base;
-  overflow: hidden;
-  padding: 15px 30px;
-  text-decoration: none;
-  transition: background-color .3s;
-  vertical-align: middle;
-}
-
-/*
-*   En los siguientes botones cambiar las propiedades: 
-*   $bgcolor,
-*   $textcolor,
-*   $hovercolor,
-*   $hovertext,
-*   $bdcolor
-
-*/
 @mixin btn-blue {
-    //@include btn($white, $light-blue, $light-blue);
+    @include btn($white, $light-blue, $light-blue);
 }
 
 @mixin btn-orange {
