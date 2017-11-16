@@ -16,7 +16,7 @@
   <?php endif ?>
   <?php if ($content['wide_first']): ?>
     <div class="section-wide slab-blue">
-      <div class="grid-width">
+      <div class="grid-width grid-full-limit">
         <?php print $content['wide_first']; ?>
       </div>
     </div>
@@ -38,15 +38,15 @@
       </div>
     </div>
   <?php endif ?>
- <?php if ($content['wide_third']): ?>
+  <?php if ($content['wide_third']): ?>
     <div class="section-wide">
       <div class="grid-width">
         <?php print $content['wide_third']; ?>
       </div>
     </div>
   <?php endif ?>
-   <?php if ($content['bottom']): ?>
-    <div class="section-wide">
+  <?php if ($content['bottom']): ?>
+    <div class="section-wide slab-gray">
       <div class="grid-width">
         <?php print $content['bottom']; ?>
       </div>

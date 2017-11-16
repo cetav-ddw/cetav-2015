@@ -15,6 +15,7 @@ footer {
         @include mquery("medium") {
             float: left;
             width: 25%;
+            padding: $space-x-small;
         }
     }
 

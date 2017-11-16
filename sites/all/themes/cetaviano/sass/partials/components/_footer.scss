@@ -1,23 +1,18 @@
 footer {
     text-align: center;
+    color: $white;
 
     @include mquery("medium") {
         text-align: left;
     }
-    
-    h2 {
-        display: none;
-    }
-    li,
-    p {
-        color: $white;
-        font-size: $text-small;
-        margin-bottom: .75em;
-    }
+}
+
+.foot-p {
+    font-size: 0.833em;
+    margin-bottom: .75em;
 }
 
 .foot-h {
-    color: $white;
     margin: 2px 0 20px;
 }
 
@@ -45,21 +40,6 @@ footer {
     }
 }
 
-.icon-list {
-    list-style: none;
-    position: relative;
-
-    li {
-        display: inline-block;
-        position: relative;
-    }
-    .icon-face:before,
-    .icon-vimeo:before {
-        color: #fff;
-    }
-    i:hover {
-        .icon-face:before {
-            color: blue;
-        }
-    }
+.footer-icon {
+    font-size: 26px;
 }
