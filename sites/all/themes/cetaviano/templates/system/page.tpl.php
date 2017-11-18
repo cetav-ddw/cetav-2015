@@ -102,54 +102,6 @@
   </section>
 <?php endif; // end Below Content ?>
 
-<footer class="footer" id="foot-nav" role="contentinfo">
-  <div class="footer-content">
-    <div class="footer grid-width">
-    <a class="action-top" title="Ir a inicio de secci&oacute;n" href="#">Back to top</a>
-    <!-- ToDo: Este contenido debe estar en bloques y no alambrado en el tpl -->
-      <div class="contact-info">
-      <h4 class="foot-h">Conozca m&aacute;s</h4>
-        <ul class="foot-menu">
-        <li><a href="http://www.parquelalibertad.org/cetav/institucion" title="">Sobre el CETAV</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/actualizacion-profesional" title="">Actualización Profesional</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/egresados" title="">Egresados</a></li>
-        <li><a href="http://www.parquelalibertad.org/cetav/noticias" title="">Noticias</a></li>
-        <li class="no-desktop"><a href="http://www.parquelalibertad.org/cetav/user?current=home" title="">Mi Cuenta</a></li>
-        </ul>
-      </div>
-
-      <div class="contact-info">
-      <h4 class="foot-h">Carreras</h4>
-        <ul class="foot-menu">
-          <li><a href="http://www.parquelalibertad.org/cetav/carreras/animacion-digital-3d">Animación Digital 3D</a></li>
-          <li><a href="http://www.parquelalibertad.org/cetav/carreras/diseno-desarrollo-web">Diseño y Desarrollo Web</a></li>
-          <li><a href="http://www.parquelalibertad.org/cetav/carreras/postproduccion-imagen-sonido">Edición y Post Producción Digital de Imagen y Sonido</a></li>
-          <li><a href="http://www.parquelalibertad.org/cetav/admision" title="">Proceso de Admisión</a></li>
-        </ul>
-      </div>
-
-      <div class="contact-info">
-        <h4 class="foot-h">¿Cómo llegar?</h4>
-        <p>Parque la Libertad, 300 metros este y <br>100 metros norte del Palí de Fátima, Desamparados</p>
-        <div class="btn-inverse btn--small" >
-          <a href="http://parquelalibertad.org/#arrive" target="_blank">Ve cómo llegar</a>
-        </div>
-      </div>
-      <div class="contact-info">
-        <h4 class="foot-h">Contacto</h4>
-        <p>Teléfono: 2276-9400 ext.2031</p>
-        <p>E-mail: cetav@parquelalibertad.org</p>
-        <nav>
-          <ul class="social-icon icon-list">
-            <li><i class="icon-vimeo"><a class="vimeo" href="https://vimeo.com/cetav" target="_blank">vimeo</a></i></li>
-            <li><i class="icon-face"><a class="facebook" href="https://www.facebook.com/cetavcr" target="_blank">facebook</a></i></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</footer>
-
 <?php if ($page['closure']): ?>
 <aside class="closure">
   <?php print render($page['closure']); ?>
