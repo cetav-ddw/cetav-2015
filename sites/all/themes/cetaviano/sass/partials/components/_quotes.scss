@@ -1,6 +1,5 @@
 .grid-quotes {
     padding: 2rem;
-    background: url("../img/blue-quotes02.png") no-repeat;
     background-size: 10%;
 
     div {
@@ -8,4 +7,27 @@
     		margin-top: $space-x-small;
     	}
     }
+}
+
+.grid-quotes--center {
+    text-align: center;
+}
+
+.grid-quotes__avatar {
+    margin: $space-x-small;
+}
+
+.grid-quotes--text-medium {
+    font-size: $text-medium;
+}
+
+.grid-quotes__author-job {
+    font-weight: 800;
+    color: $light-blue;
+    font-size: $text-small;
+    letter-spacing: 1px;
+}
+
+body.page-empleabilidad .grid-quotes--center {
+    text-align: left;
 }
