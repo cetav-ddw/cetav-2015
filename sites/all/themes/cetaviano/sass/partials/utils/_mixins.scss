@@ -85,6 +85,15 @@
     }
 }
 
+@mixin btn-blue {
+  @include btn($white, $light-blue, $light-blue);
+}
+
+@mixin btn-orange {
+  @include btn($white, $orange, $orange);		
+  
+}
+
 //
 // Media Queries mixin. Suppor min-width, you can pass it a varible
 // or specific values

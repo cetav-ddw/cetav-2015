@@ -12,7 +12,7 @@ a.btn--large {
 
 .btn--small a,
 a.btn--small {
-    padding: 2px 16px;
+    padding: 2px 16px !important;
 }
 
 .btn-inverse a,
@@ -21,46 +21,12 @@ a.btn-inverse {
 }
 
 .btn-secondary a,
-a.btn-secondary {
+a.btn-secondary,
+%btn-secondary {
     @include btn(transparent, $orange, $orange, $white, $orange);
 }
 
 .btn-secondary--inverse a,
 a.btn-secondary--inverse {
     @include btn($orange, $white, $white, $orange);
-}
-
-//Button Login
-.container-account {
-    .form-actions {
-        margin: 15px auto;
-        text-align: center;
-    }
-    .form-submit {
-        @include btn(transparent, $orange, $orange, $white, $orange);
-    }
-}
-
-// Dudas sobre las secciones de cursos libres, existen? se usan? como fueron hechas, etc
-// boton más información, cursos libres
-.text-course-description .field-name-field-link-view-more {
-    display: inline-block;
-}
-
-.text-course-description .intro-action {
-    @include btn-blue;
-    margin-top: 20px;
-    padding: 15px 30px;
- }
-
-// boton de cada curso libre disponible
-.btn-course a {
-    @include btn-blue;
-    font-size: .833em;
-
-    @include mquery("large") {
-        position: absolute;
-        right: 0;
-        top: 20px;
-    }
 }
