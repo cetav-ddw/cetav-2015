@@ -4,11 +4,23 @@
     top: -40px;
 }
 
+.action-top:after {
+    content: "";
+    background: center no-repeat url(../img/back-to-top.png);
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+}
+
 .foot-menu {
-    list-style-type: none;
+    ul {
+        list-style: none;
+    }
 
     a {
         color: $white;
         display: block;
+        font-size: $text-small;
     }
 }

@@ -15,6 +15,7 @@ footer {
         @include mquery("medium") {
             float: left;
             width: 25%;
+            padding: $space-x-small;
         }
     }
 
@@ -99,18 +100,36 @@ footer {
     background: $white;
 }
 
-.section-wide {
+.section-wide,
+.section-wide-employability,
+.section-wide-egresados {
     overflow: hidden;
     padding: $space-base $space-x-small;
 
     @include mquery("medium") {
-        padding-bottom: $space-medium;
         padding-top: $space-medium;
     }
 
     @include mquery("large") {
-        padding-bottom: $space-x-large;
         padding-top: $space-large;
+    }
+}
+
+.section-wide {
+    @include mquery("medium") {
+        padding-bottom: $space-medium;
+    }
+
+    @include mquery("large") {
+        padding-bottom: $space-x-large;
+    }
+}
+
+.section-wide-egresados {
+    text-align: center;
+
+    @include mquery("small") {
+        padding: $space-medium $space-x-small 20rem; 
     }
 }
 
