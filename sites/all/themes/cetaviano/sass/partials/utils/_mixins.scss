@@ -86,12 +86,11 @@
 }
 
 @mixin btn-blue {
-  @include btn($white, $light-blue, $light-blue);
+    @include btn($white, $light-blue, $light-blue);
 }
 
 @mixin btn-orange {
-  @include btn($white, $orange, $orange);		
-  
+    @include btn($white, $orange, $orange);
 }
 
 //
