@@ -13,7 +13,7 @@
     <?php if ($page['navigation']): ?>
       <div class="grid-width grid-full-limit">
         <div class="menu-collapse">
-          <a id ="menu-toggle" href="#foot-nav" class="menu-toggle">
+          <a id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
               <div class="menu-toggle-two"></div>
               <div class="menu-toggle-three"></div>
