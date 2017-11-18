@@ -229,14 +229,3 @@
     background-color: $animation-color;
     background-image: none; 
 }
-
-.section-wide-egresados {
-    padding: $space-base $space-x-small; 
-    text-align: center;
-
-    @include mquery("small") {
-        padding: $space-medium $space-x-small 20rem; 
-    }
-}
-
-
