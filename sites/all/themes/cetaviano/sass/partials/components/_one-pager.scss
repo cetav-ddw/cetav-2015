@@ -1,29 +1,33 @@
 .one-pager { 
-    background: url("../img/one-pager-bgi.png") no-repeat center / cover;
+    background: url("../img/one-pager-bgi.jpg") no-repeat center / cover;
     margin-top: $space-medium;    
-    padding: 0 $space-base;
+    padding: $space-base;
 
-    @include mquery("large") {
+    @include mquery("medium") {
         margin-top: 0;
         padding-bottom: $space-large;
     }
 }
 
-.one-pager--title {
+.one-pager__title {
     padding: $space-x-small 0;
     
-    @include mquery("large") {
+    @include mquery("medium") {
         padding: 0;
     }
 }
 
-.one-pager--subtitles {
+.one-pager__subtitles {
     color: $white;
     padding-top: 10px;
 }
 
-.one-pager--dowload {
+.one-pager__dowload {
     margin: $space-base 0;
+    
+    a {
+        text-decoration: none;
+    }
 
     img {
         display: none;
