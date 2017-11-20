@@ -1,0 +1,35 @@
+.one-pager { 
+    background: url("../img/one-pager-bgi.jpg") no-repeat center / cover;
+    margin-top: $space-medium;    
+    padding: $space-base;
+
+    @include mquery("medium") {
+        margin-top: 0;
+        padding-bottom: $space-large;
+    }
+}
+
+.one-pager__title {
+    padding: $space-x-small 0;
+    
+    @include mquery("medium") {
+        padding: 0;
+    }
+}
+
+.one-pager__subtitles {
+    color: $white;
+    padding-top: 10px;
+}
+
+.one-pager__dowload {
+    margin: $space-base 0;
+    
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        display: none;
+    }
+}

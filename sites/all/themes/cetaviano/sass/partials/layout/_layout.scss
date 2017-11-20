@@ -199,6 +199,24 @@ footer {
     }
 }
 
+.panel-left-column--home-intro {
+    @extend .panel-left-column;
+    
+    @include mquery("medium") {
+        @include span-columns(6);
+            display: inline-block;
+        }
+}
+
+.panel-right-column--one-pager {
+    @extend .panel-right-column;
+
+    @include mquery("medium") {
+        @include span-columns(6);
+            display: inline-block;
+        }
+}
+
 .grid-quotes,
 .grid-employers-list,
 .grid-employers-videos {
