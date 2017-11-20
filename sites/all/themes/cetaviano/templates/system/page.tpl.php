@@ -19,9 +19,9 @@
               <div class="menu-toggle-three"></div>
           </a>
         </div>
-
+        
         <?php print render($page['navigation']); ?>
-
+        
         <a href="http://parquelalibertad.org/" class="back-pll">Inicio Parque La Libertad</a>
       </div>
     <?php endif; // end Navigation ?>
@@ -31,13 +31,13 @@
     <div class="grid-width grid-full-limit">
       <?php if(drupal_is_front_page()):?>
         <a href="http://parquelalibertad.org/cetav" class="triada-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
-      <?php else: ?>
+      <?php else: ?>  
         <a href="http://parquelalibertad.org/cetav" class="cetav-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
         <a href="http://parquelalibertad.org/" class="pll-logo"><span class="visually-hidden">Parque La Libertad</span></a>
       <?php endif?>
     </div>
   </div>
-
+  
   <?php if ($page['header']): ?>
     <div class="header-content">
       <?php print render($page['header']); ?>
@@ -101,6 +101,10 @@
     <?php print render($page['below_content']); ?>
   </section>
 <?php endif; // end Below Content ?>
+
+<?php if ($page['footer']): ?>
+  <?php print render($page['footer']); ?>
+<?php endif; // end footer ?>
 
 <?php if ($page['closure']): ?>
 <aside class="closure">

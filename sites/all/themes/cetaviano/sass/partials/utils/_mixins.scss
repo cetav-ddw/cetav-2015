@@ -74,15 +74,7 @@
 }
 
 @mixin btn-disabled {
-    background-color: $gray-lighter;
-    border: 1px solid $gray-lighter;
-    color: $white;
-    cursor: not-allowed;
-    
-    &:hover {
-        background-color: $gray-lighter;
-        color: $white;
-    }
+    @include btn($gray-lighter, $white, $gray-lighter, $white, $gray-lighter);
 }
 
 @mixin btn-blue {

@@ -151,20 +151,10 @@
     background-color: $dark-green;
 }
 
-.btn--sub-careers {
-    border-radius: 3px;
-    color: $white;
-    font-weight: regular;
+  .btn--commercial-image {
+    @include btn($commercial-image-color, $white, $commercial-image-color, $white, $commercial-image-color);
+    font-weight: normal;
     margin: 0 auto;
-    padding: 15px 22px;
     transition: all 0.5s ease;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.btn--commercial-image {
-    background-color: $commercial-image-color;
     position: relative;
 }
