@@ -12,7 +12,7 @@
     @include mquery(1000px) {
         width: 33%;
     }
-    
+
     img {
         width: 100%;
     }
@@ -35,4 +35,8 @@
 
 .generation-title {
     font-family: $default-font;
+}
+
+.anuary__reel-link {
+    margin-top: $space-x-small;
 }
