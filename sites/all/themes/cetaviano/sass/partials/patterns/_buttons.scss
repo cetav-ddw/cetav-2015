@@ -28,5 +28,5 @@ a.btn-secondary,
 
 .btn-secondary--inverse a,
 a.btn-secondary--inverse {
-    @include btn($orange, $white, $white, $orange);
+    @include btn($orange, $white, $white, $orange, $orange);
 }
