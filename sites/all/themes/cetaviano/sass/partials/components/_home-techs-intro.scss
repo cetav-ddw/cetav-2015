@@ -80,6 +80,7 @@
 }
 
 .container-title-course {
+    height: 100%;
     padding: 0;
     position: relative;
     top: 2em;
@@ -97,11 +98,15 @@
 .container-title-course a {
     border-radius: 3px;
     color: $white;
-    font-weight: regular;
+    font-weight: normal;
     margin: 0 auto;
     padding: 15px 22px;
     text-decoration: none;
     transition: all 0.5s ease;
+    
+    position: absolute; 
+    bottom: 18%; 
+    left: 25%;
 }
 
 .container-gif-animacion {
