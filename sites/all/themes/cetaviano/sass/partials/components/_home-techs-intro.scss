@@ -97,16 +97,15 @@
 
 .container-title-course a {
     border-radius: 3px;
+    bottom: 18%; 
     color: $white;
     font-weight: normal;
+    left: 25%;
     margin: 0 auto;
     padding: 15px 22px;
+    position: absolute; 
     text-decoration: none;
     transition: all 0.5s ease;
-    
-    position: absolute; 
-    bottom: 18%; 
-    left: 25%;
 }
 
 .container-gif-animacion {
