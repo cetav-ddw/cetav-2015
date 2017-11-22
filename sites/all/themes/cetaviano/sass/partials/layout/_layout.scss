@@ -137,7 +137,7 @@ footer {
     padding: 0;
 }
 
-.section__videos-no-padding-bottom {
+.section-wide-videos {
     padding: $space-large 0 0 0;
 }
 
@@ -230,6 +230,10 @@ footer {
     @include mquery("medium") {
         @include span-columns(4);
     }
+}
+
+.grid-employers-videos {
+    position:relative;
 }
 
 .grid-employers-list {
