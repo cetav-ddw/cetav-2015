@@ -92,3 +92,26 @@
 .post-produccion .cta-register-h {
     color: $post-color;
 }
+
+.animacion-3d .btn-career a,
+.animacion-3d a.btn-career {
+    @include btn($white, $animation-color, $animation-color, $white);
+}
+
+.diseno-desarrollo-web .btn-career a,
+.diseno-desarrollo-web a.btn-career {
+    @include btn($white, $ddw-color, $ddw-color, $white);
+}
+
+.post-produccion .btn-career a,
+.post-produccion a.btn-career {
+    @include btn($white, $post-color, $post-color, $white);
+}
+
+.btn-career {
+    text-align: center;
+}
+
+.cta-admision {
+    margin: 25px auto;
+}

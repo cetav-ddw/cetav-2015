@@ -138,3 +138,24 @@
     height: 420px;
     transition: 2s;
 }
+
+.text-course-description .field-name-field-link-view-more {
+    display: inline-block;
+}
+
+.text-course-description .intro-action {
+    @include btn-blue;
+    margin-top: 20px;
+    padding: 15px 30px;
+}
+
+.btn-course a {
+    @include btn-blue;
+    font-size: .833em;
+
+    @include mquery("large") {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+}
