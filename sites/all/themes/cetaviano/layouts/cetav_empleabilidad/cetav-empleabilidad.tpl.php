@@ -61,7 +61,7 @@
 
   <?php if ($content['buttom']): ?>
     <div class="section-wide slab-dark-blue">
-      <div class="grid-width">
+      <div class="grid-width section-wide-videos">
         <?php print $content['buttom']; ?>
       </div>
     </div>
