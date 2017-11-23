@@ -94,16 +94,10 @@
 }
 
 .container-title-course a {
-    border-radius: 3px;
+    @include btn(transparent, $white, inherit, $white, transparent) 
     bottom: 18%; 
-    color: $white;
-    font-weight: normal;
-    left: 25%;
-    margin: 0 auto;
-    padding: 15px 22px;
-    position: absolute; 
-    text-decoration: none;
-    transition: all 0.5s ease;
+    left: 29%;
+    position: absolute;
 }
 
 .container-gif-animacion {
