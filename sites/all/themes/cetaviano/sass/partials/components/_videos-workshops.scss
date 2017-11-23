@@ -1,24 +1,17 @@
-.margin-workshops-videos-first {
-    margin: 2% 0;
+.employability__videos--spacing-top {
+    margin-top: $space-x-small;
 }
 
-.margin-workshops-videos {
-    margin: 2% 0;
-
-    @include mquery(900px) {
-        margin: 2% 2.2%;
-    }
-}
-
-.opacity-img-videos {
+.employability__videos--opacity {
     opacity: 0;
 }
 
-.vimeo-employability {
+
+.employability__vimeo-link {
     text-align: center;
     width: 100%  
 }
 
-.container-videos-employability {
+.employability__container-videos{
     position: relative;
 }

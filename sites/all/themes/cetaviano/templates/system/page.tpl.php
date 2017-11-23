@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default theme implementation to display a single Drupal page.
@@ -106,7 +105,6 @@
 <?php if ($page['footer']): ?>
   <?php print render($page['footer']); ?>
 <?php endif; // end footer ?>
-
 
 <?php if ($page['closure']): ?>
 <aside class="closure">

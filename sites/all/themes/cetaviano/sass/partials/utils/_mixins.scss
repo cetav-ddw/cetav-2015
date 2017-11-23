@@ -53,11 +53,12 @@
 // Mixins for common color combinations.
 
 // Btn default
-@mixin btn($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white) {
+@mixin btn($bgcolor: $white, $textcolor: $black, $hovercolor: $black, $hovertext: $white, $bdcolor: $textcolor) {
     background-color: $bgcolor;
-    border: 2px solid $textcolor;
+    border: 2px solid $bdcolor;
     border-radius: 4px;
     color: $textcolor;
+    cursor: pointer;
     display: inline-block;
     font-size: $text-base;
     overflow: hidden;
@@ -65,12 +66,15 @@
     text-decoration: none;
     transition: background-color .3s;
     vertical-align: middle;
-    
+
     &:hover {
-        background-color: $hovercolor;
-        color: $hovertext;
-        text-decoration: none;
+      background-color: $hovercolor;
+      color: $hovertext;
     }
+}
+
+@mixin btn-disabled {
+    @include btn($gray-lighter, $white, $gray-lighter, $white, $gray-lighter);
 }
 
 @mixin btn-blue {
@@ -79,22 +83,6 @@
 
 @mixin btn-orange {
     @include btn($white, $orange, $orange);
-}
-
-@mixin btn-transparent {
-    @include btn(transparent, $white, $white, $black);
-    border-color: $white;
-}
-
-@mixin btn-disabled {
-    background-color: $gray-lighter; 
-    border: 1px solid $gray-lighter; 
-    color: $white;
-
-    &:hover {
-        background-color: $gray-lighter; 
-        color: $white;
-    }
 }
 
 //

@@ -54,6 +54,15 @@
     .form-required {
         color: $dark-orange;
     }
+
+    .form-actions {
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .form-submit {
+        @extend %btn-secondary;
+    }
 }
 
 .bottom-part {

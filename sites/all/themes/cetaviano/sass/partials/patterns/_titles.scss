@@ -11,7 +11,7 @@
     color: $orange;
 }
 
-.center-tittle-videos {
+.employability-videos__title {
     bottom: 0;
     height: 148px;
     margin-top: -74px;
@@ -41,4 +41,11 @@
             font-size: $text-h1;
         }
     }
+}
+
+.title {
+    color: $main-color;
+    font-size: $text-h2;
+    margin: $space-small auto $space-base;
+    width: 1080px;
 }

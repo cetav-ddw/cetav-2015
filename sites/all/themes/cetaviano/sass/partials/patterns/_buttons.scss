@@ -1,195 +1,32 @@
 button,
-.btn {
+.btn a,
+a.btn,
+%btn {
     @include btn;
 }
 
-// Buttons Careers
-.animacion-3d .btn-admision a,
-.animacion-3d .btn-cta,
-.animacion-3d .btn-download {
-    @include btn($white, $animation-color, $animation-color);
-}
-
-.diseno-desarrollo-web .btn-admision a,
-.diseno-desarrollo-web .btn-cta,
-.diseno-desarrollo-web .btn-download {
-    @include btn($white, $ddw-color, $ddw-color);
-}
-
-.post-produccion .btn-admision a,
-.post-produccion .btn-cta,
-.post-produccion .btn-download {
-    @include btn($white, $post-color, $post-color);
-}
-
-.btn-admision a,
-.btn-download {
-    display: block !important;
-    margin: 30px auto 0;
-    max-width: 230px;
-}
-
-.btn-cta {
-    margin: 25px auto;
+.btn--large a,
+a.btn--large {
     padding: 15px 30px !important;
 }
 
-.btn-direction {
-    @include btn-transparent;
-    font-size: $text-small;
-    margin-right: 5px;
+.btn--small a,
+a.btn--small {
+    padding: 2px 16px !important;
 }
 
-.btn-download {
-    cursor: pointer;
-    position: relative;
-
-    a {
-        display: block;
-        height: 100%;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        text-indent: 100%;
-        top: 0;
-        width: 100%;
-        white-space: nowrap;
-    }
-    .file {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
+.btn-inverse a,
+a.btn-inverse {
+    @include btn(transparent, $white, $white, $black, $white);
 }
 
-.btn-download img {
-    display: none;
+.btn-secondary a,
+a.btn-secondary,
+%btn-secondary {
+    @include btn(transparent, $orange, $orange, $white, $orange);
 }
 
-.inscription-button {
-    @include btn-blue;
-    display: block;
-    margin: 25px auto;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-    width: 250px;
-}
-
-//Button Login
-.container-account {
-    .form-actions {
-        margin: 15px auto;
-        text-align: center;
-    }
-    .form-submit {
-        @include btn-orange;
-    }
-}
-
-//Botón anuario
-.btn-yearbook a {
-    @include btn-orange;
-    float: left;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.course-description a {
-    @include btn;
-    margin-top: 20px;
-    padding: 15px 30px;
-}
-
-// boton más información, cursos libres
-.text-course-description .field-name-field-link-view-more {
-    display: inline-block;
-}
-
-.text-course-description .intro-action {
-    @include btn-blue;
-    margin-top: 20px;
-    padding: 15px 30px;
- }
-
-// boton de cada curso libre disponible
-.btn-course a {
-    @include btn-blue;
-    font-size: .833em;
-
-    @include mquery("large") {
-        position: absolute;
-        right: 0;
-        top: 20px;
-    }
-}
-
-.see-profile  {
-    a {
-        @include btn;
-        margin: 0 auto;
-        text-align: center;
-    }
-}
-
-.btn-news a {
-    @include btn(transparent, $orange, $orange);
-    cursor: pointer;
-    margin-top: $space-x-small;
-    padding: 0 1em;
-
-    &:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-}
-
-.btn-categories {
-    text-align: center;
-
-    @include mquery("medium") {
-        text-align: left;
-    }
-    
-    a {
-        @include btn($gray-lighter, $black, $orange, $white);
-        border: none;
-        font-size: .8em;
-
-        &:hover {
-            border: none;
-            font-weight: 300;
-        }
-    }
-}
-
-.btn-anuary a {
-    @include btn($orange, $white, $white, $orange);
-    border: 2px solid $orange;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: $space-x-small;
-    padding: .3em 1.5em;
-}
-
-.btn--sub-careers {    
-    border-radius: 3px;
-    color: $white;
-    font-weight: regular;
-    margin: 0 auto;
-    padding: 15px 22px;
-    transition: all 0.5s ease;
-    
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.btn--commercial-image {
-    background-color: $commercial-image-color;
-    position: relative;
+.btn-secondary--inverse a,
+a.btn-secondary--inverse {
+    @include btn($orange, $white, $white, $orange, $orange);
 }
