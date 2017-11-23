@@ -42,3 +42,10 @@
         }
     }
 }
+
+.title {
+    color: $main-color;
+    font-size: $text-h2;
+    margin: $space-small auto $space-base;
+    width: 1080px;
+}
