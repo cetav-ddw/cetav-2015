@@ -45,7 +45,7 @@
 
   <?php if ($content['wide_third']): ?>
     <div class="section__videos-no-padding-bottom slab-dark-blue">
-      <div class="grid-width">
+      <div class="grid-width section-wide-videos">
         <?php print $content['wide_third']; ?>
       </div>
     </div>
@@ -61,7 +61,7 @@
 
   <?php if ($content['buttom']): ?>
     <div class="section-wide slab-dark-blue">
-      <div class="grid-width section-wide-videos">
+      <div class="grid-width">
         <?php print $content['buttom']; ?>
       </div>
     </div>
