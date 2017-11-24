@@ -44,7 +44,7 @@
   <?php endif ?>
 
   <?php if ($content['wide_third']): ?>
-    <div class="section__videos-no-padding-bottom slab-dark-blue">
+    <div class="section-wide-videos slab-dark-blue">
       <div class="grid-width">
         <?php print $content['wide_third']; ?>
       </div>
@@ -61,7 +61,7 @@
 
   <?php if ($content['buttom']): ?>
     <div class="section-wide slab-dark-blue">
-      <div class="grid-width section-wide-videos">
+      <div class="grid-width">
         <?php print $content['buttom']; ?>
       </div>
     </div>
