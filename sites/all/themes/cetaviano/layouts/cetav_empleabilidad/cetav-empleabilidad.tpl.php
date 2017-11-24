@@ -28,8 +28,8 @@
   <?php endif ?> 
 
   <?php if ($content['wide_first']): ?>
-    <div class="section-wide slab-blue employability__quotes grid-full-limit">
-      <div class="grid-width">
+    <div class="section-wide slab-blue employability__quotes">
+      <div class="grid-width grid-full-limit">
         <?php print $content['wide_first']; ?>
       </div>
     </div>
