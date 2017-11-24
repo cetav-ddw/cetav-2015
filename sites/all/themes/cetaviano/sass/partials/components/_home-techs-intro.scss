@@ -85,8 +85,7 @@
     position: relative;
     top: 2em;
 
-    a {
-        @include btn(transparent, $white, inherit, $white, transparent) 
+    a { 
         bottom: 18%; 
         left: 29%;
         position: absolute;
@@ -136,15 +135,15 @@
 }
 
 .icon-animacion a {
-    background-color: $dark-orange;
+    @include btn($dark-orange, $white, $dark-orange, $white, $dark-orange)
 }
 
 .icon-post a {
-    background-color: $dark-green;
+    @include btn($dark-green, $white, $dark-green, $white, $dark-green)
 }
 
 .icon-web a {
-    background-color: $dark-red;
+    @include btn($dark-red, $white, $dark-red, $white, $dark-red)
 }
 
 .btn--commercial-image {
