@@ -28,8 +28,8 @@
 .container-card {
     display: inline-block;
     font-family: $default-font;
-    margin-top: 15px;
     margin-left: 0;
+    margin-top: 15px;
     position: relative;
     text-align: center;
 
@@ -51,8 +51,8 @@
     left: 50%;
     opacity: .5;
     position: absolute;
-    transition: opacity 0.5s ease;
     transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
     top: 50%;
     width: 93.75%;
     z-index: 0;
@@ -80,28 +80,22 @@
 }
 
 .container-title-course {
+    height: 100%;
     padding: 0;
     position: relative;
     top: 2em;
-}
 
-.container-title-course h3 {
-    color: $white;
-    font-size: 1.5625em;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 40px;
-    padding: 0 7%;
-}
-
-.container-title-course a {
-    border-radius: 3px;
-    color: $white;
-    font-weight: regular;
-    margin: 0 auto;
-    padding: 15px 22px;
-    text-decoration: none;
-    transition: all 0.5s ease;
+    a { 
+        bottom: 18%; 
+        left: 29%;
+        position: absolute;
+    }
+    h3 {
+        color: $white;
+        font-size: 1.5625em;
+        font-weight: bold;
+        padding: 0 7%;        
+    }
 }
 
 .container-gif-animacion {
@@ -115,6 +109,7 @@
         transition: all .5s ease;
     }
 }
+
 .container-gif-web {
     background-image: url(../img/web-cover.png);
 }
@@ -140,18 +135,18 @@
 }
 
 .icon-animacion a {
-    background-color: $dark-orange;
-}
-
-.icon-web a {
-    background-color: $dark-red;
+    @include btn($dark-orange, $white, $dark-orange, $white, $dark-orange)
 }
 
 .icon-post a {
-    background-color: $dark-green;
+    @include btn($dark-green, $white, $dark-green, $white, $dark-green)
 }
 
-  .btn--commercial-image {
+.icon-web a {
+    @include btn($dark-red, $white, $dark-red, $white, $dark-red)
+}
+
+.btn--commercial-image {
     @include btn($commercial-image-color, $white, $commercial-image-color, $white, $commercial-image-color);
     font-weight: normal;
     margin: 0 auto;
