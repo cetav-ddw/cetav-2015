@@ -31,3 +31,17 @@
 .employability__quotes .grid-quotes--center {
     text-align: left;
 }
+
+.panel-cetav-citas-top {
+    @include mquery (600px) {
+        min-height: 200px;
+    }
+
+    @include mquery (900px) {
+        min-height: 250px;
+    }
+
+    @include mquery (1300px) {
+        min-height: 200px;
+    }
+}
