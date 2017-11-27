@@ -13,22 +13,8 @@
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
-    <div class="grid-width availability-info">
+    <div class="grid-width graduete-generation">
         <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>
-  <div class="grid-width about-graduate">
-    <?php if ($content['intro_wide']): ?>
-      <div class="current-job-section">
-        <p class="current-job"><?php print $content['intro_wide']; ?></p>
-      </div>
-    <?php endif ?>
-
-      <div class="panel-left-column">
-        <?php print $content['left']; ?>
-      </div>
-      <div class="panel-right-column">
-        <?php print $content['right']; ?>
-      </div>
-  </div>
 </div>
