@@ -13,7 +13,7 @@
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
-    <div class="grid-width graduete-generation">
+    <div class="grid-width graduate-generation">
         <?php print $content['wide_second']; ?>
     </div>
   <?php endif ?>
