@@ -1,79 +1,79 @@
 .graph-percent {
-  color: #fff;
-  font-size: 5em;
-  left: 50%;
-  position: absolute;
-  top: 40%;
-  transform: translate(-50%, -50%)
+    color: #32bafa;
+    font-size: 14em;
+    left: 30%;
+    position: absolute;
+    top: 35%;
+    transform: translate(-50%, -50%)
 }
 
 .graph-img {
-  height: 250px;
-  position: relative;
-  text-align: center;
+    height: 250px;
+    position: relative;
+    text-align: center;
 
-  @include mquery("large") {
-    height: 300px;
-  }
+    @include mquery("large") {
+        height: 300px;
+    }
 }
 
 .graph-title {
-  margin: 1rem 0 3rem;
-  text-align: center;
+    margin: 1rem 0 3rem;
+    text-align: center;
 
-  @include mquery("large") {
-    margin: 1rem 0;    
-  }
+    @include mquery("large") {
+        margin: 1rem 0;    
+    }
 }
 
 .graph-layout {  
-  @include mquery("small") {
-    @include span-columns(6);
-    margin-bottom: $space-x-large;    
-  }
+    @include mquery("small") {
+        @include span-columns(6);
+        margin-bottom: $space-x-large;    
+    }
 }
 
 .graph-svg {
-  background: #1e384c;
-  border-radius: 50%;
-  height: 250px;
-  left: 50%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  transform: translateX(-50%);
-  width: 250px;
-    
-  @include mquery("large") {
+    background: #1e384c;
+    border-radius: 50%;
+    height: 250px;
+    left: 50%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    transform: translateX(-50%);
+    width: 250px;
+
+    @include mquery("large") {
     height: 300px;
     width: 300px;
-  }
+    }
 }
 
 .percent {
-  align-items: center;
-  color: #fff;
-  display: flex;
-  font-weight: lighter;
-  height: 100%;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  top: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 10;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-weight: lighter;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
 
-  &__inner {
-    display: inline-block;
-    font-size: 3rem;
-  }
-  &__num {
-    display: inline-block;
-    font-size: 6rem;
-  }
-  &__sign {
-    display: inline-block;
-    font-size: 4rem;
-  }
+    &__inner {
+        display: inline-block;
+        font-size: 3rem;
+    }
+    &__num {
+        display: inline-block;
+        font-size: 6rem;
+    }
+    &__sign {
+        display: inline-block;
+        font-size: 4rem;
+    }
 }

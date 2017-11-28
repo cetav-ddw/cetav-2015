@@ -186,9 +186,10 @@
 
           if (idx === 0) {
             graphTemplate = createWaves(idx, true);
-            $(".graph-percent")[idx].innerText = '';
+            $('.graph-percent').eq(idx).text('');
           } else if(idx === 1) {
             var rocketGraph = createRocketGraph();
+            $(this).html('');
             $(this).append(rocketGraph);
             $(this).html($(this).html());
             rocketAnimation();
