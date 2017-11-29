@@ -1,24 +1,4 @@
-.about-graduate {
-    overflow: hidden;
-    padding-top: 0;
-
-    .label-above {
-        color: #292929;
-        margin: 20px 0 15px;
-    }
-    .panel-left-column {
-        @include mquery("medium") {
-            @include span-columns(8);
-        }
-    }
-    .panel-right-column {
-        @include mquery("medium") {
-            @include span-columns(4);
-        }
-    }
-}
-
-.availability-info {
+.graduate-generation {
     border-bottom: 1px solid #ececec;
     border-top: 1px solid #ececec;
     color: #848286;
@@ -26,10 +6,6 @@
     margin-top: 25px;
     padding: 15px 0;
 
-    a {
-        color: #848286;
-        text-decoration: none;
-    }
     i {
         color: $blue-dark;
         font-style: normal;
@@ -37,31 +13,6 @@
     }
     p {
         margin: 0;
-    }
-    .pane-entity-field{
-        @include span-columns(6);
-        @include omega();
-        margin-bottom: 20px;
-        text-align: center;
-
-        @include mquery("medium") {
-            width: 25%;
-            margin-bottom: 0;
-        }
-    }
-}
-
-.current-job {
-    background-color: $lighter-gray;
-    display: inline-block;
-    padding: 5px 15px;
-    margin: 1em 0 .5em;
-}
-
-.field-name-field-acerca-de-mi,
-.field-name-field-habilidades-egresado {
-    .field-label {
-        margin-top: 0;
     }
 }
 
@@ -76,19 +27,4 @@
         color: #292929;
         margin: 15px 0;
     }
-}
-
-.skill {
-    background-color: $blue-dark;
-    border-radius: 2px;
-    color: $white;
-    display: inline-block;
-    margin-bottom: 14px;
-    margin-right: 12px;
-    padding: 2px 6px;
-}
-
-.hard-inline {
-    display: inline;
-    margin: 0;
 }
