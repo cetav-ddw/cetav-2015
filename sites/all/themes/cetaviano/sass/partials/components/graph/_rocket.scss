@@ -7,6 +7,20 @@
     width: 100%;
 }
 
+.rocket-percent {
+  color: #32bafa;
+  font-size: 13em;
+  margin-bottom: 0;
+  margin-right: 32%;
+  position: absolute;
+  right: 0;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  @include mquery(375px) {
+    margin-right: 36%;
+  }
+}
+
 .rocket-container {
     position: absolute;
     right: 25%;
