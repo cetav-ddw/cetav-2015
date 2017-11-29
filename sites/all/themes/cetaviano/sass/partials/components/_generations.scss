@@ -12,10 +12,6 @@
     @include mquery(1000px) {
         width: 33%;
     }
-
-    img {
-        width: 100%;
-    }
 }
 
 .generation-info {
@@ -29,6 +25,11 @@
     width: 100%;
 }
 
+.generation-video {
+    opacity: 0;
+    z-index: 1;
+}
+
 .link-anuario {
     padding: 1rem 0;
 }
@@ -38,5 +39,15 @@
 }
 
 .anuary__reel-link {
+    left: 0;
     margin-top: $space-x-small;
+    padding: $space-x-small $space-base $space-base;
+    position: absolute;
+    right: 0;
+    z-index: 2;
 }
+
+.generation-container:hover .btn-secondary--inverse a {
+    @include btn($white, $orange, none, none, $orange);
+}
+
