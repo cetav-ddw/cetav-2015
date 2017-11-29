@@ -5,21 +5,20 @@
 
     @include mquery("medium") {
         margin-top: 0;
-        padding-bottom: $space-large;
     }
 }
 
 .one-pager__title {
+    color: $blue-dark;
     padding: $space-x-small 0;
     
     @include mquery("medium") {
-        padding: 0;
+        padding-top: 0;
     }
 }
 
 .one-pager__subtitles {
     color: $white;
-    padding-top: 10px;
 }
 
 .one-pager__dowload {
