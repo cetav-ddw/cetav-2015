@@ -2,6 +2,11 @@
     position: absolute;
     right: 0;
     top: -40px;
+    padding: $space-x-small;
+
+    @include mquery("medium") {
+       padding: 0;
+    }
 }
 
 .action-top:before {
