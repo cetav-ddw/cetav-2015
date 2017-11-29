@@ -9,8 +9,15 @@
 
 .rocket-container {
     position: absolute;
-    right: 30%;
-    width: 90px;
+    right: 25%;
+    width: 80px;
+
+    @include mquery("large") {
+        width: 90px;
+    }
+    @include mquery(375px) {
+        right: 30%;
+    }
 }
 
 .lines {
@@ -27,19 +34,7 @@
 }
 
 .fly {
-    animation: fly 1s linear infinite alternate;
-}
-
-.line1 {
-    animation: line1 0.5s linear infinite alternate;
-}
-
-.line2 {
-    animation: line2 0.5s linear infinite alternate;
-}
-
-.line3 {
-    animation: line3 0.5s linear infinite alternate;
+    animation: fly 1s ease-in-out infinite alternate;
 }
 
 @keyframes takeOff {

@@ -123,12 +123,21 @@
           return fire;
         }
 
+        function createRocketPercent() {
+          var percent = $('.graph-percent').text();
+          percent = $('<p>'+percent+'</p>');
+          percent.addClass('rocket-percent');
+          $('.graph-percent').remove();
+          return percent;
+        }
+        
         function createRocketGraph() {
           var rocketGraph = $('<div></div>');
           var rocket = createRocket();
           var fire = createFire();
+          var percent = createRocketPercent();
           rocketGraph.addClass('rocket-graph');
-          rocketGraph.append([rocket, fire]);
+          rocketGraph.append([rocket, fire, percent]);
           return rocketGraph;
         }
 
@@ -186,7 +195,7 @@
 
           if (idx === 0) {
             graphTemplate = createWaves(idx, true);
-            $('.graph-percent').eq(idx).text('');
+            $('.graph-percent').eq(idx).remove();
           } else if(idx === 1) {
             var rocketGraph = createRocketGraph();
             $(this).html('');

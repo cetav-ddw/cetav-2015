@@ -1,9 +1,18 @@
 .fire {
     position: absolute;
-    right: 34%;
-    top: 105%;
+    right: 30%;
+    top: 115%;
     transform: rotateX(180deg);
-    width: 70px;
+    width: 60px;
+
+    @include mquery("large") {
+        top: 105%;
+        width: 70px;  
+    }
+    @include mquery(375px) {
+        right: 34%;
+
+    }
 }
 
 .fire--off {
