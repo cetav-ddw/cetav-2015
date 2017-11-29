@@ -16,7 +16,7 @@
         font-size: 2em;
     }
 
-    @include mquery(850px){
+    @include mquery(850px) {
         bottom: 0;
         position: absolute;
     }
