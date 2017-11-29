@@ -1,0 +1,70 @@
+.rocket-graph {
+    border-radius: 50%;
+    bottom: 15%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.rocket-percent {
+  color: #32bafa;
+  font-size: 13em;
+  margin-bottom: 0;
+  margin-right: 32%;
+  position: absolute;
+  right: 0;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  @include mquery(375px) {
+    margin-right: 36%;
+  }
+}
+
+.rocket-container {
+    position: absolute;
+    right: 25%;
+    width: 80px;
+
+    @include mquery("large") {
+        width: 90px;
+    }
+    @include mquery(375px) {
+        right: 30%;
+    }
+}
+
+.lines {
+    fill: none;
+    stroke: #F1912E;
+    stroke-width: 16;
+    stroke-miterlimit: 10;
+    transform: translateY(-320px);
+}
+
+.takeOff {
+    animation: takeOff 2s linear forwards;
+    transform: translateY(0)
+}
+
+.fly {
+    animation: fly 1s ease-in-out infinite alternate;
+}
+
+@keyframes takeOff {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-280px);
+    }
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(-280px);
+    }
+    100% {
+        transform: translateY(-350px);
+    }
+}

@@ -9,13 +9,16 @@
 
 .section-call-out {
     background-color: $main-color;
-    bottom: 0;
     padding: 20px;
-    position: absolute;
 
     h2 {
         color: $white;
         font-size: 2em;
+    }
+
+    @include mquery(850px) {
+        bottom: 0;
+        position: absolute;
     }
 }
 
