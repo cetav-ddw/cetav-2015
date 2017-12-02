@@ -6,7 +6,7 @@
  * This template provides a news node for CETAV panel display layout.
  */
 ?>
-<div class="panel-display">
+<div class="panel-display" id="initNews">
   <?php if ($content['top']): ?>
     <div class="section-wide section-intro">
       <div class="grid-width">

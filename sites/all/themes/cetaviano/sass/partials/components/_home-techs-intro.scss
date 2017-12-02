@@ -98,11 +98,11 @@
     }
 }
 
-.container-gif-animacion {
+.views-row-1 .container-gif {
     background-image: url(../img/animacion-cover.png);
 }
 
-.container-card:hover .container-gif-animacion {
+.views-row-1 .container-card:hover .container-gif {
     @include mquery("large") {
         background-image: url(../img/animacion-gif.gif);
         border-color: $animation-color;
@@ -110,11 +110,11 @@
     }
 }
 
-.container-gif-web {
+.views-row-2 .container-gif {
     background-image: url(../img/web-cover.png);
 }
 
-.container-card:hover .container-gif-web {
+.views-row-2 .container-card:hover .container-gif {
     @include mquery("large") {
         background-image: url(../img/web-gif.gif) ;
         border-color: $ddw-color;
@@ -122,11 +122,11 @@
     }
 }
 
-.container-gif-post {
+.views-row-3 .container-gif {
     background-image: url(../img/post-cover.png);
 }
 
-.container-card:hover .container-gif-post {
+.views-row-3 .container-card:hover .container-gif {
     @include mquery("large") {
         background-image: url(../img/post-gif.gif);
         border-color: $post-color;
@@ -134,15 +134,15 @@
     }
 }
 
-.icon-animacion a {
+.views-row-1 a {
     @include btn($dark-orange, $white, $dark-orange, $white, $dark-orange)
 }
 
-.icon-post a {
+.views-row-3 a {
     @include btn($dark-green, $white, $dark-green, $white, $dark-green)
 }
 
-.icon-web a {
+.views-row-2  a {
     @include btn($dark-red, $white, $dark-red, $white, $dark-red)
 }
 
