@@ -30,34 +30,15 @@
   <?php endif; ?>
 
   <?php print $field->wrapper_prefix; ?>
-    <?php if ($id === 'title'): ?>
-      <?php $class = ''; ?>
-      <?php $class1 = ''; ?>
-      <?php if (strpos($field->raw, 'Animación') !== FALSE): ?>
-        <?php $class = 'icon-animacion'; ?>
-        <?php $class1 = 'container-gif-animacion'; ?>
-      <?php elseif (strpos($field->raw, 'Postproducción') !== FALSE): ?>
-        <?php $class = 'icon-post'; ?>
-        <?php $class1 = 'container-gif-post'; ?>
-      <?php elseif (strpos($field->raw, 'web') !== FALSE): ?>
-        <?php $class = 'icon-web'; ?>
-        <?php $class1 = 'container-gif-web'; ?>
-      <?php endif; ?>
-      <?php if (!empty($class)): ?>
-
       <div class="container-card">
-        <div class="container-gif <?php print $class1;?>">
+        <div class="container-gif">
           <div class="container-title-course">
-            <div class="<?php print $class;?>">
-              <?php endif; ?>
-              <?php endif; ?>
+            <div class="DECIDIR">
               <?php print $field->label_html; ?>
               <?php print $field->content; ?>
-              <?php if (!empty($class)): ?>
               <?php print $field->wrapper_suffix; ?>
             </div>
           </div> <!-- container-title-course -->
         </div> <!-- container-gif -->
       </div> <!-- container-card -->
-    <?php endif; ?>
 <?php endforeach; ?>
