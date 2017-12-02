@@ -33,11 +33,9 @@
       <div class="container-card">
         <div class="container-gif">
           <div class="container-title-course">
-            <div class="DECIDIR">
-              <?php print $field->label_html; ?>
-              <?php print $field->content; ?>
-              <?php print $field->wrapper_suffix; ?>
-            </div>
+            <?php print $field->label_html; ?>
+            <?php print $field->content; ?>
+            <?php print $field->wrapper_suffix; ?>
           </div> <!-- container-title-course -->
         </div> <!-- container-gif -->
       </div> <!-- container-card -->
