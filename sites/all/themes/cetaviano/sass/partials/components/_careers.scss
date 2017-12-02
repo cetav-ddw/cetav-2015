@@ -54,8 +54,10 @@
 }
 
 .pane-node-field-titulo-skills-carreras {
+    margin-bottom: 2rem;
+    
     @include mquery("medium") {
-        @include span-columns(5 of 12);
+        width: 60%;
     }
 
     h4 {
@@ -67,8 +69,7 @@
 
 .pane-node-field-cuerpo-skills-carreras {
     @include mquery("medium") {
-        @include span-columns(7 of 12);
-        @include omega();
+        width: 60%;
     }
 }
 
