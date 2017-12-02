@@ -1,7 +1,6 @@
 (function ($) {
   $(window).on('load', function () {
     if ($('#initNews').length) {
-      var pathname = window.location.pathname;
       var url = encodeURIComponent(window.location.href);
       $('#facebookShare').click(function () {
         $(this).attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + url);
