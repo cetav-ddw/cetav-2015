@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             tasks: ['newer:jshint', 'uglify:dev']
           },
           images: {
-            files: ['src-img/**/*.{png,jpg,gif}'],
+            files: ['src-img/**/*.{png,jpg,gif,svg}'],
             tasks: ['newer:imagemin'],
             options: {
             spawn: false,
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
               // cwd is 'current working directory'
               expand: true,                  // Enable dynamic expansion
               cwd: 'src-img/',               // Src matches are relative to this path
-              src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+              src: ['**/*.{png,jpg,gif,svg}'],   // Actual patterns to match
               dest: 'img/'                  // Destination path prefix
             }]
           }
@@ -99,7 +99,7 @@ module.exports = function (grunt) {
               beautify: true
             },
             files: {
-              'js/script.min.js': ['src-js/navigation.js', 'src-js/graph.js', 'src-js/script.js']
+              'js/script.min.js': ['src-js/navigation.js', 'src-js/graph.js', 'src-js/script.js', 'src-js/share.js']
             }
           },
           prod: {
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
               compress: {}
             },
             files: {
-              'js/script.min.js': ['src-js/navigation.js', 'src-js/graph.js', 'src-js/script.js']
+              'js/script.min.js': ['src-js/navigation.js', 'src-js/graph.js', 'src-js/script.js', 'src-js/share.js']
             }
           }
         }
