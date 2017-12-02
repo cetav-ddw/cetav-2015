@@ -1,0 +1,26 @@
+.social-share {
+  text-align: right;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  a {
+    display: block;
+    padding: 20px;
+  }
+}
+
+.social-share--facebook {
+  background: url('../img/facebook.svg') no-repeat;
+}
+
+.social-share--twitter {
+  background: url('../img/twitter.svg') no-repeat;
+}
+
+.social-share--linkedin {
+  background: url('../img/linkedin.svg') no-repeat;
+}
