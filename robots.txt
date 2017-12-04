@@ -14,7 +14,7 @@
 # http://www.robotstxt.org/robotstxt.html
 
 User-agent: Twitterbot
-Disallow:
+Allow: *
 
 User-agent: *
 Crawl-delay: 10
