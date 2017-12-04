@@ -1,20 +1,18 @@
 .career-program .paragraphs-item-programas-carreras {
     background-color: $white;
     box-shadow: 0px 4px 10px rgba(194, 190, 189, .25);
-    height: 300px;
+    height: 330px;
     margin: 30px 6px;
 
     @include mquery("small") {
         @include span-columns(6);
         @include omega();
-        vertical-top: top;
     }
 
     @include mquery("medium") {
         @include span-columns(4);
         margin: 0 13px 13px;
         @include omega();
-        vertical-top: top;
     }
 
     h4 {
@@ -32,6 +30,21 @@
     }
 }
 
+.imagen-comercial .paragraphs-item-programas-carreras {
+    @include mquery("medium") {
+        @include omega();
+        width: 48%;
+    }
+}
+
+.imagen-comercial .panel-right-column,
+.imagen-comercial .panel-left-column {
+    @include mquery("large") {
+        display: block;
+        width: 100%;
+    }
+}
+
 .animacion-3d .paragraphs-item-programas-carreras h4 {
     background-color: $animation-color;
 }
@@ -41,6 +54,10 @@
 
 .post-produccion .paragraphs-item-programas-carreras h4 {
     background-color: $post-color;
+}
+
+.imagen-comercial .paragraphs-item-programas-carreras h4 {
+    background-color: $commercial-image-color;
 }
 
 .section-skills {
@@ -94,6 +111,10 @@
     color: $post-color;
 }
 
+.imagen-comercial .cta-register-h {
+    color: $commercial-image-color;
+}
+
 .animacion-3d .btn-career a,
 .animacion-3d a.btn-career {
     @include btn($white, $animation-color, $animation-color, $white);
@@ -107,6 +128,11 @@
 .post-produccion .btn-career a,
 .post-produccion a.btn-career {
     @include btn($white, $post-color, $post-color, $white);
+}
+
+.imagen-comercial .btn-career a,
+.imagen-comercial a.btn-career {
+    @include btn($white, $commercial-image-color, $commercial-image-color, $white);
 }
 
 .btn-career {
