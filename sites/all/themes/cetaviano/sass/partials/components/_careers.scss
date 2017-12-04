@@ -30,6 +30,21 @@
     }
 }
 
+.imagen-comercial .paragraphs-item-programas-carreras {
+    @include mquery("medium") {
+        @include omega();
+        width: 48%;
+    }
+}
+
+.imagen-comercial .panel-right-column,
+.imagen-comercial .panel-left-column {
+    @include mquery("large") {
+        display: block;
+        width: 100%;
+    }
+}
+
 .animacion-3d .paragraphs-item-programas-carreras h4 {
     background-color: $animation-color;
 }
