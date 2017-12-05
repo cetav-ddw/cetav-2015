@@ -12,7 +12,7 @@
 }
 
 .sub-careers__cta {
-    background: url("../img/animacion-cover.png") no-repeat center / cover;
+    background: url("../img/commercial-image.jpg") no-repeat center / cover;
     border: 8px solid $white;  
     margin-top: $space-small;
     padding-bottom: $space-base;
@@ -45,7 +45,6 @@
     }
     
     &:hover {
-        background-image: url("../img/animacion-gif.gif");
         border: 8px solid $commercial-image-color;  
     }
 }
