@@ -5,16 +5,6 @@
  */
 
 /**
- * Implements hook_preprocess_page()
- *
- */
-function cetaviano_preprocess_page(&$variables) {
-
-  // Livereload - Disable this on production
-  drupal_add_js('//localhost:35729/livereload.js', array('type' => 'external', 'scope' => 'footer'));
-}
-
-/**
  * Implements hook_preprocess_html().
  * Meta tags https://drupal.org/node/1468582#comment-5698732
  */
