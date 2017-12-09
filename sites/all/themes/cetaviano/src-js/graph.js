@@ -7,28 +7,12 @@
         var graphContainer = $('div[data-graphid="employability"]');
 
         function createWaterSVG() {
-          var svg = $('<svg></svg>');
-          var svgSymbol = $('<symbol></symbol>');
           var svgPath1 = $('<path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>');
           var svgPath2 = $('<path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>');
           var svgPath3 = $('<path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>');
           var svgPath4 = $('<path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>');
-          svg.attr({
-            version: '1.1',
-            xmlns: 'http://www.w3.org/2000/svg',
-            'xmlns:xlink': 'http://www.w3.org/1999/xlink',
-            x: '0px',
-            y: '0px',
-          });
-          svg.css('display', 'none');
-          svgSymbol.prop('id', 'wave');
-          svgSymbol.append([svgPath1, svgPath2, svgPath3, svgPath4]);
-          svg.append(svgSymbol);
-          return svg;
+          return [svgPath1, svgPath2, svgPath3, svgPath4];
         }
-        $(document.body).prepend('<div id="svgContainer"></div>');
-        $('#svgContainer').append(createWaterSVG());
-        $("#svgContainer").html($("#svgContainer").html());
 
         function createSmoke() {
           var g = $('<g></g>');
@@ -107,7 +91,7 @@
 
         function createFire() {
           var fire = $('<div></div>');
-          var svg = $('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="125px" height="189.864px" viewBox="0 0 51 189.864" enable-background="new 0 0 51 189.864" xml:space="preserve">');
+          var svg = $('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="100px" viewBox="0 0 51 189.864" enable-background="new 0 0 51 189.864" xml:space="preserve">');
           var path1 = $('<path class="flame-main" fill="#F36E21" d="M40.1,171.5c0,0,29.6-5.1,27.7-35.8S54.2,70.6,36.2,49.1c0,0-24.2,46.3-20.3,64.7S9.7,151.9,40.1,171.5z"/>');
           var path2 = $('<path class="flame-main one" fill="#F6891F" d="M35.8,171.4c0,0-10.2-3-15.3-8.2s-9.3-16.8-9.3-16.8s-0.2-6.6-4.1-18.5c0,0,3.4,5,5.1,9.9c0, 0-5.3-21.1, 1.7-30.4c7-9.3, 0.6-35.7-2.2-37.5c0, 0, 13.1, 5.6, 19.9, 47.5c6.8, 41.9, 16.8, 45.3, 6.1, 54L35.8, 171.4z"/>');
           var path3 = $('<path class="flame-main two" fill="#FFD04A" d="M43.1,66.4c0,0,11.5,24.8,3.6,40c-7.9,15.2-21.1,41.9-0.4,65C46.3,171.4,87.1,138.1,43.1,66.4z"/>');
@@ -182,9 +166,11 @@
             )
           );
           var graphWater = $('<div class="water" id="water' + idx + '"></div>');
-          var waterBack = $('<svg class="water__wave water__wave_back" viewBox="0 0 560 20"> <use href="#wave"> </use></svg>');
-          var waterFront = $('<svg class="water__wave water__wave_front" viewBox = "0 0 560 20"> <use href = "#wave"> </use></svg>');
+          var waterBack = $('<svg id="waterOne" class="water__wave water__wave_back" viewBox="0 0 560 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 382.7 1587.1" xml:="" space="preserve"></svg>');
+          var waterFront = $('<svg class="water__wave water__wave_front" viewBox = "0 0 560 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 382.7 1587.1" xml:="" space="preserve"></svg>');
           var graphTemplate = $('<div class="graph-svg"></div>');
+          waterBack.append(createWaterSVG());
+          waterFront.append(createWaterSVG());
           graphWater.append([waterBack, waterFront]);
           graphTemplate.append([graphPercent, graphWater]);
           return graphTemplate;
@@ -205,8 +191,9 @@
           }
 
           $(this).html(graphTemplate);
-          graphAnimation(idx);
         });
+        graphContainer.eq(0).html(graphContainer.eq(0).html());
+        graphAnimation(0);
       }
 
       return {
