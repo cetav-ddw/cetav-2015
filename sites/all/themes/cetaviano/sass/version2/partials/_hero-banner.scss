@@ -1,0 +1,87 @@
+.hero-banner__cont-description {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 90%;
+  position: absolute;
+  width: 100%;
+  @media (min-width: 1550px) {
+    max-width: 1400px;
+  }
+}
+
+.hero-banner__cont-reel{
+  display: flex;
+  justify-content: center;
+  max-height: 450px;
+  max-width: 95%;
+  overflow: hidden;
+  transition: 1s;
+  width: 100%;
+  &:hover{
+    transition-delay: .2s;
+    transition-duration: .5s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+  }
+  @media (min-width: $breakpoint-lg) {
+    justify-content: flex-end;
+  }
+  @media (min-width: $breakpoint-xl) {
+    max-width: 90%;
+  }
+  @media (min-width: 1550px) {
+    max-width: 95%;
+  }
+}
+
+.hero-banner{
+  background-image: url('../img/trianglify.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  max-height: 450px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-banner__reel {
+  background-image: url('../img/heroBanner.jpg');
+  background-size: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  padding-bottom: 48%;
+  position: relative;
+  width: 85%;
+  @media (min-width: $breakpoint-lg) {
+    padding-bottom: 40%;
+    width: 70%;
+  }
+  @media (min-width: 1550px) {
+    right: 0;
+    top: -10vh;
+    width: 60%;
+  }
+}
+
+
+.hero-banner__description{
+  color: #fff;
+  display: none;
+  width: 30%;
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+  }
+}
+
+.hero-banner__title{
+  color: #fff;
+  font-size: 2.5rem;
+  display: none;
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+  }
+}

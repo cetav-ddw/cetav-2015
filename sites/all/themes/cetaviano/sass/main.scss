@@ -76,3 +76,12 @@
 @import "partials/components/graph/graph";
 @import "partials/components/videos-workshops";
 @import "partials/components/social-share";
+
+// version2 styles
+@import 'version2/helpers/variables';
+@import 'version2/helpers/generals';
+@import 'version2/components/buttons';
+@import 'version2/partials/header';
+@import 'version2/partials/hero-banner';
+@import 'version2/partials/careers';
+@import 'version2/partials/notices';

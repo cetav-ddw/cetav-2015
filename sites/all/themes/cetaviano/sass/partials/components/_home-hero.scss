@@ -1,11 +1,10 @@
 .panel-wide-hero {
-    background: #000 url(../img/header.jpg) no-repeat right / cover;
-    padding: 5em 0;
+    // background: #000 url(../img/header.jpg) no-repeat right / cover;
 
     @include mquery("base") {
         max-height: 400px;
     }
-    
+
     @include mquery("small") {
         background-position: center;
     }
