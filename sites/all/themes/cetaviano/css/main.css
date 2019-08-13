@@ -4033,7 +4033,12 @@ body {
   display: inline-block;
   margin: 1.5em;
   padding: 10px;
-  position: relative; }
+  position: relative;
+  max-width: 60%;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .career__link {
+      max-width: 100%; } }
 
 .hamburguer-btn {
   display: block;
@@ -4271,16 +4276,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 200px;
+  margin: 10px auto;
   max-width: 1400px;
-  margin: 0 auto;
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 100%; }
+  @media (min-width: 768px) {
+    .career {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   @media (min-width: 1024px) {
     .career {
       height: 300px; } }
@@ -4291,7 +4302,7 @@ body {
 
 .career--animation {
   background-color: #dc651e;
-  background-image: url(../img/background_3d.jpg); }
+  background-image: url("../img/background_3d.jpg"); }
   .career--animation:hover {
     background-size: 125vw;
     -webkit-transition: all 1s;
@@ -4304,7 +4315,7 @@ body {
 
 .career--web {
   background-color: #9e280d;
-  background-image: url(../img/background_web.jpg); }
+  background-image: url("../img/background_web.jpg"); }
   .career--web:hover {
     background-size: 125vw;
     -webkit-transition: all 1s;
@@ -4317,7 +4328,7 @@ body {
 
 .career--post {
   background-color: #819534;
-  background-image: url(../img/background_post.jpg); }
+  background-image: url("../img/background_post.jpg"); }
   .career--post:hover {
     background-size: 125vw;
     -webkit-transition: all 1s;
@@ -4330,7 +4341,11 @@ body {
 
 .career__title {
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .career__title {
+      text-align: left; } }
 
 .career__info {
   margin: 2em;

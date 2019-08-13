@@ -9,12 +9,15 @@
   background-position: center;
   background-size: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 200px;
+  margin: 10px auto;
   max-width: 1400px;
-  margin: 0 auto;
   transition: all .5s;
   width: 100%;
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+  }
   @media (min-width: $breakpoint-lg) {
     height: 300px;
   }
@@ -27,7 +30,7 @@
 
 .career--animation{
   background-color: $color-career_animacion;
-  background-image: url(../img/background_3d.jpg);
+  background-image: url("../img/background_3d.jpg");
   &:hover{
     background-size: 125vw;
     transition: all 1s;
@@ -39,7 +42,7 @@
 }
 .career--web{
   background-color: $color-career_web;
-  background-image: url(../img/background_web.jpg);
+  background-image: url("../img/background_web.jpg");
   &:hover{
     background-size: 125vw;
     transition: all 1s;
@@ -51,7 +54,7 @@
 }
 .career--post{
   background-color: $color-career_post;
-  background-image: url(../img/background_post.jpg);
+  background-image: url("../img/background_post.jpg");
 
   &:hover{
     background-size: 125vw;
@@ -66,13 +69,16 @@
 .career__title{
   color: #fff;
   font-size: 1.5rem;
+  text-align: center;
+  @media (min-width: $breakpoint-md) {
+    text-align: left;
+  }
 }
 
 .career__info{
   margin: 2em;
   width: 100%;
   padding: 0 2%;
-
   @media (min-width: $breakpoint-md) {
     width: 30%;
   }
