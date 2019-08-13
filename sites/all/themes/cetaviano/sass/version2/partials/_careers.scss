@@ -69,6 +69,7 @@
 .career__title{
   color: #fff;
   font-size: 1.5rem;
+  font-weight: 300;
   text-align: center;
   @media (min-width: $breakpoint-md) {
     text-align: left;
@@ -76,10 +77,14 @@
 }
 
 .career__info{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 2em;
-  width: 100%;
   padding: 0 2%;
+  width: 100%;
   @media (min-width: $breakpoint-md) {
+    align-items: flex-start;
     width: 30%;
   }
 }

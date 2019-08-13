@@ -4,6 +4,7 @@
     padding-right: 0;
   }
   .menu {
+    font-weight: 300;
     justify-content: flex-end;
     margin-right: 20%;
     @media (min-width: $breakpoint-lg) {
@@ -49,7 +50,7 @@
     top: 8px;
   }
   div {
-    background-image: url( ../img/logo.png);
+    background-image: url("../img/logo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

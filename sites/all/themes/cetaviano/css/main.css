@@ -3985,7 +3985,7 @@ body {
   text-align: center; }
   @media (min-width: 768px) {
     .sub-titles {
-      padding-bottom: 2.5%; } }
+      padding-bottom: 0; } }
 
 .titles {
   font-family: "Palanquin Dark",Arial,Verdana,sans-serif;
@@ -4038,6 +4038,7 @@ body {
   text-align: center; }
   @media (min-width: 768px) {
     .career__link {
+      margin: 1.5em 0;
       max-width: 100%; } }
 
 .hamburguer-btn {
@@ -4082,19 +4083,18 @@ body {
   width: 100%; }
 
 .news-btn__link {
-  border: solid #292929 2px;
+  background-color: #fed604;
+  border: solid #fed604 2px;
   border-radius: 5px;
   color: #000;
   display: inline-block;
-  font-weight: bolder;
   margin: 20px auto 5% auto;
-  letter-spacing: 0.1em;
   padding: 10px 20px;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   .news-btn__link:hover {
-    background-color: #fed604;
+    background-color: transparent;
     border-color: #292929;
     color: #292929;
     text-decoration: none;
@@ -4106,6 +4106,7 @@ body {
   .head-nav .grid-full-limit .back-pll {
     padding-right: 0; }
   .head-nav .grid-full-limit .menu {
+    font-weight: 300;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -4144,7 +4145,7 @@ body {
       left: 5%;
       top: 8px; } }
   .header__logo div {
-    background-image: url(../img/logo.png);
+    background-image: url("../img/logo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -4155,6 +4156,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 300;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -4342,17 +4344,31 @@ body {
 .career__title {
   color: #fff;
   font-size: 1.5rem;
+  font-weight: 300;
   text-align: center; }
   @media (min-width: 768px) {
     .career__title {
       text-align: left; } }
 
 .career__info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 2em;
-  width: 100%;
-  padding: 0 2%; }
+  padding: 0 2%;
+  width: 100%; }
   @media (min-width: 768px) {
     .career__info {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       width: 30%; } }
 
 .cont-news {
@@ -4371,7 +4387,7 @@ body {
     color: black;
     font-weight: 900;
     display: block;
-    margin-bottom: 15px; }
+    margin: 15px 0; }
   .cont-news .news-layout--minor {
     background-color: #ececec;
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);

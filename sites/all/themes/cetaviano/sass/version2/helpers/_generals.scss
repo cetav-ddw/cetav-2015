@@ -30,9 +30,8 @@ body{
 .sub-titles{
   padding-bottom: 5%;
   text-align: center;
-
   @media (min-width: $breakpoint-md) {
-    padding-bottom: 2.5%;
+    padding-bottom: 0;
   }
 }
 
