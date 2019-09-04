@@ -1,4 +1,13 @@
+@media (min-width: $breakpoint-md) {
+  .cont-news .news-layout--minor:hover{
+    transition-timing-function: cubic-bezier(0.6, -0.93, 0.63, 2.42);
+    transform: translate3d(0,-5px,0);
+    transition: transform 300ms ease-out;
+  }
+}
+
 .cont-news {
+  margin-top: 0;
   padding: 0;
   p + p {
     display: none;
@@ -23,6 +32,9 @@
     font-weight: 900;
     display: block;
     margin: 15px 0;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .news-layout--minor {
@@ -41,11 +53,6 @@
       padding: 1.5% 3% 3% 3%;
       width: 30%;
     }
-  }
-  .news-layout--minor:hover{
-    transition-timing-function: cubic-bezier(0.6, -0.93, 0.63, 2.42);
-    transform: translate3d(0,-5px,0);
-    transition: transform 300ms ease-out;
   }
 
   .pane-title, .views-label-title, .views-label-body, .views-label-view-node, .views-label-field-fecha  {
