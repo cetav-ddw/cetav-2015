@@ -84,6 +84,13 @@
   }
 }
 
+.menu-collapse {
+  margin: 17.5px 30px;
+  .on {
+    transform: translateY(-5px);
+  }
+}
+
 .menu-collapse .menu-toggle{
   margin-top: 0;
   display: flex;
@@ -106,7 +113,6 @@
   text-align: center;
   width: 100%;
 }
-
 
 .news-btn__link{
   background-color: $color-btn_notices;
