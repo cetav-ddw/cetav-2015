@@ -22,7 +22,6 @@ body{
   clear: both;
 }
 
-
 .panel-cetav-frontpage .grid-width {
   max-width: 1200px;
 }
@@ -44,7 +43,7 @@ body{
   text-align: center;
   color: black;
   @media (min-width: $breakpoint-md) {
-    padding-top: 5%;
+    padding-top: 45px;
   }
 }
 
@@ -52,3 +51,9 @@ body{
   display: none;
 }
 
+.section-wide, .hero-banner {
+  margin-top: 65px;
+  @media (min-width: $breakpoint-md) {
+    margin-top: 45px;
+  }
+}

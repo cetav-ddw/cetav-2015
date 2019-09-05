@@ -19,6 +19,20 @@
   </section>
   <!--end Hero banner-->
 
+  <!--Introduction-->
+  <section class="intro">
+    <div class="intro__cont-intro">
+      <h2 class="intro__title">Centro de Tecnología y Artes Visuales (CETAV)</h2>
+      <p class="intro__text">Desarrollamos las capacidades de forma integral, abarcando la especialización técnica, la formación en el idioma inglés y fortaleciendo las habilidades de comunicación empática, el desarrollo del pensamiento creativo y la formación en gestión de negocios, como parte de nuestro compromiso por formar personas jóvenes responsables, emprendedoras y participativas.</p>
+      <p class="intro__text">Buscamos darles las mejores herramientas para desarrollarse exitosamente en el mundo laboral.</p>
+      <div class="intro__btn"><a href="http://www.parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
+    </div>
+    <div class="intro__cont-image">
+      <div class="intro__image"></div>
+    </div>
+  </section>
+  <!--end Introduction-->
+
   <!--Carreras Técnicas-->
   <section class="cont-carreers">
     <h2 class="titles">Carreras Técnicas</h2>
