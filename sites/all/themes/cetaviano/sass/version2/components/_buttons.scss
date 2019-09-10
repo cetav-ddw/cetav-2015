@@ -18,22 +18,21 @@
 	@media (min-width: $breakpoint-md) {
 		&:hover {
 			rect {
-                stroke-dasharray: 15, 310;
-                stroke-dashoffset: 48;
-                stroke-width: 3.5;
-			    transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
+        stroke-dasharray: 15, 310;
+        stroke-dashoffset: 48;
+        stroke-width: 3.5;
+        transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
 			}
 		}
+  }
+  &:active {
+    rect {
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      stroke-width: 3.5;
+      transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
     }
-
-    &:active {
-        rect {
-            stroke-dasharray: 15, 310;
-            stroke-dashoffset: 48;
-            stroke-width: 3.5;
-            transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
-        }
-    }
+  }
 }
 
 .career__link {
@@ -42,7 +41,7 @@
 	padding: 10px;
 	position: relative;
 	max-width: 60%;
-    text-align: center;
+  text-align: center;
 
 	@media (min-width: $breakpoint-md) {
 		margin: 1.5em 0;
@@ -53,7 +52,7 @@
 .intro__btn {
 	width: 100%;
 	display: flex;
-    justify-content: center;
+  justify-content: center;
 
 	@media (min-width: $breakpoint-lg) {
 		justify-content: flex-start;
@@ -68,25 +67,25 @@
 	display: inline-block;
 	padding: 10px 20px;
 	text-align: center;
-    transition: 0.5s;
+  transition: 0.5s;
 
 	@media (min-width: $breakpoint-md) {
 		&:hover {
-		background-color: transparent;
-		border-color: #000;
-		color: #000;
-		text-decoration: none;
-		transition: 0.5s;
+      background-color: transparent;
+      border-color: #000;
+      color: #000;
+      text-decoration: none;
+      transition: 0.5s;
 		}
-    }
+  }
 
-    &:active {
-		background-color: transparent;
-		border-color: #000;
-		color: #000;
-		text-decoration: none;
-		transition: 0.5s;
-	}
+  &:active {
+    background-color: transparent;
+    border-color: #000;
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;
+  }
 }
 
 .cont-burger {
@@ -94,14 +93,14 @@
 
 	.on {
 		transform: translateY(-5px);
-	}
+  }
 }
 
 .cont-burger .menu-toggle {
 	margin-top: 0;
 	display: flex;
 	flex-direction: column;
-    justify-content: space-around;
+  justify-content: space-around;
 
 	div {
 		margin: 0;
@@ -124,23 +123,23 @@
 	margin: 20px auto 5% auto;
 	padding: 10px 20px;
 	text-align: center;
-    transition: 0.5s;
+  transition: 0.5s;
 
 	@media (min-width: $breakpoint-md) {
 		&:hover {
-		background-color: #fff;
-		border-color: #000;
-		color: #000;
-		text-decoration: none;
-		transition: 0.5s;
+      background-color: #fff;
+      border-color: #000;
+      color: #000;
+      text-decoration: none;
+      transition: 0.5s;
 		}
-    }
+  }
 
-    &:active {
-		background-color: #fff;
-		border-color: #000;
-		color: #000;
-		text-decoration: none;
-		transition: 0.5s;
-	}
+  &:active {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;
+  }
 }

@@ -1,91 +1,91 @@
 header .section-wide {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 nav[role=navigation] {
-    @media (max-width: 900px) {
-        height: 100vh;
-        padding-top: 1em;
-        top: 50px;
-        width: 100%;
-    }
+  @media (max-width: 900px) {
+    height: 100vh;
+    padding-top: 1em;
+    top: 50px;
+    width: 100%;
+  }
 }
 
 nav[role="navigation"] .expanded .menu {
-    top: 45px;
-    left: -20px;
+  top: 45px;
+  left: -20px;
 
-    a:hover {
-        font-weight: normal;
-    }
+  a:hover {
+    font-weight: normal;
+  }
 }
 
 nav[role="navigation"] .menu {
+  a:hover,
+  li:hover span  {
+    border-bottom: 3px solid #292929;
+    font-weight: 300;
+  }
+  a:active,
+  li:active span {
+    border-bottom: 3px solid #fff;
+    font-weight: 300;
+    text-shadow: 1px 0px #fff;
+  }
+
+  @media (min-width: $breakpoint-lg) {
     a:hover,
     li:hover span  {
-        border-bottom: 3px solid #292929;
-        font-weight: 300;
+      border-bottom: 3px solid #fff;
+      text-shadow: 1px 0px #fff;
     }
-    a:active,
-    li:active span {
-        border-bottom: 3px solid #fff;
-        font-weight: 300;
-        text-shadow: 1px 0px #fff;
-    }
+  }
 
-    @media (min-width: $breakpoint-lg) {
-        a:hover,
-        li:hover span  {
-            border-bottom: 3px solid #fff;
-            text-shadow: 1px 0px #fff;
-        }
-    }
-
-    span {
-        border-bottom: 3px solid #292929;
-        display: inline-block;
-        font-weight: 300;
-    }
+  span {
+    border-bottom: 3px solid #292929;
+    display: inline-block;
+    font-weight: 300;
+  }
 }
 
 .back-pll {
+  right: 0;
+  top: 10px;
+
+  @media (min-width: $breakpoint-lg) {
+    right: 20px;
+    top: 0;
+
+    &:hover {
+      font-weight: 400;
+    }
+  }
+  @media (min-width: 1700px) {
+    padding-right: 0;
     right: 0;
-    top: 10px;
+  }
 
-    @media (min-width: $breakpoint-lg) {
-        right: 20px;
-        top: 0;
-
-        &:hover {
-            font-weight: 400;
-        }
-    }
-    @media (min-width: 1700px) {
-        padding-right: 0;
-        right: 0;
-    }
-
-    &:active {
-        font-weight: 400;
-    }
+  &:active {
+    font-weight: 400;
+  }
 }
 
 .head-nav .grid-full-limit .menu {
-    font-weight: 300;
-    justify-content: flex-end;
-    margin-right: 20%;
-    margin-top: 10px;
+  font-weight: 300;
+  justify-content: flex-end;
+  margin-right: 20%;
+  margin-top: 10px;
 
-    @media (min-width: $breakpoint-lg) {
-        margin-right: 22%;
-        margin-top: 0;
-    }
-    @media (min-width: 1400px) {
-        margin-right: 18%;
-    }
-    @media (min-width: 1550px) {
-        margin-right: 16%;
-    }
+  @media (min-width: $breakpoint-lg) {
+    margin-right: 22%;
+    margin-top: 0;
+  }
+  @media (min-width: 1400px) {
+    margin-right: 18%;
+  }
+  @media (min-width: 1550px) {
+    margin-right: 16%;
+  }
 }
 
 // logo
