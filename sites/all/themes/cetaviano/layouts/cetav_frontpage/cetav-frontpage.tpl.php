@@ -9,9 +9,9 @@
 <div class="panel-display panel-cetav-frontpage">
   <!--Hero banner-->
   <section class="hero-banner">
-    <div class="hero-banner__cont-description">
+    <div class="hero-banner__cont-desc">
       <h1 class="hero-banner__title">Somos CETAV</h1>
-      <p class="hero-banner__description">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
+      <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
     </div>
     <div class="hero-banner__cont-reel">
       <div class="hero-banner__reel"></div>

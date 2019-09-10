@@ -115,13 +115,6 @@ footer {
 }
 
 .section-wide {
-    // @include mquery("medium") {
-    //     padding-bottom: $space-medium;
-    // }
-
-    // @include mquery("large") {
-    //     padding-bottom: $space-x-large;
-    // }
     .grid-with {
       max-width: 100%;
     }
@@ -261,8 +254,3 @@ footer {
         }
     }
 }
-
-// .panel-header {
-//     overflow: hidden;
-//     padding: 0 ;
-// }

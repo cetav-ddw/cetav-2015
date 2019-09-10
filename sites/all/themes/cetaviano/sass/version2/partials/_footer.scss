@@ -1,5 +1,13 @@
 footer .contact-info {
-  @media (min-width: 900px) {
-    padding-right: 5em;
-  }
+    margin: 0 5%;
+    text-align: left;
+
+	@media (min-width: 900px) {
+        margin: 0;
+		padding-right: 5em;
+	}
+}
+
+.btn-inverse {
+    margin-bottom: 20px;
 }

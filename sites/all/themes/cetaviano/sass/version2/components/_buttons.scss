@@ -1,130 +1,146 @@
 // Carrears buttons
 .btn-border {
-  cursor: pointer;
-  display: inline-block;
-  height: 44px;
-  left: 0;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 100%;
-
-  a{
-    color: #f5f;
-    font-size: .9rem;
-    z-index: -2;
-  }
-
-  rect{
-    fill: none;
-    stroke: #fff;
-    stroke-width: 3.5;
-    stroke-dasharray: 422, 0;
-    transition: all .35s linear;
-  }
-
-  @media (min-width: $breakpoint-md) {
-    &:hover{
-      rect{
-        stroke-width: 3.5;
-        stroke-dasharray: 15, 310;
-        stroke-dashoffset: 48;
-        transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
-      }
+	cursor: pointer;
+	display: inline-block;
+	height: 44px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	rect {
+		fill: none;
+		stroke: #fff;
+		stroke-dasharray: 422, 0;
+		stroke-width: 3.5;
+		transition: all .35s linear;
+	}
+	@media (min-width: $breakpoint-md) {
+		&:hover {
+			rect {
+                stroke-dasharray: 15, 310;
+                stroke-dashoffset: 48;
+                stroke-width: 3.5;
+			    transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
+			}
+		}
     }
-  }
+
+    &:active {
+        rect {
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 48;
+            stroke-width: 3.5;
+            transition: all 1.35s cubic-bezier(.19, 1, .22, 1);
+        }
+    }
 }
 
-.career__link{
-  display: inline-block;
-  margin: 1.5em;
-  padding: 10px;
-  position: relative;
-  max-width: 60%;
-  text-align: center;
-  @media (min-width: $breakpoint-md) {
-    margin: 1.5em 0;
-    max-width: 100%;
-  }
+.career__link {
+	display: inline-block;
+	margin: 1.5em;
+	padding: 10px;
+	position: relative;
+	max-width: 60%;
+    text-align: center;
+
+	@media (min-width: $breakpoint-md) {
+		margin: 1.5em 0;
+		max-width: 100%;
+	}
 }
 
 .intro__btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  @media (min-width: $breakpoint-lg) {
-    justify-content: flex-start;
-  }
+	width: 100%;
+	display: flex;
+    justify-content: center;
+
+	@media (min-width: $breakpoint-lg) {
+		justify-content: flex-start;
+	}
 }
 
 .intro__link {
-  background-color: #000;
-  border: solid #000 2px;
-  border-radius: 5px;
-  color: #fff;
-  display: inline-block;
-  padding: 10px 20px;
-  text-align: center;
-  transition: 0.5s;
-  @media (min-width: $breakpoint-md) {
-    &:hover{
-      background-color: transparent;
-      border-color: #000;
-      color: #000;
-      text-decoration: none;
-      transition: 0.5s;
+	background-color: #000;
+	border: solid #000 2px;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+    transition: 0.5s;
+
+	@media (min-width: $breakpoint-md) {
+		&:hover {
+		background-color: transparent;
+		border-color: #000;
+		color: #000;
+		text-decoration: none;
+		transition: 0.5s;
+		}
     }
-  }
+
+    &:active {
+		background-color: transparent;
+		border-color: #000;
+		color: #000;
+		text-decoration: none;
+		transition: 0.5s;
+	}
 }
 
-.menu-collapse {
-  margin: 17.5px 30px;
-  .on {
-    transform: translateY(-5px);
-  }
+.cont-burger {
+    margin: 17.5px 30px;
+
+	.on {
+		transform: translateY(-5px);
+	}
 }
 
-.menu-collapse .menu-toggle{
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  div {
-    margin: 0;
-  }
-}
+.cont-burger .menu-toggle {
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
 
-@media(min-width: $breakpoint-lg){
-  .hamburguer-btn {
-    display: none;
-  }
+	div {
+		margin: 0;
+	}
 }
 
 // Notices button
-.news-btn{
-  display: inline-block;
-  text-align: center;
-  width: 100%;
+.news-btn {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
 }
 
+.news-btn__link {
+	background-color: #000;
+	border: solid #000 2px;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	margin: 20px auto 5% auto;
+	padding: 10px 20px;
+	text-align: center;
+    transition: 0.5s;
 
-.news-btn__link{
-  background-color: $color-btn_notices;
-  border: solid $color-btn_notices 2px;
-  border-radius: 5px;
-  color: #000;
-  display: inline-block;
-  margin: 20px auto 5% auto;
-  padding: 10px 20px;
-  text-align: center;
-  transition: 0.5s;
-  @media (min-width: $breakpoint-md) {
-    &:hover{
-      background-color: transparent;
-      border-color: $color-primary;
-      color: $color-primary;
-      text-decoration: none;
-      transition: 0.5s;
+	@media (min-width: $breakpoint-md) {
+		&:hover {
+		background-color: #fff;
+		border-color: #000;
+		color: #000;
+		text-decoration: none;
+		transition: 0.5s;
+		}
     }
-  }
+
+    &:active {
+		background-color: #fff;
+		border-color: #000;
+		color: #000;
+		text-decoration: none;
+		transition: 0.5s;
+	}
 }

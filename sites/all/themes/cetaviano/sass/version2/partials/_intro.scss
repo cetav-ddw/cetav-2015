@@ -1,64 +1,69 @@
 .intro {
-  display: flex;
-  margin: 45px auto 0 auto;
-  max-width: 90%;
-  flex-direction: column;
-  @media (min-width: $breakpoint-lg) {
-    flex-direction: row;
-  }
-  @media (min-width: 1550px) {
-    max-width: 1400px;
-  }
+    display: flex;
+    margin: 60px auto 0 auto;
+    max-width: 90%;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-lg) {
+        flex-direction: row;
+    }
+    @media (min-width: 1550px) {
+        max-width: 1400px;
+    }
 }
 
 .intro__cont-intro {
-  width: 100%;
-  @media (min-width: $breakpoint-lg) {
-    width: 50%;
-  }
+    width: 100%;
+
+    @media (min-width: $breakpoint-lg) {
+        width: 50%;
+    }
 }
 
 .intro__cont-image {
-  align-items: center;
-  display: none;
-  justify-content: center;
-  margin-top: 45px;
-  width: 100%;
-  @media (min-width: $breakpoint-md) {
-    display: flex;
-  }
-  @media (min-width: $breakpoint-lg) {
-    justify-content: flex-end;
-    margin-top: 0;
-    width: 50%;
-  }
+    align-items: center;
+    display: none;
+    justify-content: center;
+    margin-top: 45px;
+    width: 100%;
+
+    @media (min-width: $breakpoint-md) {
+        display: flex;
+    }
+    @media (min-width: $breakpoint-lg) {
+        justify-content: flex-end;
+        margin-top: 0;
+        width: 50%;
+    }
 }
 
 .intro__text {
-  font-weight: 100;
-  margin-top: 20px;
+    font-weight: 100;
+    margin-top: 20px;
 }
 
 .intro__text + .intro__text {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .intro__title {
-  font-family: "Palanquin Dark",Arial,Verdana,sans-serif;
-  font-weight: bolder;
-  margin-bottom: 0;
-  font-size: 1.5em;
-  color: black;
-  @media (min-width: $breakpoint-md) {
-    font-size: 2em;
-  }
+    font-family: $contrast-font;
+    font-weight: bolder;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    color: black;
+
+    @media (min-width: $breakpoint-md) {
+        font-size: 2em;
+    }
 }
 
 .intro__image {
-  background-image: url("../img/img_intro.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 80%;
+    background-image: url("../img/img_intro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 2px 2px 10px #00000042;
+    padding-bottom: 50%;
+    width: 80%;
 }
