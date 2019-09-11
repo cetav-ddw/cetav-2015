@@ -72,7 +72,7 @@
 }
 
 .hero-banner__desc {
-  color: #fff;
+  color: $white;
   display: none;
   width: 30%;
 
@@ -82,9 +82,9 @@
 }
 
 .hero-banner__title {
-  color: #fff;
+  color: $white;
   display: none;
-  font-size: 2.5rem;
+  font-size: $text-h2;
 
   @media (min-width: $breakpoint-lg) {
     display: block;

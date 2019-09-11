@@ -1,4 +1,4 @@
-.cont-carreers {
+.cont-careers {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -74,7 +74,7 @@
 
 .career__title {
 	color: #fff;
-	font-size: 1.5rem;
+	font-size: $text-h3;
 	font-weight: 300;
     text-align: center;
 

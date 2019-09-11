@@ -4,7 +4,6 @@ header .section-wide {
 
 nav[role=navigation] {
   @media (max-width: 900px) {
-    height: 100vh;
     padding-top: 1em;
     top: 50px;
     width: 100%;
@@ -25,20 +24,17 @@ nav[role="navigation"] .menu {
   li:hover span  {
     border-bottom: 3px solid #292929;
     font-weight: 300;
+
+    @media (min-width: $breakpoint-lg) {
+      border-bottom: 3px solid #fff;
+      text-shadow: 1px 0px #fff;
+    }
   }
   a:active,
   li:active span {
     border-bottom: 3px solid #fff;
     font-weight: 300;
     text-shadow: 1px 0px #fff;
-  }
-
-  @media (min-width: $breakpoint-lg) {
-    a:hover,
-    li:hover span  {
-      border-bottom: 3px solid #fff;
-      text-shadow: 1px 0px #fff;
-    }
   }
 
   span {

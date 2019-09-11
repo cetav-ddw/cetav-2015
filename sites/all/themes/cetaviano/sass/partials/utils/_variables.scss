@@ -6,6 +6,7 @@ $sprite-image: "../images/global-sprite";
 
 $contrast-font: 'Palanquin Dark', Arial, Verdana, sans-serif; //Typography for titles
 $default-font: 'Quicksand', Arial, Verdana, sans-serif; // Typography for body
+$font-fam: 'Open Sans', sans-serif;
 
 $text-large: 1.325em;
 $text-medium: 1.05em;
@@ -43,6 +44,8 @@ $lighter-gray: #ececec; //Background color
 $main-color: $orange;
 $orange-light: #fab853;
 $white: #fff;
+$shadow: #00000042;
+
 
 // Neat variables
 $grid-colums: 12;
@@ -79,9 +82,6 @@ $color-carrear_dic: #3a7d91;
 $colorHeader: #292929;
 $color-primary: #292929;
 $color-secondary: #f19130;
-
-// fonts
-$font-fam: 'Open Sans', sans-serif;
 
 // breackpoints
 $breakpoint-xs: 0px;

@@ -1,8 +1,4 @@
 // Generals etiquets styles
-body {
-	font-family: $font-fam;
-}
-
 .panel-cetav-frontpage .grid-width {
 	max-width: 1200px;
 }
@@ -19,7 +15,7 @@ body {
 .titles {
   color: black;
 	font-family: $contrast-font;
-	font-size: 1.5em;
+	font-size: $text-h3;
 	font-weight: bolder;
 	margin-bottom: 0;
 	padding-top: 10%;

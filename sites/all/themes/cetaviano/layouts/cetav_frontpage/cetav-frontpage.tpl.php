@@ -28,13 +28,13 @@
       <div class="intro__btn"><a href="http://www.parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
     </div>
     <div class="intro__cont-image">
-      <div class="intro__image"></div>
+      <img src="<?php echo base_path().path_to_theme() ?>/img/img_intro.jpg" alt='' class="intro__image">
     </div>
   </section>
   <!--end Introduction-->
 
   <!--Carreras Técnicas-->
-  <section class="cont-carreers">
+  <section class="cont-careers">
     <h2 class="titles">Carreras Técnicas</h2>
     <p class="sub-titles">Te presentamos nuestra oferta académica</p>
 

@@ -1,6 +1,4 @@
 .panel-wide-hero {
-    // background: #000 url(../img/header.jpg) no-repeat right / cover;
-
     @include mquery("base") {
         max-height: 400px;
     }
