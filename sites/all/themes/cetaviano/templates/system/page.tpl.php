@@ -9,19 +9,21 @@
  */
 ?>
 <header class="header" role="banner">
+  <!--logo-->
+  <a href="http://parquelalibertad.org/cetav/" class="header__logo"><img class="icon-cetav" src="<?php echo base_path().path_to_theme() ?>/img/logo.png" alt="Inicio sitio web CETAV"></a>
   <div class="section-wide section-no-padding head-nav slab-orange">
     <?php if ($page['navigation']): ?>
       <div class="grid-width grid-full-limit">
-        <div class="menu-collapse">
+        <div class="cont-burger menu-collapse">
           <a id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
               <div class="menu-toggle-two"></div>
               <div class="menu-toggle-three"></div>
           </a>
         </div>
-        
+
         <?php print render($page['navigation']); ?>
-        
+
         <a href="http://parquelalibertad.org/" class="back-pll">Inicio Parque La Libertad</a>
       </div>
     <?php endif; // end Navigation ?>
@@ -31,13 +33,13 @@
     <div class="grid-width grid-full-limit">
       <?php if(drupal_is_front_page()):?>
         <a href="http://parquelalibertad.org/cetav" class="triada-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
-      <?php else: ?>  
+      <?php else: ?>
         <a href="http://parquelalibertad.org/cetav" class="cetav-logo"><span class="visually-hidden">Centro de Tecnologia y Artes Visuales</span></a>
         <a href="http://parquelalibertad.org/" class="pll-logo"><span class="visually-hidden">Parque La Libertad</span></a>
       <?php endif?>
     </div>
   </div>
-  
+
   <?php if ($page['header']): ?>
     <div class="header-content">
       <?php print render($page['header']); ?>

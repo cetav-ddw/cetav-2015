@@ -2,7 +2,7 @@
     background-color: $white;
 
     @include mquery("medium") {
-        background-color: $black;
+        background-color: $orange;
 
         .block {
             text-align: right;

@@ -1,5 +1,5 @@
 nav[role="navigation"] {
-    background-color: $orange;
+    background-color: $colorHeader;
     left: 0;
     padding: 3em 1em 0;
     position: absolute;
@@ -21,7 +21,7 @@ nav[role="navigation"] {
         @include mquery(62.5em) {
             font-size: .875em;
         }
-    
+
         @include mquery("medium") {
             margin: 0 10px;
         }
@@ -49,7 +49,7 @@ nav[role="navigation"] {
         }
 
         a {
-            border-bottom: 3px solid $orange;
+            border-bottom: 3px solid $colorHeader;
             color: $white;
             position: relative;
 
@@ -58,10 +58,10 @@ nav[role="navigation"] {
                 font-weight: bold;
             }
         }
-        
+
         a::before {
             content: '';
-            border-bottom: 3px solid $orange;
+            border-bottom: 3px solid $colorHeader;
             bottom: -3px;
             position: absolute;
             right: 0;
@@ -83,7 +83,7 @@ nav[role="navigation"] {
     }
 }
 
-nav[role="navigation"] { 
+nav[role="navigation"] {
     .expanded {
         &:hover {
             font-weight: bold;
@@ -99,7 +99,7 @@ nav[role="navigation"] {
             font-size: $text-small;
             font-weight: normal;
             margin: 0 1rem;
-            
+
             @include mquery("medium") {
                 border-bottom: 1px solid $white;
             }
@@ -113,10 +113,10 @@ nav[role="navigation"] {
             margin: 0 1rem;
 
             @include mquery ("medium") {
-                background: $orange;
+                background: $colorHeader;
                 display: none;
                 left: -30px;
-                margin: 0;  
+                margin: 0;
                 position: absolute;
                 text-align: left;
                 top: 43px;
@@ -125,7 +125,7 @@ nav[role="navigation"] {
             }
         }
     }
-    
+
     .expanded:hover {
         .menu {
             display: block;
@@ -135,9 +135,9 @@ nav[role="navigation"] {
 
 .back-pll {
     display: none;
-    
+
     @include mquery("medium") {
-        border-bottom: 3px solid $orange;
+        border-bottom: 3px solid $colorHeader;
         color: $white;
         display: block;
         font-size: .75em;
@@ -234,7 +234,7 @@ nav[role="navigation"] {
 .menu-toggle-one,
 .menu-toggle-two,
 .menu-toggle-three {
-    background: $orange;
+    background: $white;
     border-radius: 2px;
     height: 3px;
     margin: 6px 0;

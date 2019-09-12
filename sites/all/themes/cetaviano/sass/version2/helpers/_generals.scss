@@ -1,0 +1,42 @@
+// Generals etiquets styles
+.panel-cetav-frontpage .grid-width {
+	max-width: 1200px;
+}
+
+.sub-titles {
+	padding-bottom: 5%;
+  text-align: center;
+
+	@media (min-width: $breakpoint-md) {
+		padding-bottom: 0;
+	}
+}
+
+.titles {
+  color: black;
+	font-family: $contrast-font;
+	font-size: $text-h3;
+	font-weight: bolder;
+	margin-bottom: 0;
+	padding-top: 10%;
+	text-align: center;
+
+	@media (min-width: $breakpoint-md) {
+		padding-top: 50px;
+	}
+}
+
+.triada-logo,
+.cetav-logo,
+.pll-logo {
+	display: none;
+}
+
+.section-wide,
+.hero-banner {
+  margin-top: 65px;
+
+	@media (min-width: $breakpoint-md) {
+		margin-top: 45px;
+	}
+}

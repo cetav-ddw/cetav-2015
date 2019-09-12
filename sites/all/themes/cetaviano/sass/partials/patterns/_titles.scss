@@ -49,3 +49,22 @@
     margin: $space-small auto $space-base;
     width: 1080px;
 }
+
+.titles{
+  font-family: $contrast-font;
+  font-weight: bolder;
+  padding-top: 10%;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    padding-top: 5%;
+  }
+}
+.sub-titles{
+  padding-bottom: 5%;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    padding-bottom: 2.5%;
+  }
+}
