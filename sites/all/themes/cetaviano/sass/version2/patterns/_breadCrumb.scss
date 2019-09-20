@@ -9,12 +9,6 @@
 .bread-crumbs--3d {
   .bread-crumbs__item--first {
     background-color: $color-carreer_animacion;
-    clip-path: polygon(0% 0%, 86% 0, 99% 50%, 86% 100%, 0% 100%);
-    padding: 5px 10px 5px 5px;
-
-    @media (min-width: $breakpoint-md) {
-      padding: 5px 20px 5px 10px;
-    }
   }
   .bread-crumbs__item--second {
     background: rgba($color-carreer_animacion, 0.8);
@@ -36,12 +30,6 @@
 .bread-crumbs--dic {
   .bread-crumbs__item--first {
     background-color: $color-carreer_dic;
-    clip-path: polygon(0% 0%, 86% 0, 99% 50%, 86% 100%, 0% 100%);
-    padding: 5px 10px 5px 5px;
-
-    @media (min-width: $breakpoint-md) {
-      padding: 5px 20px 5px 10px;
-    }
   }
   .bread-crumbs__item--second {
     background: rgba($color-carreer_dic, 0.8);
@@ -61,6 +49,15 @@
   font-size: $text-xsmall;
 }
 
+.bread-crumbs__item--first {
+  clip-path: polygon(0% 0%, 87% 0, 99% 50%, 87% 100%, 0% 100%);
+  padding: 5px 10px 5px 5px;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 5px 20px 5px 10px;
+  }
+}
+
 .bread-crumbs__item--second {
   clip-path: polygon(85% 0, 95% 50%, 85% 100%, 10% 100%, 17% 50%, 10% 0);
   padding: 5px 20px 5px 30px;
@@ -71,12 +68,6 @@
 .bread-crumbs--post {
   .bread-crumbs__item--first {
     background-color: $color-carreer_post;
-    clip-path: polygon(0% 0%, 86% 0, 99% 50%, 86% 100%, 0% 100%);
-    padding: 5px 10px 5px 5px;
-
-    @media (min-width: $breakpoint-md) {
-      padding: 5px 20px 5px 10px;
-    }
   }
   .bread-crumbs__item--second {
     background: rgba($color-carreer_post, 0.8);
@@ -93,12 +84,6 @@
 .bread-crumbs--web {
   .bread-crumbs__item--first {
     background-color: $color-carreer_web;
-    clip-path: polygon(0% 0%, 86% 0, 99% 50%, 86% 100%, 0% 100%);
-    padding: 5px 10px 5px 5px;
-
-    @media (min-width: $breakpoint-md) {
-      padding: 5px 20px 5px 10px;
-    }
   }
   .bread-crumbs__item--second {
     background: rgba($color-carreer_web, 0.8);

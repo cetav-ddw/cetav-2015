@@ -16,20 +16,27 @@
 }
 
 .tercer-eje__course {
-  align-items: center;
   background-size: cover;
-  display: flex;
   height: 250px;
-  justify-content: center;
   margin: 2.5% auto;
   width: 90%;
 
   @media (min-width: $breakpoint-md) {
     margin: 0;
     width: 50%;
+
+    &:hover {
+      h4 {
+        display: none;
+        opacity: 0;
+      }
+      p {
+        display: block;
+      }
+    }
   }
 
-  &:hover {
+  &:active {
     h4 {
       display: none;
       opacity: 0;
@@ -66,4 +73,13 @@
 
 .tercer-eje__course--ingles {
   background-image: url("../img/ingles.png");
+}
+
+.tercer-eje__dark {
+  align-items: center;
+  background-color: #00000042;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
