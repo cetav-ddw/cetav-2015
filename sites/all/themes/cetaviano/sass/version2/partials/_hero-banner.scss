@@ -56,6 +56,7 @@
   background-image: url("../img/heroBanner.jpg");
   background-size: cover;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  display: flex;
   padding-bottom: 48%;
   position: relative;
   width: 85%;
@@ -89,4 +90,73 @@
   @media (min-width: $breakpoint-lg) {
     display: block;
   }
+}
+
+
+////////// Modal //////////
+
+.reel{
+  background: #ffffff9a;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner__modal--open{
+  height: 40px;
+  justify-content: center;
+  left: 43%;
+  position: absolute;
+  top: 40%;
+  width: 40px;
+
+  &:hover{
+    background-color: #292929bb;
+    border-radius: 50%;
+  }
+
+  img{
+    height: auto;
+    width: 100%;
+  }
+}
+
+.banner__modal{
+  background-color: #292929bb;
+  height: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  top: 50%;
+  visibility: hidden;
+  width: 100%;
+  z-index: 99999;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.banner__modal--close{
+  border-radius: 5px;
+  background-color: orange;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 35px;
+  left: 80%;
+  line-height: 35px;
+  top: 10%;
+  padding-bottom: 10px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 35px;
 }
