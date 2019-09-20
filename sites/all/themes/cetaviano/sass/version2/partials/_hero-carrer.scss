@@ -1,0 +1,36 @@
+.panel-header{
+  img {
+    height: 350px;
+  }
+  .panels-ipe-sort-container {
+    height: 350px;
+  }
+}
+
+.section-call-out {
+  background-color: transparent !important; //la clase de cada carrera establece un color
+  bottom: 27vh;
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+
+  @media (min-width: 1400px) {
+    padding: 0;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 42px;
+    padding-top: 0;
+
+    @media (min-width: $breakpoint-md) {
+      width: 60%;
+    }
+    @media (min-width: $breakpoint-lg) {
+      width: 50%;
+    }
+    @media (min-width: $breakpoint-xl) {
+      width: 40%;
+    }
+  }
+}

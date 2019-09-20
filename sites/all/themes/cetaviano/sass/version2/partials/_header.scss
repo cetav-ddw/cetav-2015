@@ -19,6 +19,15 @@ nav[role="navigation"] .expanded .menu {
   }
 }
 
+nav[role="navigation"] .menu .active-trail {
+  @media (min-width: $breakpoint-lg) {
+    &:hover {
+      font-weight: bold;
+      text-shadow: none;
+    }
+  }
+}
+
 nav[role="navigation"] .menu {
   a:hover,
   li:hover span  {
@@ -84,7 +93,25 @@ nav[role="navigation"] .menu {
   }
 }
 
-// logo
+.cont-burger {
+  margin: 17.5px 30px;
+
+	.on {
+		transform: translateY(-5px);
+  }
+}
+
+.cont-burger .menu-toggle {
+	display: flex;
+	margin-top: 0;
+	flex-direction: column;
+  justify-content: space-around;
+
+	div {
+		margin: 0;
+	}
+}
+
 .header {
 	background-color: #292929;
 	height: 65px;

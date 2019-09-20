@@ -122,22 +122,3 @@ a.btn-secondary--inverse {
     transition: 0.5s;
   }
 }
-
-.cont-burger {
-  margin: 17.5px 30px;
-
-	.on {
-		transform: translateY(-5px);
-  }
-}
-
-.cont-burger .menu-toggle {
-	margin-top: 0;
-	display: flex;
-	flex-direction: column;
-  justify-content: space-around;
-
-	div {
-		margin: 0;
-	}
-}
