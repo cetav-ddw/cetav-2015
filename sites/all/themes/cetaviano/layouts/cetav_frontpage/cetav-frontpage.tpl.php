@@ -14,7 +14,17 @@
       <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
     </div>
     <div class="hero-banner__cont-reel">
-      <div class="hero-banner__reel"></div>
+      <div class="hero-banner__reel">
+
+        <button class="btn__modal--open">
+          <img src="<?php echo base_path().path_to_theme() ?>/img/play-button.svg" alt="Boton de play para ver Reel del la generación" srcset="">
+        </button>      
+      </div>
+    </div>
+
+    <div class="banner__modal">
+      <a href="#" class="banner__modal--close">X</a>
+      <iframe class="reel" src="https://player.vimeo.com/video/247321835?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </section>
   <!--end Hero banner-->
