@@ -21,7 +21,7 @@
       <div id="banner-modal" class="banner__modal">
         <iframe class="reel" src="https://player.vimeo.com/video/247321835?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         <button id="modal-close" class="btn__modal--close">X</button>
-      </div>     
+      </div>
     </div>
 
   </section>
