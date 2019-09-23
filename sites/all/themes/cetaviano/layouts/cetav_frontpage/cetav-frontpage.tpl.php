@@ -15,17 +15,15 @@
     </div>
     <div class="hero-banner__cont-reel">
       <div class="hero-banner__reel">
-
-        <button class="btn__modal--open">
-          <img src="<?php echo base_path().path_to_theme() ?>/img/play-button.svg" alt="Boton de play para ver Reel del la generación" srcset="">
-        </button>      
+        <button id="modal-open" class="btn__modal--open"></button>
       </div>
+
+      <div id="banner-modal" class="banner__modal">
+        <iframe class="reel" src="https://player.vimeo.com/video/247321835?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <button id="modal-close" class="btn__modal--close">X</button>
+      </div>     
     </div>
 
-    <div class="banner__modal">
-      <a href="#" class="banner__modal--close">X</a>
-      <iframe class="reel" src="https://player.vimeo.com/video/247321835?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
   </section>
   <!--end Hero banner-->
 

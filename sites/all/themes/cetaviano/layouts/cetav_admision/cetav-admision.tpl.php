@@ -57,11 +57,10 @@
           <p>Por lo cual reafirmamos el compromiso con el que deben contar nuestros estudiantes para cumplir el horario.</p>
         </li>
       </ul>
+    </section>
 
-      </section>
-
-      <section class="admin__steps">
-         <ul class="steps">
+    <section class="admin__steps">
+        <ul class="steps">
           <h3>Pasos a seguir</h3>
           <li class="step__item">
             <span class="step__number">1</span>
@@ -118,15 +117,17 @@
           <li class="step__item">
             <span class="step__number">6</span>
             <div class="step__info">
-            <p><strong>Presentarte</strong> a la <strong>entrevista.</strong></p>
-            <p>¡Nos interesa conocerte personalmente! En el Cetav nos gusta establecer un vínculo entre los estudiantes y los administrativos que hacen esto posible.</p>
-            <p><strong>Nota:</strong> Si ya te inscribiste en nuestra base de datos, la fecha de la entrevista se te estará comunicando por correo electrónico.</p>
-          </div>
-        </li>
-      </ul>
-  </div>
+              <p><strong>Presentarte</strong> a la <strong>entrevista.</strong></p>
+              <p>¡Nos interesa conocerte personalmente! En el Cetav nos gusta establecer un vínculo entre los estudiantes y los administrativos que hacen esto posible.</p>
+              <p><strong>Nota:</strong> Si ya te inscribiste en nuestra base de datos, la fecha de la entrevista se te estará comunicando por correo electrónico.</p>
+            </div>
+          </li>
+        </ul>
+    </section>
+</div>
 
-    <?php if ($content['wide']): ?>
+<div>
+  <?php if ($content['wide']): ?>
     <div class="section-wide">
       <?php print $content['wide_second']; ?>
     </div>

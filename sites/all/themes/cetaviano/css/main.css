@@ -4296,34 +4296,23 @@ nav[role="navigation"] .menu span {
       display: block; } }
 
 .reel {
-  background: #ffffff9a;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   left: 50%;
-  top: 50%;
+  position: relative;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.banner__modal--open {
-  height: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  left: 43%;
+.btn__modal--open {
+  background-color: transparent;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  height: 50px;
+  left: 45%;
   position: absolute;
-  top: 40%;
-  width: 40px; }
-  .banner__modal--open:hover {
-    background-color: #292929bb;
-    border-radius: 50%; }
-  .banner__modal--open img {
-    height: auto;
-    width: 100%; }
+  top: 45%;
+  width: 50px; }
 
 .banner__modal {
   background-color: #292929bb;
-  height: 800px;
   margin: 0 auto;
   opacity: 0;
   pointer-events: none;
@@ -4332,28 +4321,27 @@ nav[role="navigation"] .menu span {
   transition: opacity 400ms ease-in;
   top: 50%;
   visibility: hidden;
-  width: 100%;
-  z-index: 99999; }
-  .banner__modal:target {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto; }
+  width: 100vw;
+  z-index: 100; }
 
-.banner__modal--close {
-  border-radius: 5px;
+.modal--open {
+  opacity: 1;
+  visibility: visible; }
+
+.btn__modal--close {
   background-color: orange;
+  border-radius: 5px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  height: 35px;
+  height: 40px;
   left: 80%;
-  line-height: 35px;
-  top: 10%;
-  padding-bottom: 10px;
   position: absolute;
+  top: 10%;
   text-align: center;
   text-decoration: none;
-  width: 35px; }
+  width: 40px;
+  z-index: 101; }
 
 .intro {
   display: -webkit-box;
@@ -4740,9 +4728,10 @@ footer .contact-info {
       align-self: flex-start;
   background-color: orange;
   color: #fff;
-  font-size: 1.5rem;
-  line-height: 10px;
+  font-size: 2.5rem;
+  line-height: 25px;
   font-weight: 900;
+  margin-top: 5px;
   padding: 20px; }
 
 .intro__btn {
@@ -4769,8 +4758,12 @@ footer .contact-info {
   border: solid 2px #000;
   border-radius: 5px;
   color: #000;
-  font-size: .8rem;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  text-decoration: none; }
+  .step__btn:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none; }
 
 .admi__note {
   border: solid 1px #292929;
