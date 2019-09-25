@@ -56,6 +56,7 @@
   background-image: url("../img/heroBanner.jpg");
   background-size: cover;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  display: flex;
   padding-bottom: 48%;
   position: relative;
   width: 85%;
@@ -89,4 +90,65 @@
   @media (min-width: $breakpoint-lg) {
     display: block;
   }
+}
+
+
+////////// Modal //////////
+
+.reel{
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 50%);
+}
+
+.btn__modal--open{
+  background-color: transparent;
+  border: solid 2px $white;
+  border-radius: 50%;
+  height: 50px;
+  // justify-content: center;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 50px;
+}
+
+.banner__modal{
+  background-color: #292929bb;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  visibility: hidden;
+  width: 100%;
+  z-index: 110;
+
+  
+
+}
+
+.modal--open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn__modal--close{
+  background-color: $orange;
+  border-radius: 5px;
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  height: 40px;
+  left: 80%;
+  line-height: 20px;
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+  z-index: 410;
 }
