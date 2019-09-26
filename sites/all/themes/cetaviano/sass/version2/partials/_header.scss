@@ -19,6 +19,15 @@ nav[role="navigation"] .expanded .menu {
   }
 }
 
+nav[role="navigation"] .menu .active-trail {
+  @media (min-width: $breakpoint-lg) {
+    &:hover {
+      font-weight: bold;
+      text-shadow: none;
+    }
+  }
+}
+
 nav[role="navigation"] .menu {
   a:hover,
   li:hover span  {
@@ -84,7 +93,25 @@ nav[role="navigation"] .menu {
   }
 }
 
-// logo
+.cont-burger {
+  margin: 17.5px 30px;
+
+	.on {
+		transform: translateY(-5px);
+  }
+}
+
+.cont-burger .menu-toggle {
+	display: flex;
+	flex-direction: column;
+  justify-content: space-around;
+	margin-top: 0;
+
+	div {
+		margin: 0;
+	}
+}
+
 .header {
 	background-color: #292929;
 	height: 65px;
@@ -99,15 +126,17 @@ nav[role="navigation"] .menu {
 
 .header__logo {
 	height: 30px;
-	left: 35px;
+	left: 17.5px;
 	top: 20px;
 	position: absolute;
 	width: 65px;
 	z-index: 1;
 
 	@media (min-width: $breakpoint-lg) {
-		left: 5%;
 		top: 8px;
+  }
+  @media (min-width: 1400px) {
+		left: 0;
 	}
 
 	.icon-cetav {

@@ -3,6 +3,18 @@
 	max-width: 1200px;
 }
 
+.panel-cetav-carreras .panel-left-column {
+  width: 100%;
+}
+
+.panel-display {
+  margin-top: 65px;
+
+	@media (min-width: $breakpoint-md) {
+		margin-top: 45px;
+	}
+}
+
 .sub-titles {
 	padding-bottom: 5%;
   	text-align: center;
@@ -30,13 +42,4 @@
 .cetav-logo,
 .pll-logo {
 	display: none;
-}
-
-.section-wide,
-.hero-banner {
-  margin-top: 65px;
-
-	@media (min-width: $breakpoint-md) {
-		margin-top: 45px;
-	}
 }

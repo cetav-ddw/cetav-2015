@@ -10,10 +10,10 @@
 ?>
 <header class="header" role="banner">
   <!--logo-->
-  <a href="http://parquelalibertad.org/cetav/" class="header__logo"><img class="icon-cetav" src="<?php echo base_path().path_to_theme() ?>/img/logo.png" alt="Inicio sitio web CETAV"></a>
   <div class="section-wide section-no-padding head-nav slab-orange">
     <?php if ($page['navigation']): ?>
-      <div class="grid-width grid-full-limit">
+    <div class="grid-width grid-full-limit">
+        <a href="http://parquelalibertad.org/cetav/" class="header__logo"><img class="icon-cetav" src="<?php echo base_path().path_to_theme() ?>/img/logo.png" alt="Inicio sitio web CETAV"></a>
         <div class="cont-burger menu-collapse">
           <a id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
