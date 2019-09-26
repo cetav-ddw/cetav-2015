@@ -35,7 +35,7 @@
   }
   .grid-width {
     @media (min-width: $breakpoint-xl) {
-      max-width: 1400px;
+      max-width: 1200px;
     }
   }
   .pane-title {
@@ -51,6 +51,36 @@
   }
   .panel-left-column {
     width: 100%;
+  }
+  .section-call-out {
+    background-color: transparent !important; // reescribo solo el de carrera
+    bottom: 27vh;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 20px;
+    position: relative;
+
+    @media (min-width: $breakpoint-md) {
+      bottom: 30vh;
+    }
+    @media (min-width: 1400px) {
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 42px;
+      padding-top: 0;
+
+      @media (min-width: $breakpoint-md) {
+        width: 60%;
+      }
+      @media (min-width: $breakpoint-lg) {
+        width: 50%;
+      }
+      @media (min-width: $breakpoint-xl) {
+        width: 40%;
+      }
+    }
   }
   .section-intro,
   .section-wide {

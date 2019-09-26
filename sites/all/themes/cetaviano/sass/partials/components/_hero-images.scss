@@ -8,31 +8,32 @@
 }
 
 .section-call-out {
-  bottom: 32vh;
-  margin: 0 auto;
-  max-width: 1400px;
+  background-color: $main-color;
   padding: 20px;
-  position: relative;
-
-  @media (min-width: $breakpoint-md) {
-    bottom: 35vh;
-  }
-  @media (min-width: 1400px) {
-    padding: 0;
-  }
 
   h2 {
-    font-size: 42px;
-    padding-top: 0;
-
-    @media (min-width: $breakpoint-md) {
-      width: 60%;
-    }
-    @media (min-width: $breakpoint-lg) {
-      width: 50%;
-    }
-    @media (min-width: $breakpoint-xl) {
-      width: 40%;
-    }
+      color: $white;
+      font-size: 2em;
   }
+
+  @include mquery(850px) {
+      bottom: 0;
+      position: absolute;
+  }
+}
+
+.animacion-3d .section-call-out {
+  background-color: $animation-color;
+}
+
+.diseno-desarrollo-web .section-call-out {
+  background-color: $ddw-color;
+}
+
+.post-produccion .section-call-out {
+  background-color: $post-color;
+}
+
+.imagen-comercial .section-call-out {
+  background-color: $commercial-image-color;
 }
