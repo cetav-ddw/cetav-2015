@@ -11,14 +11,17 @@
 }
 
 .tercer-eje__cont-course {
-  width: 60%;
+  width: 80%;
+  @media (min-width: $breakpoint-lg) {
+    width: 60%;
+  }
 }
 
 .tercer-eje__course {
   background-size: cover;
   height: 250px;
   margin: 2.5% auto;
-  width: 90%;
+  width: 100%;
 
   @media (min-width: $breakpoint-md) {
     margin: 0;

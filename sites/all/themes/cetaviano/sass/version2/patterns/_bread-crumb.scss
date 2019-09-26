@@ -74,10 +74,10 @@
   }
   .bread-crumbs__item--third {
     background: rgba($color-carreer_post, 0.6);
-    clip-path: polygon(90% 0, 95% 50%, 90% 100%, 10% 100%, 14% 50%, 10% 0);
-    padding: 5px 35px 5px 60px;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 5% 100%, 14% 50%, 5% 0);
+    padding: 5px 15px 5px 26px;
     margin-left: 2px;
-    transform: translateX(-105px);
+    transform: translateX(-71px);
   }
 }
 

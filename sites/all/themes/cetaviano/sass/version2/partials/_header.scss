@@ -2,11 +2,14 @@ header .section-wide {
   margin-top: 0;
 }
 
-nav[role=navigation] {
+nav[role="navigation"] {
   @media (max-width: 900px) {
-    padding-top: 1em;
+    height: 100vh;
+    left: -24px;
+    padding: 1em 1.5em 0;
+    position: absolute;
     top: 50px;
-    width: 100%;
+    width: 110%;
   }
 }
 
@@ -94,7 +97,7 @@ nav[role="navigation"] .menu {
 }
 
 .cont-burger {
-  margin: 17.5px 30px;
+  margin: 17px 0 17px 30px;
 
 	.on {
 		transform: translateY(-5px);
@@ -113,20 +116,25 @@ nav[role="navigation"] .menu {
 }
 
 .header {
-	background-color: #292929;
-	height: 65px;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
+	background-color: $color-primary;
+  height: 65px;
+  margin: 0 auto;
+  max-width: 94%;
 
+  @media (min-width: $breakpoint-md) {
+		max-width: 96%;
+  }
 	@media (min-width: $breakpoint-lg) {
-		height: 45px;
-	}
+    height: 45px;
+    max-width: 97%;
+  }
+  @media (min-width: 1550px) {
+    max-width: 1400px;
+  }
 }
 
 .header__logo {
 	height: 30px;
-	left: 17.5px;
 	top: 20px;
 	position: absolute;
 	width: 65px;
@@ -135,9 +143,6 @@ nav[role="navigation"] .menu {
 	@media (min-width: $breakpoint-lg) {
 		top: 8px;
   }
-  @media (min-width: 1400px) {
-		left: 0;
-	}
 
 	.icon-cetav {
 		height: auto;
