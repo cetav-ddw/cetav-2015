@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @include mquery("small") {
+  @include mquery("medium") {
     background-color: $orange;
     background-image: url(“../img/heroBanner.jpg”);
     background-size: cover;
@@ -18,7 +18,7 @@
   position: relative;
   width: 100%;
 
-  @include mquery("small") {
+  @include mquery("medium") {
     background-color: $orange;
     flex-direction: row;
     order: 2;
@@ -36,20 +36,14 @@
   height: 350px;
   position: relative;
   width: 100%;
-
-  @media (min-width: 768px) {
-    left: 75%;
-    top: 17%;  // 20% apróx
-    // order: 2;
-  }
 }
 
 .hero-banner__cont-desc{
   margin-top: 4%;
-  padding: 5% 2%;
+  padding: 5%;
   width: 90%;
 
-  @media(min-width: 768px) {
+  @include mquery("medium") {
     order: 1;
   }
 }
@@ -60,20 +54,20 @@
 }
 
 .modal__btn-open {
-  height: 50px;
+  height: 60px;
   left: 45%;
   position: absolute;
   top: 40%;
-  width: 50px;
+  width: 60px;
 
-  @media (min-width: 768px) {
+  @include mquery("medium") {
     left: 48%;
     top: 40%;  // 20% apróx
   }
 
-  @media (min-width: 1000px) {
-    left: 50%;
-    top: 35%; 
+  @include mquery("large") {
+    left: 45%;
+    top: 55%; 
   }
 }
 
@@ -125,19 +119,16 @@
 }
 
 .video-reel--stop{
-  color: orange;
+  color: $orange;
   font-size: 32px;
+  font-weight: 900;
   padding: 5px;
 }
 
 .modal__btn-close {
-  color: $orange;
-  font-size: 1.5rem;
-  font-weight: 900;
-  left: 85%;
-  margin: 10px;
+  left: 90%;
   position: absolute;
-  top: 2%;
+  top: 5%;
   
   &:hover{
     color: #fff;
@@ -148,7 +139,7 @@
 .hero-banner__reel-show{
   display: block;
   background-color: rgba(0, 0, 0, .76);
-  opacity: 1;
+  height: 400px;
   -webkit-transition-property: width height background-color;
   -webkit-transition-duration: 2s;
   -webkit-transition-timing-function: ease;
@@ -156,9 +147,9 @@
   transition-duration: 2s;
   transition-timing-function: ease-out; 
 
-  @media (min-width: 768px) {
+  @include mquery("medium") {
     width: 100%;
-    height: 100%;
+    height: 400px;
   }
 } 
 
