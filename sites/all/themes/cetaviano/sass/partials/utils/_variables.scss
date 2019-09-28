@@ -21,7 +21,7 @@ $text-h4: 1.333em;
 
 // Colors
 // Main Colors in CETAV's Brand book
-$black: #464646;
+$black: #000;
 $dark-green: #819535;
 $dark-orange: #dc661e;
 $dark-red: #9e280e;
@@ -62,6 +62,7 @@ $site-breakpoints: (
     "medium": "56.25em", //900px
     "large": "68.75em", //1100px
     "x-large": "87.5em", //1400px
+    "xx-large": "96.9em" //1550px
 );
 
 //Spacing
@@ -82,10 +83,3 @@ $color-carreer_dic: #3a7d91;
 $colorHeader: #292929;
 $color-primary: #292929;
 $color-secondary: #f19130;
-
-// breackpoints
-$breakpoint-xs: 0px;
-$breakpoint-sm: 320px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 1024px;
-$breakpoint-xl: 1200px;

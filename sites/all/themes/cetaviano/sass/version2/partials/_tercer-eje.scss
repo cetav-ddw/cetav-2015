@@ -11,16 +11,20 @@
 }
 
 .tercer-eje__cont-course {
-  width: 60%;
+  width: 80%;
+
+  @include mquery("medium") {
+    width: 60%;
+  }
 }
 
 .tercer-eje__course {
   background-size: cover;
   height: 250px;
   margin: 2.5% auto;
-  width: 90%;
+  width: 100%;
 
-  @media (min-width: $breakpoint-md) {
+  @include mquery("small") {
     margin: 0;
     width: 50%;
 
@@ -76,7 +80,7 @@
 
 .tercer-eje__dark {
   align-items: center;
-  background-color: #00000042;
+  background-color: $shadow;
   display: flex;
   height: 100%;
   justify-content: center;

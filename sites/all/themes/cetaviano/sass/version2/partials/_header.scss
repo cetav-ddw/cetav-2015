@@ -2,11 +2,21 @@ header .section-wide {
   margin-top: 0;
 }
 
-nav[role=navigation] {
-  @media (max-width: 900px) {
-    padding-top: 1em;
-    top: 50px;
-    width: 100%;
+nav[role="navigation"] {
+  height: 100vh;
+  padding: 1em 1.5em 0;
+  top: 50px;
+
+  @include mquery("small") {
+    padding: 0 2em 0;
+  }
+  @include mquery("medium") {
+    height: auto;
+    padding-right: 0;
+    top: 0;
+  }
+  @include mquery(64em) {
+    padding-right: 2em;
   }
 }
 
@@ -20,7 +30,7 @@ nav[role="navigation"] .expanded .menu {
 }
 
 nav[role="navigation"] .menu .active-trail {
-  @media (min-width: $breakpoint-lg) {
+  @include mquery("medium") {
     &:hover {
       font-weight: bold;
       text-shadow: none;
@@ -31,23 +41,23 @@ nav[role="navigation"] .menu .active-trail {
 nav[role="navigation"] .menu {
   a:hover,
   li:hover span  {
-    border-bottom: 3px solid #292929;
+    border-bottom: 3px solid $color-primary;
     font-weight: 300;
 
-    @media (min-width: $breakpoint-lg) {
-      border-bottom: 3px solid #fff;
-      text-shadow: 1px 0px #fff;
+    @include mquery("medium") {
+      border-bottom: 3px solid $white;
+      text-shadow: 1px 0px $white;
     }
   }
   a:active,
   li:active span {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid $white;
     font-weight: 300;
-    text-shadow: 1px 0px #fff;
+    text-shadow: 1px 0px $white;
   }
 
   span {
-    border-bottom: 3px solid #292929;
+    border-bottom: 3px solid $color-primary;
     display: inline-block;
     font-weight: 300;
   }
@@ -57,7 +67,7 @@ nav[role="navigation"] .menu {
   right: 0;
   top: 10px;
 
-  @media (min-width: $breakpoint-lg) {
+  @include mquery("medium") {
     right: 20px;
     top: 0;
 
@@ -65,7 +75,7 @@ nav[role="navigation"] .menu {
       font-weight: 400;
     }
   }
-  @media (min-width: 1700px) {
+  @include mquery(1700px) {
     padding-right: 0;
     right: 0;
   }
@@ -81,20 +91,20 @@ nav[role="navigation"] .menu {
   margin-right: 20%;
   margin-top: 10px;
 
-  @media (min-width: $breakpoint-lg) {
+  @include mquery("medium") {
     margin-right: 22%;
     margin-top: 0;
   }
-  @media (min-width: 1400px) {
+  @include mquery("x-large") {
     margin-right: 18%;
   }
-  @media (min-width: 1550px) {
+  @include mquery("xx-large") {
     margin-right: 16%;
   }
 }
 
 .cont-burger {
-  margin: 17.5px 30px;
+  margin: 17px 0 17px 30px;
 
 	.on {
 		transform: translateY(-5px);
@@ -113,31 +123,30 @@ nav[role="navigation"] .menu {
 }
 
 .header {
-	background-color: #292929;
-	height: 65px;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
+	background-color: $color-primary;
+  height: 65px;
 
-	@media (min-width: $breakpoint-lg) {
-		height: 45px;
-	}
+  @include mquery("medium") {
+    height: 45px;
+  }
+
+  .grid-width {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 5%;
+  }
 }
 
 .header__logo {
 	height: 30px;
-	left: 17.5px;
 	top: 20px;
 	position: absolute;
 	width: 65px;
 	z-index: 1;
 
-	@media (min-width: $breakpoint-lg) {
+  @include mquery("medium") {
 		top: 8px;
   }
-  @media (min-width: 1400px) {
-		left: 0;
-	}
 
 	.icon-cetav {
 		height: auto;
