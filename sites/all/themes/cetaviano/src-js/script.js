@@ -86,21 +86,35 @@
     });
 
     // Back to top
-  $('a.top').click(function (e) {
-    e.preventDefault();
-    $(document.body).animate({scrollTop: 0}, 800);
-  });
+    $('a.top').click(function (e) {
+      e.preventDefault();
+      $(document.body).animate({scrollTop: 0}, 800);
+    });
 
-  $(window).on("load", function() {
-    $("#show-reel").click(function() {
+    $(window).on("load", function() {
+      $("#show-reel").click(function() {
         $("#video-reel").addClass("hero-banner__reel-show");
         $("#image-reel").addClass("hidden");
-    })
-    $("#close-reel").click(function() {
+      });
+      $("#close-reel").click(function() {
         $("#video-reel").removeClass("hero-banner__reel-show");
         $("#image-reel").removeClass("hidden");
-    })
-});
+      });
+
+      if ($(window).width() >= 900) {  
+
+        $("#show-reel").click(function() {
+          $("#hero-text").removeClass("hero-banner__cont-desc");
+          $("#hero-text").addClass("hidden");
+        });      
+        $("#close-reel").click(function() {
+          $("#hero-text").removeClass("hidden");
+          $("#hero-text").addClass("hero-banner__cont-desc");
+        });
+    
+      } 
+
+    });
 
   });
 

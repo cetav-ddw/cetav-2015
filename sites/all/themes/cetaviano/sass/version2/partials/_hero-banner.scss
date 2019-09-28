@@ -21,12 +21,6 @@
     flex-direction: row;
     order: 2;
   }
-
-  /*@media (min-width: 768px) {
-    background-color: $orange;
-    flex-direction: row;
-    order: 2;
-  }*/
 }
 
 .hero-banner__video {
@@ -41,8 +35,13 @@
   padding: 5%;
   width: 90%;
 
-  @include mquery("medium") {
+  @include mquery("small") {
+    margin-top: 0;
     order: 1;
+  }
+
+  @include mquery("medium") {
+    padding-left: 11%;
   }
 }
 
@@ -51,7 +50,7 @@
   width: 100%;
 }
 
-.modal__btn-open {
+.video__btn-open {
   height: 60px;
   left: 45%;
   position: absolute;
@@ -65,7 +64,7 @@
 
   @include mquery("large") {
     left: 45%;
-    top: 55%; 
+    top: 50%; 
   }
 }
 
@@ -116,7 +115,7 @@
   padding: 5px;
 }
 
-.modal__btn-close {
+.video__btn-close {
   left: 90%;
   position: absolute;
   top: 5%;
