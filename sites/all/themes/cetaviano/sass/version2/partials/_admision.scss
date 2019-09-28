@@ -9,6 +9,7 @@
         width: 50%;
     }
 }
+
 .req {
     display: flex;
     flex-direction: column;
@@ -20,6 +21,7 @@
         width: 80%;
     }
 }
+
 .req, .steps {
     
     @media (min-width: $breakpoint-md )  {
@@ -60,19 +62,23 @@
         width: 33%;
     }
 }
+
 .item__img {
     margin: 0 auto;
     padding: 20px 0;
 }
+
 .item__list {
     list-style: none;
     padding: 0 10px;
 }
+
 .steps {
     margin: 0 auto;
     padding-top: 4%; 
     width: 90%;
 }
+
 .step__item {
     display: flex;
     flex-direction: row;
@@ -83,6 +89,7 @@
         margin: 5%;
 	}
 }
+
 .step__number {
 	align-self: flex-start;
 	background-color: orange;
@@ -93,9 +100,11 @@
     margin-top: 5px;
 	padding: 20px;
 }
+
 .intro__btn {
     justify-content: flex-start;
 }
+
 .step__info {
 	align-self: flex-end;
     line-height: 25px;
@@ -112,6 +121,7 @@
         line-height: none;
     }
 }
+
 .step__btn {
 	align-items: flex-start;
 	border: solid 2px #000;
@@ -126,6 +136,7 @@
         text-decoration: none;
     }
 }
+
 .admi__note {
     border: solid 1px #292929;
     color: #292929;

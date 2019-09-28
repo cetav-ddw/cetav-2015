@@ -9,12 +9,22 @@
 <div class="panel-display panel-cetav-frontpage">
   <!--Hero banner-->
   <section class="hero-banner">
-    <div class="hero-banner__cont-desc">
+    <div id="video-reel" class="hero-banner__video">
+      <a id="close-reel" class="modal__btn-close">
+        <div class="video-reel--stop">x</div>
+      </a>
+      <iframe class="video-reel" src="https://player.vimeo.com/video/247321835?color=ffffff&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <div id="image-reel" class="hero-banner__reel">
+      <a id="show-reel" class="modal__btn-open">
+        <div class="video-reel--play"></div>
+      </a>
+    </div>
+
+    <div id="hero-text" class="hero-banner__cont-desc">
       <h1 class="hero-banner__title">Somos CETAV</h1>
       <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
-    </div>
-    <div class="hero-banner__cont-reel">
-      <div class="hero-banner__reel"></div>
     </div>
   </section>
   <!--end Hero banner-->

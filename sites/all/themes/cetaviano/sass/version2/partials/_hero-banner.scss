@@ -1,92 +1,167 @@
-.hero-banner__cont-desc {
-  display: flex;
-  font-weight: 300;
-  flex-direction: column;
-  height: 450px;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 90%;
-  position: absolute;
-  width: 100%;
-
-  @media (min-width: 1550px) {
-    max-width: 1400px;
-  }
-}
-
-.hero-banner__cont-reel {
-  display: flex;
-  justify-content: center;
-  max-height: 450px;
-  max-width: 95%;
-  overflow: hidden;
-  transition: 1s;
-  width: 100%;
-
-  &:hover{
-    transition-delay: .2s;
-    transition-duration: .5s;
-    transition-property: opacity;
-    transition-timing-function: ease;
-  }
-  @media (min-width: $breakpoint-lg) {
-    justify-content: flex-end;
-  }
-  @media (min-width: $breakpoint-xl) {
-    max-width: 90%;
-  }
-  @media (min-width: 1550px) {
-    max-width: 95%;
-  }
-}
-
 .hero-banner {
-  background-image: url("../img/trianglify.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
-  height: 100%;
-  justify-content: center;
-  max-height: 450px;
-  overflow: hidden;
-  width: 100%;
+  flex-direction: column;
+
+  @include mquery("small") {
+    background-color: $orange;
+    background-image: url(“../img/heroBanner.jpg”);
+    background-size: cover;
+    flex-direction: row;
+  }
+  @media (min-width: 768px) {
+  }
 }
 
 .hero-banner__reel {
-  background-image: url("../img/heroBanner.jpg");
-  background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  padding-bottom: 48%;
+  background-color: #e0e0e065;
+  height: 300px;
   position: relative;
-  width: 85%;
+  width: 100%;
 
-  @media (min-width: $breakpoint-lg) {
-    padding-bottom: 40%;
-    width: 70%;
+  @include mquery("small") {
+    background-color: $orange;
+    flex-direction: row;
+    order: 2;
   }
-  @media (min-width: 1550px) {
-    right: 0;
-    top: -10vh;
-    width: 60%;
+
+  /*@media (min-width: 768px) {
+    background-color: $orange;
+    flex-direction: row;
+    order: 2;
+  }*/
+}
+
+.hero-banner__video {
+  display: none;
+  height: 350px;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    left: 75%;
+    top: 17%;  // 20% apróx
+    // order: 2;
   }
 }
 
-.hero-banner__desc {
-  color: $white;
-  display: none;
-  width: 30%;
+.hero-banner__cont-desc{
+  margin-top: 4%;
+  padding: 5% 2%;
+  width: 90%;
 
-  @media (min-width: $breakpoint-lg) {
-    display: block;
+  @media(min-width: 768px) {
+    order: 1;
   }
 }
 
-.hero-banner__title {
-  color: $white;
-  display: none;
-  font-size: $text-h2;
+.video-reel {
+  height: 100%;
+  width: 100%;
+}
 
-  @media (min-width: $breakpoint-lg) {
-    display: block;
+.modal__btn-open {
+  height: 50px;
+  left: 45%;
+  position: absolute;
+  top: 40%;
+  width: 50px;
+
+  @media (min-width: 768px) {
+    left: 48%;
+    top: 40%;  // 20% apróx
   }
+
+  @media (min-width: 1000px) {
+    left: 50%;
+    top: 35%; 
+  }
+}
+
+.video-reel--play {
+  background-color: transparent;
+
+  &::before {
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::after {
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid white;
+    border-top: 15px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: 4px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+    -o-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    -webkit-transition: -webkit-transform .2s ease;
+    -o-transition: -o-transform .2s ease;
+    transition: transform .2s ease;
+    -webkit-transition-delay:.3s;
+    -o-transition-delay:.3s;
+    transition-delay:.3s;
+    width: 0;
+  }
+
+  &:hover {
+
+    &::before {
+      background-color: #e0e0e065;
+    }
+  }
+}
+
+.video-reel--stop{
+  color: orange;
+  font-size: 32px;
+  padding: 5px;
+}
+
+.modal__btn-close {
+  color: $orange;
+  font-size: 1.5rem;
+  font-weight: 900;
+  left: 85%;
+  margin: 10px;
+  position: absolute;
+  top: 2%;
+  
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.hero-banner__reel-show{
+  display: block;
+  background-color: rgba(0, 0, 0, .76);
+  opacity: 1;
+  -webkit-transition-property: width height background-color;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  transition-property: opacity width height background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-out; 
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+} 
+
+.hidden {
+  display: none;
 }
