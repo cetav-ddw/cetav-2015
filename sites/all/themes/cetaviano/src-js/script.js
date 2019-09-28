@@ -91,6 +91,17 @@
     $(document.body).animate({scrollTop: 0}, 800);
   });
 
+  $(window).on("load", function() {
+    $("#show-reel").click(function() {
+        $("#video-reel").addClass("hero-banner__reel-show");
+        $("#image-reel").addClass("hidden");
+    })
+    $("#close-reel").click(function() {
+        $("#video-reel").removeClass("hero-banner__reel-show");
+        $("#image-reel").removeClass("hidden");
+    })
+});
+
   });
 
 }(jQuery));

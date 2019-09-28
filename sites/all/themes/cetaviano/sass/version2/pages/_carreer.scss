@@ -1,0 +1,213 @@
+.cta-register-detail strong {
+  color: black;
+}
+
+.panel-cetav-carreras {
+  h2,
+  h3,
+  h4 {
+    color: black;
+    font-family: $font-fam;
+    margin: 0;
+    padding-top: 25px;
+
+    @include mquery("small") {
+      padding-top: 67px;
+    }
+  }
+  p {
+    color: black;
+    font-size: 1.12em;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 15px;
+
+    @include mquery("small") {
+      padding-top: 25px;
+    }
+  }
+  .call-out-text {
+    font-size: $text-base;
+  }
+  .career-program {
+    margin: 50px auto 0 auto;
+    padding-bottom: 10px;
+  }
+  .grid-width {
+    max-width: 95%;
+
+    @include mquery(81em) {
+      max-width: 1200px;
+    }
+  }
+  .pane-title {
+    display: none;
+  }
+  .panel-header{
+    img {
+      height: 350px;
+    }
+    .panels-ipe-sort-container {
+      height: 350px;
+    }
+  }
+  .panel-left-column {
+    width: 100%;
+  }
+  .section-call-out {
+    background-color: transparent !important; // reescribo solo el de carrera
+    bottom: 27vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+
+    @include mquery("small") {
+      bottom: 30vh;
+    }
+    @include mquery("x-large") {
+      padding: 0;
+    }
+
+    h2 {
+      font-size: 42px;
+      padding-top: 0;
+    }
+  }
+  .section-intro,
+  .section-wide {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .slab-blue {
+    background-color: $white;
+    color: black;
+  }
+  .subtitle-career {
+    color: black;
+    font-size: $text-h3;
+  }
+}
+
+.paragraphs-items-field-programa-carreras {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include mquery("small") {
+    flex-direction: row;
+  }
+}
+
+.paragraphs-item-programas-carreras {
+  p {
+    font-weight: 500;
+    padding-left: 25px;
+  }
+  li {
+    list-style-type: disc;
+  }
+}
+
+.line-grid {
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+
+.pane-node-field-skills-carrera {
+  h4 {
+    padding-top: 0;
+  }
+  li {
+    color: black;
+  }
+}
+
+.pane-node-field-titulo-estudiar-carrera h4 {
+  font-size: $text-h3;
+}
+
+.saber-mas {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 85px;
+
+  a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+      color: #f19130;
+      font-weight: bold;
+    }
+  }
+  h3 {
+    font-size: $text-h4;
+    padding-top: 15px;
+  }
+  p {
+    padding: 15px;
+  }
+}
+
+.section-call-out h2{
+  color: $white;
+}
+
+.split-list {
+  h4{
+    font-size: 1.12em;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 100%;
+
+    @include mquery("small") {
+      width: 40%;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+
+    li {
+      color: black;
+      font-weight: 100;
+
+      &:before {
+        color: black;
+      }
+    }
+  }
+}
+
+.skills-cont-list {
+  width: 100%;
+
+  @include mquery("small") {
+    float: left;
+    width: 50%;
+  }
+  @include mquery("medium") {
+    width: 50%;
+  }
+}
+
+.title-skills-3d {
+  border-bottom: 2px solid $color-carreer_animacion;
+}
+
+.title-skills-post {
+  border-bottom: 2px solid $color-carreer_post;
+}
+
+.title-skills-dic {
+  border-bottom: 2px solid $color-carreer_dic;
+}
+
+.title-skills-web {
+  border-bottom: 2px solid $color-carreer_web;
+}

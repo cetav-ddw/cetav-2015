@@ -2,7 +2,7 @@ footer .contact-info {
   margin: 0 5%;
   text-align: left;
 
-	@media (min-width: 900px) {
+  @include mquery("medium") {
     margin: 0;
 		padding-right: 5em;
 	}

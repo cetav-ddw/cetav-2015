@@ -39,9 +39,9 @@ a.btn-secondary--inverse {
 	position: absolute;
 	text-align: center;
 	top: 0;
-  width: 100%;
+  	width: 100%;
 
-	@media (min-width: $breakpoint-md) {
+	@include mquery("small") {
 		&:hover {
 			rect {
         stroke-dasharray: 15, 310;
@@ -76,9 +76,9 @@ a.btn-secondary--inverse {
 	padding: 10px;
 	position: relative;
 	max-width: 60%;
-  text-align: center;
+  	text-align: center;
 
-	@media (min-width: $breakpoint-md) {
+	@include mquery("small") {
 		margin: 1.5em 0;
 		max-width: 100%;
 	}
@@ -87,9 +87,9 @@ a.btn-secondary--inverse {
 .intro__btn {
 	width: 100%;
 	display: flex;
-  justify-content: center;
+  	justify-content: center;
 
-	@media (min-width: $breakpoint-lg) {
+  @include mquery("medium") {
 		justify-content: flex-start;
 	}
 }
@@ -102,9 +102,9 @@ a.btn-secondary--inverse {
 	display: inline-block;
 	padding: 10px 20px;
 	text-align: center;
-  transition: 0.5s;
+	  transition: 0.5s;
 
-	@media (min-width: $breakpoint-md) {
+	@include mquery("small") {
 		&:hover {
       background-color: transparent;
       border-color: black;

@@ -8,8 +8,6 @@
     background-size: cover;
     flex-direction: row;
   }
-  @media (min-width: 768px) {
-  }
 }
 
 .hero-banner__reel {
@@ -97,15 +95,8 @@
     margin-left: 4px;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-    -ms-transform: translateX(-50%) translateY(-50%) scale(1);
-    -o-transform: translateX(-50%) translateY(-50%) scale(1);
     transform: translateX(-50%) translateY(-50%) scale(1);
-    -webkit-transition: -webkit-transform .2s ease;
-    -o-transition: -o-transform .2s ease;
     transition: transform .2s ease;
-    -webkit-transition-delay:.3s;
-    -o-transition-delay:.3s;
     transition-delay:.3s;
     width: 0;
   }
@@ -118,7 +109,7 @@
   }
 }
 
-.video-reel--stop{
+.video-reel--stop {
   color: $orange;
   font-size: 32px;
   font-weight: 900;
@@ -140,9 +131,6 @@
   display: block;
   background-color: rgba(0, 0, 0, .76);
   height: 400px;
-  -webkit-transition-property: width height background-color;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-timing-function: ease;
   transition-property: opacity width height background-color;
   transition-duration: 2s;
   transition-timing-function: ease-out; 
