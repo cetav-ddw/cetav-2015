@@ -1,7 +1,7 @@
 .bread-crumbs {
   margin-top: 25px;
 
-  @media (min-width: $breakpoint-md) {
+  @include mquery("small") {
     margin-top: 42px;
   }
 }
@@ -17,8 +17,7 @@
     background: rgba($color-carreer_animacion, 0.6);
     clip-path: polygon(85% 0, 95% 50%, 85% 100%, 10% 100%, 18% 50%, 10% 0);
     padding: 5px 30px 5px 40px;
-    margin-left: 25px;
-    transform: translateX(-105px);
+    transform: translateX(-80px);
   }
 }
 
@@ -36,10 +35,9 @@
   }
   .bread-crumbs__item--third {
     background: rgba($color-carreer_dic, 0.6);
-    clip-path: polygon(85% 0, 95% 50%, 85% 100%, 10% 100%, 16% 50%, 10% 0);
-    padding: 5px 30px 5px 45px;
-    margin-left: 22px;
-    transform: translateX(-105px);
+    clip-path: polygon(85% 0, 95% 50%, 85% 100%, 9% 100%, 16% 50%, 9% 0);
+    padding: 5px 30px 5px 35px;
+    transform: translateX(-81px);
   }
 }
 
@@ -53,27 +51,27 @@
   clip-path: polygon(0% 0%, 87% 0, 99% 50%, 87% 100%, 0% 100%);
   padding: 5px 10px 5px 5px;
 
-  @media (min-width: $breakpoint-md) {
+  @include mquery("small") {
     padding: 5px 20px 5px 10px;
   }
 }
 
 .bread-crumbs__item--second {
-  clip-path: polygon(85% 0, 95% 50%, 85% 100%, 10% 100%, 17% 50%, 10% 0);
+  clip-path: polygon(85% 0, 95% 50%, 85% 100%, 11% 100%, 17% 50%, 11% 0);
   padding: 5px 20px 5px 30px;
   margin-left: 13px;
   transform: translateX(-40px);
 }
 
 .bread-crumbs--preg {
-  ul {
-    display: block;
-  }
   .bread-crumbs__item--first {
     background-color: #de6e00;
   }
   .bread-crumbs__item--second {
     background: rgba(#de6e00, 0.8);
+    clip-path: polygon(85% 0, 95% 50%, 85% 100%, 11% 100%, 16% 50%, 11% 0);
+    padding: 5px 25px 5px 40px;
+    transform: translateX(-44px);
   }
 }
 
@@ -86,10 +84,9 @@
   }
   .bread-crumbs__item--third {
     background: rgba($color-carreer_post, 0.6);
-    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 5% 100%, 15% 50%, 5% 0);
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 4% 100%, 15% 50%, 4% 0);
     padding: 5px 15px 5px 26px;
-    margin-left: 2px;
-    transform: translateX(-71px);
+    transform: translateX(-67px);
   }
 }
 
@@ -104,7 +101,6 @@
     background: rgba($color-carreer_web, 0.6);
     clip-path: polygon(85% 0, 95% 50%, 85% 100%, 10% 100%, 17% 50%, 10% 0);
     padding: 5px 30px 5px 40px;
-    margin-left: 22px;
-    transform: translateX(-105px);
+    transform: translateX(-82px);
   }
 }

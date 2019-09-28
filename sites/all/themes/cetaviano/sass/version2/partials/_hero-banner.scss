@@ -9,8 +9,8 @@
   position: absolute;
   width: 100%;
 
-  @media (min-width: 1550px) {
-    max-width: 1400px;
+  @include mquery("xx-large") {
+    max-width: 1200px;
   }
 }
 
@@ -29,13 +29,13 @@
     transition-property: opacity;
     transition-timing-function: ease;
   }
-  @media (min-width: $breakpoint-lg) {
+  @include mquery(64em) {
     justify-content: flex-end;
   }
-  @media (min-width: $breakpoint-xl) {
+  @include mquery("large") {
     max-width: 90%;
   }
-  @media (min-width: 1550px) {
+  @include mquery("xx-large") {
     max-width: 95%;
   }
 }
@@ -60,12 +60,12 @@
   position: relative;
   width: 85%;
 
-  @media (min-width: $breakpoint-lg) {
+  @include mquery(64em) {
     padding-bottom: 40%;
     width: 70%;
   }
-  @media (min-width: 1550px) {
-    right: 0;
+  @include mquery("xx-large") {
+    right: 5%;
     top: -10vh;
     width: 60%;
   }
@@ -76,7 +76,7 @@
   display: none;
   width: 30%;
 
-  @media (min-width: $breakpoint-lg) {
+  @include mquery(64em) {
     display: block;
   }
 }
@@ -86,7 +86,7 @@
   display: none;
   font-size: $text-h2;
 
-  @media (min-width: $breakpoint-lg) {
+  @include mquery(64em) {
     display: block;
   }
 }

@@ -41,7 +41,7 @@ a.btn-secondary--inverse {
 	top: 0;
   width: 100%;
 
-	@media (min-width: $breakpoint-md) {
+	@include mquery("small") {
 		&:hover {
 			rect {
         stroke-dasharray: 15, 310;
@@ -78,7 +78,7 @@ a.btn-secondary--inverse {
 	max-width: 60%;
   text-align: center;
 
-	@media (min-width: $breakpoint-md) {
+	@include mquery("small") {
 		margin: 1.5em 0;
 		max-width: 100%;
 	}
@@ -89,7 +89,7 @@ a.btn-secondary--inverse {
 	display: flex;
   justify-content: center;
 
-	@media (min-width: $breakpoint-lg) {
+  @include mquery("medium") {
 		justify-content: flex-start;
 	}
 }
@@ -104,7 +104,7 @@ a.btn-secondary--inverse {
 	text-align: center;
   transition: 0.5s;
 
-	@media (min-width: $breakpoint-md) {
+	@include mquery("small") {
 		&:hover {
       background-color: transparent;
       border-color: black;

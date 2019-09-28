@@ -1,4 +1,4 @@
-@media (min-width: $breakpoint-md) {
+@include mquery("small") {
   .cont-news .news-layout--minor:hover {
     transform: translate3d(0, -5px, 0);
     transition: transform 300ms ease-out;
@@ -34,7 +34,7 @@
     transition: transform 300ms ease-in-out;
     width: 90%;
 
-    @media (min-width: $breakpoint-lg) {
+    @include mquery("medium") {
       margin: 1.5%;
       padding: 1.5% 3% 3% 3%;
       width: 30%;
@@ -65,7 +65,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
-    @media (min-width: $breakpoint-lg) {
+    @include mquery("medium") {
       flex-direction: row;
     }
   }
@@ -88,7 +88,7 @@
 	text-align: center;
   transition: 0.5s;
 
-	@media (min-width: $breakpoint-md) {
+  @include mquery("small") {
 		&:hover {
       background-color: $white;
       border-color: black;
