@@ -4,13 +4,24 @@
 
   @include mquery("medium") {
     background-color: $orange;
-    background-image: url(“../img/heroBanner.jpg”);
+    background-image: url(../img/trianglify.png);
+    background-repeat: no-repeat;
     background-size: cover;
     flex-direction: row;
+    justify-content: center;
+    max-height: 450px;
+    padding: 0 5%;
+  }
+  
+  @include mquery("x-large") {
+    padding: 0 4%;
   }
 }
 
 .hero-banner__reel {
+  background-image: url(../img/heroBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #e0e0e065;
   height: 300px;
   position: relative;
@@ -18,8 +29,11 @@
 
   @include mquery("medium") {
     background-color: $orange;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     flex-direction: row;
+    height: auto;
     order: 2;
+    width: 60%;
   }
 }
 
@@ -31,17 +45,24 @@
 }
 
 .hero-banner__cont-desc{
-  margin-top: 4%;
-  padding: 5%;
+  font-weight: lighter;
+  margin: 3em 0;
+  padding-left: 1.5em;
   width: 90%;
 
   @include mquery("small") {
-    margin-top: 0;
+    padding-left: 2.5em;
     order: 1;
   }
 
   @include mquery("medium") {
-    padding-left: 11%;
+    padding-left: .5em;
+    color: $white;
+    width: 40%;
+  }
+
+  @include mquery("large") {
+    margin: 9% 0;
   }
 }
 
@@ -50,7 +71,7 @@
   width: 100%;
 }
 
-.video__btn-open {
+.hero-banner__btn-open {
   height: 60px;
   left: 45%;
   position: absolute;
@@ -58,13 +79,12 @@
   width: 60px;
 
   @include mquery("medium") {
-    left: 48%;
+    left: 45%;
     top: 40%;  // 20% apróx
   }
 
   @include mquery("large") {
-    left: 45%;
-    top: 50%; 
+    top: 40%; 
   }
 }
 
@@ -115,7 +135,7 @@
   padding: 5px;
 }
 
-.video__btn-close {
+.hero-banner__btn-close {
   left: 90%;
   position: absolute;
   top: 5%;
