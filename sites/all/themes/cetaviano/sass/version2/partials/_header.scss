@@ -16,6 +16,9 @@ header .section-wide {
       font-weight: 400;
     }
   }
+  @include mquery(1000px) {
+    top: 0;
+  }
   @include mquery(1700px) {
     padding-right: 0;
     right: 0;

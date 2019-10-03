@@ -1,9 +1,5 @@
 nav[role="navigation"] {
     background-color: $colorHeader;
-    left: 0;
-    padding: 3em 1em 0;
-    position: absolute;
-    top: 0;
     width: 100%;
     z-index: 10;
 
@@ -45,7 +41,7 @@ nav[role="navigation"] {
 
         @include mquery ("medium") {
             flex-direction: row;
-            margin: 0;
+            margin-bottom: 0;
         }
 
         a {

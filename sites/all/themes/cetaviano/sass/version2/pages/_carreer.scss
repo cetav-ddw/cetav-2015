@@ -63,7 +63,7 @@
     position: relative;
 
     @include mquery("small") {
-      bottom: 30vh;
+      bottom: 27vh;
     }
     @include mquery("x-large") {
       padding: 0;
