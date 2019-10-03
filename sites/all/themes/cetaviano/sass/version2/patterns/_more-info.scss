@@ -1,0 +1,48 @@
+.more-info {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 85px;
+
+  a {
+    color: black;
+    text-decoration: underline;
+
+    &:hover {
+      color: #f19130;
+      font-weight: bold;
+    }
+  }
+  h3 {
+    padding-top: 15px;
+  }
+  p {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
+
+.more-info__link {
+  text-decoration: underline;
+}
+
+.more-info__link--strong {
+  font-weight: 500;
+}
+
+.more-info__text {
+  color: $black;
+  font-weight: 100;
+  margin: 0;
+}
+
+.more-info__title {
+  color: $black;
+  font-family: $font-fam;
+  font-weight: 600;
+  font-size: 1.125em;
+  margin: 0;
+  padding-top: 15px;
+}
