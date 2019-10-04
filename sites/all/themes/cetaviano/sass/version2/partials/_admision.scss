@@ -1,152 +1,231 @@
-.hero__admi {
-    left: 15%;
-    padding-top: 4%;
-    position: relative;
-    top: 10%;
-    width: 90%;
-    
-    @include mquery("large")   {
-        width: 50%;
+.panel-header {
+  
+  @include mquery("medium") {
+    img {
+      height: 300px;
     }
+  }
+}
+
+.panel-header_info {
+  color: $black;
+  margin: 5%;
+
+  @include mquery(31.25em) {
+    display: none;
+  }
+}
+
+.adaptive-image {
+  position: relative;
+}
+
+.section-call-out-h {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  color: $white;
+
+  @include mquery(31.25em) {
+    &::after {
+      content: '¿Querés ser parte de nuestra siguiente generación?
+                Te contamos los requisitos y pasos para inscribirte';
+      color: $white;
+      font-family: $font-fam;
+      font-size: 1rem;
+      font-weight: lighter;
+      display: block;
+      padding-top: 15px;
+      width: 60%;
+    }
+  }
+
+  @include mquery("medium") {
+    left: 10%;
+    bottom: 35%;
+  }
+
+  @include mquery("x-large") {
+    left: 14%;
+  }
 }
 
 .req {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    
-    @media (min-width: 500px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 80%;
-    }
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+  @include mquery(31.25em) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
 }
 
-.req, .steps {
-    
-    @include mquery("medium") {
-        width: 100%;
-    }
-    
-    @include mquery("large")   {
-        width: 960px;
-    }
-    
-    @include mquery("x-large") {
-        width: 1100px;
-    }
+.req, 
+.steps {
+  font-weight: lighter;
+  
+  @include mquery("medium") {
+    width: 100%;
+  }
+  
+  @include mquery("large")   {
+    width: 960px;
+  }
+  
+  @include mquery("x-large") {
+    width: 1100px;
+  }
 }
 
 .req__item {
-    border: solid 1px #fff;
-    border-bottom: 5px;
-	background-color: #e0e0e0;
-    float: left;
-    height: auto;
-    list-style: none;
-	margin: 0 auto;
+  border: solid 1px $white;
+  // border-bottom: 5px;
+  background-color: $lighter-gray;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  list-style: none;
+	margin: 0;
 	padding: 10%;
-    width: 88%;
-    
-    p {
-	  margin-top: 10px;
-	}
-    
-    @media(min-width: 500px)  {
-        height: auto;
-        padding: 4%;
-        width: 50%;
-    }
-    
-    @include mquery("medium") {
-        width: 33%;
-    }
+  width: 88%;
+
+  @include mquery(48.75em) {
+    height: auto;
+    padding: 4%;
+    width: 50%;
+  }
+  
+  @include mquery("medium") {
+    width: 33%;
+  }
 }
 
-.item__img {
-    margin: 0 auto;
-    padding: 20px 0;
+.req__img-item {
+  align-self: center;
+  width: 60px;
+
+  @include mquery("small") {
+    width: 70px;
+  }
+
+  @include mquery("medium") {
+    width: 80px;
+  }
+}
+
+.req__p-item {
+  font-weight: lighter;
+  margin: 0 auto;
+  margin-top: 10px; 
 }
 
 .item__list {
-    list-style: none;
-    padding: 0 10px;
+  font-weight: lighter;
+  list-style: none;
+  padding: 0 10px;
 }
 
 .steps {
-    margin: 0 auto;
-    padding-top: 4%; 
-    width: 90%;
+  padding-top: 6%; 
+  width: 80%;
+
+  h3 {
+    margin-left: 4%;
+  }
+
+  @include mquery("small") {
+
+  }
 }
 
 .step__item {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 10% 5%;
-    
-    @include mquery("medium") {
-        margin: 5%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 5%;
+  margin-bottom: 10%;
+  
+  @include mquery("medium") {
+    margin: 5%;
 	}
 }
 
 .step__number {
 	align-self: flex-start;
-	background-color: orange;
-	color: #fff;
+	background-color: $orange;
+	color: $white;
+  font-size: 1.5rem;
+  line-height: 25px;
+  font-weight: 900;
+  margin-top: 5px;
+  padding: 10px 15px;
+  
+  @include mquery("small") {
     font-size: 2.5rem;
-    line-height: 25px;
-    font-weight: 900;
-    margin-top: 5px;
-	padding: 20px;
+    padding: 20px;
+  }
+
+  @include mquery("medium") {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
 }
 
 .intro__btn {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .step__info {
-	align-self: flex-end;
-    line-height: 25px;
-    padding: 0 5%;
-    width: 90%;
+  align-self: flex-end;
+  font-weight: lighter;
+  line-height: 25px;
+  text-decoration: none;
+  width: 100%;
     
-    p{
-        margin: 0 0 .8em;
-    }
+  p{
+    margin: 0 0 .8em;
+  }
     
-    @include mquery("medium") {
-        padding: 0 2%;
-        width: 70%;
-        line-height: none;
-    }
+  @include mquery("medium") {
+    padding-left: 25px;
+    width: 70%;
+    line-height: none;
+  }
 }
 
 .step__btn {
 	align-items: flex-start;
-	border: solid 2px #000;
+	border: solid 2px $color-primary;
 	border-radius: 5px;
-    color: #000;
-    padding: 10px 20px;
+  color: $color-primary;
+  padding: 5px 10px;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: $color-primary;
+    color: $white;
     text-decoration: none;
-    
-    &:hover {
-        background-color: #000;
-        color: #fff;
-        text-decoration: none;
-    }
+  }
+
+  @include mquery("small") {
+    padding: 10px 20px;
+  }
+
 }
 
 .admi__note {
-    border: solid 1px #292929;
-    color: #292929;
-    padding: 15px;
-    align-self: center;
-    width: 100%;
-    text-align: center;
-    
-    @include mquery("large")   {
-    margin: 0 auto;
-        width: 50%;
-    }
+  align-self: center;
+  border: solid 1px $black;
+  color: $black;
+  margin: 0 5%;
+  padding: 0 10% ;
+  padding-top: 4%;
+  width: 90%;
+  text-align: center;
+  
+  @include mquery("medium") {
+    padding-top: 2%;
+  }
 }

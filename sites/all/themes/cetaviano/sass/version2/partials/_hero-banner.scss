@@ -8,13 +8,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: row;
+    height: 450px;
     justify-content: center;
-    max-height: 450px;
     padding: 0 5%;
-  }
-  
-  @include mquery("x-large") {
-    padding: 0 4%;
   }
 }
 
@@ -38,36 +34,9 @@
 }
 
 .hero-banner__video {
-  display: none;
   height: 350px;
-  position: relative;
-  width: 100%;
-}
-
-.hero-banner__cont-desc{
-  font-weight: lighter;
-  margin: 3em 0;
-  padding-left: 1.5em;
-  width: 90%;
-
-  @include mquery("small") {
-    padding-left: 2.5em;
-    order: 1;
-  }
-
-  @include mquery("medium") {
-    padding-left: .5em;
-    color: $white;
-    width: 40%;
-  }
-
-  @include mquery("large") {
-    margin: 9% 0;
-  }
-}
-
-.video-reel {
-  height: 100%;
+  position: absolute;
+  visibility: hidden;
   width: 100%;
 }
 
@@ -84,82 +53,44 @@
   }
 
   @include mquery("large") {
-    top: 40%; 
+    top: 45%;
   }
-}
-
-.video-reel--play {
-  background-color: transparent;
-
-  &::before {
-    background-color: #000;
-    border: 2px solid white;
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 100%;
-    opacity: .5;
-    position: absolute;
-    width: 100%;
-  }
-
-  &::after {
-    border-bottom: 15px solid transparent;
-    border-left: 25px solid white;
-    border-top: 15px solid transparent;
-    content: "";
-    display: block;
-    height: 0;
-    left: 50%;
-    margin-left: 4px;
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) scale(1);
-    transition: transform .2s ease;
-    transition-delay:.3s;
-    width: 0;
-  }
-
-  &:hover {
-
-    &::before {
-      background-color: #e0e0e065;
-    }
-  }
-}
-
-.video-reel--stop {
-  color: $orange;
-  font-size: 32px;
-  font-weight: 900;
-  padding: 5px;
 }
 
 .hero-banner__btn-close {
-  left: 90%;
+  background-color: transparent;
+  border: solid 2px white;
+  color: $white;
+  font-size: 1.4rem;
+  left: 75%;
   position: absolute;
-  top: 5%;
-  
+  top: 2%;
+
   &:hover{
     color: #fff;
     text-decoration: none;
   }
 }
 
-.hero-banner__reel-show{
-  display: block;
-  background-color: rgba(0, 0, 0, .76);
-  height: 400px;
-  transition-property: opacity width height background-color;
-  transition-duration: 2s;
-  transition-timing-function: ease-out; 
+.hero-banner__cont-desc{
+  font-weight: lighter;
+  margin: 3em 0;
+  margin-left: 1em;
+  padding-left: 1.5em;
+  width: 90%;
+
+  @include mquery("small") {
+    padding-left: 2.5em;
+    order: 1;
+  }
 
   @include mquery("medium") {
-    width: 100%;
-    height: 400px;
+    color: $white;
+    width: 40%;
   }
-} 
 
-.hidden {
-  display: none;
+  @include mquery("large") {
+    margin: 6% 0;
+    padding-left: 5.5em;
+  }
 }

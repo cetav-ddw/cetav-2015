@@ -10,9 +10,7 @@
   <!--Hero banner-->
   <section class="hero-banner">
     <div id="video-reel" class="hero-banner__video">
-      <a id="close-reel" class="hero-banner__btn-close">
-        <div class="video-reel--stop">x</div>
-      </a>
+      <button id="close-reel" class="hero-banner__btn-close">X</button>
       <iframe class="video-reel" src="https://player.vimeo.com/video/247321835?color=ffffff&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
 
