@@ -128,33 +128,6 @@
   font-size: $text-h3;
 }
 
-.saber-mas {
-  align-items: center;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 85px;
-
-  a {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-
-    &:hover {
-      color: #f19130;
-      font-weight: bold;
-    }
-  }
-  h3 {
-    font-size: $text-h4;
-    padding-top: 15px;
-  }
-  p {
-    padding: 15px;
-  }
-}
-
 .section-call-out h2{
   color: $white;
 }
