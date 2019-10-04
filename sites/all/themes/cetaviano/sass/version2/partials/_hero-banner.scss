@@ -32,45 +32,6 @@
   }
 }
 
-.hero-banner__video {
-  height: 350px;
-  position: absolute;
-  visibility: hidden;
-  width: 100%;
-}
-
-.hero-banner__btn-open {
-  height: 60px;
-  left: 45%;
-  position: absolute;
-  top: 40%;
-  width: 60px;
-
-  @include mquery("medium") {
-    left: 45%;
-    top: 40%;  // 20% apróx
-  }
-
-  @include mquery("large") {
-    top: 45%;
-  }
-}
-
-.hero-banner__btn-close {
-  background-color: transparent;
-  border: solid 2px white;
-  color: $white;
-  font-size: 1.4rem;
-  left: 75%;
-  position: absolute;
-  top: 2%;
-
-  &:hover{
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
 .hero-banner__cont-desc{
   font-weight: lighter;
   margin: 3em 0;

@@ -30,10 +30,11 @@
     &::after {
       content: '¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte';
       color: $white;
+      display: block;
       font-family: $font-fam;
       font-size: 1rem;
-      font-weight: lighter;
-      display: block;
+      font-weight: 200;
+      line-height: 25px;
       padding-top: 15px;
       width: 60%;
     }
@@ -80,7 +81,6 @@
 
 .req__item {
   border: solid 1px $white;
-  // border-bottom: 5px;
   background-color: $lighter-gray;
   display: flex;
   flex-direction: column;
@@ -115,13 +115,11 @@
 }
 
 .req__p-item {
-  font-weight: lighter;
   margin: 0 auto;
   margin-top: 10px; 
 }
 
 .item__list {
-  font-weight: lighter;
   list-style: none;
   padding: 0 10px;
 }
@@ -178,7 +176,6 @@
 
 .step__info {
   align-self: flex-end;
-  font-weight: lighter;
   line-height: 25px;
   text-decoration: none;
   width: 100%;

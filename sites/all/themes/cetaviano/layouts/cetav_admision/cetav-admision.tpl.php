@@ -103,7 +103,7 @@
           </li>
 
           <li class="step__item">
-            <span class="step__number">5</span>
+            <span class="step__number">5 </span>
             <div class="step__info">
               <p>Pruebas de aptitud.</p>
               <p>Realizamos pruebas de aptitud para cada una de las carreras técnicas, además de comprobar conocimientos básicos en Adobe Illustrator y Adobe Photoshop.</p>

@@ -15,9 +15,9 @@
     </div>
 
     <div id="image-reel" class="hero-banner__reel">
-      <a id="show-reel" class="hero-banner__btn-open">
+      <button id="show-reel" class="hero-banner__btn-open">
         <div class="video-reel--play"></div>
-      </a>
+      </button>
     </div>
 
     <div id="hero-text" class="hero-banner__cont-desc">

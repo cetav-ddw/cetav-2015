@@ -3,19 +3,30 @@
   width: 100%;
 }
 
-.video-reel--play {
-  background-color: transparent;
+.hero-banner__video {
+  height: 350px;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+}
 
-  &::before {
-    background-color: $black;
-    border: 2px solid white;
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 100%;
-    opacity: .5;
-    position: absolute;
-    width: 100%;
+.hero-banner__btn-open {
+  background-color: transparent;
+  border: solid 2px $white;
+  border-radius: 50%;
+  height: 60px;
+  left: 45%;
+  position: absolute;
+  top: 40%;
+  width: 60px;
+
+  @include mquery("medium") {
+    left: 45%;
+    top: 40%;  // 20% apróx
+  }
+
+  @include mquery("large") {
+    top: 45%;
   }
 
   &::after {
@@ -36,11 +47,19 @@
   }
 
   &:hover {
-
-    &::before {
-    background-color: #e0e0e065;
-    }
+    background-color: rgba(255, 255, 255, 0.342);
   }
+}
+
+.hero-banner__btn-close {
+  background-color: transparent;
+  border: none;
+  color: $light-blue;
+  font-size: 1.4rem;
+  left: 85%;
+  position: absolute;
+  text-decoration: none;
+  top: 2%;
 }
 
 .hero-banner__reel-show{
@@ -57,8 +76,4 @@
   @include mquery("medium") {
     width: 100%;
   } 
-}
-
-.hidden {
-  visibility: hidden;
 }

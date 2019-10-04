@@ -91,7 +91,7 @@
       $(document.body).animate({scrollTop: 0}, 800);
     });
 
-    // Funcionalidad del video del hero banner
+    // Funcionalidad del video para el hero banner 
 
     $("#show-reel").click(function() {
       $("#video-reel").addClass("hero-banner__reel-show");
