@@ -1,0 +1,64 @@
+.video-reel {
+  height: 100%;
+  width: 100%;
+}
+
+.video-reel--play {
+  background-color: transparent;
+
+  &::before {
+    background-color: $black;
+    border: 2px solid white;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::after {
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid white;
+    border-top: 15px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    transition: transform .2s ease;
+    transition-delay:.3s;
+    width: 0;
+  }
+
+  &:hover {
+
+    &::before {
+    background-color: #e0e0e065;
+    }
+  }
+}
+
+.hero-banner__reel-show{
+  background-color: rgba(0, 0, 0, .76);
+  height: 450px;
+  left: 0;
+  transition-duration: 2s;
+  top: 0;
+  transition-timing-function: ease-out; 
+  transition: all .25s ease;
+  visibility: visible;
+  z-index: 2;
+
+  @include mquery("medium") {
+    width: 100%;
+  } 
+}
+
+.hidden {
+  visibility: hidden;
+}
