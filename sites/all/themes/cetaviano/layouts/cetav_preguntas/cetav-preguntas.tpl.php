@@ -8,7 +8,6 @@
 ?>
 <div class="panel-display page-cetav-preguntas">
 
-  <?php if ($content['wide']): ?>
     <div class="panel-wide panel-header">
       <div class="banner">
         <div class="banner__cont">
@@ -18,7 +17,7 @@
     </div>
     <div class="section-wide">
       <div class="grid-width">
-        <?php print $content['wide']; ?>
+
         <div class="bread-crumbs bread-crumbs--preg">
           <ul class="bread-crumbs__cont">
             <li class="bread-crumbs__item bread-crumbs__item--first">Estás aquí:</li>
@@ -424,5 +423,5 @@
         </div>
       </div>
     </div>
-  <?php endif ?>
+
 </div>

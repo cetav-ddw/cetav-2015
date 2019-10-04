@@ -4,7 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 85px;
+  margin-bottom: 40px;
+
+  @include mquery(48em) {
+    margin-bottom: 85px;
+  }
 
   a {
     color: black;
@@ -16,7 +20,7 @@
     }
   }
   h3 {
-    padding-top: 15px;
+    padding: 15px 15px 0 15px;
   }
   p {
     font-size: 1em;
@@ -44,5 +48,4 @@
   font-weight: 600;
   font-size: 1.125em;
   margin: 0;
-  padding-top: 15px;
 }
