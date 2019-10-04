@@ -1,9 +1,5 @@
 nav[role="navigation"] {
     background-color: $colorHeader;
-    left: 0;
-    padding: 3em 1em 0;
-    position: absolute;
-    top: 0;
     width: 100%;
     z-index: 10;
 
@@ -45,7 +41,7 @@ nav[role="navigation"] {
 
         @include mquery ("medium") {
             flex-direction: row;
-            margin: 0;
+            margin-bottom: 0;
         }
 
         a {
@@ -169,17 +165,6 @@ nav[role="navigation"] {
             height: 23px;
         }
     }
-
-    @include mquery("medium") {
-        padding: 10px 10px 10px 0;
-
-        &:before {
-            height: 27px;
-        }
-    }
-    @include mquery(64em) {
-      padding: 10px;
-  }
 }
 
 .nav-main {
@@ -200,16 +185,10 @@ nav[role="navigation"] {
 }
 
 .menu-collapse {
-    margin: 10px 30px;
     overflow: hidden;
     position: absolute;
-    right: 5%;
+    right: 0;
     top: 0;
-    z-index: 12;
-
-    @include mquery("medium") {
-      right: 0;
-    }
 
     .menu-toggle {
         cursor: pointer;
@@ -255,4 +234,67 @@ nav[role="navigation"] {
     li {
         display: block;
     }
+}
+
+// Hay que mergear con lo anterior
+
+nav[role="navigation"] {
+  height: 100vh;
+  padding: 1em 1.5em 0;
+  top: 50px;
+
+  @include mquery("small") {
+    padding: 0 2em 0;
+  }
+  @include mquery("medium") {
+    height: auto;
+    padding-right: 0;
+    top: 0;
+  }
+  @include mquery(64em) {
+    padding-right: 2em;
+  }
+}
+
+nav[role="navigation"] .expanded .menu {
+  top: 45px;
+  left: -20px;
+
+  a:hover {
+    font-weight: normal;
+  }
+}
+
+nav[role="navigation"] .menu .active-trail {
+  @include mquery("medium") {
+    &:hover {
+      font-weight: bold;
+      text-shadow: none;
+    }
+  }
+}
+
+nav[role="navigation"] .menu {
+  a:hover,
+  li:hover span  {
+    border-bottom: 3px solid $color-primary;
+    font-weight: 300;
+
+    @include mquery("medium") {
+      border-bottom: 3px solid $white;
+      text-shadow: 1px 0px $white;
+    }
+  }
+  a:active,
+  li:active span {
+    border-bottom: 3px solid $white;
+    font-weight: 300;
+    text-shadow: 1px 0px $white;
+  }
+
+  span {
+    border-bottom: 3px solid $color-primary;
+    display: inline-block;
+    font-weight: 300;
+  }
 }

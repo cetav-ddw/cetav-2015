@@ -1,79 +1,23 @@
 header .section-wide {
-  margin-top: 0;
-}
+  padding-bottom: 4em;
 
-nav[role="navigation"] {
-  height: 100vh;
-  padding: 1em 1.5em 0;
-  top: 50px;
-
-  @include mquery("small") {
-    padding: 0 2em 0;
-  }
   @include mquery("medium") {
-    height: auto;
-    padding-right: 0;
-    top: 0;
-  }
-  @include mquery(64em) {
-    padding-right: 2em;
-  }
-}
-
-nav[role="navigation"] .expanded .menu {
-  top: 45px;
-  left: -20px;
-
-  a:hover {
-    font-weight: normal;
-  }
-}
-
-nav[role="navigation"] .menu .active-trail {
-  @include mquery("medium") {
-    &:hover {
-      font-weight: bold;
-      text-shadow: none;
-    }
-  }
-}
-
-nav[role="navigation"] .menu {
-  a:hover,
-  li:hover span  {
-    border-bottom: 3px solid $color-primary;
-    font-weight: 300;
-
-    @include mquery("medium") {
-      border-bottom: 3px solid $white;
-      text-shadow: 1px 0px $white;
-    }
-  }
-  a:active,
-  li:active span {
-    border-bottom: 3px solid $white;
-    font-weight: 300;
-    text-shadow: 1px 0px $white;
-  }
-
-  span {
-    border-bottom: 3px solid $color-primary;
-    display: inline-block;
-    font-weight: 300;
+    padding-bottom: 1em;
+    padding-top: 1em;
   }
 }
 
 .back-pll {
   right: 0;
-  top: 10px;
+  top: 4px;
 
   @include mquery("medium") {
-    right: 20px;
-    top: 0;
-
     &:hover {
       font-weight: 400;
     }
+  }
+  @include mquery(1000px) {
+    top: 0;
   }
   @include mquery(1700px) {
     padding-right: 0;
@@ -85,7 +29,7 @@ nav[role="navigation"] .menu {
   }
 }
 
-.head-nav .grid-full-limit .menu {
+.head-nav .menu {
   font-weight: 300;
   justify-content: flex-end;
   margin-right: 20%;
@@ -104,8 +48,6 @@ nav[role="navigation"] .menu {
 }
 
 .cont-burger {
-  margin: 17px 0 17px 30px;
-
 	.on {
 		transform: translateY(-5px);
   }
@@ -122,24 +64,9 @@ nav[role="navigation"] .menu {
 	}
 }
 
-.header {
-	background-color: $color-primary;
-  height: 65px;
-
-  @include mquery("medium") {
-    height: 45px;
-  }
-
-  .grid-width {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 5%;
-  }
-}
-
 .header__logo {
 	height: 30px;
-	top: 20px;
+	top: 0;
 	position: absolute;
 	width: 65px;
 	z-index: 1;

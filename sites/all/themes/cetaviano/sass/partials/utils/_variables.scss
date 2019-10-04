@@ -49,8 +49,8 @@ $shadow: #00000042;
 
 // Neat variables
 $grid-colums: 12;
-$max-width: 1080px;
-$grid-limit: 1400px;
+$max-width: 1400px;
+$grid-limit: $max-width; // Hay que revisar y eliminar la variable repetida, no se neat necesita algo de esto
 
 // Breakpoints
 // TL;DR, ems don't depend on the physical device size, whereas pixels do.

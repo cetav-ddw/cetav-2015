@@ -35,7 +35,7 @@
         <li class="req__item">
           <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
           <p class="req__p-item">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
-          <a class="step__btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
+          <a class="req__btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
         </li>
         <li class="req__item">
           <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
