@@ -10,7 +10,7 @@
   width: 100%;
 
   @include mquery("xx-large") {
-    max-width: 1200px;
+    max-width: $max-width;
   }
 }
 

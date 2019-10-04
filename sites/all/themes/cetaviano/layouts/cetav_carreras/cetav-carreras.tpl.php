@@ -20,14 +20,14 @@
     </div>
   </div>
   <?php if ($content['wide_third']): ?>
-    <div class="section-wide slab-blue">
+    <div class="section-wide intro-carrer slab-blue">
       <div class="grid-width">
         <?php print $content['wide_third']; ?>
       </div>
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
-    <div class="section-wide">
+    <div class="section-wide study-carrer">
       <div class="grid-width">
         <?php print $content['wide_second']; ?>
       </div>

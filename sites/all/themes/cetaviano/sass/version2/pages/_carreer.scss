@@ -1,12 +1,21 @@
+.cta-carrers .grid-width {
+  margin: 0;
+  max-width: 95%;
+
+  @include mquery("small") {
+    max-width: $max-width;
+  }
+}
+
 .cta-register-detail strong {
-  color: black;
+  color: $black;
 }
 
 .panel-cetav-carreras {
   h2,
   h3,
   h4 {
-    color: black;
+    color: $black;
     font-family: $font-fam;
     margin: 0;
     padding-top: 25px;
@@ -16,7 +25,7 @@
     }
   }
   p {
-    color: black;
+    color: $black;
     font-size: 1.12em;
     font-weight: 100;
     margin: 0;
@@ -32,13 +41,6 @@
   .career-program {
     margin: 50px auto 0 auto;
     padding-bottom: 10px;
-  }
-  .grid-width {
-    max-width: 95%;
-
-    @include mquery(81em) {
-      max-width: 1200px;
-    }
   }
   .pane-title {
     display: none;
@@ -58,14 +60,14 @@
     background-color: transparent !important; // reescribo solo el de carrera
     bottom: 27vh;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: $max-width;
     padding: 20px;
     position: relative;
 
     @include mquery("small") {
       bottom: 27vh;
     }
-    @include mquery("x-large") {
+    @include mquery(93.75em) {
       padding: 0;
     }
 
@@ -76,15 +78,21 @@
   }
   .section-intro,
   .section-wide {
-    padding-bottom: 0;
-    padding-top: 0;
+    margin-left: 1em;
+    max-width: $max-width;
+    overflow: inherit;
+    padding: 0;
+
+    @include mquery(90em) {
+      margin: 0 auto;
+    }
   }
   .slab-blue {
     background-color: $white;
-    color: black;
+    color: $black;
   }
   .subtitle-career {
-    color: black;
+    color: $black;
     font-size: $text-h3;
   }
 }
@@ -103,7 +111,7 @@
 .paragraphs-item-programas-carreras {
   p {
     font-weight: 500;
-    padding-left: 25px;
+    padding-left: 35px;
   }
   li {
     list-style-type: disc;
@@ -120,7 +128,7 @@
     padding-top: 0;
   }
   li {
-    color: black;
+    color: $black;
   }
 }
 
@@ -130,6 +138,17 @@
 
 .section-call-out h2{
   color: $white;
+}
+
+.section-intro .grid-width,
+.study-carrer .grid-width,
+.intro-carrer .grid-width {
+  margin: 0;
+  max-width: 95%;
+
+  @include mquery("medium") {
+    max-width: $max-with-content;
+  }
 }
 
 .split-list {
@@ -147,11 +166,11 @@
     margin-bottom: 0;
 
     li {
-      color: black;
+      color: $black;
       font-weight: 100;
 
       &:before {
-        color: black;
+        color: $black;
       }
     }
   }

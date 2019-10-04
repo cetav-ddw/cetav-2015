@@ -7,8 +7,8 @@
   @include mquery("medium") {
     flex-direction: row;
   }
-  @include mquery(1550px) {
-    max-width: 1200px;
+  @include mquery("xx-large") {
+    max-width: $max-width;
   }
 }
 

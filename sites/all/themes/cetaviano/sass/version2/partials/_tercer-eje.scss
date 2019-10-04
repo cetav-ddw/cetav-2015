@@ -86,3 +86,9 @@
   justify-content: center;
   width: 100%;
 }
+
+
+.tercer-eje__title,
+.tercer-eje__desc {
+  max-width: $max-with-content;
+}
