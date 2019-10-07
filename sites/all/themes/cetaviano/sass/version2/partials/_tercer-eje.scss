@@ -92,3 +92,11 @@
 .tercer-eje__desc {
   max-width: $max-with-content;
 }
+
+.tercer-eje__title {
+  font-size: $text-h4;
+
+  @include mquery("medium") {
+    font-size: $text-h3;
+  }
+}

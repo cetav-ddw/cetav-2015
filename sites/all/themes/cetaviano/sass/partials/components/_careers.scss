@@ -77,9 +77,13 @@
     width: 100%;
 
     h4 {
-        color: $black;
+      color: $black;
+      font-size: $text-h4;
+      margin-top: 0;
+
+      @include mquery("medium") {
         font-size: $text-h3;
-        margin-top: 0;
+      }
     }
 }
 
