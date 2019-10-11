@@ -13,22 +13,22 @@
     </div>
   <?php endif ?>
   <div class="section-wide section-intro">
-    <div class="grid-width">
+    <div class="grid-width grid-cont">
       <div class="panel-left-column">
         <?php print $content['left']; ?>
       </div>
     </div>
   </div>
   <?php if ($content['wide_third']): ?>
-    <div class="section-wide intro-carrer slab-blue">
-      <div class="grid-width">
+    <div class="section-wide  slab-blue">
+      <div class="grid-width grid-cont">
         <?php print $content['wide_third']; ?>
       </div>
     </div>
   <?php endif ?>
   <?php if ($content['wide_second']): ?>
     <div class="section-wide study-carrer">
-      <div class="grid-width">
+      <div class="grid-width grid-cont">
         <?php print $content['wide_second']; ?>
       </div>
     </div>

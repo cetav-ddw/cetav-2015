@@ -65,9 +65,9 @@
     position: relative;
 
     @include mquery("small") {
-      bottom: 27vh;
+      bottom: 25vh;
     }
-    @include mquery(93.75em) {
+    @include mquery(90em) {
       padding: 0;
     }
 
@@ -144,9 +144,7 @@
   color: $white;
 }
 
-.section-intro .grid-width,
-.study-carrer .grid-width,
-.intro-carrer .grid-width {
+.grid-cont {
   margin: 0;
   max-width: 95%;
 
