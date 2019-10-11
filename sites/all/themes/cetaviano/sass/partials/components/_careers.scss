@@ -27,7 +27,7 @@
     }
     ul {
         list-style: none;
-        margin: 0 15px;
+        margin: 0 25px;
         padding: 20px 25px 0 35px;
     }
 }
@@ -77,9 +77,13 @@
     width: 100%;
 
     h4 {
-        color: $black;
+      color: $black;
+      font-size: $text-h4;
+      margin-top: 0;
+
+      @include mquery("medium") {
         font-size: $text-h3;
-        margin-top: 0;
+      }
     }
 }
 
@@ -158,17 +162,17 @@
 	flex-direction: column;
 	height: 200px;
 	margin: 10px auto;
-	max-width: 1200px;
+	max-width: $max-width;
 	transition: all .5s;
   width: 100%;
 
-	@include mquery("small") {
+	@include mquery(48em) {
 		&:hover{
       background-size: 125vw;
       transition: all 1s;
 		}
   }
-  @include mquery("small") {
+  @include mquery(48em) {
 		flex-direction: row;
 	}
 	@include mquery("medium") {
@@ -185,7 +189,7 @@
 .career--animation {
   background-image: url("../img/background_3d.jpg");
 
-	@include mquery("small") {
+	@include mquery(48em) {
 		justify-content: flex-end;
 	}
 }
@@ -193,7 +197,7 @@
 .career--web {
   background-image: url("../img/background_web.jpg");
 
-	@include mquery("small") {
+	@include mquery(48em) {
 		justify-content: flex-start;
 	}
 }
@@ -201,7 +205,7 @@
 .career--post {
   background-image: url("../img/background_post.jpg");
 
-	@include mquery("small") {
+	@include mquery(48em) {
 		justify-content: flex-end;
 	}
 }
@@ -213,10 +217,13 @@
 	margin: 2em;
   width: 100%;
 
-	@include mquery("small") {
+	@include mquery(48em) {
 		align-items: flex-start;
-		width: 30%;
-	}
+    width: 40%;
+  }
+  @include mquery("medium") {
+    width: 30%;
+  }
 }
 
 .career__title {
@@ -225,7 +232,7 @@
 	font-weight: 300;
   text-align: center;
 
-	@include mquery("small") {
+	@include mquery(48em) {
 		text-align: left;
 	}
 }

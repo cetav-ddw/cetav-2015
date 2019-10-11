@@ -1,7 +1,9 @@
 .bread-crumbs {
+  display: none;
   margin-top: 25px;
 
   @include mquery("small") {
+    display: block;
     margin-top: 42px;
   }
 }

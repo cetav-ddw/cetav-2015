@@ -92,6 +92,11 @@
 .preg__title {
   color: $black;
   font-family: $font-fam;
+  font-size: $text-h4;
+
+  @include mquery("medium") {
+    font-size: $text-h3;
+  }
 }
 
 .preg__item-cont-answer .preg__list {

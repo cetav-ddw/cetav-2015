@@ -35,7 +35,7 @@
     width: 90%;
 
     @include mquery("medium") {
-      margin: 1.5%;
+      margin: 1.5% 0;
       padding: 1.5% 3% 3% 3%;
       width: 30%;
     }
@@ -66,7 +66,11 @@
     flex-wrap: nowrap;
 
     @include mquery("medium") {
+      justify-content: space-around;
       flex-direction: row;
+    }
+    @include mquery(90em) {
+      justify-content: space-between;
     }
   }
 }

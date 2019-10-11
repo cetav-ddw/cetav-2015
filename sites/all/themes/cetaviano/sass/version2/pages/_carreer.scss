@@ -1,12 +1,21 @@
+.cta-carrers .grid-width {
+  margin: 0;
+  max-width: 95%;
+
+  @include mquery("small") {
+    max-width: $max-width;
+  }
+}
+
 .cta-register-detail strong {
-  color: black;
+  color: $black;
 }
 
 .panel-cetav-carreras {
   h2,
   h3,
   h4 {
-    color: black;
+    color: $black;
     font-family: $font-fam;
     margin: 0;
     padding-top: 25px;
@@ -16,7 +25,7 @@
     }
   }
   p {
-    color: black;
+    color: $black;
     font-size: 1.12em;
     font-weight: 100;
     margin: 0;
@@ -32,13 +41,6 @@
   .career-program {
     margin: 50px auto 0 auto;
     padding-bottom: 10px;
-  }
-  .grid-width {
-    max-width: 95%;
-
-    @include mquery(81em) {
-      max-width: 1200px;
-    }
   }
   .pane-title {
     display: none;
@@ -58,34 +60,41 @@
     background-color: transparent !important; // reescribo solo el de carrera
     bottom: 27vh;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: $max-width;
     padding: 20px;
     position: relative;
+    z-index: 2;
 
     @include mquery("small") {
-      bottom: 27vh;
+      bottom: 25vh;
     }
-    @include mquery("x-large") {
+    @include mquery(90em) {
       padding: 0;
     }
 
     h2 {
-      font-size: 42px;
+      font-size: 2em;
       padding-top: 0;
     }
   }
   .section-intro,
   .section-wide {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-  .slab-blue {
-    background-color: $white;
-    color: black;
+    margin-left: 1em;
+    max-width: $max-width;
+    overflow: inherit;
+    padding: 0;
+
+    @include mquery(90em) {
+      margin: 0 auto;
+    }
   }
   .subtitle-career {
-    color: black;
-    font-size: $text-h3;
+    color: $black;
+    font-size: $text-h4;
+
+    @include mquery("medium") {
+      font-size: $text-h3;
+    }
   }
 }
 
@@ -103,7 +112,7 @@
 .paragraphs-item-programas-carreras {
   p {
     font-weight: 500;
-    padding-left: 25px;
+    padding-left: 35px;
   }
   li {
     list-style-type: disc;
@@ -120,7 +129,7 @@
     padding-top: 0;
   }
   li {
-    color: black;
+    color: $black;
   }
 }
 
@@ -130,6 +139,29 @@
 
 .section-call-out h2{
   color: $white;
+}
+
+.grid-cont {
+  margin: 0;
+  max-width: 95%;
+
+  @include mquery("medium") {
+    max-width: $max-with-content;
+  }
+}
+
+.pane-node-field-imagen-header-carrera {
+  position: relative;
+  &:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 }
 
 .split-list {
@@ -147,11 +179,11 @@
     margin-bottom: 0;
 
     li {
-      color: black;
+      color: $black;
       font-weight: 100;
 
       &:before {
-        color: black;
+        color: $black;
       }
     }
   }
