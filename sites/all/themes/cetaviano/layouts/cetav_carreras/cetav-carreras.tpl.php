@@ -20,7 +20,7 @@
     </div>
   </div>
   <?php if ($content['wide_third']): ?>
-    <div class="section-wide  slab-blue">
+    <div class="section-wide">
       <div class="grid-width grid-cont">
         <?php print $content['wide_third']; ?>
       </div>
