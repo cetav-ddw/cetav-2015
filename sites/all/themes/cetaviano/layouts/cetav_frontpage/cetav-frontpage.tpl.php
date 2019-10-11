@@ -17,7 +17,6 @@
       <div class="hero-banner__reel">
         <a href="#" id="modal-open" class="btn__modal--open"></a>
       </div>
-
     </div>
 
     <div id="banner-modal" class="banner__modal">
@@ -95,7 +94,7 @@
         <p class="sub-titles">¿Qué está sucediendo en el CETAV?</p>
         <?php print $content['wide_third']; ?>
         <div class="news-btn">
-          <a href="http://parquelalibertad.org/cetav/noticias" class="news-btn__link">Leer más noticias</a>
+          <a href="/noticias" class="news-btn__link">Leer más noticias</a>
         </div>
       </div>
     </div>
