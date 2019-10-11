@@ -8,6 +8,10 @@
   @include mquery("medium") {
     flex-direction: row;
   }
+  @include mquery("x-large") {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
 }
 
 .intro__cont-intro {
@@ -41,7 +45,7 @@
 }
 
 .intro__list {
-  padding-left: 28px;
+  padding-left: 26px;
 }
 
 .intro__list-item {

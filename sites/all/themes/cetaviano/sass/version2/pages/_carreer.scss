@@ -63,6 +63,7 @@
     max-width: $max-width;
     padding: 20px;
     position: relative;
+    z-index: 2;
 
     @include mquery("small") {
       bottom: 25vh;
@@ -150,6 +151,20 @@
 
   @include mquery("medium") {
     max-width: $max-with-content;
+  }
+}
+
+.pane-node-field-imagen-header-carrera {
+  position: relative;
+  &:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
   }
 }
 

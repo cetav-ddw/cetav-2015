@@ -5,12 +5,18 @@
   height: 450px;
   justify-content: center;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: $max-width;
+  padding: 0 5%;
   position: absolute;
   width: 100%;
 
-  @include mquery("xx-large") {
-    max-width: $max-width;
+  @include mquery("x-large") {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  @include mquery(90em) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -35,7 +41,7 @@
   @include mquery("large") {
     max-width: 90%;
   }
-  @include mquery("xx-large") {
+  @include mquery(90em) {
     max-width: 95%;
   }
 }
@@ -65,7 +71,7 @@
     padding-bottom: 40%;
     width: 70%;
   }
-  @include mquery("xx-large") {
+  @include mquery(90em) {
     right: 5%;
     top: -10vh;
     width: 60%;
