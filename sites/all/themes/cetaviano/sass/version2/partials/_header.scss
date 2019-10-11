@@ -1,0 +1,82 @@
+header .section-wide {
+  padding-bottom: 4em;
+
+  @include mquery("medium") {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+}
+
+.back-pll {
+  right: 0;
+  top: 4px;
+
+  @include mquery("medium") {
+    &:hover {
+      font-weight: 400;
+    }
+  }
+  @include mquery(1000px) {
+    top: 0;
+  }
+  @include mquery(1700px) {
+    padding-right: 0;
+    right: 0;
+  }
+
+  &:active {
+    font-weight: 400;
+  }
+}
+
+.head-nav .menu {
+  font-weight: 300;
+  justify-content: flex-end;
+  margin-right: 20%;
+  margin-top: 10px;
+
+  @include mquery("medium") {
+    margin-right: 22%;
+    margin-top: 0;
+  }
+  @include mquery("x-large") {
+    margin-right: 18%;
+  }
+  @include mquery(90em) {
+    margin-right: 16%;
+  }
+}
+
+.cont-burger {
+	.on {
+		transform: translateY(-5px);
+  }
+}
+
+.cont-burger .menu-toggle {
+	display: flex;
+	flex-direction: column;
+  justify-content: space-around;
+	margin-top: 0;
+
+	div {
+		margin: 0;
+	}
+}
+
+.header__logo {
+	height: 30px;
+	top: 0;
+	position: absolute;
+	width: 65px;
+	z-index: 1;
+
+  @include mquery("medium") {
+		top: 8px;
+  }
+
+	.icon-cetav {
+		height: auto;
+		width: 65px;
+	}
+}

@@ -1,0 +1,77 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto 0;
+  max-width: $max-width;
+  padding: 0 5%;
+
+  @include mquery("medium") {
+    flex-direction: row;
+  }
+  @include mquery("x-large") {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+
+.intro__cont-intro {
+  width: 100%;
+
+  @include mquery("medium") {
+    width: 50%;
+  }
+}
+
+.intro__cont-image {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  margin-top: 45px;
+  width: 100%;
+
+  @include mquery("small") {
+    display: flex;
+  }
+  @include mquery("medium") {
+    justify-content: flex-end;
+    margin-top: 0;
+    width: 50%;
+  }
+}
+
+.intro__image {
+  box-shadow: 2px 2px 10px $shadow;
+  width: 80%;
+}
+
+.intro__list {
+  padding-left: 26px;
+}
+
+.intro__list-item {
+  color: $black;
+  font-weight: 100;
+  list-style-type: "★";
+}
+
+.intro__text {
+  color: $black;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.intro__text + .intro__text {
+  margin-top: 0;
+}
+
+.intro__title {
+  font-family: $contrast-font;
+  font-weight: bolder;
+  margin-bottom: 0;
+  font-size: $text-h3;
+  color: black;
+
+  @include mquery("small") {
+    font-size: $text-h2;
+  }
+}

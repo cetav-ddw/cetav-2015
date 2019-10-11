@@ -86,11 +86,23 @@
     });
 
     // Back to top
-  $('a.top').click(function (e) {
-    e.preventDefault();
-    $(document.body).animate({scrollTop: 0}, 800);
-  });
+    $('a.top').click(function (e) {
+      e.preventDefault();
+      $(document.body).animate({scrollTop: 0}, 800);
+    });
 
+    // acordeon de preguntas frecuentes
+    $( ".js-preg__item-button" ).each(function(index, element) {
+      $(element).click(function() {
+        $(element).toggleClass( "preg__item-button--active");
+        $( ".js-preg__item-cont-answer" ).eq(index).toggleClass( "preg__item-cont-answer--active");
+      });
+    });
+
+    $( ".js-preg__item-cont-answer" ).each(function(index, element) {
+      var height = $(element).height();
+      $(element).css("margin-top", "-" + height + "px");
+    });
   });
 
 }(jQuery));

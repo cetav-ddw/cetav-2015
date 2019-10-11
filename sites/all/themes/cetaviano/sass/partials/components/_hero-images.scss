@@ -8,32 +8,32 @@
 }
 
 .section-call-out {
-    background-color: $main-color;
-    padding: 20px;
+  background-color: $main-color;
+  padding: 20px;
 
-    h2 {
-        color: $white;
-        font-size: 2em;
-    }
+  h2 {
+      color: $white;
+      font-size: 2em;
+  }
 
-    @include mquery(850px) {
-        bottom: 0;
-        position: absolute;
-    }
+  @include mquery(850px) {
+      bottom: 0;
+      position: absolute;
+  }
 }
 
 .animacion-3d .section-call-out {
-    background-color: $animation-color;
+  background-color: $animation-color;
 }
 
 .diseno-desarrollo-web .section-call-out {
-    background-color: $ddw-color;
+  background-color: $ddw-color;
 }
 
 .post-produccion .section-call-out {
-    background-color: $post-color;
+  background-color: $post-color;
 }
 
 .imagen-comercial .section-call-out {
-    background-color: $commercial-image-color;
+  background-color: $commercial-image-color;
 }

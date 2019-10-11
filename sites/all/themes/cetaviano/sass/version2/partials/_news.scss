@@ -1,0 +1,112 @@
+@include mquery("small") {
+  .cont-news .news-layout--minor:hover {
+    transform: translate3d(0, -5px, 0);
+    transition: transform 300ms ease-out;
+    transition-timing-function: cubic-bezier(0.6, -0.93, 0.63, 2.42);
+  }
+}
+
+.cont-news {
+  margin-top: 0;
+  padding: 0;
+
+  p + p {
+    display: none; //I hide the paragraphs to show only the first
+  }
+  p {
+    margin-bottom: 0;
+  }
+  ul,
+  iframe {
+    display: none; //I hide the list and videos of the new
+  }
+  .date-display-single {
+    color: $ligth-gray;
+    font-size: $text-small;
+    margin-bottom: 15px;
+  }
+  .news-layout--minor {
+    background-color: $lighter-gray;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin: 3% auto;
+    padding: 1.5% 3% 3% 3%;
+    transition: transform 300ms ease-in-out;
+    width: 90%;
+
+    @include mquery("medium") {
+      margin: 1.5% 0;
+      padding: 1.5% 3% 3% 3%;
+      width: 30%;
+    }
+
+    a {
+      color: black;
+      font-weight: 900;
+      display: block;
+      margin: 15px 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    p {
+      font-weight: 100;
+    }
+  }
+
+  .pane-title {
+    display: none;
+  }
+
+  .view-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    @include mquery("medium") {
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    @include mquery(90em) {
+      justify-content: space-between;
+    }
+  }
+}
+
+.news-btn {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.news-btn__link {
+	background-color: black;
+	border: solid black 2px;
+	border-radius: 5px;
+	color: $white;
+	display: inline-block;
+	margin: 20px auto 5% auto;
+	padding: 10px 20px;
+	text-align: center;
+  transition: 0.5s;
+
+  @include mquery("small") {
+		&:hover {
+      background-color: $white;
+      border-color: black;
+      color: black;
+      text-decoration: none;
+      transition: 0.5s;
+		}
+  }
+
+  &:active {
+    background-color: $white;
+    border-color: black;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+}

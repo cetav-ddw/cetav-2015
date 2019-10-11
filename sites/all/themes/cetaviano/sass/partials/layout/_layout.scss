@@ -8,7 +8,7 @@ footer {
         border-top-width: 15px;
         padding-top: 80px;
     }
-    
+
     .contact-info {
         margin-bottom: 25px;
 
@@ -29,16 +29,11 @@ footer {
     @include micro-clearfix;
     margin: 0 auto;
     max-width: $max-width;
-    padding: 0 2%;
     position: relative;
 }
 
-.grid-full-limit {
-    max-width: $grid-limit;
-}
-
 .header {
-    background: $white;
+    background: $color-primary;
 }
 
 .heading,
@@ -116,12 +111,8 @@ footer {
 }
 
 .section-wide {
-    @include mquery("medium") {
-        padding-bottom: $space-medium;
-    }
-
-    @include mquery("large") {
-        padding-bottom: $space-x-large;
+    .grid-with {
+      max-width: 100%;
     }
 }
 
@@ -129,7 +120,7 @@ footer {
     text-align: center;
 
     @include mquery("small") {
-        padding: $space-medium $space-x-small 20rem; 
+        padding: $space-medium $space-x-small 20rem;
     }
 }
 
@@ -164,17 +155,15 @@ footer {
     color: $white;
 }
 
-.slab-blue {
-    background: $blue-dark;
-    color: $white;
-}
-
+// .slab-cta {
+//     padding: 2em 0;
+// }
 .slab-cta {
-    padding: 2em 0;
+  padding: 0;
 }
 
 .slab-orange {
-    background: $orange;
+    background: $colorHeader;
 }
 
 .slab-light-blue {
@@ -201,7 +190,7 @@ footer {
 
 .panel-left-column--home-intro {
     @extend .panel-left-column;
-    
+
     @include mquery("medium") {
         @include span-columns(6);
         display: inline-block;
@@ -255,9 +244,4 @@ footer {
             @include span-columns(4);
         }
     }
-}
-
-.panel-header {
-    overflow: hidden;
-    padding: 0 ;
 }

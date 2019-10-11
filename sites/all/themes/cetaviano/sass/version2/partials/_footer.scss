@@ -1,0 +1,13 @@
+footer .contact-info {
+  margin: 0 5%;
+  text-align: left;
+
+  @include mquery("medium") {
+    margin: 0;
+		padding-right: 5em;
+	}
+}
+
+.btn-inverse {
+  margin-bottom: 20px;
+}

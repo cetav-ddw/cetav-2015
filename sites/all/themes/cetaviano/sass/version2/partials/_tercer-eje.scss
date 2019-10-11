@@ -1,0 +1,134 @@
+.tercer-eje {
+  p + p {
+    padding-top: 0;
+  }
+}
+
+.tercer-eje__cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto 77px;
+}
+
+.tercer-eje__cont-course {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  position: relative;
+  top: 0;
+  transition: 1s;
+  width: 80%;
+  z-index: 2;
+}
+
+.tercer-eje__cont-desc {
+  align-items: center;
+  display: flex;
+  height: 250px;
+}
+
+.tercer-eje__cont-name {
+  align-items: center;
+  display: flex;
+  height: 250px;
+}
+
+.tercer-eje__course {
+  background-size: cover;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin: 2.5% auto;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  width: 100%;
+
+  @include mquery("small") {
+    margin: 0;
+    width: 50%;
+
+    &:hover {
+      .tercer-eje__cont-course {
+        top: -105%;
+        transition: 1s;
+      }
+      .tercer-eje__course-desc {
+        opacity: 1;
+        transition: 0.3s;
+      }
+      .tercer-eje__course-name {
+        opacity: 0;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &:active {
+    .tercer-eje__cont-course {
+      top: -105%;
+      transition: 1s;
+    }
+    .tercer-eje__course-desc {
+      opacity: 1;
+      transition: 0.3s;
+    }
+    .tercer-eje__course-name {
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+
+  .tercer-eje__course-desc {
+    color: $white;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .tercer-eje__course-name {
+    color: $white;
+    text-align: center;
+    font-size: $text-h3;
+    padding: 0;
+    transition: 0.3s;
+  }
+}
+
+.tercer-eje__course--cnv {
+  background-image: url("../img/conversable.png");
+}
+
+.tercer-eje__course--dt {
+  background-image: url("../img/design_thinking.jpg");
+  background-position: 25% 60%;
+}
+
+.tercer-eje__course--empr {
+  background-image: url("../img/emprendimiento.png");
+}
+
+.tercer-eje__course--ingles {
+  background-image: url("../img/ingles.png");
+}
+
+.tercer-eje__title,
+.tercer-eje__desc {
+  max-width: $max-with-content;
+}
+
+.tercer-eje__title {
+  font-size: $text-h4;
+
+  @include mquery("medium") {
+    font-size: $text-h3;
+  }
+}

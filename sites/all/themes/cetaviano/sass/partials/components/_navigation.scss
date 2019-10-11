@@ -1,9 +1,5 @@
 nav[role="navigation"] {
-    background-color: $orange;
-    left: 0;
-    padding: 3em 1em 0;
-    position: absolute;
-    top: 0;
+    background-color: $colorHeader;
     width: 100%;
     z-index: 10;
 
@@ -21,7 +17,7 @@ nav[role="navigation"] {
         @include mquery(62.5em) {
             font-size: .875em;
         }
-    
+
         @include mquery("medium") {
             margin: 0 10px;
         }
@@ -45,11 +41,11 @@ nav[role="navigation"] {
 
         @include mquery ("medium") {
             flex-direction: row;
-            margin: 0;
+            margin-bottom: 0;
         }
 
         a {
-            border-bottom: 3px solid $orange;
+            border-bottom: 3px solid $colorHeader;
             color: $white;
             position: relative;
 
@@ -58,10 +54,10 @@ nav[role="navigation"] {
                 font-weight: bold;
             }
         }
-        
+
         a::before {
             content: '';
-            border-bottom: 3px solid $orange;
+            border-bottom: 3px solid $colorHeader;
             bottom: -3px;
             position: absolute;
             right: 0;
@@ -83,7 +79,7 @@ nav[role="navigation"] {
     }
 }
 
-nav[role="navigation"] { 
+nav[role="navigation"] {
     .expanded {
         &:hover {
             font-weight: bold;
@@ -99,7 +95,7 @@ nav[role="navigation"] {
             font-size: $text-small;
             font-weight: normal;
             margin: 0 1rem;
-            
+
             @include mquery("medium") {
                 border-bottom: 1px solid $white;
             }
@@ -113,10 +109,10 @@ nav[role="navigation"] {
             margin: 0 1rem;
 
             @include mquery ("medium") {
-                background: $orange;
+                background: $colorHeader;
                 display: none;
                 left: -30px;
-                margin: 0;  
+                margin: 0;
                 position: absolute;
                 text-align: left;
                 top: 43px;
@@ -125,7 +121,7 @@ nav[role="navigation"] {
             }
         }
     }
-    
+
     .expanded:hover {
         .menu {
             display: block;
@@ -135,9 +131,9 @@ nav[role="navigation"] {
 
 .back-pll {
     display: none;
-    
+
     @include mquery("medium") {
-        border-bottom: 3px solid $orange;
+        border-bottom: 3px solid $colorHeader;
         color: $white;
         display: block;
         font-size: .75em;
@@ -169,14 +165,6 @@ nav[role="navigation"] {
             height: 23px;
         }
     }
-
-    @include mquery("large") {
-        padding: 10px;
-
-        &:before {
-            height: 27px;
-        }
-    }
 }
 
 .nav-main {
@@ -197,12 +185,10 @@ nav[role="navigation"] {
 }
 
 .menu-collapse {
-    margin: 10px 30px;
     overflow: hidden;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 12;
 
     .menu-toggle {
         cursor: pointer;
@@ -234,7 +220,7 @@ nav[role="navigation"] {
 .menu-toggle-one,
 .menu-toggle-two,
 .menu-toggle-three {
-    background: $orange;
+    background: $white;
     border-radius: 2px;
     height: 3px;
     margin: 6px 0;
@@ -248,4 +234,67 @@ nav[role="navigation"] {
     li {
         display: block;
     }
+}
+
+// Hay que mergear con lo anterior
+
+nav[role="navigation"] {
+  height: 100vh;
+  padding: 1em 1.5em 0;
+  top: 50px;
+
+  @include mquery("small") {
+    padding: 0 2em 0;
+  }
+  @include mquery("medium") {
+    height: auto;
+    padding-right: 0;
+    top: 0;
+  }
+  @include mquery(64em) {
+    padding-right: 2em;
+  }
+}
+
+nav[role="navigation"] .expanded .menu {
+  top: 45px;
+  left: -20px;
+
+  a:hover {
+    font-weight: normal;
+  }
+}
+
+nav[role="navigation"] .menu .active-trail {
+  @include mquery("medium") {
+    &:hover {
+      font-weight: bold;
+      text-shadow: none;
+    }
+  }
+}
+
+nav[role="navigation"] .menu {
+  a:hover,
+  li:hover span  {
+    border-bottom: 3px solid $color-primary;
+    font-weight: 300;
+
+    @include mquery("medium") {
+      border-bottom: 3px solid $white;
+      text-shadow: 1px 0px $white;
+    }
+  }
+  a:active,
+  li:active span {
+    border-bottom: 3px solid $white;
+    font-weight: 300;
+    text-shadow: 1px 0px $white;
+  }
+
+  span {
+    border-bottom: 3px solid $color-primary;
+    display: inline-block;
+    font-weight: 300;
+  }
 }
