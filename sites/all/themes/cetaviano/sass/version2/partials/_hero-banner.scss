@@ -14,16 +14,15 @@
 }
 
 .hero-banner__reel {
+    background-color: $orange;
   background-image: url(../img/heroBanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #e0e0e065;
   height: 300px;
   position: relative;
   width: 100%;
 
   @include mquery("medium") {
-    background-color: $orange;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     flex-direction: row;
     height: auto;

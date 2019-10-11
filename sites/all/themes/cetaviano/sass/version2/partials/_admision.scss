@@ -7,47 +7,50 @@
   }
 }
 
-.panel-header_info {
-  color: $black;
-  margin: 5%;
+.section-call-out-h {
+  color: $white;
+  bottom: 60%;
+  font-size: $text-h2;
+  left: 5%;
+  position: absolute;
 
-  @include mquery(31.25em) {
-    display: none;
+  @include mquery("small") {
+    bottom: 60%;
+    left: 12%;
+  }
+
+  @include mquery("x-large") {
+    bottom: 60%;
+    left: 20%;
+  }
+}
+
+.panel-header_info {
+  bottom: 10%;
+  color: $white;
+  font-weight: lighter;
+  left: 5%;
+  position: absolute;
+  width: 80%;
+
+  @include mquery("small") {
+    bottom: 15%;
+    left: 12%;
+  }
+
+  @include mquery("medium") {
+    bottom: 30%;
+    width: 50%;
+  }
+
+  @include mquery("medium") {
+    bottom: 30%;
+    left: 20%;
   }
 }
 
 .adaptive-image {
   position: relative;
-}
-
-.section-call-out-h {
-  position: absolute;
-  bottom: 20%;
-  left: 5%;
-  color: $white;
-
-  @include mquery(31.25em) {
-    &::after {
-      content: '¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte';
-      color: $white;
-      display: block;
-      font-family: $font-fam;
-      font-size: 1rem;
-      font-weight: 200;
-      line-height: 25px;
-      padding-top: 15px;
-      width: 60%;
-    }
-  }
-
-  @include mquery("medium") {
-    left: 10%;
-    bottom: 35%;
-  }
-
-  @include mquery("x-large") {
-    left: 14%;
-  }
 }
 
 .req {
@@ -132,8 +135,8 @@
     margin-left: 4%;
   }
 
-  @include mquery("small") {
-
+  @include mquery("medium") {
+    margin-left: 10%;
   }
 }
 
@@ -196,8 +199,9 @@
 	border: solid 2px $color-primary;
 	border-radius: 5px;
   color: $color-primary;
+  margin-top: 20px;
   padding: 5px 10px;
-  text-decoration: none;
+  text-align: center;
   
   &:hover {
     background-color: $color-primary;

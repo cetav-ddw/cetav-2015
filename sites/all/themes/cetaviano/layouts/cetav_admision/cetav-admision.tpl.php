@@ -33,11 +33,6 @@
           <p class="req__p-item">En caso de personas extranjeras, tener su estatus migratorio al día.</p>
         </li>
         <li class="req__item">
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
-          <p class="req__p-item">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
-          <a class="req__btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
-        </li>
-        <li class="req__item">
           <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
           <p class="req__p-item">Conocimientos básicos en Adobe Photoshop y Adobe Illustrator.</p>
           <p class="req__p-item">Si no los tienes, estos cursos se imparten de manera regular aquí en el Parque La Libertad.</p>
@@ -53,6 +48,11 @@
             <li>- Actividades extracurriculares.</li>
           </ul>
           <p class="req__p-item">Por lo cual reafirmamos el compromiso con el que deben contar nuestros estudiantes para cumplir el horario.</p>
+        </li>
+        <li class="req__item">
+          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
+          <p class="req__p-item">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
+          <a class="step__btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
         </li>
       </ul>
     </section>
@@ -73,23 +73,18 @@
           <li class="step__item">
             <span class="step__number">2</span>
             <div class="step__info">
-              <p>Formas de pago.</p>
-              <p>En caso de requerir un subsidio económico para tus estudios, es necesario que tengás la ficha de información social del IMAS.</p>
-              <p>En caso de no requerir un subsidio, te invitamos a informarte sobre las cuotas de pago de la carrera.</p>
-              <div class="intro__btn">
-                <a href="" class="step__btn">Ir a financiamiento</a>
-              </div>
+              <p>Costo de la carrera técnica.</p>
+              <p>El costo mensual es de 100,000 colones.</p>
+              <p>En caso de obtener beca de EMPLEATE, el 50% del monto es para pagar colegiatura y el 50% restante para tu transporte y alimentación.</p>
             </div>
           </li>
 
           <li class="step__item">
             <span class="step__number">3</span>
             <div class="step__info">
+              <p>Conocimientos comprobables en Adobe Photoshop y Adobe Ilustardor.</p>
               <p>Si no tenés conocimientos en Adobe Ilustrador y Adobe Photoshop, una opción es llevar estos cursos en los Centros de Cómputo del Parque La Libertad. </p>
-              <p>Si te interesa esta opción, te invitamos a llenar esta encuesta, que nos ayudará a determinar los horarios que más te sirven para llevar estos cursos.</p>
-              <div class="intro__btn">
-                <a href="" class="step__btn">Llenar encuesta</a>
-              </div>
+              <p>Podes comunicarte con Rebeca Arias, Coordinadora de Programas de Diseño en el Centro de Computo del Parque La Libertad, al correo: rebeca.arias@parquelalibertad.org o al telefono: 2276-9400 ext 2092</p>
             </div>
           </li>
 
