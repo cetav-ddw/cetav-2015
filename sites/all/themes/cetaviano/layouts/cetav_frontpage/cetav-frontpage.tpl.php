@@ -29,7 +29,14 @@
   <section class="intro">
     <div class="intro__cont-intro">
       <h2 class="intro__title">Centro de Tecnología y Artes Visuales (CETAV)</h2>
-      <p class="intro__text">Desarrollamos las capacidades de forma integral, abarcando la especialización técnica, la formación en el idioma inglés y fortaleciendo las habilidades de comunicación empática, el desarrollo del pensamiento creativo y la formación en gestión de negocios, como parte de nuestro compromiso por formar personas jóvenes responsables, emprendedoras y participativas.</p>
+      <p class="intro__text">Como parte de nuestro compromiso por formar personas jóvenes responsables, emprendedoras y participativas; desarrollamos las capacidades de forma integral, abarcando:</p>
+      <ul class="intro__list">
+        <li class="intro__list-item">La especialización técnica.</li>
+        <li class="intro__list-item">La formación en el idioma inglés.</li>
+        <li class="intro__list-item">Las habilidades de comunicación empática.</li>
+        <li class="intro__list-item">El desarrollo del pensamiento creativo.</li>
+        <li class="intro__list-item">La formación en gestión de negocios.</li>
+      </ul>
       <p class="intro__text">Buscamos darles las mejores herramientas para desarrollarse exitosamente en el mundo laboral.</p>
       <div class="intro__btn"><a href="http://www.parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
     </div>
@@ -86,7 +93,7 @@
         <p class="sub-titles">¿Qué está sucediendo en el CETAV?</p>
         <?php print $content['wide_third']; ?>
         <div class="news-btn">
-          <a href="http://parquelalibertad.org/cetav/noticias" class="news-btn__link">Leer más noticias</a>
+          <a href="/noticias" class="news-btn__link">Leer más noticias</a>
         </div>
       </div>
     </div>

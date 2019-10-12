@@ -11,6 +11,48 @@
     height: 450px;
     padding: 0 5%;
   }
+  height: 450px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 0 5%;
+  position: absolute;
+  width: 100%;
+
+  @include mquery("x-large") {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  @include mquery(90em) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hero-banner__cont-reel {
+  display: flex;
+  justify-content: center;
+  max-height: 450px;
+  max-width: 95%;
+  overflow: hidden;
+  transition: 1s;
+  width: 100%;
+
+  &:hover{
+    transition-delay: .2s;
+    transition-duration: .5s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+  }
+  @include mquery(64em) {
+    justify-content: flex-end;
+  }
+  @include mquery("large") {
+    max-width: 90%;
+  }
+  @include mquery(90em) {
+    max-width: 95%;
+  }
 }
 
 .hero-banner__reel {
@@ -22,11 +64,21 @@
   position: relative;
   width: 100%;
 
+
   @include mquery("medium") {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     flex-direction: row;
     height: auto;
     order: 2;
+  }
+    
+  @include mquery(64em) {
+    padding-bottom: 40%;
+    width: 70%;
+  }
+  @include mquery(90em) {
+    right: 5%;
+    top: -10vh;
     width: 60%;
   }
 }
