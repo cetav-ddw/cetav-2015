@@ -13,7 +13,7 @@
   <div class="section-wide head-nav slab-orange">
     <?php if ($page['navigation']): ?>
     <div class="grid-width">
-        <a href="http://parquelalibertad.org/cetav/" class="header__logo"><img class="icon-cetav" src="<?php echo base_path().path_to_theme() ?>/img/logo.png" alt="Inicio sitio web CETAV"></a>
+        <a href="/" class="header__logo"><img class="icon-cetav" src="<?php echo base_path().path_to_theme() ?>/img/logo.png" alt="Inicio sitio web CETAV"></a>
         <div class="cont-burger menu-collapse">
           <a id ="menu-toggle" class="menu-toggle">
               <div class="menu-toggle-one"></div>
