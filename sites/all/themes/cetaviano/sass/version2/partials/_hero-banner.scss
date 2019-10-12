@@ -1,7 +1,16 @@
-.hero-banner__cont-desc {
+.hero-banner {
   display: flex;
-  font-weight: 300;
   flex-direction: column;
+
+  @include mquery("medium") {
+    background-color: $orange;
+    background-image: url(../img/trianglify.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+    height: 450px;
+    padding: 0 5%;
+  }
   height: 450px;
   justify-content: center;
   margin: 0 auto;
@@ -46,27 +55,23 @@
   }
 }
 
-.hero-banner {
-  background-image: url("../img/trianglify.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  max-height: 450px;
-  overflow: hidden;
-  width: 100%;
-}
-
 .hero-banner__reel {
-  background-image: url("../img/heroBanner.jpg");
+    background-color: $orange;
+  background-image: url(../img/heroBanner.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  display: flex;
-  padding-bottom: 48%;
+  height: 300px;
   position: relative;
-  width: 85%;
+  width: 100%;
 
+
+  @include mquery("medium") {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    flex-direction: row;
+    height: auto;
+    order: 2;
+  }
+    
   @include mquery(64em) {
     padding-bottom: 40%;
     width: 70%;
@@ -78,80 +83,25 @@
   }
 }
 
-.hero-banner__desc {
-  color: $white;
-  display: none;
-  width: 30%;
+.hero-banner__cont-desc{
+  font-weight: lighter;
+  margin: 3em 0;
+  margin-left: 1em;
+  padding-left: 1.5em;
+  width: 90%;
 
-  @include mquery(64em) {
-    display: block;
+  @include mquery("small") {
+    padding-left: 2.5em;
+    order: 1;
   }
-}
 
-.hero-banner__title {
-  color: $white;
-  display: none;
-  font-size: $text-h2;
-
-  @include mquery(64em) {
-    display: block;
+  @include mquery("medium") {
+    color: $white;
+    width: 40%;
   }
-}
 
-
-////////// Modal //////////
-
-.reel{
-  left: 50%;
-  position: relative;
-  transform: translate(-50%, 50%);
-}
-
-.btn__modal--open{
-  background-color: transparent;
-  border: solid 2px $white;
-  border-radius: 50%;
-  height: 50px;
-  // justify-content: center;
-  left: 45%;
-  position: absolute;
-  top: 45%;
-  width: 50px;
-}
-
-.banner__modal{
-  background-color: #292929bb;
-  height: 100%;
-  margin: 0 auto;
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  visibility: hidden;
-  width: 100%;
-  z-index: 110;
-}
-
-.modal--open{
-  opacity: 1;
-  visibility: visible;
-}
-
-.btn__modal--close{
-  background-color: $orange;
-  border-radius: 5px;
-  color: $white;
-  font-size: 1.5rem;
-  font-weight: 900;
-  height: 40px;
-  left: 80%;
-  line-height: 20px;
-  position: absolute;
-  top: 10%;
-  text-align: center;
-  text-decoration: none;
-  width: 40px;
-  z-index: 410;
+  @include mquery("large") {
+    margin: 6% 0;
+    padding-left: 5.5em;
+  }
 }
