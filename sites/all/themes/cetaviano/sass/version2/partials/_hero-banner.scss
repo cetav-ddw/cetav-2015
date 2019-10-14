@@ -1,55 +1,50 @@
 .hero-banner {
   display: flex;
   flex-direction: column;
-
+  height: 100%;
+  justify-content: center;
+  max-height: 450px;
+  overflow: hidden;
+  width: 100%;
+  
   @include mquery("medium") {
-    background-color: $orange;
-    background-image: url(../img/trianglify.png);
-    background-repeat: no-repeat;
+    background-image: url("../img/trianglify.svg");
     background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: row;
-    height: 450px;
-    padding: 0 5%;
   }
 }
 
 .hero-banner__reel {
-    background-color: $orange;
-  background-image: url(../img/heroBanner.jpg);
-  background-repeat: no-repeat;
+  background-image: url("../img/heroBanner.jpg");
+  background-position: center;
   background-size: cover;
-  height: 300px;
+  padding-bottom: 48%;
   position: relative;
   width: 100%;
 
   @include mquery("medium") {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    flex-direction: row;
-    height: auto;
     order: 2;
-    width: 60%;
+    width: 50%;
+  }
+
+  @include mquery("xx-large") {
+    right: 5%;
+    top: -10vh;
   }
 }
 
-.hero-banner__cont-desc{
+.hero-banner__cont-desc {
+  color: $black;
   font-weight: lighter;
-  margin: 3em 0;
-  margin-left: 1em;
-  padding-left: 1.5em;
-  width: 90%;
-
-  @include mquery("small") {
-    padding-left: 2.5em;
-    order: 1;
-  }
+  height: 450px;
+  margin: 2%;
 
   @include mquery("medium") {
     color: $white;
-    width: 40%;
-  }
-
-  @include mquery("large") {
-    margin: 6% 0;
-    padding-left: 5.5em;
+    margin: 6% 5%;
+    order: 1;
+    width: 30%;
   }
 }

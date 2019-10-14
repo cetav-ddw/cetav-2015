@@ -26,7 +26,8 @@
   }
 
   @include mquery("large") {
-    top: 45%;
+    left: 50%;
+    top: 30%;
   }
 
   &::after {
