@@ -11,47 +11,47 @@
  <?php if ($content['wide']): ?>
     <div class="panel-wide panel-header">
         <?php print $content['wide']; ?>
-        <p class="panel-header_info">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
+        <p class="panel-header__info">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
     </div>
   <?php endif ?>
 <div class="section-wide">
     
     <section>
-      <ul class="req">
+      <ul class="requis__cont">
         <h3>Requisitos</h3>
         <p>Cada dos años, el CETAV realiza un proceso de reclutamiento. Si te interesa ingresar, es indispensable cumplir con lo siguiente:</p>
-        <li class="req__item">
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_1-admision.png" alt="">
-          <p class="req__p-item">Tener entre 17 y 25 años.</p>
+        <li class="requis__item">
+          <img class="requis__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_1-admision.png" alt="">
+          <p class="requis__text-item">Tener entre 17 y 25 años.</p>
         </li>
-        <li class="req__item">
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_2-admision.png" alt="">
-          <p class="req__p-item">Contar con Bachillerato en Educación Media aprobado.</p>
+        <li class="requis__item">
+          <img class="requis__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_2-admision.png" alt="">
+          <p class="requis__text-item">Contar con Bachillerato en Educación Media aprobado.</p>
         </li>
-        <li class="req__item">
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_3-admision.png" alt="">
-          <p class="req__p-item">En caso de personas extranjeras, tener su estatus migratorio al día.</p>
+        <li class="requis__item">
+          <img class="requis__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_3-admision.png" alt="">
+          <p class="requis__text-item">En caso de personas extranjeras, tener su estatus migratorio al día.</p>
         </li>
-        <li class="req__item">
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
-          <p class="req__p-item">Conocimientos básicos en Adobe Photoshop y Adobe Illustrator.</p>
-          <p class="req__p-item">Si no los tienes, estos cursos se imparten de manera regular aquí en el Parque La Libertad.</p>
-          <p class="req__p-item">Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito llevar el curso de Introducción al Desarrollo Web que se imparte en el CETAV.</p>
+        <li class="requis__item">
+          <img class="requis__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
+          <p class="requis__text-item">Conocimientos básicos en Adobe Photoshop y Adobe Illustrator.</p>
+          <p class="requis__text-item">Si no los tienes, estos cursos se imparten de manera regular aquí en el Parque La Libertad.</p>
+          <p class="requis__text-item">Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito llevar el curso de Introducción al Desarrollo Web que se imparte en el CETAV.</p>
         </li>
-        <li class="req__item"> 
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_6-admision.png" alt="">
-          <p class="req__p-item">Disponibilidad de tiempo completo.</p>
+        <li class="requis__item"> 
+          <img class="requis__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_6-admision.png" alt="">
+          <p class="requis__text-item">Disponibilidad de tiempo completo.</p>
           <ul class="item__list">Nuestro programa comprende:
-            <li>- Formación técnica.</li>
-            <li>- Aprendizaje del idioma inglés.</li>
-            <li>- Cursos para el desarrollo de estrategias para la inserción laboral.</li>
-            <li>- Actividades extracurriculares.</li>
+            <li>Formación técnica.</li>
+            <li>Aprendizaje del idioma inglés.</li>
+            <li>Cursos para el desarrollo de estrategias para la inserción laboral.</li>
+            <li>Actividades extracurriculares.</li>
           </ul>
-          <p class="req__p-item">Por lo cual reafirmamos el compromiso con el que deben contar nuestros estudiantes para cumplir el horario.</p>
+          <p class="requis__text-item">Por lo cual reafirmamos el compromiso con el que deben contar nuestros estudiantes para cumplir el horario.</p>
         </li>
-        <li class="req__item">
-          <img class="req__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
-          <p class="req__p-item">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
+        <li class="requis__item">
+          <img class="requis__img-item" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
+          <p class="requis__text-item">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
           <a class="step__btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
         </li>
       </ul>
@@ -65,7 +65,7 @@
             <div class="step__info">
               <p>Para recibir información sobre el proceso de admisión, llená el siguiente formulario.</p>
               <div class="intro__btn">
-                <a href="" class="step__btn">Llenar formulario</a>
+                <a href="" title="Formulario para solicitar beca de PONAE" class="step__btn">Llenar formulario</a>
               </div>
             </div>
           </li>

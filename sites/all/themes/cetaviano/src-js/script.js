@@ -94,7 +94,6 @@
     // Funcionalidad del video para el hero banner 
     $("#show-reel").click(function() {
       $("#video-reel").addClass("hero-banner__reel-show");
-
     });
     $("#close-reel").click(function() {
       $("#video-reel").removeClass("hero-banner__reel-show");

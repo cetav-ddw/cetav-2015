@@ -1,5 +1,4 @@
 .panel-header {
-  
   @include mquery("medium") {
     img {
       height: 300px;
@@ -8,8 +7,8 @@
 }
 
 .section-call-out-h {
-  color: $white;
   bottom: 60%;
+  color: $white;
   font-size: $text-h2;
   left: 5%;
   position: absolute;
@@ -18,14 +17,13 @@
     bottom: 60%;
     left: 12%;
   }
-
   @include mquery("x-large") {
     bottom: 60%;
     left: 20%;
   }
 }
 
-.panel-header_info {
+.panel-header__info {
   bottom: 10%;
   color: $white;
   font-weight: lighter;
@@ -37,12 +35,10 @@
     bottom: 15%;
     left: 12%;
   }
-
   @include mquery("medium") {
     bottom: 30%;
     width: 50%;
   }
-
   @include mquery("medium") {
     bottom: 30%;
     left: 20%;
@@ -53,7 +49,7 @@
   position: relative;
 }
 
-.req {
+.requis__cont {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -65,7 +61,7 @@
   }
 }
 
-.req, 
+.requis__cont, 
 .steps {
   font-weight: lighter;
   
@@ -82,9 +78,9 @@
   }
 }
 
-.req__item {
-  border: solid 1px $white;
+.requis__item {
   background-color: $lighter-gray;
+  border: solid 1px $white;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -94,7 +90,6 @@
   width: 88%;
 
   @include mquery(48.75em) {
-    height: auto;
     padding: 4%;
     width: 50%;
   }
@@ -104,7 +99,7 @@
   }
 }
 
-.req__img-item {
+.requis__img-item {
   align-self: center;
   width: 60px;
 
@@ -117,7 +112,7 @@
   }
 }
 
-.req__p-item {
+.requis__text-item {
   margin: 0 auto;
   margin-top: 10px; 
 }
@@ -125,6 +120,12 @@
 .item__list {
   list-style: none;
   padding: 0 10px;
+
+  li::before {
+    content: '\2013';
+    position: absolute;
+    margin-left: -15px;
+  }
 }
 
 .steps {
@@ -156,7 +157,7 @@
 	align-self: flex-start;
 	background-color: $orange;
 	color: $white;
-  font-size: 1.5rem;
+  font-size: $text-base;
   line-height: 25px;
   font-weight: 900;
   margin-top: 5px;
@@ -166,7 +167,6 @@
     font-size: 2.5rem;
     padding: 20px;
   }
-
   @include mquery("medium") {
     font-size: 2.5rem;
     padding: 20px;
