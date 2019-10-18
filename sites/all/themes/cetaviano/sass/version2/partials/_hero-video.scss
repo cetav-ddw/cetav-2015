@@ -1,9 +1,9 @@
-.video-reel {
+.hero-banner__video {
   height: 100%;
   width: 100%;
 }
 
-.hero-banner__video {
+.hero-banner__cont-video{
   height: 350px;
   position: absolute;
   visibility: hidden;
@@ -22,11 +22,12 @@
 
   @include mquery("medium") {
     left: 45%;
-    top: 40%;  // 20% apróx
+    top: 40%;
   }
 
   @include mquery("large") {
-    top: 45%;
+    left: 50%;
+    top: 30%;
   }
 
   &::after {

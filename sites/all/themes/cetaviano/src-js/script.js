@@ -91,24 +91,9 @@
       $(document.body).animate({scrollTop: 0}, 800);
     });
 
-    // Funcionalidad para el play del vídeo y creación
-    
-    function loadReel() {
-      var request = $.ajax('https://vimeo.com/api/oembed.json?url=https%3A//vimeo.com/247321835');
-      
-    }
-
-    loadReel();
-
-    function createReel() {
-      var videoResponse = loadReel();
-      console.log(videoResponse);
-    }
-
     // Funcionalidad del video para el hero banner 
     $("#show-reel").click(function() {
       $("#video-reel").addClass("hero-banner__reel-show");
-      createReel();
     });
     $("#close-reel").click(function() {
       $("#video-reel").removeClass("hero-banner__reel-show");

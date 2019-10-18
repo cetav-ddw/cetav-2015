@@ -1,5 +1,4 @@
 .panel-header {
-  
   @include mquery("medium") {
     img {
       height: 300px;
@@ -8,8 +7,8 @@
 }
 
 .section-call-out-h {
-  color: $white;
   bottom: 60%;
+  color: $white;
   font-size: $text-h2;
   left: 5%;
   position: absolute;
@@ -18,14 +17,13 @@
     bottom: 60%;
     left: 12%;
   }
-
   @include mquery("x-large") {
     bottom: 60%;
     left: 20%;
   }
 }
 
-.panel-header_info {
+.panel-header__info {
   bottom: 10%;
   color: $white;
   font-weight: lighter;
@@ -37,12 +35,10 @@
     bottom: 15%;
     left: 12%;
   }
-
   @include mquery("medium") {
     bottom: 30%;
     width: 50%;
   }
-
   @include mquery("medium") {
     bottom: 30%;
     left: 20%;
@@ -53,7 +49,7 @@
   position: relative;
 }
 
-.req {
+.requis__cont {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -65,8 +61,8 @@
   }
 }
 
-.req, 
-.steps {
+.admi-require__cont, 
+.admi-admi- {
   font-weight: lighter;
   
   @include mquery("medium") {
@@ -82,9 +78,9 @@
   }
 }
 
-.req__item {
-  border: solid 1px $white;
+.admi-require__item {
   background-color: $lighter-gray;
+  border: solid 1px $white;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -94,7 +90,6 @@
   width: 88%;
 
   @include mquery(48.75em) {
-    height: auto;
     padding: 4%;
     width: 50%;
   }
@@ -104,7 +99,7 @@
   }
 }
 
-.req__img-item {
+.admi-require__item-img {
   align-self: center;
   width: 60px;
 
@@ -117,17 +112,23 @@
   }
 }
 
-.req__p-item {
+.admi-require__item-text {
   margin: 0 auto;
   margin-top: 10px; 
 }
 
-.item__list {
+.admi-require__item-list {
   list-style: none;
   padding: 0 10px;
+
+  li::before {
+    content: '\2013';
+    position: absolute;
+    margin-left: -15px;
+  }
 }
 
-.steps {
+.admi-steps__cont {
   padding-top: 6%; 
   width: 80%;
 
@@ -140,7 +141,7 @@
   }
 }
 
-.step__item {
+.admi-step__item {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -152,11 +153,11 @@
 	}
 }
 
-.step__number {
+.admi-step__number {
 	align-self: flex-start;
 	background-color: $orange;
 	color: $white;
-  font-size: 1.5rem;
+  font-size: $text-base;
   line-height: 25px;
   font-weight: 900;
   margin-top: 5px;
@@ -166,7 +167,6 @@
     font-size: 2.5rem;
     padding: 20px;
   }
-
   @include mquery("medium") {
     font-size: 2.5rem;
     padding: 20px;
@@ -177,7 +177,7 @@
   justify-content: flex-start;
 }
 
-.step__info {
+.admi-step__info {
   align-self: flex-end;
   line-height: 25px;
   text-decoration: none;
@@ -194,7 +194,7 @@
   }
 }
 
-.step__btn {
+.admi-btn {
 	align-items: flex-start;
 	border: solid 2px $color-primary;
 	border-radius: 5px;

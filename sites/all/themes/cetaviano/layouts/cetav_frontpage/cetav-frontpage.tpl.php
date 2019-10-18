@@ -9,10 +9,10 @@
 <div class="panel-display panel-cetav-frontpage">
   <!--Hero banner-->
   <section class="hero-banner">
-    <div id="video-reel" class="hero-banner__video">
+    <div id="video-reel" class="hero-banner__cont-video">
       <button id="close-reel" class="hero-banner__btn-close">x</button>
-        <iframe id="videoReel" class="video-reel" src="https://player.vimeo.com/video/247321835" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
+      <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/247321835?autoplay=1&loop=1&autopause=1" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 
     <div id="image-reel" class="hero-banner__reel">
       <button id="show-reel" class="hero-banner__btn-open"></button>
