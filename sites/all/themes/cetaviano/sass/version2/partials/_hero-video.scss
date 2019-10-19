@@ -20,15 +20,18 @@
   top: 40%;
   width: 60px;
 
-  @include mquery("medium") {
+  @include mquery("small") {
     top: 55%;
+  }
+  @include mquery("medium") {
+    top: 45%;
   }
   @include mquery("large") {
     left: 50%;
-    top: 35%;
+    top: 30%;
   }
-  @include mquery("x-large") {
-    top: 38%;
+  @include mquery("xx-large") {
+    top: 34%;
   }
 
   &::after {
