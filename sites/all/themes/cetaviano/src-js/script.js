@@ -97,6 +97,7 @@
     });
     $("#close-reel").click(function() {
       $("#video-reel").removeClass("hero-banner__reel-show");
+      $("videoReel").pause();
     });
 
     // acordeon de preguntas frecuentes

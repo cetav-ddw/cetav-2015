@@ -4,7 +4,7 @@
 }
 
 .hero-banner__cont-video{
-  height: 350px;
+  height: 100%;
   position: absolute;
   visibility: hidden;
   width: 100%;
@@ -21,13 +21,14 @@
   width: 60px;
 
   @include mquery("medium") {
-    left: 45%;
-    top: 40%;
+    top: 55%;
   }
-
   @include mquery("large") {
     left: 50%;
-    top: 30%;
+    top: 35%;
+  }
+  @include mquery("x-large") {
+    top: 38%;
   }
 
   &::after {
