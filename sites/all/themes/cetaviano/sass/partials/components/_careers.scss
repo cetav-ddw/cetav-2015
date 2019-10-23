@@ -158,26 +158,48 @@
 	align-items: center;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100vw;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	height: 200px;
 	margin: 10px auto;
-	max-width: $max-width;
+  max-width: $max-width;
+  position: relative;
 	transition: all .5s;
   width: 100%;
 
-	@include mquery(48em) {
-		&:hover{
-      background-size: 125vw;
+	@include mquery("small") {
+    background-size: 100vw;
+
+    &:hover{
+      background-size: 150vw;
       transition: all 1s;
-		}
+    }
   }
   @include mquery(48em) {
-		flex-direction: row;
+    flex-direction: row;
 	}
-	@include mquery("medium") {
+  @include mquery("large") {
 		height: 300px;
+  }
+  @include mquery("xx-large") {
+    background-size: 90vw;
+
+    &:hover{
+      background-size: 140vw;
+      transition: all 1s;
+    }
+  }
+
+  &:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
   }
 
 	a {
@@ -188,15 +210,15 @@
 }
 
 .career--animation {
-  background-image: url("../img/background_3d.jpg");
+  background-image: url("../img/home-3d.jpg");
 
 	@include mquery(48em) {
 		justify-content: flex-end;
-	}
+  }
 }
 
 .career--web {
-  background-image: url("../img/background_web.jpg");
+  background-image: url("../img/home-web.jpg");
 
 	@include mquery(48em) {
 		justify-content: flex-start;
@@ -204,10 +226,18 @@
 }
 
 .career--post {
-  background-image: url("../img/background_post.jpg");
+  background-image: url("../img/home-post.jpg");
 
 	@include mquery(48em) {
 		justify-content: flex-end;
+	}
+}
+
+.career--dic {
+  background-image: url("../img/home-dic.jpg");
+
+	@include mquery(48em) {
+		justify-content: flex-start;
 	}
 }
 
@@ -217,6 +247,7 @@
 	flex-direction: column;
 	margin: 2em;
   width: 100%;
+  z-index: 2;
 
 	@include mquery(48em) {
 		align-items: flex-start;
