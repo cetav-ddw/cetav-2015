@@ -11,7 +11,7 @@
   <section class="hero-banner">
     <div id="video-reel" class="hero-banner__cont-video">
       <button id="close-reel" class="hero-banner__btn-close">x</button>
-      <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/247321835?autoplay=1&loop=1&autopause=1" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/247321835?autoplay=1&loop=0&autopause=0" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 
     <div id="image-reel" class="hero-banner__reel">
@@ -54,7 +54,7 @@
     <article class="career career--animation lazy-image">
       <div class="career__info">
         <h3 class="career__title">Animación Digital 3D</h3>
-        <a href="http://parquelalibertad.org/cetav/carreras/animacion-digital-3d" class="career__link"> Información sobre la carrera
+        <a href="/carreras/animacion-digital-3d" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
@@ -65,7 +65,7 @@
     <article class="career career--web lazy-image">
       <div class="career__info">
         <h3 class="career__title">Diseño y Desarrollo Web</h3>
-        <a href="http://parquelalibertad.org/cetav/carreras/diseno-desarrollo-web" class="career__link"> Información sobre la carrera
+        <a href="/carreras/diseno-desarrollo-web" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
@@ -76,7 +76,18 @@
     <article class="career career--post lazy-image">
       <div class="career__info">
         <h3 class="career__title">Edición y Postproducción de Imagen y Sonido</h3>
-        <a href="http://parquelalibertad.org/cetav/carreras/postproduccion-imagen-sonido" class="career__link"> Información sobre la carrera
+        <a href="/carreras/postproduccion-imagen-sonido" class="career__link"> Información sobre la carrera
+          <svg class="btn-border">
+            <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="career career--dic lazy-image">
+      <div class="career__info">
+        <h3 class="career__title">Diseño de Imagen Comercial</h3>
+        <a href="/carreras/diseñador-imagen-comercial" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
