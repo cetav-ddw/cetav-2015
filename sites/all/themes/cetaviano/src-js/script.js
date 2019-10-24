@@ -92,17 +92,9 @@
     });
 
     // Funcionalidad del video para el hero banner 
-    // function autopause(element) {
-    //   var a = $(element);
-
-    //   console.log(a[0].src);
-    //   a.src.value = 'https://player.vimeo.com/video/247321835?autoplay=1&loop=1&autopause=1';
-    //   console.log(a.src.value);
-    // }
     
     $("#show-reel").click(function() {
       $("#video-reel").addClass("hero-banner__reel-show");
-      // autopause(".hero-banner__video");
     });
     $("#close-reel").click(function() {
       $("#video-reel").removeClass("hero-banner__reel-show");
