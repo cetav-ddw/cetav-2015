@@ -21,25 +21,25 @@
         <h3>Requisitos</h3>
         <p>Cada dos años, el CETAV realiza un proceso de reclutamiento. Si te interesa ingresar, es indispensable cumplir con lo siguiente:</p>
         <li class="admi-require__item">
-          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_1-admision.png" alt="">
+          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_1-admision.png" alt="Icono de persona joven">
           <p class="admi-require__item-text">Tener entre 17 y 25 años.</p>
         </li>
         <li class="admi-require__item">
-          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_2-admision.png" alt="">
+          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_2-admision.png" alt="Icono de título">
           <p class="admi-require__item-text">Contar con Bachillerato en Educación Media aprobado.</p>
         </li>
         <li class="admi-require__item">
-          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_3-admision.png" alt="">
+          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_3-admision.png" alt="Icono de estatus migratorio">
           <p class="admi-require__item-text">En caso de personas extranjeras, tener su estatus migratorio al día.</p>
         </li>
         <li class="admi-require__item">
-          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
+          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="Iconos de adbo Prhotoshop y Adobe Ilustrador">
           <p class="admi-require__item-text">Conocimientos básicos en Adobe Photoshop y Adobe Illustrator.</p>
           <p class="admi-require__item-text">Si no los tienes, estos cursos se imparten de manera regular aquí en el Parque La Libertad.</p>
           <p class="admi-require__item-text">Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito llevar el curso de Introducción al Desarrollo Web que se imparte en el CETAV.</p>
         </li>
         <li class="admi-require__item"> 
-          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_6-admision.png" alt="">
+          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_6-admision.png" alt="Icono de calendario">
           <p class="admi-require__item-text">Disponibilidad de tiempo completo.</p>
           <ul class="admi-require__item-list">Nuestro programa comprende:
             <li>Formación técnica.</li>
@@ -50,7 +50,7 @@
           <p class="admi-require__item-text">Por lo cual reafirmamos el compromiso con el que deben contar nuestros estudiantes para cumplir el horario.</p>
         </li>
         <li class="admi-require__item">
-          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
+          <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="Icono de beca estudiantil">
           <p class="admi-require__item-text">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
           <a class="admi-btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
         </li>
