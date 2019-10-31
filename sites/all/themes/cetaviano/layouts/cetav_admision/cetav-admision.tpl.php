@@ -117,7 +117,6 @@
         </ul>
     </section>
 </div>
-
 <div>
   <?php if ($content['wide']): ?>
     <div class="section-wide">
