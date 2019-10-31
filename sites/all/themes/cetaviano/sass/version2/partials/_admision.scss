@@ -45,10 +45,11 @@
 }
 
 .panel-cetav-admission .adaptive-image {
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
-.admi-require {
+admi-require {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
