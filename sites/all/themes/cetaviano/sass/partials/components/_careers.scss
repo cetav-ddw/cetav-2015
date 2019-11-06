@@ -35,6 +35,7 @@
 .imagen-comercial .paragraphs-item-programas-carreras {
     @include mquery("medium") {
         @include omega();
+        margin-right: 2%;
         width: 48%;
     }
 }

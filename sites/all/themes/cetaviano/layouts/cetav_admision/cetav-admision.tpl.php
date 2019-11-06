@@ -121,7 +121,6 @@
       <p>Contamos con una sección de preguntas frecuentes que podés encontrar haciendo <a href="">clic aquí</a></p>
     </div>
 </div>
-
 <div>
   <?php if ($content['wide']): ?>
     <div class="section-wide">
