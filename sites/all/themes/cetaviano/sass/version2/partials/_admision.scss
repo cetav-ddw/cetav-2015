@@ -6,7 +6,7 @@
   }
 }
 
-.panel-cetav-admission .section-call-out-h {
+.section-call-out-h {
   bottom: 60%;
   color: $white;
   font-size: $text-h2;
@@ -15,10 +15,11 @@
 
   @include mquery("small") {
     bottom: 60%;
-    left: 15%;
+    left: 12%;
   }
-  @include mquery("large") {
-    left: 18%;
+  @include mquery("x-large") {
+    bottom: 60%;
+    left: 20%;
   }
 }
 
@@ -36,19 +37,20 @@
   }
   @include mquery("medium") {
     bottom: 30%;
-    left: 15%;
     width: 50%;
   }
-  @include mquery("large") {
-    left: 18%;
+  @include mquery("medium") {
+    bottom: 30%;
+    left: 20%;
   }
 }
 
-.adaptive-image {
+.panel-cetav-admission .adaptive-image {
+  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
-.admi-require {
+.requis__cont {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -56,14 +58,13 @@
   @include mquery(31.25em) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 80%;
   }
 }
 
 .admi-require__cont, 
-.admi-steps__cont {
+.admi-admi- {
   font-weight: lighter;
-  margin: 0 auto;
   
   @include mquery("medium") {
     width: 100%;
@@ -72,14 +73,13 @@
   @include mquery("large")   {
     width: 960px;
   }
-
+  
   @include mquery("x-large") {
     width: 1100px;
   }
 }
 
 .admi-require__item {
-  align-self: center;
   background-color: $lighter-gray;
   border: solid 1px $white;
   display: flex;
@@ -91,10 +91,10 @@
   width: 88%;
 
   @include mquery(48.75em) {
-    align-self: auto;
     padding: 4%;
     width: 50%;
   }
+  
   @include mquery("medium") {
     width: 33%;
   }
@@ -106,6 +106,10 @@
 
   @include mquery("small") {
     width: 70px;
+  }
+
+  @include mquery("medium") {
+    width: 80px;
   }
 }
 
@@ -126,7 +130,7 @@
 }
 
 .admi-steps__cont {
-  padding-top: 6%; 
+  padding-top: 6%;
   width: 80%;
 
   h3 {
@@ -142,6 +146,7 @@
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin: 5%;
   margin-bottom: 10%;
   
   @include mquery("medium") {
@@ -153,10 +158,10 @@
 	align-self: flex-start;
 	background-color: $orange;
 	color: $white;
-  font-size: 1.5rem;
+  font-size: $text-base;
   line-height: 25px;
   font-weight: 900;
-  margin: 5px 10px 0;
+  margin-top: 5px;
   padding: 10px 15px;
   
   @include mquery("small") {
@@ -169,7 +174,7 @@
   }
 }
 
-.intro__btn {
+.admi-intro__btn {
   justify-content: flex-start;
 }
 
@@ -178,18 +183,17 @@
   line-height: 25px;
   text-decoration: none;
   width: 100%;
-
+    
+  p{
+    margin: 0 0 .8em;
+  }
+    
   @include mquery("medium") {
     padding-left: 25px;
     width: 70%;
     line-height: none;
-  }  
-  
-  p{
-    margin: 0 0 .8em;
   }
-}    
-
+}
 
 .admi-btn {
 	align-items: flex-start;

@@ -64,7 +64,7 @@
             <span class="admi-step__number">1</span>
             <div class="admi-step__info">
               <p>Para recibir información sobre el proceso de admisión, llená el siguiente formulario.</p>
-              <div class="intro__btn">
+              <div class="admi-intro__btn">
                 <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfDfiOhd0X1_OpXVVzRgUKr34t6WovtQ5Jma5YOWhBD9KlW8w/viewform" title="Formulario para solicitar beca de PONAE" class="admi-btn">Llenar formulario</a>
               </div>
             </div>
@@ -116,8 +116,11 @@
           </li>
         </ul>
     </section>
+    <div class="admi-note">
+      <h3>¿Querés saber más?</h3>
+      <p>Contamos con una sección de preguntas frecuentes que podés encontrar haciendo <a href="">clic aquí</a></p>
+    </div>
 </div>
-
 <div>
   <?php if ($content['wide']): ?>
     <div class="section-wide">
