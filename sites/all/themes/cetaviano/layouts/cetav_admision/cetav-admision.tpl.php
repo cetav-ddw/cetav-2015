@@ -11,12 +11,20 @@
  <?php if ($content['wide']): ?>
     <div class="panel-wide panel-header">
         <?php print $content['wide']; ?>
-        <p class="panel-header__info">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
+        <div class="banner-info">
+          <p class="banner-info__message">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
+        </div>
     </div>
   <?php endif ?>
 <div class="section-wide">
-    
+
     <section class="admi-require__cont">
+      <div class="bread-crumbs bread-crumbs--admi">
+        <ul class="bread-crumbs__cont">
+          <li class="bread-crumbs__item bread-crumbs__item--first">Estás aquí:</li>
+          <li class="bread-crumbs__item bread-crumbs__item--second">Proceso de admisión</li>
+        </ul>
+      </div>
       <ul class="admi-require">
         <h3>Requisitos</h3>
         <p>Cada dos años, el CETAV realiza un proceso de reclutamiento. Si te interesa ingresar, es indispensable cumplir con lo siguiente:</p>
@@ -38,7 +46,7 @@
           <p class="admi-require__item-text">Si no los tienes, estos cursos se imparten de manera regular aquí en el Parque La Libertad.</p>
           <p class="admi-require__item-text">Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito llevar el curso de Introducción al Desarrollo Web que se imparte en el CETAV.</p>
         </li>
-        <li class="admi-require__item"> 
+        <li class="admi-require__item">
           <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_6-admision.png" alt="">
           <p class="admi-require__item-text">Disponibilidad de tiempo completo.</p>
           <ul class="admi-require__item-list">Nuestro programa comprende:
@@ -105,7 +113,7 @@
               <p><strong>Nota: </strong>Si ya llenaste el formulario, la fecha de las pruebas se te estará comunicando por correo electrónico.</p>
             </div>
           </li>
-          
+
           <li class="admi-step__item">
             <span class="admi-step__number">6</span>
             <div class="admi-step__info">

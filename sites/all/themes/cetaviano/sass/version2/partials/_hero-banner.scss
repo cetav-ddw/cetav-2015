@@ -6,7 +6,7 @@
   max-height: 450px;
   overflow: hidden;
   width: 100%;
-  
+
   @include mquery("medium") {
     background-image: url("../img/trianglify.svg");
     background-size: cover;
@@ -39,7 +39,7 @@
   color: $black;
   font-weight: lighter;
   height: 450px;
-  margin: 2%;
+  margin: 5%;
   margin-bottom: 15%;
 
   @include mquery("medium") {
