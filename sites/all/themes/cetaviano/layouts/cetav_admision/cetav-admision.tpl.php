@@ -116,10 +116,6 @@
           </li>
         </ul>
     </section>
-    <div class="admi-note">
-      <h3>¿Querés saber más?</h3>
-      <p>Contamos con una sección de preguntas frecuentes que podés encontrar haciendo <a href="">clic aquí</a></p>
-    </div>
 </div>
 <div>
   <?php if ($content['wide']): ?>

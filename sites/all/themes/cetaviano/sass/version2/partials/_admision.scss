@@ -59,7 +59,6 @@
     flex-wrap: wrap;
     width: 90%;
   }
-
 }
 
 .admi-require__cont, 
@@ -98,12 +97,22 @@
   @include mquery("medium") {
     width: 33%;
   }
-
 }
 
 .admi-require__item-img {
   align-self: center;
   width: 60px;
+
+  &::before {
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 
   @include mquery("small") {
     width: 70px;
@@ -162,7 +171,6 @@
     font-size: 2.5rem;
     padding: 20px;
   }
-
   @include mquery("medium") {
     font-size: 2.5rem;
     padding: 20px;
@@ -207,20 +215,5 @@
 
   @include mquery("small") {
     padding: 10px 20px;
-  }
-}
-
-.admi__note {
-  align-self: center;
-  border: solid 1px $black;
-  color: $black;
-  margin: 0 5%;
-  padding: 0 10% ;
-  padding-top: 4%;
-  width: 90%;
-  text-align: center;
-
-  @include mquery("medium") {
-    padding-top: 2%;
   }
 }
