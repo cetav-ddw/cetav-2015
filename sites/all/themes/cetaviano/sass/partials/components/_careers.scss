@@ -33,10 +33,16 @@
 }
 
 .imagen-comercial .paragraphs-item-programas-carreras {
+    width: 100%;
+
+    @include mquery("small") {
+      margin-left: 0;
+      margin-right: 4%;
+      width: 46%;
+    }
     @include mquery("medium") {
-        @include omega();
-        margin-right: 2%;
-        width: 48%;
+      margin-right: 3.3%;
+      width: 30%;
     }
 }
 
