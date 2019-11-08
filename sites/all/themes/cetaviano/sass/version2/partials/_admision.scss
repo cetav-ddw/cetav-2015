@@ -1,79 +1,69 @@
-.panel-header {
-  @include mquery("medium") {
-    img {
-      height: 300px;
-    }
-  }
-}
-
-.panel-cetav-admission .section-call-out-h {
-  bottom: 60%;
-  color: $white;
-  font-size: $text-h2;
-  left: 5%;
-  position: absolute;
-
-  @include mquery("small") {
-    bottom: 60%;
-    left: 15%;
-  }
-  @include mquery("large") {
-    left: 18%;
-  }
-
-}
-
-.panel-header__info {
-  bottom: 10%;
-  color: $white;
-  font-weight: lighter;
-  left: 5%;
-  position: absolute;
-  width: 80%;
-
-  @include mquery("small") {
-    bottom: 15%;
-    left: 12%;
-  }
-  @include mquery("medium") {
-    bottom: 30%;
-    left: 15%;
-    width: 50%;
-  }
-  @include mquery("large") {
-    left: 18%;
-  }
-}
-
-.panel-cetav-admission .adaptive-image {
+.adaptive-image {
   position: relative;
 }
 
-.admi-require {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+.admi-btn {
+	align-items: flex-start;
+	border: solid 2px $color-primary;
+	border-radius: 5px;
+  color: $color-primary;
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  transition: 0.2s;
 
-  @include mquery(31.25em) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
+  &:hover {
+    background-color: $color-primary;
+    color: $white;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  @include mquery("small") {
+    padding: 10px 20px;
   }
 }
 
-.admi-require__cont, 
-.admi-steps__cont {
-  font-weight: lighter;
-  margin: 0 auto;
+.admi__note {
+  align-self: center;
+  border: solid 1px $black;
+  color: $black;
+  margin: 0 5%;
+  padding: 0 10% ;
+  padding-top: 4%;
+  width: 90%;
+  text-align: center;
 
   @include mquery("medium") {
-    width: 100%;
+    padding-top: 2%;
   }
-  @include mquery("large")   {
-    width: 960px;
+}
+
+.admi-require {
+  @include mquery("medium") {
+    max-width: $max-width;
   }
+}
+
+.admi-require-cont-list {
+  display: flex;
+  flex-direction: column;
+
+  @include mquery(48.75em) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.admi-require__cont,
+.admi-step__cont {
+  font-weight: lighter;
+  margin: 0 auto;
+  padding: 0 5%;
+
   @include mquery("x-large") {
-    width: 1100px;
+    max-width: $max-width;
+    padding: 0;
   }
 }
 
@@ -87,7 +77,7 @@
   list-style: none;
   margin: 0;
   padding: 10%;
-  width: 88%;
+  width: 100%;
 
   @include mquery(48.75em) {
     align-self: auto;
@@ -121,7 +111,7 @@
 
 .admi-require__item-text {
   margin: 0 auto;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .admi-require__item-list {
@@ -134,26 +124,19 @@
   }
 }
 
-.admi-steps__cont {
-  padding-top: 6%;
-  width: 80%;
-  h3 {
-    margin-left: 4%;
-  }
-
-  @include mquery("medium") {
-    margin-left: 10%;
-  }
+.admi-step h3 {
+  margin-bottom: 0;
+  margin-top: 5%;
 }
 
 .admi-step__item {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-bottom: 10%;
+  margin: 5% 2% 10%;
 
   @include mquery("medium") {
-    margin: 5%;
+    margin: 5% 2%;
   }
 }
 
@@ -191,29 +174,62 @@
     padding-left: 25px;
     width: 70%;
     line-height: none;
-  }  
+  }
 
   p{
     margin: 0 0 .8em;
   }
-}    
+}
 
-.admi-btn {
-  align-items: flex-start;
-  border: solid 2px $color-primary;
-  border-radius: 5px;
-  color: $color-primary;
-  margin-top: 20px;
-  padding: 5px 10px;
-  text-align: center;
-
-  &:hover {
-    background-color: $color-primary;
-    color: $white;
-    text-decoration: none;
-  }
+.banner-info {
+  margin: 0 auto;
+  padding: 0 7.5%;
 
   @include mquery("small") {
-    padding: 10px 20px;
+    padding: 0 6%;
   }
+  @include mquery("x-large") {
+    max-width: $max-width;
+    padding: 0;
+  }
+}
+
+.banner-info__message {
+  color: $white;
+  bottom: 35%;
+  font-weight: lighter;
+  position: absolute;
+}
+
+.intro__btn {
+  justify-content: flex-start;
+}
+
+.panel-cetav-admission .section-call-out {
+  bottom: 20vh;
+  margin: 0 auto;
+  padding: 0 7.5%;
+
+  @include mquery("small") {
+    padding: 0 6%;
+  }
+  @include mquery("x-large") {
+    max-width: $max-width;
+    padding: 0;
+  }
+}
+
+.panel-cetav-admission .section-wide {
+  padding-top: 0;
+}
+
+.panel-header {
+  @include mquery("medium") {
+    img {
+      height: 300px;
+    }
+  }
+  // @include mquery("small") {
+  //   padding: 10px 20px;
+  // }
 }

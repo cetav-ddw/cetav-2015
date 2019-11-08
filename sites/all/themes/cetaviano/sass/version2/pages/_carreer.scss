@@ -123,24 +123,13 @@
     width: 100%;
   }
   .section-call-out {
-    background-color: transparent !important; // reescribo solo el de carrera
-    bottom: 27vh;
-    margin: 0 auto;
-    max-width: $max-width;
-    padding: 20px;
-    position: relative;
-    z-index: 2;
-
     @include mquery("small") {
-      bottom: 25vh;
-    }
-    @include mquery(90em) {
-      padding: 0;
+      bottom: 27vh;
     }
 
     h2 {
-      font-size: 2em;
-      padding-top: 0;
+      color: $white;
+      font-family: $font-fam;
     }
   }
   .section-intro,
@@ -211,10 +200,6 @@
     bottom: 0;
     z-index: 1;
   }
-}
-
-.section-call-out h2{
-  color: $white;
 }
 
 .split-list {
