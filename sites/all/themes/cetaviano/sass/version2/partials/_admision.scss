@@ -10,11 +10,13 @@
   margin-top: 20px;
   padding: 5px 10px;
   text-align: center;
+  transition: 0.2s;
 
   &:hover {
     background-color: $color-primary;
     color: $white;
     text-decoration: none;
+    transition: 0.5s;
   }
 
   @include mquery("small") {
@@ -38,32 +40,30 @@
 }
 
 .admi-require {
+  @include mquery("medium") {
+    max-width: $max-width;
+  }
+}
+
+.admi-require-cont-list {
   display: flex;
   flex-direction: column;
-  padding-top: 45px;
 
-  @include mquery(31.25em) {
+  @include mquery(48.75em) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
   }
 }
 
 .admi-require__cont,
-.admi-steps__cont {
+.admi-step__cont {
   font-weight: lighter;
   margin: 0 auto;
-
-  @include mquery("medium") {
-    width: 100%;
-  }
-
-  @include mquery("large")   {
-    width: 960px;
-  }
+  padding: 0 5%;
 
   @include mquery("x-large") {
-    width: 1100px;
+    max-width: $max-width;
+    padding: 0;
   }
 }
 
@@ -75,9 +75,9 @@
   flex-direction: column;
   height: auto;
   list-style: none;
-	margin: 0;
-	padding: 10%;
-  width: 88%;
+  margin: 0;
+  padding: 10%;
+  width: 100%;
 
   @include mquery(48.75em) {
     align-self: auto;
@@ -93,6 +93,17 @@
   align-self: center;
   width: 60px;
 
+  &::before {
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
   @include mquery("small") {
     width: 70px;
   }
@@ -106,7 +117,6 @@
 .admi-require__item-list {
   list-style: none;
   padding: 0 10px;
-
   li::before {
     content: '\2013';
     position: absolute;
@@ -114,34 +124,26 @@
   }
 }
 
-.admi-steps__cont {
-  padding-top: 6%;
-  width: 80%;
-
-  h3 {
-    margin-left: 4%;
-  }
-
-  @include mquery("medium") {
-    margin-left: 10%;
-  }
+.admi-step h3 {
+  margin-bottom: 0;
+  margin-top: 5%;
 }
 
 .admi-step__item {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-bottom: 10%;
+  margin: 5% 2% 10%;
 
   @include mquery("medium") {
-    margin: 5%;
-	}
+    margin: 5% 2%;
+  }
 }
 
 .admi-step__number {
-	align-self: flex-start;
-	background-color: $orange;
-	color: $white;
+  align-self: flex-start;
+  background-color: $orange;
+  color: $white;
   font-size: 1.5rem;
   line-height: 25px;
   font-weight: 900;
@@ -158,6 +160,9 @@
   }
 }
 
+.admi-intro__btn {
+  justify-content: flex-start;
+}
 
 .admi-step__info {
   align-self: flex-end;
@@ -178,14 +183,14 @@
 
 .banner-info {
   margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
+  padding: 0 7.5%;
 
-  @include mquery(90em) {
-    max-width: 1400px;
-    padding-left: 0;
-    padding-right: 0;
+  @include mquery("small") {
+    padding: 0 6%;
+  }
+  @include mquery("x-large") {
+    max-width: $max-width;
+    padding: 0;
   }
 }
 
@@ -202,6 +207,16 @@
 
 .panel-cetav-admission .section-call-out {
   bottom: 20vh;
+  margin: 0 auto;
+  padding: 0 7.5%;
+
+  @include mquery("small") {
+    padding: 0 6%;
+  }
+  @include mquery("x-large") {
+    max-width: $max-width;
+    padding: 0;
+  }
 }
 
 .panel-cetav-admission .section-wide {
@@ -214,4 +229,7 @@
       height: 300px;
     }
   }
+  // @include mquery("small") {
+  //   padding: 10px 20px;
+  // }
 }
