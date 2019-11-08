@@ -24,15 +24,20 @@
 }
 
 .news-layout__heading {
-    padding: $space-x-small;
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: $space-x-small 5%;
 
     @include mquery("medium") {
         padding-bottom: $space-medium;
         padding-top: $space-medium;
     }
-
     @include mquery("large") {
         padding-top: $space-large;
+    }
+    @include mquery(90em) {
+      padding-left: 0;
+      padding-right: 0;
     }
 }
 

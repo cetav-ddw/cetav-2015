@@ -8,19 +8,15 @@
 }
 
 .section-call-out {
-  background-color: transparent;
-  bottom: 27vh;
-  margin: 0 auto;
+  bottom: 16vh;
+  margin: 0 5%;
   max-width: $max-width;
-  padding: 20px;
   position: relative;
   z-index: 2;
 
-  @include mquery("small") {
-    bottom: 20vh;
-  }
   @include mquery(90em) {
-    padding: 0;
+    bottom: 20vh;
+    margin: 0 auto;
   }
 
   h2 {

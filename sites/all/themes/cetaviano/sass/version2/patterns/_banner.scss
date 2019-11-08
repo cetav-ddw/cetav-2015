@@ -1,0 +1,39 @@
+.banner {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  height: 350px;
+  justify-content: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.banner__cont {
+  margin: 0 auto;
+  max-width: $max-width;
+
+  @include mquery("small") {
+    padding-left: 5%;
+    width: 100%;
+  }
+  @include mquery(90em) {
+    padding-left: 0;
+  }
+}
+
+.banner__text {
+  color: $white;
+  font-family: $font-fam;
+  position: relative;
+  z-index: 2;
+}
