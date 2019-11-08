@@ -55,14 +55,15 @@
   }
 }
 
-.admi-require__cont,
-.admi-step__cont {
+.admi-require__cont {
   font-weight: lighter;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  max-width: $max-width;
   padding: 0 5%;
 
-  @include mquery("x-large") {
-    max-width: $max-width;
+  @include mquery(90em) {
     padding: 0;
   }
 }
@@ -124,6 +125,17 @@
   }
 }
 
+.admi-step__cont {
+  font-weight: lighter;
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 0 5%;
+
+  @include mquery(90em) {
+    padding: 0;
+  }
+}
+
 .admi-step h3 {
   margin-bottom: 0;
   margin-top: 5%;
@@ -181,55 +193,28 @@
   }
 }
 
-.banner-info {
-  margin: 0 auto;
-  padding: 0 7.5%;
-
-  @include mquery("small") {
-    padding: 0 6%;
-  }
-  @include mquery("x-large") {
-    max-width: $max-width;
-    padding: 0;
-  }
+.banner--admi {
+  background-image: url('../img/banner-admision.jpg');
+  background-position: 25% 47%;
 }
 
-.banner-info__message {
+.banner__info {
   color: $white;
-  bottom: 35%;
   font-weight: lighter;
+  margin: 0 auto;
+  max-width: $max-width;
   position: absolute;
+  z-index: 2;
+
+  @include mquery(90em) {
+    padding: 0;
+  }
 }
 
 .intro__btn {
   justify-content: flex-start;
 }
 
-.panel-cetav-admission .section-call-out {
-  bottom: 20vh;
-  margin: 0 auto;
-  padding: 0 7.5%;
-
-  @include mquery("small") {
-    padding: 0 6%;
-  }
-  @include mquery("x-large") {
-    max-width: $max-width;
-    padding: 0;
-  }
-}
-
 .panel-cetav-admission .section-wide {
-  padding-top: 0;
-}
-
-.panel-header {
-  @include mquery("medium") {
-    img {
-      height: 300px;
-    }
-  }
-  // @include mquery("small") {
-  //   padding: 10px 20px;
-  // }
+  padding: 0;
 }

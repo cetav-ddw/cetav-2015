@@ -1,6 +1,21 @@
+.banner--3d {
+  background-image: url("../img/home-3d.jpg");
+}
+
+.banner--dic {
+  background-image: url("../img/home-dic.jpg");
+}
+
+.banner--post {
+  background-image: url("../img/home-post.jpg");
+}
+
+.banner--web {
+  background-image: url("../img/home-web.jpg");
+}
+
 .cta-carrers .grid-width {
   margin: 0;
-  max-width: 95%;
 
   @include mquery("small") {
     max-width: $max-width;
@@ -13,7 +28,6 @@
 
 .grid-cont {
   margin: 0;
-  max-width: 95%;
 
   @include mquery("medium") {
     max-width: $max-with-content;
@@ -92,7 +106,7 @@
   }
   p {
     color: $black;
-    font-size: 1.12em;
+    font-size: 18px;
     font-weight: 100;
     margin: 0;
     padding-top: 15px;
@@ -101,8 +115,13 @@
       padding-top: 25px;
     }
   }
-  .call-out-text {
-    font-size: $text-base;
+  .banner {
+    background-position: 25% 38%;
+
+    h2 {
+      color: $white;
+      padding-top: 0;
+    }
   }
   .career-program {
     margin: 50px auto 0 auto;
@@ -111,36 +130,18 @@
   .pane-title {
     display: none;
   }
-  .panel-header{
-    img {
-      height: 350px;
-    }
-    .panels-ipe-sort-container {
-      height: 350px;
-    }
-  }
   .panel-left-column {
     width: 100%;
   }
-  .section-call-out {
-    @include mquery("small") {
-      bottom: 27vh;
-    }
-
-    h2 {
-      color: $white;
-      font-family: $font-fam;
-    }
-  }
   .section-intro,
   .section-wide {
-    margin-left: 1em;
+    margin: 0 auto;
     max-width: $max-width;
     overflow: inherit;
-    padding: 0;
+    padding: 0 5%;
 
     @include mquery(90em) {
-      margin: 0 auto;
+      padding: 0;
     }
   }
   .subtitle-career {
