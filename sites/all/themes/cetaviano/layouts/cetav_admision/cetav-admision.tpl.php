@@ -10,10 +10,12 @@
 <div class="panel-display panel-cetav-admission">
  <?php if ($content['wide']): ?>
     <div class="panel-wide panel-header">
-        <?php print $content['wide']; ?>
-        <div class="banner-info">
-          <p class="banner-info__message">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
+      <div class="banner banner--admi">
+        <div class="banner__cont">
+          <h2 class="banner__text">Proceso de Admisión</h2>
+          <p class="banner__info">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
         </div>
+      </div>
     </div>
   <?php endif ?>
 <div class="section-wide">

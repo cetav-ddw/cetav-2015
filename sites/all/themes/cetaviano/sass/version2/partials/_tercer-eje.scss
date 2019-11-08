@@ -22,11 +22,13 @@
 }
 
 .tercer-eje__cont-desc {
+  align-items: center;
   display: flex;
   height: 250px;
 }
 
 .tercer-eje__cont-name {
+  align-items: center;
   display: flex;
   height: 250px;
   justify-content: center;
@@ -96,6 +98,7 @@
   .tercer-eje__course-name {
     color: $white;
     text-align: center;
+    font-family: $font-fam;
     font-size: $text-h3;
     padding: 0;
     transition: 0.3s;
