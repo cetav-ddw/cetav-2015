@@ -99,14 +99,16 @@ footer {
 .section-wide-employability,
 .section-wide-egresados {
     overflow: hidden;
-    padding: $space-base $space-x-small;
+    padding: $space-base 5%;
 
     @include mquery("medium") {
         padding-top: $space-medium;
     }
-
     @include mquery("large") {
         padding-top: $space-large;
+    }
+    @include mquery(90em) {
+      padding: $space-base 0;
     }
 }
 

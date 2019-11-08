@@ -1,3 +1,17 @@
+.page-cetav-preguntas {
+  .banner {
+    background-image: url('../img/banner-preguntas.jpg');
+    background-position: 25% 47%;
+  }
+  .section-wide {
+    padding: 0 5%;
+
+    @include mquery(90em) {
+      padding: 0;
+    }
+  }
+}
+
 .preg {
   max-width: 1024px;
 }
@@ -41,11 +55,11 @@
   }
 }
 
-.clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
-}
+// .clearfix:after {
+//   display: block;
+//   content: "";
+//   clear: both;
+// }
 
 .preg__item-button--active {
   background-image: url('../img/close.png');
