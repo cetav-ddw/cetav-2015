@@ -8,32 +8,25 @@
 }
 
 .section-call-out {
-  background-color: $main-color;
+  background-color: transparent;
+  bottom: 27vh;
+  margin: 0 auto;
+  max-width: $max-width;
   padding: 20px;
+  position: relative;
+  z-index: 2;
+
+  @include mquery("small") {
+    bottom: 20vh;
+  }
+  @include mquery(90em) {
+    padding: 0;
+  }
 
   h2 {
-      color: $white;
-      font-size: 2em;
+    color: $white;
+    font-size: 2.37em;
+    font-family: $font-fam;
+    padding-top: 0;
   }
-
-  @include mquery(850px) {
-      bottom: 0;
-      position: absolute;
-  }
-}
-
-.animacion-3d .section-call-out {
-  background-color: $animation-color;
-}
-
-.diseno-desarrollo-web .section-call-out {
-  background-color: $ddw-color;
-}
-
-.post-produccion .section-call-out {
-  background-color: $post-color;
-}
-
-.imagen-comercial .section-call-out {
-  background-color: $commercial-image-color;
 }

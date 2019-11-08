@@ -1,12 +1,13 @@
 .intro {
   display: flex;
   flex-direction: column;
-  margin: 60px auto 0;
+  margin: 0 auto 0;
   max-width: $max-width;
   padding: 0 5%;
 
   @include mquery("medium") {
     flex-direction: row;
+    margin: 60px auto 0;
   }
   @include mquery("x-large") {
     padding-left: 2.5%;
