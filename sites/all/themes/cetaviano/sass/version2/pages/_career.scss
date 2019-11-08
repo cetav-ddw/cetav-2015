@@ -1,0 +1,257 @@
+.banner--3d {
+  background-image: url("../img/home-3d.jpg");
+}
+
+.banner--dic {
+  background-image: url("../img/home-dic.jpg");
+}
+
+.banner--post {
+  background-image: url("../img/home-post.jpg");
+}
+
+.banner--web {
+  background-image: url("../img/home-web.jpg");
+}
+
+.cta-carrers .grid-width {
+  margin: 0;
+
+  @include mquery("small") {
+    max-width: $max-width;
+  }
+}
+
+.cta-register-detail strong {
+  color: $black;
+}
+
+.grid-cont {
+  margin: 0;
+
+  @include mquery("medium") {
+    max-width: $max-with-content;
+  }
+}
+
+.line-grid {
+  -webkit-column-count: 1;
+  column-count: 1;
+}
+
+.link-amision {
+	border-radius: 5px;
+	color: $white;
+	display: inline-block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	text-align: center;
+  transition: 0.5s;
+
+  &:active {
+    background-color: $white;
+    color: $black;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  @include mquery("small") {
+    &:hover {
+      background-color: $white;
+      color: $black;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+  }
+}
+
+.link-amision--3d {
+  background-color: $color-carreer_animacion;
+  border: 2px solid $color-carreer_animacion;
+}
+
+.link-amision--dic {
+  background-color: $color-carreer_dic;
+  border: 2px solid $color-carreer_dic;
+}
+
+.link-amision--post {
+  background-color: $color-carreer_post;
+  border: 2px solid $color-carreer_post;
+}
+
+.link-amision--web {
+  background-color: $color-carreer_web;
+  border: 2px solid $color-carreer_web;
+}
+
+.link-amision-cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.panel-cetav-carreras {
+  h2,
+  h3,
+  h4 {
+    color: $black;
+    font-family: $contrast-font;
+    margin: 0;
+    padding-top: 25px;
+
+    @include mquery("small") {
+      padding-top: 67px;
+    }
+  }
+  p {
+    color: $black;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 15px;
+
+    @include mquery("small") {
+      padding-top: 25px;
+    }
+  }
+  .banner {
+    background-position: 25% 38%;
+
+    h2 {
+      color: $white;
+      padding-top: 0;
+    }
+  }
+  .career-program {
+    margin: 50px auto 0 auto;
+    padding-bottom: 10px;
+  }
+  .pane-title {
+    display: none;
+  }
+  .panel-left-column {
+    width: 100%;
+  }
+  .section-intro,
+  .section-wide {
+    margin: 0 auto;
+    max-width: $max-width;
+    overflow: inherit;
+    padding: 0 5%;
+
+    @include mquery(90em) {
+      padding: 0;
+    }
+  }
+  .subtitle-career {
+    color: $black;
+    font-size: $text-h4;
+
+    @include mquery("medium") {
+      font-size: $text-h3;
+    }
+  }
+}
+
+.paragraphs-items-field-programa-carreras {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include mquery("small") {
+    flex-direction: row;
+  }
+}
+
+.paragraphs-item-programas-carreras {
+  p {
+    font-weight: 500;
+    padding-left: 35px;
+  }
+  li {
+    list-style-type: disc;
+  }
+}
+
+.pane-node-field-skills-carrera {
+  h4 {
+    padding-top: 0;
+  }
+  li {
+    color: $black;
+  }
+}
+
+.pane-node-field-titulo-estudiar-carrera h4 {
+  font-size: $text-h3;
+}
+
+
+.pane-node-field-imagen-header-carrera {
+  position: relative;
+  &:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.split-list {
+  h4{
+    font-size: 1.12em;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 100%;
+
+    @include mquery("small") {
+      width: 40%;
+    }
+  }
+  ul {
+    margin-bottom: 0;
+
+    li {
+      color: $black;
+      font-weight: 100;
+
+      &:before {
+        color: $black;
+      }
+    }
+  }
+}
+
+.skills-cont-list {
+  width: 100%;
+
+  @include mquery("small") {
+    float: left;
+    width: 50%;
+  }
+  @include mquery("medium") {
+    width: 50%;
+  }
+}
+
+.title-skills-3d {
+  border-bottom: 2px solid $color-carreer_animacion;
+}
+
+.title-skills-post {
+  border-bottom: 2px solid $color-carreer_post;
+}
+
+.title-skills-dic {
+  border-bottom: 2px solid $color-carreer_dic;
+}
+
+.title-skills-web {
+  border-bottom: 2px solid $color-carreer_web;
+}
