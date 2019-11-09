@@ -88,7 +88,7 @@
 
     <article class="career career--dic lazy-image">
       <div class="career__info">
-        <h3 class="career__title">Diseño de Imagen Comercial</h3>
+        <h3 class="career__title">Imagen, Diseño y Estrategia Digital</h3>
         <a href="/carreras/diseñador-imagen-comercial" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
