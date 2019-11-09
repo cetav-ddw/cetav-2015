@@ -1,17 +1,22 @@
 .hero-banner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  max-height: 450px;
-  overflow: hidden;
-  width: 100%;
-
   @include mquery("medium") {
+    height: 450px;
     background-image: url("../img/trianglify.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+.hero-banner__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mquery("medium") {
     flex-direction: row;
+    max-width: $max-width;
+    margin: 0 auto;
   }
 }
 
@@ -30,7 +35,7 @@
   }
 
   @include mquery("xx-large") {
-    right: 5%;
+    right: -5%;
     top: -10vh;
   }
 }
@@ -38,14 +43,16 @@
 .hero-banner__cont-desc {
   color: $black;
   font-weight: lighter;
-  height: 450px;
   margin: 5%;
-  margin-bottom: 15%;
 
   @include mquery("medium") {
     color: $white;
     margin: 6% 5%;
     order: 1;
     width: 30%;
+  }
+  @include mquery("large") {
+    margin: 8% 0%;
+    width: 45%;
   }
 }
