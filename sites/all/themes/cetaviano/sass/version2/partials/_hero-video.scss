@@ -1,6 +1,10 @@
 .hero-banner__video {
-  height: 100%;
+  height: 100px;
   width: 100%;
+  
+  @include mquery("medium") {
+    height: 500px;
+  }
 }
 
 .hero-banner__cont-video{
@@ -21,17 +25,13 @@
   width: 60px;
 
   @include mquery("small") {
-    top: 55%;
+    top: 45%;
   }
   @include mquery("medium") {
-    top: 45%;
+    top: 40%;
   }
   @include mquery("large") {
     left: 50%;
-    top: 30%;
-  }
-  @include mquery("xx-large") {
-    top: 34%;
   }
 
   &::after {
@@ -68,15 +68,18 @@
 }
 
 .hero-banner__reel-show{
+  align-items: center;
   background-color: rgba(0, 0, 0, .76);
-  height: 500px;
+  display: flex;
+  height: 100%;
   left: 0;
+  position: fixed;
   transition-duration: 2s;
   top: 0;
   transition-timing-function: ease-out; 
   transition: all .25s ease;
   visibility: visible;
-  z-index: 2;
+  z-index: 3;
 
   @include mquery("medium") {
     width: 100%;

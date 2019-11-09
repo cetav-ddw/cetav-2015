@@ -9,18 +9,20 @@
 <div class="panel-display panel-cetav-frontpage">
   <!--Hero banner-->
   <section class="hero-banner">
-    <div id="video-reel" class="hero-banner__cont-video">
-      <button id="close-reel" class="hero-banner__btn-close">x</button>
-      <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/247321835?autoplay=1&loop=0&autopause=0" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
+    <div class="hero-banner__cont">
+      <div id="video-reel" class="hero-banner__cont-video">
+        <button id="close-reel" class="hero-banner__btn-close">x</button>
+        <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/247321835?autoplay=1&loop=0&autopause=0" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
 
-    <div id="image-reel" class="hero-banner__reel">
-      <button id="show-reel" class="hero-banner__btn-open"></button>
-    </div>
+      <div id="image-reel" class="hero-banner__reel">
+        <button id="show-reel" class="hero-banner__btn-open"></button>
+      </div>
 
-    <div id="hero-text" class="hero-banner__cont-desc">
-      <h1 class="hero-banner__title">Somos CETAV</h1>
-      <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
+      <div id="hero-text" class="hero-banner__cont-desc">
+        <h1 class="hero-banner__title">Somos CETAV</h1>
+        <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
+      </div>
     </div>
   </section>
   <!--end Hero banner-->
