@@ -1,5 +1,7 @@
 .hero-banner {
   @include mquery("medium") {
+    align-items: center;
+    display: flex;
     height: 450px;
     background-image: url("../img/trianglify.svg");
     background-size: cover;
@@ -11,12 +13,18 @@
 .hero-banner__cont {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 100%;
+  justify-content: space-between;
+  max-width: $max-width;
+  margin: 0 auto;
 
   @include mquery("medium") {
     flex-direction: row;
-    max-width: $max-width;
-    margin: 0 auto;
+    padding: 0 5%;
+  }
+  @include mquery(90em) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -31,28 +39,31 @@
   @include mquery("medium") {
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     order: 2;
-    width: 50%;
+    width: 60%;
   }
-
+  @include mquery("x-large") {
+    padding-bottom: 35%;
+  }
   @include mquery("xx-large") {
     right: -5%;
-    top: -10vh;
   }
 }
 
 .hero-banner__cont-desc {
   color: $black;
+  display: flex;
+  flex-direction: column;
   font-weight: lighter;
-  margin: 5%;
+  justify-content: center;
+  padding: 3% 5%;
 
   @include mquery("medium") {
     color: $white;
-    margin: 6% 5%;
     order: 1;
+    padding: 0;
     width: 30%;
   }
   @include mquery("large") {
-    margin: 8% 0%;
-    width: 45%;
+    width: 40%;
   }
 }

@@ -17,7 +17,6 @@
     </div>
     <div class="section-wide">
       <div class="grid-width">
-
         <div class="bread-crumbs bread-crumbs--preg">
           <ul class="bread-crumbs__cont">
             <li class="bread-crumbs__item bread-crumbs__item--first">Estás aquí:</li>
