@@ -44,12 +44,13 @@ blockquote {
     margin: 0;
 }
 
-small, 
+small,
 .small-text {
     font-size: $text-xsmall;
 }
 
 .section-sh {
+    color: $black;
     margin-bottom: 1em;
     margin-top: 0;
     position: relative;
@@ -68,7 +69,7 @@ small,
 .slab-blue {
    .section-sh:after {
         background-color: $white;
-    } 
+    }
 }
 
 .subtitle-career {
