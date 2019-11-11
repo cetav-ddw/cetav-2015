@@ -1,7 +1,7 @@
 // Generals etiquets styles
 .sub-titles {
 	padding-bottom: 5%;
-  	text-align: center;
+  text-align: center;
 
   @include mquery("small") {
 		padding-bottom: 0;
@@ -15,7 +15,6 @@
 	font-weight: bolder;
 	margin-bottom: 0;
 	padding-top: 10%;
-	// text-align: center;
 
   @include mquery("small") {
 		padding-top: 50px;
