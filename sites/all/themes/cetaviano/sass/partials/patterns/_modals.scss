@@ -22,16 +22,20 @@
 }
 
 .video-modal {
-    @include mquery(700px) { 
+    @include mquery(700px) {
         width: 50%;
 
         &:hover {
             background-color: rgba(128, 128, 128, .5);
-            opacity: .3;  
+            opacity: .3;
         }
     }
 }
 
 .video-modal-container {
     position: relative;
+
+    h2 {
+      color: $white;
+    }
 }

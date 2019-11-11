@@ -99,7 +99,6 @@
 
 .preg__title {
   color: $black;
-  font-family: $font-fam;
   font-size: $text-h4;
 
   @include mquery("medium") {
