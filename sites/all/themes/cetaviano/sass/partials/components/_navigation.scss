@@ -51,7 +51,6 @@ nav[role="navigation"] {
 
             &:hover {
                 border-color: $white;
-                font-weight: bold;
             }
         }
 
@@ -74,17 +73,13 @@ nav[role="navigation"] {
 
         .active-trail {
             border-color: $white;
-            font-weight: bold;
+            text-shadow: 1px 0px $white;
         }
     }
 }
 
 nav[role="navigation"] {
     .expanded {
-        &:hover {
-            font-weight: bold;
-        }
-
         a:hover {
             border-color: transparent;
         }
@@ -141,6 +136,7 @@ nav[role="navigation"] {
         position: absolute;
         right: 25px;
         top: 0;
+        transition: 0.2s;
 
         &:before {
             background-color: $white;
@@ -148,6 +144,7 @@ nav[role="navigation"] {
             height: 18px;
             left: -10px;
             position: absolute;
+            transition: 0.5s;
             width: 1px;
         }
 
@@ -267,8 +264,7 @@ nav[role="navigation"] .expanded .menu {
 
 nav[role="navigation"] .menu .active-trail {
   @include mquery("medium") {
-    &:hover {
-      font-weight: bold;
+    li {
       text-shadow: none;
     }
   }
@@ -296,5 +292,9 @@ nav[role="navigation"] .menu {
     border-bottom: 3px solid $color-primary;
     display: inline-block;
     font-weight: 300;
+  }
+
+  .menu {
+    padding-bottom: 10px;
   }
 }
