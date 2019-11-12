@@ -39,11 +39,14 @@ header .section-wide {
     margin-right: 22%;
     margin-top: 0;
   }
-  @include mquery("x-large") {
+  @include mquery("large") {
     margin-right: 18%;
   }
-  @include mquery(90em) {
+  @include mquery("x-large") {
     margin-right: 16%;
+  }
+  @include mquery(90em) {
+    margin-right: 13%;
   }
 }
 

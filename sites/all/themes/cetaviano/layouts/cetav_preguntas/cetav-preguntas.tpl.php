@@ -28,34 +28,34 @@
           <p class="intro-preg__text-intro">Esta sección proporciona ayuda con las preguntas más comunes sobre el CETAV.</p>
           <div class="intro-preg__menu">
             <div class="intro-preg__menu-item">
-              <div class="intro-preg__cont-item">
+              <a class="intro-preg__cont-item" title="Link a sobre el cetav" href="#sobreelCETAV">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/sobreelCetav-icon.png" class="intro-preg__icon">
-                <a title="Link a sobre el cetav" href="#sobreelCETAV" class="intro-preg__link">Sobre el CETAV</a>
-              </div>
+                <p class="intro-preg__link">Sobre el CETAV</p>
+              </a>
             </div>
             <div class="intro-preg__menu-item">
-              <div class="intro-preg__cont-item">
+              <a class="intro-preg__cont-item" title="Link a sobre el cetav" href="#financiamiento">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/financiamiento-icon.png" class="intro-preg__icon">
-                <a title="Link a sobre el cetav" href="#financiamiento" class="intro-preg__link intro-preg__link--financ">Financiamiento</a>
-              </div>
+                <p class="intro-preg__link intro-preg__link--financ">Financiamiento</p>
+              </a>
             </div>
             <div class="intro-preg__menu-item">
-              <div class="intro-preg__cont-item">
+              <a class="intro-preg__cont-item" title="Link a sobre el cetav" href="#carrerasTecnicas">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/carreras-tecnicas-icon.png" class="intro-preg__icon">
-                <a title="Link a sobre el cetav" href="#carrerasTecnicas" class="intro-preg__link">Carreras técnicas</a>
-              </div>
+                <p class="intro-preg__link">Carreras técnicas</p>
+              </a>
             </div>
             <div class="intro-preg__menu-item">
-              <div class="intro-preg__cont-item">
+              <a class="intro-preg__cont-item"  title="Link a sobre el cetav" href="#admision">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/admision-icon.png" class="intro-preg__icon">
-                <a title="Link a sobre el cetav" href="#admision" class="intro-preg__link">Proceso de admisión</a>
-              </div>
+                <p class="intro-preg__link">Proceso de admisión</p>
+              </a>
             </div>
             <div class="intro-preg__menu-item">
-              <div class="intro-preg__cont-item">
+              <a class="intro-preg__cont-item" title="Link a sobre el cetav" href="#Insercion">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/insercion-icon.png" class="intro-preg__icon">
-                <a title="Link a sobre el cetav" href="#Insercion" class="intro-preg__link js-preg-scroll">Inserción laboral</a>
-              </div>
+                <p class="intro-preg__link js-preg-scroll">Inserción laboral</p>
+              </a>
             </div>
           </div>
         </div>
@@ -65,56 +65,11 @@
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?culis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia</p>
+                  <p class="preg__item-preg">¿Cada cuanto tiempo se abre el proceso de admisión?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pnibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pelleharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">Cada dos años. El proceso de admisión no se realiza cada año, sino al culminar con la graduación de la última generación que es cada dos años.</p>
                 </div>
               </li>
             </ul>
@@ -124,16 +79,7 @@
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?culis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pnibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pelleharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                  <p class="preg__item-preg">¿Cual es el costo mensual de las carreras técmicas del CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -142,34 +88,7 @@
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                  <p class="preg__item-preg">¿Cuanto pagan los estudiantes que reciben beca de EMPLEATE?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -181,7 +100,7 @@
           <div id="carrerasTecnicas" class="preg__cont">
             <h3 class="preg__title">Carreras Técnicas</h3>
             <ul class="preg__list">
-              <li class="preg__item">
+            <li class="preg__item">
                 <div class="preg__item-cont-preg">
                   <p class="preg__item-preg">Animación 3D</p>
                   <button class="preg__item-button js-preg__item-button"></button>
@@ -190,7 +109,7 @@
                   <ul class="preg__list">
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Lorem impsum dolor</p>
+                        <p class="preg__item-preg">¿Qué tanta demanda laboral tiene esta carrera? </p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -199,26 +118,7 @@
                     </li>
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                        <button class="preg__item-button js-preg__item-button"></button>
-                      </div>
-                      <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Diseño y Desarrollo Web</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <ul class="preg__list">
-                    <li class="preg__item">
-                      <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Lorem impsum dolor</p>
+                        <p class="preg__item-preg">¿Qué conocimientos previos debo de tener para poder aplicar a esta carrera?</p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -227,7 +127,7 @@
                     </li>
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                        <p class="preg__item-preg">¿Cuáles empresas podrían contratarme al ser egresado del CETAV?</p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -239,14 +139,14 @@
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Edición y Postproducción de Imagen y Sonido</p>
+                  <p class="preg__item-preg">Diseño y desarrollo web</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
                   <ul class="preg__list">
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Lorem impsum dolor</p>
+                        <p class="preg__item-preg">¿Qué tanta demanda laboral tiene esta carrera? </p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -255,7 +155,16 @@
                     </li>
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                        <p class="preg__item-preg">¿Qué conocimientos previos debo de tener para poder aplicar a esta carrera?</p>
+                        <button class="preg__item-button js-preg__item-button"></button>
+                      </div>
+                      <div class="preg__item-cont-answer js-preg__item-cont-answer">
+                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                      </div>
+                    </li>
+                    <li class="preg__item">
+                      <div class="preg__item-cont-preg">
+                        <p class="preg__item-preg">¿Cuáles empresas podrían contratarme al ser egresado del CETAV?</p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -267,14 +176,14 @@
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Diseño de Imagen Comercial</p>
+                  <p class="preg__item-preg">Post prodicción de imagen y sonido</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
                   <ul class="preg__list">
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Lorem impsum dolor</p>
+                        <p class="preg__item-preg">¿Qué tanta demanda laboral tiene esta carrera? </p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -283,7 +192,53 @@
                     </li>
                     <li class="preg__item">
                       <div class="preg__item-cont-preg">
-                        <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                        <p class="preg__item-preg">¿Qué conocimientos previos debo de tener para poder aplicar a esta carrera?</p>
+                        <button class="preg__item-button js-preg__item-button"></button>
+                      </div>
+                      <div class="preg__item-cont-answer js-preg__item-cont-answer">
+                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                      </div>
+                    </li>
+                    <li class="preg__item">
+                      <div class="preg__item-cont-preg">
+                        <p class="preg__item-preg">¿Cuáles empresas podrían contratarme al ser egresado del CETAV?</p>
+                        <button class="preg__item-button js-preg__item-button"></button>
+                      </div>
+                      <div class="preg__item-cont-answer js-preg__item-cont-answer">
+                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="preg__item">
+                <div class="preg__item-cont-preg">
+                  <p class="preg__item-preg">Imagen, diseño y estrategia digital</p>
+                  <button class="preg__item-button js-preg__item-button"></button>
+                </div>
+                <div class="preg__item-cont-answer js-preg__item-cont-answer">
+                  <ul class="preg__list">
+                    <li class="preg__item">
+                      <div class="preg__item-cont-preg">
+                        <p class="preg__item-preg">¿Qué tanta demanda laboral tiene esta carrera? </p>
+                        <button class="preg__item-button js-preg__item-button"></button>
+                      </div>
+                      <div class="preg__item-cont-answer js-preg__item-cont-answer">
+                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                      </div>
+                    </li>
+                    <li class="preg__item">
+                      <div class="preg__item-cont-preg">
+                        <p class="preg__item-preg">¿Qué conocimientos previos debo de tener para poder aplicar a esta carrera?</p>
+                        <button class="preg__item-button js-preg__item-button"></button>
+                      </div>
+                      <div class="preg__item-cont-answer js-preg__item-cont-answer">
+                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                      </div>
+                    </li>
+                    <li class="preg__item">
+                      <div class="preg__item-cont-preg">
+                        <p class="preg__item-preg">¿Cuáles empresas podrían contratarme al ser egresado del CETAV?</p>
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -300,57 +255,63 @@
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?culis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia</p>
+                  <p class="preg__item-preg">¿Cuál es el proceso para entrar al CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pnibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pelleharetra luctus nibh. Nulla facilisi.</p>
+                  <ol class="preg__item-answer">
+                    <li>
+                      Comprobá si cumplís con todos los requisitos y llenar el formulario
+                      <a title="link a los requisitos" href="https://mailchi.mp/8b8c1550576e/requisitoscetav-1708277" >click aquí</a>
+                    </li>
+                    <li>
+                      Si necesitás la beca de EMPLEATE debés llenar el siguiente formulario para iniciar el proceso:
+                      <a title="link al formulario" href="https://pronae.info/empleate-formulario" >click aquí</a>
+                      <ul>
+                        <li>Al llenar el formulario, en el punto IV. REFERENCIAS : ¿Ha sido referido por una institución o actividad específica? debe elegir SÍ</li>
+                        <li>En “Indique el nombre de la institución'', especificar: CETAV Parque La Libertad.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Nosotros nos estaremos comunicando con vos para convocarte a las pruebas de admisión.
+                    </li>
+                  </ol>
                 </div>
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                  <p class="preg__item-preg">¿Cuales son los requisitos para entrar al CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <ul class="preg__item-answer">
+                    <li>Tener entre 17 y 27 años.</li>
+                    <li>Bachillerato aprobado.</li>
+                    <li>Conocimiento comprobable en Adobe Photoshop y Adobe Ilustrador básico o programas de edición de imagen similares. Si no los tienen, pueden llamar al Centro de Cómputo del Parque La Libertad al 2276-9400 ext 2092, donde estos cursos se imparten de manera regular.</li>
+                    <li>En caso de extranjeros, tener su estatus migratorio al día.</li>
+                    <li>Interés en aprender inglés.</li>
+                    <li>Disponibilidad de tiempo completo.</li>
+                    <li>Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito aprobar el curso de Introducción al Desarrollo Web, que se imparte en el CETAV.</li>
+                  </ul>
                 </div>
               </li>
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                  <p class="preg__item-preg">¿Cuál es la edad límite para poder entrar al CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">Entre 17 y 27 años.</p>
                 </div>
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                  <p class="preg__item-preg">¿Puedo escoger qué materias matricular y en qué orden llevarlas?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">No, es requisito llevar el bloque completo.</p>
                 </div>
               </li>
             </ul>
@@ -360,7 +321,7 @@
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?culis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia</p>
+                  <p class="preg__item-preg">¿Cual es el promedio de inserción laboral de egresados y egresadas del CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -369,44 +330,7 @@
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
-                  <button class="preg__item-button js-preg__item-button"></button>
-                </div>
-                <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
-                </div>
-              </li>
-              <li class="preg__item">
-                <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Mauris sit amet nibh id ipsum iaculis malesuada vel eu nisl. ¿Donec malesuada finibus lacinia?</p>
+                  <p class="preg__item-preg">¿En qué tipo de empresas trabajan los egresados de cada carrera? </p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">

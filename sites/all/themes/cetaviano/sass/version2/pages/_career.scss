@@ -35,7 +35,6 @@
 }
 
 .line-grid {
-  -webkit-column-count: 1;
   column-count: 1;
 }
 
@@ -95,6 +94,7 @@
   h2,
   h3,
   h4 {
+    color: $black;
     margin: 0;
     padding-top: 25px;
 
@@ -103,7 +103,6 @@
     }
   }
   p {
-    color: $black;
     font-size: 18px;
     font-weight: 100;
     margin: 0;
@@ -142,14 +141,6 @@
       padding: 0;
     }
   }
-  .subtitle-career {
-    color: $black;
-    font-size: $text-h4;
-
-    @include mquery("medium") {
-      font-size: $text-h3;
-    }
-  }
 }
 
 .paragraphs-items-field-programa-carreras {
@@ -175,18 +166,12 @@
 
 .pane-node-field-skills-carrera {
   h4 {
-    color: $black;
     padding-top: 0;
   }
   li {
     color: $black;
   }
 }
-
-.pane-node-field-titulo-estudiar-carrera h4 {
-  font-size: $text-h3;
-}
-
 
 .pane-node-field-imagen-header-carrera {
   position: relative;
@@ -204,7 +189,6 @@
 
 .split-list {
   h4{
-    font-size: 1.12em;
     font-weight: bold;
     padding-bottom: 5px;
     width: 100%;
@@ -241,16 +225,20 @@
 
 .title-skills-3d {
   border-bottom: 2px solid $color-carreer_animacion;
+  font-size: $text-h4;
 }
 
 .title-skills-post {
   border-bottom: 2px solid $color-carreer_post;
+  font-size: $text-h4;
 }
 
 .title-skills-dic {
   border-bottom: 2px solid $color-carreer_dic;
+  font-size: $text-h4;
 }
 
 .title-skills-web {
   border-bottom: 2px solid $color-carreer_web;
+  font-size: $text-h4;
 }
