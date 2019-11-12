@@ -1,7 +1,7 @@
 .hero-banner__video {
-  height: 100px;
+  height: auto;
   width: 100%;
-  
+
   @include mquery("medium") {
     height: 500px;
   }
@@ -9,6 +9,7 @@
 
 .hero-banner__cont-video{
   height: 100%;
+  left: 0;
   position: absolute;
   visibility: hidden;
   width: 100%;
@@ -76,12 +77,12 @@
   position: fixed;
   transition-duration: 2s;
   top: 0;
-  transition-timing-function: ease-out; 
+  transition-timing-function: ease-out;
   transition: all .25s ease;
   visibility: visible;
   z-index: 3;
 
   @include mquery("medium") {
     width: 100%;
-  } 
+  }
 }
