@@ -28,7 +28,7 @@
         </ul>
       </div>
       <div class="admi-require">
-        <h3>Requisitos</h3>
+        <h3 class="section-sh">Requisitos</h3>
         <p>Cada dos años, el CETAV realiza un proceso de reclutamiento. Si te interesa ingresar, es indispensable cumplir con lo siguiente:</p>
         <ul class="admi-require-cont-list">
           <li class="admi-require__item">
@@ -45,7 +45,7 @@
           </li>
           <li class="admi-require__item">
             <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
-            <p class="admi-require__item-text">Conocimientos básicos en Adobe Photoshop y Adobe Illustrator.</p>
+            <p class="admi-require__item-text">Conocimientos básicos en Adobe Photoshop y Adobe  Illustrator.</p>
             <p class="admi-require__item-text">Si no los tienes, estos cursos se imparten de manera regular aquí en el Parque La Libertad.</p>
             <p class="admi-require__item-text">Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito llevar el curso de Introducción al Desarrollo Web que se imparte en el CETAV.</p>
           </li>
@@ -62,7 +62,7 @@
           </li>
           <li class="admi-require__item">
             <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_4-admision.png" alt="">
-            <p class="admi-require__item-text">Si necesitás un subsidio económico del programa EMPLEATE, llená el siguiente fomulario. </p>
+            <p class="admi-require__item-text">Si necesitás un subsidio económico del programa EMPLEATE, llena el siguiente fomulario. </p>
             <a class="admi-btn" href="https://pronae.info/empleate-formulario/">Completar formulario</a>
           </li>
         </ul>
@@ -71,13 +71,13 @@
 
     <section class="admi-step__cont">
         <ul class="admi-step">
-          <h3>Pasos a seguir</h3>
+          <h3 class="section-sh">Pasos a seguir</h3>
           <li class="admi-step__item">
             <span class="admi-step__number">1</span>
             <div class="admi-step__info">
-              <p>Para recibir información sobre el proceso de admisión, llená el siguiente formulario.</p>
+              <p>Para recibir información sobre el proceso de admisión, llena el siguiente formulario.</p>
               <div class="admi-intro__btn">
-                <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfDfiOhd0X1_OpXVVzRgUKr34t6WovtQ5Jma5YOWhBD9KlW8w/viewform" title="Formulario para solicitar beca de PONAE" class="admi-btn">Llenar formulario</a>
+                <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfDfiOhd0X1_OpXVVzRgUKr34t6WovtQ5Jma5YOWhBD9KlW8w/viewform" title="formulario para solicitar beca de PONAE" class="admi-btn">Llenar formulario</a>
               </div>
             </div>
           </li>
@@ -96,7 +96,7 @@
             <div class="admi-step__info">
               <p>Conocimientos comprobables en Adobe Photoshop y Adobe Ilustardor.</p>
               <p>Si no tenés conocimientos en Adobe Ilustrador y Adobe Photoshop, una opción es llevar estos cursos en los Centros de Cómputo del Parque La Libertad. </p>
-              <p>Podes comunicarte con Rebeca Arias, Coordinadora de Programas de Diseño en el Centro de Computo del Parque La Libertad, al correo: rebeca.arias@parquelalibertad.org o al telefono: 2276-9400 ext 2092</p>
+              <p>Podes comunicarte con Rebeca Arias, Coordinadora de Programas de Diseño en el Centro de Computo del Parque La Libertad, al correo: rebeca.arias@parquelalibertad.org o al número de teléfono: 2276-9400 ext 2092</p>
             </div>
           </li>
 
@@ -113,7 +113,7 @@
             <span class="admi-step__number">5</span>
             <div class="admi-step__info">
               <p>Pruebas de aptitud.</p>
-              <p>Realizamos pruebas de aptitud para cada una de las carreras técnicas, además de comprobar conocimientos básicos en Adobe Illustrator y Adobe Photoshop.</p>
+              <p>Realizamos pruebas de aptitud para cada una de las carreras técnicas, además de comprobar conocimientos básicos en Adobe  Illustrator y Adobe Photoshop.</p>
               <p><strong>Nota: </strong>Si ya llenaste el formulario, la fecha de las pruebas se te estará comunicando por correo electrónico.</p>
             </div>
           </li>
