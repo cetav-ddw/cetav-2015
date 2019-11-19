@@ -226,22 +226,23 @@
   }
 }
 
+.title-skills {
+  font-size: $text-h4;
+  padding-bottom: 5px;
+}
+
 .title-skills-3d {
   border-bottom: 2px solid $color-carreer_animacion;
-  font-size: $text-h4;
 }
 
 .title-skills-post {
   border-bottom: 2px solid $color-carreer_post;
-  font-size: $text-h4;
 }
 
 .title-skills-dic {
   border-bottom: 2px solid $color-carreer_dic;
-  font-size: $text-h4;
 }
 
 .title-skills-web {
   border-bottom: 2px solid $color-carreer_web;
-  font-size: $text-h4;
 }
