@@ -12,7 +12,7 @@
     <div class="hero-banner__cont">
       <div id="video-reel" class="hero-banner__cont-video">
         <button id="close-reel" class="hero-banner__btn-close">x</button>
-        <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/247321835?autoplay=1&loop=0&autopause=0" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="videoReel" class="hero-banner__video" src="https://player.vimeo.com/video/373945663?autoplay=1&loop=0&autopause=0" width="800px" height="450px" frameborder="0" title="Reel de la tera generación del CETAV" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
 
       <div id="image-reel" class="hero-banner__reel">
