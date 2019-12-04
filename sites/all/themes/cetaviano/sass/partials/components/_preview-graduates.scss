@@ -3,10 +3,6 @@
         padding: 15px 30px;
     }
 
-    .views-exposed-form .form-item {
-        margin-bottom: 12px;
-    }
-
     .views-exposed-widget {
         @include mquery(400px) {
             @include span-columns(3);
