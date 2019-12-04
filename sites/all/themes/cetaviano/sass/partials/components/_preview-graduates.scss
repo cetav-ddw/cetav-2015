@@ -130,19 +130,19 @@
     label {
         @include mquery("small") {
             background-image: url(../img/web-cover-filter.png);
-            left: -18%;
+            left: -3%;
         }
 
         @include mquery("medium") {
-            left: 233%;
+            left: 333%;
         }
 
         @include mquery("large") {
-            left: 228%;
+            left: 295%;
         }
 
         @include mquery("x-large") {
-            left: 221%;
+            left: 270%;
         }
     }
 }
@@ -164,19 +164,19 @@
     label {
         @include mquery("small") {
             background-image: url(../img/post-cover-filter.png);
-            left: 54%;
+            left: 50%;
         }
 
         @include mquery("medium") {
-            left: 408%;    
+            left: 490%;    
         }
 
         @include mquery("large") {
-            left: 387%;  
+            left: 410%;  
         }
 
         @include mquery("x-large") {
-            left: 344%;
+            left: 370%;
         }
     }
 } 
@@ -198,11 +198,11 @@
     label {
         @include mquery("small") {
             background-image: url(../img/animacion-cover-filter.png);
-            left: -93%;
+            left: -110%;
         }
 
         @include mquery("medium") {
-            left: 59%;
+            left: 15%;
         }
 
         @include mquery("large") {
@@ -210,14 +210,15 @@
         }
 
         @include mquery("x-large") {
-            left: 82%;
+            left: 183%;
         }
 
         @include mquery("x-large") {
-            left: 94%;
+            left: 75%;
         }
     }
 }
+
 
 .form-item-edit-field-carrera-tecnica-tid-3:hover {
     label {
@@ -231,3 +232,44 @@
     background-color: $animation-color;
     background-image: none; 
 }
+
+.form-item-edit-field-carrera-tecnica-tid-43 {
+    label {
+        @include mquery("small") {
+            background-image: url(../img/dic-cover-filter.png);
+            left: -57%;
+        }
+
+        @include mquery("medium") {
+            left: 175%;
+        }
+
+        @include mquery("large") {
+            left: 183%;
+        }
+
+        @include mquery("x-large") {
+            left: 183%;
+        }
+
+        @include mquery("x-large") {
+            left: 176%;
+        }
+    }
+}
+
+
+.form-item-edit-field-carrera-tecnica-tid-43:hover {
+    label {
+        @include mquery("small") {
+            border: 10px solid $commercial-image-color;
+        }
+    }
+}
+
+.form-item-edit-field-carrera-tecnica-tid-43 input[type="checkbox"]:checked + label {
+    background-color: $commercial-image-color;
+    background-image: none; 
+}
+
+

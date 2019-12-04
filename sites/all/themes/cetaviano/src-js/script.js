@@ -98,7 +98,7 @@
     });
     $("#close-reel").click(function() {
       $("#video-reel").removeClass("hero-banner__reel-show");
-      $("#videoReel").attr('src', 'https://player.vimeo.com/video/247321835?autoplay=0&loop=0&autopause='+'1');
+      $("#videoReel").attr('src', 'https://player.vimeo.com/video/373945663?autoplay=0&loop=0&autopause='+'1');
     });
 
     // acordeon de preguntas frecuentes
