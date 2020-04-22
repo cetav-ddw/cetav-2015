@@ -31,7 +31,7 @@
   <section class="intro">
     <div class="intro__cont-intro">
       <h2 class="intro__title">Centro de Tecnología y Artes Visuales (CETAV)</h2>
-      <p class="intro__text">Como parte de nuestro compromiso por formar personas jóvenes responsables, emprendedoras y participativas; desarrollamos las capacidades de forma integral, abarcando:</p>
+      <p class="intro__text">Como parte de nuestro compromiso por formar personas jóvenes responsables, emprendedoras y participativas; desarrollamos las competencias de forma integral, abarcando:</p>
       <ul class="intro__list">
         <li class="intro__list-item">La especialización técnica.</li>
         <li class="intro__list-item">La formación en el idioma inglés.</li>
@@ -39,7 +39,7 @@
         <li class="intro__list-item">El desarrollo del pensamiento creativo.</li>
         <li class="intro__list-item">La formación en gestión de negocios.</li>
       </ul>
-      <p class="intro__text">Buscamos darles las mejores herramientas para desarrollarse exitosamente en el mundo laboral.</p>
+      <p class="intro__text">Buscamos darle al estudiantado las mejores herramientas para desarrollarse exitosamente en el mundo laboral.</p>
       <div class="intro__btn"><a href="http://www.parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
     </div>
     <div class="intro__cont-image">
@@ -88,7 +88,7 @@
 
     <article class="career career--dic lazy-image">
       <div class="career__info">
-        <h3 class="career__title">Imagen, Diseño y Estrategia Digital</h3>
+        <h3 class="career__title">Diseño imagen y mercadeo digital</h3>
         <a href="/carreras/imagen-diseño-estrategia-digital" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
