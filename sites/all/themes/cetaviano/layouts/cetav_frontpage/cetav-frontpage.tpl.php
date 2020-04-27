@@ -21,7 +21,7 @@
 
       <div id="hero-text" class="hero-banner__cont-desc">
         <h1 class="hero-banner__title">Somos CETAV</h1>
-        <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, proponemos un modelo de inclusión social para la innovación.</p>
+        <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, del Parque La Libertad, proponemos un modelo de inclusión social para la innovación.</p>
       </div>
     </div>
   </section>
@@ -88,7 +88,7 @@
 
     <article class="career career--dic lazy-image">
       <div class="career__info">
-        <h3 class="career__title">Diseño imagen y mercadeo digital</h3>
+        <h3 class="career__title">Mercadeo digital, diseño e imagen comercial</h3>
         <a href="/carreras/imagen-diseño-estrategia-digital" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
