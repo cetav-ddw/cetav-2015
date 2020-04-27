@@ -43,7 +43,7 @@
       <div class="intro__btn"><a href="http://www.parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
     </div>
     <div class="intro__cont-image">
-      <img src="<?php echo base_path().path_to_theme() ?>/img/img_intro.jpg" alt='' class="intro__image">
+      <img src="<?php echo base_path().path_to_theme() ?>/img/generacion21.jpg" alt='' class="intro__image">
     </div>
   </section>
   <!--end Introduction-->
