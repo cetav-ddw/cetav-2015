@@ -21,7 +21,7 @@
 
       <div id="hero-text" class="hero-banner__cont-desc">
         <h1 class="hero-banner__title">Somos CETAV</h1>
-        <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV, del Parque La Libertad, proponemos un modelo de inclusión social para la innovación.</p>
+        <p class="hero-banner__desc">Brindamos a personas jóvenes, la oportunidad de desarrollar competencias técnicas en áreas relacionadas a la tecnología y las artes visuales. En el CETAV del Parque La Libertad, proponemos un modelo de inclusión social para la innovación.</p>
       </div>
     </div>
   </section>
