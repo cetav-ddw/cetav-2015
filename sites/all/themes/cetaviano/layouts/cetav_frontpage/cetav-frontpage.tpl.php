@@ -40,7 +40,7 @@
         <li class="intro__list-item">La formación en gestión de negocios.</li>
       </ul>
       <p class="intro__text">Buscamos darle al estudiantado las mejores herramientas para desarrollarse exitosamente en el mundo laboral.</p>
-      <div class="intro__btn"><a href="http://www.parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
+      <div class="intro__btn"><a href="/institucion" class="intro__link">Conozca más del CETAV</a></div>
     </div>
     <div class="intro__cont-image">
       <img src="<?php echo base_path().path_to_theme() ?>/img/generacion21.jpg" alt='' class="intro__image">
@@ -89,7 +89,7 @@
     <article class="career career--dic lazy-image">
       <div class="career__info">
         <h3 class="career__title">Mercadeo digital, diseño e imagen comercial</h3>
-        <a href="/carreras/imagen-diseño-estrategia-digital" class="career__link"> Información sobre la carrera
+        <a href="/carreras/mercadeo-digital-diseño-e-imagen-comercial" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
