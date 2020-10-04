@@ -12,8 +12,8 @@
     <div class="panel-wide panel-header">
       <div class="banner banner--admi">
         <div class="banner__cont">
-          <h2 class="banner__text">Proceso de Admisión</h2>
-          <p class="banner__info">¿Querés ser parte de nuestra siguiente generación? Te contamos los requisitos y pasos para inscribirte.</p>
+          <h2 class="banner__text">Proceso de admisión</h2>
+          <p class="banner__info">¿Querés ser parte de nuestra siguiente generación?</p>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
       </div>
       <div class="admi-require">
         <h3 class="section-sh">Requisitos</h3>
-        <p>Cada dos años, el CETAV realiza un proceso de reclutamiento. Si te interesa ingresar, es indispensable cumplir con lo siguiente:</p>
+        <p>Cada dos años el CETAV realiza un proceso de reclutación, el próximo dará inicio a partir de setiembre del 2021.</p>
         <ul class="admi-require-cont-list">
           <li class="admi-require__item">
             <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_1-admision.png" alt="">
@@ -70,14 +70,14 @@
 
     <section class="admi-step__cont">
         <ul class="admi-step">
-          <h3 class="section-sh">¿Cumpliste con lo anterior?</h3>
+          <h3 class="section-sh">¿Cumplís con lo anterior?</h3>
           <p>Podés tomar en cuenta los siguientes pasos para poder finalizar el proceso.</p>
           <li class="admi-step__item">
             <span class="admi-step__number">1</span>
             <div class="admi-step__info">
-              <p>Para recibir información sobre el proceso de admisión, inscribite en el siguiente formulario ingresando tus datos personales.</p>
+              <p>Para recibir información sobre el proceso de admisión, inscribíte en el siguiente formulario ingresando tus datos personales.</p>
               <div class="admi-intro__btn">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDfiOhd0X1_OpXVVzRgUKr34t6WovtQ5Jma5YOWhBD9KlW8w/viewform" title="formulario para solicitar beca de PONAE" class="admi-btn">Llenar formulario</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDfiOhd0X1_OpXVVzRgUKr34t6WovtQ5Jma5YOWhBD9KlW8w/viewform" class="admi-btn">Llenar formulario</a>
               </div>
             </div>
           </li>
@@ -85,16 +85,14 @@
           <li class="admi-step__item">
             <span class="admi-step__number">2</span>
             <div class="admi-step__info">
-              <p>Costo de la carrera técnica.</p>
-              <p>El costo mensual es de 100,000 colones.</p>
-              <p>En caso de obtener beca de EMPLEATE, el 50% del monto es para pagar colegiatura y el 50% restante para tu transporte y alimentación.</p>
+              <p>El costo mensual de la carrera técnica es de &#8353;100,000.</p>
+              <p>En caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, el 50% del monto recibido es para pagar colegiatura y el 50% restante para transporte y alimentación.</p>
             </div>
           </li>
 
           <li class="admi-step__item">
             <span class="admi-step__number">3</span>
             <div class="admi-step__info">
-              <p>Charla inductiva. </p>
               <p>Asistir a una charla donde te explicaremos con detalle el proceso de admisión y el programa de estudios. Traer copia del título de bachillerato y de tu cédula de identidad. Si sos una persona extranjera, además, el comprobante de tu estatus migratorio al día.</p>
               <p><strong>Nota:</strong> Si ya llenaste el formulario, la fecha de la charla se te estará comunicando por correo electrónico.</p>
             </div>
@@ -103,7 +101,6 @@
           <li class="admi-step__item">
             <span class="admi-step__number">4</span>
             <div class="admi-step__info">
-              <p>Pruebas de aptitud.</p>
               <p>Realizamos pruebas de aptitud para cada una de las carreras técnicas, además de comprobar conocimientos básicos en Adobe Ilustrator y Adobe Photoshop.</p>
               <p><strong>Nota: </strong>Si ya llenaste el formulario, la fecha de las pruebas se te estará comunicando por correo electrónico.</p>
             </div>
@@ -112,8 +109,7 @@
           <li class="admi-step__item">
             <span class="admi-step__number">5</span>
             <div class="admi-step__info">
-              <p>Entrevista individual.</p>
-              <p>¡Nos interesa conocerte personalmente! Con este paso, finalizamos el proceso de selección.</p>
+              <p>Entrevista individual. ¡Nos interesa conocerte personalmente! Con este paso, finalizamos el proceso de selección.</p>
               <p><strong>Nota:</strong> Si ya llenaste el formulario, la fecha de la entrevista se te estará comunicando por correo electrónico.</p>
             </div>
           </li>
