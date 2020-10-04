@@ -5464,7 +5464,8 @@ footer .contact-info {
           justify-content: flex-start; }
 
 .panel-cetav-admission h3 {
-  color: #000; }
+  color: #000;
+  padding-top: 67px; }
 
 .panel-cetav-admission .section-wide {
   margin-left: auto;
@@ -5707,8 +5708,7 @@ footer .contact-info {
     color: black;
     text-decoration: underline; }
     .more-info a:hover {
-      color: #f19130;
-      font-weight: bold; }
+      color: #f19130; }
   .more-info h3 {
     padding: 15px 15px 0 15px; }
   .more-info p {
