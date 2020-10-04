@@ -11,7 +11,7 @@
     <div class="panel-wide panel-header">
       <div class="banner">
         <div class="banner__cont">
-          <h2 class="banner__text">Preguntas Frecuentes</h2>
+          <h2 class="banner__text">Preguntas frecuentes</h2>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
         <div class="bread-crumbs bread-crumbs--preg">
           <ul class="bread-crumbs__cont">
             <li class="bread-crumbs__item bread-crumbs__item--first">Estás aquí:</li>
-            <li class="bread-crumbs__item bread-crumbs__item--second">Preguntas Frecuentes</li>
+            <li class="bread-crumbs__item bread-crumbs__item--second">Preguntas frecuentes</li>
           </ul>
         </div>
         <div class="intro-preg">
@@ -65,11 +65,11 @@
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">¿Cada cuanto tiempo se abre el proceso de admisión?</p>
+                  <p class="preg__item-preg">¿Cada cuánto tiempo se abre el proceso de admisión?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Cada dos años. El proceso de admisión no se realiza cada año, sino al culminar con la graduación de la última generación que es cada dos años.</p>
+                  <p class="preg__item-answer">Cada dos años el CETAV realiza un proceso de reclutación, el próximo dará inicio a partir de setiembre del 2021.</p>
                 </div>
               </li>
             </ul>
@@ -79,16 +79,16 @@
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">¿Cual es el costo mensual de las carreras técmicas del CETAV?</p>
+                  <p class="preg__item-preg">¿Cual es el costo mensual de las carreras técnicas del CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">El costo mensual de la carrera técnica es de &#8353;100,000 en caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, el 50% del monto recibido es para pagar colegiatura y el 50% restante para transporte y alimentación.</p>
                 </div>
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">¿Cuanto pagan los estudiantes que reciben beca de EMPLEATE?</p>
+                  <p class="preg__item-preg">¿Cuánto pagan los estudiantes que reciben beca de EMPLEATE?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -98,7 +98,7 @@
             </ul>
           </div>
           <div id="carrerasTecnicas" class="preg__cont">
-            <h3 class="preg__title">Carreras Técnicas</h3>
+            <h3 class="preg__title">Carreras técnicas</h3>
             <ul class="preg__list">
             <li class="preg__item">
                 <div class="preg__item-cont-preg">
@@ -176,7 +176,7 @@
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Post prodicción de imagen y sonido</p>
+                  <p class="preg__item-preg">Postproducción de imagen y sonido</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -213,7 +213,7 @@
               </li>
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">Imagen, diseño y estrategia digital</p>
+                  <p class="preg__item-preg">Mercadeo digital, diseño e imagen comercial.</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
@@ -251,7 +251,7 @@
             </ul>
           </div>
           <div id="admision" class="preg__cont">
-            <h3 class="preg__title">Proceso de Admisión</h3>
+            <h3 class="preg__title">Proceso de admisión</h3>
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
@@ -291,7 +291,7 @@
                     <li>En caso de extranjeros, tener su estatus migratorio al día.</li>
                     <li>Interés en aprender inglés.</li>
                     <li>Disponibilidad de tiempo completo.</li>
-                    <li>Para ingresar al Técnico en Diseño y Desarrollo Web, además es requisito aprobar el curso de Introducción al Desarrollo Web, que se imparte en el CETAV.</li>
+                    <li>Para ingresar al Técnico en Diseño y desarrollo web, además es requisito aprobar el curso de Introducción al Desarrollo Web, que se imparte en el CETAV.</li>
                   </ul>
                 </div>
               </li>
@@ -317,11 +317,11 @@
             </ul>
           </div>
           <div id="Insercion" class="preg__cont">
-            <h3 class="preg__title">Inserción Laboral</h3>
+            <h3 class="preg__title">Inserción laboral</h3>
             <ul class="preg__list">
               <li class="preg__item">
                 <div class="preg__item-cont-preg">
-                  <p class="preg__item-preg">¿Cual es el promedio de inserción laboral de egresados y egresadas del CETAV?</p>
+                  <p class="preg__item-preg">¿Cuál es el promedio de inserción laboral de egresados y egresadas del CETAV?</p>
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">

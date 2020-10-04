@@ -85,8 +85,7 @@
           <li class="admi-step__item">
             <span class="admi-step__number">2</span>
             <div class="admi-step__info">
-              <p>El costo mensual de la carrera técnica es de &#8353;100,000.</p>
-              <p>En caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, el 50% del monto recibido es para pagar colegiatura y el 50% restante para transporte y alimentación.</p>
+              <p>El costo mensual de la carrera técnica es de &#8353;100,000 en caso de obtener la beca Empleate, gestionada en conjunto con el CETAV, el 50% del monto recibido es para pagar colegiatura y el 50% restante para transporte y alimentación.</p>
             </div>
           </li>
 
