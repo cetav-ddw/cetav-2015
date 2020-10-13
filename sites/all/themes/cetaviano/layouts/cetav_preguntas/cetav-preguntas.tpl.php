@@ -69,7 +69,7 @@
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Cada dos años el CETAV realiza un proceso de reclutación, el próximo dará inicio a partir de setiembre del 2021.</p>
+                  <p class="preg__item-answer">Cada dos años el CETAV realiza un proceso de reclutamiento, el próximo dará inicio a partir de setiembre del 2021.</p>
                 </div>
               </li>
             </ul>
@@ -233,7 +233,7 @@
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                        <p class="preg__item-answer">Ninguno.</p>
                       </div>
                     </li>
                     <li class="preg__item">
@@ -242,7 +242,7 @@
                         <button class="preg__item-button js-preg__item-button"></button>
                       </div>
                       <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                        <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                        <p class="preg__item-answer">Agencias digitales, de diseño y/ó de marketing; empresas con departamento de diseño y marketing, ó empresas grandes, medianas, pequeñas ó profesionales que requieren comunicarse con sus usuarios en sus diferentes plataformas.</p>
                       </div>
                     </li>
                   </ul>
@@ -291,7 +291,6 @@
                     <li>En caso de extranjeros, tener su estatus migratorio al día.</li>
                     <li>Interés en aprender inglés.</li>
                     <li>Disponibilidad de tiempo completo.</li>
-                    <li>Para ingresar al Técnico en Diseño y desarrollo web, además es requisito aprobar el curso de Introducción al Desarrollo Web, que se imparte en el CETAV.</li>
                   </ul>
                 </div>
               </li>
@@ -325,7 +324,7 @@
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pnibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pelleharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">El promedio oscila entre 80% y 90% de inserción laboral.</p>
                 </div>
               </li>
               <li class="preg__item">
@@ -334,7 +333,7 @@
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">Dependiendo del área de especialidad. Entre las principales destacan canales de televisión como Repretel y Televisora de Costa Rica, agencias digitales como Accenture, The Hangar, estudios de diseño y arquitectura, agencias de publicidad, estudios de animación, entre otras.</p>
                 </div>
               </li>
             </ul>
