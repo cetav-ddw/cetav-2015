@@ -39,12 +39,12 @@
                 <p class="intro-preg__link intro-preg__link--financ">Financiamiento</p>
               </a>
             </div>
-            <div class="intro-preg__menu-item">
+            <!-- <div class="intro-preg__menu-item">
               <a class="intro-preg__cont-item" title="Link a sobre el cetav" href="#carrerasTecnicas">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/carreras-tecnicas-icon.png" class="intro-preg__icon">
                 <p class="intro-preg__link">Carreras técnicas</p>
               </a>
-            </div>
+            </div> -->
             <div class="intro-preg__menu-item">
               <a class="intro-preg__cont-item"  title="Link a sobre el cetav" href="#admision">
                 <img alt="" src="<?php echo base_path().path_to_theme() ?>/img/admision-icon.png" class="intro-preg__icon">
@@ -97,7 +97,7 @@
               </li>
             </ul>
           </div>
-          <div id="carrerasTecnicas" class="preg__cont">
+          <!-- <div id="carrerasTecnicas" class="preg__cont">
             <h3 class="preg__title">Carreras técnicas</h3>
             <ul class="preg__list">
             <li class="preg__item">
@@ -249,7 +249,7 @@
                 </div>
               </li>
             </ul>
-          </div>
+          </div> -->
           <div id="admision" class="preg__cont">
             <h3 class="preg__title">Proceso de admisión</h3>
             <ul class="preg__list">
