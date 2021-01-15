@@ -46,7 +46,7 @@
           <li class="admi-require__item">
             <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_5-admision.png" alt="">
             <p class="admi-require__item-text">Conocimientos básicos y comprobables en Adobe Photoshop y Adobe  Illustrator.</p>
-            <p class="admi-require__item-text">Si no los tenés, una opción es llevar estos cursos en los Centros de Cómputo del Parque La Libertad. Podés comunicarte al número de teléfono: 2276-9400 ext 2092</p>
+            <p class="admi-require__item-text">Si no los tenés, una opción es llevar estos cursos en los Centros de Cómputo del Parque La Libertad. Podés comunicarte al número de teléfono: 2276-9400 ext 2092; para más información podes visitar el <a href="https://parquelalibertad.org/nuevo2020/area-diseno.html">Área de Diseño del Parque La Libertad</a>.</p>
           </li>
           <li class="admi-require__item">
             <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_6-admision.png" alt="">
@@ -77,7 +77,7 @@
             <div class="admi-step__info">
               <p>Para recibir información sobre el proceso de admisión, inscribíte en el siguiente formulario ingresando tus datos personales.</p>
               <div class="admi-intro__btn">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfDfiOhd0X1_OpXVVzRgUKr34t6WovtQ5Jma5YOWhBD9KlW8w/viewform" class="admi-btn">Llenar formulario</a>
+                <a href="https://airtable.com/shrhqwPfGGmaf9CUT" class="admi-btn">Llenar formulario</a>
               </div>
             </div>
           </li>
@@ -101,7 +101,7 @@
             <span class="admi-step__number">4</span>
             <div class="admi-step__info">
               <p>Realizamos pruebas de aptitud para cada una de las carreras técnicas, además de comprobar conocimientos básicos en Adobe Ilustrator y Adobe Photoshop.</p>
-              <p><strong>Nota: </strong>Si ya llenaste el formulario, la fecha de las pruebas se te estará comunicando por correo electrónico.</p>
+              <p><strong>Nota:</strong> Si ya llenaste el formulario, la fecha de las pruebas se te estará comunicando por correo electrónico.</p>
             </div>
           </li>
 

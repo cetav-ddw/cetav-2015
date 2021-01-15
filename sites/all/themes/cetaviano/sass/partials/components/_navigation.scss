@@ -138,6 +138,14 @@ nav[role="navigation"] {
         top: 0;
         transition: 0.2s;
 
+        &:hover {
+            border-color: $white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+    @include mquery("large") {
         &:before {
             background-color: $white;
             content: "";
@@ -146,12 +154,6 @@ nav[role="navigation"] {
             position: absolute;
             transition: 0.5s;
             width: 1px;
-        }
-
-        &:hover {
-            border-color: $white;
-            font-weight: bold;
-            text-decoration: none;
         }
     }
 

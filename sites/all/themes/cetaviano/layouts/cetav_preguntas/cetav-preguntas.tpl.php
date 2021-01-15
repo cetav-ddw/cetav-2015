@@ -262,7 +262,7 @@
                   <ol class="preg__item-answer">
                     <li>
                       Comprobá si cumplís con todos los requisitos y llenar el formulario
-                      <a title="link a los requisitos" href="https://mailchi.mp/8b8c1550576e/requisitoscetav-1708277" >click aquí</a>
+                      <a title="link a los requisitos" href="https://airtable.com/shrhqwPfGGmaf9CUT" >click aquí</a>
                     </li>
                     <li>
                       Si necesitás la beca de EMPLEATE debés llenar el siguiente formulario para iniciar el proceso:

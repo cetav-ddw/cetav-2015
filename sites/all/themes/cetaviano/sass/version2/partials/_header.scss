@@ -36,7 +36,7 @@ header .section-wide {
   margin-top: 10px;
 
   @include mquery("medium") {
-    margin-right: 22%;
+    margin-right: 0;
     margin-top: 0;
   }
   @include mquery("large") {
@@ -68,18 +68,18 @@ header .section-wide {
 }
 
 .header__logo {
-	height: 30px;
-	top: 0;
+  left: -35px;
+	top: -20px;
 	position: absolute;
-	width: 65px;
+	width: 300px;
 	z-index: 1;
 
   @include mquery("medium") {
-		top: 8px;
+		top: -15px;
   }
 
 	.icon-cetav {
 		height: auto;
-		width: 65px;
+		max-width: 100%;
 	}
 }
