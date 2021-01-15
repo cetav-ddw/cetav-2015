@@ -178,7 +178,7 @@ nav[role="navigation"] {
 .hide-content {
     display: none;
 
-    @include mquery("medium") {
+    @include mquery(1080px) {
         display: block;
     }
 }

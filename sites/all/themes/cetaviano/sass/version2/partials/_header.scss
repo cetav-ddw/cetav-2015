@@ -1,7 +1,7 @@
 header .section-wide {
   padding-bottom: 4em;
 
-  @include mquery("medium") {
+  @include mquery(1080px) {
     padding-bottom: 1em;
     padding-top: 1em;
   }
@@ -37,7 +37,7 @@ header .section-wide {
 
   @include mquery("medium") {
     margin-right: 0;
-    margin-top: 0;
+    margin-top: 70px;
   }
   @include mquery("large") {
     margin-right: 18%;
