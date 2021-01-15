@@ -43,14 +43,8 @@ header .section-wide {
     margin-right: 0;
     margin-top: 70px;
   }
-  @include mquery("large") {
-    margin-right: 18%;
-  }
-  @include mquery("x-large") {
-    margin-right: 16%;
-  }
-  @include mquery(90em) {
-    margin-right: 13%;
+  @include mquery(1080px) {
+    margin-top: 45px;
   }
 }
 
@@ -80,6 +74,11 @@ header .section-wide {
 
   @include mquery("medium") {
 		top: -15px;
+  }
+
+  @include mquery(1080px) {
+    top: 0;
+    width: 365px;
   }
 
 	.icon-cetav {
