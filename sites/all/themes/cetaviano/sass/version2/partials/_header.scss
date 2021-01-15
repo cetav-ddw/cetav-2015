@@ -1,6 +1,10 @@
 header .section-wide {
   padding-bottom: 4em;
 
+  @include mquery("medium") {
+    padding-top: 2em;
+  }
+
   @include mquery(1080px) {
     padding-bottom: 1em;
     padding-top: 1em;

@@ -127,7 +127,7 @@ nav[role="navigation"] {
 .back-pll {
     display: none;
 
-    @include mquery("medium") {
+    @include mquery(1080px) {
         border-bottom: 3px solid $colorHeader;
         color: $white;
         display: block;
@@ -250,7 +250,7 @@ nav[role="navigation"] {
     padding-right: 0;
     top: 0;
   }
-  @include mquery(64em) {
+  @include mquery("large") {
     padding-right: 2em;
   }
 }

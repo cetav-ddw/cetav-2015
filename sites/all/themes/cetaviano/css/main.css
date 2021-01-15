@@ -3462,7 +3462,7 @@ nav[role="navigation"] .expanded:hover .menu {
 
 .back-pll {
   display: none; }
-  @media only screen and (min-width: 56.25em) {
+  @media only screen and (min-width: 1080px) {
     .back-pll {
       border-bottom: 3px solid #292929;
       color: #fff;
@@ -3568,7 +3568,7 @@ nav[role="navigation"] {
       height: auto;
       padding-right: 0;
       top: 0; } }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 68.75em) {
     nav[role="navigation"] {
       padding-right: 2em; } }
 
@@ -4668,6 +4668,9 @@ html, .maintenance-page {
 
 header .section-wide {
   padding-bottom: 4em; }
+  @media only screen and (min-width: 56.25em) {
+    header .section-wide {
+      padding-top: 2em; } }
   @media only screen and (min-width: 1080px) {
     header .section-wide {
       padding-bottom: 1em;
