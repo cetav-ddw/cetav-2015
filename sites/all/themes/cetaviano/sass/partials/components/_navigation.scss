@@ -3,7 +3,7 @@ nav[role="navigation"] {
     width: 100%;
     z-index: 10;
 
-    @include mquery ("medium") {
+    @include mquery (1080px) {
         padding: 0;
         position: static;
     }
@@ -39,7 +39,7 @@ nav[role="navigation"] {
         flex-direction: column;
         list-style: none;
 
-        @include mquery ("medium") {
+        @include mquery (1080px) {
             flex-direction: row;
             margin-bottom: 0;
         }
@@ -66,7 +66,7 @@ nav[role="navigation"] {
                 width: 70%;
             }
 
-            @include mquery("medium") {
+            @include mquery(1080px) {
                 width: 0;
             }
         }
@@ -91,7 +91,7 @@ nav[role="navigation"] {
             font-weight: normal;
             margin: 0 1rem;
 
-            @include mquery("medium") {
+            @include mquery(1080px) {
                 border-bottom: 1px solid $white;
             }
 
@@ -103,7 +103,7 @@ nav[role="navigation"] {
         .menu {
             margin: 0 1rem;
 
-            @include mquery ("medium") {
+            @include mquery (1080px) {
                 background: $colorHeader;
                 display: none;
                 left: -30px;
@@ -197,7 +197,7 @@ nav[role="navigation"] {
         width: 30px;
     }
 
-    @include mquery("medium") {
+    @include mquery(1080px) {
         display: none;
     }
 }
