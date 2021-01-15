@@ -145,6 +145,18 @@ nav[role="navigation"] {
         }
     }
 
+    @include mquery("x-large") {
+        &:before {
+            background-color: $white;
+            content: "";
+            height: 18px;
+            left: -10px;
+            position: absolute;
+            transition: 0.5s;
+            width: 1px;
+        }
+    }
+
     @include mquery(62.5em) {
         font-size: .875em;
     }
@@ -234,7 +246,7 @@ nav[role="navigation"] {
     padding-right: 0;
     top: 0;
   }
-  @include mquery("large") {
+  @include mquery("x-large") {
     padding-right: 2em;
   }
 }

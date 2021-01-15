@@ -46,6 +46,9 @@ header .section-wide {
   @include mquery(1080px) {
     margin-top: 45px;
   }
+  @include mquery("x-large") {
+    margin-top: 0;
+  }
 }
 
 .cont-burger {
@@ -75,10 +78,12 @@ header .section-wide {
   @include mquery("medium") {
 		top: -15px;
   }
-
   @include mquery(1080px) {
     top: 0;
     width: 365px;
+  }
+  @include mquery("x-large") {
+    top: -20px;
   }
 
 	.icon-cetav {
