@@ -47,6 +47,7 @@ header .section-wide {
     margin-top: 45px;
   }
   @include mquery("x-large") {
+    margin-right: 160px;
     margin-top: 0;
   }
 }
