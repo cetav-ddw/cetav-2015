@@ -29,7 +29,7 @@
       </div>
       <div class="admi-require">
         <h3 class="section-sh">Requisitos</h3>
-        <p>Cada dos años el CETAV realiza un proceso de reclutación, el próximo dará inicio a partir de setiembre del 2021.</p>
+        <p>Cada dos años el CETAV realiza un proceso de reclutamiento, el próximo dará inicio a partir de setiembre del 2021.</p>
         <ul class="admi-require-cont-list">
           <li class="admi-require__item">
             <img class="admi-require__item-img" src="<?php echo base_path().path_to_theme() ?>/img/step_1-admision.png" alt="">

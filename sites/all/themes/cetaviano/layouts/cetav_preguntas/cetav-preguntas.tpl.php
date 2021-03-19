@@ -92,7 +92,7 @@
                   <button class="preg__item-button js-preg__item-button"></button>
                 </div>
                 <div class="preg__item-cont-answer js-preg__item-cont-answer">
-                  <p class="preg__item-answer">Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.Pellentesque molestie erat quis finibus lacinia. Etiam nec ornare neque, pharetra luctus nibh. Nulla facilisi.</p>
+                  <p class="preg__item-answer">El 50% de la beca asignada es para pagar sus estudios en el CETAV y el 50% restante para cubrir alimentación y transporte.</p>
                 </div>
               </li>
             </ul>
@@ -341,7 +341,7 @@
         </div>
         <div class="more-info">
           <h3 class="more-info__title">¿Tenés alguna pregunta que no ha sido respondida aquí?</h3>
-          <p class="more-info__text">Podés escribirnos a la dirección de correo electrónico <span class="more-info__link">admisiones@parquelalibertad.org</span> ó llamarnos al 2276-9400 ext. 2031.</p>
+          <p class="more-info__text">Podés escribirnos a la dirección de correo electrónico <a href="mailto:admision.cetav@parquelalibertad.org">admision.cetav@parquelalibertad.org</a> ó llamarnos al 2276-9400 ext. 2031.</p>
         </div>
       </div>
     </div>
