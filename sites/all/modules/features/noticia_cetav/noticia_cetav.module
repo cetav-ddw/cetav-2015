@@ -5,3 +5,11 @@
  */
 
 include_once 'noticia_cetav.features.inc';
+
+
+/**
+ * Implements of hook_form_FORM_ID_alter.
+ */
+function noticia_cetav_form_noticia_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['field_feeds_id']['#access'] = 0;
+}
