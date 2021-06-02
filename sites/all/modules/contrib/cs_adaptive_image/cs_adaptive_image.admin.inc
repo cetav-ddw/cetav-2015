@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Administrative interface for the Client-side adaptive image module.
+ * Administrative interface for the Client-Side Adaptive Image module.
  */
 
 /**
@@ -17,6 +17,29 @@ function cs_adaptive_image_settings_form() {
     '#default_value' => variable_get('cs_adaptive_image_breakpoint_count', 5),
     '#element_validate' => array('element_validate_integer_positive'),
   );
+
+  // Get field count
+  $count = (variable_get('cs_adaptive_image_breakpoint_count') ? variable_get('cs_adaptive_image_breakpoint_count') : 5);
+
+  // Fieldset for default breakpoints
+  $form['cs_adaptive_default_breakpoint'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Default breakpoints'),
+    '#description' => t('Enter breakpoints, lowest first'),
+  );
+
+  // Create fields for default breakpoints
+  for ($i=1;$i<=$count;$i++) {
+    $form['cs_adaptive_default_breakpoint']['cs_adaptive_default_breakpoint_' . $i] = array(
+      '#type' => 'textfield',
+      '#title' => t('Breakpoint') . ' ' . ($i),
+      '#size' => 4,
+      '#maxlength' => 4,
+      '#default_value' => (variable_get('cs_adaptive_default_breakpoint_' . $i) ? variable_get('cs_adaptive_default_breakpoint_' . $i) : ''),
+      '#element_validate' => array('element_validate_integer_positive'),
+    );
+  }
+
   return system_settings_form($form);
 }
 

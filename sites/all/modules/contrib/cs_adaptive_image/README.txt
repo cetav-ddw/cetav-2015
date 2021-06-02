@@ -1,9 +1,9 @@
-README file for the Client-side adaptive image module for Drupal.
+README file for the Client-Side Adaptive Image module for Drupal.
 
 
 -- DESCRIPTION --
 
-The Client-side adaptive image module helps build responsive web
+The Client-Side Adaptive Image module helps build responsive web
 designs [1] with fluid images [2] by providing an Image field
 formatter that allows you to select appropriate image styles for
 various client widths. With this module, you can ensure that for each
@@ -67,7 +67,7 @@ What the module does is basically this:
 
 -- INSTALLATION AND CONFIGURATION --
 
-* Install the Client-side adaptive image module as usual. See
+* Install the Client-Side Adaptive Image module as usual. See
   http://drupal.org/node/70151 for more information.
 
 * By default the formatter allows you to configure up to 5 client
@@ -105,9 +105,20 @@ that would be performed by the browser. You might want to read Ethan
 Marcotte's article "Fluid Images" [2] before applying CSS to your
 images.
 
-You may use the Client-side adaptive image formatter within other
+You may use the Client-Side Adaptive Image formatter within other
 types of entities as well, but the path to the formatter's settings
 will vary.
+
+-- RETINA SUPPORT --
+
+If you wish an image style to be served with it's retina display variant just
+create a new style with the name '--retina' in the end.
+This module will automatically detect if a retina variant is available and will
+use that image-style.
+
+Exmaple:
+If the name of your image style is: "news-thumbnail"
+The name of the retina image style has to be: "news-thumbnail--retina"
 
 
 -- SIMILAR PROJECTS --
