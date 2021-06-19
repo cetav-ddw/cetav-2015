@@ -40,7 +40,7 @@
         <li class="intro__list-item">La formación en gestión de negocios.</li>
       </ul>
       <p class="intro__text">Buscamos darle al estudiantado las mejores herramientas para desarrollarse exitosamente en el mundo laboral.</p>
-      <div class="intro__btn"><a href="/institucion" class="intro__link">Conozca más del CETAV</a></div>
+      <div class="intro__btn"><a href="http://parquelalibertad.org/cetav/institucion" class="intro__link">Conozca más del CETAV</a></div>
     </div>
     <div class="intro__cont-image">
       <img src="<?php echo base_path().path_to_theme() ?>/img/generacion21.jpg" alt='' class="intro__image">
@@ -67,7 +67,7 @@
     <article class="career career--web lazy-image">
       <div class="career__info">
         <h3 class="career__title">Diseño y desarrollo web</h3>
-        <a href="/carreras/diseno-desarrollo-web" class="career__link"> Información sobre la carrera
+        <a href="http://parquelalibertad.org/cetav/carreras/animacion-digital-3d" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
@@ -78,7 +78,7 @@
     <article class="career career--post lazy-image">
       <div class="career__info">
         <h3 class="career__title">Edición y postproducción de imagen y sonido</h3>
-        <a href="/carreras/postproduccion-imagen-sonido" class="career__link"> Información sobre la carrera
+        <a href="http://parquelalibertad.org/cetav/carreras/postproduccion-imagen-sonido" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
@@ -89,7 +89,7 @@
     <article class="career career--dic lazy-image">
       <div class="career__info">
         <h3 class="career__title">Mercadeo digital, diseño e imagen comercial</h3>
-        <a href="/carreras/mercadeo-digital-diseño-e-imagen-comercial" class="career__link"> Información sobre la carrera
+        <a href="http://parquelalibertad.org/cetav/carreras/mercadeo-digital-diseño-e-imagen-comercial" class="career__link"> Información sobre la carrera
           <svg class="btn-border">
             <rect x="0" y="0" rx="7" ry="7" fill="none" width="100%" height="100%"/>
           </svg>
@@ -106,7 +106,7 @@
         <p class="sub-titles">¿Qué está sucediendo en el CETAV?</p>
         <?php print $content['wide_third']; ?>
         <div class="news-btn">
-          <a href="/noticias" class="news-btn__link">Leer más noticias</a>
+          <a href="http://parquelalibertad.org/cetav/noticias" class="news-btn__link">Leer más noticias</a>
         </div>
       </div>
     </div>
